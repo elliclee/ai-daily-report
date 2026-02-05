@@ -1,0 +1,8 @@
+{
+  "name": "ai-daily-report",
+  "version": "1.0.0",
+  "description": "AI Daily Report - Daily AI news briefing",
+  "scripts": {
+    "start": "npx serve"
+  }
+}
