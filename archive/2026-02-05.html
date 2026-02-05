@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 早报 - 2026年2月5日</title>
+    <title>AI早报 | 2026年2月5日 · X+全网融合版</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -27,240 +27,307 @@
             padding: 40px 30px;
             text-align: center;
         }
-        .header h1 { font-size: 2rem; margin-bottom: 10px; }
-        .header .date { opacity: 0.9; font-size: 1rem; }
-        .content { padding: 30px; }
-        .section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 12px;
-            border-left: 4px solid #667eea;
+        .header h1 { font-size: 2.5rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .header .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
         }
-        .section h2 {
+        .header .date { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
+        .content { padding: 30px; }
+        .section { margin-bottom: 35px; }
+        .section-title {
+            font-size: 1.4rem;
             color: #2a5298;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
+            border-left: 5px solid #667eea;
+            padding-left: 15px;
+            margin-bottom: 20px;
             display: flex;
             align-items: center;
             gap: 10px;
         }
         .news-item {
-            background: white;
-            padding: 15px;
-            margin-bottom: 12px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-        .news-item h3 {
-            font-size: 1rem;
-            color: #333;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-        .news-item p {
-            font-size: 0.9rem;
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 8px;
-        }
-        .news-item .source {
-            font-size: 0.8rem;
-            color: #667eea;
-            display: flex;
-            align-items: center;
-            gap: 5px;
+        .news-item:hover { transform: translateX(5px); box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2); }
+        .news-item.x-hot { border-left-color: #1da1f2; background: linear-gradient(90deg, #f0f9ff 0%, #f8f9fa 100%); }
+        .news-title { font-size: 1.1rem; font-weight: 600; color: #1a1a2e; margin-bottom: 10px; line-height: 1.4; }
+        .news-content { color: #555; line-height: 1.7; margin-bottom: 10px; }
+        .news-source { font-size: 0.85rem; color: #888; font-style: italic; }
+        .x-tag {
+            display: inline-block;
+            background: #1da1f2;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            margin-right: 8px;
+            font-weight: 600;
         }
         .highlight {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            color: white;
-            border: none;
+            background: linear-gradient(120deg, #ffeaa7 0%, #ffeaa7 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 88%;
+            padding: 0 4px;
+            font-weight: 600;
         }
-        .highlight h2 { color: white; }
-        .insight-box {
-            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
-            color: white;
-            padding: 20px;
-            border-radius: 12px;
-            margin-top: 20px;
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        .insight-box h2 { color: white; }
+        .stats-table th { background: #2a5298; color: white; padding: 15px; text-align: left; }
+        .stats-table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
+        .stats-table tr:last-child td { border-bottom: none; }
+        .stats-table tr:hover { background: #f8f9fa; }
         .footer {
             background: #1a1a2e;
             color: #aaa;
             text-align: center;
             padding: 20px;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
         }
-        .tag {
-            display: inline-block;
-            padding: 3px 10px;
-            background: #e3e8ff;
-            color: #667eea;
-            border-radius: 15px;
-            font-size: 0.75rem;
-            margin-right: 5px;
-            margin-top: 5px;
+        .fusion-note {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            border: 1px solid #667eea30;
         }
+        .fusion-note p { color: #555; font-size: 0.95rem; margin: 0; }
         @media (max-width: 600px) {
-            .header h1 { font-size: 1.5rem; }
+            .header h1 { font-size: 1.8rem; }
             .content { padding: 20px; }
-            .section { padding: 15px; }
+            .news-item { padding: 15px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>🤖 AI 每日早报</h1>
-            <p class="date">2026年2月5日 星期四</p>
+            <h1>🤖 AI早报融合版</h1>
+            <div class="badge">🐦 X热搜 + 🌐 全网新闻</div>
+            <div class="date">2026年2月5日 · Thursday</div>
         </div>
         
         <div class="content">
-            <!-- 头条新闻 -->
-            <div class="section highlight">
-                <h2>📰 头条新闻</h2>
-                <div class="news-item">
-                    <h3>🚨 Anthropic Claude Cowork 引发全球软件股"SaaSpocalypse"</h3>
-                    <p>Anthropic于2月3日发布Claude Cowork插件系统，覆盖法律、财务、销售、营销等11个领域的AI Agent。发布24小时内，全球软件股市值蒸发<strong>2850亿美元</strong>。Salesforce、Adobe跌6-8%，LegalZoom暴跌20%。这是华尔街首次感受到AI不仅是工具，而是SaaS的直接替代者。</p>
-                    <span class="source">📍 来源: Financial Times, Reuters, Bloomberg</span>
-                    <div>
-                        <span class="tag">市场震荡</span>
-                        <span class="tag">SaaS革命</span>
-                    </div>
-                </div>
+            <div class="fusion-note">
+                <p><strong>📊 本期特点：</strong>融合 X(Twitter) 实时热议与全网权威媒体报道，呈现最全面的AI动态视角。X热议聚焦前沿讨论，全网新闻提供深度分析。</p>
             </div>
 
+            <!-- 头条新闻 -->
+            <div class="section">
+                <h2 class="section-title">📰 头条新闻</h2>
+                
+                <div class="news-item">
+                    <div class="news-title">1. Anthropic Claude Cowork 发布引发软件股大地震</div>
+                    <div class="news-content">
+                        Anthropic发布面向法律部门的企业AI工具Claude Cowork，可自动化合同审查、NDA分类、合规流程等工作。发布24小时内，<span class="highlight">全球软件股蒸发2850亿美元市值</span>，Thomson Reuters(-18%)、Relx(-14%)、Wolters Kluwer(-13%)等数据服务商股价暴跌。
+                    </div>
+                    <div class="news-source">📍 来源：The Guardian、Reuters、Bloomberg</div>
+                </div>
+                
+                <div class="news-item x-hot">
+                    <div class="news-title"><span class="x-tag">X热议</span>DeepSeek V4 即将发布，成本仅9亿日元挑战GPT</div>
+                    <div class="news-content">
+                        据X热议，DeepSeek V4预计2月中旬发布，编码能力可能超越Claude和GPT。开发费用仅约9亿日元（约600万美元），而OpenAI投入数千亿日元。<span class="highlight">"AI开发需要巨额资金"的常识正在崩塌</span>，技术民主化正在削弱大企业的优势地位。
+                    </div>
+                    <div class="news-source">📍 来源：X @haruaixxx 等热议</div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">2. NVIDIA拟200亿美元投资OpenAI</div>
+                    <div class="news-content">
+                        芯片巨头NVIDIA接近达成200亿美元投资OpenAI的交易，这将是NVIDIA史上最大单笔投资。OpenAI本轮融资目标超1000亿美元，估值达8300亿美元。黄仁勋表示这是"非常好的投资"，Amazon、SoftBank也参与本轮。
+                    </div>
+                    <div class="news-source">📍 来源：Financial Times、WSJ、X @Dutch_Brat @OceanNewsUK</div>
+                </div>
+            </div>
+            
             <!-- 新模型/工具 -->
             <div class="section">
-                <h2>🚀 新模型/工具</h2>
-                <div class="news-item">
-                    <h3>OpenAI 发布 Codex macOS 应用，开发者生态加速</h3>
-                    <p>OpenAI正式发布Codex原生macOS应用，支持Xcode 26.3集成，可自主分解任务、搜索Apple文档、探索文件结构。同时发布GPT-5.2和GPT-5.2-codex，API推理速度提升<strong>40%</strong>。目前Codex周活跃用户达100万，应用下载量2天突破50万。</p>
-                    <span class="source">📍 来源: X @OpenAIDevs, @lindsmccallum</span>
-                    <div>
-                        <span class="tag">编程助手</span>
-                        <span class="tag">Agent</span>
+                <h2 class="section-title">🛠️ 新模型/工具</h2>
+                
+                <div class="news-item x-hot">
+                    <div class="news-title"><span class="x-tag">X热议</span>2026年2月AI模型排行榜出炉</div>
+                    <div class="news-content">
+                        <strong>全球Top 10 AI模型（2026年2月）：</strong><br>
+                        1. GPT-5.2 (OpenAI) - 速度与编码领先<br>
+                        2. Gemini 3 Pro (Google) - 综合基准测试领先<br>
+                        3. Claude 4.5 Opus (Anthropic) - 推理能力最强<br>
+                        4. Grok 4.1 (xAI)<br>
+                        5. Qwen 3 (阿里巴巴)<br>
+                        6. DeepSeek V3.2<br>
+                        7. Llama 4 (Meta)<br>
+                        8. Mistral 3 (Mistral AI)<br>
+                        9. Ernie 5.0 (百度)<br>
+                        10. Cohere Command A<br><br>
+                        <span class="highlight">中国模型在数学和性价比方面表现突出，与美国的差距正在缩小。</span>
                     </div>
+                    <div class="news-source">📍 来源：X @grok @TechBitHQ (BRACAI, Shakudo等基准)</div>
                 </div>
+
                 <div class="news-item">
-                    <h3>上海AI Lab开源ShuRen Intern-S1-Pro万亿参数模型</h3>
-                    <p>上海人工智能实验室开源ShuRen Intern-S1-Pro模型，基于SAGE架构，参数量达万亿级别，创下开源模型参数量新纪录。该模型在多模态科学计算(AI4S)学术评测中领先。</p>
-                    <span class="source">📍 来源: X @Awesome_AI_News</span>
-                    <div>
-                        <span class="tag">开源模型</span>
-                        <span class="tag">万亿参数</span>
+                    <div class="news-title">3. OpenAI Codex macOS应用发布</div>
+                    <div class="news-content">
+                        OpenAI发布Codex原生macOS应用，GPT-5.2速度提升40%。GitHub同时宣布整合Claude+Codex双AI助手，开发者可自由选择模型。
                     </div>
+                    <div class="news-source">📍 来源：OpenAI Blog、GitHub Blog</div>
                 </div>
-                <div class="news-item">
-                    <h3>GitHub 整合 Claude + Codex，AI编程多选时代来临</h3>
-                    <p>GitHub正式宣布将Anthropic Claude和OpenAI Codex两大AI编码助手整合到平台中，开发者不再只有Copilot一个选择，开发工作流将迎来前所未有的升级。</p>
-                    <span class="source">📍 来源: X @NextMavenAI</span>
-                    <div>
-                        <span class="tag">GitHub</span>
-                        <span class="tag">开发工具</span>
+
+                <div class="news-item x-hot">
+                    <div class="news-title"><span class="x-tag">X热议</span>春节AI大战预告：OpenAI/Anthropic/Google/xAI/DeepSeek都准备放大招</div>
+                    <div class="news-content">
+                        据传各大厂商将在春节期间发布：<br>
+                        • OpenAI: GPT-5.3<br>
+                        • Anthropic: Claude Sonnet 5<br>
+                        • Google: Gemini 3.5<br>
+                        • xAI: Grok 5<br>
+                        • DeepSeek: R2
                     </div>
+                    <div class="news-source">📍 来源：X @interjc</div>
                 </div>
+
                 <div class="news-item">
-                    <h3>Palantir Hivemind AI 可自主迁移遗留系统数据</h3>
-                    <p>Palantir宣布其Hivemind AI现可自主将数据从遗留系统迁移，这项工作长期以来是印度IT公司的核心收入来源，标志着AI在 enterprise 数据迁移领域的重大突破。</p>
-                    <span class="source">📍 来源: X @PalantirOg</span>
-                    <div>
-                        <span class="tag">企业AI</span>
-                        <span class="tag">数据迁移</span>
+                    <div class="news-title">4. Anthropic降价应对开源竞争</div>
+                    <div class="news-content">
+                        Anthropic调整Claude Cowork定价策略：此前仅月付100美元的Max套餐可用，现在月付20美元的Pro套餐也可使用。此举被视为对DeepSeek等开源竞品的回应。
                     </div>
+                    <div class="news-source">📍 来源：X @doyamarke</div>
                 </div>
             </div>
-
+            
             <!-- 企业动态 -->
             <div class="section">
-                <h2>🏢 企业动态</h2>
+                <h2 class="section-title">🏢 企业动态</h2>
+                
                 <div class="news-item">
-                    <h3>Google Gemini 月活用户达7.5亿，广告收入逆势增长</h3>
-                    <p>Google最新财报显示Gemini月活用户已达7.5亿人，打破"AI普及将损害搜索广告"的担忧，搜索广告收入反而增长17%。Google宣布2026年资本支出将翻倍至1750-1850亿美元，显示对AI基础设施的持续投入决心。</p>
-                    <span class="source">📍 来源: X @HaywaaWorldwide, @biztalkcafe, Nikkei</span>
-                    <div>
-                        <span class="tag">Google</span>
-                        <span class="tag">财报</span>
+                    <div class="news-title">5. Google Gemini月活7.5亿，广告收入逆势增长17%</div>
+                    <div class="news-content">
+                        尽管市场整体放缓，Google Gemini月活跃用户已达7.5亿，带动广告收入逆势增长17%。Gemini 3的视觉理解和多模态能力获得用户广泛认可。
                     </div>
+                    <div class="news-source">📍 来源：Google Investor Relations</div>
                 </div>
-                <div class="news-item">
-                    <h3>NVIDIA与OpenAI投资协议破裂，1000亿交易告吹</h3>
-                    <p>据传NVIDIA原计划向OpenAI投资1000亿美元的交易已破裂，目前修订为200亿美元投资提案。这反映出AI巨头间复杂的利益博弈关系。</p>
-                    <span class="source">📍 来源: X @HaywaaWorldwide</span>
-                    <div>
-                        <span class="tag">投资</span>
-                        <span class="tag">NVIDIA</span>
+
+                <div class="news-item x-hot">
+                    <div class="news-title"><span class="x-tag">X热议</span>NVIDIA与OpenAI千亿投资协议生变</div>
+                    <div class="news-content">
+                        黄仁勋确认2025年9月宣布的"最高1000亿美元滚动投资"协议并非具有约束力的承诺，目前双方尚未签署正式协议。该投资与AI系统部署的千兆瓦级规模挂钩，可逐步评估，目前据报道已陷入停滞。
                     </div>
+                    <div class="news-source">📍 来源：X @grok</div>
                 </div>
+
                 <div class="news-item">
-                    <h3>OpenAI vs Anthropic：广告模式之争</h3>
-                    <p>Anthropic在超级碗期间发布广告系列，嘲讽"带广告中断的AI"，承诺Claude将保持无广告。与此同时OpenAI正在测试ChatGPT广告。这标志着AI公司商业模式的根本分歧：订阅制 vs 广告模式。</p>
-                    <span class="source">📍 来源: X @benmoha, @ucstrategies, @tonysimons_</span>
-                    <div>
-                        <span class="tag">商业模式</span>
-                        <span class="tag">竞争</span>
+                    <div class="news-title">6. AI芯片初创公司Positron融资2.3亿美元</div>
+                    <div class="news-content">
+                        由Arm Holdings和卡塔尔投资局领投，Positron开发专注于AI推理操作的芯片，声称比NVIDIA芯片功耗更低。这是挑战NVIDIA主导地位的最新尝试。
                     </div>
+                    <div class="news-source">📍 来源：TechCrunch、X @QatarEconForum</div>
                 </div>
+
                 <div class="news-item">
-                    <h3>OpenAI招募数百名"前线部署工程师"争夺大企业客户</h3>
-                    <p>据The Information报道，OpenAI正在招聘数百名"前线部署工程师"(Forward Deployed Engineers)，专门为大企业客户提供定制化服务，意图加速商业化进程。</p>
-                    <span class="source">📍 来源: X @CHItraders, The Information</span>
-                    <div>
-                        <span class="tag">招聘</span>
-                        <span class="tag">企业市场</span>
+                    <div class="news-title">7. OpenAI大规模招聘前线部署工程师</div>
+                    <div class="news-content">
+                        OpenAI正在招募数百名前线部署工程师，旨在争夺企业客户市场。这是OpenAI从消费者向企业市场战略转型的重要信号。
                     </div>
+                    <div class="news-source">📍 来源：The Information、X热议</div>
                 </div>
             </div>
-
+            
             <!-- 政策/监管 -->
             <div class="section">
-                <h2>⚖️ 政策/监管</h2>
+                <h2 class="section-title">⚖️ 政策/监管</h2>
+                
                 <div class="news-item">
-                    <h3>联合国秘书长赞扬印度举办AI峰会</h3>
-                    <p>联合国秘书长Antonio Guterres赞扬印度通过举办峰会来领导应对人工智能挑战的努力，强调全球合作治理AI的重要性。</p>
-                    <span class="source">📍 来源: X @OmmcomNews</span>
-                    <div>
-                        <span class="tag">国际治理</span>
-                        <span class="tag">印度</span>
+                    <div class="news-title">8. 美国出口管制：延缓中国AI发展的唯一手段</div>
+                    <div class="news-content">
+                        专家分析认为，出口管制是美国政府延缓中国AI发展的主要杠杆。但DeepSeek、阿里巴巴、Moonshot等公司已发布具有竞争力的大语言模型，中美AI竞争持续升温。
                     </div>
+                    <div class="news-source">📍 来源：Poynter、Brookings Institution</div>
                 </div>
+
                 <div class="news-item">
-                    <h3>ChatGPT正式支持MCP Apps，AI工具生态迈向互操作</h3>
-                    <p>OpenAI宣布ChatGPT现已完全支持MCP(模型上下文协议)Apps，与Anthropic合作制定的规范使同一应用可在Claude和ChatGPT中运行，AI工具生态系统实现重大突破。</p>
-                    <span class="source">📍 来源: X @BadTechBandit, @OpenAIDevs</span>
-                    <div>
-                        <span class="tag">MCP协议</span>
-                        <span class="tag">标准化</span>
+                    <div class="news-title">9. 英国就业市场受AI冲击最严重，政府启动大规模培训计划</div>
+                    <div class="news-content">
+                        摩根士丹利研究显示，英国在AI工具采用方面失业人数超过新增岗位，情况比美国、日本、德国、澳大利亚更严重。<span class="highlight">27%的英国工人担心未来五年因工作被AI取代而失业。</span>英国政府计划到2030年培训1000万工人掌握基础AI技能。
                     </div>
+                    <div class="news-source">📍 来源：The Guardian、UK Government</div>
                 </div>
             </div>
-
+            
             <!-- 融合洞察 -->
-            <div class="insight-box">
-                <h2>💡 融合洞察</h2>
-                <div style="margin-top: 15px;">
-                    <h3 style="color: #ffd700; margin-bottom: 10px;">🎯 AI Agent正在重塑软件行业格局</h3>
-                    <p style="line-height: 1.8; opacity: 0.95;">
-                        Anthropic Claude Cowork引发的股市震荡标志着AI从"辅助工具"向"替代方案"的转变。华尔街首次用真金白银投票：按席位收费的SaaS模式面临根本性挑战。一个AI Agent可以完成过去需要多个软件和人工协作的任务，license数量的锐减将重塑整个软件行业的收入模式。
-                    </p>
-                    <h3 style="color: #ffd700; margin: 20px 0 10px;">⚔️ AI巨头竞争进入商业模式之争</h3>
-                    <p style="line-height: 1.8; opacity: 0.95;">
-                        OpenAI选择广告模式补贴免费用户，Anthropic坚持订阅制保持无广告体验。这不仅是定价策略的分歧，更是对用户关系本质的不同理解："谁是AI的真正付费者？"这个问题将决定AI产品的设计逻辑和用户体验。
-                    </p>
-                    <h3 style="color: #ffd700; margin: 20px 0 10px;">📊 市场悖论：AI既"威胁软件"又"利好芯片"</h3>
-                    <p style="line-height: 1.8; opacity: 0.95;">
-                        美银指出当前芯片抛售存在"内在矛盾"：市场不能同时认为AI对芯片"无用"(低ROI)又对软件"构成生存威胁"(过于高效)。云厂商资本支出增长69%证明AI基础设施建设仍在加速，短期恐慌与长期趋势之间的分歧创造了投资机会。
-                    </p>
+            <div class="section">
+                <h2 class="section-title">💡 融合洞察</h2>
+                
+                <div class="news-item">
+                    <div class="news-title">10. AI繁荣降温信号隐现，投资周期接近尾声</div>
+                    <div class="news-content">
+                        尽管股市整体表现强劲，但过去六个月AI相关股票大多落后。Anthropic法律工具的发布加剧了市场对软件服务行业被AI颠覆的担忧。训练前沿模型单次成本已达1-10亿美元，下一代可能达到50-100亿美元，初创公司难以竞争。
+                    </div>
+                    <div class="news-source">📍 来源：Bloomberg、X @SiteWarming</div>
+                </div>
+
+                <div class="news-item x-hot">
+                    <div class="news-title"><span class="x-tag">X热议</span>模型质量快速趋同，差异化竞争转向生态</div>
+                    <div class="news-content">
+                        X上热议：模型质量正在快速趋同，真正的差异化竞争现在转向：上下文长度、可靠性、工具集成、以及与工作流的匹配度。用户应该选择"适合自己用途的AI"而非"什么都能做的AI"。
+                    </div>
+                    <div class="news-source">📍 来源：X @TechBitHQ</div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">11. OpenAI与Anthropic广告模式之争</div>
+                    <div class="news-content">
+                        OpenAI在ChatGPT中引入广告以帮助抵消巨大的计算成本。这与NVIDIA合作伙伴关系密切相关，广告收入为维持免费层和扩展基础设施提供资金。业内认为这是AI商业化的新探索。
+                    </div>
+                    <div class="news-source">📍 来源：X @grok</div>
+                </div>
+            </div>
+            
+            <!-- 市场数据 -->
+            <div class="section">
+                <h2 class="section-title">📊 市场数据速览</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr><th>指标</th><th>数值</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Anthropic引发的市场抛售</td><td><strong>2850亿美元</strong></td></tr>
+                        <tr><td>NVIDIA拟投资OpenAI金额</td><td><strong>200亿美元</strong></td></tr>
+                        <tr><td>OpenAI本轮估值</td><td><strong>8300亿美元</strong></td></tr>
+                        <tr><td>Google Gemini月活用户</td><td><strong>7.5亿</strong></td></tr>
+                        <tr><td>DeepSeek V4开发成本</td><td><strong>约600万美元</strong></td></tr>
+                        <tr><td>前沿模型训练成本</td><td><strong>1-10亿美元/次</strong></td></tr>
+                        <tr><td>担忧失业的英国工人</td><td><strong>27%</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="section">
+                <div class="news-item" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border-left-color: #764ba2;">
+                    <div class="news-content" style="margin-bottom: 0;">
+                        <strong>📝 编辑备注：</strong>本早报融合2026年2月4-5日X(Twitter)实时热议与全网权威媒体报道。X动态提供前沿讨论视角，全网新闻提供深度背景分析。数据来源包括The Guardian、Reuters、Bloomberg、Google Blog、X平台热门讨论等。
+                    </div>
                 </div>
             </div>
         </div>
         
         <div class="footer">
-            <p>AI Daily Report · 每日为您精选全球人工智能动态</p>
-            <p style="margin-top: 10px; font-size: 0.75rem; opacity: 0.7;">
-                Generated by OpenClaw 🤖 · 数据来源: X/Twitter, Reuters, Bloomberg, Financial Times
-            </p>
+            <p>AI早报 · 每日为您精选全球人工智能动态</p>
+            <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">🐦 X + 🌐 全网融合 | Generated by OpenClaw 🤖</p>
         </div>
     </div>
 </body>
