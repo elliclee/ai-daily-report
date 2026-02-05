@@ -8,24 +8,21 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            font-family: "Google Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background: #f8f9fa;
-            color: #3c4043;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #fafafa;
+            color: #333;
             line-height: 1.6;
         }
         
         /* Header */
         .header {
-            background: white;
-            border-bottom: 1px solid #dadce0;
-            padding: 16px 24px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 24px;
         }
         
         .header-content {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
             display: flex;
             align-items: center;
@@ -33,131 +30,67 @@
         }
         
         .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 1.25rem;
-            font-weight: 500;
-            color: #1a73e8;
-        }
-        
-        .logo-icon {
-            width: 32px;
-            height: 32px;
-            background: linear-gradient(135deg, #1a73e8 0%, #4285f4 50%, #34a853 100%);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #222;
         }
         
         .header-date {
-            color: #5f6368;
+            color: #888;
             font-size: 0.9rem;
         }
         
-        /* Main Content */
+        /* Main */
         .main {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 32px 24px;
+            padding: 40px 24px;
         }
         
-        /* Hero Section */
+        /* Hero */
         .hero {
-            background: white;
-            border-radius: 16px;
-            padding: 32px;
-            margin-bottom: 24px;
-            box-shadow: 0 1px 2px rgba(60,64,67,0.1), 0 1px 3px rgba(60,64,67,0.08);
+            margin-bottom: 40px;
         }
         
-        .hero-title {
-            font-size: 2rem;
-            font-weight: 400;
-            color: #202124;
+        .hero h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #222;
             margin-bottom: 8px;
         }
         
-        .hero-subtitle {
-            color: #5f6368;
-            font-size: 1rem;
+        .hero p {
+            color: #666;
             margin-bottom: 24px;
         }
         
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: #e8f0fe;
-            color: #1967d2;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-        
-        /* Action Buttons */
-        .actions {
-            display: flex;
-            gap: 12px;
-            margin-top: 24px;
-        }
-        
         .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 24px;
-            border-radius: 24px;
-            font-size: 0.95rem;
-            font-weight: 500;
+            display: inline-block;
+            padding: 12px 28px;
+            background: #222;
+            color: #fff;
             text-decoration: none;
-            transition: all 0.2s;
-            cursor: pointer;
-            border: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.2s;
         }
         
-        .btn-primary {
-            background: #1a73e8;
-            color: white;
+        .btn:hover {
+            background: #444;
         }
         
-        .btn-primary:hover {
-            background: #1557b0;
-            box-shadow: 0 1px 3px rgba(60,64,67,0.3);
-        }
-        
-        .btn-secondary {
-            background: white;
-            color: #1a73e8;
-            border: 1px solid #dadce0;
-        }
-        
-        .btn-secondary:hover {
-            background: #f8f9fa;
-            border-color: #1a73e8;
-        }
-        
-        /* Section Cards */
+        /* Section */
         .section {
-            background: white;
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 16px;
-            box-shadow: 0 1px 2px rgba(60,64,67,0.1), 0 1px 3px rgba(60,64,67,0.08);
+            margin-bottom: 48px;
         }
         
         .section-title {
             font-size: 1.1rem;
-            font-weight: 500;
-            color: #202124;
+            font-weight: 600;
+            color: #222;
             margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #333;
         }
         
         /* News List */
@@ -168,176 +101,155 @@
         }
         
         .news-item {
-            padding: 16px;
-            border-radius: 12px;
-            background: #f8f9fa;
-            transition: all 0.2s;
-            border-left: 3px solid transparent;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            padding: 20px;
+            transition: border-color 0.2s;
         }
         
         .news-item:hover {
-            background: #e8f0fe;
-            border-left-color: #1a73e8;
+            border-color: #bbb;
         }
         
         .news-item.x-source {
-            border-left-color: #1da1f2;
-        }
-        
-        .news-item.x-source:hover {
-            background: #e3f2fd;
+            border-left: 4px solid #1da1f2;
         }
         
         .news-title {
-            font-size: 0.95rem;
+            font-size: 1rem;
             font-weight: 500;
-            color: #202124;
-            margin-bottom: 6px;
-            line-height: 1.4;
+            color: #222;
+            margin-bottom: 8px;
+            line-height: 1.5;
         }
         
         .news-meta {
             display: flex;
             align-items: center;
             gap: 10px;
-            font-size: 0.8rem;
-            color: #5f6368;
+            font-size: 0.85rem;
+            color: #888;
         }
         
         .tag {
-            display: inline-flex;
-            align-items: center;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 0.7rem;
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
             font-weight: 600;
         }
         
         .tag-x {
-            background: #e3f2fd;
-            color: #1976d2;
+            background: #e8f5fd;
+            color: #0c7abf;
         }
         
         .tag-web {
-            background: #e8f5e9;
-            color: #388e3c;
-        }
-        
-        /* Archive Section */
-        .archive-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-            gap: 12px;
-        }
-        
-        .archive-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 16px;
-            background: #f8f9fa;
-            border-radius: 12px;
-            text-decoration: none;
-            color: #5f6368;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.2s;
-            border: 1px solid transparent;
-        }
-        
-        .archive-item:hover {
-            background: #e8f0fe;
-            color: #1967d2;
-            border-color: #1a73e8;
-        }
-        
-        .archive-item.active {
-            background: #1a73e8;
-            color: white;
+            background: #f0f0f0;
+            color: #555;
         }
         
         /* Stats */
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
             gap: 16px;
         }
         
         .stat-card {
-            background: #f8f9fa;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
             padding: 20px;
-            border-radius: 12px;
             text-align: center;
         }
         
         .stat-value {
             font-size: 1.5rem;
-            font-weight: 500;
-            color: #1a73e8;
+            font-weight: 600;
+            color: #222;
             margin-bottom: 4px;
         }
         
         .stat-label {
             font-size: 0.85rem;
-            color: #5f6368;
+            color: #888;
+        }
+        
+        /* Archive */
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 12px;
+        }
+        
+        .archive-item {
+            display: block;
+            padding: 16px;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #555;
+            text-align: center;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .archive-item:hover {
+            border-color: #222;
+            color: #222;
+        }
+        
+        .archive-item.active {
+            background: #222;
+            color: #fff;
+            border-color: #222;
         }
         
         /* Footer */
         .footer {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 24px;
+            padding: 40px 24px;
             text-align: center;
-            color: #5f6368;
+            color: #999;
             font-size: 0.85rem;
-            border-top: 1px solid #dadce0;
+            border-top: 1px solid #e0e0e0;
         }
         
         .footer a {
-            color: #1a73e8;
+            color: #555;
             text-decoration: none;
         }
         
-        /* Responsive */
+        .footer a:hover {
+            color: #222;
+        }
+        
         @media (max-width: 600px) {
-            .main { padding: 16px; }
-            .hero { padding: 24px; }
-            .hero-title { font-size: 1.5rem; }
-            .actions { flex-direction: column; }
-            .btn { width: 100%; justify-content: center; }
-            .archive-grid { grid-template-columns: repeat(2, 1fr); }
+            .main { padding: 24px 16px; }
+            .hero h1 { font-size: 1.5rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="header-content">
-            <div class="logo">
-                <div class="logo-icon">🤖</div>
-                <span>AI Daily Report</span>
-            </div>
+            <div class="logo">AI Daily Report</div>
             <div class="header-date">2026年2月5日</div>
         </div>
     </header>
 
     <main class="main">
-        <!-- Hero -->
         <div class="hero">
-            <h1 class="hero-title">今日AI早报</h1>
-            <p class="hero-subtitle">融合 X 实时热议与全网权威报道</p>
-            <span class="hero-badge">🐦 X + 🌐 全网新闻</span>
-            
-            <div class="actions">
-                <a href="./archive/2026-02-05.html" class="btn btn-primary">
-                    📰 阅读完整早报
-                </a>
-                <a href="#archive" class="btn btn-secondary">
-                    📚 查看历史
-                </a>
-            </div>
+            <h1>今日AI早报</h1>
+            <p>融合 X 实时热议与全网权威报道</p>
+            <a href="./archive/2026-02-05.html" class="btn">阅读完整早报 →</a>
         </div>
 
-        <!-- Today's Highlights -->
         <div class="section">
             <h2 class="section-title">🔥 今日热点</h2>
             <div class="news-list">
@@ -379,7 +291,6 @@
             </div>
         </div>
 
-        <!-- Key Stats -->
         <div class="section">
             <h2 class="section-title">📊 关键数据</h2>
             <div class="stats-grid">
@@ -402,8 +313,7 @@
             </div>
         </div>
 
-        <!-- Archive -->
-        <div class="section" id="archive">
+        <div class="section">
             <h2 class="section-title">📚 历史归档</h2>
             <div class="archive-grid">
                 <a href="./archive/2026-02-05.html" class="archive-item active">2026-02-05</a>

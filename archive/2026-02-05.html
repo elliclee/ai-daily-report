@@ -8,20 +8,17 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            font-family: "Google Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background: #f8f9fa;
-            color: #3c4043;
-            line-height: 1.7;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #fafafa;
+            color: #333;
+            line-height: 1.8;
         }
         
         /* Header */
         .header {
-            background: white;
-            border-bottom: 1px solid #dadce0;
-            padding: 16px 24px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 24px;
         }
         
         .header-content {
@@ -33,257 +30,192 @@
         }
         
         .back-link {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: #1a73e8;
+            color: #555;
             text-decoration: none;
-            font-weight: 500;
             font-size: 0.95rem;
         }
         
-        .back-link:hover { text-decoration: underline; }
+        .back-link:hover { color: #000; }
         
-        .header-date {
-            color: #5f6368;
-            font-size: 0.9rem;
-        }
+        .header-date { color: #888; font-size: 0.9rem; }
         
         /* Main */
         .main {
             max-width: 800px;
             margin: 0 auto;
-            padding: 32px 24px;
-        }
-        
-        /* Title Section */
-        .title-section {
-            margin-bottom: 32px;
+            padding: 40px 24px;
         }
         
         .page-title {
-            font-size: 2rem;
-            font-weight: 400;
-            color: #202124;
-            margin-bottom: 12px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 8px;
         }
         
-        .fusion-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: #e8f0fe;
-            color: #1967d2;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
+        .subtitle {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 32px;
         }
         
         /* Section */
         .section {
-            background: white;
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 16px;
-            box-shadow: 0 1px 2px rgba(60,64,67,0.1);
+            margin-bottom: 48px;
         }
         
         .section-title {
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: #202124;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #222;
             margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #333;
         }
         
-        /* News Items */
+        /* News Item */
         .news-item {
-            padding: 20px;
-            border-radius: 12px;
-            background: #f8f9fa;
-            margin-bottom: 12px;
-            border-left: 3px solid #dadce0;
-            transition: all 0.2s;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 16px;
         }
         
         .news-item:last-child { margin-bottom: 0; }
         
-        .news-item:hover {
-            background: #f1f3f4;
-            border-left-color: #1a73e8;
-        }
-        
-        .news-item.x-hot {
-            border-left-color: #1da1f2;
-            background: linear-gradient(90deg, #f0f9ff 0%, #f8f9fa 100%);
-        }
-        
-        .news-item.x-hot:hover {
-            background: #e3f2fd;
-        }
-        
-        .news-header {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            margin-bottom: 10px;
+        .news-item.x-source {
+            border-left: 4px solid #1da1f2;
         }
         
         .news-title {
-            font-size: 1rem;
-            font-weight: 500;
-            color: #202124;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 12px;
             line-height: 1.5;
-            flex: 1;
         }
         
         .x-tag {
-            display: inline-flex;
-            align-items: center;
-            padding: 2px 8px;
-            background: #e3f2fd;
-            color: #1976d2;
-            border-radius: 12px;
-            font-size: 0.7rem;
+            display: inline-block;
+            background: #e8f5fd;
+            color: #0c7abf;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
             font-weight: 600;
-            white-space: nowrap;
+            margin-right: 8px;
         }
         
         .news-content {
-            color: #5f6368;
-            font-size: 0.95rem;
-            line-height: 1.7;
-            margin-bottom: 10px;
+            color: #444;
+            margin-bottom: 12px;
+            line-height: 1.8;
         }
         
         .highlight {
-            background: #fef3cd;
+            background: #fff3cd;
             padding: 2px 6px;
-            border-radius: 4px;
+            border-radius: 3px;
             font-weight: 500;
-            color: #856404;
         }
         
         .news-source {
-            font-size: 0.8rem;
-            color: #80868b;
+            font-size: 0.85rem;
+            color: #888;
             font-style: italic;
         }
         
-        /* Stats Table */
+        /* Table */
         .stats-table {
             width: 100%;
-            border-collapse: collapse;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            overflow: hidden;
         }
         
         .stats-table th {
+            background: #f5f5f5;
+            padding: 14px 20px;
             text-align: left;
-            padding: 12px 16px;
-            font-weight: 500;
-            color: #5f6368;
-            font-size: 0.9rem;
-            border-bottom: 1px solid #dadce0;
+            font-weight: 600;
+            color: #333;
+            border-bottom: 1px solid #e0e0e0;
         }
         
         .stats-table td {
-            padding: 14px 16px;
-            border-bottom: 1px solid #f1f3f4;
+            padding: 14px 20px;
+            border-bottom: 1px solid #f0f0f0;
         }
         
-        .stats-table tr:last-child td {
-            border-bottom: none;
-        }
+        .stats-table tr:last-child td { border-bottom: none; }
         
-        .stat-value {
-            font-weight: 500;
-            color: #1a73e8;
-        }
+        .stat-value { font-weight: 600; color: #222; }
         
         /* Note */
         .note-box {
-            background: #e8f0fe;
-            border-radius: 12px;
-            padding: 16px 20px;
-            margin-bottom: 20px;
-        }
-        
-        .note-box p {
-            color: #1967d2;
-            font-size: 0.9rem;
-            margin: 0;
+            background: #f9f9f9;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            padding: 20px;
+            color: #555;
+            font-size: 0.95rem;
         }
         
         /* Footer */
         .footer {
             max-width: 800px;
             margin: 0 auto;
-            padding: 24px;
+            padding: 40px 24px;
             text-align: center;
-            color: #5f6368;
+            color: #999;
             font-size: 0.85rem;
+            border-top: 1px solid #e0e0e0;
         }
         
-        /* Responsive */
         @media (max-width: 600px) {
-            .main { padding: 20px 16px; }
-            .page-title { font-size: 1.5rem; }
-            .section { padding: 20px; }
-            .news-item { padding: 16px; }
+            .main { padding: 24px 16px; }
+            .news-item { padding: 20px; }
         }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="header-content">
-            <a href="../index.html" class="back-link">← 返回首页</a>
+            <a href="../index.html" class="back-link">← 返回</a>
             <div class="header-date">2026年2月5日</div>
         </div>
     </header>
 
     <main class="main">
-        <div class="title-section">
-            <h1 class="page-title">AI早报融合版</h1>
-            <span class="fusion-badge">🐦 X热搜 + 🌐 全网新闻</span>
-        </div>
-
-        <div class="note-box">
-            <p>📊 本期融合 X(Twitter) 实时热议与全网权威媒体报道，呈现最全面的AI动态视角。X热议聚焦前沿讨论，全网新闻提供深度分析。</p>
-        </div>
+        <h1 class="page-title">AI早报融合版</h1>
+        <p class="subtitle">X热搜 + 全网新闻 · 2026年2月5日</p>
 
         <!-- 头条新闻 -->
         <div class="section">
             <h2 class="section-title">📰 头条新闻</h2>
             
             <div class="news-item">
-                <div class="news-header">
-                    <h3 class="news-title">Anthropic Claude Cowork 发布引发软件股大地震</h3>
-                </div>
+                <div class="news-title">1. Anthropic Claude Cowork 发布引发软件股大地震</div>
                 <div class="news-content">
-                    Anthropic发布面向法律部门的企业AI工具Claude Cowork，可自动化合同审查、NDA分类、合规流程等工作。发布24小时内，<span class="highlight">全球软件股蒸发2850亿美元市值</span>，Thomson Reuters(-18%)、Relx(-14%)、Wolters Kluwer(-13%)等数据服务商股价暴跌。
+                    Anthropic发布面向法律部门的企业AI工具Claude Cowork，可自动化合同审查、NDA分类、合规流程、法律简报等工作。该工具发布24小时内，<span class="highlight">全球软件股蒸发2850亿美元市值</span>，涉及公司包括：Pearson(-8%)、Relx(-14%)、Sage(-10%)、Wolters Kluwer(-13%)、伦敦证交所(-13%)、Experian(-7%)、Thomson Reuters(-18%)。投资者担忧AI工具将削弱传统数据服务商的利润空间，甚至完全替代它们。
                 </div>
                 <div class="news-source">📍 来源：The Guardian、Reuters、Bloomberg</div>
             </div>
             
-            <div class="news-item x-hot">
-                <div class="news-header">
-                    <span class="x-tag">X热议</span>
-                    <h3 class="news-title">DeepSeek V4 即将发布，成本仅9亿日元挑战GPT</h3>
-                </div>
+            <div class="news-item x-source">
+                <div class="news-title"><span class="x-tag">X热议</span>2. DeepSeek V4 即将发布，成本仅9亿日元挑战GPT</div>
                 <div class="news-content">
-                    据X热议，DeepSeek V4预计2月中旬发布，编码能力可能超越Claude和GPT。开发费用仅约9亿日元（约600万美元），而OpenAI投入数千亿日元。<span class="highlight">"AI开发需要巨额资金"的常识正在崩塌</span>，技术民主化正在削弱大企业的优势地位。
+                    据X热议，DeepSeek V4预计2月中旬发布，编码能力可能超越Claude和GPT。开发费用仅约9亿日元（约600万美元），而OpenAI投入数千亿日元。"AI开发需要巨额资金"的常识正在崩塌，技术民主化正在削弱大企业的优势地位。开源模型让任何人都能使用，大企业的护城河正在消失。
                 </div>
                 <div class="news-source">📍 来源：X @haruaixxx 等热议</div>
             </div>
 
             <div class="news-item">
-                <div class="news-header">
-                    <h3 class="news-title">NVIDIA拟200亿美元投资OpenAI</h3>
-                </div>
+                <div class="news-title">3. NVIDIA拟200亿美元投资OpenAI</div>
                 <div class="news-content">
-                    芯片巨头NVIDIA接近达成200亿美元投资OpenAI的交易，这将是NVIDIA史上最大单笔投资。OpenAI本轮融资目标超1000亿美元，估值达8300亿美元。黄仁勋表示这是"非常好的投资"，Amazon、SoftBank也参与本轮。
+                    芯片巨头NVIDIA接近达成200亿美元投资OpenAI的交易，这将是NVIDIA史上最大单笔投资。OpenAI本轮融资目标超1000亿美元，估值达8300亿美元。黄仁勋表示这是"非常好的投资"，Amazon、SoftBank也参与本轮。这一举动深化了芯片巨头与AI领军者的绑定关系。
                 </div>
                 <div class="news-source">📍 来源：Financial Times、WSJ、X @Dutch_Brat @OceanNewsUK</div>
             </div>
@@ -293,13 +225,10 @@
         <div class="section">
             <h2 class="section-title">🛠️ 新模型/工具</h2>
             
-            <div class="news-item x-hot">
-                <div class="news-header">
-                    <span class="x-tag">X热议</span>
-                    <h3 class="news-title">2026年2月AI模型排行榜出炉</h3>
-                </div>
+            <div class="news-item x-source">
+                <div class="news-title"><span class="x-tag">X热议</span>4. 2026年2月AI模型排行榜出炉</div>
                 <div class="news-content">
-                    <strong>全球Top 10 AI模型（2026年2月）：</strong><br>
+                    <strong>全球Top 10 AI模型（2026年2月）：</strong><br><br>
                     1. GPT-5.2 (OpenAI) - 速度与编码领先<br>
                     2. Gemini 3 Pro (Google) - 综合基准测试领先<br>
                     3. Claude 4.5 Opus (Anthropic) - 推理能力最强<br>
@@ -310,45 +239,47 @@
                     8. Mistral 3 (Mistral AI)<br>
                     9. Ernie 5.0 (百度)<br>
                     10. Cohere Command A<br><br>
-                    <span class="highlight">中国模型在数学和性价比方面表现突出，与美国的差距正在缩小。</span>
+                    美国模型在整体能力上领先（平均7个月优势），但中国模型在数学、性价比方面表现突出，且多为开源。差距正在快速缩小。
                 </div>
-                <div class="news-source">📍 来源：X @grok @TechBitHQ (BRACAI, Shakudo等基准)</div>
+                <div class="news-source">📍 来源：X @grok @TechBitHQ (BRACAI, Shakudo等基准测试)</div>
             </div>
 
             <div class="news-item">
-                <div class="news-header">
-                    <h3 class="news-title">OpenAI Codex macOS应用发布</h3>
-                </div>
+                <div class="news-title">5. OpenAI Codex macOS应用发布，GPT-5.2速度提升40%</div>
                 <div class="news-content">
-                    OpenAI发布Codex原生macOS应用，GPT-5.2速度提升40%。GitHub同时宣布整合Claude+Codex双AI助手，开发者可自由选择模型。
+                    OpenAI发布Codex原生macOS应用，开发者可直接在桌面使用AI编程助手。同时GPT-5.2模型速度提升40%，GitHub宣布整合Claude+Codex双AI助手，开发者可自由选择模型。这标志着AI编程助手从网页走向本地桌面。
                 </div>
                 <div class="news-source">📍 来源：OpenAI Blog、GitHub Blog</div>
             </div>
 
-            <div class="news-item x-hot">
-                <div class="news-header">
-                    <span class="x-tag">X热议</span>
-                    <h3 class="news-title">春节AI大战预告</h3>
-                </div>
+            <div class="news-item x-source">
+                <div class="news-title"><span class="x-tag">X热议</span>6. 春节AI大战预告：各大厂商准备放大招</div>
                 <div class="news-content">
-                    据传各大厂商将在春节期间发布：<br>
+                    据传各大厂商将在春节期间密集发布新品：<br><br>
                     • OpenAI: GPT-5.3<br>
                     • Anthropic: Claude Sonnet 5<br>
                     • Google: Gemini 3.5<br>
                     • xAI: Grok 5<br>
-                    • DeepSeek: R2
+                    • DeepSeek: R2<br><br>
+                    春节成为AI厂商发布窗口期，竞争激烈。
                 </div>
                 <div class="news-source">📍 来源：X @interjc</div>
             </div>
 
             <div class="news-item">
-                <div class="news-header">
-                    <h3 class="news-title">Anthropic降价应对开源竞争</h3>
-                </div>
+                <div class="news-title">7. Anthropic降价应对开源竞争</div>
                 <div class="news-content">
-                    Anthropic调整Claude Cowork定价策略：此前仅月付100美元的Max套餐可用，现在月付20美元的Pro套餐也可使用。此举被视为对DeepSeek等开源竞品的回应。
+                    Anthropic调整Claude Cowork定价策略：此前仅月付100美元的Max套餐可用，现在月付20美元的Pro套餐也可使用。此举被视为对DeepSeek等开源竞品的直接回应。AI行业价格战加剧，用户选择更多但决策更复杂。
                 </div>
                 <div class="news-source">📍 来源：X @doyamarke</div>
+            </div>
+
+            <div class="news-item x-source">
+                <div class="news-title"><span class="x-tag">X热议</span>8. Replit集成多模型，无需API密钥管理</div>
+                <div class="news-content">
+                    Replit提供第一方数据库连接器，并集成Anthropic (Claude)、OpenAI (GPT)、Google (Gemini)、Perplexity、xAI (Grok)等多模型。开发者无需管理API密钥，无需构建认证流程，大幅降低AI应用开发门槛。
+                </div>
+                <div class="news-source">📍 来源：X @pureleverage_ai</div>
             </div>
         </div>
         
@@ -357,44 +288,43 @@
             <h2 class="section-title">🏢 企业动态</h2>
             
             <div class="news-item">
-                <div class="news-header">
-                    <h3 class="news-title">Google Gemini月活7.5亿，广告收入逆势增长17%</h3>
-                </div>
+                <div class="news-title">9. Google Gemini月活7.5亿，广告收入逆势增长17%</div>
                 <div class="news-content">
-                    尽管市场整体放缓，Google Gemini月活跃用户已达7.5亿，带动广告收入逆势增长17%。Gemini 3的视觉理解和多模态能力获得用户广泛认可。
+                    尽管市场整体放缓，Google Gemini月活跃用户已达7.5亿，带动广告收入逆势增长17%。Gemini 3的视觉理解和多模态能力获得用户广泛认可。这是Google在AI竞赛中的重要里程碑。
                 </div>
                 <div class="news-source">📍 来源：Google Investor Relations</div>
             </div>
 
-            <div class="news-item x-hot">
-                <div class="news-header">
-                    <span class="x-tag">X热议</span>
-                    <h3 class="news-title">NVIDIA与OpenAI千亿投资协议生变</h3>
-                </div>
+            <div class="news-item x-source">
+                <div class="news-title"><span class="x-tag">X热议</span>10. NVIDIA与OpenAI千亿投资协议并非具有约束力</div>
                 <div class="news-content">
-                    黄仁勋确认2025年9月宣布的"最高1000亿美元滚动投资"协议并非具有约束力的承诺，目前双方尚未签署正式协议。该投资与AI系统部署的千兆瓦级规模挂钩，可逐步评估，目前据报道已陷入停滞。
+                    黄仁勋确认2025年9月宣布的"最高1000亿美元滚动投资"协议并非具有约束力的承诺，目前双方尚未签署正式协议。该投资与AI系统部署的千兆瓦级规模挂钩，可逐步评估。目前据报道已陷入停滞，但NVIDIA仍计划参与本轮融资。
                 </div>
                 <div class="news-source">📍 来源：X @grok</div>
             </div>
 
             <div class="news-item">
-                <div class="news-header">
-                    <h3 class="news-title">AI芯片初创公司Positron融资2.3亿美元</h3>
-                </div>
+                <div class="news-title">11. AI芯片初创公司Positron融资2.3亿美元挑战NVIDIA</div>
                 <div class="news-content">
-                    由Arm Holdings和卡塔尔投资局领投，Positron开发专注于AI推理操作的芯片，声称比NVIDIA芯片功耗更低。这是挑战NVIDIA主导地位的最新尝试。
+                    由Arm Holdings和卡塔尔投资局领投，Positron开发专注于AI推理操作的芯片，声称比NVIDIA芯片功耗更低。这是挑战NVIDIA主导地位的最新尝试，推理芯片市场竞争加剧。
                 </div>
-                <div class="news-source">📍 来源：TechCrunch、X @QatarEconForum</div>
+                <div class="news-source">📍 来源：TechCrunch、X @QatarEconForum @Swipeline_Media</div>
             </div>
 
             <div class="news-item">
-                <div class="news-header">
-                    <h3 class="news-title">OpenAI大规模招聘前线部署工程师</h3>
-                </div>
+                <div class="news-title">12. OpenAI大规模招聘前线部署工程师争夺企业客户</div>
                 <div class="news-content">
-                    OpenAI正在招募数百名前线部署工程师，旨在争夺企业客户市场。这是OpenAI从消费者向企业市场战略转型的重要信号。
+                    OpenAI正在招募数百名前线部署工程师，旨在争夺企业客户市场。这是OpenAI从消费者向企业市场战略转型的重要信号，与Anthropic在企业市场直接竞争。
                 </div>
                 <div class="news-source">📍 来源：The Information、X热议</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">13. Palantir Hivemind AI支持自主数据迁移</div>
+                <div class="news-content">
+                    Palantir Hivemind AI新增自主数据迁移功能，进一步降低企业使用AI的门槛。这是Palantir在企业AI市场的重要布局。
+                </div>
+                <div class="news-source">📍 来源：Palantir News</div>
             </div>
         </div>
         
@@ -403,21 +333,17 @@
             <h2 class="section-title">⚖️ 政策/监管</h2>
             
             <div class="news-item">
-                <div class="news-header">
-                    <h3 class="news-title">美国出口管制：延缓中国AI发展的唯一手段</h3>
-                </div>
+                <div class="news-title">14. 美国出口管制：延缓中国AI发展的唯一手段</div>
                 <div class="news-content">
-                    专家分析认为，出口管制是美国政府延缓中国AI发展的主要杠杆。但DeepSeek、阿里巴巴、Moonshot等公司已发布具有竞争力的大语言模型，中美AI竞争持续升温。
+                    专家分析认为，出口管制是美国政府延缓中国AI发展的主要杠杆。但DeepSeek、阿里巴巴、Moonshot等公司已发布具有竞争力的大语言模型，中美AI竞争持续升温。出口管制的效果正在递减。
                 </div>
                 <div class="news-source">📍 来源：Poynter、Brookings Institution</div>
             </div>
 
             <div class="news-item">
-                <div class="news-header">
-                    <h3 class="news-title">英国就业市场受AI冲击最严重</h3>
-                </div>
+                <div class="news-title">15. 英国就业市场受AI冲击最严重，政府启动大规模培训计划</div>
                 <div class="news-content">
-                    摩根士丹利研究显示，英国在AI工具采用方面失业人数超过新增岗位，情况比美国、日本、德国、澳大利亚更严重。<span class="highlight">27%的英国工人担心未来五年因工作被AI取代而失业。</span>英国政府计划到2030年培训1000万工人掌握基础AI技能。
+                    摩根士丹利研究显示，英国在AI工具采用方面失业人数超过新增岗位，情况比美国、日本、德国、澳大利亚等大型经济体更严重。<span class="highlight">27%的英国工人担心未来五年因工作被AI取代而失业。</span>伦敦市长警告AI可能摧毁伦敦大量工作岗位。英国政府计划到2030年培训1000万工人（包括内阁成员）掌握基础AI技能，同时承认"一些工作岗位将会消失"。
                 </div>
                 <div class="news-source">📍 来源：The Guardian、UK Government</div>
             </div>
@@ -428,34 +354,35 @@
             <h2 class="section-title">💡 融合洞察</h2>
             
             <div class="news-item">
-                <div class="news-header">
-                    <h3 class="news-title">AI繁荣降温信号隐现</h3>
-                </div>
+                <div class="news-title">16. AI繁荣降温信号隐现，投资周期接近尾声</div>
                 <div class="news-content">
-                    尽管股市整体表现强劲，但过去六个月AI相关股票大多落后。Anthropic法律工具的发布加剧了市场对软件服务行业被AI颠覆的担忧。训练前沿模型单次成本已达1-10亿美元，下一代可能达到50-100亿美元，初创公司难以竞争。
+                    尽管股市整体表现强劲，但过去六个月AI相关股票大多落后。Anthropic法律工具的发布加剧了市场对软件服务行业被AI颠覆的担忧。训练前沿模型单次成本已达1-10亿美元，下一代可能达到50-100亿美元，初创公司难以竞争。这不是"初创公司能参与的游戏" anymore。
                 </div>
                 <div class="news-source">📍 来源：Bloomberg、X @SiteWarming</div>
             </div>
 
-            <div class="news-item x-hot">
-                <div class="news-header">
-                    <span class="x-tag">X热议</span>
-                    <h3 class="news-title">模型质量快速趋同，差异化竞争转向生态</h3>
-                </div>
+            <div class="news-item x-source">
+                <div class="news-title"><span class="x-tag">X热议</span>17. 模型质量快速趋同，差异化竞争转向生态</div>
                 <div class="news-content">
-                    X上热议：模型质量正在快速趋同，真正的差异化竞争现在转向：上下文长度、可靠性、工具集成、以及与工作流的匹配度。用户应该选择"适合自己用途的AI"而非"什么都能做的AI"。
+                    X上热议：模型质量正在快速趋同，真正的差异化竞争现在转向：上下文长度、可靠性、工具集成、以及与工作流的匹配度。用户应该选择"适合自己用途的AI"而非"什么都能做的AI"。这是一个重要的使用范式转变。
                 </div>
                 <div class="news-source">📍 来源：X @TechBitHQ</div>
             </div>
 
             <div class="news-item">
-                <div class="news-header">
-                    <h3 class="news-title">OpenAI与Anthropic广告模式之争</h3>
-                </div>
+                <div class="news-title">18. OpenAI与Anthropic广告模式之争</div>
                 <div class="news-content">
-                    OpenAI在ChatGPT中引入广告以帮助抵消巨大的计算成本。这与NVIDIA合作伙伴关系密切相关，广告收入为维持免费层和扩展基础设施提供资金。业内认为这是AI商业化的新探索。
+                    OpenAI在ChatGPT中引入广告以帮助抵消巨大的计算成本。这与NVIDIA合作伙伴关系密切相关，广告收入为维持免费层和扩展基础设施提供资金。业内认为这是AI商业化的新探索，但用户接受度仍有待观察。
                 </div>
                 <div class="news-source">📍 来源：X @grok</div>
+            </div>
+
+            <div class="news-item x-source">
+                <div class="news-title"><span class="x-tag">X热议</span>19. 中国AI全球影响力持续上升</div>
+                <div class="news-content">
+                    DeepSeek R1/V3模型的发布成为转折点，美国公司越来越多地采用中国AI模型。中国正从开放AI模型到卫星技术 quietly 重写全球科技力量格局。Qwen、DeepSeek等模型在开发者社区获得广泛认可。
+                </div>
+                <div class="news-source">📍 来源：X @grok 热议</div>
             </div>
         </div>
         
@@ -495,7 +422,7 @@
                         <td style="text-align: right;" class="stat-value">1-10亿美元/次</td>
                     </tr>
                     <tr>
-                        <td>担忧失业的英国工人</td>
+                        <td>担忧失业的英国工人比例</td>
                         <td style="text-align: right;" class="stat-value">27%</td>
                     </tr>
                 </tbody>
@@ -504,7 +431,7 @@
         
         <div class="section">
             <div class="note-box">
-                <p>📝 <strong>编辑备注：</strong>本早报融合2026年2月4-5日X(Twitter)实时热议与全网权威媒体报道。X动态提供前沿讨论视角，全网新闻提供深度背景分析。</p>
+                📝 <strong>编辑备注：</strong>本早报融合2026年2月4-5日X(Twitter)实时热议与全网权威媒体报道。X动态提供前沿讨论视角，全网新闻提供深度背景分析。数据来源包括The Guardian、Reuters、Bloomberg、Google Blog、X平台热门讨论等。
             </div>
         </div>
     </main>
