@@ -3,156 +3,419 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 每日早报 | AI Daily Report</title>
+    <title>AI Daily Report - 每日AI早报</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-            color: #333;
+            font-family: "Google Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f8f9fa;
+            color: #3c4043;
+            line-height: 1.6;
         }
-        .container {
+        
+        /* Header */
+        .header {
+            background: white;
+            border-bottom: 1px solid #dadce0;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #1a73e8;
+        }
+        
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #1a73e8 0%, #4285f4 50%, #34a853 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1rem;
+        }
+        
+        .header-date {
+            color: #5f6368;
+            font-size: 0.9rem;
+        }
+        
+        /* Main Content */
+        .main {
             max-width: 900px;
             margin: 0 auto;
+            padding: 32px 24px;
+        }
+        
+        /* Hero Section */
+        .hero {
             background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            overflow: hidden;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 2px rgba(60,64,67,0.1), 0 1px 3px rgba(60,64,67,0.08);
         }
-        .header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 40px 30px;
-            text-align: center;
+        
+        .hero-title {
+            font-size: 2rem;
+            font-weight: 400;
+            color: #202124;
+            margin-bottom: 8px;
         }
-        .header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        .header p { opacity: 0.9; font-size: 1.1rem; }
-        .nav {
-            background: #f8f9fa;
-            padding: 15px 30px;
-            border-bottom: 1px solid #e9ecef;
-            display: flex;
-            justify-content: space-between;
+        
+        .hero-subtitle {
+            color: #5f6368;
+            font-size: 1rem;
+            margin-bottom: 24px;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
-        .nav a {
-            color: #2a5298;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .nav a:hover { color: #667eea; }
-        .latest-badge {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 5px 15px;
+            gap: 6px;
+            background: #e8f0fe;
+            color: #1967d2;
+            padding: 6px 14px;
             border-radius: 20px;
             font-size: 0.85rem;
-            font-weight: 600;
+            font-weight: 500;
         }
-        .content { padding: 0; }
-        .iframe-container {
-            width: 100%;
-            height: calc(100vh - 200px);
-            min-height: 600px;
+        
+        /* Action Buttons */
+        .actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
         }
-        iframe {
-            width: 100%;
-            height: 100%;
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+            cursor: pointer;
             border: none;
         }
-        .archive-section {
-            padding: 30px;
-            background: #f8f9fa;
-            border-top: 1px solid #e9ecef;
+        
+        .btn-primary {
+            background: #1a73e8;
+            color: white;
         }
-        .archive-title {
-            font-size: 1.2rem;
-            color: #2a5298;
-            margin-bottom: 15px;
+        
+        .btn-primary:hover {
+            background: #1557b0;
+            box-shadow: 0 1px 3px rgba(60,64,67,0.3);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #1a73e8;
+            border: 1px solid #dadce0;
+        }
+        
+        .btn-secondary:hover {
+            background: #f8f9fa;
+            border-color: #1a73e8;
+        }
+        
+        /* Section Cards */
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 2px rgba(60,64,67,0.1), 0 1px 3px rgba(60,64,67,0.08);
+        }
+        
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #202124;
+            margin-bottom: 16px;
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        .archive-list {
+        
+        /* News List */
+        .news-list {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            flex-direction: column;
+            gap: 12px;
         }
-        .archive-item {
-            background: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            text-decoration: none;
-            color: #555;
-            font-size: 0.9rem;
+        
+        .news-item {
+            padding: 16px;
+            border-radius: 12px;
+            background: #f8f9fa;
             transition: all 0.2s;
-            border: 1px solid #e9ecef;
+            border-left: 3px solid transparent;
         }
-        .archive-item:hover {
-            background: #667eea;
-            color: white;
-            border-color: #667eea;
-            transform: translateY(-2px);
+        
+        .news-item:hover {
+            background: #e8f0fe;
+            border-left-color: #1a73e8;
         }
-        .archive-item.active {
-            background: #2a5298;
-            color: white;
-            border-color: #2a5298;
+        
+        .news-item.x-source {
+            border-left-color: #1da1f2;
         }
-        .footer {
-            background: #1a1a2e;
-            color: #aaa;
-            text-align: center;
-            padding: 20px;
+        
+        .news-item.x-source:hover {
+            background: #e3f2fd;
+        }
+        
+        .news-title {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #202124;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+        
+        .news-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.8rem;
+            color: #5f6368;
+        }
+        
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+        
+        .tag-x {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .tag-web {
+            background: #e8f5e9;
+            color: #388e3c;
+        }
+        
+        /* Archive Section */
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 12px;
+        }
+        
+        .archive-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #5f6368;
             font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            border: 1px solid transparent;
         }
+        
+        .archive-item:hover {
+            background: #e8f0fe;
+            color: #1967d2;
+            border-color: #1a73e8;
+        }
+        
+        .archive-item.active {
+            background: #1a73e8;
+            color: white;
+        }
+        
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        
+        .stat-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #1a73e8;
+            margin-bottom: 4px;
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: #5f6368;
+        }
+        
+        /* Footer */
+        .footer {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px;
+            text-align: center;
+            color: #5f6368;
+            font-size: 0.85rem;
+            border-top: 1px solid #dadce0;
+        }
+        
+        .footer a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        
+        /* Responsive */
         @media (max-width: 600px) {
-            .header h1 { font-size: 1.8rem; }
-            .nav { padding: 15px 20px; }
-            .iframe-container { height: calc(100vh - 250px); }
+            .main { padding: 16px; }
+            .hero { padding: 24px; }
+            .hero-title { font-size: 1.5rem; }
+            .actions { flex-direction: column; }
+            .btn { width: 100%; justify-content: center; }
+            .archive-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🤖 AI 每日早报</h1>
-            <p>精选全球人工智能动态 · 每日更新</p>
-        </div>
-        
-        <div class="nav">
-            <div class="nav-links">
-                <span class="latest-badge">📅 最新：2026年2月5日</span>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">🤖</div>
+                <span>AI Daily Report</span>
             </div>
-            <div class="nav-links">
-                <a href="https://github.com/elliclee/ai-daily-report" target="_blank">📁 GitHub</a>
-                <a href="#archive">📚 历史归档</a>
-            </div>
+            <div class="header-date">2026年2月5日</div>
         </div>
-        
-        <div class="content">
-            <div class="iframe-container">
-                <iframe src="./archive/2026-02-05.html" title="最新AI早报"></iframe>
-            </div>
-        </div>
-        
-        <div class="archive-section" id="archive">
-            <div class="archive-title">📚 历史归档</div>
-            <div class="archive-list">
-                <a href="./archive/2026-02-05.html" class="archive-item active" target="_blank">2026-02-05</a>
+    </header>
+
+    <main class="main">
+        <!-- Hero -->
+        <div class="hero">
+            <h1 class="hero-title">今日AI早报</h1>
+            <p class="hero-subtitle">融合 X 实时热议与全网权威报道</p>
+            <span class="hero-badge">🐦 X + 🌐 全网新闻</span>
+            
+            <div class="actions">
+                <a href="./archive/2026-02-05.html" class="btn btn-primary">
+                    📰 阅读完整早报
+                </a>
+                <a href="#archive" class="btn btn-secondary">
+                    📚 查看历史
+                </a>
             </div>
         </div>
-        
-        <div class="footer">
-            <p>AI Daily Report · 每日为您精选全球人工智能动态</p>
-            <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">Generated by OpenClaw 🤖</p>
+
+        <!-- Today's Highlights -->
+        <div class="section">
+            <h2 class="section-title">🔥 今日热点</h2>
+            <div class="news-list">
+                <div class="news-item x-source">
+                    <div class="news-title">DeepSeek V4 即将发布，成本仅600万美元挑战GPT</div>
+                    <div class="news-meta">
+                        <span class="tag tag-x">X热议</span>
+                        <span>2月中旬发布 · 编码能力或超Claude/GPT</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-title">Anthropic Claude Cowork 发布引发2850亿美元抛售</div>
+                    <div class="news-meta">
+                        <span class="tag tag-web">全网新闻</span>
+                        <span>The Guardian、Reuters、Bloomberg</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-title">NVIDIA拟200亿美元投资OpenAI，估值达8300亿</div>
+                    <div class="news-meta">
+                        <span class="tag tag-web">全网新闻</span>
+                        <span>Financial Times、WSJ</span>
+                    </div>
+                </div>
+                <div class="news-item x-source">
+                    <div class="news-title">2026年2月AI模型Top 10排行榜出炉</div>
+                    <div class="news-meta">
+                        <span class="tag tag-x">X热议</span>
+                        <span>GPT-5.2、Gemini 3、Claude 4.5前三</span>
+                    </div>
+                </div>
+                <div class="news-item x-source">
+                    <div class="news-title">春节AI大战预告：GPT-5.3、Claude 5、Grok 5、DeepSeek R2</div>
+                    <div class="news-meta">
+                        <span class="tag tag-x">X热议</span>
+                        <span>各大厂商春节前后或将集中发布</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <!-- Key Stats -->
+        <div class="section">
+            <h2 class="section-title">📊 关键数据</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">2850亿</div>
+                    <div class="stat-label">Anthropic引发抛售(美元)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">8300亿</div>
+                    <div class="stat-label">OpenAI估值(美元)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">7.5亿</div>
+                    <div class="stat-label">Gemini月活用户</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">600万</div>
+                    <div class="stat-label">DeepSeek V4开发成本</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Archive -->
+        <div class="section" id="archive">
+            <h2 class="section-title">📚 历史归档</h2>
+            <div class="archive-grid">
+                <a href="./archive/2026-02-05.html" class="archive-item active">2026-02-05</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>AI Daily Report · 每日为您精选全球人工智能动态</p>
+        <p style="margin-top: 8px;">
+            <a href="https://github.com/elliclee/ai-daily-report" target="_blank">GitHub</a>
+        </p>
+    </footer>
 </body>
 </html>
