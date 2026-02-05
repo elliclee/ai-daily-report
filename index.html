@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI早报 | 2026年2月5日</title>
+    <title>AI 每日早报 | AI Daily Report</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -18,126 +13,98 @@
             padding: 20px;
             color: #333;
         }
-        
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             background: white;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             overflow: hidden;
         }
-        
         .header {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
             padding: 40px 30px;
             text-align: center;
         }
-        
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        .header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .header p { opacity: 0.9; font-size: 1.1rem; }
+        .nav {
+            background: #f8f9fa;
+            padding: 15px 30px;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
         }
-        
-        .header .date {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        .content {
-            padding: 30px;
-        }
-        
-        .section {
-            margin-bottom: 35px;
-        }
-        
-        .section-title {
-            font-size: 1.4rem;
+        .nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
+        .nav a {
             color: #2a5298;
-            border-left: 5px solid #667eea;
-            padding-left: 15px;
-            margin-bottom: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav a:hover { color: #667eea; }
+        .latest-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .content { padding: 0; }
+        .iframe-container {
+            width: 100%;
+            height: calc(100vh - 200px);
+            min-height: 600px;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .archive-section {
+            padding: 30px;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+        }
+        .archive-title {
+            font-size: 1.2rem;
+            color: #2a5298;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        
-        .news-item {
-            background: #f8f9fa;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-left: 4px solid #667eea;
-            transition: transform 0.2s, box-shadow 0.2s;
+        .archive-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
-        
-        .news-item:hover {
-            transform: translateX(5px);
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
-        }
-        
-        .news-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #1a1a2e;
-            margin-bottom: 10px;
-            line-height: 1.4;
-        }
-        
-        .news-content {
-            color: #555;
-            line-height: 1.7;
-            margin-bottom: 10px;
-        }
-        
-        .news-source {
-            font-size: 0.85rem;
-            color: #888;
-            font-style: italic;
-        }
-        
-        .highlight {
-            background: linear-gradient(120deg, #ffeaa7 0%, #ffeaa7 100%);
-            background-repeat: no-repeat;
-            background-size: 100% 40%;
-            background-position: 0 88%;
-            padding: 0 4px;
-            font-weight: 600;
-        }
-        
-        .stats-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
+        .archive-item {
             background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #555;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+            border: 1px solid #e9ecef;
         }
-        
-        .stats-table th {
+        .archive-item:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
+        .archive-item.active {
             background: #2a5298;
             color: white;
-            padding: 15px;
-            text-align: left;
+            border-color: #2a5298;
         }
-        
-        .stats-table td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .stats-table tr:last-child td {
-            border-bottom: none;
-        }
-        
-        .stats-table tr:hover {
-            background: #f8f9fa;
-        }
-        
         .footer {
             background: #1a1a2e;
             color: #aaa;
@@ -145,219 +112,46 @@
             padding: 20px;
             font-size: 0.9rem;
         }
-        
-        .tag {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 3px 10px;
-            border-radius: 15px;
-            font-size: 0.75rem;
-            margin-right: 8px;
-        }
-        
         @media (max-width: 600px) {
-            .header h1 {
-                font-size: 1.8rem;
-            }
-            .content {
-                padding: 20px;
-            }
-            .news-item {
-                padding: 15px;
-            }
+            .header h1 { font-size: 1.8rem; }
+            .nav { padding: 15px 20px; }
+            .iframe-container { height: calc(100vh - 250px); }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>🤖 AI早报融合版</h1>
-            <div class="date">2026年2月5日 · Thursday</div>
+            <h1>🤖 AI 每日早报</h1>
+            <p>精选全球人工智能动态 · 每日更新</p>
+        </div>
+        
+        <div class="nav">
+            <div class="nav-links">
+                <span class="latest-badge">📅 最新：2026年2月5日</span>
+            </div>
+            <div class="nav-links">
+                <a href="https://github.com/elliclee/ai-daily-report" target="_blank">📁 GitHub</a>
+                <a href="#archive">📚 历史归档</a>
+            </div>
         </div>
         
         <div class="content">
-            <!-- 头条新闻 -->
-            <div class="section">
-                <h2 class="section-title">📰 头条新闻</h2>
-                
-                <div class="news-item">
-                    <div class="news-title">1. Anthropic发布AI法律工具引发软件股抛售潮</div>
-                    <div class="news-content">
-                        Anthropic（Claude开发者）发布面向法律部门的企业AI工具，可自动化合同审查、NDA分类、合规流程、法律简报等工作。该工具发布引发欧洲软件和数据分析公司股价大幅下跌，涉及公司包括：Pearson(-8%)、Relx(-14%)、Sage(-10%)、Wolters Kluwer(-13%)、伦敦证交所(-13%)、Experian(-7%)、Thomson Reuters(-18%)。<span class="highlight">投资者担忧AI工具将削弱传统数据服务商的利润空间，甚至完全替代它们。</span>
-                    </div>
-                    <div class="news-source">📍 来源：The Guardian、Reuters、Bloomberg</div>
-                </div>
-                
-                <div class="news-item">
-                    <div class="news-title">2. SpaceX收购xAI，马斯克整合AI与太空野心</div>
-                    <div class="news-content">
-                        埃隆·马斯克宣布SpaceX已收购其AI初创公司xAI，交易估值创纪录。这一举动统一了马斯克的AI和太空雄心，将火箭卫星公司与AI模型开发商合并。<span class="highlight">合并后估值达1.25万亿美元。</span>
-                    </div>
-                    <div class="news-source">📍 来源：Reuters</div>
-                </div>
+            <div class="iframe-container">
+                <iframe src="./archive/2026-02-05.html" title="最新AI早报"></iframe>
             </div>
-            
-            <!-- 新模型/工具 -->
-            <div class="section">
-                <h2 class="section-title">🛠️ 新模型/工具</h2>
-                
-                <div class="news-item">
-                    <div class="news-title">3. Google 1月AI更新：个人智能时代开启</div>
-                    <div class="news-content">
-                        Google发布重大AI更新，核心包括：<br><br>
-                        <strong>• Gemini应用个人智能：</strong>可安全连接Gmail、Google Photos、YouTube等应用，提供个性化体验（美国Beta版）<br><br>
-                        <strong>• Gmail AI升级：</strong>免费提供"Help me write"功能，付费用户可使用Proofread高级校对<br><br>
-                        <strong>• Chrome Gemini 3：</strong>新增"auto browse"自动浏览功能，可处理复杂多步骤任务；支持Nano Banana图像转换<br><br>
-                        <strong>• AI教育工具：</strong>与Khan Academy合作开发识字工具，与牛津大学合作提供Gemini和NotebookLM<br><br>
-                        <strong>• Gemini 3 Flash Agentic Vision：</strong>从被动观察转为主动探索，提升视觉理解准确性
-                    </div>
-                    <div class="news-source">📍 来源：Google Blog</div>
-                </div>
-                
-                <div class="news-item">
-                    <div class="news-title">4. Microsoft Copilot遭遇困境</div>
-                    <div class="news-content">
-                        调查显示，Copilot作为主要选项被用户选择的比例正在下降，用户越来越倾向于使用ChatGPT和Gemini，原因包括更好的质量和用户体验。Copilot存在品牌定位混乱和互操作性问题。<span class="highlight">微软股价因AI业务增长放缓担忧下跌近3%。</span>
-                    </div>
-                    <div class="news-source">📍 来源：Seeking Alpha、WebProNews</div>
-                </div>
-            </div>
-            
-            <!-- 企业动态 -->
-            <div class="section">
-                <h2 class="section-title">🏢 企业动态</h2>
-                
-                <div class="news-item">
-                    <div class="news-title">5. Stargate项目：5000亿美元AI基础设施投资</div>
-                    <div class="news-content">
-                        OpenAI与Oracle、软银、MGX合作的Stargate项目计划投资5000亿美元建设美国AI基础设施，首期部署1000亿美元，目标新增10GW容量。Oracle计划2026年在AI基础设施上投入500亿美元，已建设211+数据中心，OCI Supercluster可扩展至131,072 GPU。
-                    </div>
-                    <div class="news-source">📍 来源：InvestorPlace、Data Center Knowledge、InterGlobix Magazine</div>
-                </div>
-                
-                <div class="news-item">
-                    <div class="news-title">6. Publicis 2026年AI收购预算9亿欧元</div>
-                    <div class="news-content">
-                        全球最大广告集团Publicis宣布2026年将拨款约9亿欧元（10.6亿美元）用于收购，重点关注AI驱动技术和数据资产。
-                    </div>
-                    <div class="news-source">📍 来源：Reuters</div>
-                </div>
-                
-                <div class="news-item">
-                    <div class="news-title">7. 加拿大医疗机构采用Oracle AI临床代理</div>
-                    <div class="news-content">
-                        多家加拿大医疗机构选择Oracle Health临床AI代理，帮助医生将更多时间用于患者护理。
-                    </div>
-                    <div class="news-source">📍 来源：Stock Titan</div>
-                </div>
-            </div>
-            
-            <!-- 政策/监管 -->
-            <div class="section">
-                <h2 class="section-title">⚖️ 政策/监管</h2>
-                
-                <div class="news-item">
-                    <div class="news-title">8. 美国出口管制：延缓中国AI发展的唯一手段</div>
-                    <div class="news-content">
-                        专家分析认为，出口管制是美国政府延缓中国AI发展的唯一杠杆。中国公司如DeepSeek、阿里巴巴、Moonshot已发布具有竞争力的大语言模型。<span class="highlight">中美AI竞争持续升温。</span>
-                    </div>
-                    <div class="news-source">📍 来源：Poynter</div>
-                </div>
-                
-                <div class="news-item">
-                    <div class="news-title">9. 英国就业市场受AI冲击最严重</div>
-                    <div class="news-content">
-                        摩根士丹利研究显示，英国在AI工具采用方面失业人数超过新增岗位，情况比美国、日本、德国、澳大利亚等大型经济体更严重。<span class="highlight">27%的英国工人担心未来五年因工作被AI取代而失业。</span>伦敦市长警告AI可能摧毁伦敦大量工作岗位。
-                    </div>
-                    <div class="news-source">📍 来源：The Guardian</div>
-                </div>
-                
-                <div class="news-item">
-                    <div class="news-title">10. 英国政府计划2030年前培训1000万工人</div>
-                    <div class="news-content">
-                        英国科技大臣Liz Kendall宣布计划到2030年培训多达1000万英国工人（包括内阁成员）掌握基础AI技能，同时承认"一些工作岗位将会消失"。
-                    </div>
-                    <div class="news-source">📍 来源：The Guardian</div>
-                </div>
-            </div>
-            
-            <!-- 融合洞察 -->
-            <div class="section">
-                <h2 class="section-title">💡 融合洞察</h2>
-                
-                <div class="news-item">
-                    <div class="news-title">11. AI繁荣降温信号隐现</div>
-                    <div class="news-content">
-                        尽管股市整体表现强劲，但AI相关股票大多落后。过去六个月，大型公开交易的AI股票表现不佳，投资周期可能已接近尾声。Anthropic法律工具的发布加剧了市场对软件服务行业被AI颠覆的担忧。
-                    </div>
-                    <div class="news-source">📍 来源：Bloomberg</div>
-                </div>
-                
-                <div class="news-item">
-                    <div class="news-title">12. 中国AI全球影响力持续上升</div>
-                    <div class="news-content">
-                        DeepSeek R1模型的发布成为转折点，美国公司越来越多地采用中国AI模型。中国正从开放AI模型到卫星技术 quietly 重写全球科技力量格局。
-                    </div>
-                    <div class="news-source">📍 来源：Business Insider、Dagens、Medium</div>
-                </div>
-                
-                <div class="news-item">
-                    <div class="news-title">13. AI Agentic Vision成为新趋势</div>
-                    <div class="news-content">
-                        Google在Gemini 3 Flash中引入的Agentic Vision代表了AI视觉理解的新范式——从"一次性静态观察"转变为"主动探索"，这将显著减少AI"幻觉"问题。
-                    </div>
-                    <div class="news-source">📍 来源：Google Blog</div>
-                </div>
-            </div>
-            
-            <!-- 市场数据 -->
-            <div class="section">
-                <h2 class="section-title">📊 市场数据速览</h2>
-                <table class="stats-table">
-                    <thead>
-                        <tr>
-                            <th>指标</th>
-                            <th>数值</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Anthropic引发的市场抛售</td>
-                            <td><strong>2850亿美元</strong></td>
-                        </tr>
-                        <tr>
-                            <td>SpaceX+xAI合并估值</td>
-                            <td><strong>1.25万亿美元</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Stargate项目投资规模</td>
-                            <td><strong>5000亿美元</strong></td>
-                        </tr>
-                        <tr>
-                            <td>数据中心ASIC芯片TAM</td>
-                            <td><strong>500-700亿美元</strong></td>
-                        </tr>
-                        <tr>
-                            <td>担忧失业的英国工人比例</td>
-                            <td><strong>27%</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            <div class="section">
-                <div class="news-item" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border-left-color: #764ba2;">
-                    <div class="news-content" style="margin-bottom: 0;">
-                        <strong>📝 编辑备注：</strong>本早报基于2026年2月4-5日最新资讯整理，涵盖全球AI产业核心动态。信息来源包括The Guardian、Reuters、Bloomberg、Google Blog、Seeking Alpha等权威媒体。
-                    </div>
-                </div>
+        </div>
+        
+        <div class="archive-section" id="archive">
+            <div class="archive-title">📚 历史归档</div>
+            <div class="archive-list">
+                <a href="./archive/2026-02-05.html" class="archive-item active" target="_blank">2026-02-05</a>
             </div>
         </div>
         
         <div class="footer">
-            <p>AI早报 · 每日为您精选全球人工智能动态</p>
-            <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">Generated on 2026-02-05</p>
+            <p>AI Daily Report · 每日为您精选全球人工智能动态</p>
+            <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">Generated by OpenClaw 🤖</p>
         </div>
     </div>
 </body>
