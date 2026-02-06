@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Daily Report | AI日报融合版 - 2026年2月5日</title>
+  <title>AI Daily Report | AI日报融合版 - 2026年2月6日</title>
   <meta name="description" content="汇聚全球人工智能领域最新动态、技术突破与行业洞察">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,25 +42,21 @@
     .news-source { font-size: 12px; color: #9a9590; }
     .news-source a { color: #2563eb; text-decoration: none; }
     .news-source a:hover { text-decoration: underline; }
-    .market-table { width: 100%; border-collapse: collapse; font-size: 14px; background: var(--card); border-radius: 8px; overflow: hidden; }
-    .market-table th, .market-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); }
-    .market-table th { font-weight: 500; color: var(--muted-foreground); font-size: 12px; text-transform: uppercase; letter-spacing: 0.03em; }
-    .market-table tr:last-child td { border-bottom: none; }
-    .market-table td:last-child { text-align: right; font-weight: 500; }
-    .market-note { font-size: 12px; color: #9a9590; margin-top: 16px; line-height: 1.6; }
+    .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0; }
+    .stat-card { background: var(--card); padding: 20px; border-radius: 8px; text-align: center; }
+    .stat-card .number { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 600; color: var(--accent); }
+    .stat-card .label { font-size: 12px; color: var(--muted-foreground); margin-top: 4px; }
     .archive { padding-top: 32px; border-top: 1px solid var(--border); margin-top: 48px; }
     .archive-title { font-size: 14px; font-weight: 500; margin-bottom: 16px; }
     .archive-links { display: flex; flex-wrap: wrap; gap: 8px 24px; }
     .archive-links a { font-size: 14px; color: #2563eb; text-decoration: none; }
     .archive-links a:hover { text-decoration: underline; }
     footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: #9a9590; }
-    footer p { margin-bottom: 4px; }
-    footer a { color: #2563eb; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
     @media (max-width: 640px) {
       .container { padding: 32px 16px 48px; }
       .page-title h1 { font-size: 26px; }
       .news-item h3 { font-size: 16px; }
+      .stats-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -68,7 +64,7 @@
   <div class="container">
     <header>
       <a href="/" class="logo">AI Daily Report</a>
-      <span class="date">2026年2月5日</span>
+      <span class="date">2026年2月6日</span>
     </header>
     
     <div class="page-title">
@@ -81,56 +77,36 @@
       <h2 class="section-title">头条新闻</h2>
       
       <article class="news-item">
-        <h3><span class="news-tag">X热议</span>Anthropic Claude Cowork引发"SaaS末日"恐慌，全球软件股市值蒸发约3000亿美元</h3>
-        <p>Anthropic发布Claude Cowork插件系统，可自动化法律审查、销售营销、财务工作流等核心企业任务。这直接冲击了传统SaaS商业模式，引发全球软件股抛售潮——伦敦证交所集团股价两日暴跌约20%，印度IT股集体下挫（Infosys跌7.3%、TCS跌6%），多家投行将此事件标记为"SaaSpocalypse"（SaaS末日）。与聊天机器人不同，Claude Cowork能在企业系统内执行端到端的完整专业工作流。</p>
-        <p class="news-source">via <a href="https://x.com/StratyQ/status/2019307701151404220">X @StratyQ</a>、<a href="https://x.com/TheBean_media/status/2019316788253847821">X @TheBean_media</a>、<a href="https://x.com/nucleusnewss/status/2019304809007137151">X @nucleusnewss</a>、<a href="https://x.com/grok/status/2019307478941405646">X @grok</a></p>
+        <h3><span class="news-tag">投资</span>Google母公司Alphabet宣布2026年AI支出翻倍至1850亿美元</h3>
+        <p>Alphabet计划2026年资本支出达1750-1850亿美元，是2025年支出的两倍以上，主要用于Google DeepMind的AI计算能力和云服务客户需求。尽管Q4财报超预期，投资者对巨额支出持谨慎态度。</p>
+        <p class="news-source">via CNBC, NYTimes</p>
       </article>
       
       <article class="news-item">
-        <h3><span class="news-tag">X热议</span>Anthropic与OpenAI超级碗广告大战升级</h3>
-        <p>Anthropic在超级碗期间投放广告，讽刺OpenAI和ChatGPT会在对话中插入侵入式广告，同时宣传Claude将保持无广告体验。Sam Altman回应称广告很有趣，但指责其"不诚实"——OpenAI最重要的广告原则正是不会这样做。Altman强调OpenAI致力于让AI免费惠及更多人，ChatGPT的免费用户已超过Claude的总用户数；同时批评Anthropic针对富人提供昂贵产品，并试图控制AI使用（如封锁竞争对手）。OpenAI的广告则主打Codex编程助手，已有50万次下载。</p>
-        <p class="news-source">via <a href="https://x.com/grok/status/2019319699364823237">X @grok</a>、<a href="https://x.com/sama">X @sama</a>、<a href="https://x.com/devua_official/status/2019319696122909031">X @devua_official</a></p>
+        <h3><span class="news-tag">市场</span>Nvidia-OpenAI千亿美元交易告吹？</h3>
+        <p>去年9月宣布的Nvidia向OpenAI投资1000亿美元（用于购买Nvidia芯片）的循环交易可能取消。黄仁勋称交易"非约束性""未最终确定"；OpenAI reportedly对Nvidia高端AI芯片不满，寻求替代方案。Nvidia股价本周下跌约10%。</p>
+        <p class="news-source">via The Guardian, WSJ</p>
       </article>
       
       <article class="news-item">
-        <h3><span class="news-tag">X热议</span>NVIDIA即将完成对OpenAI 200亿美元投资</h3>
-        <p>NVIDIA接近完成对OpenAI的200亿美元投资，这将是NVIDIA史上最大单笔投资，但远低于此前传闻的1000亿美元。黄仁勋澄清称，2025年9月宣布的"最高1000亿美元滚动投资"并非具有约束力的承诺。OpenAI本轮融资目标超过1000亿美元，估值已达8300亿美元，Amazon和SoftBank也参与投资。这笔交易将深化芯片巨头与AI领军者的绑定关系。</p>
-        <p class="news-source">via <a href="https://x.com/SGUOIS/status/2019275759303438822">X @SGUOIS</a>、<a href="https://x.com/SwissCognitive/status/2019279868198858961">X @SwissCognitive</a>、<a href="https://x.com/TheFinancialD/status/2019259761087152262">X @TheFinancialD</a>、<a href="https://x.com/grok/status/2019184854005321973">X @grok</a></p>
-      </article>
-      
-      <article class="news-item">
-        <h3>AI驱动的裁员潮蔓延，Pinterest和Dow明确归因于AI转型</h3>
-        <p>越来越多的公司将裁员归因于AI转型。Pinterest和Dow上个月宣布裁员时，明确提到部分原因是转向人工智能。这一趋势标志着企业正加大对AI的投资，同时精简人力资源，AI替代效应从理论走向现实。CBS News报道指出，AI正在从"辅助工具"转变为"人力替代者"。</p>
-        <p class="news-source">via <a href="https://www.cbsnews.com/news/ai-layoffs-2026-artificial-intelligence-amazon-pinterest/">CBS News</a></p>
+        <h3><span class="news-tag">财报</span>Amazon AWS Q4财报亮眼，与OpenAI达成380亿美元云服务承诺</h3>
+        <p>AWS Q4营收355.8亿美元，同比增长24%，超出分析师预期的349.3亿美元。营业利润124.7亿美元，利润率35%。与OpenAI达成380亿美元云服务承诺。竞争态势：Google Cloud增速48%，Microsoft Azure增速39%。</p>
+        <p class="news-source">via CNBC, Reuters</p>
       </article>
     </section>
     
-    <!-- 新模型与工具 -->
+    <!-- 新模型与技术 -->
     <section>
-      <h2 class="section-title">新模型与工具</h2>
+      <h2 class="section-title">新模型与技术</h2>
       
       <article class="news-item">
-        <h3><span class="news-tag">X热议</span>Xcode深度集成OpenAI与Anthropic，推出智能编程代理功能</h3>
-        <p>Apple的Xcode开发环境正在向智能编程方向迈进，深度集成Anthropic的Claude Agent和OpenAI的Codex，为开发者提供 agentic coding 能力。这标志着主流开发工具正全面拥抱AI辅助编程，开发者可直接在IDE中调用多模型能力。</p>
-        <p class="news-source">via <a href="https://x.com/TechoFlow/status/2019320125355122710">X @TechoFlow</a></p>
+        <h3><span class="news-tag">AWS</span>Amazon Nova Forge正式上线</h3>
+        <p>AWS Q4推出Nova Forge服务，让客户在模型训练阶段即可访问Amazon生成式AI模型进行高级定制。年费10万美元，面向需要深度定制的企业客户。</p>
       </article>
       
       <article class="news-item">
-        <h3><span class="news-tag">X热议</span>2026年2月顶级实时对话AI模型榜单发布</h3>
-        <p>针对低延迟、自然对话和客户支持场景，当前排名前十的实时对话AI模型包括：Google Gemini 3 Flash/Pro、xAI Grok 4.1、OpenAI GPT-5.2/5.2-mini、Anthropic Claude 4.5 Haiku/Sonnet、Meta Llama 4 Maverick、DeepSeek V3.2（优化推理）、阿里巴巴Qwen 3系列、Mistral Ministral/Codestral变体、Cohere Command R+，以及Groq托管的Llama/Qwen快速版本。</p>
-        <p class="news-source">via <a href="https://x.com/Leapofcode/status/2019316801210052804">X @Leapofcode</a></p>
-      </article>
-      
-      <article class="news-item">
-        <h3>Perplexity发布开源基准测试DRACO，评估AI深度研究代理</h3>
-        <p>Perplexity推出名为DRACO的开源基准测试框架，专门用于测试AI深度研究代理的能力。这一举措有望推动AI研究代理的标准化评估，为行业提供更可靠的性能对比工具。</p>
-        <p class="news-source">via <a href="https://x.com/News9Tweets/status/2019320148721823858">X @News9Tweets</a></p>
-      </article>
-      
-      <article class="news-item">
-        <h3><span class="news-tag">X热议</span>Google Gemini月活突破7.5亿，每分钟处理超100亿tokens</h3>
-        <p>Google Gemini月活跃用户已达7.5亿，每分钟处理超过100亿tokens。Alphabet年度营收首次突破4000亿美元，搜索业务同比增长17%，YouTube营收超600亿美元，Cloud业务营收超700亿美元且同比增长48%。这表明Gemini已成为Google生态系统的核心增长引擎。</p>
-        <p class="news-source">via <a href="https://x.com/trader2396/status/2019320197136720025">X @trader2396</a></p>
+        <h3><span class="news-tag">太空</span>NASA毅力号火星车首次AI自主驾驶</h3>
+        <p>NASA毅力号火星车首次使用AI而非人工操作员规划火星行驶路线。配备视觉能力的AI分析图像和地形数据，标志着太空探索AI化的重要里程碑。</p>
       </article>
     </section>
     
@@ -139,129 +115,62 @@
       <h2 class="section-title">企业动态</h2>
       
       <article class="news-item">
-        <h3>印度IT公司受Anthropic工具冲击，Nifty IT指数下跌6%</h3>
-        <p>Anthropic的Claude Cowork已对传统印度IT外包公司造成冲击，Nifty IT指数下跌5.9-6.3%，Infosys跌7.3%，TCS跌5.8-7%。分析师预测Google Gemini和OpenAI的类似产品将带来更大规模的市场重塑。不过，摩根大通和Cognizant等专家认为市场反应过度，AI可能创造新的AI集成工作岗位。</p>
-        <p class="news-source">via <a href="https://x.com/grok/status/2019307478941405646">X @grok</a>、<a href="https://x.com/SrinivasanSS52/status/2019315709738905915">X @SrinivasanSS52</a></p>
+        <h3><span class="news-tag">市场震荡</span>软件股遭AI恐慌抛售，三个月市值蒸发30%</h3>
+        <p>过去三个月软件板块市值蒸发30%，投资者担忧AI工具将颠覆传统软件公司。Salesforce股价2026年已下跌17%，创2023年以来最大月度跌幅。分析师认为这是软件行业"最令人兴奋的时刻"，AI既是威胁也是机遇。</p>
       </article>
       
       <article class="news-item">
-        <h3>Publicis集团2026年将投资9亿欧元收购AI技术和数据资产</h3>
-        <p>全球最大广告集团Publicis宣布，计划在2026年投入约9亿欧元（约10.6亿美元）用于收购AI驱动的技术和数据资产，显示出广告行业对AI能力的战略重视。这也是广告业应对AI颠覆的主动布局。</p>
-        <p class="news-source">via <a href="https://www.reuters.com/business/media-telecom/ai-concerns-pummel-european-software-stocks-2026-02-03/">Reuters</a></p>
-      </article>
-      
-      <article class="news-item">
-        <h3>Alphabet宣布2026年资本支出1800亿美元，打破Big Tech纪录</h3>
-        <p>Alphabet宣布2026年资本支出将达到1800亿美元，远超分析师预期的1195亿美元。财报电话会上，Google展示了Gemini 3系列模型的强劲增长势头。尽管业绩超预期，股价 initially 下跌6%后收复失地，显示出市场对AI投资的复杂情绪。</p>
-        <p class="news-source">via <a href="https://x.com/0xCaptainLevi/status/2019296603660775542">X @0xCaptainLevi</a>、<a href="https://x.com/thunhoon1/status/2019321948556439747">X @thunhoon1</a></p>
+        <h3><span class="news-tag">投资</span>Meta 2026年资本支出预期：1150-1350亿美元</h3>
+        <p>几乎比2024年（722亿美元）翻倍，主要用于AI基础设施建设。</p>
       </article>
     </section>
     
-    <!-- 政策监管 -->
+    <!-- 关键数据 -->
     <section>
-      <h2 class="section-title">政策监管</h2>
-      
-      <article class="news-item">
-        <h3>英国发布年度AI安全报告：深度伪造和AI伴侣成主要关切</h3>
-        <p>英国政府发布的最新AI安全年度报告强调，深度伪造技术正在快速传播，AI伴侣应用日益普及，引发社会担忧。报告同时审视了AI模型能力的快速增长、网络攻击风险和就业市场扰乱等问题。年度审查凸显了AI能力提升带来的多方面安全挑战。</p>
-        <p class="news-source">via <a href="https://www.theguardian.com/technology/2026/feb/03/deepfakes-ai-companions-artificial-intelligence-safety-report">The Guardian</a></p>
-      </article>
-      
-      <article class="news-item">
-        <h3>联合国秘书长赞扬印度在AI全球治理中的领导作用</h3>
-        <p>联合国秘书长安东尼奥·古特雷斯赞扬印度在应对人工智能挑战方面发挥的领导作用。印度AI影响力峰会将于2026年2月16日至20日在新德里举行，届时将汇集全球AI政策制定者和专家。这是发展中国家在AI治理领域话语权提升的重要信号。</p>
-        <p class="news-source">via <a href="https://x.com/DDIndialive/status/2019320462300598333">X @DDIndialive</a></p>
-      </article>
+      <h2 class="section-title">关键数据</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="number">$175-185B</div>
+          <div class="label">Alphabet 2026年AI投资</div>
+        </div>
+        <div class="stat-card">
+          <div class="number">$100B</div>
+          <div class="label">Nvidia-OpenAI潜在交易</div>
+        </div>
+        <div class="stat-card">
+          <div class="number">+24%</div>
+          <div class="label">AWS Q4营收增长</div>
+        </div>
+        <div class="stat-card">
+          <div class="number">-30%</div>
+          <div class="label">软件板块3个月跌幅</div>
+        </div>
+      </div>
     </section>
     
-    <!-- 融合洞察 -->
+    <!-- 洞察 -->
     <section>
-      <h2 class="section-title">融合洞察</h2>
-      
-      <article class="news-item">
-        <h3><span class="news-tag">X热议</span>"这不是抛售，是轮动"——AI时代的资本重新配置</h3>
-        <p>X用户@0xCaptainLevi分析指出，近两日约1万亿美元从软件和服务股中蒸发，但这不是全面抛售，而是资本轮动。资金正从AI威胁的业务流向AI无法触及的领域——制药、能源、国防、工业。纳斯达克跌1.5%、标普跌0.5%，但道指接近历史新高；欧洲指数创历史新高。Palantir跌11%，AMD跌17%（尽管CEO称需求"火热"）。与此同时，Eli Lilly因业绩超预期飙升10%，市值重回1万亿美元以上。"AI提升所有船只"的投资论已死，投资者正在区分"被AI增强"和"被AI颠覆"的企业。</p>
-        <p class="news-source">via <a href="https://x.com/0xCaptainLevi/status/2019296603660775542">X @0xCaptainLevi</a></p>
-      </article>
-      
-      <article class="news-item">
-        <h3>2026年：AI从炒作走向实用主义</h3>
-        <p>TechCrunch分析指出，2026年将是AI从炒作期进入务实应用的关键年份。世界模型（World Models）成为新热点，LeCun离开Meta创立自己的世界模型实验室，寻求50亿美元估值。Google DeepMind持续推进Genie项目，显示出世界模型可能成为通往AGI的新路径。AI正在从"聊天工具"进化为"真正的同事"。</p>
-        <p class="news-source">via <a href="https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/">TechCrunch</a></p>
-      </article>
-      
-      <article class="news-item">
-        <h3>西方科技公司悄然采用中国开源模型，差距正在缩小</h3>
-        <p>MIT Technology Review预测，2026年将看到更多硅谷应用基于中国开源模型构建。中国AI发布与西方前沿模型的差距正从数月缩短至数周，有时甚至更短。DeepSeek、阿里巴巴、Moonshot等中国公司已发布具有竞争力的大语言模型，美国公司越来越多地采用中国AI模型。</p>
-        <p class="news-source">via <a href="https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/">MIT Technology Review</a></p>
-      </article>
-      
-      <article class="news-item">
-        <h3><span class="news-tag">X热议</span>开发者对高端AI订阅的选择困境</h3>
-        <p>X上开发者热议月付300美元的高端AI订阅选择：OpenAI"氛围不对"、Cursor可使用任意模型但限额消耗过快、Gemini还不够成熟、Anthropic Claude Code每日使用体验良好但Artifacts功能出色，成为最有希望的选择。这反映了高端AI产品竞争进入关键阶段，用户体验和性价比成为决胜因素。</p>
-        <p class="news-source">via <a href="https://x.com/jamesvanderhaak/status/2019316419058671883">X @jamesvanderhaak</a></p>
-      </article>
+      <h2 class="section-title">今日洞察</h2>
+      <div class="news-item" style="border-bottom: none;">
+        <p><strong>投资狂潮</strong>：科技巨头2026年AI资本支出集体进入"翻倍模式"，军备竞赛白热化</p>
+        <p><strong>供应链博弈</strong>：OpenAI寻求Nvidia芯片替代方案，AI芯片市场格局或生变</p>
+        <p><strong>市场焦虑</strong>：AI颠覆论引发软件股抛售，但长期看AI化转型是必经之路</p>
+        <p><strong>云战争</strong>：Google Cloud增速领跑，AWS面临AI服务竞争压力</p>
+      </div>
     </section>
     
-    <!-- 市场数据速览 -->
-    <section>
-      <h2 class="section-title">市场数据速览</h2>
-      
-      <table class="market-table">
-        <thead>
-          <tr>
-            <th>指标</th>
-            <th>数值</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Claude Cowork引发的软件股市值蒸发</td>
-            <td>约3000亿美元</td>
-          </tr>
-          <tr>
-            <td>NVIDIA拟投资OpenAI金额</td>
-            <td>200亿美元</td>
-          </tr>
-          <tr>
-            <td>OpenAI本轮估值</td>
-            <td>8300亿美元</td>
-          </tr>
-          <tr>
-            <td>Google Gemini月活用户</td>
-            <td>7.5亿+</td>
-          </tr>
-          <tr>
-            <td>Gemini每分钟处理tokens</td>
-            <td>100亿+</td>
-          </tr>
-          <tr>
-            <td>Alphabet 2026年资本支出</td>
-            <td>1800亿美元</td>
-          </tr>
-          <tr>
-            <td>印度Nifty IT指数跌幅</td>
-            <td>~6%</td>
-          </tr>
-        </tbody>
-      </table>
-      
-      <p class="market-note">注：数据来源于X平台热议、Reuters、The Guardian、CBS News等公开报道。市场数据实时变动，仅供参考。</p>
-    </section>
-    
-    <!-- 历史归档 -->
+    <!-- 归档 -->
     <div class="archive">
-      <h3 class="archive-title">往日归档</h3>
+      <h3 class="archive-title">历史归档</h3>
       <div class="archive-links">
-        <a href="./2026-02-05.html" style="color: var(--foreground); font-weight: 500;">2026.02.05</a>
+        <a href="archive/2026-02-05.html">2026年2月5日</a>
       </div>
     </div>
     
     <footer>
-      <p>2026.02.05</p>
-      <p>AI Daily Report | AI日报融合版</p>
-      <p><a href="https://github.com/elliclee/ai-daily-report">GitHub</a></p>
+      <p>AI早报由AI自动生成 · 每日更新</p>
+      <p style="margin-top: 8px;">数据来源：CNBC, Reuters, NYTimes, The Guardian</p>
     </footer>
   </div>
-<div style="text-align:center;margin-top:20px;"><a href="2026-02-06.html" style="color:#8b7355;">2026年2月6日 →</a></div></body>
+</body>
 </html>
