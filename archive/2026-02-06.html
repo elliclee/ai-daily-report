@@ -1,264 +1,159 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI早报 | 2026年2月6日</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #f7f5f0;
-            --text-color: #2c2c2c;
-            --accent-color: #8b7355;
-            --card-bg: #ffffff;
-            --border-color: #e8e4dc;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.7;
-            padding: 40px 20px;
-        }
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-        }
-        .header {
-            text-align: center;
-            padding-bottom: 30px;
-            border-bottom: 2px solid var(--border-color);
-            margin-bottom: 40px;
-        }
-        .header h1 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--text-color);
-            margin-bottom: 10px;
-        }
-        .header .date {
-            font-size: 0.95rem;
-            color: var(--accent-color);
-            letter-spacing: 2px;
-        }
-        .intro {
-            font-style: italic;
-            text-align: center;
-            color: #666;
-            margin-bottom: 40px;
-            font-size: 1.1rem;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .section-title {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.5rem;
-            color: var(--accent-color);
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--border-color);
-        }
-        .news-item {
-            background: var(--card-bg);
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-        }
-        .news-item h3 {
-            font-size: 1.15rem;
-            margin-bottom: 12px;
-            color: var(--text-color);
-        }
-        .news-item p {
-            margin-bottom: 8px;
-            color: #555;
-        }
-        .news-item .source {
-            font-size: 0.85rem;
-            color: var(--accent-color);
-            margin-top: 10px;
-        }
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin: 30px 0;
-        }
-        .stat-card {
-            background: var(--card-bg);
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .stat-card .number {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: var(--accent-color);
-        }
-        .stat-card .label {
-            font-size: 0.9rem;
-            color: #666;
-            margin-top: 5px;
-        }
-        .insights table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        .insights th, .insights td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid var(--border-color);
-        }
-        .insights th {
-            font-weight: 600;
-            color: var(--accent-color);
-        }
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 1px solid var(--border-color);
-            color: #888;
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Daily Report | AI日报融合版 - 2026-02-06</title>
+  <meta name="description" content="汇聚全球人工智能领域最新动态、技术突破与行业洞察">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --background: #f7f5f0;
+      --foreground: #1f1d1a;
+      --card: #faf9f6;
+      --muted-foreground: #6b6560;
+      --border: #e5e0d8;
+      --accent: #e85d04;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
+    header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
+    .logo { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 600; color: var(--foreground); text-decoration: none; }
+    .date { font-size: 14px; color: var(--muted-foreground); }
+    .page-title { margin-bottom: 48px; }
+    .page-title h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 32px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .page-title p { font-size: 14px; color: var(--muted-foreground); }
+    section { margin-bottom: 48px; }
+    .section-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted-foreground); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+    .news-item { padding: 20px 0; border-bottom: 1px solid var(--border); }
+    .news-item:last-child { border-bottom: none; }
+    .news-item h3 { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 17px; font-weight: 500; line-height: 1.5; margin-bottom: 12px; }
+    .news-tag { display: inline-block; background: rgba(232, 93, 4, 0.1); color: var(--accent); font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 20px; margin-right: 8px; vertical-align: middle; }
+    .news-item p { font-size: 14px; line-height: 1.7; color: var(--muted-foreground); margin-bottom: 12px; }
+    .news-source { font-size: 12px; color: #9a9590; }
+    .news-source a { color: #2563eb; text-decoration: none; }
+    .news-source a:hover { text-decoration: underline; }
+    .archive { padding-top: 32px; border-top: 1px solid var(--border); margin-top: 48px; }
+    .archive h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 600; margin-bottom: 16px; }
+    .archive ul { list-style: none; }
+    .archive li { margin-bottom: 8px; }
+    .archive a { color: #2563eb; text-decoration: none; font-size: 14px; }
+    .archive a:hover { text-decoration: underline; }
+    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: #9a9590; }
+    footer p { margin-bottom: 4px; }
+    footer a { color: #2563eb; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 640px) {
+      .container { padding: 32px 16px 48px; }
+      .page-title h1 { font-size: 26px; }
+      .news-item h3 { font-size: 16px; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🤖 AI早报</h1>
-            <div class="date">2026年2月6日 · 星期五</div>
-        </div>
-        
-        <div class="intro">
-            周五好！今日AI圈大事不断，Google宣布巨额AI投资计划，Nvidia-OpenAI百亿美元交易生变，市场震荡...
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">📰 今日头条</h2>
-            
-            <div class="news-item">
-                <h3>🔥 Google母公司Alphabet宣布2026年AI支出翻倍至1850亿美元</h3>
-                <p><strong>要点</strong>：Alphabet计划2026年资本支出达1750-1850亿美元，是2025年支出的两倍以上</p>
-                <p><strong>用途</strong>：主要用于Google DeepMind的AI计算能力和云服务客户需求</p>
-                <p><strong>市场反应</strong>：尽管Q4财报超预期，投资者对巨额支出持谨慎态度</p>
-                <div class="source">来源：CNBC, NYTimes</div>
-            </div>
-            
-            <div class="news-item">
-                <h3>💔 Nvidia-OpenAI千亿美元交易告吹？</h3>
-                <p><strong>背景</strong>：去年9月宣布的Nvidia向OpenAI投资1000亿美元（用于购买Nvidia芯片）的循环交易可能取消</p>
-                <p><strong>详情</strong>：黄仁勋称交易"非约束性""未最终确定"；OpenAI reportedly对Nvidia高端AI芯片不满，寻求替代方案</p>
-                <p><strong>影响</strong>：Nvidia股价本周下跌约10%，Sam Altman紧急发推称"希望成为Nvidia的长期大客户"</p>
-                <div class="source">来源：The Guardian, WSJ</div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">🚀 新模型与技术</h2>
-            
-            <div class="news-item">
-                <h3>Amazon Nova Forge正式上线</h3>
-                <p>AWS Q4推出Nova Forge服务，让客户在模型训练阶段即可访问Amazon生成式AI模型进行高级定制。年费10万美元，面向需要深度定制的企业客户。</p>
-            </div>
-            
-            <div class="news-item">
-                <h3>NASA毅力号火星车首次AI自主驾驶</h3>
-                <p>NASA毅力号火星车首次使用AI而非人工操作员规划火星行驶路线。配备视觉能力的AI分析图像和地形数据，标志着太空探索AI化的重要里程碑。</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">🏢 企业动态</h2>
-            
-            <div class="news-item">
-                <h3>Amazon AWS Q4财报亮眼</h3>
-                <p><strong>营收</strong>：355.8亿美元，同比增长24%，超出分析师预期的349.3亿美元</p>
-                <p><strong>利润</strong>：营业利润124.7亿美元，利润率35%</p>
-                <p><strong>大单</strong>：与OpenAI达成380亿美元云服务承诺</p>
-                <p><strong>竞争态势</strong>：Google Cloud增速48%，Microsoft Azure增速39%，AWS增速相对落后</p>
-            </div>
-            
-            <div class="news-item">
-                <h3>软件股遭AI恐慌抛售</h3>
-                <p>过去三个月软件板块市值蒸发30%，投资者担忧AI工具将颠覆传统软件公司。Salesforce股价2026年已下跌17%，创2023年以来最大月度跌幅。</p>
-                <p><strong>分析师观点</strong>：这是软件行业"最令人兴奋的时刻"，AI既是威胁也是机遇</p>
-            </div>
-            
-            <div class="news-item">
-                <h3>Meta 2026年资本支出预期：1150-1350亿美元</h3>
-                <p>几乎比2024年（722亿美元）翻倍，主要用于AI基础设施建设。</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">🌍 政策与行业</h2>
-            
-            <div class="news-item">
-                <h3>新社交媒体平台Moltbook：专为AI机器人打造</h3>
-                <p>创始人Matt Schlicht创建了一个只有AI机器人能使用的社交平台，机器人可以"花费空闲时间"在那里互动交流，展现了AI社交化的全新尝试。</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">💡 今日洞察</h2>
-            <div class="insights">
-                <table>
-                    <tr>
-                        <th>趋势</th>
-                        <th>解读</th>
-                    </tr>
-                    <tr>
-                        <td><strong>投资狂潮</strong></td>
-                        <td>科技巨头2026年AI资本支出集体进入"翻倍模式"，军备竞赛白热化</td>
-                    </tr>
-                    <tr>
-                        <td><strong>供应链博弈</strong></td>
-                        <td>OpenAI寻求Nvidia芯片替代方案，AI芯片市场格局或生变</td>
-                    </tr>
-                    <tr>
-                        <td><strong>市场焦虑</strong></td>
-                        <td>AI颠覆论引发软件股抛售，但长期看AI化转型是必经之路</td>
-                    </tr>
-                    <tr>
-                        <td><strong>云战争</strong></td>
-                        <td>Google Cloud增速领跑，AWS面临AI服务竞争压力</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">📊 关键数据</h2>
-            <div class="stats">
-                <div class="stat-card">
-                    <div class="number">$175-185B</div>
-                    <div class="label">Alphabet 2026年AI投资</div>
-                </div>
-                <div class="stat-card">
-                    <div class="number">$100B</div>
-                    <div class="label">Nvidia-OpenAI潜在交易</div>
-                </div>
-                <div class="stat-card">
-                    <div class="number">+24%</div>
-                    <div class="label">AWS Q4营收增长</div>
-                </div>
-                <div class="stat-card">
-                    <div class="number">-30%</div>
-                    <div class="label">软件板块3个月跌幅</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <p>📬 早报由AI自动生成 | 数据来源：CNBC, Reuters, NYTimes, The Guardian, ScienceDaily</p>
-            <p style="margin-top: 10px;"><a href="index.html">← 查看历史早报</a></p>
-        </div>
+  <div class="container">
+    <header>
+      <a href="/" class="logo">AI Daily Report</a>
+      <span class="date">2026年2月6日</span>
+    </header>
+    <div class="page-title">
+      <h1>AI早报融合版</h1>
+      <p>全网新闻 · 深度洞察</p>
     </div>
+    
+    <section>
+      <h2 class="section-title">头条新闻</h2>
+      
+      <article class="news-item">
+        <h3><span class="news-tag">财报</span>Google宣布2026年AI资本支出翻倍至1750-1850亿美元</h3>
+        <p>Alphabet发布2025年Q4财报，全年营收首次突破4000亿美元。Google CEO Sundar Pichai表示，Gemini模型服务成本在2025年降低了78%，通过模型优化和效率提升实现。尽管财报数据亮眼，但巨额支出计划导致股价盘后下跌约2%。</p>
+        <div class="news-source">via Business Insider · <a href="https://www.businessinsider.com/google-q4-2025-earnings-ai-spending-gemini-subscriptions-2026-2">原文链接</a></div>
+      </article>
+      
+      <article class="news-item">
+        <h3><span class="news-tag">竞争</span>OpenAI与Anthropic超级碗广告正面交锋</h3>
+        <p>两家AI初创公司将在超级碗期间投放广告，争夺企业用户。Anthropic的广告嘲讽OpenAI在ChatGPT免费版本中植入广告的做法，强调"Claude没有广告"。OpenAI CEO Sam Altman在X上回应，称Anthropic的广告"有趣但不诚实"，并指出ChatGPT在德克萨斯州的免费用户已超过全美Claude用户总数。</p>
+        <div class="news-source">via AP News · <a href="https://apnews.com/article/openai-anthropic-chatgpt-claude-rivalry-c19e0cca22c37190cc4e0dc08e889ef0">原文链接</a></div>
+      </article>
+      
+      <article class="news-item">
+        <h3><span class="news-tag">市场</span>Gemini月访问量突破20亿，仍不及ChatGPT一半</h3>
+        <p>据Similarweb数据，2025年1月Gemini全球访问量超过20亿次，但仅为ChatGPT 57亿访问量的约35%。尽管Google在AI竞赛中奋力追赶，ChatGPT仍保持明显的市场领先地位。Reddit也在同日发布了强劲的Q4财报。</p>
+        <div class="news-source">via Sherwood News · <a href="https://sherwood.news/tech/googles-gemini-is-gaining-but-openais-chatgpt-is-still-the-ai-chatbot-leader/">原文链接</a></div>
+      </article>
+    </section>
+    
+    <section>
+      <h2 class="section-title">新模型 / 工具</h2>
+      
+      <article class="news-item">
+        <h3>Anthropic发布Claude Opus 4.6，定位"数字员工"</h3>
+        <p>Anthropic发布其最智能模型Claude Opus 4.6的更新版本，强调不再只是"更聪明的聊天机器人"，而是向"AI作为数字员工"转变。新特性包括：支持百万token上下文（beta）、协作代理功能（多AI实例分工协作）、编程和金融领域能力提升。目标直指企业智能代理市场。</p>
+        <div class="news-source">via Il Sole 24 ORE · <a href="https://en.ilsole24ore.com/art/claude-opus-46-arrives-anthropic-artificial-intelligence-targets-companies-AIqJrSHB">原文链接</a></div>
+      </article>
+    </section>
+    
+    <section>
+      <h2 class="section-title">企业动态</h2>
+      
+      <article class="news-item">
+        <h3><span class="news-tag">云业务</span>Google Cloud Q4收入同比增长48%</h3>
+        <p>Google Cloud成为Alphabet财报最大亮点，第四季度收入同比增长48%，显示企业AI需求强劲。Google在内部启动了"code red"紧急项目加速研究和产品发布，Gemini性能已使Google重新获得竞争优势。</p>
+        <div class="news-source">via TechSpot · <a href="https://www.techspot.com/news/111207-google-gemini-ai-sparks-double-digit-revenue-growth.html">原文链接</a></div>
+      </article>
+      
+      <article class="news-item">
+        <h3><span class="news-tag">定位</span>Anthropic与OpenAI争夺平台公司地位</h3>
+        <p>Gartner分析师Arun Chandrasekaran表示，OpenAI和Anthropic都在努力将自己定位为平台公司，而不仅仅是模型提供商。两家公司还面临来自Google的竞争——Google既拥有强大的Gemini模型，又有云计算基础设施和传统数字广告业务的收入支撑。</p>
+        <div class="news-source">via ABC News · <a href="https://abcnews.go.com/Technology/wireStory/anthropic-openai-rivalry-spills-new-super-bowl-ads-129881744">原文链接</a></div>
+      </article>
+    </section>
+    
+    <section>
+      <h2 class="section-title">政策 / 监管</h2>
+      
+      <article class="news-item">
+        <h3><span class="news-tag">说明</span>今日未检索到重大AI政策/监管动态</h3>
+        <p>主要新闻焦点集中在企业财报、产品发布和市场竞争领域。政策监管方面暂无重大更新。</p>
+        <div class="news-source">—</div>
+      </article>
+    </section>
+    
+    <section>
+      <h2 class="section-title">融合洞察</h2>
+      
+      <article class="news-item">
+        <h3>AI竞赛进入"烧钱"与"变现"双重压力期</h3>
+        <p>本周动态揭示AI行业正处于关键转折点：</p>
+        <p><strong>1. 资本军备竞赛白热化：</strong>Google宣布2026年资本支出翻倍，Meta此前也已宣布类似规模的投入。科技巨头们正在用真金白银"买未来"，数据中心和AI芯片成为战略制高点。</p>
+        <p><strong>2. 企业市场成为主战场：</strong>Anthropic推出Claude Opus 4.6明确瞄准企业智能代理，OpenAI与Anthropic的超级碗广告都试图影响企业决策者。相比消费端的免费用户，能带来实际收入的企业客户才是胜负手。</p>
+        <p><strong>3. 商业模式分化：</strong>OpenAI选择广告+订阅双轨制，Anthropic坚持纯企业订阅，Google则有广告业务输血。谁能先跑通盈利模型，谁就能在持久战中存活。</p>
+        <p><strong>4. Google的反击：</strong>Gemini成本降低78%是重大信号——模型效率提升正在发生，这可能改变"越大越好"的竞争逻辑，让Google有机会用工程优化而非单纯堆料追赶。</p>
+        <div class="news-source">基于本周检索素材综合分析</div>
+      </article>
+    </section>
+    
+    <div class="archive">
+      <h2>历史归档</h2>
+      <ul>
+        <li><a href="./2026-02-06.html">2026-02-06</a></li>
+      </ul>
+    </div>
+    
+    <footer>
+      <p>2026年2月6日</p>
+      <p>AI Daily Report | AI日报融合版</p>
+      <p><a href="https://github.com/elliclee/ai-daily-report">GitHub</a></p>
+    </footer>
+  </div>
 </body>
 </html>
