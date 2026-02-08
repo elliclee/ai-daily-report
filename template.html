@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Daily Report | 2026-02-08</title>
+  <title>AI Daily Report | {{DATE}}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -49,7 +49,7 @@
   <div class="container">
     <header>
       <a href="/" class="logo">AI Daily Report</a>
-      <span class="date">2026年2月8日</span>
+      <span class="date">{{DATE_CN}}</span>
     </header>
     <div class="page-title">
       <h1>AI早报</h1>
@@ -57,39 +57,11 @@
     </div>
     
     <!-- CONTENT_START -->
-    
-    <section>
-      <h2 class="section-title">头条新闻</h2>
-      <div class="news-item">
-        <h3><span class="news-tag">关键突破</span>Anthropic 发布 Claude Opus 4.6，Goldman Sachs 全面采用其 AI 模型自动化合规工作</h3>
-        <p>新版本速度提升 2.5 倍。高盛表示该技术将显著降低其会计合规成本并提升审计精度。</p>
-        <div class="news-source">via <a href="https://twitter.com/anthropic">Anthropic X</a></div>
-      </div>
-      <div class="news-item">
-        <h3>OpenAI 宣布 2 月 13 日退役 GPT-4o 系列，用户发起 #keep4o 运动</h3>
-        <p>包括 GPT-4o、GPT-4.1 在内的多款经典模型将正式退役，此举在开发者社区引发广泛讨论。</p>
-        <div class="news-source">via <a href="https://openai.com/blog">OpenAI Blog</a></div>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">行业动态</h2>
-      <div class="news-item">
-        <h3>阿里与字节跳动追加 AI 基建投入，计划 2 月中旬发布新模型</h3>
-        <p>阿里计划投入 4800 亿元提升算力储备，旨在 2026 年底前实现通用人工智能 (AGI) 阶段性目标。</p>
-        <div class="news-source">via <a href="https://www.alibabagroup.com">Alibaba News</a></div>
-      </div>
-      <div class="news-item">
-        <h3>Claude Code 营收运行率达成 10 亿美元，Agent 时代规模化已至</h3>
-        <p>上线仅半年，Claude Code 已成为企业级 AI Agent 部署的标杆工具。</p>
-        <div class="news-source">via <a href="https://www.anthropic.com/news">Anthropic</a></div>
-      </div>
-    </section>
-
+    {{CONTENT}}
     <!-- CONTENT_END -->
 
     <footer>
-      <p>2026年2月8日</p>
+      <p>{{DATE_CN}}</p>
       <p>AI Daily Report | <a href="https://github.com/elliclee/ai-daily-report">GitHub</a></p>
     </footer>
   </div>
