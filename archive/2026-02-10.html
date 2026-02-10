@@ -1,284 +1,806 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Daily Report | AI日报融合版 - 2026-02-10</title>
-  <meta name="description" content="汇聚全球人工智能领域最新动态、技术突破与行业洞察">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --background: #f7f5f0;
-      --foreground: #1f1d1a;
-      --card: #faf9f6;
-      --muted-foreground: #6b6560;
-      --border: #e5e0d8;
-      --accent: #e85d04;
-      --green: #059669;
-      --blue: #2563eb;
-    }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      background-color: var(--background);
-      color: var(--foreground);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-    .container { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
-    header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
-    .logo { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 600; color: var(--foreground); text-decoration: none; }
-    .date { font-size: 14px; color: var(--muted-foreground); }
-    .page-title { margin-bottom: 48px; }
-    .page-title h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 32px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 8px; }
-    .page-title p { font-size: 14px; color: var(--muted-foreground); }
-    section { margin-bottom: 48px; }
-    .section-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted-foreground); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
-    .news-item { padding: 20px 0; border-bottom: 1px solid var(--border); }
-    .news-item:last-child { border-bottom: none; }
-    .news-item h3 { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 17px; font-weight: 500; line-height: 1.5; margin-bottom: 12px; }
-    .news-tag { display: inline-block; background: rgba(232, 93, 4, 0.1); color: var(--accent); font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 20px; margin-right: 8px; vertical-align: middle; }
-    .news-tag.green { background: rgba(5, 150, 105, 0.1); color: var(--green); }
-    .news-tag.blue { background: rgba(37, 99, 235, 0.1); color: var(--blue); }
-    .news-item p { font-size: 14px; line-height: 1.7; color: var(--muted-foreground); margin-bottom: 12px; }
-    .news-source { font-size: 12px; color: #9a9590; }
-    .news-source a { color: #2563eb; text-decoration: none; }
-    .news-source a:hover { text-decoration: underline; }
-    .x-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 16px; }
-    .x-card h4 { font-size: 15px; font-weight: 600; margin-bottom: 8px; color: var(--foreground); }
-    .x-card p { font-size: 13px; color: var(--muted-foreground); margin-bottom: 8px; }
-    .x-card .play { font-size: 12px; color: var(--accent); }
-    .x-card .engagement { font-size: 11px; color: #9a9590; margin-top: 8px; }
-    .archive { padding-top: 32px; border-top: 1px solid var(--border); margin-top: 48px; }
-    .archive-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
-    .archive-item { font-size: 13px; padding: 4px 12px; background: var(--card); border: 1px solid var(--border); border-radius: 4px; }
-    .archive-item a { color: var(--foreground); text-decoration: none; }
-    .archive-item a:hover { color: var(--accent); }
-    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: #9a9590; }
-    footer p { margin-bottom: 4px; }
-    footer a { color: #2563eb; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    .self-check { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin-top: 48px; font-size: 13px; }
-    .self-check h4 { font-size: 14px; font-weight: 600; margin-bottom: 12px; }
-    .self-check ul { margin-left: 16px; color: var(--muted-foreground); }
-    .self-check li { margin-bottom: 6px; }
-    @media (max-width: 640px) {
-      .container { padding: 32px 16px 48px; }
-      .page-title h1 { font-size: 26px; }
-      .news-item h3 { font-size: 16px; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily Report - 2026-02-10</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f7f5f0;
+            --text-primary: #2d2a26;
+            --text-secondary: #5c5854;
+            --accent-color: #8b7355;
+            --border-color: #e0dcd4;
+            --card-bg: #ffffff;
+            --highlight: #f0ebe3;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 0 50px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 50px;
+        }
+        
+        .date-badge {
+            font-family: 'Playfair Display', serif;
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            margin-bottom: 16px;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+            font-weight: 300;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--text-primary);
+        }
+        
+        .section-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        .news-item {
+            background: var(--card-bg);
+            padding: 24px;
+            margin-bottom: 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        
+        .news-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+        
+        .news-time {
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+        
+        .news-source {
+            color: var(--text-secondary);
+        }
+        
+        .news-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .news-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+        
+        .news-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .news-link {
+            font-size: 12px;
+            color: var(--accent-color);
+            text-decoration: none;
+            padding: 4px 10px;
+            background: var(--highlight);
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        
+        .news-link:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+        
+        .importance {
+            display: inline-block;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 8px;
+            font-weight: 500;
+        }
+        
+        .importance-high {
+            background: #e8d5d5;
+            color: #8b4513;
+        }
+        
+        .importance-medium {
+            background: #e8e0d5;
+            color: #6b5b45;
+        }
+        
+        .twitter-card {
+            background: var(--card-bg);
+            padding: 20px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .twitter-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .twitter-author {
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .twitter-handle {
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+        
+        .twitter-content {
+            font-size: 14px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .twitter-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .twitter-link {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        .stats-box {
+            background: var(--highlight);
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        
+        .stats-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            font-size: 14px;
+        }
+        
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .stat-label {
+            color: var(--text-secondary);
+        }
+        
+        .stat-value {
+            font-weight: 600;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 50px;
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+        
+        .archive-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .archive-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 13px;
+        }
+        
+        .archive-link:hover {
+            text-decoration: underline;
+        }
+
+        .vendor-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        
+        .vendor-tag {
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+        
+        .vendor-hit {
+            background: #d4e8d5;
+            color: #2d5a2d;
+        }
+        
+        .vendor-miss {
+            background: #e8e4d4;
+            color: #7a6a4a;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/ai-daily-report/" class="logo">AI Daily Report</a>
-      <span class="date">2026年2月10日 · 周二</span>
-    </header>
-    <div class="page-title">
-      <h1>AI早报融合版</h1>
-      <p>X热搜 · 全网新闻 · 深度洞察</p>
+    <div class="container">
+        <header>
+            <div class="date-badge">February 10, 2026</div>
+            <h1>AI Daily Report</h1>
+            <p class="subtitle">人工智能日报 · 第1期</p>
+        </header>
+
+        <!-- Coverage Stats -->
+        <div class="stats-box">
+            <div class="stats-title">📊 覆盖度自检</div>
+            <div class="stats-grid">
+                <div class="stat-item"><span class="stat-label">Releases</span><span class="stat-value">4条 / 目标2 / ✅</span></div>
+                <div class="stat-item"><span class="stat-label">Updates</span><span class="stat-value">3条 / 目标2 / ✅</span></div>
+                <div class="stat-item"><span class="stat-label">Open Source</span><span class="stat-value">2条 / 目标2 / ✅</span></div>
+                <div class="stat-item"><span class="stat-label">Benchmarks</span><span class="stat-value">1条 / 目标2 / ⚠️</span></div>
+                <div class="stat-item"><span class="stat-label">Business</span><span class="stat-value">3条 / 目标2 / ✅</span></div>
+                <div class="stat-item"><span class="stat-label">Risks</span><span class="stat-value">3条 / 目标2 / ✅</span></div>
+            </div>
+        </div>
+
+        <!-- Section 1: Releases -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <span class="section-title">模型发布</span>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 9, 2026</span>
+                    <span class="news-source">OpenAI / @sama</span>
+                    <span class="importance importance-high">高</span>
+                </div>
+                <div class="news-title">OpenAI 发布 GPT-5.3-Codex 编程模型</div>
+                <div class="news-desc">Sam Altman 宣布 GPT-5.3-Codex 正式推出，已登陆 Cursor、GitHub 和 VS Code。这是 OpenAI 首个在网络安全方面达到"high"评级的模型。Codex App 首周下载量突破100万，用户增长60%+。</div>
+                <div class="news-links">
+                    <a href="https://x.com/sama/status/2020940847190356092" class="news-link">@sama 推文</a>
+                    <a href="https://x.com/OpenAI/status/2019488071134347605" class="news-link">OpenAI 官推</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 7-9, 2026</span>
+                    <span class="news-source">ByteDance</span>
+                    <span class="importance importance-high">高</span>
+                </div>
+                <div class="news-title">字节跳动 Seedance 2.0 AI 视频模型预热发布</div>
+                <div class="news-desc">字节跳动在周末预发布了 Seedance 2.0 AI 视频生成模型，引发中国科技股上涨。该模型支持多模态参考（同时输入12个参考文件），解决多镜头一致性痛点，被评价为"唯一能真正对标 Sora 2.0 的模型"。</div>
+                <div class="news-links">
+                    <a href="https://www.indexbox.io/blog/bytedances-seedance-20-ai-video-model-sparks-stock-rally-in-china/" class="news-link">IndexBox</a>
+                    <a href="https://x.com/XuekaiGao/status/2021067599824482465" class="news-link">X 讨论</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 7, 2026</span>
+                    <span class="news-source">Anthropic / @claudeai</span>
+                    <span class="importance importance-medium">中</span>
+                </div>
+                <div class="news-title">Claude Opus 4.6 速度升级版本发布</div>
+                <div class="news-desc">Anthropic 推出 Opus 4.6 的 2.5 倍速实验版本，在保持模型能力的同时大幅提升响应速度。非盈利组织现可在 Team 和 Enterprise 计划中免费使用 Opus 4.6。</div>
+                <div class="news-links">
+                    <a href="https://x.com/AnthropicAI/status/2020908471936323584" class="news-link">Anthropic 推文</a>
+                    <a href="https://x.com/claudeai/status/2020226842846744786" class="news-link">Claude 推文</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 9, 2026</span>
+                    <span class="news-source">Google DeepMind</span>
+                    <span class="importance importance-medium">中</span>
+                </div>
+                <div class="news-title">Google 发布 Perch 2.0 生物声学基础模型</div>
+                <div class="news-desc">DeepMind 推出 Perch 2.0，这款生物声学模型成功将陆地动物（鸟类）训练数据迁移到水下声学，可用于海洋生态系统监测。模型具备强大的泛化能力和物种多样性识别能力。</div>
+                <div class="news-links">
+                    <a href="https://x.com/GoogleDeepMind/status/2020933684535361840" class="news-link">DeepMind 推文</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Updates -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <span class="section-title">产品更新</span>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 9, 2026</span>
+                    <span class="news-source">OpenAI</span>
+                    <span class="importance importance-high">高</span>
+                </div>
+                <div class="news-title">ChatGPT 开始测试广告功能</div>
+                <div class="news-desc">OpenAI 宣布开始向美国和部分免费/Go 层级用户测试 ChatGPT 广告功能。广告不会影响回答内容，会明确标注为"赞助"并在视觉上与回复分离。目标是让更多人免费使用 ChatGPT。</div>
+                <div class="news-links">
+                    <a href="https://x.com/OpenAI/status/2020936703763153010" class="news-link">OpenAI 公告</a>
+                    <a href="https://x.com/Vard_Labs/status/2021067995481883101" class="news-link">社区反应</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 6, 2026</span>
+                    <span class="news-source">Google DeepMind / Waymo</span>
+                    <span class="importance importance-medium">中</span>
+                </div>
+                <div class="news-title">Genie 3 世界模型与 Waymo 自动驾驶整合</div>
+                <div class="news-desc">DeepMind 的 Genie 3 世界模型与 Waymo 合作，生成逼真的交互式环境用于自动驾驶训练。工程师可模拟极端天气或危险驾驶等"假设"场景来压力测试系统。</div>
+                <div class="news-links">
+                    <a href="https://x.com/GoogleDeepMind/status/2019808426675843105" class="news-link">DeepMind 推文</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 3, 2026</span>
+                    <span class="news-source">Anthropic / Apple</span>
+                    <span class="importance importance-medium">中</span>
+                </div>
+                <div class="news-title">Xcode 直接集成 Claude Agent SDK</div>
+                <div class="news-desc">Apple 的 Xcode 现在直接集成 Claude Agent SDK，开发者可以在 Apple 全平台（iPhone、Mac、Apple Vision Pro）上使用 Claude Code 的完整功能。</div>
+                <div class="news-links">
+                    <a href="https://x.com/AnthropicAI/status/2018771170938724682" class="news-link">Anthropic 公告</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Open Source -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <span class="section-title">开源动态</span>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Late Jan 2026</span>
+                    <span class="news-source">Arcee AI</span>
+                    <span class="importance importance-high">高</span>
+                </div>
+                <div class="news-title">Arcee AI 发布 400B 开源模型挑战 Llama</div>
+                <div class="news-desc">仅30人的初创公司 Arcee AI 从头构建了 400B 参数的开源 LLM，旨在击败 Meta 的 Llama 4。该模型名为"Trinity"，展示了小团队也能构建顶尖开源模型的可能性。</div>
+                <div class="news-links">
+                    <a href="https://x.com/personas_ai/status/2017228546637271409" class="news-link">推文来源</a>
+                    <a href="https://x.com/Chikker96/status/2019221950158258177" class="news-link">社区讨论</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 10, 2026</span>
+                    <span class="news-source">智谱 / Zhipu</span>
+                    <span class="importance importance-medium">中</span>
+                </div>
+                <div class="news-title">GLM-5 代码现身开源仓库，预示即将发布</div>
+                <div class="news-desc">GLM-5 相关的代码和配置出现在开源技术仓库中，引发社区关注。这是智谱下一代大模型的早期信号，可能正在准备公开发布。同时有人发现 Pony Alpha 可能就是 GLM 5.0 模型。</div>
+                <div class="news-links">
+                    <a href="https://supergok.com/glm-5-ai-model-what-we-know-before-release/" class="news-link">SuperGok</a>
+                    <a href="https://x.com/oMarcosdeCastro/status/2021059309078184011" class="news-link">X 讨论</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Benchmarks -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <span class="section-title">评测基准</span>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 10, 2026</span>
+                    <span class="news-source">Sarvam AI / India</span>
+                    <span class="importance importance-medium">中</span>
+                </div>
+                <div class="news-title">印度 Sarvam Vision 在 OCR 基准测试击败 Gemini 和 ChatGPT</div>
+                <div class="news-desc">印度班加罗尔的 Sarvam AI 开发的 Sarvam Vision (3B 参数 VLM) 在 olmOCR-Bench 上达到 84.3% 准确率，超过 Google Gemini 3 Pro (80.2%)、DeepSeek OCR v2 (78.8%) 和 ChatGPT (69.8%)。</div>
+                <div class="news-links">
+                    <a href="https://x.com/Khurpenchteam/status/2021067922907726072" class="news-link">推文来源</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Business -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <span class="section-title">商业动态</span>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 9, 2026</span>
+                    <span class="news-source">OpenAI</span>
+                    <span class="importance importance-high">高</span>
+                </div>
+                <div class="news-title">ChatGPT 恢复 10% 月增长，周活达 4 亿用户</div>
+                <div class="news-desc">OpenAI 宣布 ChatGPT 重返 10% 月增长率，每周活跃用户达 4 亿。公司接近完成 1000 亿美元融资轮，估值持续攀升。超过 3 亿用户每周使用 ChatGPT 学习新技能。</div>
+                <div class="news-links">
+                    <a href="https://winbuzzer.com/2026/02/09/openai-chatgpt-growth-new-model-release-xcxwbn/" class="news-link">WinBuzzer</a>
+                    <a href="https://x.com/OpenAI/status/2021025290366091442" class="news-link">OpenAI 推文</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 9, 2026</span>
+                    <span class="news-source">Alphabet / Google</span>
+                    <span class="importance importance-high">高</span>
+                </div>
+                <div class="news-title">Alphabet 计划发行 200 亿美元债券资助 AI 基建</div>
+                <div class="news-desc">Alphabet 计划通过美元债券发行筹集 200 亿美元用于 AI 基础设施建设。公司在年报中披露了与 AI 相关的新风险，包括对核心广告业务的潜在影响。2026 年资本支出预计高达 1850 亿美元。</div>
+                <div class="news-links">
+                    <a href="https://www.cnbc.com/2026/02/09/alphabet-highlights-new-ai-related-risks-in-tapping-debt-market.html" class="news-link">CNBC</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 9, 2026</span>
+                    <span class="news-source">多家 AI 公司</span>
+                    <span class="importance importance-medium">中</span>
+                </div>
+                <div class="news-title">AI 公司霸屏超级碗广告时段</div>
+                <div class="news-desc">2026 年超级碗广告时段被 AI 公司主导，包括 Google Gemini 的温情广告与 OpenAI 的争议广告形成鲜明对比。巨额广告支出反映了 AI 行业激烈的营销竞争。</div>
+                <div class="news-links">
+                    <a href="https://www.nytimes.com/2026/02/09/business/dealbook/super-bowl-ads-ai.html" class="news-link">NYT</a>
+                    <a href="https://x.com/Deeplumen0922/status/2021067686609027171" class="news-link">对比讨论</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Risks -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <span class="section-title">安全与风险</span>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 9, 2026</span>
+                    <span class="news-source">Reuters 调查</span>
+                    <span class="importance importance-high">高</span>
+                </div>
+                <div class="news-title">AI 进入手术室：手术失误与患者伤害报告增加</div>
+                <div class="news-desc">路透社调查报告显示，随着医疗器械厂商急于在产品中加入 AI 功能，监管机构收到的患者伤害索赔数量正在上升。报告涉及手术失误、身体部位误识别等问题。</div>
+                <div class="news-links">
+                    <a href="https://www.reuters.com/investigations/ai-enters-operating-room-reports-arise-botched-surgeries-misidentified-body-2026-02-09/" class="news-link">Reuters</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 9, 2026</span>
+                    <span class="news-source">New York Times</span>
+                    <span class="importance importance-high">高</span>
+                </div>
+                <div class="news-title">研究：AI 聊天机器人的健康建议经常出错</div>
+                <div class="news-desc">《纽约时报》报道的一项研究显示，ChatGPT 等 AI 聊天机器人在提供健康建议时频繁出错，部分原因在于用户提问方式，但模型本身的医学知识准确性也面临挑战。</div>
+                <div class="news-links">
+                    <a href="https://www.nytimes.com/2026/02/09/well/chatgpt-health-advice.html" class="news-link">NYT</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-meta">
+                    <span class="news-time">Feb 9, 2026</span>
+                    <span class="news-source">Alphabet / SEC</span>
+                    <span class="importance importance-medium">中</span>
+                </div>
+                <div class="news-title">Alphabet 年报披露 AI 相关新风险</div>
+                <div class="news-desc">Alphabet 在向 SEC 提交的年度报告中警告，AI 可能对公司核心业务（尤其是广告）产生负面影响，大规模投资可能导致"产能过剩"风险。</div>
+                <div class="news-links">
+                    <a href="https://www.cnbc.com/2026/02/09/alphabet-highlights-new-ai-related-risks-in-tapping-debt-market.html" class="news-link">CNBC</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- X High Engagement Section -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">X</span>
+                <span class="section-title">高互动事件卡片</span>
+            </div>
+            
+            <div class="twitter-card">
+                <div class="twitter-header">
+                    <span class="twitter-author">@off_thetarget</span>
+                    <span class="twitter-handle">pepper 花椒</span>
+                </div>
+                <div class="twitter-content">
+                    过去24小时爆火的 Claude Code Prompt 来了！Miles Deutscher 的这一套流程直接看傻了。这个 Prompt 的底层是一套完整的 CTO 管理体系：敢怼老板、做事分阶段、遇到问题给选项、关键节点汇报。这就是为什么同样用 Claude Code，有人做玩具，有人做产品。
+                </div>
+                <div class="twitter-meta">
+                    <span>📅 Feb 10, 2026</span>
+                    <a href="https://x.com/off_thetarget/status/2021067590085509303" class="twitter-link">查看推文 →</a>
+                </div>
+            </div>
+            
+            <div class="twitter-card">
+                <div class="twitter-header">
+                    <span class="twitter-author">@sama</span>
+                    <span class="twitter-handle">Sam Altman</span>
+                </div>
+                <div class="twitter-content">
+                    Codex App 首周下载量突破100万！上周整体 Codex 用户增长 60%+。我们将在促销结束后继续向免费/Go 用户开放 Codex，可能需要降低限制，但我们希望每个人都能尝试 Codex 并开始构建。
+                </div>
+                <div class="twitter-meta">
+                    <span>📅 Feb 9, 2026</span>
+                    <a href="https://x.com/sama/status/2020977975081177343" class="twitter-link">查看推文 →</a>
+                </div>
+            </div>
+            
+            <div class="twitter-card">
+                <div class="twitter-header">
+                    <span class="twitter-author">@XuekaiGao</span>
+                    <span class="twitter-handle">xuekaiGao</span>
+                </div>
+                <div class="twitter-content">
+                    字节跳动发布的 Seedance 2.0 简直是核弹级更新。它不再只是一个"生成器"，而是一个"AI 导演"。四大王炸功能：1) 多模态参考（支持12个参考文件） 2) 多镜头一致性 3) 精准控制像素逻辑 4) AI 连续剧/短剧制作门槛被彻底踏平。
+                </div>
+                <div class="twitter-meta">
+                    <span>📅 Feb 10, 2026</span>
+                    <a href="https://x.com/XuekaiGao/status/2021067599824482465" class="twitter-link">查看推文 →</a>
+                </div>
+            </div>
+            
+            <div class="twitter-card">
+                <div class="twitter-header">
+                    <span class="twitter-author">@CuiMao</span>
+                    <span class="twitter-handle">CuiMao</span>
+                </div>
+                <div class="twitter-content">
+                    男朋友公司市场部每个人即梦账户充了 5199 块的包年套餐，春节的任务就是要他们把 seedance 2 搞熟，搞透，搞明白。太震撼了，资本家急了都这样吗。
+                </div>
+                <div class="twitter-meta">
+                    <span>📅 Feb 10, 2026</span>
+                    <a href="https://x.com/CuiMao/status/2021067633127456959" class="twitter-link">查看推文 →</a>
+                </div>
+            </div>
+            
+            <div class="twitter-card">
+                <div class="twitter-header">
+                    <span class="twitter-author">@OpenAI</span>
+                    <span class="twitter-handle">OpenAI</span>
+                </div>
+                <div class="twitter-content">
+                    我们今天开始向美国部分免费和 Go 用户推出 ChatGPT 广告测试。广告不会影响 ChatGPT 的答案，会标注为赞助内容并在视觉上与回复分离。我们的目标是让所有人免费使用 ChatGPT。
+                </div>
+                <div class="twitter-meta">
+                    <span>📅 Feb 9, 2026</span>
+                    <a href="https://x.com/OpenAI/status/2020936703763153010" class="twitter-link">查看推文 →</a>
+                </div>
+            </div>
+            
+            <div class="twitter-card">
+                <div class="twitter-header">
+                    <span class="twitter-author">@AnthropicAI</span>
+                    <span class="twitter-handle">Anthropic</span>
+                </div>
+                <div class="twitter-content">
+                    非盈利组织现可在 Team 和 Enterprise 计划中免费使用 Claude Opus 4.6。非盈利组织解决社会上最困难的问题，前沿 AI 工具可以帮助最大化他们的影响力。
+                </div>
+                <div class="twitter-meta">
+                    <span>📅 Feb 9, 2026</span>
+                    <a href="https://x.com/AnthropicAI/status/2020908471936323584" class="twitter-link">查看推文 →</a>
+                </div>
+            </div>
+            
+            <div class="twitter-card">
+                <div class="twitter-header">
+                    <span class="twitter-author">@BradleyJohnsen</span>
+                    <span class="twitter-handle">Bradley Johnsen</span>
+                </div>
+                <div class="twitter-content">
+                    这是我周六+周日的 11 小时 Claude Code 会话，Claude 经常一次工作超过一小时。复制的输出填满了一个 240 页的 Google 文档。我要学习它来改进我的工作流程。Claude Code 在这方面真的很擅长。
+                </div>
+                <div class="twitter-meta">
+                    <span>📅 Feb 10, 2026</span>
+                    <a href="https://x.com/BradleyJohnsen/status/2021067345192436112" class="twitter-link">查看推文 →</a>
+                </div>
+            </div>
+            
+            <div class="twitter-card">
+                <div class="twitter-header">
+                    <span class="twitter-author">@AidenPrime07</span>
+                    <span class="twitter-handle">望海的胡杨</span>
+                </div>
+                <div class="twitter-content">
+                    十年间的 AI 轮盘，从 AI 四小龙到今天的 AI 六小虎。以月之暗面、百川智能、阶跃星辰、零一万物为代表的 AI 六小虎，加上 DeepSeek、面壁智能，以及字节豆包、阿里千问、腾讯元宝、百度文心等大厂玩家。时代变了，任何可以在 C 端普及的产品，将有最大发展。
+                </div>
+                <div class="twitter-meta">
+                    <span>📅 Feb 10, 2026</span>
+                    <a href="https://x.com/AidenPrime07/status/2021062078933631417" class="twitter-link">查看推文 →</a>
+                </div>
+            </div>
+            
+            <div class="twitter-card">
+                <div class="twitter-header">
+                    <span class="twitter-author">@Saboo_Shubham_</span>
+                    <span class="twitter-handle">Shubham Saboo</span>
+                </div>
+                <div class="twitter-content">
+                    有趣...有人逆向工程了 Claude Code 并发现了一个隐藏的 web socket 标志。他们在其之上构建了一个开源 UI，可以与现有的 $200 订阅一起使用。100% 开源。
+                </div>
+                <div class="twitter-meta">
+                    <span>📅 Feb 10, 2026</span>
+                    <a href="https://x.com/Saboo_Shubham_/status/2021066872289100277" class="twitter-link">查看推文 →</a>
+                </div>
+            </div>
+            
+            <div class="twitter-card">
+                <div class="twitter-header">
+                    <span class="twitter-author">@ekcheungAI</span>
+                    <span class="twitter-handle">EK</span>
+                </div>
+                <div class="twitter-content">
+                    成为 10x 工程师现在只是 Claude Code 的一个配置文件。人才正在以疯狂的速度被自动化。过去需要多年经验的东西现在只需要几行提示工程。我们是在建设未来，还是在训练我们的替代品？
+                </div>
+                <div class="twitter-meta">
+                    <span>📅 Feb 10, 2026</span>
+                    <a href="https://x.com/ekcheungAI/status/2021067121086570614" class="twitter-link">查看推文 →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vendor Checklist -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">📋</span>
+                <span class="section-title">命中厂商清单</span>
+            </div>
+            <div class="stats-box">
+                <div class="stats-title">24h 内报道覆盖情况</div>
+                <div class="vendor-list">
+                    <span class="vendor-tag vendor-hit">✅ OpenAI</span>
+                    <span class="vendor-tag vendor-hit">✅ 字节/Seedance</span>
+                    <span class="vendor-tag vendor-hit">✅ Anthropic</span>
+                    <span class="vendor-tag vendor-hit">✅ Google/Gemini</span>
+                    <span class="vendor-tag vendor-hit">✅ 智谱/GLM</span>
+                    <span class="vendor-tag vendor-miss">⚠️ Meta/Llama (无新动态)</span>
+                    <span class="vendor-tag vendor-miss">⚠️ 月之暗面/Kimi (无新动态)</span>
+                    <span class="vendor-tag vendor-miss">⚠️ 通义/Qwen (无新动态)</span>
+                    <span class="vendor-tag vendor-miss">⚠️ 腾讯/混元 (无新动态)</span>
+                    <span class="vendor-tag vendor-miss">⚠️ 百度/文心 (无新动态)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dedupe Keys -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">🔑</span>
+                <span class="section-title">事件去重密钥 (dedupe_key)</span>
+            </div>
+            <div class="stats-box" style="font-size: 13px; font-family: monospace;">
+                <div>1. (OpenAI, GPT-5.3-Codex, model_release, 2026-02-09)</div>
+                <div>2. (ByteDance, Seedance 2.0, model_release, 2026-02-07)</div>
+                <div>3. (Anthropic, Claude Opus 4.6, model_update, 2026-02-07)</div>
+                <div>4. (Google, Perch 2.0, model_release, 2026-02-09)</div>
+                <div>5. (OpenAI, ChatGPT, ads_rollout, 2026-02-09)</div>
+                <div>6. (Google, Genie 3, product_update, 2026-02-06)</div>
+                <div>7. (Arcee AI, Trinity 400B, open_source, 2026-01-30)</div>
+                <div>8. (Zhipu, GLM-5, model_release, 2026-02-10)</div>
+                <div>9. (Alphabet, Bond Sale, business, 2026-02-09)</div>
+                <div>10. (Multiple, Medical AI, risk_report, 2026-02-09)</div>
+            </div>
+        </section>
+
+        <!-- Search Stats -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">📈</span>
+                <span class="section-title">补搜统计</span>
+            </div>
+            <div class="stats-box">
+                <div class="stats-grid">
+                    <div class="stat-item"><span class="stat-label">Web Search 轮数</span><span class="stat-value">2轮</span></div>
+                    <div class="stat-item"><span class="stat-label">Web Search Query</span><span class="stat-value">12条</span></div>
+                    <div class="stat-item"><span class="stat-label">Bird Search 轮数</span><span class="stat-value">9组</span></div>
+                    <div class="stat-item"><span class="stat-label">Watchlist 账号</span><span class="stat-value">6个</span></div>
+                    <div class="stat-item"><span class="stat-label">7d 补漏条数</span><span class="stat-value">1条 (Arcee AI)</span></div>
+                    <div class="stat-item"><span class="stat-label">Rate Limit 触发</span><span class="stat-value">8次</span></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="archive-links">
+                <a href="./archive/2026-02-10.html" class="archive-link">2026-02-10</a>
+                <span style="color: var(--border-color);">|</span>
+                <span style="color: var(--text-secondary);">最近7天归档</span>
+            </div>
+            <p>AI Daily Report · Generated on 2026-02-10</p>
+            <p style="font-size: 12px; margin-top: 8px;">数据来源: Brave Search, X/Twitter (bird), 官方公告</p>
+        </footer>
     </div>
-
-    <section>
-      <h2 class="section-title">🚀 发布 (Releases)</h2>
-      
-      <div class="news-item">
-        <h3><span class="news-tag">X高热</span>字节跳动Seedance 2.0正式上线即梦平台，AI视频良品率突破90%</h3>
-        <p>字节跳动旗下视频生成模型Seedance 2.0于本周在即梦平台正式上线，无需排队申请即可使用。该模型支持同时输入最多9张图片和3个视频作为参考素材，实现多镜头叙事。据实测，Seedance 2.0良品率超过90%，大幅提升创作效率。模型已全面接入即梦、CapCut（剪映）等字节系产品，会员用户（69元起）可直接使用。</p>
-        <p class="news-source">来源：36氪 <a href="https://36kr.com/p/3676072215163399" target="_blank">36kr.com</a> / 虎嗅 <a href="https://www.huxiu.com/article/4833593.html" target="_blank">huxiu.com</a> / @gigazine <a href="https://x.com/gigazine/status/2021065670826377696" target="_blank">x.com</a></p>
-      </div>
-      
-      <div class="news-item">
-        <h3><span class="news-tag blue">重磅</span>OpenAI GPT-5.3-Codex今日起推送Cursor、GitHub、VS Code</h3>
-        <p>Sam Altman宣布GPT-5.3-Codex于2月9日起正式推送到Cursor、GitHub和VS Code。该模型是OpenAI首个达到网络安全"高"等级的模型，相关API接入正在加紧准备中。Codex App首周下载量突破100万，周活跃用户增长超60%。Altman表示将保持Codex对免费/Go用户的可用性，但可能需要降低使用限额。</p>
-        <p class="news-source">来源：@sama <a href="https://x.com/sama/status/2020940847190356092" target="_blank">x.com/sama</a> / @OpenAI <a href="https://x.com/OpenAI/status/2021025290366091442" target="_blank">x.com/OpenAI</a></p>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">⚡ 更新 (Updates)</h2>
-      
-      <div class="news-item">
-        <h3><span class="news-tag">X热议</span>Anthropic为非营利组织开放Claude Opus 4.6，Xcode集成Claude Agent SDK</h3>
-        <p>Anthropic宣布非营利组织在Team和Enterprise计划中可免费使用Claude Opus 4.6。同时，苹果Xcode现已直接集成Claude Agent SDK，开发者可在iPhone、Mac、Apple Vision Pro等苹果平台使用完整的Claude Code功能。Anthropic还发布了2.5倍更快的Opus 4.6早期实验版本。</p>
-        <p class="news-source">来源：@AnthropicAI <a href="https://x.com/AnthropicAI/status/2020908471936323584" target="_blank">x.com</a> / @AnthropicAI <a href="https://x.com/AnthropicAI/status/2018771170938724682" target="_blank">x.com</a></p>
-      </div>
-      
-      <div class="news-item">
-        <h3><span class="news-tag">X热议</span>Claude Code反向工程发现隐藏WebSocket标志，开源社区构建免费UI</h3>
-        <p>开发者反向工程Claude Code发现隐藏的WebSocket标志，并在此基础上构建了100%开源的UI界面，可与现有的$200订阅配合使用。该发现使开发者能够创建自定义界面，同时保持与Anthropic官方服务的兼容性。</p>
-        <p class="news-source">来源：@Saboo_Shubham_ <a href="https://x.com/Saboo_Shubham_/status/2021066872289100277" target="_blank">x.com</a> / X社区</p>
-      </div>
-      
-      <div class="news-item">
-        <h3><span class="news-tag green">更新</span>Google Chromebook Plus机型开始推出Gemini功能</h3>
-        <p>Google确认Gemini功能已开始向Chromebook Plus设备推出，首先在美国上线。用户可在Chrome浏览器中直接使用AI工具，包括写作辅助、图像生成等功能。</p>
-        <p class="news-source">来源：Business Standard <a href="https://www.business-standard.com/amp/technology/tech-news/google-expands-gemini-in-chrome-to-chromebook-plus-devices-details-here-126020900633_1.html" target="_blank">business-standard.com</a></p>
-      </div>
-      
-      <div class="news-item">
-        <h3><span class="news-tag">X热议</span>VS Code Insiders新增Claude Agents与Rules支持</h3>
-        <p>VS Code Insiders版本新增对Claude Agents的支持，可在.claude/agents/文件夹中定义自定义代理。同时支持.claude/rules/文件夹创建规则，实现与Claude的完整兼容性。此外还增加了强大的tool hooks、contextual tips等功能。</p>
-        <p class="news-source">来源：@techSage <a href="https://x.com/techSage/status/2021066724473438662" target="_blank">x.com</a></p>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">🔓 开源 (Open Source)</h2>
-      
-      <div class="news-item">
-        <h3><span class="news-tag">X高热</span>Kimi K2.5被誉为"开源之王"，社区反响热烈</h3>
-        <p>月之暗面Kimi K2.5在开发者社区获得高度评价，被称为"开源之王"。开发者反馈使用Kimi K2.5可以完整完成功能开发，与Claude配合进行合并提交时表现出色。该模型在vibe coding场景下表现优异，被视为GPT-5.2的有力竞争者。</p>
-        <p class="news-source">来源：@robertto <a href="https://x.com/robertto/status/2021065949470916791" target="_blank">x.com</a> / @shaped <a href="https://x.com/shaped/status/2021066013316681944" target="_blank">x.com</a></p>
-      </div>
-      
-      <div class="news-item">
-        <h3><span class="news-tag">社区</span>Claude Code开源替代品涌现，社区推动生态开放</h3>
-        <p>随着Claude Code的流行，开源社区正在构建多种开源替代方案。开发者通过反向工程和协议分析，创建了兼容Claude API的第三方客户端，降低使用门槛。</p>
-        <p class="news-source">来源：X开发者社区</p>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">📊 评测/基准 (Benchmarks)</h2>
-      
-      <div class="news-item">
-        <h3><span class="news-tag blue">测试</span>Kling 3.0 vs Seedance 2.0 vs Sora 2 vs Veo 3.1同台对比测试</h3>
-        <p>X社区出现大量AI视频模型横向对比测试。同一提示词在四个主流模型中生成，从画质细腻度、物理规律真实度、角色一致性等维度进行评测。Seedance 2.0在良品率和生成速度上表现突出，而Sora 2在电影感营造上仍有优势。</p>
-        <p class="news-source">来源：@thebetabeta <a href="https://x.com/thebetabeta/status/2021066585067356438" target="_blank">x.com</a> / X社区</p>
-      </div>
-      
-      <div class="news-item">
-        <h3><span class="news-tag">评测</span>Seedance 2.0实测：语音与画面同步，但仍有错乱问题</h3>
-        <p>实测显示，Seedance 2.0在生成视频时可同步生成匹配的音效和配乐，支持口型同步和情绪匹配。15秒视频生成需排队约1小时。角色一致性在复杂动作场景中表现良好，但在极度模糊的运动帧中仍有涂抹感，语音错乱和字幕乱码问题偶有发生。</p>
-        <p class="news-source">来源：36氪实测 <a href="https://36kr.com/p/3676072215163399" target="_blank">36kr.com</a></p>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">💼 商业 (Business)</h2>
-      
-      <div class="news-item">
-        <h3><span class="news-tag">X高热</span>OpenAI开始在美测试ChatGPT广告，面向免费和Go用户</h3>
-        <p>OpenAI于2月9日开始在美国向部分免费和Go用户测试广告功能。广告不会影响ChatGPT的回答内容，将标注为"赞助"并视觉上与回答分离。Sam Altman表示目标是为所有人提供免费ChatGPT，同时保护用户对重要和个人任务的信任。付费用户（Plus/Pro）无广告。</p>
-        <p class="news-source">来源：@OpenAI <a href="https://x.com/OpenAI/status/2020936703763153010" target="_blank">x.com/OpenAI</a> / @sama <a href="https://x.com/sama/status/2020977975081177343" target="_blank">x.com/sama</a></p>
-      </div>
-      
-      <div class="news-item">
-        <h3><span class="news-tag">警告</span>欧盟警告Meta停止在WhatsApp中排除第三方AI助手</h3>
-        <p>欧盟委员会正式通知Meta，可能采取临时措施制止其在WhatsApp中排除第三方AI助手的行为。调查关注Meta是否滥用市场支配地位，阻止竞争对手的AI服务访问WhatsApp Business API。Meta辩称第三方AI聊天机器人给其系统带来压力。</p>
-        <p class="news-source">来源：@ExpressTechie <a href="https://x.com/ExpressTechie/status/2021064245157536123" target="_blank">x.com</a> / @pvmest <a href="https://x.com/pvmest/status/2021062961268404624" target="_blank">x.com</a></p>
-      </div>
-      
-      <div class="news-item">
-        <h3><span class="news-tag">商业</span>a16z领投日本AI角色公司Shizuku AI 1500万美元种子轮</h3>
-        <p>硅谷最大风投a16z领投日本AI角色公司Shizuku AI 1500万美元种子轮。创始人来自UC Berkeley博士、前Meta，是实时图像生成90fps论文作者（GitHub超1万星）。VTuber市场预计从2026年31亿美元增长至2033年136亿美元。投资者看中的是"日本角色文化"这一AI最难复制的资产。</p>
-        <p class="news-source">来源：@ponkiland <a href="https://x.com/ponkiland/status/2021062991043809421" target="_blank">x.com</a></p>
-      </div>
-      
-      <div class="news-item">
-        <h3><span class="news-tag">招聘</span>Kimi月之暗面大规模招聘，急招多个岗位</h3>
-        <p>月之暗面Kimi正在大规模招聘，通过HR在社区发布急招岗位信息，提供内推码加速流程。显示公司仍处于快速扩张期，持续加大人才投入。</p>
-        <p class="news-source">来源：@real_kai42 <a href="https://x.com/real_kai42/status/2021065575347388830" target="_blank">x.com</a></p>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">⚠️ 风险/监管 (Risks)</h2>
-      
-      <div class="news-item">
-        <h3><span class="news-tag">监管</span>欧盟正式对Meta启动反垄断调查，WhatsApp AI集成成焦点</h3>
-        <p>欧盟委员会已对Meta Platforms发起正式反垄断调查，审查其关于AI开发者访问WhatsApp的规定是否损害竞争。这是欧洲监管机构对大型科技企业加强审查的最新举措，Meta可能面临最高164亿美元罚款。意大利反垄断机构也在同步调查中。</p>
-        <p class="news-source">来源：@Cointime_global <a href="https://x.com/Cointime_global/status/1996460736764400105" target="_blank">x.com</a> / @ChineseWSJ <a href="https://x.com/ChineseWSJ/status/1996805230030197143" target="_blank">x.com</a></p>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">🔥 X高互动事件卡片</h2>
-      
-      <div class="x-card">
-        <h4>🎬 Seedance 2.0发布引发热议</h4>
-        <p>字节跳动视频生成AI Seedance 2.0正式发布，支持多模态输入（最多9图+3视频参考），良品率超90%。网友惊呼"I'm cooked"——AI视频制作进入工业化时代。</p>
-        <p class="engagement">来源：@Awesome_AI_News / @HomoDeusLite / @thebetabeta | 互动量：高</p>
-      </div>
-      
-      <div class="x-card">
-        <h4>💻 Claude Code反向工程发现隐藏功能</h4>
-        <p>开发者发现Claude Code存在隐藏的WebSocket标志，可构建100%开源UI兼容现有订阅。Claude Opus 4.6速度提升2.5倍，非营利组织现可免费使用。</p>
-        <p class="engagement">来源：@Saboo_Shubham_ / @AnthropicAI | 互动量：高</p>
-      </div>
-      
-      <div class="x-card">
-        <h4>🤖 GPT-5.3-Codex推送主流IDE</h4>
-        <p>OpenAI GPT-5.3-Codex正式登陆Cursor、GitHub、VS Code。首周下载破100万，周活增长60%。Sam Altman确认将保持免费层可用。</p>
-        <p class="engagement">来源：@sama / @OpenAI | 互动量：极高</p>
-      </div>
-      
-      <div class="x-card">
-        <h4>🎮 AI视频模型四方对决</h4>
-        <p>Kling 3.0 vs Seedance 2.0 vs Sora 2 vs Veo 3.1同台竞技测试在社区引发投票热潮，用户对比同一提示词下各模型表现。</p>
-        <p class="engagement">来源：@thebetabeta | 互动量：中高</p>
-      </div>
-      
-      <div class="x-card">
-        <h4>🔓 Kimi K2.5获封"开源之王"</h4>
-        <p>开发者社区盛赞Kimi K2.5，称其为开源模型中的王者，在代码生成和vibe coding场景表现优异。</p>
-        <p class="engagement">来源：@robertto / @shaped | 互动量：中</p>
-      </div>
-      
-      <div class="x-card">
-        <h4>⚠️ 欧盟重锤Meta反垄断</h4>
-        <p>欧盟正式警告Meta，可能采取临时措施制止其在WhatsApp中排除第三方AI助手的行为，涉及反垄断调查。</p>
-        <p class="engagement">来源：@ExpressTechie / @pvmest | 互动量：高</p>
-      </div>
-      
-      <div class="x-card">
-        <h4>💰 OpenAI测试广告引发讨论</h4>
-        <p>OpenAI开始在美国测试ChatGPT广告，面向免费/Go用户。Anthropic随即发布视频表态"Claude不会有广告"。</p>
-        <p class="engagement">来源：@OpenAI / @AnthropicAI | 互动量：高</p>
-      </div>
-      
-      <div class="x-card">
-        <h4>🎨 a16z押注日本AI角色文化</h4>
-        <p>硅谷风投巨头a16z领投日本AI角色公司Shizuku AI 1500万美元种子轮，看重"日本角色文化"这一AI最难复制的资产。</p>
-        <p class="engagement">来源：@ponkiland | 互动量：中</p>
-      </div>
-    </section>
-
-    <div class="self-check">
-      <h4>📋 覆盖度自检</h4>
-      <ul>
-        <li><strong>栏目覆盖：</strong>发布(2/2✓) · 更新(4/4✓) · 开源(2/2✓) · 评测(2/2✓) · 商业(4/4✓) · 风险(1/1✓)</li>
-        <li><strong>厂商命中：</strong>字节Seedance✓ · 智谱GLM(提及) · 月之暗面Kimi✓ · 阿里Qwen(提及) · OpenAI✓ · Anthropic✓ · Google✓ · Meta✓ · 腾讯混元(未命中) · 百度文心(未命中)</li>
-        <li><strong>补搜情况：</strong>Web Breaking 6条执行成功，4条rate limit；X搜索8组全部完成；未触发7d补搜</li>
-        <li><strong>7d补漏：</strong>0条</li>
-        <li><strong>事件去重：</strong>已合并同一事件多来源报道（Seedance 2.0、GPT-5.3-Codex、Meta反垄断等）</li>
-        <li><strong>dedupe_key：</strong>bytedance-seedance-2.0-release, openai-gpt-5.3-codex-release, anthropic-opus-4.6-update, anthropic-claude-code-sdk-xcode, meta-eu-antitrust-whatsapp, openai-chatgpt-ads-test, a16z-shizuku-ai-funding</li>
-        <li><strong>时效标注：</strong>所有条目均来自2月9-10日24小时内，符合时效要求</li>
-      </ul>
-    </div>
-
-    <div class="archive">
-      <h3 class="section-title">历史归档</h3>
-      <div class="archive-list">
-        <span class="archive-item"><a href="2026-02-10.html">02-10</a></span>
-        <span class="archive-item"><a href="2026-02-09.html">02-09</a></span>
-        <span class="archive-item"><a href="2026-02-08.html">02-08</a></span>
-        <span class="archive-item"><a href="2026-02-07.html">02-07</a></span>
-        <span class="archive-item"><a href="2026-02-06.html">02-06</a></span>
-        <span class="archive-item"><a href="2026-02-05.html">02-05</a></span>
-        <span class="archive-item"><a href="2026-02-04.html">02-04</a></span>
-      </div>
-    </div>
-
-    <footer>
-      <p>AI Daily Report · 融合版</p>
-      <p>Generated at 2026-02-10 03:45 UTC · Data from X/Twitter & Web</p>
-      <p><a href="https://github.com/elliclee/ai-daily-report" target="_blank">GitHub</a></p>
-    </footer>
-  </div>
 </body>
 </html>
