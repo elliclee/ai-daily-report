@@ -17,6 +17,8 @@
       --muted-foreground: #6b6560;
       --border: #e5e0d8;
       --accent: #e85d04;
+      --green: #059669;
+      --blue: #2563eb;
     }
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
@@ -38,6 +40,8 @@
     .news-item:last-child { border-bottom: none; }
     .news-item h3 { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 17px; font-weight: 500; line-height: 1.5; margin-bottom: 12px; }
     .news-tag { display: inline-block; background: rgba(232, 93, 4, 0.1); color: var(--accent); font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 20px; margin-right: 8px; vertical-align: middle; }
+    .news-tag.green { background: rgba(5, 150, 105, 0.1); color: var(--green); }
+    .news-tag.blue { background: rgba(37, 99, 235, 0.1); color: var(--blue); }
     .news-item p { font-size: 14px; line-height: 1.7; color: var(--muted-foreground); margin-bottom: 12px; }
     .news-source { font-size: 12px; color: #9a9590; }
     .news-source a { color: #2563eb; text-decoration: none; }
@@ -51,10 +55,15 @@
     .archive-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
     .archive-item { font-size: 13px; padding: 4px 12px; background: var(--card); border: 1px solid var(--border); border-radius: 4px; }
     .archive-item a { color: var(--foreground); text-decoration: none; }
+    .archive-item a:hover { color: var(--accent); }
     footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: #9a9590; }
     footer p { margin-bottom: 4px; }
     footer a { color: #2563eb; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
+    .self-check { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin-top: 48px; font-size: 13px; }
+    .self-check h4 { font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+    .self-check ul { margin-left: 16px; color: var(--muted-foreground); }
+    .self-check li { margin-bottom: 6px; }
     @media (max-width: 640px) {
       .container { padding: 32px 16px 48px; }
       .page-title h1 { font-size: 26px; }
@@ -65,8 +74,8 @@
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo">AI Daily Report</a>
-      <span class="date">2026年2月10日</span>
+      <a href="/ai-daily-report/" class="logo">AI Daily Report</a>
+      <span class="date">2026年2月10日 · 周二</span>
     </header>
     <div class="page-title">
       <h1>AI早报融合版</h1>
@@ -74,243 +83,201 @@
     </div>
 
     <section>
-      <h2 class="section-title">头条新闻</h2>
+      <h2 class="section-title">🚀 发布 (Releases)</h2>
       
       <div class="news-item">
-        <h3><span class="news-tag">X热议</span>OpenAI发布GPT-5.3-Codex，Sam Altman宣布ChatGPT重回10%月增长率</h3>
-        <p>OpenAI于2月5日发布GPT-5.3-Codex模型，较前代提速25%，在SWE-Bench Pro等多语言软件工程基准测试中创下新高。与此同时，Sam Altman向员工透露ChatGPT周活跃用户已达8亿，月增长率重回10%以上。Codex应用首周下载量突破100万，周活跃用户增长超60%。</p>
-        <p class="news-source">来源：@sama <a href="https://x.com/sama/status/2020977975081177343" target="_blank">x.com/sama</a> / OpenAI官方博客</p>
+        <h3><span class="news-tag">X高热</span>字节跳动Seedance 2.0正式上线即梦平台，AI视频良品率突破90%</h3>
+        <p>字节跳动旗下视频生成模型Seedance 2.0于本周在即梦平台正式上线，无需排队申请即可使用。该模型支持同时输入最多9张图片和3个视频作为参考素材，实现多镜头叙事。据实测，Seedance 2.0良品率超过90%，大幅提升创作效率。模型已全面接入即梦、CapCut（剪映）等字节系产品，会员用户（69元起）可直接使用。</p>
+        <p class="news-source">来源：36氪 <a href="https://36kr.com/p/3676072215163399" target="_blank">36kr.com</a> / 虎嗅 <a href="https://www.huxiu.com/article/4833593.html" target="_blank">huxiu.com</a> / @gigazine <a href="https://x.com/gigazine/status/2021065670826377696" target="_blank">x.com</a></p>
       </div>
       
       <div class="news-item">
-        <h3><span class="news-tag">X热议</span>Anthropic同日发布Claude Opus 4.6，百万token上下文窗口来袭</h3>
-        <p>Anthropic于2月5日与OpenAI同日发布Claude Opus 4.6，支持100万token上下文窗口（Beta），并在Terminal-Bench 2.0、GDPval-AA等基准测试中超越GPT-5.2约144个ELO点。新增"Agent Teams"功能，支持多AI代理协作完成编码任务。定价维持每百万输入token $5、输出token $25。</p>
-        <p class="news-source">来源：Anthropic官方新闻 <a href="https://www.anthropic.com/news/claude-opus-4-6" target="_blank">anthropic.com</a> / via TechCrunch</p>
-      </div>
-      
-      <div class="news-item">
-        <h3>Waymo完成160亿美元融资，估值飙升至1260亿美元</h3>
-        <p>Waymo于2月初完成史上最大自动驾驶融资，估值从2024年底的450亿美元暴涨180%至1260亿美元。本轮由Dragoneer、DST Global、红杉资本领投，Alphabet出资约130亿美元。Waymo 2025年完成超1500万次付费出行，ARR超3.5亿美元，计划2026年拓展至东京、伦敦等20+新城市。</p>
-        <p class="news-source">来源：Waymo官方博客 <a href="https://waymo.com/blog/2026/02/waymo-raises-usd16-billion-investment-round" target="_blank">waymo.com</a> / via Electrek</p>
-      </div>
-      
-      <div class="news-item">
-        <h3><span class="news-tag">X热议</span>ChatGPT开始在美测试广告，OpenAI探索新营收模式</h3>
-        <p>OpenAI开始在美国为免费和Go套餐用户测试广告，广告将标注显示在回答底部，承诺不影响答案内容。Sam Altman反驳竞争对手对广告的批评，称相关说法具有误导性。长期看，广告收入预计不会超过总收入的50%。付费用户（Plus/Pro）仍无广告。</p>
-        <p class="news-source">来源：@Benzinga <a href="https://x.com/Benzinga/status/2020950995300130961" target="_blank">x.com/Benzinga</a> / via CNBC</p>
+        <h3><span class="news-tag blue">重磅</span>OpenAI GPT-5.3-Codex今日起推送Cursor、GitHub、VS Code</h3>
+        <p>Sam Altman宣布GPT-5.3-Codex于2月9日起正式推送到Cursor、GitHub和VS Code。该模型是OpenAI首个达到网络安全"高"等级的模型，相关API接入正在加紧准备中。Codex App首周下载量突破100万，周活跃用户增长超60%。Altman表示将保持Codex对免费/Go用户的可用性，但可能需要降低使用限额。</p>
+        <p class="news-source">来源：@sama <a href="https://x.com/sama/status/2020940847190356092" target="_blank">x.com/sama</a> / @OpenAI <a href="https://x.com/OpenAI/status/2021025290366091442" target="_blank">x.com/OpenAI</a></p>
       </div>
     </section>
 
     <section>
-      <h2 class="section-title">新模型/工具</h2>
+      <h2 class="section-title">⚡ 更新 (Updates)</h2>
       
       <div class="news-item">
-        <h3>Cursor发布Composer 1.5：速度与智能的新平衡</h3>
-        <p>Cursor AI发布Composer 1.5，采用混合专家（MoE）架构和强化学习训练，生成速度较同类模型快4倍。支持128K token上下文，可处理完整项目，在Agent模式下支持规划、代码编写/审查、终端命令等端到端实现。目前已在Cursor编辑器中上线。</p>
-        <p class="news-source">来源：Cursor官方博客 <a href="https://cursor.com/blog/composer" target="_blank">cursor.com</a> / via @cursor_ai</p>
-      </div>
-      
-      <div class="news-item">
-        <h3>Waymo与Google DeepMind合作发布自动驾驶仿真工具</h3>
-        <p>Waymo发布基于Google DeepMind技术的新款驾驶仿真工具，可生成逼真的虚拟环境进行训练。Waymo杰出工程师Vincent Vanhoucke形容这是"AI生成的视频游戏"，虚拟Waymo在其中的行为与真实道路完全一致。该工具将加速自动驾驶算法的迭代和安全验证。</p>
-        <p class="news-source">来源：@theinformation <a href="https://x.com/theinformation/status/2020988716961890413" target="_blank">x.com/theinformation</a></p>
+        <h3><span class="news-tag">X热议</span>Anthropic为非营利组织开放Claude Opus 4.6，Xcode集成Claude Agent SDK</h3>
+        <p>Anthropic宣布非营利组织在Team和Enterprise计划中可免费使用Claude Opus 4.6。同时，苹果Xcode现已直接集成Claude Agent SDK，开发者可在iPhone、Mac、Apple Vision Pro等苹果平台使用完整的Claude Code功能。Anthropic还发布了2.5倍更快的Opus 4.6早期实验版本。</p>
+        <p class="news-source">来源：@AnthropicAI <a href="https://x.com/AnthropicAI/status/2020908471936323584" target="_blank">x.com</a> / @AnthropicAI <a href="https://x.com/AnthropicAI/status/2018771170938724682" target="_blank">x.com</a></p>
       </div>
       
       <div class="news-item">
-        <h3>Microsoft发布检测AI模型" sleeper agent"后门的方法</h3>
-        <p>微软公开了一种检测AI模型中"休眠代理"（sleeper agent）后门的方法，可识别在训练阶段被植入、在特定触发条件下激活的恶意行为。这一安全研究对防范AI系统被恶意操控具有重要意义。</p>
-        <p class="news-source">来源：via Artificial Intelligence News</p>
-      </div>
-
-      <h3 style="font-size: 14px; font-weight: 600; margin: 24px 0 16px; color: var(--muted-foreground);">X 高互动事件卡片</h3>
-      <p style="font-size: 13px; color: var(--muted-foreground); margin-bottom: 16px;">昨日符合条件的高互动推文充足，以下是从真实检索结果中提炼的精选内容：</p>
-      
-      <div class="x-card">
-        <h4>🤖 GPT-5.3-Codex首发即"自举"开发</h4>
-        <p>OpenAI团队使用早期版本修复训练错误、管理部署和分析结果——新模型帮助构建了自己。</p>
-        <p class="play">💡 可用玩法：企业可通过Frontier平台雇佣"AI代理员工"；开发者可体验自主编码代理</p>
-        <p class="engagement">来源：@Alsultanabrahim <a href="https://x.com/Alsultanabrahim/status/2020976512128909506" target="_blank">x.com</a> | 互动数据：待检索确认</p>
+        <h3><span class="news-tag">X热议</span>Claude Code反向工程发现隐藏WebSocket标志，开源社区构建免费UI</h3>
+        <p>开发者反向工程Claude Code发现隐藏的WebSocket标志，并在此基础上构建了100%开源的UI界面，可与现有的$200订阅配合使用。该发现使开发者能够创建自定义界面，同时保持与Anthropic官方服务的兼容性。</p>
+        <p class="news-source">来源：@Saboo_Shubham_ <a href="https://x.com/Saboo_Shubham_/status/2021066872289100277" target="_blank">x.com</a> / X社区</p>
       </div>
       
-      <div class="x-card">
-        <h4>⚡ Cursor Composer 1.5速度与智能兼得</h4>
-        <p>强化学习训练20倍，保持速度的同时提升多文件一致性和指令跟随稳定性。</p>
-        <p class="play">💡 可用玩法：轻量UI变更到中等规模重构，IDE内全流程辅助；Auto模式减少往返修正</p>
-        <p class="engagement">来源：@fugusakate <a href="https://x.com/fugusakate/status/2021008313325060255" target="_blank">x.com</a> / @oikon48</p>
+      <div class="news-item">
+        <h3><span class="news-tag green">更新</span>Google Chromebook Plus机型开始推出Gemini功能</h3>
+        <p>Google确认Gemini功能已开始向Chromebook Plus设备推出，首先在美国上线。用户可在Chrome浏览器中直接使用AI工具，包括写作辅助、图像生成等功能。</p>
+        <p class="news-source">来源：Business Standard <a href="https://www.business-standard.com/amp/technology/tech-news/google-expands-gemini-in-chrome-to-chromebook-plus-devices-details-here-126020900633_1.html" target="_blank">business-standard.com</a></p>
       </div>
       
-      <div class="x-card">
-        <h4>🎯 Anthropic Opus 4.6发现500+零日漏洞</h4>
-        <p>新模型在网络安全测试中表现突出，Max了所有网络基准测试。</p>
-        <p class="play">💡 可用玩法：安全团队可用于漏洞扫描；Agent Teams支持多代理协作安全审计</p>
-        <p class="engagement">来源：@devlikebear <a href="https://x.com/devlikebear/status/2021007234713649368" target="_blank">x.com</a> / @riskmarketnews</p>
-      </div>
-      
-      <div class="x-card">
-        <h4>📈 Anthropic估值$350B、IPO传闻再起</h4>
-        <p>据报Anthropic正 finalize 200亿美元融资，估值达3500亿美元，与OpenAI正面竞争。Bloomberg称2026年IPO在望。</p>
-        <p class="play">💡 可用玩法：关注企业级API定价策略；Claude Constitution训练方法可借鉴</p>
-        <p class="engagement">来源：@Rita53135643 <a href="https://x.com/Rita53135643/status/2020994104453365770" target="_blank">x.com</a></p>
-      </div>
-      
-      <div class="x-card">
-        <h4>🚗 Waymo 160亿融资开启全球扩张</h4>
-        <p>估值翻倍至1260亿美元，计划2026年进入东京、伦敦等20+城市，每周15万次付费出行。</p>
-        <p class="play">💡 可用玩法：关注robotaxi行业投资机会；仿真工具技术可能开源惠及整个行业</p>
-        <p class="engagement">来源：@trakkerfinance <a href="https://x.com/trakkerfinance/status/2021011242404511965" target="_blank">x.com</a></p>
-      </div>
-      
-      <div class="x-card">
-        <h4>💰 Microsoft估值低于IBM，AI投资" tax "显现</h4>
-        <p>单季度375亿美元CapEx拖累估值，P/E从35x降至26x，为十年来首次低于IBM。</p>
-        <p class="play">💡 可用玩法：关注AI基础设施股回调机会；Azure AI服务235亿美元ARR支撑长期价值</p>
-        <p class="engagement">来源：@CoachNickMoney <a href="https://x.com/CoachNickMoney/status/2021011305793040646" target="_blank">x.com</a> / via MarketWatch</p>
-      </div>
-      
-      <div class="x-card">
-        <h4>🎭 Anthropic安全研究员辞职："世界处于危险中"</h4>
-        <p>Mrinank Sharma在生物风险防御和价值漂移研究后辞职，转而追求诗歌研究生学业和"勇敢发言"。</p>
-        <p class="play">💡 可用玩法：关注AI安全领域人才流动；Alignment研究仍是前沿课题</p>
-        <p class="engagement">来源：@MrinankSharma / @jimkaskade <a href="https://x.com/jimkaskade/status/2021010923637412037" target="_blank">x.com</a> / via Forbes</p>
-      </div>
-      
-      <div class="x-card">
-        <h4>🧠 模型选型策略：按任务而非按代理</h4>
-        <p>heartbeat/cron用Gemini 2.5 Flash（免费），日常工作用Claude Sonnet 4，关键决策用Opus 4。</p>
-        <p class="play">💡 可用玩法：Antfarm等确定性工作流可用更便宜模型；节省成本同时保持质量</p>
-        <p class="engagement">来源：@joshuaday <a href="https://x.com/joshuaday/status/2021011296389603792" target="_blank">x.com</a></p>
+      <div class="news-item">
+        <h3><span class="news-tag">X热议</span>VS Code Insiders新增Claude Agents与Rules支持</h3>
+        <p>VS Code Insiders版本新增对Claude Agents的支持，可在.claude/agents/文件夹中定义自定义代理。同时支持.claude/rules/文件夹创建规则，实现与Claude的完整兼容性。此外还增加了强大的tool hooks、contextual tips等功能。</p>
+        <p class="news-source">来源：@techSage <a href="https://x.com/techSage/status/2021066724473438662" target="_blank">x.com</a></p>
       </div>
     </section>
 
     <section>
-      <h2 class="section-title">企业动态</h2>
+      <h2 class="section-title">🔓 开源 (Open Source)</h2>
       
       <div class="news-item">
-        <h3>Cerebras完成10亿美元H轮融资，估值230亿美元</h3>
-        <p>AI芯片公司Cerebras Systems于2月3日完成10亿美元融资，估值较6个月前的81亿美元翻倍至230亿美元。本轮由Tiger Global领投，Benchmark、AMD等参与。公司计划于2026年Q2上市，其WSE-3芯片是全球最大AI处理器，拥有90万核心。</p>
-        <p class="news-source">来源：Cerebras官方 <a href="https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h" target="_blank">cerebras.ai</a> / via TechCrunch</p>
+        <h3><span class="news-tag">X高热</span>Kimi K2.5被誉为"开源之王"，社区反响热烈</h3>
+        <p>月之暗面Kimi K2.5在开发者社区获得高度评价，被称为"开源之王"。开发者反馈使用Kimi K2.5可以完整完成功能开发，与Claude配合进行合并提交时表现出色。该模型在vibe coding场景下表现优异，被视为GPT-5.2的有力竞争者。</p>
+        <p class="news-source">来源：@robertto <a href="https://x.com/robertto/status/2021065949470916791" target="_blank">x.com</a> / @shaped <a href="https://x.com/shaped/status/2021066013316681944" target="_blank">x.com</a></p>
       </div>
       
       <div class="news-item">
-        <h3>早期AI融资潮：Positron 2.3亿、Fundamental 2.25亿、Goodfire 1.5亿</h3>
-        <p>2月首周AI初创公司密集融资：AI硬件公司Positron获2.3亿美元（累计3.05亿），AI研究公司Fundamental获2.25亿美元（累计2.55亿），AI可解释性公司Goodfire获1.5亿美元（累计2.07亿）。此外Overland AI（自动驾驶地面车辆）获8000万美元，Gather AI（仓储物理AI）获4000万美元。</p>
-        <p class="news-source">来源：via AlleyWatch <a href="https://alleywatch.com/2026/02/the-weekly-notable-startup-funding-report-2-9-26/" target="_blank">alleywatch.com</a></p>
-      </div>
-      
-      <div class="news-item">
-        <h3>Microsoft单季度AI投资375亿美元，全年预计1050-1150亿</h3>
-        <p>微软Q2 FY2026财报显示，单季度资本支出达375亿美元主要用于GPU采购，全年预计投资1050-1150亿美元。尽管营收和EPS均超预期，股价仍下跌约14%，反映市场对AI投资回报率的担忧。公司商业云待履约金额达6250亿美元。</p>
-        <p class="news-source">来源：via Morningstar <a href="https://www.morningstar.com/news/marketwatch/20260209333/microsofts-stock-is-cheaper-than-ibms-for-the-first-time-in-a-decade-what-that-says-about-the-ai-trade" target="_blank">morningstar.com</a></p>
-      </div>
-      
-      <div class="news-item">
-        <h3>OpenAI寻求最高1000亿美元新融资</h3>
-        <p>据报道，OpenAI正洽谈最高1000亿美元新融资，Nvidia拟投资200亿美元，Amazon可能投资500亿美元，SoftBank或出资300亿美元。该轮融资将支持AI研发和数据中心扩张。</p>
-        <p class="news-source">来源：via Benzinga <a href="https://x.com/Benzinga/status/2020950995300130961" target="_blank">x.com/Benzinga</a></p>
+        <h3><span class="news-tag">社区</span>Claude Code开源替代品涌现，社区推动生态开放</h3>
+        <p>随着Claude Code的流行，开源社区正在构建多种开源替代方案。开发者通过反向工程和协议分析，创建了兼容Claude API的第三方客户端，降低使用门槛。</p>
+        <p class="news-source">来源：X开发者社区</p>
       </div>
     </section>
 
     <section>
-      <h2 class="section-title">政策/监管</h2>
+      <h2 class="section-title">📊 评测/基准 (Benchmarks)</h2>
       
       <div class="news-item">
-        <h3>中国《网络安全法》修正案生效，AI首次纳入国家法律</h3>
-        <p>2026年1月1日起，中国《网络安全法》修正案正式生效，首次将AI纳入国家法律框架。修正案扩大了国家对AI研发的支持范围，包括基础理论研究、算法、训练数据基础设施和算力，同时加强对AI伦理、风险监测和安全监督的合规义务。</p>
-        <p class="news-source">来源：via China Briefing <a href="https://www.china-briefing.com/news/china-cybersecurity-law-amendment/" target="_blank">china-briefing.com</a></p>
+        <h3><span class="news-tag blue">测试</span>Kling 3.0 vs Seedance 2.0 vs Sora 2 vs Veo 3.1同台对比测试</h3>
+        <p>X社区出现大量AI视频模型横向对比测试。同一提示词在四个主流模型中生成，从画质细腻度、物理规律真实度、角色一致性等维度进行评测。Seedance 2.0在良品率和生成速度上表现突出，而Sora 2在电影感营造上仍有优势。</p>
+        <p class="news-source">来源：@thebetabeta <a href="https://x.com/thebetabeta/status/2021066585067356438" target="_blank">x.com</a> / X社区</p>
       </div>
       
       <div class="news-item">
-        <h3>美国AI监管：联邦与州法律冲突加剧</h3>
-        <p>2026年2月成为美国AI监管的关键节点。加州《前沿AI透明度法案》和德州《负责任AI治理法案》已于1月1日生效，国会正就联邦法律优先于州法律的问题展开辩论。能源瓶颈正迫使AI实验室重新思考"规模至上"策略。</p>
-        <p class="news-source">来源：via Mondaq <a href="https://www.mondaq.com/unitedstates/new-technology/1742332/2026-ai-policy-and-semiconductor-outlook-how-federal-preemption-state-ai-laws-and-chip-export-controls-will-shape-us-policy" target="_blank">mondaq.com</a></p>
-      </div>
-      
-      <div class="news-item">
-        <h3>中国发布"AI Plus"行动计划，目标2027年70%渗透率</h3>
-        <p>中国2025年8月发布的"AI Plus"行动计划目标到2027年实现重点领域70%的AI渗透率，2030年达90%，2035年建成全面AI驱动的经济。优先领域包括科技发展、工业应用、消费服务、公共福利、治理、安全和国际合作。</p>
-        <p class="news-source">来源：via IAPP <a href="https://iapp.org/resources/article/global-ai-governance-china" target="_blank">iapp.org</a></p>
+        <h3><span class="news-tag">评测</span>Seedance 2.0实测：语音与画面同步，但仍有错乱问题</h3>
+        <p>实测显示，Seedance 2.0在生成视频时可同步生成匹配的音效和配乐，支持口型同步和情绪匹配。15秒视频生成需排队约1小时。角色一致性在复杂动作场景中表现良好，但在极度模糊的运动帧中仍有涂抹感，语音错乱和字幕乱码问题偶有发生。</p>
+        <p class="news-source">来源：36氪实测 <a href="https://36kr.com/p/3676072215163399" target="_blank">36kr.com</a></p>
       </div>
     </section>
 
     <section>
-      <h2 class="section-title">融合洞察</h2>
+      <h2 class="section-title">💼 商业 (Business)</h2>
       
       <div class="news-item">
-        <h3>"模型大战"进入白热化：同日发布成为新常态</h3>
-        <p>2月5日，OpenAI与Anthropic同日发布旗舰模型（GPT-5.3-Codex与Claude Opus 4.6），标志着AI基础模型竞争进入新阶段。双方均在编码能力和Agent功能上发力，且不约而同选择在工作日而非传统发布会窗口发布。这种"突袭式"发布策略表明：模型迭代速度已超越传统产品发布周期，竞争焦点从"谁更好"转向"谁更快"。</p>
-        <p class="news-source">洞察来源：综合X讨论与官方发布信息</p>
+        <h3><span class="news-tag">X高热</span>OpenAI开始在美测试ChatGPT广告，面向免费和Go用户</h3>
+        <p>OpenAI于2月9日开始在美国向部分免费和Go用户测试广告功能。广告不会影响ChatGPT的回答内容，将标注为"赞助"并视觉上与回答分离。Sam Altman表示目标是为所有人提供免费ChatGPT，同时保护用户对重要和个人任务的信任。付费用户（Plus/Pro）无广告。</p>
+        <p class="news-source">来源：@OpenAI <a href="https://x.com/OpenAI/status/2020936703763153010" target="_blank">x.com/OpenAI</a> / @sama <a href="https://x.com/sama/status/2020977975081177343" target="_blank">x.com/sama</a></p>
       </div>
       
       <div class="news-item">
-        <h3>Agent经济雏形初现：从"助手"到"员工"</h3>
-        <p>OpenAI Frontier平台和Anthropic Agent Teams的推出，标志着AI从"辅助工具"向"自主员工"的转型。Sam Altman称"将保持Codex对免费用户开放"，暗示用户教育和生态构建优先级高于短期变现。企业客户（银行、保险、网络安全）已开始为此付费，AI劳动力市场的基础设施正在成型。</p>
-        <p class="news-source">洞察来源：@sama推文与官方公告分析</p>
+        <h3><span class="news-tag">警告</span>欧盟警告Meta停止在WhatsApp中排除第三方AI助手</h3>
+        <p>欧盟委员会正式通知Meta，可能采取临时措施制止其在WhatsApp中排除第三方AI助手的行为。调查关注Meta是否滥用市场支配地位，阻止竞争对手的AI服务访问WhatsApp Business API。Meta辩称第三方AI聊天机器人给其系统带来压力。</p>
+        <p class="news-source">来源：@ExpressTechie <a href="https://x.com/ExpressTechie/status/2021064245157536123" target="_blank">x.com</a> / @pvmest <a href="https://x.com/pvmest/status/2021062961268404624" target="_blank">x.com</a></p>
       </div>
       
       <div class="news-item">
-        <h3>资本开支"军备竞赛"：投资者的耐心测试</h3>
-        <p>Microsoft单季度375亿美元、全年超1000亿美元的AI投资，与其估值被压缩至低于IBM形成鲜明对比。这种"先投后收"策略能否奏效，将决定2026年AI板块的整体走势。与此同时，Cerebras、Waymo等硬件/应用层公司的大规模融资表明，资本正在AI栈的各层寻找出口。</p>
-        <p class="news-source">洞察来源：财报数据与融资新闻综合分析</p>
+        <h3><span class="news-tag">商业</span>a16z领投日本AI角色公司Shizuku AI 1500万美元种子轮</h3>
+        <p>硅谷最大风投a16z领投日本AI角色公司Shizuku AI 1500万美元种子轮。创始人来自UC Berkeley博士、前Meta，是实时图像生成90fps论文作者（GitHub超1万星）。VTuber市场预计从2026年31亿美元增长至2033年136亿美元。投资者看中的是"日本角色文化"这一AI最难复制的资产。</p>
+        <p class="news-source">来源：@ponkiland <a href="https://x.com/ponkiland/status/2021062991043809421" target="_blank">x.com</a></p>
       </div>
       
       <div class="news-item">
-        <h3>中美监管路径分化：全面法 vs 部门法</h3>
-        <p>中国选择通过《网络安全法》修正案将AI纳入现有法律框架，配合"AI Plus"行动计划推进产业应用；美国则面临联邦与州法律碎片化的挑战。两种路径各有优劣：中国的集中式推进利于快速落地，但可能抑制创新；美国的分散式治理保护创新，但增加了合规成本。2026年将是观察两种模式成效的关键年。</p>
-        <p class="news-source">洞察来源：政策文件对比分析</p>
+        <h3><span class="news-tag">招聘</span>Kimi月之暗面大规模招聘，急招多个岗位</h3>
+        <p>月之暗面Kimi正在大规模招聘，通过HR在社区发布急招岗位信息，提供内推码加速流程。显示公司仍处于快速扩张期，持续加大人才投入。</p>
+        <p class="news-source">来源：@real_kai42 <a href="https://x.com/real_kai42/status/2021065575347388830" target="_blank">x.com</a></p>
       </div>
     </section>
 
     <section>
-      <h2 class="section-title">市场数据速览</h2>
+      <h2 class="section-title">⚠️ 风险/监管 (Risks)</h2>
       
       <div class="news-item">
-        <h3>Polymarket预测（截至2月10日）</h3>
-        <p>• 6月30日最佳AI模型：Google 50%、Anthropic 20%、xAI 13%、OpenAI 11%（交易量$786K）<br>
-        • 6月30日最大市值AI公司：NVIDIA 63%、Alphabet 21%（交易量$2M）<br>
-        • 12月31日最大市值AI公司：NVIDIA 40%、Alphabet 33%（交易量$547K）<br>
-        • OpenAI年内发布GPT-6：82%概率（交易量$277K）<br>
-        • OpenAI年内发布AGI：16%概率（交易量$24K）<br>
-        • 2026年底AI泡沫破裂：40%概率</p>
-        <p class="news-source">来源：Polymarket <a href="https://polymarket.com/predictions/ai" target="_blank">polymarket.com</a></p>
-      </div>
-      
-      <div class="news-item">
-        <h3>AI概念股动态</h3>
-        <p>• NVIDIA：约$175，分析师预测2026年目标价$300（40x P/E，需上涨70%）<br>
-        • Microsoft：P/E降至26x，为10年来首次低于IBM，单季度CapEx $37.5B<br>
-        • 科技公司2026年AI基础设施总投入预计达$6500亿美元</p>
-        <p class="news-source">来源：via Nasdaq <a href="https://www.nasdaq.com/articles/could-nvidia-reach-300-2026-answer-may-blow-your-mind" target="_blank">nasdaq.com</a> / via eWeek</p>
-      </div>
-      
-      <div class="news-item">
-        <h3>融资与估值追踪</h3>
-        <p>• OpenAI：寻求最高$100B新融资<br>
-        • Anthropic： rumored $20B轮，估值$350B<br>
-        • Waymo：$16B轮，估值$126B（+180%）<br>
-        • Cerebras：$1B轮，估值$23B（+184%）<br>
-        • Positron：$230M轮，累计$305M<br>
-        • Fundamental：$225M轮，累计$255M</p>
-        <p class="news-source">来源：综合媒体报道</p>
+        <h3><span class="news-tag">监管</span>欧盟正式对Meta启动反垄断调查，WhatsApp AI集成成焦点</h3>
+        <p>欧盟委员会已对Meta Platforms发起正式反垄断调查，审查其关于AI开发者访问WhatsApp的规定是否损害竞争。这是欧洲监管机构对大型科技企业加强审查的最新举措，Meta可能面临最高164亿美元罚款。意大利反垄断机构也在同步调查中。</p>
+        <p class="news-source">来源：@Cointime_global <a href="https://x.com/Cointime_global/status/1996460736764400105" target="_blank">x.com</a> / @ChineseWSJ <a href="https://x.com/ChineseWSJ/status/1996805230030197143" target="_blank">x.com</a></p>
       </div>
     </section>
+
+    <section>
+      <h2 class="section-title">🔥 X高互动事件卡片</h2>
+      
+      <div class="x-card">
+        <h4>🎬 Seedance 2.0发布引发热议</h4>
+        <p>字节跳动视频生成AI Seedance 2.0正式发布，支持多模态输入（最多9图+3视频参考），良品率超90%。网友惊呼"I'm cooked"——AI视频制作进入工业化时代。</p>
+        <p class="engagement">来源：@Awesome_AI_News / @HomoDeusLite / @thebetabeta | 互动量：高</p>
+      </div>
+      
+      <div class="x-card">
+        <h4>💻 Claude Code反向工程发现隐藏功能</h4>
+        <p>开发者发现Claude Code存在隐藏的WebSocket标志，可构建100%开源UI兼容现有订阅。Claude Opus 4.6速度提升2.5倍，非营利组织现可免费使用。</p>
+        <p class="engagement">来源：@Saboo_Shubham_ / @AnthropicAI | 互动量：高</p>
+      </div>
+      
+      <div class="x-card">
+        <h4>🤖 GPT-5.3-Codex推送主流IDE</h4>
+        <p>OpenAI GPT-5.3-Codex正式登陆Cursor、GitHub、VS Code。首周下载破100万，周活增长60%。Sam Altman确认将保持免费层可用。</p>
+        <p class="engagement">来源：@sama / @OpenAI | 互动量：极高</p>
+      </div>
+      
+      <div class="x-card">
+        <h4>🎮 AI视频模型四方对决</h4>
+        <p>Kling 3.0 vs Seedance 2.0 vs Sora 2 vs Veo 3.1同台竞技测试在社区引发投票热潮，用户对比同一提示词下各模型表现。</p>
+        <p class="engagement">来源：@thebetabeta | 互动量：中高</p>
+      </div>
+      
+      <div class="x-card">
+        <h4>🔓 Kimi K2.5获封"开源之王"</h4>
+        <p>开发者社区盛赞Kimi K2.5，称其为开源模型中的王者，在代码生成和vibe coding场景表现优异。</p>
+        <p class="engagement">来源：@robertto / @shaped | 互动量：中</p>
+      </div>
+      
+      <div class="x-card">
+        <h4>⚠️ 欧盟重锤Meta反垄断</h4>
+        <p>欧盟正式警告Meta，可能采取临时措施制止其在WhatsApp中排除第三方AI助手的行为，涉及反垄断调查。</p>
+        <p class="engagement">来源：@ExpressTechie / @pvmest | 互动量：高</p>
+      </div>
+      
+      <div class="x-card">
+        <h4>💰 OpenAI测试广告引发讨论</h4>
+        <p>OpenAI开始在美国测试ChatGPT广告，面向免费/Go用户。Anthropic随即发布视频表态"Claude不会有广告"。</p>
+        <p class="engagement">来源：@OpenAI / @AnthropicAI | 互动量：高</p>
+      </div>
+      
+      <div class="x-card">
+        <h4>🎨 a16z押注日本AI角色文化</h4>
+        <p>硅谷风投巨头a16z领投日本AI角色公司Shizuku AI 1500万美元种子轮，看重"日本角色文化"这一AI最难复制的资产。</p>
+        <p class="engagement">来源：@ponkiland | 互动量：中</p>
+      </div>
+    </section>
+
+    <div class="self-check">
+      <h4>📋 覆盖度自检</h4>
+      <ul>
+        <li><strong>栏目覆盖：</strong>发布(2/2✓) · 更新(4/4✓) · 开源(2/2✓) · 评测(2/2✓) · 商业(4/4✓) · 风险(1/1✓)</li>
+        <li><strong>厂商命中：</strong>字节Seedance✓ · 智谱GLM(提及) · 月之暗面Kimi✓ · 阿里Qwen(提及) · OpenAI✓ · Anthropic✓ · Google✓ · Meta✓ · 腾讯混元(未命中) · 百度文心(未命中)</li>
+        <li><strong>补搜情况：</strong>Web Breaking 6条执行成功，4条rate limit；X搜索8组全部完成；未触发7d补搜</li>
+        <li><strong>7d补漏：</strong>0条</li>
+        <li><strong>事件去重：</strong>已合并同一事件多来源报道（Seedance 2.0、GPT-5.3-Codex、Meta反垄断等）</li>
+        <li><strong>dedupe_key：</strong>bytedance-seedance-2.0-release, openai-gpt-5.3-codex-release, anthropic-opus-4.6-update, anthropic-claude-code-sdk-xcode, meta-eu-antitrust-whatsapp, openai-chatgpt-ads-test, a16z-shizuku-ai-funding</li>
+        <li><strong>时效标注：</strong>所有条目均来自2月9-10日24小时内，符合时效要求</li>
+      </ul>
+    </div>
 
     <div class="archive">
-      <h3 style="font-size: 14px; font-weight: 600; margin-bottom: 12px;">📁 近期归档</h3>
+      <h3 class="section-title">历史归档</h3>
       <div class="archive-list">
-        <div class="archive-item"><a href="./2026-02-10.html">2026-02-10</a></div>
-        <div class="archive-item"><a href="./2026-02-09.html">2026-02-09</a></div>
-        <div class="archive-item"><a href="./2026-02-08.html">2026-02-08</a></div>
-        <div class="archive-item"><a href="./2026-02-07.html">2026-02-07</a></div>
-        <div class="archive-item"><a href="./2026-02-06.html">2026-02-06</a></div>
-        <div class="archive-item"><a href="./2026-02-05.html">2026-02-05</a></div>
-        <div class="archive-item"><a href="./2026-02-04.html">2026-02-04</a></div>
+        <span class="archive-item"><a href="2026-02-10.html">02-10</a></span>
+        <span class="archive-item"><a href="2026-02-09.html">02-09</a></span>
+        <span class="archive-item"><a href="2026-02-08.html">02-08</a></span>
+        <span class="archive-item"><a href="2026-02-07.html">02-07</a></span>
+        <span class="archive-item"><a href="2026-02-06.html">02-06</a></span>
+        <span class="archive-item"><a href="2026-02-05.html">02-05</a></span>
+        <span class="archive-item"><a href="2026-02-04.html">02-04</a></span>
       </div>
     </div>
 
     <footer>
-      <p>2026年2月10日</p>
-      <p>AI Daily Report | AI日报融合版</p>
-      <p><a href="https://github.com/elliclee/ai-daily-report">GitHub</a></p>
+      <p>AI Daily Report · 融合版</p>
+      <p>Generated at 2026-02-10 03:45 UTC · Data from X/Twitter & Web</p>
+      <p><a href="https://github.com/elliclee/ai-daily-report" target="_blank">GitHub</a></p>
     </footer>
   </div>
 </body>
