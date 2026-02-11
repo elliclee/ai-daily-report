@@ -7,174 +7,365 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #f7f5f0;
-            --text-primary: #2d2a26;
-            --text-secondary: #5c5854;
-            --accent-color: #8b7355;
-            --border-color: #e0dcd4;
-            --card-bg: #ffffff;
+            --bg-primary: #f7f5f0;
+            --bg-secondary: #faf9f6;
+            --text-primary: #2c2c2c;
+            --text-secondary: #5a5a5a;
+            --accent: #d4a574;
+            --border: #e8e4dc;
+            --highlight: #fff9f0;
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--bg-color);
+            background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.7;
-            padding: 40px 20px;
         }
-        
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-        }
-        
-        header {
-            text-align: center;
-            padding: 60px 0 50px;
-            border-bottom: 1px solid var(--border-color);
-            margin-bottom: 50px;
-        }
-        
-        .date-badge {
+        .container { max-width: 680px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+        .date { font-size: 13px; text-transform: uppercase; letter-spacing: 3px; color: var(--text-secondary); margin-bottom: 8px; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 600; color: var(--text-primary); letter-spacing: -0.5px; }
+        .subtitle { font-size: 15px; color: var(--text-secondary); margin-top: 12px; font-weight: 300; }
+        .section { margin-bottom: 40px; }
+        .section-title {
             font-family: 'Playfair Display', serif;
-            font-size: 14px;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: var(--accent-color);
-            margin-bottom: 16px;
-        }
-        
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 48px;
+            font-size: 22px;
             font-weight: 600;
-            line-height: 1.2;
-            margin-bottom: 16px;
-        }
-        
-        .subtitle {
-            font-size: 16px;
-            color: var(--text-secondary);
-            font-weight: 300;
-        }
-        
-        .latest-issue {
-            background: var(--card-bg);
-            padding: 32px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            margin-bottom: 40px;
-        }
-        
-        .latest-label {
-            font-size: 12px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--accent-color);
-            margin-bottom: 8px;
-        }
-        
-        .latest-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            margin-bottom: 12px;
-        }
-        
-        .latest-date {
-            font-size: 14px;
-            color: var(--text-secondary);
-            margin-bottom: 20px;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background: var(--accent-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 14px;
-            transition: all 0.2s;
-        }
-        
-        .btn:hover {
-            background: #6d5a42;
-        }
-        
-        .archive-section {
-            margin-top: 40px;
-        }
-        
-        .archive-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 20px;
+            color: var(--text-primary);
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
         }
-        
-        .archive-list {
-            list-style: none;
+        .highlight-box {
+            background: var(--highlight);
+            border-left: 3px solid var(--accent);
+            padding: 20px 24px;
+            margin-bottom: 24px;
         }
-        
-        .archive-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 0;
-            border-bottom: 1px solid var(--border-color);
+        .news-item { 
+            background: var(--bg-secondary); 
+            padding: 20px 24px; 
+            margin-bottom: 16px; 
+            border: 1px solid var(--border);
+            border-radius: 4px;
         }
-        
-        .archive-link {
-            color: var(--text-primary);
-            text-decoration: none;
-            font-size: 15px;
-        }
-        
-        .archive-link:hover {
-            color: var(--accent-color);
-        }
-        
-        .archive-date {
-            font-size: 13px;
+        .news-time { font-size: 12px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+        .news-title { font-weight: 600; font-size: 16px; margin-bottom: 8px; color: var(--text-primary); }
+        .news-desc { font-size: 14px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.6; }
+        .news-sources { font-size: 12px; color: #888; }
+        .news-sources a { color: var(--accent); text-decoration: none; }
+        .tag { 
+            display: inline-block; 
+            font-size: 11px; 
+            padding: 3px 8px; 
+            background: var(--bg-primary); 
             color: var(--text-secondary);
+            border-radius: 3px;
+            margin-right: 6px;
+            margin-bottom: 8px;
         }
+        .tag.highlight { background: #ffe4c4; color: #8b4513; }
+        .check-section { background: #f0f4f0; padding: 20px 24px; border-radius: 4px; margin-top: 40px; }
+        .check-title { font-weight: 600; font-size: 14px; margin-bottom: 12px; color: #2c5530; }
+        .check-list { font-size: 13px; color: var(--text-secondary); }
+        .check-list li { margin-bottom: 6px; list-style: none; }
+        .check-list li:before { content: "✓ "; color: #4a9c5d; font-weight: bold; }
+        .x-card { border: 1px solid var(--border); padding: 16px; margin-bottom: 12px; background: white; }
+        .x-header { display: flex; align-items: center; margin-bottom: 10px; }
+        .x-avatar { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); margin-right: 10px; }
+        .x-name { font-weight: 600; font-size: 14px; }
+        .x-handle { font-size: 12px; color: var(--text-secondary); }
+        .x-content { font-size: 14px; line-height: 1.5; margin-bottom: 10px; }
+        .x-stats { font-size: 12px; color: #888; }
+        footer { text-align: center; margin-top: 60px; padding-top: 32px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-secondary); }
+        .dedupe-list { font-size: 11px; color: #666; background: #f5f5f5; padding: 16px; margin-top: 20px; border-radius: 4px; }
+        .dedupe-list code { font-family: monospace; background: #fff; padding: 2px 6px; border-radius: 3px; display: block; margin: 4px 0; }
         
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            margin-top: 50px;
-            color: var(--text-secondary);
-            font-size: 13px;
-        }
+        /* Archive section styles */
+        .archive-section { margin-top: 60px; padding-top: 40px; border-top: 2px solid var(--border); }
+        .archive-title { font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+        .archive-list { list-style: none; }
+        .archive-item { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--border); }
+        .archive-link { color: var(--text-primary); text-decoration: none; font-size: 15px; }
+        .archive-link:hover { color: var(--accent); }
+        .archive-date { font-size: 13px; color: var(--text-secondary); }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="date-badge">Daily Newsletter</div>
+            <div class="date">Wednesday, February 11, 2026</div>
             <h1>AI Daily Report</h1>
-            <p class="subtitle">人工智能日报 · 每日精选 AI 行业要闻</p>
+            <div class="subtitle">过去24小时 AI 领域重要动态</div>
         </header>
-        
-        <div class="latest-issue">
-            <div class="latest-label">Latest Issue</div>
-            <div class="latest-title">AI Daily Report - February 11, 2026</div>
-            <div class="latest-date">2026年2月11日 · 第2期</div>
-            <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 20px;">
-                本期看点：字节 Seedance 2.0 内测开启（冯骥评价"地表最强"）、Anthropic Claude Opus 4.6 发布、OpenAI Deep Research 升级 GPT-5.2、AI安全负责人警告"世界处于危险中"...
+
+        <!-- 头条 -->
+        <section class="section">
+            <h2 class="section-title">🚀 头条</h2>
+            
+            <div class="highlight-box">
+                <div class="news-time">Feb 10, 2026 · 多源确认</div>
+                <div class="news-title">字节跳动 Seedance 2.0 开启内测，冯骥评价"地表最强视频生成模型"</div>
+                <div class="news-desc">
+                    字节跳动最新视频生成模型 Seedance 2.0 在即梦、豆包、小云雀等产品开启内测，凭借多模态输入、超强参考能力和真实感表现引爆网络。游戏科学 CEO、《黑神话：悟空》制作人冯骥评价其为"当前地表最强的视频生成模型"，标志着"AIGC的童年时代结束"。由于真实感过于突出，平台已紧急限制真人图片/视频作为主体参考。
+                </div>
+                <div class="news-sources">
+                    来源: <a href="https://m.sohu.com/a/985996416_121218495">搜狐</a>, <a href="https://finance.sina.com.cn/roll/2026-02-11/doc-inhmkixz5232840.shtml">新浪财经</a>, X@minchoi (互动: 18 likes)
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-time">Feb 10, 2026 · 12小时前</div>
+                <div class="news-title">Anthropic 发布 Claude Opus 4.6，Blackstone 增持至10亿美元</div>
+                <div class="news-desc">
+                    Anthropic 推出 Claude Opus 4.6 重大更新，针对办公和编码任务优化能力。同时，Blackstone 计划将持股增至约10亿美元，Anthropic 估值接近3500亿美元。GitHub 也预览了对 Claude 和 Codex Coding Agents 的支持。
+                </div>
+                <div class="news-sources">
+                    来源: <a href="https://www.europeanbusinessreview.com/anthropic-rolls-out-major-update-to-ai-that-rattled-markets/">European Business Review</a>, <a href="https://finimize.com/content/blackstone-doubles-down-on-anthropic-as-claude-gets-smarter">Finimize</a>, <a href="https://www.infoworld.com/article/4130352/github-previews-support-for-claude-and-codex-coding-agents.html">InfoWorld</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-time">Feb 10, 2026 · OpenAI 官方</div>
+                <div class="news-title">OpenAI Deep Research 升级至 GPT-5.2，ChatGPT 开始测试广告</div>
+                <div class="news-desc">
+                    OpenAI 宣布 Deep Research 功能由 GPT-5.2 驱动，新增应用连接、特定网站搜索、实时进度跟踪等功能。同时，OpenAI 开始在美国免费和 Go 计划用户中测试广告，广告不会影响 ChatGPT 的回答，会明确标注为"赞助"。
+                </div>
+                <div class="news-sources">
+                    来源: <a href="https://x.com/OpenAI/status/2021299935678026168">X@OpenAI</a> (互动: 2,663 likes, 243 RT), <a href="https://x.com/OpenAI/status/2020936703763153010">X@OpenAI</a> (互动: 3,456 likes, 306 RT)
+                </div>
+            </div>
+        </section>
+
+        <!-- 新模型/工具 -->
+        <section class="section">
+            <h2 class="section-title">🆕 新模型/工具</h2>
+            
+            <div class="news-item">
+                <span class="tag highlight">发布</span>
+                <div class="news-title">Claude Opus 4.6 上线</div>
+                <div class="news-desc">Anthropic 最强模型升级，办公与编码能力显著提升，GitHub 原生支持即将推出。</div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag highlight">发布</span>
+                <div class="news-title">Seedance 2.0 视频生成模型内测</div>
+                <div class="news-desc">字节跳动新一代视频生成模型，支持多模态输入，真实感达到"工业可用"级别。</div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag highlight">更新</span>
+                <div class="news-title">OpenAI Deep Research 升级 GPT-5.2</div>
+                <div class="news-desc">新增应用集成、特定网站搜索、全屏报告查看等功能，研究体验大幅优化。</div>
+            </div>
+
+            <div class="news-item">
+                <span class="tag">7d补漏</span>
+                <div class="news-title">Alibaba Qwen-VL 发布 7B 模型</div>
+                <div class="news-desc">支持 2K 图像生成，多模态能力进一步增强。（发布时间待确认，来自 X 监测）</div>
+                <div class="news-sources">来源: X@SectorHQCo</div>
+            </div>
+
+            <!-- X 高互动事件卡片 -->
+            <h3 style="font-size: 16px; margin: 24px 0 12px; color: var(--text-secondary);">X 高互动事件</h3>
+            
+            <div class="x-card">
+                <div class="x-header">
+                    <div class="x-avatar"></div>
+                    <div>
+                        <div class="x-name">Min Choi</div>
+                        <div class="x-handle">@minchoi</div>
+                    </div>
+                </div>
+                <div class="x-content">Holy smokes... how is this AI? Seedance 2.0 is wild 🎬 AI视频生成已经达到惊人的真实度</div>
+                <div class="x-stats">❤️ 18 likes · 🔄 0 RT · 💬 1 reply</div>
+            </div>
+
+            <div class="x-card">
+                <div class="x-header">
+                    <div class="x-avatar"></div>
+                    <div>
+                        <div class="x-name">Maverick Alexander</div>
+                        <div class="x-handle">@MaverickDarby</div>
+                    </div>
+                </div>
+                <div class="x-content">Make movies riveting again. Made with Seedance 2.0 — 好莱坞要完蛋了 😅</div>
+                <div class="x-stats">❤️ 8 likes · 🔄 1 RT · 💬 4 replies</div>
+            </div>
+
+            <div class="x-card">
+                <div class="x-header">
+                    <div class="x-avatar"></div>
+                    <div>
+                        <div class="x-name">padphone</div>
+                        <div class="x-handle">@lepadphone</div>
+                    </div>
+                </div>
+                <div class="x-content">Seedance 2.0 doesn't just disrupt filmmaking — it steamrolls motion design too. One image, one sentence, a few minutes, premium animated app ad. That whole pipeline just got compressed into a prompt.</div>
+                <div class="x-stats">❤️ 2,415 likes · 🔄 169 RT · 💬 73 replies</div>
+            </div>
+
+            <div class="x-card">
+                <div class="x-header">
+                    <div class="x-avatar"></div>
+                    <div>
+                        <div class="x-name">King Bootoshi</div>
+                        <div class="x-handle">@KingBootoshi</div>
+                    </div>
+                </div>
+                <div class="x-content">PROMPT: "Luffy coding on a Macbook on the Thousand Sunny, RAGING, then throwing it overboard." - Seedance 2.0 WOOOOOOOW 🤯</div>
+                <div class="x-stats">❤️ 165 likes · 🔄 5 RT · 💬 11 replies</div>
+            </div>
+        </section>
+
+        <!-- 商业动态 -->
+        <section class="section">
+            <h2 class="section-title">💼 商业动态</h2>
+            
+            <div class="news-item">
+                <div class="news-time">Feb 10, 2026</div>
+                <div class="news-title">Blackstone 增持 Anthropic 至约10亿美元，估值接近3500亿美元</div>
+                <div class="news-desc">私募股权巨头 Blackstone 加码投资 Anthropic，反映市场对 Claude 系列模型商业前景的强烈信心。</div>
+                <div class="news-sources">来源: <a href="https://finimize.com/content/blackstone-doubles-down-on-anthropic-as-claude-gets-smarter">Finimize</a></div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-time">Feb 10, 2026</div>
+                <div class="news-title">OpenAI 开始在 ChatGPT 免费版测试广告</div>
+                <div class="news-desc">美国地区免费和 Go 计划用户将看到标注为"赞助"的广告，OpenAI 称此举旨在"让所有人免费使用 ChatGPT"。</div>
+                <div class="news-sources">来源: <a href="https://fortune.com/2026/02/10/openai-violated-californias-ai-safety-law-gpt-5-3-codex-ai-model-watchdog-claims/">Fortune</a>, X@OpenAI</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-time">Feb 10, 2026</div>
+                <div class="news-title">前 GitHub CEO 融资 6000 万美元开发 AI 代码管理工具 Entire</div>
+                <div class="news-desc">估值 3 亿美元，开源工具帮助开发者更好地管理 AI 代理编写的代码。</div>
+                <div class="news-sources">来源: <a href="https://techcrunch.com/2026/02/10/former-github-ceo-raises-record-60m-dev-tool-seed-round-at-300m-valuation/">TechCrunch</a></div>
+            </div>
+        </section>
+
+        <!-- 开源/技术 -->
+        <section class="section">
+            <h2 class="section-title">🔧 开源/技术</h2>
+            
+            <div class="news-item">
+                <div class="news-time">Feb 10, 2026</div>
+                <div class="news-title">GitHub 预览支持 Claude 和 Codex Coding Agents</div>
+                <div class="news-desc">开发者可在 Agent HQ 中同时使用 Claude、Codex 和 GitHub Copilot，无需切换工具即可在不同步骤使用不同代理。</div>
+                <div class="news-sources">来源: <a href="https://www.infoworld.com/article/4130352/github-previews-support-for-claude-and-codex-coding-agents.html">InfoWorld</a></div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-time">Feb 10, 2026</div>
+                <div class="news-title">Google Research 开源 DialogLab 框架</div>
+                <div class="news-desc">用于人机混合群聊模拟的原型框架，支持游戏 NPC 设计、演讲/销售/客服练习等场景。</div>
+                <div class="news-sources">来源: X@GoogleResearch</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-time">Feb 10, 2026</div>
+                <div class="news-title">Claude Cowork 发布 11 个新插件</div>
+                <div class="news-desc">覆盖法律、销售、营销和数据分析功能，Anthropic 称近 100% 代码由 AI 生成。</div>
+                <div class="news-sources">来源: <a href="https://indianexpress.com/article/technology/artificial-intelligence/anthropic-100-percent-code-ai-generated-claude-10522033/">Indian Express</a></div>
+            </div>
+        </section>
+
+        <!-- 风险/安全 -->
+        <section class="section">
+            <h2 class="section-title">⚠️ 风险/安全</h2>
+            
+            <div class="news-item">
+                <div class="news-time">Feb 10, 2026</div>
+                <div class="news-title">Anthropic AI 安全负责人 Mrinank Sharma 离职，警告"世界处于危险中"</div>
+                <div class="news-desc">Sharma 在辞职信中称与组织价值观存在冲突，引发对 AI 安全领域人才流失的关注。</div>
+                <div class="news-sources">来源: <a href="https://www.ndtv.com/feature/anthropics-head-of-ai-safety-quits-warns-of-world-in-peril-in-cryptic-resignation-letter-10979921">NDTV</a>, <a href="https://www.hindustantimes.com/world-news/anthropics-ai-safety-lead-mrinank-sharma-resigns-the-world-is-in-peril-101770708399934.html">Hindustan Times</a></div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-time">Feb 10, 2026</div>
+                <div class="news-title">OpenAI 被指控违反加州 AI 安全法</div>
+                <div class="news-desc"> watchdog 组织称 GPT-5.3-Codex 的发布涉嫌违反加州最新 AI 安全法规，引发监管争议。</div>
+                <div class="news-sources">来源: <a href="https://fortune.com/2026/02/10/openai-violated-californias-ai-safety-law-gpt-5-3-codex-ai-model-watchdog-claims/">Fortune</a></div>
+            </div>
+        </section>
+
+        <!-- 评测/研究 -->
+        <section class="section">
+            <h2 class="section-title">📊 评测/研究</h2>
+            
+            <div class="news-item">
+                <div class="news-time">Feb 10, 2026</div>
+                <div class="news-title">中国模型在 LiveCodeBench 上超越 Claude Opus</div>
+                <div class="news-desc">Kimi 85.3、Codex 84.9 分超过 Claude Opus 73.8，GLM 成本仅约 $0.13/M tokens，性价比优势明显。</div>
+                <div class="news-sources">来源: X@grok 汇总</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-time">Feb 10, 2026</div>
+                <div class="news-title">OpenAI 与 Ginkgo 合作实现蛋白质生产成本降低 40%</div>
+                <div class="news-desc">GPT-5 连接自主实验室，闭环优化实验设计，识别出人类未测试过的低成本反应组合。</div>
+                <div class="news-sources">来源: <a href="https://x.com/OpenAI/status/2019488071134347605">X@OpenAI</a> (互动: 9,651 likes, 1,257 RT)</div>
+            </div>
+        </section>
+
+        <!-- 漏报检查 -->
+        <section class="check-section">
+            <h3 class="check-title">📋 今日漏报检查（厂商清单核对）</h3>
+            <ul class="check-list">
+                <li>✅ 字节 Seedance/即梦/豆包 — Seedance 2.0 内测（头条）</li>
+                <li>⚠️ 智谱 GLM — 无 24h 内重大发布，GLM 4.7 持续活跃</li>
+                <li>⚠️ 月之暗面 Kimi — 无 24h 内重大发布，Kimi K2.5 持续活跃</li>
+                <li>⚠️ 通义 Qwen — Alibaba Qwen-VL 7B（待确认时间）</li>
+                <li>⚠️ 腾讯混元 — 无 24h 内重大动态</li>
+                <li>⚠️ 百度文心 — 无 24h 内重大动态</li>
+                <li>✅ OpenAI — Deep Research 升级 GPT-5.2 + 广告测试</li>
+                <li>✅ Anthropic — Claude Opus 4.6 发布</li>
+                <li>⚠️ Google Gemini — Google Home Gemini 集成（开发中，无发布时间）</li>
+                <li>⚠️ Meta Llama — 无 24h 内重大动态</li>
+            </ul>
+            <p style="font-size: 12px; color: #888; margin-top: 12px;">
+                注：标记 ⚠️ 的厂商过去 24h 无重大发布/更新/开源/价格变动/重大事故。
             </p>
-            <a href="./archive/2026-02-11.html" class="btn">阅读本期 →</a>
+        </section>
+
+        <!-- 覆盖度自检 -->
+        <section class="check-section" style="background: #f5f0f5;">
+            <h3 class="check-title">📊 覆盖度自检</h3>
+            <ul class="check-list">
+                <li>✅ Releases: 3条 (Seedance 2.0, Claude Opus 4.6, Qwen-VL 7B)</li>
+                <li>✅ Updates: 2条 (Deep Research GPT-5.2, Claude Cowork 11插件)</li>
+                <li>✅ OpenSource: 1条 (DialogLab)</li>
+                <li>✅ Benchmarks: 2条 (LiveCodeBench, Ginkgo 蛋白质研究)</li>
+                <li>✅ Business: 3条 (Blackstone投资, OpenAI广告, GitHub CEO融资)</li>
+                <li>✅ Risks: 2条 (Sharma离职, OpenAI监管争议)</li>
+            </ul>
+            <p style="font-size: 12px; color: #888; margin-top: 12px;">
+                所有栏目均达到下限要求（≥1），无需触发补搜。
+            </p>
+        </section>
+
+        <!-- 去重键列表 -->
+        <div class="dedupe-list">
+            <strong>事件去重键 (dedupe_key):</strong>
+            <code>(ByteDance, Seedance 2.0, model_release, v2.0)</code>
+            <code>(Anthropic, Claude Opus, model_release, v4.6)</code>
+            <code>(OpenAI, Deep Research, feature_update, GPT-5.2)</code>
+            <code>(OpenAI, ChatGPT Ads, business, US_test)</code>
+            <code>(Anthropic, Sharma, personnel, resignation)</code>
+            <code>(GitHub, Coding Agents, integration, Claude_Codex)</code>
+            <code>(Blackstone, Anthropic, investment, $1B)</code>
         </div>
+
+        <footer style="margin-bottom: 40px;">
+            <p>AI Daily Report · Generated by OpenClaw</p>
+            <p style="margin-top: 8px; font-size: 11px;">数据截止: 2026-02-11 00:00 UTC | 来源: Brave Search + X/Twitter</p>
+        </footer>
         
+        <!-- 归档列表 -->
         <div class="archive-section">
-            <div class="archive-title">📚 归档</div>
+            <div class="archive-title">📚 历史归档</div>
             <ul class="archive-list">
                 <li class="archive-item">
                     <a href="./archive/2026-02-11.html" class="archive-link">AI Daily Report - February 11, 2026</a>
