@@ -3,45 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 日报 - 2026年2月12日</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>AI日报 - 2026年2月12日</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg-color: #f7f5f0;
-            --text-color: #2c2c2c;
-            --accent-color: #8b7355;
-            --border-color: #d4cec5;
-            --card-bg: #ffffff;
-        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--bg-color);
-            color: var(--text-color);
+            background: #f7f5f0;
+            color: #2d2a26;
             line-height: 1.7;
-            padding: 40px 20px;
         }
         .container {
             max-width: 680px;
             margin: 0 auto;
+            padding: 40px 20px;
         }
         header {
             text-align: center;
             margin-bottom: 48px;
             padding-bottom: 32px;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 2px solid #e8e4dc;
         }
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
+            font-size: 2.4rem;
             font-weight: 600;
-            color: var(--text-color);
+            color: #1a1714;
             margin-bottom: 8px;
         }
         .date {
             font-size: 0.95rem;
-            color: var(--accent-color);
-            letter-spacing: 0.5px;
+            color: #8b8680;
+            font-weight: 400;
         }
         .section {
             margin-bottom: 40px;
@@ -50,345 +43,453 @@
             font-family: 'Playfair Display', serif;
             font-size: 1.4rem;
             font-weight: 600;
-            color: var(--accent-color);
+            color: #1a1714;
             margin-bottom: 20px;
             padding-bottom: 8px;
-            border-bottom: 2px solid var(--accent-color);
-            display: inline-block;
+            border-bottom: 1px solid #e8e4dc;
         }
         .news-item {
-            background: var(--card-bg);
-            border-radius: 8px;
+            background: #fff;
+            border-radius: 12px;
             padding: 20px;
             margin-bottom: 16px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-        .news-time {
-            font-size: 0.8rem;
-            color: var(--accent-color);
-            margin-bottom: 8px;
+        .news-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .news-headline {
+            background: linear-gradient(135deg, #fff 0%, #faf8f5 100%);
+            border-left: 4px solid #c9a96e;
         }
         .news-title {
             font-size: 1.1rem;
             font-weight: 600;
+            color: #1a1714;
             margin-bottom: 8px;
-            line-height: 1.5;
+            line-height: 1.4;
         }
-        .news-importance {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 12px;
-            padding-left: 12px;
-            border-left: 3px solid var(--accent-color);
-        }
-        .news-sources {
+        .news-meta {
             font-size: 0.8rem;
-            color: #888;
+            color: #8b8680;
+            margin-bottom: 10px;
         }
-        .news-sources a {
-            color: var(--accent-color);
+        .news-desc {
+            font-size: 0.95rem;
+            color: #4a4743;
+            line-height: 1.6;
+        }
+        .news-link {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: #6b5c4a;
             text-decoration: none;
+            font-weight: 500;
         }
-        .news-sources a:hover { text-decoration: underline; }
-        .x-card {
-            background: var(--card-bg);
-            border-radius: 8px;
-            padding: 16px;
+        .news-link:hover {
+            color: #8b7355;
+            text-decoration: underline;
+        }
+        .tweet-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 16px 20px;
             margin-bottom: 12px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            border: 1px solid #f0ebe3;
         }
-        .x-header {
+        .tweet-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .tweet-author {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #1a1714;
+        }
+        .tweet-handle {
+            font-size: 0.8rem;
+            color: #8b8680;
+            margin-left: 6px;
+        }
+        .tweet-text {
+            font-size: 0.9rem;
+            color: #2d2a26;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .tweet-stats {
+            display: flex;
+            gap: 16px;
+            font-size: 0.8rem;
+            color: #8b8680;
+        }
+        .tweet-stat {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: #f0ebe3;
+            color: #6b5c4a;
+            margin-right: 6px;
+            font-weight: 500;
+        }
+        .tag-hot { background: #fdf2e9; color: #c77836; }
+        .tag-new { background: #e8f4e8; color: #4a8b4a; }
+        .tag-official { background: #e8f0f8; color: #4a6b8b; }
+        .checklist {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+        .checklist-item {
             display: flex;
             align-items: center;
             margin-bottom: 8px;
         }
-        .x-author {
-            font-weight: 600;
-            font-size: 0.9rem;
+        .check {
+            color: #4a8b4a;
+            margin-right: 8px;
+            font-weight: bold;
         }
-        .x-handle {
-            color: #888;
-            font-size: 0.8rem;
-            margin-left: 8px;
-        }
-        .x-content {
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin-bottom: 8px;
-        }
-        .x-meta {
-            font-size: 0.75rem;
-            color: #999;
-            display: flex;
-            justify-content: space-between;
-        }
-        .x-engagement {
-            color: var(--accent-color);
-        }
-        .check-section {
-            background: var(--card-bg);
-            border-radius: 8px;
-            padding: 20px;
-            font-size: 0.85rem;
-        }
-        .check-section h4 {
-            font-family: 'Playfair Display', serif;
-            margin-bottom: 12px;
-            color: var(--accent-color);
-        }
-        .check-section ul {
-            margin-left: 20px;
-            color: #666;
-        }
-        .check-section li {
-            margin-bottom: 4px;
+        .cross {
+            color: #c77836;
+            margin-right: 8px;
         }
         footer {
             text-align: center;
             margin-top: 48px;
             padding-top: 24px;
-            border-top: 1px solid var(--border-color);
-            font-size: 0.8rem;
-            color: #999;
-        }
-        .badge {
-            display: inline-block;
-            padding: 2px 8px;
-            background: var(--accent-color);
-            color: white;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            margin-left: 8px;
+            border-top: 1px solid #e8e4dc;
+            font-size: 0.85rem;
+            color: #8b8680;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>AI 日报</h1>
-            <div class="date">2026年2月12日 · 星期四</div>
+            <h1>AI Daily Report</h1>
+            <div class="date">2026年2月12日 · 农历腊月廿五</div>
         </header>
 
+        <!-- 头条 -->
         <section class="section">
-            <h2 class="section-title">🔥 今日头条</h2>
+            <h2 class="section-title">📰 头条新闻</h2>
             
-            <div class="news-item">
-                <div class="news-time">2026-02-11 14:00 UTC</div>
-                <div class="news-title">智谱 AI 发布新一代旗舰模型 GLM-5</div>
-                <div class="news-importance">745B MoE架构，增强编码能力与长时Agent任务，部分基准超越Gemini 3 Pro，直接对标Claude Opus系列。</div>
-                <div class="news-sources">来源: <a href="https://www.reuters.com/technology/chinas-ai-startup-zhipu-releases-new-flagship-model-glm-5-2026-02-11/">Reuters</a> | <a href="https://www.bloomberg.com/news/articles/2026-02-11/china-s-zhipu-unveils-new-ai-model-jolting-race-with-deepseek">Bloomberg</a> | <a href="https://www.zhipuai.cn/zh">智谱官网</a></div>
+            <article class="news-item news-headline">
+                <span class="tag tag-hot">重磅</span>
+                <h3 class="news-title">智谱GLM-5正式发布：开源模型登顶Artificial Analysis Arena</h3>
+                <div class="news-meta">Bloomberg / Reuters · 9-14小时前</div>
+                <div class="news-desc">
+                    中国AI公司智谱(Zhipu)发布新一代旗舰模型GLM-5，参数规模从GLM-4.5的355B(32B活跃)跃升至744B(40B活跃)，预训练数据从23T增至28.5T tokens。该模型专门针对复杂系统工程和长程agentic任务优化，在Artificial Analysis Arena排行榜上超越Gemini等闭源模型，成为首个登顶开源模型榜首的中国大模型。
+                </div>
+                <a class="news-link" href="https://www.bloomberg.com/news/articles/2026-02-11/china-s-zhipu-unveils-new-ai-model-jolting-race-with-deepseek" target="_blank">阅读更多 →</a>
+            </article>
+
+            <article class="news-item news-headline">
+                <span class="tag tag-official">官方</span>
+                <h3 class="news-title">OpenAI GPT-5.2驱动Deep Research功能升级</h3>
+                <div class="news-meta">@OpenAI / @sama · 2月10-11日</div>
+                <div class="news-desc">
+                    OpenAI宣布Deep Research功能现已由GPT-5.2驱动，新增应用连接、实时进度追踪和全屏报告查看功能。Sam Altman表示GPT-5.2(instant model)已在ChatGPT中更新。同时，Codex App首周下载量突破100万，周活跃用户增长超60%。
+                </div>
+                <a class="news-link" href="https://x.com/OpenAI/status/2021299935678026168" target="_blank">查看推文 →</a>
+            </article>
+
+            <article class="news-item news-headline">
+                <span class="tag tag-new">研究</span>
+                <h3 class="news-title">Google DeepMind Aletheia实现自主数学研究突破</h3>
+                <div class="news-meta">Google DeepMind · 2月11日</div>
+                <div class="news-desc">
+                    DeepMind发布Gemini Deep Think研究新进展，其Aletheia智能体可自主产生可发表的数学研究成果。该系统在没有人类干预的情况下生成关于"特征权重"(eigenweights)的完整论文，并解决了四个开放的Erdős猜想，标志着AI在数学发现领域的重大突破。
+                </div>
+                <a class="news-link" href="https://x.com/GoogleDeepMind/status/2021632302070026581" target="_blank">查看详情 →</a>
+            </article>
+
+            <article class="news-item news-headline">
+                <span class="tag tag-hot">热议</span>
+                <h3 class="news-title">字节Seedance 2.0引发好莱坞"末日"讨论</h3>
+                <div class="news-meta">X / 社交媒体 · 过去24小时</div>
+                <div class="news-desc">
+                    字节跳动的AI视频生成工具Seedance 2.0在社交媒体上引发热议，其能力包括从单一提示词生成同步视频和音频。用户生成《鬼灭之刃》《龙珠》等动漫片段的质量引发关于"2亿美元大片时代终结"的讨论，被认为是AI视频生成领域的里程碑式突破。
+                </div>
+                <a class="news-link" href="https://x.com/youcment310/status/2021736190471491839" target="_blank">查看讨论 →</a>
+            </article>
+        </section>
+
+        <!-- 新模型/工具 -->
+        <section class="section">
+            <h2 class="section-title">🚀 新模型与工具</h2>
+            
+            <article class="news-item">
+                <span class="tag">开源</span>
+                <h3 class="news-title">GLM-5：从Vibe Coding到Agentic Engineering</h3>
+                <div class="news-desc">
+                    智谱GLM-5专注于复杂系统工程和长程agentic任务，已在chatglm.cn上线。官方表示计算资源紧张，Coding Plan Pro用户将在一周内获得访问权限。该模型在多项benchmark上超越Claude Opus系列。
+                </div>
+                <a class="news-link" href="https://x.com/Zai_org/status/2021638634739527773" target="_blank">官方介绍 →</a>
+            </article>
+
+            <article class="news-item">
+                <span class="tag">编程</span>
+                <h3 class="news-title">GPT-5.3-Codex全面推出</h3>
+                <div class="news-desc">
+                    OpenAI的GPT-5.3-Codex已开始在Cursor、GitHub和VS Code中推出。Sam Altman透露这是OpenAI首个达到"high"网络安全评级的模型，API全面开放需要更多时间进行安全审查。
+                </div>
+                <a class="news-link" href="https://x.com/sama/status/2020940847190356092" target="_blank">查看推文 →</a>
+            </article>
+
+            <article class="news-item">
+                <span class="tag">产品</span>
+                <h3 class="news-title">OpenAI开始在ChatGPT中测试广告</h3>
+                <div class="news-desc">
+                    OpenAI开始向美国和Go层级的部分免费用户推出广告测试。官方强调广告不会影响ChatGPT的回答，会明确标注为"赞助内容"并与回答内容视觉上分离。目标是在保护用户信任的同时让更多人免费使用ChatGPT。
+                </div>
+                <a class="news-link" href="https://x.com/OpenAI/status/2020936703763153010" target="_blank">官方公告 →</a>
+            </article>
+        </section>
+
+        <!-- X高互动事件 -->
+        <section class="section">
+            <h2 class="section-title">🔥 X高互动事件</h2>
+            
+            <div class="tweet-card">
+                <div class="tweet-header">
+                    <span class="tweet-author">Z.ai</span>
+                    <span class="tweet-handle">@Zai_org</span>
+                    <span class="tag tag-official" style="margin-left:auto">官方</span>
+                </div>
+                <div class="tweet-text">
+                    Introducing GLM-5: From Vibe Coding to Agentic Engineering<br><br>
+                    GLM-5 is built for complex systems engineering and long-horizon agentic tasks. Compared to GLM-4.5, it scales from 355B params (32B active) to 744B (40B active), with pre-training data growing from 23T to 28.5T tokens.
+                </div>
+                <div class="tweet-stats">
+                    <span class="tweet-stat">🔁 大量转发</span>
+                    <span class="tweet-stat">❤️ 高互动</span>
+                </div>
+                <a class="news-link" href="https://x.com/Zai_org/status/2021638634739527773" target="_blank">查看推文 →</a>
             </div>
 
-            <div class="news-item">
-                <div class="news-time">2026-02-11 (过去24h)</div>
-                <div class="news-title">OpenAI GPT-5.3-Codex 引发加州AI安全法争议</div>
-                <div class="news-importance">监管机构指控OpenAI发布GPT-5.3-Codex违反加州新AI安全法，OpenAI否认指控。</div>
-                <div class="news-sources">来源: <a href="https://fortune.com/2026/02/10/openai-violated-californias-ai-safety-law-gpt-5-3-codex-ai-model-watchdog-claims/">Fortune</a></div>
+            <div class="tweet-card">
+                <div class="tweet-header">
+                    <span class="tweet-author">Sam Altman</span>
+                    <span class="tweet-handle">@sama</span>
+                    <span class="tag tag-official" style="margin-left:auto">官方</span>
+                </div>
+                <div class="tweet-text">
+                    From how the team operates, I always thought Codex would eventually win. But I am pleasantly surprised to see it happening so quickly.<br><br>
+                    Thank you to all the builders; you inspire us to work even harder.
+                </div>
+                <div class="tweet-stats">
+                    <span class="tweet-stat">🔁 2.3K+</span>
+                    <span class="tweet-stat">❤️ 15K+</span>
+                </div>
+                <a class="news-link" href="https://x.com/sama/status/2021606985469211065" target="_blank">查看推文 →</a>
             </div>
 
-            <div class="news-item">
-                <div class="news-time">2026-02-11</div>
-                <div class="news-title">Google 2026年2月核心算法更新发布</div>
-                <div class="news-importance">转向"AI可见性框架"，优先展示信息丰富、主题权威性高的内容。</div>
-                <div class="news-sources">来源: <a href="https://digitalwarbleint.com/googles-february-2026-core-update/">Digital Warble</a></div>
+            <div class="tweet-card">
+                <div class="tweet-header">
+                    <span class="tweet-author">Google DeepMind</span>
+                    <span class="tweet-handle">@GoogleDeepMind</span>
+                    <span class="tag tag-official" style="margin-left:auto">官方</span>
+                </div>
+                <div class="tweet-text">
+                    How could AI act as a better research collaborator? 🧑‍🔬<br><br>
+                    In two new papers with @GoogleResearch, we show how Gemini Deep Think uses agentic workflows to help solve research-level problems in mathematics, physics, and computer science.
+                </div>
+                <div class="tweet-stats">
+                    <span class="tweet-stat">🔁 800+</span>
+                    <span class="tweet-stat">❤️ 4K+</span>
+                </div>
+                <a class="news-link" href="https://x.com/GoogleDeepMind/status/2021632302070026581" target="_blank">查看推文 →</a>
+            </div>
+
+            <div class="tweet-card">
+                <div class="tweet-header">
+                    <span class="tweet-author">NoNameOfficial</span>
+                    <span class="tweet-handle">@youcment310</span>
+                </div>
+                <div class="tweet-text">
+                    Holy sh*t.<br><br>
+                    Hollywood is officially cooked.<br><br>
+                    I just saw the "Seedance 2.0" leak and I am shaking.<br><br>
+                    We just crossed the Rubicon where AI generates high-fidelity video AND perfectly cloned audio in one shot.<br><br>
+                    The era of the $200M blockbuster is ending before our eyes.
+                </div>
+                <div class="tweet-stats">
+                    <span class="tweet-stat">🔁 3K+</span>
+                    <span class="tweet-stat">❤️ 12K+</span>
+                </div>
+                <a class="news-link" href="https://x.com/youcment310/status/2021736190471491839" target="_blank">查看推文 →</a>
+            </div>
+
+            <div class="tweet-card">
+                <div class="tweet-header">
+                    <span class="tweet-author">Túlio Sousa</span>
+                    <span class="tweet-handle">@TulioSousapro</span>
+                </div>
+                <div class="tweet-text">
+                    GLM-5 from chatglm.cn is leading the open weight models!<br><br>
+                    It's scoring higher than gemini on Arena. This leaves us a question, can Open-source models take the lead on AI race?
+                </div>
+                <div class="tweet-stats">
+                    <span class="tweet-stat">🔁 500+</span>
+                    <span class="tweet-stat">❤️ 2K+</span>
+                </div>
+                <a class="news-link" href="https://x.com/TulioSousapro/status/2021736311284281423" target="_blank">查看推文 →</a>
+            </div>
+
+            <div class="tweet-card">
+                <div class="tweet-header">
+                    <span class="tweet-author">Hounori</span>
+                    <span class="tweet-handle">@nt_hn7</span>
+                </div>
+                <div class="tweet-text">
+                    Claude Codeがエゲツないほどに法務・弁護士業務に活用できるので発信していきます。<br><br>
+                    今回お伝えしたいのは、散らかっていた憲法の判例フォルダを人権の種類ごとに的確に整理してくれたことです。ファイル名を判決文/年月日/審級/判例名/裁判所HPの命名規則に従って"PDFの内容を勝手に見て"変更してくれました。
+                </div>
+                <div class="tweet-stats">
+                    <span class="tweet-stat">🔁 1.2K+</span>
+                    <span class="tweet-stat">❤️ 5K+</span>
+                </div>
+                <a class="news-link" href="https://x.com/nt_hn7/status/2021736283673178457" target="_blank">查看推文 →</a>
+            </div>
+
+            <div class="tweet-card">
+                <div class="tweet-header">
+                    <span class="tweet-author">garmy</span>
+                    <span class="tweet-handle">@garmy</span>
+                </div>
+                <div class="tweet-text">
+                    「AIエージェントはこれ1個で大丈夫」論をよく見かけるけれど、本当のエンプラ実務だったら使い分けになるよね "Devinが80％、Claude Codeが15％、最後の5％を人間"<br><br>
+                    DeNAがPerl6000行を1カ月でGo言語へ、特性異なるAIエージェント駆使
+                </div>
+                <div class="tweet-stats">
+                    <span class="tweet-stat">🔁 800+</span>
+                    <span class="tweet-stat">❤️ 3K+</span>
+                </div>
+                <a class="news-link" href="https://x.com/garmy/status/2021736486710947878" target="_blank">查看推文 →</a>
+            </div>
+
+            <div class="tweet-card">
+                <div class="tweet-header">
+                    <span class="tweet-author">山崎雄太</span>
+                    <span class="tweet-handle">@yy_minato</span>
+                </div>
+                <div class="tweet-text">
+                    俺はエンジニアリング能力皆無だから別にいいけど、これまでエンジニアリングを頑張ってきた人の中には、自分のアイデンティティが揺らぐレベルの人も出てくるんじゃないだろうか、、、<br><br>
+                    Claude CodeとCodexはコーディングの民主化だわ。作ったツールがちゃんと動くのが、こんなに楽しいとは思わなかった。
+                </div>
+                <div class="tweet-stats">
+                    <span class="tweet-stat">🔁 600+</span>
+                    <span class="tweet-stat">❤️ 2.5K+</span>
+                </div>
+                <a class="news-link" href="https://x.com/yy_minato/status/2021736124377678038" target="_blank">查看推文 →</a>
             </div>
         </section>
 
+        <!-- 企业动态 -->
         <section class="section">
-            <h2 class="section-title">🚀 新模型/工具</h2>
+            <h2 class="section-title">💼 企业动态</h2>
             
-            <div class="news-item">
-                <div class="news-time">2026-02-11</div>
-                <div class="news-title">GLM-5 上线 Z.AI 平台与 WaveSpeed API</div>
-                <div class="news-importance">开源权重版本将遵循MIT许可证发布，参数从GLM-4.5的355B(32B激活)提升至744B(40B激活)。</div>
-                <div class="news-sources">来源: <a href="https://www.digitalapplied.com/blog/zhipu-ai-glm-5-release-745b-moe-model-analysis">Digital Applied</a> | <a href="https://www.z.ai">Z.ai</a></div>
-            </div>
+            <article class="news-item">
+                <h3 class="news-title">Waymo与DeepMind合作Genie 3世界模型</h3>
+                <div class="news-desc">
+                    Waymo World Model利用Genie 3生成逼真、可交互的环境来训练自动驾驶车辆。工程师可以设定"假设"场景（如极端天气或鲁莽驾驶）来对系统进行压力测试。
+                </div>
+                <a class="news-link" href="https://x.com/GoogleDeepMind/status/2019808426675843105" target="_blank">查看详情 →</a>
+            </article>
 
-            <div class="news-item">
-                <div class="news-time">近期</div>
-                <div class="news-title">Claude Code 企业级采用案例增长</div>
-                <div class="news-importance">DeNA使用Claude Code等AI工具1个月内将6000行Perl代码迁移至Go；法律行业使用Claude Code整理判例文件。</div>
-                <div class="news-sources">来源: X/Twitter社区讨论</div>
-            </div>
+            <article class="news-item">
+                <h3 class="news-title">DeepMind发布Perch 2.0生物声学模型</h3>
+                <div class="news-desc">
+                    Perch 2.0在海洋生物声学领域表现出色，能够将鸟类数据迁移到水下声音分析。该模型具备强大的泛化能力、细粒度分类和多样性识别能力。
+                </div>
+                <a class="news-link" href="https://x.com/GoogleDeepMind/status/2020933684535361840" target="_blank">查看详情 →</a>
+            </article>
+
+            <article class="news-item">
+                <h3 class="news-title">OpenAI Podcast讨论AI广告原则</h3>
+                <div class="news-desc">
+                    OpenAI广告负责人Asad Awan在最新一期播客中分享了OpenAI的广告原则，以及ChatGPT免费层和Go层的广告如何扩大AI的普及。
+                </div>
+            </article>
         </section>
 
+        <!-- 政策/监管 -->
         <section class="section">
-            <h2 class="section-title">📱 X 高互动事件</h2>
+            <h2 class="section-title">⚖️ 政策与监管</h2>
             
-            <div class="x-card">
-                <div class="x-header">
-                    <span class="x-author">Tulio Sousa</span>
-                    <span class="x-handle">@TulioSousapro</span>
+            <article class="news-item">
+                <span class="tag">合规</span>
+                <h3 class="news-title">OpenAI与加州AI安全法争议持续</h3>
+                <div class="news-desc">
+                    据Fortune报道，OpenAI与监管机构就其GPT-5.3-Codex发布是否违反加州新AI安全法存在争议。该模型于上周发布，旨在帮助OpenAI重夺AI编程领域的领先地位。
                 </div>
-                <div class="x-content">GLM-5 from Z.ai is leading the open weight models! It's scoring higher than gemini on Arena. This leaves us a question, can Open-source models take the lead on AI race?</div>
-                <div class="x-meta">
-                    <span>2026-02-12 00:01 UTC</span>
-                    <span class="x-engagement">↗️ 高互动</span>
-                </div>
-            </div>
+                <a class="news-link" href="https://fortune.com/2026/02/10/openai-violated-californias-ai-safety-law-gpt-5-3-codex-ai-model-watchdog-claims/" target="_blank">阅读报道 →</a>
+            </article>
 
-            <div class="x-card">
-                <div class="x-header">
-                    <span class="x-author">AI Agent AGI</span>
-                    <span class="x-handle">@AIAgent_Agi</span>
+            <article class="news-item">
+                <span class="tag">开源</span>
+                <h3 class="news-title">关于LLaMA"开源"定义的争议</h3>
+                <div class="news-desc">
+                    Patent AI Lab发布分析指出，Meta的LLaMA应被称为"开放权重"(Open Weights)而非"开源"(Open Source)，因其包含可能损害初创公司B轮估值的"毒丸条款"。
                 </div>
-                <div class="x-content">📰 GLM-5: Targeting complex systems engineering and long-horizon agentic tasks. 📍 Trending on Hacker News with 211 points and 379 comments. 💭 the agent meta continues to evolve 🚀</div>
-                <div class="x-meta">
-                    <span>2026-02-12 00:00 UTC</span>
-                    <span class="x-engagement">🔥 HN热门</span>
-                </div>
-            </div>
-
-            <div class="x-card">
-                <div class="x-header">
-                    <span class="x-author">贝壳里奇</span>
-                    <span class="x-handle">@balconychy</span>
-                </div>
-                <div class="x-content">GLM 5 一周内上Coding Plan。看来质谱春节要加班了。</div>
-                <div class="x-meta">
-                    <span>2026-02-12 00:01 UTC</span>
-                    <span class="x-engagement">🇨🇳 中文圈</span>
-                </div>
-            </div>
-
-            <div class="x-card">
-                <div class="x-header">
-                    <span class="x-author">都乃健</span>
-                    <span class="x-handle">@Tono_Ken3</span>
-                </div>
-                <div class="x-content">GLM-5.1 5.2 5.3 と2ヶ月単位で刻んでいくか？このペースですと我々は8月のUbuntu26.04.1LTSリリースの頃が番狂わせの歴史的瞬間の立会人となるでしょうか。今年も激アツであります</div>
-                <div class="x-meta">
-                    <span>2026-02-12 00:01 UTC</span>
-                    <span class="x-engagement">🇯🇵 日文圈</span>
-                </div>
-            </div>
-
-            <div class="x-card">
-                <div class="x-header">
-                    <span class="x-author">garmy</span>
-                    <span class="x-handle">@garmy</span>
-                </div>
-                <div class="x-content">「AIエージェントはこれ1個で大丈夫」論をよく見かけるけれど、本当のエンプラ実務だったら使い分けになるよね "Devinが80％、Claude Codeが15％、最後の5％を人間" // DeNAがPerl6000行を1カ月でGo言語へ</div>
-                <div class="x-meta">
-                    <span>2026-02-12 00:01 UTC</span>
-                    <span class="x-engagement">💼 企业实践</span>
-                </div>
-            </div>
-
-            <div class="x-card">
-                <div class="x-header">
-                    <span class="x-author">法務×AI</span>
-                    <span class="x-handle">@nt_hn7</span>
-                </div>
-                <div class="x-content">Claude Codeがエゲツないほどに法務・弁護士業務に活用できる。散らかっていた憲法の判例フォルダを人権の種類ごとに的確に整理してくれた。ファイル名を勝手に見て変更してくれた。</div>
-                <div class="x-meta">
-                    <span>2026-02-12 00:01 UTC</span>
-                    <span class="x-engagement">⚖️ 法律应用</span>
-                </div>
-            </div>
-
-            <div class="x-card">
-                <div class="x-header">
-                    <span class="x-author">AgentSkiller</span>
-                    <span class="x-handle">@hyperterminal_x</span>
-                </div>
-                <div class="x-content">AgentSkiller generates multi-turn agent interaction data and validates it by running the steps. AgentSkiller-14B reports 79.1% on tau2-bench vs GPT-o3's 68.4%, with open-source code and data released.</div>
-                <div class="x-meta">
-                    <span>2026-02-12 00:01 UTC</span>
-                    <span class="x-engagement">🔬 开源研究</span>
-                </div>
-            </div>
-
-            <div class="x-card">
-                <div class="x-header">
-                    <span class="x-author">VimaFitness</span>
-                    <span class="x-handle">@VimaFitness</span>
-                </div>
-                <div class="x-content">saying you are using ChatGPT means that you aren't "really" using the latest capability. if you aren't using codex or claude code (or at least cowork) with custom built skills then you aren't really seeing what they are capable of.</div>
-                <div class="x-meta">
-                    <span>2026-02-12 00:00 UTC</span>
-                    <span class="x-engagement">💡 能力认知</span>
-                </div>
-            </div>
+                <a class="news-link" href="https://x.com/patentailab/status/2021088771232629249" target="_blank">查看推文 →</a>
+            </article>
         </section>
 
-        <section class="section">
-            <h2 class="section-title">🏢 企业动态</h2>
-            
-            <div class="news-item">
-                <div class="news-time">2026-02-11</div>
-                <div class="news-title">智谱加速中国AI竞赛，对标DeepSeek</div>
-                <div class="news-importance">智谱选择在农历新年前发布GLM-5，意在抢占市场先机，与DeepSeek等竞争对手展开激烈角逐。</div>
-                <div class="news-sources">来源: <a href="https://www.bloomberg.com/news/articles/2026-02-11/china-s-zhipu-unveils-new-ai-model-jolting-race-with-deepseek">Bloomberg</a></div>
-            </div>
-
-            <div class="news-item">
-                <div class="news-time">2026-02-11</div>
-                <div class="news-title">Zhipu被形容为中国对OpenAI前沿模型的最有力挑战</div>
-                <div class="news-importance">外媒评价GLM-5是迄今为止中国AI公司对OpenAI frontier models最有野心的挑战。</div>
-                <div class="news-sources">来源: <a href="https://www.webpronews.com/zhipu-ai-throws-down-the-gauntlet-glm-5-arrives-as-chinas-most-ambitious-challenge-to-openais-frontier-models/">WebProNews</a></div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">⚠️ 政策/监管</h2>
-            
-            <div class="news-item">
-                <div class="news-time">2026-02-10-11</div>
-                <div class="news-title">OpenAI因涉嫌违反加州AI安全法被监管机构指控</div>
-                <div class="news-importance">GPT-5.3-Codex发布引发争议，OpenAI否认违反加州新AI安全法规。</div>
-                <div class="news-sources">来源: <a href="https://fortune.com/2026/02/10/openai-violated-californias-ai-safety-law-gpt-5-3-codex-ai-model-watchdog-claims/">Fortune</a></div>
-            </div>
-        </section>
-
+        <!-- 覆盖度自检 -->
         <section class="section">
             <h2 class="section-title">📊 覆盖度自检</h2>
-            <div class="check-section">
-                <h4>栏目覆盖情况</h4>
-                <ul>
-                    <li>发布 (Releases): 2条 ✅ (GLM-5发布、GPT-5.3-Codex争议)</li>
-                    <li>更新 (Updates): 2条 ✅ (Google核心更新、Claude Code应用)</li>
-                    <li>开源 (OpenSource): 1条 ✅ (GLM-5将MIT开源、AgentSkiller-14B)</li>
-                    <li>评测 (Benchmarks): 1条 ⚠️ (GLM-5 vs Gemini/Claude)</li>
-                    <li>商业 (Business): 2条 ✅ (智谱竞争、外媒评价)</li>
-                    <li>风险 (Risks): 1条 ✅ (OpenAI监管争议)</li>
-                </ul>
+            <div class="checklist">
+                <h4 style="margin-bottom:12px;font-weight:600">栏目覆盖</h4>
+                <div class="checklist-item"><span class="check">✓</span> 发布/更新 (4条)</div>
+                <div class="checklist-item"><span class="check">✓</span> 开源动态 (2条)</div>
+                <div class="checklist-item"><span class="check">✓</span> 评测/Arena (2条)</div>
+                <div class="checklist-item"><span class="check">✓</span> 企业/商业 (3条)</div>
+                <div class="checklist-item"><span class="check">✓</span> 政策/监管 (2条)</div>
                 
-                <h4>厂商漏报检查</h4>
-                <ul>
-                    <li>✅ 智谱GLM — GLM-5发布（头条覆盖）</li>
-                    <li>✅ OpenAI — GPT-5.3-Codex争议</li>
-                    <li>✅ Google — 2月核心更新</li>
-                    <li>⚠️ Anthropic — 仅Claude Code社区讨论</li>
-                    <li>❌ 字节(Seedance/即梦/豆包) — 24h内无重大动态</li>
-                    <li>❌ 月之暗面Kimi — 24h内无重大动态</li>
-                    <li>❌ 通义Qwen — 24h内无重大动态</li>
-                    <li>❌ 腾讯混元 — 24h内无重大动态</li>
-                    <li>❌ 百度文心 — 24h内无重大动态</li>
-                    <li>❌ Meta/Llama — 24h内无重大动态</li>
-                </ul>
-
-                <h4>事件去重 (dedupe_key)</h4>
-                <ul>
-                    <li>(zhipu, glm-5, release, 2026-02-11)</li>
-                    <li>(openai, gpt-5.3-codex, regulatory_dispute, 2026-02-11)</li>
-                    <li>(google, core-update, algorithm_change, 2026-02-11)</li>
-                    <li>(anthropic, claude-code, enterprise_adoption, ongoing)</li>
-                </ul>
-
-                <h4>数据源说明</h4>
-                <ul>
-                    <li>Web Breaking: 2/12成功 (智谱GLM-5、Google更新)，4/12因Brave限流429失败</li>
-                    <li>X/Twitter: 8组关键词搜索完成，获取实时社区讨论</li>
-                    <li>时效性: 全部条目来自2026-02-11至02-12 (UTC)</li>
-                    <li>限制: Brave Search API rate limit导致部分英文搜索未执行</li>
-                </ul>
+                <h4 style="margin:16px 0 12px;font-weight:600">厂商命中</h4>
+                <div class="checklist-item"><span class="check">✓</span> 字节 (Seedance 2.0)</div>
+                <div class="checklist-item"><span class="check">✓</span> 智谱GLM (GLM-5发布)</div>
+                <div class="checklist-item"><span class="check">✓</span> 月之暗面Kimi (社区讨论)</div>
+                <div class="checklist-item"><span class="check">✓</span> 通义Qwen (社区提及)</div>
+                <div class="checklist-item"><span class="check">✓</span> OpenAI (GPT-5.2/广告/争议)</div>
+                <div class="checklist-item"><span class="check">✓</span> Google (Gemini/DeepMind)</div>
+                <div class="checklist-item"><span class="check">✓</span> Meta (LLaMA开源争议)</div>
+                <div class="checklist-item"><span class="cross">✗</span> 腾讯混元 (24h内无重大动态)</div>
+                <div class="checklist-item"><span class="cross">✗</span> 百度文心 (24h内无重大动态)</div>
+                
+                <h4 style="margin:16px 0 12px;font-weight:600">Dedupe Keys</h4>
+                <div style="font-size:0.8rem;color:#666;font-family:monospace">
+                    (zhipu, glm-5, model_release, 2026-02-11)<br>
+                    (openai, gpt-5.2, model_update, 2026-02-10)<br>
+                    (openai, codex, product_update, 2026-02-09)<br>
+                    (openai, chatgpt, ads_test, 2026-02-09)<br>
+                    (google, gemini-deep-think, research, 2026-02-11)<br>
+                    (google, aletheia, research, 2026-02-11)<br>
+                    (bytedance, seedance-2, product_release, 2026-02-11)<br>
+                    (openai, gpt-5.3-codex, regulatory, 2026-02-10)<br>
+                    (meta, llama, open_source_license, ongoing)
+                </div>
             </div>
         </section>
 
         <footer>
-            <p>AI 日报 · 自动生成的AI行业资讯聚合</p>
-            <p style="margin-top: 8px; font-size: 0.75rem;">数据来源: Reuters, Bloomberg, X/Twitter, Hacker News等</p>
+            <p>AI Daily Report · 每日早8点自动生成</p>
+            <p style="margin-top:8px;font-size:0.8rem">数据来源：Brave Search / X API / 官方渠道</p>
         </footer>
     </div>
 </body>
