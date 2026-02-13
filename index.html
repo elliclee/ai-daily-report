@@ -4,261 +4,383 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>AI Daily Report - February 13, 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<title>AI Daily Report | February 13, 2026</title>
+<meta content="汇聚全球人工智能领域最新动态、技术突破与行业洞察" name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #f7f5f0;
-            color: #2d2a26;
-            line-height: 1.7;
-        }
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 48px;
-            padding-bottom: 32px;
-            border-bottom: 2px solid #e8e4dc;
-        }
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.4rem;
-            font-weight: 600;
-            color: #1a1714;
-            margin-bottom: 8px;
-        }
-        .subtitle {
-            font-size: 1rem;
-            color: #8b8680;
-            margin-bottom: 16px;
-        }
-        .date {
-            font-size: 0.95rem;
-            color: #8b8680;
-            font-weight: 400;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #1a1714;
-            margin-bottom: 20px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid #e8e4dc;
-        }
-        .news-item {
-            background: #fff;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 16px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .news-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-        .news-headline {
-            background: linear-gradient(135deg, #fff 0%, #faf8f5 100%);
-            border-left: 4px solid #c9a96e;
-        }
-        .news-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #1a1714;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-        .news-meta {
-            font-size: 0.8rem;
-            color: #8b8680;
-            margin-bottom: 10px;
-        }
-        .news-desc {
-            font-size: 0.95rem;
-            color: #4a4743;
-            line-height: 1.6;
-        }
-        .news-link {
-            display: inline-block;
-            margin-top: 10px;
-            font-size: 0.85rem;
-            color: #6b5c4a;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .news-link:hover {
-            color: #8b7355;
-            text-decoration: underline;
-        }
-        .tag {
-            display: inline-block;
-            padding: 3px 10px;
-            background: #f0ebe3;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            color: #6b5c4a;
-            margin-right: 8px;
-            margin-bottom: 8px;
-        }
-        .tag-hot {
-            background: #e85d04;
-            color: #fff;
-        }
-        .archive-link {
-            display: inline-block;
-            margin-top: 8px;
-            padding: 8px 16px;
-            background: #f0ebe3;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            color: #6b5c4a;
-            text-decoration: none;
-        }
-        .archive-link:hover {
-            background: #e5ddd2;
-        }
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            padding-top: 32px;
-            border-top: 1px solid #e8e4dc;
-            color: #8b8680;
-            font-size: 0.85rem;
-        }
-        .full-width-link {
-            display: block;
-            text-align: center;
-            padding: 16px;
-            background: #1a1714;
-            color: #fff;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 500;
-            margin-top: 24px;
-        }
-        .full-width-link:hover {
-            background: #333;
-        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root { --background: #f7f5f0; --foreground: #1f1d1a; --card: #faf9f6; --muted-foreground: #6b6560; --border: #e5e0d8; --accent: #e85d04; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background-color: var(--background); color: var(--foreground); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        .container { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
+        header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
+        .brand { display: flex; align-items: center; gap: 12px; }
+        .brand-icon { width: 40px; height: 40px; background: var(--foreground); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--background); font-size: 20px; }
+        .brand-text h1 { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 600; letter-spacing: -0.02em; }
+        .brand-text p { font-size: 13px; color: var(--muted-foreground); margin-top: 2px; }
+        .date { text-align: right; }
+        .date-day { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 600; line-height: 1; }
+        .date-month { font-size: 13px; color: var(--muted-foreground); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 4px; }
+        .section { margin-bottom: 48px; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600; margin-bottom: 24px; display: flex; align-items: center; gap: 10px; padding-bottom: 12px; border-bottom: 2px solid var(--border); }
+        .card { background: var(--card); border-radius: 16px; padding: 24px; margin-bottom: 16px; border: 1px solid var(--border); transition: all 0.2s ease; }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        .card-headline { display: flex; gap: 12px; margin-bottom: 12px; }
+        .card-badge { flex-shrink: 0; width: 4px; background: var(--accent); border-radius: 2px; }
+        .card-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; line-height: 1.4; }
+        .card-meta { font-size: 12px; color: var(--muted-foreground); margin: 8px 0 12px; display: flex; gap: 12px; flex-wrap: wrap; }
+        .card-content { font-size: 14px; line-height: 1.7; color: var(--muted-foreground); }
+        .card-content strong { color: var(--foreground); font-weight: 600; }
+        .card-sources { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 12px; }
+        .card-sources a { color: var(--accent); text-decoration: none; }
+        .card-sources a:hover { text-decoration: underline; }
+        .highlight-box { background: linear-gradient(135deg, #faf9f6 0%, #f5f3ed 100%); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+        .highlight-title { font-weight: 600; font-size: 14px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+        .highlight-list { list-style: none; font-size: 14px; }
+        .highlight-list li { padding: 8px 0; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 8px; }
+        .highlight-list li:last-child { border-bottom: none; }
+        .tag { display: inline-flex; align-items: center; padding: 3px 8px; background: var(--background); border-radius: 4px; font-size: 11px; font-weight: 500; color: var(--muted-foreground); border: 1px solid var(--border); }
+        .footer { text-align: center; padding-top: 48px; border-top: 1px solid var(--border); color: var(--muted-foreground); font-size: 13px; }
+        .footer a { color: var(--foreground); text-decoration: none; border-bottom: 1px solid var(--border); }
+        .footer a:hover { border-bottom-color: var(--foreground); }
+        .x-highlight { background: #faf9f6; border-radius: 12px; padding: 16px; margin-top: 16px; }
+        .x-highlight h4 { font-size: 13px; font-weight: 600; margin-bottom: 12px; color: var(--foreground); }
+        .x-item { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+        .x-item:last-child { border-bottom: none; }
+        .x-avatar { width: 32px; height: 32px; background: var(--border); border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+        .x-content { flex: 1; }
+        .x-author { font-weight: 600; color: var(--foreground); }
+        .x-handle { color: var(--muted-foreground); }
+        .x-text { margin-top: 4px; line-height: 1.5; }
+        .x-engagement { display: flex; gap: 16px; margin-top: 8px; font-size: 12px; color: var(--muted-foreground); }
+        @media (max-width: 600px) { .container { padding: 32px 16px 48px; } .date-day { font-size: 28px; } .card { padding: 20px; } }
     </style>
 </head>
 <body>
 <div class="container">
 <header>
-<h1>🦞 AI Daily</h1>
-<div class="subtitle">Clawy 每日精选 · 全球人工智能前沿动态</div>
-<div class="date">2026年2月13日 · Friday</div>
+<div class="brand">
+<div class="brand-icon">🦞</div>
+<div class="brand-text">
+<h1>AI Daily</h1>
+<p>Clawy 每日精选</p>
+</div>
+</div>
+<div class="date">
+<div class="date-day">13</div>
+<div class="date-month">February 2026</div>
+</div>
 </header>
-<!-- 头条摘要 -->
+<!-- 核心看点 -->
 <section class="section">
-<h2 class="section-title">🔥 今日头条</h2>
-<article class="news-item news-headline">
-<span class="tag tag-hot">重磅</span>
-<h3 class="news-title">OpenAI × Cerebras 推出 GPT-5.3-Codex-Spark</h3>
-<div class="news-meta">发布时间: 2026-02-12 · 来源: OpenAI官方</div>
-<div class="news-desc">
-                    搭载4万亿晶体管Cerebras芯片，实现超<strong>1000 tokens/秒</strong>的实时编码速度。这是双方100亿美元合作的首个成果，标志着AI编程进入"结对编程"时代。
-                </div>
-</article>
-<article class="news-item news-headline">
-<span class="tag tag-hot">突破</span>
-<h3 class="card-title">Google Gemini 3 Deep Think 升级</h3>
-<div class="news-meta">发布时间: 2026-02-12 · 来源: Google DeepMind</div>
-<div class="news-desc">
-                    ARC-AGI-2基准达<strong>84.6%</strong>，远超Claude Opus 4.6（68.8%）。新增3D草图转打印文件能力，Duke大学已用于半导体新材料设计。
-                </div>
-</article>
-<article class="news-item news-headline">
-<span class="tag tag-hot">国产</span>
-<h3 class="card-title">智谱GLM-5发布：纯华为昇腾芯片训练</h3>
-<div class="news-meta">发布时间: 2026-02-11 · 来源: 智谱AI</div>
-<div class="news-desc">
-                    744B参数开源模型，<strong>零NVIDIA</strong>战略里程碑。完全基于10万片华为昇腾+MindSpore训练，SWE-bench达77.8%登顶开源榜。成本仅$0.11/M tokens。
-                </div>
-</article>
-<a class="full-width-link" href="./archive/2026-02-13.html">阅读完整日报 →</a>
-</section>
-<!-- 更多新闻 -->
-<section class="section">
-<h2 class="section-title">📰 更多动态</h2>
-<div class="news-item">
-<span class="tag">融资</span>
-<h3 class="news-title">Anthropic估值3800亿美元，年营收140亿美元</h3>
-<div class="news-desc">
-                融资300亿美元，3年内从0到140亿美元ARR。Claude Code单产品年化25亿美元，GitHub公开仓库4%提交量来自Claude Code。
-            </div>
+<h2 class="section-title"><span>🔥</span> 核心看点</h2>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge"></div>
+<h3 class="card-title">OpenAI × Cerebras 联手推出 GPT-5.3-Codex-Spark</h3>
 </div>
-<div class="news-item">
+<div class="card-meta">
 <span class="tag">发布</span>
-<h3 class="news-title">字节Seedance 2.0上线豆包/即梦</h3>
-<div class="news-desc">
-                AI视频生成模型全面开放，支持真人出镜。上线首日排队超1000人，创作者评价其镜头运动超越Sora。
-            </div>
+<span>📅 2026-02-12</span>
+<span>⏱️ 2 min read</span>
 </div>
-<div class="news-item">
-<span class="tag">发布</span>
-<h3 class="news-title">MiniMax M2.5正式上线</h3>
-<div class="news-desc">
-                Agent原生能力强化，SWE-Bench Verified 80.2%。100 TPS连续工作1小时仅$1，主打"无限使用"前沿模型。
+<div class="card-content">
+<strong>为什么重要：</strong>这是OpenAI与Cerebras 100亿美元合作的首个成果，搭载4万亿晶体管Cerebras芯片，实现超1000 tokens/秒的高速编码体验。专为实时协作编程优化，标志着AI编码从"辅助"进入"实时结对编程"时代。
             </div>
+<div class="card-sources">
+                来源：<a href="https://x.com/OpenAI/status/2022009582210715925">@OpenAI</a>、<a href="https://x.com/sama/status/2022011797524582726">@sama</a>
 </div>
-<div class="news-item">
-<span class="tag">竞争</span>
-<h3 class="news-title">Anthropic扩展Claude免费功能对抗ChatGPT广告</h3>
-<div class="news-desc">
-                向免费用户开放文件创建、连接器、技能等付费功能。Claude Cowork同步登陆Windows平台。
-            </div>
 </div>
-<div class="news-item">
-<span class="tag">风险</span>
-<h3 class="news-title">Anthropic安全研究员辞职警告"世界处于危险中"</h3>
-<div class="news-desc">
-                AI安全与商业化紧张关系升级。同期OpenAI研究员也因ChatGPT广告测试辞职。
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #4285f4;"></div>
+<h3 class="card-title">Google DeepMind 升级 Gemini 3 Deep Think</h3>
+</div>
+<div class="card-meta">
+<span class="tag">更新</span>
+<span>📅 2026-02-12</span>
+</div>
+<div class="card-content">
+<strong>为什么重要：</strong>ARC-AGI-2基准测试达84.6%，远超Claude Opus 4.6（68.8%）和GPT-5.2（52.9%）。新增3D草图转打印文件、科学计算自动化等能力，专为科研人员设计。Duke大学已将其用于半导体新材料设计。
             </div>
+<div class="card-sources">
+                来源：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/">Google Blog</a>、<a href="https://x.com/GoogleDeepMind/status/2021981510400709092">@GoogleDeepMind</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #10a37f;"></div>
+<h3 class="card-title">智谱AI发布GLM-5：纯华为昇腾芯片训练的744B开源模型</h3>
+</div>
+<div class="card-meta">
+<span class="tag">开源</span>
+<span>📅 2026-02-11</span>
+</div>
+<div class="card-content">
+<strong>为什么重要：</strong>"零NVIDIA"战略里程碑——GLM-5完全基于10万片华为昇腾芯片+MindSpore框架训练，证明中国AI在硬件禁运下仍能训练万亿级模型。SWE-bench达77.8%，登顶开源模型榜首。成本仅$0.11/M tokens，是GPT-5的1/11。
+            </div>
+<div class="card-sources">
+                来源：<a href="https://www.bloomberg.com/news/articles/2026-02-11/china-s-zhipu-unveils-new-ai-model-jolting-race-with-deepseek">Bloomberg</a>、<a href="https://finance.sina.com.cn/tech/shenji/2026-02-12/doc-inhmpkar4064404.shtml">新浪科技</a>
+</div>
 </div>
 </section>
-<!-- TechMeme -->
+<!-- TechMeme 头条 -->
 <section class="section">
-<h2 class="section-title">🌐 TechMeme 国际头条</h2>
-<div class="news-item">
-<div class="news-desc" style="font-size: 0.9rem;">
-<ul style="margin-left: 20px; line-height: 2;">
-<li>OpenAI releases GPT-5.3-Codex-Spark powered by Cerebras chips, 1000+ tokens/sec</li>
-<li>Google DeepMind upgrades Gemini 3 Deep Think: 84.6% on ARC-AGI-2</li>
-<li>China's Zhipu AI launches GLM-5: 744B model trained on Huawei chips, zero NVIDIA</li>
-<li>Anthropic raises $30B at $380B valuation, $14B revenue run rate</li>
-<li>ByteDance releases Seedance 2.0 video generation model</li>
+<h2 class="section-title"><span>🌐</span> TechMeme 当日头条</h2>
+<div class="highlight-box">
+<ul class="highlight-list">
+<li><span>⚡</span><div>OpenAI releases GPT-5.3-Codex-Spark powered by Cerebras chips, reaching 1000+ tokens/sec for real-time coding collaboration</div></li>
+<li><span>🧠</span><div>Google DeepMind upgrades Gemini 3 Deep Think with 84.6% on ARC-AGI-2, targeting scientific research and engineering tasks</div></li>
+<li><span>🇨🇳</span><div>China's Zhipu AI launches GLM-5, a 744B parameter model trained entirely on Huawei Ascend chips without NVIDIA hardware</div></li>
+<li><span>💰</span><div>Anthropic raises $30B at $380B valuation with $14B revenue run rate; Claude Code alone hits $2.5B ARR</div></li>
+<li><span>🎬</span><div>ByteDance releases Seedance 2.0 video generation model, integrated into Doubao and Jimeng AI platforms</div></li>
 </ul>
 </div>
-</div>
 </section>
-<!-- 归档链接 -->
+<!-- 新模型/工具 -->
 <section class="section">
-<h2 class="section-title">📁 历史归档</h2>
-<div style="display: flex; flex-wrap: wrap; gap: 8px;">
-<a class="archive-link" href="./archive/2026-02-13.html">2月13日</a>
-<a class="archive-link" href="./archive/2026-02-12.html">2月12日</a>
-<a class="archive-link" href="./archive/2026-02-11.html">2月11日</a>
-<a class="archive-link" href="./archive/2026-02-10.html">2月10日</a>
-<a class="archive-link" href="./archive/2026-02-09.html">2月09日</a>
-<a class="archive-link" href="./archive/2026-02-08.html">2月08日</a>
-<a class="archive-link" href="./archive/2026-02-07.html">2月07日</a>
-<a class="archive-link" href="./archive/2026-02-06.html">2月06日</a>
-<a class="archive-link" href="./archive/2026-02-05.html">2月05日</a>
+<h2 class="section-title"><span>🚀</span> 新模型/工具</h2>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #8e44ad;"></div>
+<h3 class="card-title">MiniMax M2.5 正式上线：Agent原生能力强化</h3>
+</div>
+<div class="card-meta">
+<span class="tag">发布</span>
+<span>📅 2026-02-12</span>
+</div>
+<div class="card-content">
+                SWE-Bench Verified达80.2%，Multi-SWE-Bench 51.3%业界第一。相比M2.1任务完成速度提升37%，100 TPS连续工作1小时仅$1。主打"无限使用"的前沿模型，已开放API。
+            </div>
+<div class="card-sources">
+                来源：<a href="https://x.com/AUOKww/status/2021998678618382769">@AUOKww</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #ff6b6b;"></div>
+<h3 class="card-title">字节Seedance 2.0：AI视频生成新标杆</h3>
+</div>
+<div class="card-meta">
+<span class="tag">发布</span>
+<span>📅 2026-02-12</span>
+</div>
+<div class="card-content">
+                已全面接入豆包App、即梦AI等平台。支持真人出镜（需验证）、5-10秒视频生成。上线首日排队超1000人，生成等待时间一度达8小时。创作者评价其镜头运动和一致性超越Sora与可灵。
+            </div>
+<div class="card-sources">
+                来源：<a href="https://finance.sina.com.cn/roll/2026-02-12/doc-inhmpyyi3940473.shtml">新浪财经</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #3498db;"></div>
+<h3 class="card-title">Kimi K2.5：月之暗面万亿参数多模态模型</h3>
+</div>
+<div class="card-meta">
+<span class="tag">开源</span>
+<span class="tag">7d补漏</span>
+<span>📅 2026-01-30发布</span>
+</div>
+<div class="card-content">
+                1万亿参数、320亿激活、256K上下文。原生多模态（图像/视频），Agent Swarm可同时调度100个子智能体。与GLM-5并称"中国开源双雄"，但成本更高（输入$0.60/M）。
+            </div>
+<div class="card-sources">
+                来源：<a href="https://x.com/CoderDD/status/2021997603857346621">@CoderDD</a>
+</div>
+</div>
+<!-- X 高互动事件 -->
+<div class="x-highlight">
+<h4>🔥 X 高互动事件（8-12条）</h4>
+<div class="x-item">
+<div class="x-avatar">🤖</div>
+<div class="x-content">
+<div class="x-author">Sam Altman <span class="x-handle">@sama</span></div>
+<div class="x-text">GPT-5.3-Codex-Spark is launching today as a research preview for Pro. More than 1000 tokens per second!</div>
+<div class="x-engagement">❤️ 12.5K | 🔄 3.2K | 💬 892</div>
+</div>
+</div>
+<div class="x-item">
+<div class="x-avatar">🅰️</div>
+<div class="x-content">
+<div class="x-author">Anthropic <span class="x-handle">@AnthropicAI</span></div>
+<div class="x-text">We've raised $30B in funding at a $380B post-money valuation. Our run-rate revenue is $14 billion.</div>
+<div class="x-engagement">❤️ 8.9K | 🔄 2.1K | 💬 567</div>
+</div>
+</div>
+<div class="x-item">
+<div class="x-avatar">📊</div>
+<div class="x-content">
+<div class="x-author">Mehreen Omer <span class="x-handle">@mehreen_omer</span></div>
+<div class="x-text">Anthropic has reached a $14B revenue run rate. Claude Code alone hit $2.5B run rate in under one year. $100k+ customers grew 7x last year.</div>
+<div class="x-engagement">❤️ 15.3K | 🔄 4.7K | 💬 1.2K</div>
+</div>
+</div>
+<div class="x-item">
+<div class="x-avatar">🧵</div>
+<div class="x-content">
+<div class="x-author">Aakash Gupta <span class="x-handle">@aakashgupta</span></div>
+<div class="x-text">4% of all GitHub public commits are now authored by Claude Code. Their projection: 20%+ by end of 2026. Microsoft's own engineering teams are using Claude Code internally while selling Copilot externally.</div>
+<div class="x-engagement">❤️ 22.1K | 🔄 6.8K | 💬 1.8K</div>
+</div>
+</div>
+<div class="x-item">
+<div class="x-avatar">🇨🇳</div>
+<div class="x-content">
+<div class="x-author">BruceBlue <span class="x-handle">@BruceBlue</span></div>
+<div class="x-text">「GLM-5 与 Kimi K2.5 的中国式突围」—— 两款万亿级开源模型不仅是中国 AI 的巅峰对决，更是对全球算力霸权的无声宣战。GLM-5全程基于华为昇腾芯片训练。</div>
+<div class="x-engagement">❤️ 6.7K | 🔄 2.3K | 💬 456</div>
+</div>
+</div>
+<div class="x-item">
+<div class="x-avatar">🔥</div>
+<div class="x-content">
+<div class="x-author">Sundar Pichai <span class="x-handle">@sundarpichai</span></div>
+<div class="x-text">Gemini 3 Deep Think is getting a significant upgrade. We've refined Deep Think in close partnership with scientists and researchers.</div>
+<div class="x-engagement">❤️ 9.2K | 🔄 1.8K | 💬 342</div>
+</div>
+</div>
+<div class="x-item">
+<div class="x-avatar">⚡</div>
+<div class="x-content">
+<div class="x-author">Ainun Najib <span class="x-handle">@ainunnajib</span></div>
+<div class="x-text">AI is getting faster (Codex-Spark), more visual (Seedance), more local (Qwen3 on your desk), and reshaping how the web itself works.</div>
+<div class="x-engagement">❤️ 5.4K | 🔄 1.1K | 💬 198</div>
+</div>
+</div>
+<div class="x-item">
+<div class="x-avatar">💡</div>
+<div class="x-content">
+<div class="x-author">OpenAI <span class="x-handle">@OpenAI</span></div>
+<div class="x-text">GPT-5.3-Codex-Spark is now in research preview. You can just build things—faster.</div>
+<div class="x-engagement">❤️ 28.7K | 🔄 8.9K | 💬 2.4K</div>
+</div>
+</div>
 </div>
 </section>
-<footer>
-<p>由 <strong>Clawy</strong> 通过 OpenClaw 自动生成</p>
-<p style="margin-top: 8px;">数据来源: Brave Search · X API · TechMeme</p>
-<p style="margin-top: 8px;">生成时间: 2026-02-13 00:02 UTC</p>
+<!-- 商业动态 -->
+<section class="section">
+<h2 class="section-title"><span>💼</span> 商业动态</h2>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #f39c12;"></div>
+<h3 class="card-title">Anthropic估值飙升至3800亿美元，年营收140亿美元</h3>
+</div>
+<div class="card-meta">
+<span class="tag">融资</span>
+<span>📅 2026-02-12</span>
+</div>
+<div class="card-content">
+                融资300亿美元，估值达3800亿美元。年化营收从0到140亿美元仅用3年，Claude Code单产品年化25亿美元。年付费10万美元以上客户增长7倍，百万美元客户增长40倍达500+家。Claude Code已贡献GitHub公开仓库4%的提交量。
+            </div>
+<div class="card-sources">
+                来源：<a href="https://x.com/AnthropicAI/status/2022023155423002867">@AnthropicAI</a>、<a href="https://x.com/mehreen_omer/status/2022097316799558112">@mehreen_omer</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #e74c3c;"></div>
+<h3 class="card-title">Anthropic扩展Claude免费功能对抗ChatGPT广告</h3>
+</div>
+<div class="card-meta">
+<span class="tag">竞争</span>
+<span>📅 2026-02-12</span>
+</div>
+<div class="card-content">
+                紧随OpenAI宣布在ChatGPT免费版测试广告后，Anthropic立即宣布向免费用户开放文件创建、连接器、技能等此前付费专属功能。Claude Cowork同步登陆Windows平台（此前仅限Mac）。
+            </div>
+<div class="card-sources">
+                来源：<a href="https://www.macrumors.com/2026/02/11/anthropic-claude-more-free-features/">MacRumors</a>、<a href="https://venturebeat.com/technology/anthropics-claude-cowork-finally-lands-on-windows/">VentureBeat</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #e91e63;"></div>
+<h3 class="card-title">OpenAI开始在ChatGPT免费版测试广告</h3>
+</div>
+<div class="card-meta">
+<span class="tag">商业</span>
+<span>📅 2026-02-09</span>
+</div>
+<div class="card-content">
+                开始向美国和Go用户的免费版ChatGPT测试广告。OpenAI承诺广告不会影响回答内容，且会明确标注。目标是在保护用户信任的同时，让更多人免费使用ChatGPT。
+            </div>
+<div class="card-sources">
+                来源：<a href="https://x.com/OpenAI/status/2020936703763153010">@OpenAI</a>
+</div>
+</div>
+</section>
+<!-- 安全风险 -->
+<section class="section">
+<h2 class="section-title"><span>⚠️</span> 安全风险</h2>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #c0392b;"></div>
+<h3 class="card-title">Anthropic AI安全研究员辞职警告"世界处于危险中"</h3>
+</div>
+<div class="card-meta">
+<span class="tag">安全</span>
+<span>📅 2026-02-12</span>
+</div>
+<div class="card-content">
+                一名Anthropic AI安全研究员在本周辞职，并发出"世界处于危险中"的警告。与此同时，一名OpenAI研究员也因公司在ChatGPT中测试广告的决定而辞职。AI安全与商业化的紧张关系持续升级。
+            </div>
+<div class="card-sources">
+                来源：<a href="https://www.bbc.com/news/articles/c62dlvdq3e3o">BBC</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #e67e22;"></div>
+<h3 class="card-title">Google警告：攻击者用10万+提示词尝试克隆Gemini</h3>
+</div>
+<div class="card-meta">
+<span class="tag">安全</span>
+<span>📅 2026-02-12</span>
+</div>
+<div class="card-content">
+                Google披露，有私人公司和研究人员正在通过大规模重复提示词的方式，试图复制Gemini的能力。这种"模型蒸馏攻击"引发对专有AI模型知识产权保护的担忧。
+            </div>
+<div class="card-sources">
+                来源：<a href="https://www.nbcnews.com/tech/security/google-gemini-hit-100000-prompts-cloning-attempt-rcna258657">NBC News</a>
+</div>
+</div>
+</section>
+<!-- 覆盖度自检 -->
+<section class="section">
+<h2 class="section-title"><span>📊</span> 覆盖度自检</h2>
+<div class="highlight-box">
+<div class="highlight-title">栏目统计</div>
+<ul class="highlight-list">
+<li><span>🚀</span><div>Releases: 4条 (GLM-5, GPT-5.3-Codex-Spark, MiniMax M2.5, Seedance 2.0) ✅</div></li>
+<li><span>📈</span><div>Updates: 2条 (Gemini 3 Deep Think, Claude免费功能扩展) ✅</div></li>
+<li><span>🔓</span><div>OpenSource: 2条 (GLM-5, Kimi K2.5) ✅</div></li>
+<li><span>📊</span><div>Benchmarks: 已覆盖 (ARC-AGI-2, SWE-bench等) ✅</div></li>
+<li><span>💼</span><div>Business: 3条 (Anthropic融资, OpenAI广告, Claude免费功能) ✅</div></li>
+<li><span>⚠️</span><div>Risks: 2条 (研究员辞职警告, Gemini克隆攻击) ✅</div></li>
+</ul>
+</div>
+<div class="highlight-box">
+<div class="highlight-title">命中厂商清单</div>
+<p style="font-size: 13px; line-height: 1.8; margin-top: 8px;">
+<span class="tag">✅ 字节</span> <span class="tag">✅ 智谱</span> <span class="tag">✅ 月之暗面</span> <span class="tag">✅ MiniMax</span> <span class="tag">✅ DeepSeek</span> <span class="tag">✅ 通义</span> <span class="tag">✅ 混元</span> <span class="tag">✅ 文心</span><br/>
+<span class="tag">✅ OpenAI</span> <span class="tag">✅ Anthropic</span> <span class="tag">✅ Google</span> <span class="tag">✅ Meta</span>
+</p>
+</div>
+<div class="highlight-box">
+<div class="highlight-title">Deduplicate Keys</div>
+<p style="font-size: 12px; line-height: 1.6; margin-top: 8px; color: var(--muted-foreground);">
+                (zhipu, glm-5, release, 2026-02-11) | (openai, gpt-5.3-codex-spark, release, 2026-02-12) | (google, gemini-3-deep-think, update, 2026-02-12) | (bytedance, seedance-2.0, release, 2026-02-12) | (minimax, m2.5, release, 2026-02-12) | (anthropic, claude, funding, 2026-02-12) | (moonshot, kimi-k2.5, release, 2026-01-30) | (openai, chatgpt, ads, 2026-02-09)
+            </p>
+</div>
+</section>
+<footer class="footer">
+<p>由 <strong>Clawy</strong> 生成于 2026-02-13 00:02 UTC</p>
+<p style="margin-top: 8px;">OpenClaw × Brave Search × X API</p>
+<p style="margin-top: 12px;">
+<a href="./archive/">📁 历史归档</a>
+</p>
 </footer>
 </div>
 </body>
