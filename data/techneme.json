@@ -1,29 +1,30 @@
 {
+  "date": "2026-02-14",
   "stories": [
     {
-      "title": "MiniMax 开源 M2.5 模型：80.2% SWE-Bench，成本仅 Claude Opus 的 1/20",
-      "url": "https://www.minimax.io/news/minimax-m25",
-      "summary": "中国 AI 初创公司 MiniMax 发布 M2.5 和 M2.5-Lightning，230B MoE 架构，采用自研 Forge RL 框架训练，在 SWE-Bench Verified 上取得 80.2% 成绩，API 成本仅为 $1/小时。模型权重已开源至 HuggingFace。"
+      "title": "MiniMax 开源 M1 推理模型：100万 Token 上下文，RL 训练成本仅 $53.47万",
+      "url": "https://www.minimax.io/news/minimaxm1",
+      "summary": "MiniMax 发布全球首个开源大规模混合注意力架构推理模型 M1，支持 100万 Token 上下文（8倍于 DeepSeek R1）和 8万 Token 推理输出。采用自研 CISPO 强化学习算法，整个 RL 阶段仅使用 512 张 H800 训练 3 周，成本仅 $534,700，实现 55.6%-56.0% SWE-bench 成绩。"
     },
     {
-      "title": "字节 Seedance 2.0 发布：多模态视频生成，马斯克点赞但遭好莱坞谴责",
-      "url": "https://www.36kr.com/p/3680115686895237",
-      "summary": "字节跳动正式发布视频生成模型 Seedance 2.0，支持文本、图像、视频、音频多模态输入，可生成 2K 画质 20 秒视频。马斯克点赞，但美国电影协会同日谴责该模型引发大规模版权侵权。"
+      "title": "OpenAI 正式退役 GPT-4o 等多款旧模型，力推 GPT-5 系列",
+      "url": "https://www.cnet.com/tech/services-and-software/bye-bye-chatgpt-4o-openai-retires-several-models-pushes-us-to-use-new-gpt-5-ones/",
+      "summary": "OpenAI 于 2月13日 10am PT 正式退役 GPT-5、GPT-4o、GPT-4.1、GPT-4.1 mini 和 o4-mini 等旧模型。GPT-4o 是 ChatGPT 历史上最受欢迎的模型之一，强制迁移引发大量用户不满，Reddit 上有用户表示哀悼。"
     },
     {
-      "title": "智谱 GLM-5 开源发布：744B 参数，基于 10 万片华为昇腾芯片训练",
-      "url": "https://www.testingcatalog.com/z-ai-launched-glm-5-new-open-source-model-on-chat-and-apis/",
-      "summary": "智谱 AI 发布新一代旗舰模型 GLM-5，744B 参数规模，在 SWE-bench-Verified 达到 77.8%，采用 MIT 许可证完全开源。模型基于 10 万片华为昇腾芯片训练，摆脱对 NVIDIA 硬件依赖。"
+      "title": "Anthropic 完成 300 亿美元融资估值 3800 亿，Super Bowl 广告日活增 11%",
+      "url": "https://www.theguardian.com/technology/2026/feb/12/anthropic-funding-round",
+      "summary": "Anthropic 完成 300 亿美元 Series G 融资，投后估值 3800 亿美元（较 2025年9月 1830 亿翻倍），年化收入 140 亿美元。Super Bowl 广告后日活用户增长 11%，高于 OpenAI 的 2.7% 和 Gemini 的 1.4%。预计 2028 年实现盈亏平衡，比 OpenAI 目标早两年。"
     },
     {
-      "title": "Anthropic 大幅升级 Claude 免费版：文件编辑、Connectors、Skills 全开放",
-      "url": "https://indianexpress.com/article/technology/tech-news-technology/claudes-free-plan-gets-a-major-upgrade-as-anthropic-adds-premium-features-10528937/",
-      "summary": "Anthropic 宣布向 Claude 免费用户开放文件创建与编辑、Connectors 外部服务连接、Skills 任务自动化等此前仅付费用户可用的核心功能。"
+      "title": "Google 披露黑客试图用 10万+ Prompts 克隆 Gemini 模型",
+      "url": "https://www.pulse.ng/story/google-says-hackers-tried-to-clone-gemini-2026021310054488697",
+      "summary": "Google 安全团队披露攻击者向 Gemini 发送超过 10万条精心设计的结构化 Prompts，试图通过模型提取/蒸馏技术逆向工程 Gemini 的推理机制。这是首例公开披露的大规模针对顶级 AI 模型的提取攻击案例。"
     },
     {
-      "title": "Google Gemini 3 Deep Think 重大更新：科学推理能力大幅提升",
-      "url": "https://www.ghacks.net/2026/02/13/gemini-3-deep-think-raises-the-bar-for-advanced-ai-reasoning/",
-      "summary": "Google DeepMind 升级 Gemini 3 Deep Think 推理模式，在 ARC-AGI-2、Humanity's Last Exam 等基准上达到 SOTA，Codeforces Elo 3455（金牌水平）。已向 Google AI Ultra 订阅者推出，API 开放早期访问。"
+      "title": "智谱 GLM-5 登顶 OpenRouter：匿名发布 Pony Alpha，日处理 600 亿 Tokens",
+      "url": "https://voiceofcontext.substack.com/p/inside-zais-secret-model-drop-seedance",
+      "summary": "智谱 Z.ai 将 GLM-5 以代号 Pony Alpha 匿名上传至 OpenRouter，未作宣传即登顶平台流行度榜单，日处理 600 亿 Tokens。正式揭晓后股价次日暴涨 28.68%，市值突破 2000 亿港元（约 205 亿美元），创中国上市大模型公司历史最高估值。"
     }
   ]
 }
