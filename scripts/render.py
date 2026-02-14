@@ -82,12 +82,17 @@ def render_items(items: list[dict]) -> str:
 
 
 def render_techneme(stories: list[dict]) -> str:
-    if not stories:
-        return ""
+    # Always render this section to keep page layout stable.
     parts = [
         '<section class="section">',
         '  <h2 class="section-title">🌐 TechMeme 当日头条</h2>',
     ]
+
+    if not stories:
+        parts.append('<div class="news-desc">今日无（或抓取失败）。</div>')
+        parts.append('</section>')
+        return "\n".join(parts)
+
     for s in stories[:5]:
         title = html_escape(s.get("title", ""))
         url = html_escape(s.get("url", ""))
@@ -126,9 +131,8 @@ def main():
     content_parts.append(render_items(daily.get("headlines") or []))
     content_parts.append('</section>')
 
-    tech_html = render_techneme((techneme or {}).get("stories") or [])
-    if tech_html:
-        content_parts.append(tech_html)
+    # Keep section layout stable: always show TechMeme section (with placeholder when empty).
+    content_parts.append(render_techneme((techneme or {}).get("stories") or []))
 
     def add_section(title: str, items: list[dict]):
         content_parts.append('<section class="section">')

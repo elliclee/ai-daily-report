@@ -16,6 +16,9 @@ if [[ ! -f index.html ]]; then
   exit 3
 fi
 
+# Validate JSON schema-ish constraints to prevent format drift
+python3 scripts/validate_json.py
+
 ARCHIVE_SHA=$(sha256sum "$ARCHIVE" | awk '{print $1}')
 INDEX_SHA=$(sha256sum index.html | awk '{print $1}')
 
