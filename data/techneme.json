@@ -1,24 +1,19 @@
 {
   "stories": [
     {
-      "title": "OpenAI Retires GPT-4o Amid User Backlash",
+      "title": "OpenAI 退役 GPT-4o 引发用户强烈反弹",
       "url": "https://www.cnet.com/tech/services-and-software/bye-bye-chatgpt-4o-openai-retires-several-models-pushes-us-to-use-new-gpt-5-ones/",
-      "summary": "OpenAI officially retires GPT-4o and several other models, pushing users to GPT-5.1 and GPT-5.2 despite community complaints about the new models' overly flowery writing style."
+      "summary": "OpenAI 宣布正式退役 GPT-4o 等多款热门模型，仅保留 0.1% 活跃用户可继续访问，强制用户迁移至 GPT-5 系列。"
     },
     {
-      "title": "Anthropic Raises $30B at $380B Valuation",
-      "url": "https://intellizence.com/insights/startup-funding/anthropic-funding-rounds-2026-latest-30b-round-previous-raises/",
-      "summary": "Anthropic closes massive Series G funding led by GIC and Coatue, cementing its position as OpenAI's primary competitor with a $380B post-money valuation."
-    },
-    {
-      "title": "AI Startup Founder Warns of COVID-Level Disruption",
+      "title": "Matt Shumer 警告 AI 冲击将远超 COVID",
       "url": "https://www.businessinsider.com/matt-shumer-something-big-is-happening-essay-ai-disruption-2026-2",
-      "summary": "HyperWrite CEO Matt Shumer's viral essay compares current AI moment to February 2020, warning that job disruption will be 'much bigger than COVID' and urging preparation."
+      "summary": "HyperWrite AI 创始人发布 viral 长文，将当前 AI 发展比作 2020 年 2 月疫情临界点，引发科技界广泛讨论。"
     },
     {
-      "title": "Elon Musk Slams Anthropic as 'Misanthropic and Evil'",
-      "url": "https://www.foxbusiness.com/technology/elon-musk-slams-anthropic-ai-models-misanthropic-evil-scathing-social-media-post",
-      "summary": "Musk accuses Anthropic AI models of racial and demographic bias in scathing X post, escalating rivalry between xAI and Anthropic."
+      "title": "Anthropic 完成 300 亿美元 G 轮融资",
+      "url": "https://intellizence.com/insights/startup-funding/anthropic-funding-rounds-2026-latest-30b-round-previous-raises/",
+      "summary": "由 GIC 和 Coatue 领投，投后估值达 3800 亿美元，为 AI 领域年度最大单笔融资之一。"
     }
   ]
 }
