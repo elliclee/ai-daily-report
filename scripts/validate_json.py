@@ -52,11 +52,19 @@ def validate_item(it: dict, ctx: str):
     sources = must_list(it, "sources", ctx)
     if len(sources) < 1:
         die(f"{ctx}: sources must have at least 1 entry")
+
+    has_x = False
     for i, s in enumerate(sources):
         if not isinstance(s, dict):
             die(f"{ctx}: sources[{i}] must be object")
         must_str(s, "name", f"{ctx}: sources[{i}]")
-        must_str(s, "url", f"{ctx}: sources[{i}]")
+        url = must_str(s, "url", f"{ctx}: sources[{i}]")
+        if "x.com/" in url or "twitter.com/" in url:
+            has_x = True
+
+    # Requirement from ellic: every item must have at least one X source for traceability.
+    if not has_x:
+        die(f"{ctx}: sources must include at least one X link (x.com/...) ")
 
 
 def main():
