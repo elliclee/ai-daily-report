@@ -3,17 +3,27 @@
     {
       "title": "OpenAI 退役 GPT-4o 引发用户强烈反弹",
       "url": "https://www.cnet.com/tech/services-and-software/bye-bye-chatgpt-4o-openai-retires-several-models-pushes-us-to-use-new-gpt-5-ones/",
-      "summary": "OpenAI 宣布正式退役 GPT-4o 等多款热门模型，仅保留 0.1% 活跃用户可继续访问，强制用户迁移至 GPT-5 系列。"
-    },
-    {
-      "title": "Matt Shumer 警告 AI 冲击将远超 COVID",
-      "url": "https://www.businessinsider.com/matt-shumer-something-big-is-happening-essay-ai-disruption-2026-2",
-      "summary": "HyperWrite AI 创始人发布 viral 长文，将当前 AI 发展比作 2020 年 2 月疫情临界点，引发科技界广泛讨论。"
+      "summary": "OpenAI 宣布正式退役 GPT-4o 等多款热门模型，仅保留 0.1% 活跃用户可继续访问，强制用户迁移至 GPT-5 系列。API 访问保持不变。"
     },
     {
       "title": "Anthropic 完成 300 亿美元 G 轮融资",
-      "url": "https://intellizence.com/insights/startup-funding/anthropic-funding-rounds-2026-latest-30b-round-previous-raises/",
-      "summary": "由 GIC 和 Coatue 领投，投后估值达 3800 亿美元，为 AI 领域年度最大单笔融资之一。"
+      "url": "https://www.reuters.com/technology/anthropic-valued-380-billion-latest-funding-round-2026-02-12/",
+      "summary": "由 GIC 和 Coatue 领投，投后估值达 3800 亿美元，为 AI 领域年度最大单笔融资之一。年化收入已达 140 亿美元。"
+    },
+    {
+      "title": "OpenAI 发布 GPT-5.3-Codex-Spark 实时编码模型",
+      "url": "https://www.cerebras.ai/blog/openai-codexspark",
+      "summary": "首个专为实时编码设计的模型，由 Cerebras 晶圆级芯片支持，每秒超 1000 token，128K 上下文。"
+    },
+    {
+      "title": "字节发布 Seedance 2.0 视频生成模型",
+      "url": "https://www.36kr.com/p/3680115686895237",
+      "summary": "字节跳动正式发布视频生成模型 Seedance 2.0，已接入豆包和即梦产品。马斯克点赞该模型。"
+    },
+    {
+      "title": "Google Gemini 3 Deep Think 重大更新",
+      "url": "https://www.ghacks.net/2026/02/13/gemini-3-deep-think-raises-the-bar-for-advanced-ai-reasoning/",
+      "summary": "DeepMind 升级 Gemini 3 Deep Think，在 ARC-AGI-2、Humanity's Last Exam 等基准上达到 SOTA。"
     }
   ]
 }
