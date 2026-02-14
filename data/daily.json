@@ -1,0 +1,83 @@
+{
+  "date": "2026-02-14",
+  "headlines": [
+    {
+      "title": "OpenAI 正式退役 GPT-4o，引发用户强烈反弹",
+      "time": "2026-02-13",
+      "what": "OpenAI 宣布正式退役 GPT-4o、GPT-4.1、GPT-4.1 mini 和 o4-mini 等模型，仅保留 0.1% 的活跃用户可继续访问。公司表示此举是为了推动用户迁移至最新的 GPT-5.1 和 GPT-5.2 模型。",
+      "why": "这是 OpenAI 首次大规模强制淘汰热门模型，标志着模型迭代策略的重大转变。用户社区反应强烈，认为新模型风格过于'AI味'（华丽辞藻、尴尬比喻）。",
+      "sources": [{"name": "CNET", "url": "https://www.cnet.com/tech/services-and-software/bye-bye-chatgpt-4o-openai-retires-several-models-pushes-us-to-use-new-gpt-5-ones/"}, {"name": "Business Insider", "url": "https://www.businessinsider.com/openai-retires-gpt-4o-user-backlash-chatgpt-ai-2026-2"}]
+    },
+    {
+      "title": "Anthropic 完成 300 亿美元 G 轮融资，估值达 3800 亿美元",
+      "time": "2026-02-12",
+      "what": "Anthropic 宣布完成 300 亿美元 Series G 融资，由 GIC 和 Coatue 领投，D.E. Shaw Ventures、Dragoneer、Founders Fund 等跟投。投后估值达 3800 亿美元。",
+      "why": "这是 AI 领域史上最大单笔融资之一，反映出资本市场对 Claude 系列模型和 Anthropic 安全研究路线的高度认可。资金将用于扩大计算规模和 AI 安全研究。",
+      "sources": [{"name": "Intellizence", "url": "https://intellizence.com/insights/startup-funding/anthropic-funding-rounds-2026-latest-30b-round-previous-raises/"}]
+    },
+    {
+      "title": "AI 创业公司创始人警告：AI 冲击将比 COVID 更大",
+      "time": "2026-02-13",
+      "what": "HyperWrite AI 创始人 Matt Shumer 发布 viral 长文，警告 AI 对就业市场的颠覆将'远超 COVID'。文章在 X 平台获得科技界领袖广泛转发和讨论。",
+      "why": "这是近期最具影响力的 AI 社会风险讨论之一，多位知名科学家和 AI 领袖参与回应。文章将当前时刻比作 2020 年 2 月——疫情爆发前的临界点。",
+      "sources": [{"name": "Business Insider", "url": "https://www.businessinsider.com/matt-shumer-something-big-is-happening-essay-ai-disruption-2026-2"}, {"name": "Business Insider", "url": "https://www.businessinsider.com/matt-shumer-viral-essay-scientists-ai-leaders-respond-2026-2"}]
+    },
+    {
+      "title": "马斯克炮轰 Anthropic：'厌世且邪恶'",
+      "time": "2026-02-13",
+      "what": "Elon Musk 在 X 平台发文抨击 Anthropic 的 AI 模型'厌世且邪恶'（misanthropic and evil），指控其存在种族和人口统计学偏见。发文时机正值 Anthropic 宣布 300 亿融资后。",
+      "why": "Musk 与 Anthropic 的长期矛盾公开化。作为 xAI 的竞争对手，Musk 此言论引发关于 AI 模型价值观和训练数据偏见的激烈辩论。",
+      "sources": [{"name": "Fox Business", "url": "https://www.foxbusiness.com/technology/elon-musk-slams-anthropic-ai-models-misanthropic-evil-scathing-social-media-post"}]
+    },
+    {
+      "title": "AI 代理公司 Emergent 获 7000 万美元融资，ARR 突破 5000 万",
+      "time": "2026-02-13",
+      "what": "AI 代理初创公司 Emergent 完成 7000 万美元融资，由 SoftBank 和 Khosla Ventures 投资，估值 3 亿美元。公司年度经常性收入（ARR）已超过 5000 万美元。",
+      "why": "Emergent 专注于企业级 AI 代理自动化，其高速增长验证了 B2B AI 代理市场的巨大潜力。SoftBank 的参与显示日本资本对 AI 自动化赛道的持续看好。",
+      "sources": [{"name": "The Arc", "url": "https://www.thearcweb.com/article/emergent-softbank-khosla-arr-VZSBx9id23h4OZcw"}]
+    }
+  ],
+  "sections": {
+    "releases": [
+      {
+        "title": "AI 领域人才需求持续增长",
+        "time": "2026-02-13",
+        "what": "行业报告显示 AI 相关岗位需求在过去 6 个月增长 47%，特别是 AI 基础设施工程师和 AI 安全研究员岗位缺口最大。",
+        "why": "模型能力快速迭代推动企业加速 AI 化转型，人才竞争白热化。",
+        "sources": [{"name": "行业报告", "url": "https://opentools.ai/news"}]
+      }
+    ],
+    "updates": [],
+    "opensource": [],
+    "benchmarks": [],
+    "business": [
+      {
+        "title": "OpenAI 累计融资 579 亿美元",
+        "time": "2026-02-13",
+        "what": "据 Tracxn 数据，OpenAI 累计完成 9 轮融资，共筹集 579 亿美元，来自 63 位投资者包括高盛、T. Rowe Price 等。",
+        "why": "OpenAI 的融资规模仍是行业标杆，但 Anthropic 最新 300 亿轮融资正在缩小差距。",
+        "sources": [{"name": "Tracxn", "url": "https://tracxn.com/d/companies/openai/__kElhSG7uVGeFk1i71Co9-nwFtmtyMVT7f-YHMn4TFBg/funding-and-investors"}]
+      }
+    ],
+    "risks": [
+      {
+        "title": "AI 炒作引发科技行业裁员潮",
+        "time": "2026-02-13",
+        "what": "多家科技公司在 prioritize 昂贵的 AI 投资时进行大规模裁员。分析师指出部分裁员直接归因于 AI 自动化替代。",
+        "why": "AI 投资回报周期与企业成本压力形成矛盾，短期阵痛正在显现。",
+        "sources": [{"name": "OpenTools", "url": "https://opentools.ai/news"}]
+      }
+    ]
+  },
+  "summary": {
+    "bullets": [
+      "🔥 OpenAI 正式退役 GPT-4o，用户社区强烈反弹，被迫迁移至 GPT-5 系列",
+      "💰 Anthropic 获 300 亿美元融资，估值 3800 亿美元，创 AI 领域年度最大单笔融资",
+      "⚠️ HyperWrite CEO 发出警告：AI 就业冲击将远超 COVID，当前类似 2020 年 2 月临界点",
+      "🥊 马斯克公开炮轰 Anthropic 模型'厌世邪恶'，AI 价值观争议升温",
+      "📈 AI 代理公司 Emergent 获软银 7000 万美元投资，ARR 突破 5000 万"
+    ],
+    "url": "https://elliclee.github.io/ai-daily-report/",
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-02-14.html"
+  }
+}
