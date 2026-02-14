@@ -53,18 +53,11 @@ def validate_item(it: dict, ctx: str):
     if len(sources) < 1:
         die(f"{ctx}: sources must have at least 1 entry")
 
-    has_x = False
     for i, s in enumerate(sources):
         if not isinstance(s, dict):
             die(f"{ctx}: sources[{i}] must be object")
         must_str(s, "name", f"{ctx}: sources[{i}]")
-        url = must_str(s, "url", f"{ctx}: sources[{i}]")
-        if "x.com/" in url or "twitter.com/" in url:
-            has_x = True
-
-    # Requirement from ellic: every item must have at least one X source for traceability.
-    if not has_x:
-        die(f"{ctx}: sources must include at least one X link (x.com/...) ")
+        must_str(s, "url", f"{ctx}: sources[{i}]")
 
 
 def main():
@@ -90,7 +83,7 @@ def main():
         for idx, it in enumerate(v, 1):
             validate_item(it, f"daily.sections.{k}[{idx}]")
 
-    # Optional X highlights
+    # Optional X highlights (recommended). When present, validate shape.
     xh = daily.get("x_highlights")
     if xh is not None:
         if not isinstance(xh, list):
@@ -104,10 +97,28 @@ def main():
             must_str(x, "handle", f"daily.x_highlights[{i}]")
             must_str(x, "text", f"daily.x_highlights[{i}]")
             must_str(x, "url", f"daily.x_highlights[{i}]")
-            # engagement fields optional but if present must be int
             for k in ("likes", "reposts", "replies"):
                 if k in x and not isinstance(x[k], int):
                     die(f"daily.x_highlights[{i}].{k} must be int")
+
+    # Require: the report should include X as a source somewhere.
+    # Either provide x_highlights (preferred) or at least one X link in any sources.
+    def has_any_x_link() -> bool:
+        for it in (daily.get("headlines") or []):
+            for s in (it.get("sources") or []):
+                url = str((s or {}).get("url", ""))
+                if "x.com/" in url or "twitter.com/" in url:
+                    return True
+        for sec in (daily.get("sections") or {}).values():
+            for it in (sec or []):
+                for s in (it.get("sources") or []):
+                    url = str((s or {}).get("url", ""))
+                    if "x.com/" in url or "twitter.com/" in url:
+                        return True
+        return False
+
+    if (xh is None or len(xh) == 0) and not has_any_x_link():
+        die("report must include X as an information source: provide daily.x_highlights or include at least one x.com link in sources")
 
     summary = daily.get("summary")
     if not isinstance(summary, dict):

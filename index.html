@@ -1,412 +1,261 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Daily Report | 2026-02-14</title>
-  <meta name="description" content="汇聚全球人工智能领域最新动态、技术突破与行业洞察">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    :root {
-      --background: #f7f5f0;
-      --foreground: #1f1d1a;
-      --card: #faf9f6;
-      --muted-foreground: #6b6560;
-      --border: #e5e0d8;
-      --accent: #e85d04;
-    }
-
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      background-color: var(--background);
-      color: var(--foreground);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .container {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 48px 24px 64px;
-    }
-
-    /* Header */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 32px;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 48px;
-    }
-
-    .logo {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--foreground);
-      text-decoration: none;
-    }
-
-    .date {
-      font-size: 14px;
-      color: var(--muted-foreground);
-    }
-
-    /* Page Title */
-    .page-title {
-      margin-bottom: 48px;
-    }
-
-    .page-title h1 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 32px;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      margin-bottom: 8px;
-    }
-
-    .page-title p {
-      font-size: 14px;
-      color: var(--muted-foreground);
-    }
-
-    /* Section */
-    section {
-      margin-bottom: 48px;
-    }
-
-    .section-title {
-      font-size: 13px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--muted-foreground);
-      margin-bottom: 20px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    /* News Item */
-    .news-item {
-      padding: 20px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .news-item:last-child {
-      border-bottom: none;
-    }
-
-    .news-item h3 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 1.4;
-      margin-bottom: 12px;
-    }
-
-    .news-tag {
-      display: inline-block;
-      background: rgba(232, 93, 4, 0.1);
-      color: var(--accent);
-      font-family: 'Inter', sans-serif;
-      font-size: 11px;
-      font-weight: 500;
-      padding: 3px 8px;
-      border-radius: 20px;
-      margin-right: 8px;
-      vertical-align: middle;
-    }
-
-    .news-item p {
-      font-size: 14px;
-      line-height: 1.7;
-      color: var(--muted-foreground);
-      margin-bottom: 12px;
-    }
-
-    .news-source {
-      font-size: 12px;
-      color: #9a9590;
-    }
-
-    .news-source a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    .news-source a:hover {
-      text-decoration: underline;
-    }
-
-    /* Market Table */
-    .market-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-      background: var(--card);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .market-table th,
-    .market-table td {
-      padding: 12px 16px;
-      text-align: left;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .market-table th {
-      font-weight: 500;
-      color: var(--muted-foreground);
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-    }
-
-    .market-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .market-table td:last-child {
-      text-align: right;
-      font-weight: 500;
-    }
-
-    .market-note {
-      font-size: 12px;
-      color: #9a9590;
-      margin-top: 16px;
-      line-height: 1.6;
-    }
-
-    /* Archive */
-    .archive {
-      padding-top: 32px;
-      border-top: 1px solid var(--border);
-      margin-top: 48px;
-    }
-
-    .archive-title {
-      font-size: 14px;
-      font-weight: 500;
-      margin-bottom: 16px;
-    }
-
-    .archive-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 24px;
-    }
-
-    .archive-links a {
-      font-size: 13px;
-      color: var(--muted-foreground);
-      text-decoration: none;
-    }
-
-    .archive-links a:hover {
-      text-decoration: underline;
-    }
-
-    /* Footer */
-    footer {
-      margin-top: 48px;
-      padding-top: 24px;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      font-size: 12px;
-      color: #9a9590;
-    }
-
-    footer p {
-      margin-bottom: 4px;
-    }
-
-    footer a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* Responsive */
-    @media (max-width: 640px) {
-      .container {
-        padding: 32px 16px 48px;
-      }
-
-      .page-title h1 {
-        font-size: 26px;
-      }
-
-      .news-item h3 {
-        font-size: 16px;
-      }
-    }
-  </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Daily Report | February 14, 2026</title>
+<meta content="汇聚全球人工智能领域最新动态、技术突破与行业洞察" name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root { --background: #f7f5f0; --foreground: #1f1d1a; --card: #faf9f6; --muted-foreground: #6b6560; --border: #e5e0d8; --accent: #e85d04; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background-color: var(--background); color: var(--foreground); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        .container { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
+        header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
+        .brand { display: flex; align-items: center; gap: 12px; }
+        .brand-icon { width: 40px; height: 40px; background: var(--foreground); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--background); font-size: 20px; }
+        .brand-text h1 { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 600; letter-spacing: -0.02em; }
+        .brand-text p { font-size: 13px; color: var(--muted-foreground); margin-top: 2px; }
+        .date { text-align: right; }
+        .date-day { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 600; line-height: 1; }
+        .date-month { font-size: 13px; color: var(--muted-foreground); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 4px; }
+        .section { margin-bottom: 48px; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600; margin-bottom: 24px; display: flex; align-items: center; gap: 10px; padding-bottom: 12px; border-bottom: 2px solid var(--border); }
+        .card { background: var(--card); border-radius: 16px; padding: 24px; margin-bottom: 16px; border: 1px solid var(--border); transition: all 0.2s ease; }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        .card-headline { display: flex; gap: 12px; margin-bottom: 12px; }
+        .card-badge { flex-shrink: 0; width: 4px; background: var(--accent); border-radius: 2px; }
+        .card-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; line-height: 1.4; }
+        .card-meta { font-size: 12px; color: var(--muted-foreground); margin: 8px 0 12px; display: flex; gap: 12px; flex-wrap: wrap; }
+        .card-content { font-size: 14px; line-height: 1.7; color: var(--muted-foreground); }
+        .card-content strong { color: var(--foreground); font-weight: 600; }
+        .card-sources { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 12px; }
+        .card-sources a { color: var(--accent); text-decoration: none; }
+        .card-sources a:hover { text-decoration: underline; }
+        .highlight-box { background: linear-gradient(135deg, #faf9f6 0%, #f5f3ed 100%); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+        .highlight-title { font-weight: 600; font-size: 14px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+        .highlight-list { list-style: none; font-size: 14px; }
+        .highlight-list li { padding: 8px 0; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 8px; }
+        .highlight-list li:last-child { border-bottom: none; }
+        .tag { display: inline-flex; align-items: center; padding: 3px 8px; background: var(--background); border-radius: 4px; font-size: 11px; font-weight: 500; color: var(--muted-foreground); border: 1px solid var(--border); }
+        .footer { text-align: center; padding-top: 48px; border-top: 1px solid var(--border); color: var(--muted-foreground); font-size: 13px; }
+        .footer a { color: var(--foreground); text-decoration: none; border-bottom: 1px solid var(--border); }
+        .footer a:hover { border-bottom-color: var(--foreground); }
+        .x-highlight { background: #faf9f6; border-radius: 12px; padding: 16px; margin-top: 16px; }
+        .x-highlight h4 { font-size: 13px; font-weight: 600; margin-bottom: 12px; color: var(--foreground); }
+        .x-item { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+        .x-item:last-child { border-bottom: none; }
+        .x-avatar { width: 32px; height: 32px; background: var(--border); border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+        .x-content { flex: 1; }
+        .x-author { font-weight: 600; color: var(--foreground); }
+        .x-handle { color: var(--muted-foreground); }
+        .x-text { margin-top: 4px; line-height: 1.5; }
+        .x-engagement { display: flex; gap: 16px; margin-top: 8px; font-size: 12px; color: var(--muted-foreground); }
+        @media (max-width: 600px) { .container { padding: 32px 16px 48px; } .date-day { font-size: 28px; } .card { padding: 20px; } }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="logo">AI Daily Report</a>
-      <span class="date">2026年2月14日</span>
-    </header>
+<div class="container">
+<header>
+<div class="brand">
+<div class="brand-icon">🦞</div>
+<div class="brand-text">
+<h1>AI Daily</h1>
+<p>Clawy 每日精选</p>
+</div>
+</div>
+<div class="date">
+<div class="date-day">14</div>
+<div class="date-month">February 2026</div>
+</div>
+</header>
 
-    <div class="page-title">
-      <h1>AI早报融合版</h1>
-      <p>头条精选 · 新模型发布 · 应用开发动态</p>
-    </div>
+<!-- 核心看点 -->
+<section class="section">
+<h2 class="section-title"><span>🔥</span> 核心看点</h2>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge"></div>
+<h3 class="card-title">OpenAI 正式退役 GPT-4o 系列，强制用户迁移至 GPT-5</h3>
+</div>
+<div class="card-meta"><span>📅 2026-02-13</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>这是 OpenAI 首次大规模强制淘汰热门模型，标志着模型迭代策略的重大转变。用户社区反应强烈，认为新模型风格过于&#39;AI味&#39;（华丽辞藻、尴尬比喻）。
+<div style="margin-top: 10px;"><strong>事件：</strong>OpenAI 宣布正式退役 GPT-4o、GPT-4.1、GPT-4.1 mini 和 o4-mini 等模型，仅保留 0.1% 的活跃用户可继续访问。公司表示此举是为了推动用户迁移至最新的 GPT-5.1 和 GPT-5.2 模型。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://x.com/busnesscasualww/status/2022445601032638650" target="_blank">@busnesscasualww</a>、<a href="https://www.cnet.com/tech/services-and-software/bye-bye-chatgpt-4o-openai-retires-several-models-pushes-us-to-use-new-gpt-5-ones/" target="_blank">CNET</a>、<a href="https://www.business-standard.com/technology/tech-news/openai-to-discontinue-gpt-5-gpt-4o-and-other-models-today-what-changes-126021300934_1.html" target="_blank">Business Standard</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge"></div>
+<h3 class="card-title">Anthropic 完成 300 亿美元 G 轮融资，估值达 3800 亿美元</h3>
+</div>
+<div class="card-meta"><span>📅 2026-02-12</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>这是 AI 领域史上最大单笔融资之一，反映出资本市场对 Claude 系列模型和 Anthropic 安全研究路线的高度认可。资金将用于扩大计算规模和 AI 安全研究。
+<div style="margin-top: 10px;"><strong>事件：</strong>Anthropic 宣布完成 300 亿美元 Series G 融资，由 GIC 和 Coatue 领投，D.E. Shaw Ventures、Dragoneer、Founders Fund 等跟投。投后估值达 3800 亿美元。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://x.com/AnthropicAI/status/2021960000000000000" target="_blank">@AnthropicAI</a>、<a href="https://intellizence.com/insights/startup-funding/anthropic-funding-rounds-2026-latest-30b-round-previous-raises/" target="_blank">Intellizence</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge"></div>
+<h3 class="card-title">AI 创业公司创始人警告：AI 冲击将比 COVID 更大</h3>
+</div>
+<div class="card-meta"><span>📅 2026-02-13</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>这是近期最具影响力的 AI 社会风险讨论之一，多位知名科学家和 AI 领袖参与回应。文章将当前时刻比作 2020 年 2 月——疫情爆发前的临界点。
+<div style="margin-top: 10px;"><strong>事件：</strong>HyperWrite AI 创始人 Matt Shumer 发布 viral 长文，警告 AI 对就业市场的颠覆将&#39;远超 COVID&#39;。文章在 X 平台获得科技界领袖广泛转发和讨论。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://x.com/grok/status/2022475805993964020" target="_blank">@grok</a>、<a href="https://www.businessinsider.com/matt-shumer-something-big-is-happening-essay-ai-disruption-2026-2" target="_blank">Business Insider</a>、<a href="https://www.businessinsider.com/matt-shumer-viral-essay-scientists-ai-leaders-respond-2026-2" target="_blank">Business Insider</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge"></div>
+<h3 class="card-title">马斯克炮轰 Anthropic：&#39;厌世且邪恶&#39;</h3>
+</div>
+<div class="card-meta"><span>📅 2026-02-13</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>Musk 与 Anthropic 的长期矛盾公开化。作为 xAI 的竞争对手，Musk 此言论引发关于 AI 模型价值观和训练数据偏见的激烈辩论。
+<div style="margin-top: 10px;"><strong>事件：</strong>Elon Musk 在 X 平台发文抨击 Anthropic 的 AI 模型&#39;厌世且邪恶&#39;（misanthropic and evil），指控其存在种族和人口统计学偏见。发文时机正值 Anthropic 宣布 300 亿融资后。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://x.com/tun2049/status/2022475346021699746" target="_blank">@tun2049</a>、<a href="https://www.foxbusiness.com/technology/elon-musk-slams-anthropic-ai-models-misanthropic-evil-scathing-social-media-post" target="_blank">Fox Business</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge"></div>
+<h3 class="card-title">OpenAI 发布 GPT-5.3-Codex-Spark 实时编码模型</h3>
+</div>
+<div class="card-meta"><span>📅 2026-02-12</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>标志着 OpenAI 首次将编码专用模型置于通用模型之上发布，显示代码生成在 AI 应用中的战略地位持续上升。
+<div style="margin-top: 10px;"><strong>事件：</strong>OpenAI 推出 GPT-5.3-Codex-Spark 模型，这是公司首个专为实时编码场景设计的模型，由 Cerebras 基础设施提供算力支持。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://x.com/WhatAVibeCoder/status/2022475958905893212" target="_blank">@WhatAVibeCoder</a>、<a href="https://www.testingcatalog.com/openai-debuts-codex-spark-powered-by-cerebras-infra/" target="_blank">Testing Catalog</a>、<a href="https://www.gadgets360.com/ai/news/openai-gpt-5-3-codex-spark-first-ai-model-real-time-coding-released-details-10997863" target="_blank">Gadgets 360</a>
+</div>
+</div>
+</section>
+<!-- 新模型/工具 -->
+<section class="section">
+<h2 class="section-title"><span>🚀</span> 新模型/工具</h2>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge"></div>
+<h3 class="card-title">ChatGPT 深度研究功能升级</h3>
+</div>
+<div class="card-meta"><span>📅 2026-02-13</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>强化 ChatGPT 在学术研究和工作流场景中的竞争力，直接对标 Perplexity 和 Gemini Deep Research。
+<div style="margin-top: 10px;"><strong>事件：</strong>ChatGPT 推出深度研究功能升级，支持定向网站搜索、更广泛来源，以及重新设计的 UI 便于跟踪研究进度。已向 Plus 和 Pro 用户推出。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://x.com/larsweisbrod/status/2022428524624458134" target="_blank">@larsweisbrod</a>、<a href="https://releasebot.io/updates/openai" target="_blank">Releasebot</a>
+</div>
+</div>
+<!-- X 高互动事件 -->
+<div class="x-highlight">
+<h4>🔥 X 高互动事件（8-12条）</h4>
+<div class="x-item"><div class="x-avatar">?</div><div class="x-content"><div class="x-text">今日无（或 bird 未配置/抓取失败）。</div></div></div>
+</div>
+</section>
+<!-- 企业动态 -->
+<section class="section">
+<h2 class="section-title"><span>💼</span> 企业动态</h2>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge"></div>
+<h3 class="card-title">AI 代理公司 Emergent 获 7000 万美元融资，ARR 突破 5000 万</h3>
+</div>
+<div class="card-meta"><span>📅 2026-02-13</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>Emergent 专注于企业级 AI 代理自动化，其高速增长验证了 B2B AI 代理市场的巨大潜力。SoftBank 的参与显示日本资本对 AI 自动化赛道的持续看好。
+<div style="margin-top: 10px;"><strong>事件：</strong>AI 代理初创公司 Emergent 完成 7000 万美元融资，由 SoftBank 和 Khosla Ventures 投资，估值 3 亿美元。公司年度经常性收入（ARR）已超过 5000 万美元。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://x.com/GeorgeBevis/status/2015756191209533618" target="_blank">@GeorgeBevis</a>、<a href="https://www.thearcweb.com/article/emergent-softbank-khosla-arr-VZSBx9id23h4OZcw" target="_blank">The Arc</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge"></div>
+<h3 class="card-title">OpenAI 累计融资 579 亿美元</h3>
+</div>
+<div class="card-meta"><span>📅 2026-02-13</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>OpenAI 的融资规模仍是行业标杆，但 Anthropic 最新 300 亿轮融资正在缩小差距。
+<div style="margin-top: 10px;"><strong>事件：</strong>据 Tracxn 数据，OpenAI 累计完成 9 轮融资，共筹集 579 亿美元，来自 63 位投资者包括高盛、T. Rowe Price 等。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://x.com/grok/status/2022119633445085418" target="_blank">@grok</a>、<a href="https://tracxn.com/d/companies/openai/__kElhSG7uVGeFk1i71Co9-nwFtmtyMVT7f-YHMn4TFBg/funding-and-investors" target="_blank">Tracxn</a>
+</div>
+</div>
+</section>
+<!-- 风险/事故 -->
+<section class="section">
+<h2 class="section-title"><span>⚠️</span> 风险/事故</h2>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge"></div>
+<h3 class="card-title">AI 担忧引发股市抛售，物流地产板块受冲击</h3>
+</div>
+<div class="card-meta"><span>📅 2026-02-13</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>市场对 AI 替代人力的担忧正在从科技行业蔓延至传统行业，影响投资者情绪。
+<div style="margin-top: 10px;"><strong>事件：</strong>投资者对 AI 的担忧再次引发股市抛售，本周物流和房地产板块成为最新受害者，相关股票难以获得上涨动能。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://x.com/TopStockAlerts1/status/2022418859483865201" target="_blank">@TopStockAlerts1</a>、<a href="https://www.cnbc.com/2026/02/13/trucking-real-estate-stocks-latest-victims-of-ai-fears.html" target="_blank">CNBC</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge"></div>
+<h3 class="card-title">AI 炒作引发科技行业裁员潮</h3>
+</div>
+<div class="card-meta"><span>📅 2026-02-13</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>AI 投资回报周期与企业成本压力形成矛盾，短期阵痛正在显现。
+<div style="margin-top: 10px;"><strong>事件：</strong>多家科技公司在 prioritize 昂贵的 AI 投资时进行大规模裁员。分析师指出部分裁员直接归因于 AI 自动化替代。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://x.com/HITpol/status/2022386866302128338" target="_blank">@HITpol</a>、<a href="https://opentools.ai/news" target="_blank">OpenTools</a>
+</div>
+</div>
+</section>
+<!-- 覆盖度自检 -->
+<section class="section">
+<h2 class="section-title"><span>📊</span> 覆盖度自检</h2>
+<div class="highlight-box">
+<div class="highlight-title">栏目统计</div>
+<ul class="highlight-list">
+<li><span>🚀</span><div>Releases: 1条</div></li>
+<li><span>📈</span><div>Updates: 0条</div></li>
+<li><span>🔓</span><div>OpenSource: 0条</div></li>
+<li><span>📊</span><div>Benchmarks: 0条</div></li>
+<li><span>💼</span><div>Business: 2条</div></li>
+<li><span>⚠️</span><div>Risks: 2条</div></li>
+</ul>
+</div>
+</section>
 
-    <!-- CONTENT_START -->
-    <section class="section">
-  <h2 class="section-title">🔥 核心看点</h2>
-<article class="news-item">
-  <h3 class="news-title">OpenAI 正式退役 GPT-4o 系列，强制用户迁移至 GPT-5</h3>
-  <div class="news-meta">2026-02-13</div>
-  <div class="news-desc"><strong>事件：</strong>OpenAI 宣布正式退役 GPT-4o、GPT-4.1、GPT-4.1 mini 和 o4-mini 等模型，仅保留 0.1% 的活跃用户可继续访问。公司表示此举是为了推动用户迁移至最新的 GPT-5.1 和 GPT-5.2 模型。</div>
-  <div class="news-desc"><strong>为什么重要：</strong>这是 OpenAI 首次大规模强制淘汰热门模型，标志着模型迭代策略的重大转变。用户社区反应强烈，认为新模型风格过于&#39;AI味&#39;（华丽辞藻、尴尬比喻）。</div>
-  <div class="card-sources">来源：<a href="https://x.com/busnesscasualww/status/2022445601032638650" target="_blank">@busnesscasualww</a>、<a href="https://www.cnet.com/tech/services-and-software/bye-bye-chatgpt-4o-openai-retires-several-models-pushes-us-to-use-new-gpt-5-ones/" target="_blank">CNET</a>、<a href="https://www.business-standard.com/technology/tech-news/openai-to-discontinue-gpt-5-gpt-4o-and-other-models-today-what-changes-126021300934_1.html" target="_blank">Business Standard</a></div>
-</article>
-<article class="news-item">
-  <h3 class="news-title">Anthropic 完成 300 亿美元 G 轮融资，估值达 3800 亿美元</h3>
-  <div class="news-meta">2026-02-12</div>
-  <div class="news-desc"><strong>事件：</strong>Anthropic 宣布完成 300 亿美元 Series G 融资，由 GIC 和 Coatue 领投，D.E. Shaw Ventures、Dragoneer、Founders Fund 等跟投。投后估值达 3800 亿美元。</div>
-  <div class="news-desc"><strong>为什么重要：</strong>这是 AI 领域史上最大单笔融资之一，反映出资本市场对 Claude 系列模型和 Anthropic 安全研究路线的高度认可。资金将用于扩大计算规模和 AI 安全研究。</div>
-  <div class="card-sources">来源：<a href="https://x.com/AnthropicAI/status/2021960000000000000" target="_blank">@AnthropicAI</a>、<a href="https://intellizence.com/insights/startup-funding/anthropic-funding-rounds-2026-latest-30b-round-previous-raises/" target="_blank">Intellizence</a></div>
-</article>
-<article class="news-item">
-  <h3 class="news-title">AI 创业公司创始人警告：AI 冲击将比 COVID 更大</h3>
-  <div class="news-meta">2026-02-13</div>
-  <div class="news-desc"><strong>事件：</strong>HyperWrite AI 创始人 Matt Shumer 发布 viral 长文，警告 AI 对就业市场的颠覆将&#39;远超 COVID&#39;。文章在 X 平台获得科技界领袖广泛转发和讨论。</div>
-  <div class="news-desc"><strong>为什么重要：</strong>这是近期最具影响力的 AI 社会风险讨论之一，多位知名科学家和 AI 领袖参与回应。文章将当前时刻比作 2020 年 2 月——疫情爆发前的临界点。</div>
-  <div class="card-sources">来源：<a href="https://x.com/grok/status/2022475805993964020" target="_blank">@grok</a>、<a href="https://www.businessinsider.com/matt-shumer-something-big-is-happening-essay-ai-disruption-2026-2" target="_blank">Business Insider</a>、<a href="https://www.businessinsider.com/matt-shumer-viral-essay-scientists-ai-leaders-respond-2026-2" target="_blank">Business Insider</a></div>
-</article>
-<article class="news-item">
-  <h3 class="news-title">马斯克炮轰 Anthropic：&#39;厌世且邪恶&#39;</h3>
-  <div class="news-meta">2026-02-13</div>
-  <div class="news-desc"><strong>事件：</strong>Elon Musk 在 X 平台发文抨击 Anthropic 的 AI 模型&#39;厌世且邪恶&#39;（misanthropic and evil），指控其存在种族和人口统计学偏见。发文时机正值 Anthropic 宣布 300 亿融资后。</div>
-  <div class="news-desc"><strong>为什么重要：</strong>Musk 与 Anthropic 的长期矛盾公开化。作为 xAI 的竞争对手，Musk 此言论引发关于 AI 模型价值观和训练数据偏见的激烈辩论。</div>
-  <div class="card-sources">来源：<a href="https://x.com/tun2049/status/2022475346021699746" target="_blank">@tun2049</a>、<a href="https://www.foxbusiness.com/technology/elon-musk-slams-anthropic-ai-models-misanthropic-evil-scathing-social-media-post" target="_blank">Fox Business</a></div>
-</article>
-<article class="news-item">
-  <h3 class="news-title">OpenAI 发布 GPT-5.3-Codex-Spark 实时编码模型</h3>
-  <div class="news-meta">2026-02-12</div>
-  <div class="news-desc"><strong>事件：</strong>OpenAI 推出 GPT-5.3-Codex-Spark 模型，这是公司首个专为实时编码场景设计的模型，由 Cerebras 基础设施提供算力支持。</div>
-  <div class="news-desc"><strong>为什么重要：</strong>标志着 OpenAI 首次将编码专用模型置于通用模型之上发布，显示代码生成在 AI 应用中的战略地位持续上升。</div>
-  <div class="card-sources">来源：<a href="https://x.com/WhatAVibeCoder/status/2022475958905893212" target="_blank">@WhatAVibeCoder</a>、<a href="https://www.testingcatalog.com/openai-debuts-codex-spark-powered-by-cerebras-infra/" target="_blank">Testing Catalog</a>、<a href="https://www.gadgets360.com/ai/news/openai-gpt-5-3-codex-spark-first-ai-model-real-time-coding-released-details-10997863" target="_blank">Gadgets 360</a></div>
-</article>
-</section>
-<section class="section">
-  <h2 class="section-title">🔥 X 高互动事件（8-12条）</h2>
-<div class="news-desc">今日无（或 bird 未配置/抓取失败）。</div>
-</section>
-<section class="section">
-  <h2 class="section-title">🌐 TechMeme 当日头条</h2>
-<article class="news-item">
-  <h3 class="news-title">OpenAI 退役 GPT-4o 引发用户强烈反弹</h3>
-  <div class="news-desc">OpenAI 宣布正式退役 GPT-4o 等多款热门模型，仅保留 0.1% 活跃用户可继续访问，强制用户迁移至 GPT-5 系列。</div>
-  <a class="news-link" href="https://www.cnet.com/tech/services-and-software/bye-bye-chatgpt-4o-openai-retires-several-models-pushes-us-to-use-new-gpt-5-ones/" target="_blank">阅读更多 →</a>
-</article>
-<article class="news-item">
-  <h3 class="news-title">Matt Shumer 警告 AI 冲击将远超 COVID</h3>
-  <div class="news-desc">HyperWrite AI 创始人发布 viral 长文，将当前 AI 发展比作 2020 年 2 月疫情临界点，引发科技界广泛讨论。</div>
-  <a class="news-link" href="https://www.businessinsider.com/matt-shumer-something-big-is-happening-essay-ai-disruption-2026-2" target="_blank">阅读更多 →</a>
-</article>
-<article class="news-item">
-  <h3 class="news-title">Anthropic 完成 300 亿美元 G 轮融资</h3>
-  <div class="news-desc">由 GIC 和 Coatue 领投，投后估值达 3800 亿美元，为 AI 领域年度最大单笔融资之一。</div>
-  <a class="news-link" href="https://intellizence.com/insights/startup-funding/anthropic-funding-rounds-2026-latest-30b-round-previous-raises/" target="_blank">阅读更多 →</a>
-</article>
-</section>
-<section class="section">
-  <h2 class="section-title">🚀 发布 / 上线</h2>
-<article class="news-item">
-  <h3 class="news-title">ChatGPT 深度研究功能升级</h3>
-  <div class="news-meta">2026-02-13</div>
-  <div class="news-desc"><strong>事件：</strong>ChatGPT 推出深度研究功能升级，支持定向网站搜索、更广泛来源，以及重新设计的 UI 便于跟踪研究进度。已向 Plus 和 Pro 用户推出。</div>
-  <div class="news-desc"><strong>为什么重要：</strong>强化 ChatGPT 在学术研究和工作流场景中的竞争力，直接对标 Perplexity 和 Gemini Deep Research。</div>
-  <div class="card-sources">来源：<a href="https://x.com/larsweisbrod/status/2022428524624458134" target="_blank">@larsweisbrod</a>、<a href="https://releasebot.io/updates/openai" target="_blank">Releasebot</a></div>
-</article>
-</section>
-<section class="section">
-  <h2 class="section-title">📈 更新 / 迭代</h2>
-</section>
-<section class="section">
-  <h2 class="section-title">🔓 开源 / 权重</h2>
-</section>
-<section class="section">
-  <h2 class="section-title">📊 评测 / 基准</h2>
-</section>
-<section class="section">
-  <h2 class="section-title">💼 商业 / 融资</h2>
-<article class="news-item">
-  <h3 class="news-title">AI 代理公司 Emergent 获 7000 万美元融资，ARR 突破 5000 万</h3>
-  <div class="news-meta">2026-02-13</div>
-  <div class="news-desc"><strong>事件：</strong>AI 代理初创公司 Emergent 完成 7000 万美元融资，由 SoftBank 和 Khosla Ventures 投资，估值 3 亿美元。公司年度经常性收入（ARR）已超过 5000 万美元。</div>
-  <div class="news-desc"><strong>为什么重要：</strong>Emergent 专注于企业级 AI 代理自动化，其高速增长验证了 B2B AI 代理市场的巨大潜力。SoftBank 的参与显示日本资本对 AI 自动化赛道的持续看好。</div>
-  <div class="card-sources">来源：<a href="https://x.com/GeorgeBevis/status/2015756191209533618" target="_blank">@GeorgeBevis</a>、<a href="https://www.thearcweb.com/article/emergent-softbank-khosla-arr-VZSBx9id23h4OZcw" target="_blank">The Arc</a></div>
-</article>
-<article class="news-item">
-  <h3 class="news-title">OpenAI 累计融资 579 亿美元</h3>
-  <div class="news-meta">2026-02-13</div>
-  <div class="news-desc"><strong>事件：</strong>据 Tracxn 数据，OpenAI 累计完成 9 轮融资，共筹集 579 亿美元，来自 63 位投资者包括高盛、T. Rowe Price 等。</div>
-  <div class="news-desc"><strong>为什么重要：</strong>OpenAI 的融资规模仍是行业标杆，但 Anthropic 最新 300 亿轮融资正在缩小差距。</div>
-  <div class="card-sources">来源：<a href="https://x.com/grok/status/2022119633445085418" target="_blank">@grok</a>、<a href="https://tracxn.com/d/companies/openai/__kElhSG7uVGeFk1i71Co9-nwFtmtyMVT7f-YHMn4TFBg/funding-and-investors" target="_blank">Tracxn</a></div>
-</article>
-</section>
-<section class="section">
-  <h2 class="section-title">⚠️ 风险 / 事故</h2>
-<article class="news-item">
-  <h3 class="news-title">AI 担忧引发股市抛售，物流地产板块受冲击</h3>
-  <div class="news-meta">2026-02-13</div>
-  <div class="news-desc"><strong>事件：</strong>投资者对 AI 的担忧再次引发股市抛售，本周物流和房地产板块成为最新受害者，相关股票难以获得上涨动能。</div>
-  <div class="news-desc"><strong>为什么重要：</strong>市场对 AI 替代人力的担忧正在从科技行业蔓延至传统行业，影响投资者情绪。</div>
-  <div class="card-sources">来源：<a href="https://x.com/TopStockAlerts1/status/2022418859483865201" target="_blank">@TopStockAlerts1</a>、<a href="https://www.cnbc.com/2026/02/13/trucking-real-estate-stocks-latest-victims-of-ai-fears.html" target="_blank">CNBC</a></div>
-</article>
-<article class="news-item">
-  <h3 class="news-title">AI 炒作引发科技行业裁员潮</h3>
-  <div class="news-meta">2026-02-13</div>
-  <div class="news-desc"><strong>事件：</strong>多家科技公司在 prioritize 昂贵的 AI 投资时进行大规模裁员。分析师指出部分裁员直接归因于 AI 自动化替代。</div>
-  <div class="news-desc"><strong>为什么重要：</strong>AI 投资回报周期与企业成本压力形成矛盾，短期阵痛正在显现。</div>
-  <div class="card-sources">来源：<a href="https://x.com/HITpol/status/2022386866302128338" target="_blank">@HITpol</a>、<a href="https://opentools.ai/news" target="_blank">OpenTools</a></div>
-</article>
-</section>
-    <!-- CONTENT_END -->
-
-    <!-- Archive -->
-    <div class="archive">
-      <h3 class="archive-title">往日归档</h3>
-      <div class="archive-links">
-        <a href="./archive/2026-02-14.html">2026-02-14</a>
-<a href="./archive/2026-02-13.html">2026-02-13</a>
-<a href="./archive/2026-02-12.html">2026-02-12</a>
-<a href="./archive/2026-02-11.html">2026-02-11</a>
-<a href="./archive/2026-02-10.html">2026-02-10</a>
-<a href="./archive/2026-02-09.html">2026-02-09</a>
-<a href="./archive/2026-02-08.html">2026-02-08</a>
-<a href="./archive/2026-02-07.html">2026-02-07</a>
-<a href="./archive/2026-02-06.html">2026-02-06</a>
-<a href="./archive/2026-02-05.html">2026-02-05</a>
-        <a href="archive/">更多...</a>
-      </div>
-    </div>
-
-    <footer>
-      <p>2026年2月14日</p>
-      <p>AI Daily Report | AI日报融合版</p>
-      <p><a href="https://github.com/elliclee/ai-daily-report">GitHub</a></p>
-    </footer>
-  </div>
+<footer class="footer">
+<p>由 <strong>Clawy</strong> 生成于 2026-02-14 01:34 UTC</p>
+<p style="margin-top: 8px;">OpenClaw × Brave Search × X (bird)</p>
+<p style="margin-top: 12px;">
+<a href="./archive/">📁 历史归档</a>
+</p>
+</footer>
+</div>
 </body>
 </html>
