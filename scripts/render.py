@@ -213,42 +213,63 @@ def main():
     # Map to 2026-02-13 style sections
     content_parts: list[str] = []
 
-    # Core
+    # 2/13 ordering:
+    # 核心看点(偏头条、少而精) → TechMeme 头条 → 新模型/工具(+X高互动) → 企业动态 → 风险/事故 → 覆盖度自检
+
+    # 核心看点：默认只展示前 3 条（与 2/13 的信息密度一致）
     content_parts.append('<!-- 核心看点 -->')
     content_parts.append('<section class="section">')
     content_parts.append('<h2 class="section-title"><span>🔥</span> 核心看点</h2>')
-    content_parts.append(render_cards(daily.get("headlines") or []))
+    content_parts.append(render_cards((daily.get("headlines") or [])[:3]))
     content_parts.append('</section>')
 
-    # New models/tools = releases+updates+opensource+benchmarks
-    new_models = (sections.get("releases") or []) + (sections.get("updates") or []) + (sections.get("opensource") or []) + (sections.get("benchmarks") or [])
+    # TechMeme 当日头条（从 data/techneme.json 或 daily.techmeme_headlines 读取；没有则不显示）
+    techmeme = load_json(DATA_DIR / "techneme.json", default={})
+    tm_list = daily.get("techmeme_headlines") or techmeme.get("headlines") or []
+    if tm_list:
+        content_parts.append('<!-- TechMeme 头条 -->')
+        content_parts.append('<section class="section">')
+        content_parts.append('<h2 class="section-title"><span>🌐</span> TechMeme 当日头条</h2>')
+        content_parts.append('<div class="highlight-box">')
+        content_parts.append('<ul class="highlight-list">')
+        for it in tm_list[:5]:
+            # support string or {text}
+            text = it if isinstance(it, str) else str((it or {}).get("text", ""))
+            if text.strip():
+                content_parts.append(f'<li><span>⚡</span><div>{html_escape(text.strip())}</div></li>')
+        content_parts.append('</ul>')
+        content_parts.append('</div>')
+        content_parts.append('</section>')
+
+    # 新模型/工具：按栏目分别渲染，保证每条卡片有 tag（发布/更新/开源/评测）
     content_parts.append('<!-- 新模型/工具 -->')
     content_parts.append('<section class="section">')
     content_parts.append('<h2 class="section-title"><span>🚀</span> 新模型/工具</h2>')
-    content_parts.append(render_cards(new_models))
+    content_parts.append(render_cards(sections.get("releases") or [], badge_color="#e85d04", tag="发布"))
+    content_parts.append(render_cards(sections.get("updates") or [], badge_color="#4285f4", tag="更新"))
+    content_parts.append(render_cards(sections.get("opensource") or [], badge_color="#10a37f", tag="开源"))
+    content_parts.append(render_cards(sections.get("benchmarks") or [], badge_color="#8e44ad", tag="评测"))
+
+    # X 高互动事件：放在新模型/工具 section 内部（与 2/13 更一致）
+    content_parts.append(render_x_highlights(daily.get("x_highlights")))
+
     content_parts.append('</section>')
 
-    # Business
+    # 企业动态
     content_parts.append('<!-- 企业动态 -->')
     content_parts.append('<section class="section">')
     content_parts.append('<h2 class="section-title"><span>💼</span> 企业动态</h2>')
-    content_parts.append(render_cards(sections.get("business") or []))
+    content_parts.append(render_cards(sections.get("business") or [], badge_color="#1f1d1a", tag="商业"))
     content_parts.append('</section>')
 
-    # Risks
+    # 风险/事故
     content_parts.append('<!-- 风险/事故 -->')
     content_parts.append('<section class="section">')
     content_parts.append('<h2 class="section-title"><span>⚠️</span> 风险/事故</h2>')
-    content_parts.append(render_cards(sections.get("risks") or []))
+    content_parts.append(render_cards(sections.get("risks") or [], badge_color="#c0392b", tag="风险"))
     content_parts.append('</section>')
 
-    # X highlights placed after new models/tools, like 2/13
-    # If you want it inside 新模型/工具 section, the generator can place it in x_highlights and render_x_highlights here.
-    # We'll append an extra block right after 新模型/工具 section by rendering it here.
-    # (This is a separate block but matches the 2/13 placement conceptually.)
-    content_parts.insert(9, render_x_highlights(daily.get("x_highlights")))
-
-    # Self-check
+    # 覆盖度自检
     content_parts.append(render_self_check(daily))
 
     content_html = "\n".join([p for p in content_parts if p and p.strip()])
