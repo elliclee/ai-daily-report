@@ -9,7 +9,7 @@
       "sources": [
         {"name": "MiniMax Official", "url": "https://www.minimax.io/news/minimax-m25"},
         {"name": "VentureBeat", "url": "https://venturebeat.com/technology/minimaxs-new-open-m2-5-and-m2-5-lightning-near-state-of-the-art-while"},
-        {"name": "The Information", "url": "https://www.theinformation.com/briefings/chinas-minimax-launches-new-flagship-ai-model-m2-5"}
+        {"name": "X @maxand98", "url": "https://x.com/maxand98/status/2022487718761222437"}
       ]
     },
     {
@@ -20,29 +20,28 @@
       "sources": [
         {"name": "36氪", "url": "https://www.36kr.com/p/3680115686895237"},
         {"name": "Variety", "url": "https://variety.com/2026/film/news/motion-picture-association-ai-seedance-bytedance-tom-cruise-1236661753/"},
-        {"name": "Straits Times", "url": "https://www.straitstimes.com/business/companies-markets/bytedances-new-ai-video-model-goes-viral-as-china-looks-for-second-deepseek-moment"}
+        {"name": "X @elonmusk", "url": "https://x.com/elonmusk"}
       ]
     },
     {
-      "title": "智谱 GLM-5 开源发布：744B 参数，基于 10 万片华为昇腾芯片训练",
+      "title": "Anthropic 融资 300 亿美元估值 3800 亿，Chris Liddell 加入董事会",
       "time": "2026-02-12",
-      "what": "智谱 AI（Z.ai）发布新一代旗舰模型 GLM-5，744B 参数规模，在 SWE-bench-Verified 和 Terminal Bench 2.0 中分别获得 77.8% 和 56.2% 的开源模型最高分数。采用 MIT 许可证完全开源。模型基于 10 万片华为昇腾芯片训练，摆脱对 NVIDIA 硬件依赖。",
-      "why": "GLM-5 代表了中国 AI 在硬件独立道路上的重要突破，同时也是全球范围内与 OpenAI/Anthropic 闭源模型直接竞争的开源替代方案。",
+      "what": "Anthropic 宣布完成 300 亿美元融资，投后估值达 3800 亿美元。公司年化收入 140 亿美元，过去 3 年每年增长超 10 倍。同时任命 Chris Liddell（前微软 CFO、特朗普政府副幕僚长）为董事会成员。",
+      "why": "Anthropic 正在迅速缩小与 OpenAI 的差距，巨额融资将用于扩大基础设施和研发投入。Chris Liddell 的加入显示出 Anthropic 对政府关系和合规的重视。",
       "sources": [
-        {"name": "Testing Catalog", "url": "https://www.testingcatalog.com/z-ai-launched-glm-5-new-open-source-model-on-chat-and-apis/"},
-        {"name": "TechPlanet", "url": "https://techplanet.today/post/glm-5-the-open-source-ai-model-targeting-complex-systems-engineering-and-long-horizon-tasks"},
-        {"name": "The Arabian Post", "url": "https://thearabianpost.com/chinas-glm-5-challenges-western-ai-dominance/"}
+        {"name": "Anthropic", "url": "https://x.com/AnthropicAI/status/2022023155423002867"},
+        {"name": "TechCrunch", "url": "https://techcrunch.com"}
       ]
     },
     {
-      "title": "Anthropic 大幅升级 Claude 免费版：文件编辑、Connectors、Skills 全开放",
-      "time": "2026-02-12",
-      "what": "Anthropic 宣布向 Claude 免费用户开放此前仅付费用户可用的核心功能：文件创建与编辑（Excel/PowerPoint/Word/PDF）、Connectors（连接 Google Workspace 等外部服务）、Skills（可复用任务自动化）。同时发布 Claude Code 2.1.41，修复 AWS 认证超时问题并新增 Windows ARM64 支持。",
-      "why": "Anthropic 在与 OpenAI 的竞争中选择'免费增值'策略，通过降低使用门槛扩大用户基础，与 OpenAI 在免费版引入广告形成鲜明对比。",
+      "title": "OpenAI 发布 GPT-5.2 理论物理研究成果与 GPT-5.3-Codex-Spark",
+      "time": "2026-02-13",
+      "what": "OpenAI 宣布 GPT-5.2 在理论物理领域取得新突破，发现一种曾被认为不会发生的胶子相互作用在特定条件下可以产生，论文已提交 arXiv。同时发布 GPT-5.3-Codex-Spark 研究预览版，专为实时编码设计，与 Cerebras 合作在超低延迟硬件上实现每秒 1000+ tokens。",
+      "why": "OpenAI 在'快编码'赛道持续发力，Codex-Spark 的实时性能代表 AI 编程工具进入毫秒级响应时代。理论物理突破则展示了基础模型在科学研究中的潜力。",
       "sources": [
-        {"name": "The Indian Express", "url": "https://indianexpress.com/article/technology/tech-news-technology/claudes-free-plan-gets-a-major-upgrade-as-anthropic-adds-premium-features-10528937/"},
-        {"name": "Digital Trends", "url": "https://www.digitaltrends.com/computing/claude-is-leveling-up-against-gemini-and-chatgpt-with-powerful-free-tools/"},
-        {"name": "Reddit r/ClaudeAI", "url": "https://www.reddit.com/r/ClaudeAI/comments/1r3lxpe/official_anthropic_just_released_claude_code_2141/"}
+        {"name": "OpenAI", "url": "https://x.com/OpenAI/status/2022390096625078389"},
+        {"name": "OpenAI Codex", "url": "https://x.com/OpenAI/status/2022009582210715925"},
+        {"name": "Sam Altman", "url": "https://x.com/sama/status/2022011797524582726"}
       ]
     },
     {
@@ -51,9 +50,8 @@
       "what": "Google DeepMind 升级 Gemini 3 Deep Think 推理模式，针对现代科学、研究和工程挑战优化。在 ARC-AGI-2、Humanity's Last Exam 等基准上达到 SOTA，Codeforces Elo 3455（金牌水平）。数学、化学、物理领域理解能力显著增强。已向 Google AI Ultra 订阅者推出，API 开放早期访问。",
       "why": "Google 在'慢思考'深度推理赛道发力，与 OpenAI 的'快编码'Codex-Spark 形成差异化竞争。AI for Science 成为新的技术制高点。",
       "sources": [
-        {"name": "Testing Catalog", "url": "https://www.testingcatalog.com/google-opens-gemini-3-deep-think-api-in-early-access/"},
-        {"name": "gHacks", "url": "https://www.ghacks.net/2026/02/13/gemini-3-deep-think-raises-the-bar-for-advanced-ai-reasoning/"},
-        {"name": "Storyboard18", "url": "https://www.storyboard18.com/amp/digital/google-upgrades-gemini-3-deep-think-sharpens-ais-edge-in-scientific-reasoning-89640.htm"}
+        {"name": "Google DeepMind", "url": "https://x.com/GoogleDeepMind/status/2021981510400709092"},
+        {"name": "Testing Catalog", "url": "https://www.testingcatalog.com/google-opens-gemini-3-deep-think-api-in-early-access/"}
       ]
     }
   ],
@@ -66,7 +64,7 @@
         "why": "开源模型首次在代码能力上逼近 Claude Opus，且价格仅为 1/20，可能引发 AI 编程工具定价重构。",
         "sources": [
           {"name": "MiniMax", "url": "https://www.minimax.io/news/minimax-m25"},
-          {"name": "Hacker News", "url": "https://news.ycombinator.com/item?id=46991154"}
+          {"name": "X @AIRoboticsInt", "url": "https://x.com/AIRoboticsInt/status/2022488097326289064"}
         ]
       },
       {
@@ -76,19 +74,19 @@
         "why": "中国 AI 视频模型在生成质量和可控性上已达到全球第一梯队，与 Sora、Runway Gen-4 直接竞争。",
         "sources": [
           {"name": "Men's Journal", "url": "https://www.mensjournal.com/news/bytedance-seedance-2-0-ai-video-viral-elon-musk-reaction"},
-          {"name": "eWeek", "url": "https://www.eweek.com/news/bytedance-seedance-2-ai-video-race/"}
+          {"name": "X @Montycakes", "url": "https://x.com/Montycakes/status/2022490490902651385"}
         ]
       }
     ],
     "updates": [
       {
-        "title": "Claude Code 2.1.41 发布：修复 AWS 认证、新增 Win ARM64 支持",
-        "time": "2026-02-13",
-        "what": "新增 claude auth login/status/logout 子命令，修复 AWS auth refresh 无限挂起问题（添加 3 分钟超时），新增 Windows ARM64 原生二进制支持，/rename 命令支持自动生成。",
-        "why": "Claude Code 正在快速迭代成为企业级 AI 编程工具，AWS 认证修复对云端开发体验至关重要。",
+        "title": "Claude 免费版大幅升级：文件编辑、Connectors、Skills 全开放",
+        "time": "2026-02-12",
+        "what": "Anthropic 向 Claude 免费用户开放此前仅付费用户可用的核心功能：文件创建与编辑（Excel/PowerPoint/Word/PDF）、Connectors（连接 Google Workspace 等外部服务）、Skills（可复用任务自动化）。",
+        "why": "Anthropic 在与 OpenAI 的竞争中选择'免费增值'策略，通过降低使用门槛扩大用户基础，与 OpenAI 在免费版引入广告形成鲜明对比。",
         "sources": [
-          {"name": "Reddit", "url": "https://www.reddit.com/r/ClaudeAI/comments/1r3lxpe/official_anthropic_just_released_claude_code_2141/"},
-          {"name": "Gradually.ai", "url": "https://www.gradually.ai/changelogs/claude-code/"}
+          {"name": "The Indian Express", "url": "https://indianexpress.com/article/technology/tech-news-technology/claudes-free-plan-gets-a-major-upgrade-as-anthropic-adds-premium-features-10528937/"},
+          {"name": "X @posi_posi8", "url": "https://x.com/posi_posi8/status/2022490345846771805"}
         ]
       },
       {
@@ -97,35 +95,33 @@
         "what": "GitHub 推出 Agentic Workflows 技术预览，允许开发者用 Markdown 而非 YAML 描述工作流，由 AI Agent 在 GitHub Actions 沙箱中执行。支持 gh aw CLI 扩展。",
         "why": "将'意图驱动'开发引入 DevOps，降低 CI/CD 配置门槛，同时保持沙箱安全性（只读默认权限）。",
         "sources": [
-          {"name": "GitHub Blog", "url": "https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/"},
-          {"name": "The New Stack", "url": "https://thenewstack.io/github-agentic-workflows-overview/"}
+          {"name": "GitHub Blog", "url": "https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/"}
         ]
       }
     ],
     "opensource": [
       {
-        "title": "GLM-5 开源：744B 参数，MIT 许可证",
+        "title": "智谱 GLM-5 开源：744B 参数，MIT 许可证",
         "time": "2026-02-11",
         "what": "智谱 GLM-5 采用 MIT 许可证完全开源，支持复杂系统工程和长周期 Agent 任务。基于 10 万片华为昇腾芯片训练，实现硬件自主可控。",
         "why": "MIT 许可证比 Llama 等模型的商业限制更宽松，有望成为全球开发者构建 AI 应用的首选基础模型之一。",
         "sources": [
           {"name": "Testing Catalog", "url": "https://www.testingcatalog.com/z-ai-launched-glm-5-new-open-source-model-on-chat-and-apis/"},
-          {"name": "BinaryVerse AI", "url": "https://binaryverseai.com/glm-5-benchmarks-pricing-agentic-engineering-pro/"}
+          {"name": "X @liambryceapple", "url": "https://x.com/liambryceapple/status/2022487174147641534"}
         ]
       }
     ],
-    "benchmarks": [
-      {
-        "title": "中国开源模型霸榜 SWE-Bench：MiniMax M2.5 80.2%、GLM-5 77.8%",
-        "time": "2026-02-13",
-        "what": "MiniMax M2.5 在 SWE-Bench Verified 达到 80.2%，GLM-5 达到 77.8%，双双超越 GPT-4 和早期 Claude 版本，接近 Claude Opus 4.6（80.8%）。",
-        "why": "开源模型在代码能力这一关键场景上正在快速追赶闭源商业模型，开发者有了更多高性价比选择。",
-        "sources": [
-          {"name": "ApiYi Blog", "url": "https://help.apiyi.com/en/minimax-m2-5-lightning-api-coding-agent-guide-en.html"}
-        ]
-      }
-    ],
+    "benchmarks": [],
     "business": [
+      {
+        "title": "Anthropic 完成 300 亿美元融资，估值 3800 亿美元",
+        "time": "2026-02-12",
+        "what": "Anthropic 宣布完成 300 亿美元融资，投后估值 3800 亿美元，年化收入 140 亿美元。成立 Public First Action 组织投入 2000 万美元推动 AI 政策。",
+        "why": "Anthropic 正在快速追赶 OpenAI，巨额融资将用于扩大基础设施和研发投入。",
+        "sources": [
+          {"name": "Anthropic", "url": "https://x.com/AnthropicAI/status/2022023155423002867"}
+        ]
+      },
       {
         "title": "智谱宣布海外 API 涨价 30%-100%",
         "time": "2026-02-12",
@@ -143,17 +139,17 @@
         "what": "OpenAI 向美国众议院中国问题特别委员会提交备忘录，指控 DeepSeek 使用'distillation'技术窃取 OpenAI 模型能力，通过混淆第三方路由器和规避访问限制获取输出。",
         "why": "中美 AI 竞争从技术层面蔓延至政策和法律层面，模型蒸馏技术的合法性边界成为争议焦点。",
         "sources": [
-          {"name": "Reuters", "url": "https://www.reuters.com/world/china/openai-accuses-deepseek-distilling-us-models-gain-advantage-bloomberg-news-2026-02-12/"},
-          {"name": "LA Times", "url": "https://www.latimes.com/business/story/2026-02-13/openai-accuses-chinas-deepseek-of-stealing-ai-technology"}
+          {"name": "Reuters", "url": "https://www.reuters.com/world/china/openai-accuses-deepseek-distilling-us-models-gain-advantage-bloomberg-news-2026-02-12/"}
         ]
       },
       {
-        "title": "美国电影协会谴责 Seedance 2.0 侵犯版权",
+        "title": "迪士尼与美国电影协会谴责 Seedance 2.0 侵犯版权",
         "time": "2026-02-13",
-        "what": "美国电影协会（MPA）公开谴责字节 Seedance 2.0，称其在发布首日就引发大规模版权侵权，用户生成大量未经授权的明星肖像和影视片段。",
+        "what": "美国电影协会（MPA）和迪士尼公开谴责字节 Seedance 2.0，称其在发布首日就引发大规模版权侵权，用户生成大量未经授权的明星肖像和影视片段。迪士尼已向字节发送停止令。",
         "why": "AI 视频生成技术的快速发展与现有版权法律体系之间的冲突正在激化，监管压力将持续增加。",
         "sources": [
-          {"name": "Variety", "url": "https://variety.com/2026/film/news/motion-picture-association-ai-seedance-bytedance-tom-cruise-1236661753/"}
+          {"name": "Variety", "url": "https://variety.com/2026/film/news/motion-picture-association-ai-seedance-bytedance-tom-cruise-1236661753/"},
+          {"name": "X @patesalo_e", "url": "https://x.com/patesalo_e/status/2022490355908686257"}
         ]
       }
     ]
@@ -162,8 +158,8 @@
     "bullets": [
       "🔥 MiniMax M2.5 开源：80.2% SWE-Bench，成本仅 Claude Opus 1/20",
       "🎬 字节 Seedance 2.0 发布：多模态视频生成，马斯克点赞但遭好莱坞谴责",
-      "🚀 智谱 GLM-5 开源：744B 参数，基于 10 万片华为昇腾芯片训练",
-      "💎 Anthropic 升级 Claude 免费版：文件编辑、Connectors、Skills 全开放",
+      "💰 Anthropic 融资 300 亿美元估值 3800 亿，Chris Liddell 加入董事会",
+      "🚀 OpenAI 发布 GPT-5.2 物理成果与 GPT-5.3-Codex-Spark",
       "🧠 Google Gemini 3 Deep Think 重大更新：科学推理能力大幅提升"
     ],
     "url": "https://elliclee.github.io/ai-daily-report/",
@@ -171,110 +167,93 @@
   },
   "x_highlights": [
     {
-      "text": "MiniMax M2.5: 230B MoE, 80.2% SWE-Bench, $1/hour. The unit economics are insane.",
-      "author": "GongDao",
-      "handle": "@imgongdao",
-      "url": "https://x.com/imgongdao/status/2022483273272955203",
-      "likes": 1200,
-      "reposts": 400,
-      "replies": 100
+      "text": "I screenshotted this to my agent running opus 4.6, who spawned a sub-agent and chose minimax himself to research and find the tool, install it, and fix the problem. I just resigned from my job to go full-time on this.",
+      "author": "maxand98",
+      "handle": "@maxand98",
+      "url": "https://x.com/maxand98/status/2022487718761222437",
+      "likes": 2800,
+      "reposts": 890,
+      "replies": 340
     },
     {
-      "text": "Three frontier open-source models from China in one week—MiniMax M2.5, Kimi K2.5, GLM-5—at 3-20x cheaper than US counterparts.",
-      "author": "Manny",
-      "handle": "@venturemanny",
-      "url": "https://x.com/venturemanny/status/2022481759397417086",
-      "likes": 900,
-      "reposts": 350,
-      "replies": 80
+      "text": "OpenAI has partnered with two defense tech firms selected by the Pentagon for a $100M challenge to develop voice-controlled software for managing drone swarms.",
+      "author": "Grok",
+      "handle": "@grok",
+      "url": "https://x.com/grok/status/2022490325739045323",
+      "likes": 4500,
+      "reposts": 1200,
+      "replies": 560
     },
     {
-      "text": "ByteDance's Seedance 2.0 is the most impressive AI video generator I've seen. The physics and consistency are next level.",
-      "author": "Elon Musk",
-      "handle": "@elonmusk",
-      "url": "https://x.com/elonmusk",
-      "likes": 45000,
-      "reposts": 8000,
-      "replies": 2500
+      "text": "Anthropic's artificial-intelligence tool Claude was used in the U.S. military's operation to capture former Venezuelan President Nicolás Maduro. Anthropic's usage guidelines prohibit Claude from being used to facilitate violence.",
+      "author": "Josh N.",
+      "handle": "@camera_lucida",
+      "url": "https://x.com/camera_lucida/status/2022490437525868579",
+      "likes": 3200,
+      "reposts": 1500,
+      "replies": 780
     },
     {
-      "text": "GLM-5 vs Kimi K2.5: Both 1T+ param MoE models from China, 14 days apart. GLM-5 trained on 100K Huawei Ascend chips—zero NVIDIA.",
-      "author": "BruceBlue",
-      "handle": "@BruceBlue",
-      "url": "https://x.com/BruceBlue/status/2021882975420617005",
-      "likes": 1500,
-      "reposts": 550,
-      "replies": 120
+      "text": "GPT-5.3-Codex-Spark is now in research preview. You can just build things—faster. More than 1000 tokens per second!",
+      "author": "OpenAI",
+      "handle": "@OpenAI",
+      "url": "https://x.com/OpenAI/status/2022009582210715925",
+      "likes": 12500,
+      "reposts": 3400,
+      "replies": 890
+    },
+    {
+      "text": "We've raised $30B in funding at a $380B post-money valuation. Our run-rate revenue is $14 billion, and has grown over 10x in each of the past 3 years.",
+      "author": "Anthropic",
+      "handle": "@AnthropicAI",
+      "url": "https://x.com/AnthropicAI/status/2022023155423002867",
+      "likes": 9800,
+      "reposts": 2800,
+      "replies": 650
+    },
+    {
+      "text": "We've upgraded our specialized reasoning mode Gemini 3 Deep Think to help solve modern science, research, and engineering challenges. State-of-the-art on ARC-AGI-2 and Humanity's Last Exam.",
+      "author": "Google DeepMind",
+      "handle": "@GoogleDeepMind",
+      "url": "https://x.com/GoogleDeepMind/status/2021981510400709092",
+      "likes": 7200,
+      "reposts": 2100,
+      "replies": 480
+    },
+    {
+      "text": "Disney Hits ByteDance With Cease-and-Desist, Claiming Seedance AI Tool Is 'Hijacking' Trademarked Characters",
+      "author": "patesalo",
+      "handle": "@patesalo_e",
+      "url": "https://x.com/patesalo_e/status/2022490355908686257",
+      "likes": 1800,
+      "reposts": 920,
+      "replies": 340
     },
     {
       "text": "Claude free tier now has file creation, connectors, AND skills. Anthropic is playing the long game while OpenAI puts ads in ChatGPT.",
-      "author": "AI News Daily",
-      "handle": "@AINewsDaily",
-      "url": "https://x.com",
-      "likes": 2200,
-      "reposts": 680,
-      "replies": 190
-    },
-    {
-      "text": "Gemini 3 Deep Think just solved 18 previously unsolved research problems across math, physics, and CS. The gap is closing.",
-      "author": "Asteris AI",
-      "handle": "@asteris_ai",
-      "url": "https://x.com/asteris_ai/status/2022428962421416165",
-      "likes": 800,
-      "reposts": 300,
-      "replies": 70
-    },
-    {
-      "text": "GitHub Agentic Workflows is the future of CI/CD. Write your automation in Markdown, let AI handle the YAML.",
-      "author": "GitHub",
-      "handle": "@github",
-      "url": "https://x.com/github",
-      "likes": 3500,
-      "reposts": 1100,
-      "replies": 280
-    },
-    {
-      "text": "OpenAI accusing DeepSeek of 'distillation' is rich coming from the company that scraped the entire internet without permission.",
-      "author": "Tech Commentary",
-      "handle": "@techcommentary",
-      "url": "https://x.com",
-      "likes": 5600,
-      "reposts": 1800,
-      "replies": 420
-    },
-    {
-      "text": "The Motion Picture Association declaring war on Seedance 2.0 on day one shows how scared Hollywood is of AI video.",
-      "author": "Film Tech Watch",
-      "handle": "@filmtechwatch",
-      "url": "https://x.com",
-      "likes": 1800,
-      "reposts": 520,
-      "replies": 150
-    },
-    {
-      "text": "China's AI models this week: MiniMax M2.5 (code), Z.ai GLM-5 (agents), ByteDance Seedance 2.0 (video). All open weights or competitive pricing.",
-      "author": "AI Industry Watch",
-      "handle": "@aiindustry",
-      "url": "https://x.com",
-      "likes": 2100,
-      "reposts": 750,
-      "replies": 180
+      "author": "posi_posi",
+      "handle": "@posi_posi8",
+      "url": "https://x.com/posi_posi8/status/2022490345846771805",
+      "likes": 1500,
+      "reposts": 480,
+      "replies": 120
     }
   ],
   "coverage_check": {
     "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节", "智谱", "月之暗面", "阿里", "腾讯", "百度", "MiniMax", "DeepSeek"],
-    "hit_vendors": ["Anthropic", "Google", "字节", "智谱", "MiniMax", "DeepSeek"],
-    "missed_vendors": ["OpenAI", "Meta", "阿里", "腾讯", "百度", "月之暗面"],
+    "hit_vendors": ["OpenAI", "Anthropic", "Google", "字节", "智谱", "MiniMax", "DeepSeek"],
+    "missed_vendors": ["Meta", "阿里", "腾讯", "百度", "月之暗面"],
     "supplement_searches": 0,
     "dedupe_keys": [
       {"entity": "MiniMax", "product": "M2.5", "event_type": "release", "version_or_date": "2026-02-13"},
       {"entity": "字节", "product": "Seedance 2.0", "event_type": "release", "version_or_date": "2026-02-12"},
       {"entity": "智谱", "product": "GLM-5", "event_type": "release", "version_or_date": "2026-02-11"},
+      {"entity": "Anthropic", "product": "Claude", "event_type": "funding", "version_or_date": "2026-02-12"},
       {"entity": "Anthropic", "product": "Claude", "event_type": "free_tier_upgrade", "version_or_date": "2026-02-12"},
-      {"entity": "Anthropic", "product": "Claude Code", "event_type": "update", "version_or_date": "2.1.41"},
+      {"entity": "OpenAI", "product": "GPT-5.2", "event_type": "research", "version_or_date": "2026-02-13"},
+      {"entity": "OpenAI", "product": "GPT-5.3-Codex-Spark", "event_type": "release", "version_or_date": "2026-02-12"},
       {"entity": "Google", "product": "Gemini 3 Deep Think", "event_type": "update", "version_or_date": "2026-02-12"},
-      {"entity": "GitHub", "product": "Agentic Workflows", "event_type": "preview", "version_or_date": "2026-02-13"},
-      {"entity": "OpenAI", "product": "DeepSeek", "event_type": "accusation", "version_or_date": "2026-02-13"}
+      {"entity": "GitHub", "product": "Agentic Workflows", "event_type": "preview", "version_or_date": "2026-02-13"}
     ]
   }
 }
