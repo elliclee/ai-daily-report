@@ -1,18 +1,35 @@
-# AI早报每日生成（融合版·8点）- 当前 cron prompt
+# AI早报每日生成（融合版·8点）
 # jobId: 50702738-9cbe-4279-9ba3-871991087f5c
 
-执行 AI 日报生成任务（强时效版，完全按 2026-02-13 规范执行；A/B/C 对齐）。
+# ════════════════════════════════════════════════════════
+# ⛔ 最高优先级约束（违反即判定任务失败）
+# ════════════════════════════════════════════════════════
+#
+# 1. 你的唯一输出是 data/daily.json 和 data/techneme.json
+#    ⛔ 禁止直接输出/修改任何 .html 文件（template.html / index.html / archive/*.html）
+#    ⛔ 禁止在 JSON 之外输出 HTML 片段
+#    渲染由 python3 scripts/render.py 完成，你不需要也不得操作 HTML
+#
+# 2. JSON 必须严格符合 schemas/daily.schema.json
+#    运行 python3 scripts/validate_json.py 校验通过后才可继续
+#
+# 3. 禁止调用 message 工具；禁止调用 cron.run 触发其他 job
+# ════════════════════════════════════════════════════════
 
-0) 总体策略：分层执行（控制成本，避免 20+ query 全跑）
+执行 AI 日报生成任务（强时效版）。
+
+## 0) 总体策略：分层执行（控制成本，避免 20+ query 全跑）
+
 - 第一层：Breaking 12（固定必跑）
   - 英文 6 + 中文 6；全部 freshness=pd（过去24h）
 - 第二层：按需补搜（动态触发，4~8 条上限）
   - 触发：栏目缺口 / 漏报检查命中但缺权威来源 / 发布时间不可确认
   - 默认 freshness=pw（7d），并在条目 meta 标注「7d补漏」
 - 第三层：二次补时间（必须做一次）
-  - 若发布时间无法确认 ≤48h：必须再找第二来源补时间；补不到 → 降级到「观察/补充」，不得进“头条/核心看点”
+  - 若发布时间无法确认 ≤48h：必须再找第二来源补时间；补不到 → 降级到「观察/补充」，不得进"头条/核心看点"
 
-1) Web（web_search）Breaking 固定 12（pd）
+## 1) Web（web_search）Breaking 固定 12（pd）
+
 英文 6：
 1. AI model release
 2. OpenAI GPT API pricing
@@ -31,24 +48,24 @@
 
 硬规则（时效过滤）：
 - 任何条目若无法确认发布时间 ≤48h：
-  - 禁止进入“核心看点”
+  - 禁止进入"核心看点"
   - 必须做 1 次第二来源补时间
   - 补不到：归入「观察/补充」，标注 [时间无法确认，未入头条]
 
-2) X（bird）策略：关键词组 + watchlist 双轨 + 24h 过滤（带 fallback）
+## 2) X（bird）策略：关键词组 + watchlist 双轨 + 24h 过滤（带 fallback）
+
 2.1 关键词组（每组取最新 N 条，建议 N=30）
 英文 4 组：
 - OpenAI OR GPT OR ChatGPT OR API
 - Anthropic OR Claude OR "Claude Code"
 - Gemini OR DeepMind OR "Google AI"
 - Llama OR "Meta AI" OR open-source weights
-中文 4 组（避免混杂，按你建议拆分）：
+中文 4 组：
 - Seedance OR 即梦 OR 豆包 OR AI视频
 - 智谱 OR GLM
 - 月之暗面 OR Kimi
 - 通义 OR Qwen
 - 混元 OR 文心 OR 百度AI OR 腾讯AI
-（若要保持总组数不变：可将英文 Llama 组与 MetaAI/watchlist 合并，确保总查询组数不膨胀）
 
 2.2 watchlist（近24h）
 - @OpenAI @sama @AnthropicAI @GoogleDeepMind @GeminiApp @MetaAI（+你的增补清单）
@@ -56,31 +73,61 @@
 2.3 近24h过滤 & fallback（bird 时间戳不可靠时必须用）
 - 优先：若支持 since/until 等 time-bounded query → 用它
 - 否则 fallback（必须执行）：
-  1) 只取“最新 N 条”（如 30）
+  1) 只取"最新 N 条"（如 30）
   2) 有效性筛选（满足其一即可入候选）：来自 watchlist / 互动阈值达标 / 被多账号重复提及
   3) 再做时间判定：相对时间>48h剔除；时间缺失→降级「观察/补充」
 互动阈值建议：likes/retweets/replies 任一 ≥20（可调）；来自 watchlist 直接放行。
 
-3) 栏目规则（避免硬塞水货）
-- Releases / Updates / Open Source / Benchmarks / Business：目标 2，下限 1；若 <1 → 触发补搜
-- Risks：目标 2，下限 0；若为 0 必须写：过去24h未发现可靠重大风险事件（已按X+Web补搜）
+## 3) 栏目规则（硬约束，不可违反）
 
-4) 去重合并：可执行 dedupe_key（必须生成并在自检区输出）
-- dedupe_key = (entity, product, event_type, version_or_date)
+每个 section 都是 list，可以为空但必须存在：
+- releases：目标 ≥2，下限 1
+- updates：目标 ≥2，下限 1
+- opensource：目标 ≥2，下限 1
+- benchmarks：目标 ≥1，下限 0（若为 0，在 self_check 说明原因）
+- business：目标 ≥2，下限 1
+- risks：目标 ≥2，下限 0（若为 0，在 self_check 说明：过去24h未发现可靠重大风险事件）
+
+若某栏目低于下限 → 必须触发补搜（第二层）
+
+## 4) headlines 与 sections 的关系（禁止重复）
+
+⛔ headlines 的 5 条新闻 **禁止** 与 sections 内的条目使用完全相同的 title
+- headlines 是「当天最重要 5 件事的总结/综述视角」
+- sections 是「按分类的详细报道」
+- 允许同一事件同时出现在 headlines 和 sections，但 title 和 what/why 的措辞必须不同
+  - headlines：侧重宏观影响和意义
+  - sections：侧重技术细节和事实
+
+## 5) x_highlights 来源约束
+
+- x_highlights 中的 url 字段必须是 x.com/ 或 twitter.com/ 链接
+- ⛔ 非 X 来源（如新闻网站、博客、官方公告页）不得放入 x_highlights
+- 非 X 来源的精彩引用应放入对应 section 条目的 sources 数组
+- 若 bird 不可用导致无法获取真实推文，x_highlights 可以为空数组 []
+  - 此时必须在 self_check.bird_status 说明原因
+
+## 6) 去重合并：dedupe_key（必须生成结构化对象数组）
+
+- dedupe_key = { key, entity, product, event_type, version_or_date, sources_merged }
   - entity：OpenAI/Anthropic/字节/智谱/…
   - product：GPT/Claude/Seedance/GLM/…
   - event_type：release/update/open_source/benchmark/business/risk
   - version_or_date：vX.Y / YYYY-MM-DD / pricing-change 等
+  - sources_merged：合并了几个来源（int）
 - 同 dedupe_key 必须合并，sources 累积到 2~3 个
-- 若 X 高热但 web 缺：必须追加 1 次定向 web_search 补权威来源；补不到就写“仅社媒热度，暂无权威报道”。
+- 若 X 高热但 web 缺：必须追加 1 次定向 web_search 补权威来源；补不到就写"仅社媒热度，暂无权威报道"。
+- ⛔ dedupe_keys 放在 self_check.dedupe_keys 中，格式为对象数组，不是字符串数组
 
-5) 扩展 query（按需触发，pw，标注「7d补漏」）
+## 7) 扩展 query（按需触发，pw，标注「7d补漏」）
+
 - 仅触发才跑，上限 4~8 条，按缺口选择：
   - 厂商补漏：Seedance/GLM/Kimi/Qwen/混元/文心
   - 评测补漏：SWE-bench 最新评测/leaderboard
   - 商业补漏：pricing change / funding / partnership
 
-6) 今日漏报检查（必须执行；24h 主，必要时 pw 补漏）
+## 8) 今日漏报检查（必须执行；24h 主，必要时 pw 补漏）
+
 清单：
 - 字节：Seedance/即梦/豆包
 - 智谱：GLM
@@ -91,22 +138,59 @@
 - 海外：OpenAI/Anthropic/Gemini/Meta
 规则：若 X 命中但 web 缺 → 必须补 1 次定向 web_search；补不到明确标注。
 
-7) 交付物（必须）
-- 写入 data/daily.json + data/techneme.json
-- python3 scripts/render.py
-- bash scripts/verify.sh YYYY-MM-DD
-- git commit/push
+## 9) self_check 结构化字段（必须完整输出）
 
-8) 页面/自检（必须输出在 HTML，风格按 2/13）
-- X 高互动事件卡片（8-12条，不足如实说明）
-- 覆盖度自检：
-  - 每栏目条数（目标/下限/是否触发补搜）
-  - 命中厂商清单（命中/未命中）
-  - 触发补搜轮数、补搜 query 数
-  - ≤48h 可确认条目数 vs 观察/补充数
-  - dedupe_key 列表（至少 entity/product/version）
+self_check 必须包含以下子字段（均为必填）：
 
-9) 推送文案（必须是最后输出，禁止再输出总结覆盖）
+```json
+"self_check": {
+  "coverage_analysis": {
+    "target_vendors": ["OpenAI", "Anthropic", ...],
+    "hit_vendors": ["OpenAI", ...],
+    "missed_vendors": ["Meta", ...],
+    "missed_reason": "说明为什么未命中"
+  },
+  "freshness_check": {
+    "target_headlines": 12,
+    "actual_headlines": 5,
+    "supplement_searches_triggered": false,
+    "supplement_searches_count": 0,
+    "reason": "说明"
+  },
+  "bird_status": {
+    "available": false,
+    "cookies_found": false,
+    "fallback": "Web 搜索补足",
+    "x_highlights_source": "说明来源"
+  },
+  "dedupe_keys": [
+    { "key": "xxx", "entity": "xxx", "product": "xxx", "event_type": "xxx", "version_or_date": "xxx", "sources_merged": 2 }
+  ],
+  "downgraded_entries": [
+    { "title": "xxx", "reason": "xxx", "status": "观察/补充" }
+  ]
+}
+```
+
+## 10) 交付物（严格按顺序执行）
+
+```bash
+# 1. 写入 data/daily.json + data/techneme.json（你的唯一输出）
+# 2. 校验 JSON
+python3 scripts/validate_json.py
+# 3. 渲染 HTML（由脚本完成，你不得手动修改 HTML）
+python3 scripts/render.py
+# 4. 完整校验
+bash scripts/verify.sh YYYY-MM-DD
+# 5. 提交
+git add -A && git commit -m "AI日报 YYYY-MM-DD" && git push
+```
+
+⛔ 步骤 2 校验失败 → 必须修正 daily.json 后重试，不得跳过
+⛔ 步骤 4 校验失败 → 必须排查原因后重试，不得跳过
+
+## 11) 推送文案（必须是最后输出，禁止再输出总结覆盖）
+
 📰 AI日报 YYYY-MM-DD
 
 1) 一句话结论 — 来源：<url>
@@ -120,4 +204,5 @@
 
 规则：严格 5 条；每条至少 1 个来源链接；若合并事件，优先给最权威链接。
 
-严禁：调用 message 工具；调用 cron.run 触发其他 job；输出状态总结覆盖推送文案。
+⛔ 严禁：调用 message 工具；调用 cron.run 触发其他 job；输出状态总结覆盖推送文案。
+⛔ 严禁：直接输出/修改 HTML 文件。你的唯一产出是 JSON 文件。

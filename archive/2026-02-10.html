@@ -1,246 +1,497 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Daily Report | AI日报融合版 - 2026-02-10</title>
-  <meta name="description" content="汇聚全球人工智能领域最新动态、技术突破与行业洞察">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --background: #f7f5f0;
-      --foreground: #1f1d1a;
-      --card: #faf9f6;
-      --muted-foreground: #6b6560;
-      --border: #e5e0d8;
-      --accent: #e85d04;
-      --green: #059669;
-      --blue: #2563eb;
-    }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      background-color: var(--background);
-      color: var(--foreground);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-    .container { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
-    header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
-    .logo { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 600; color: var(--foreground); text-decoration: none; }
-    .date { font-size: 14px; color: var(--muted-foreground); }
-    .page-title { margin-bottom: 48px; }
-    .page-title h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 32px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 8px; }
-    .page-title p { font-size: 14px; color: var(--muted-foreground); }
-    section { margin-bottom: 48px; }
-    .section-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted-foreground); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
-    .news-item { padding: 20px 0; border-bottom: 1px solid var(--border); }
-    .news-item:last-child { border-bottom: none; }
-    .news-item h3 { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 17px; font-weight: 500; line-height: 1.5; margin-bottom: 12px; }
-    .news-tag { display: inline-block; background: rgba(232, 93, 4, 0.1); color: var(--accent); font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 20px; margin-right: 8px; vertical-align: middle; }
-    .news-tag.green { background: rgba(5, 150, 105, 0.1); color: var(--green); }
-    .news-tag.blue { background: rgba(37, 99, 235, 0.1); color: var(--blue); }
-    .news-item p { font-size: 14px; line-height: 1.7; color: var(--muted-foreground); margin-bottom: 12px; }
-    .news-source { font-size: 12px; color: #9a9590; }
-    .news-source a { color: #2563eb; text-decoration: none; }
-    .news-source a:hover { text-decoration: underline; }
-    .x-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 16px; }
-    .x-card h4 { font-size: 15px; font-weight: 600; margin-bottom: 8px; color: var(--foreground); }
-    .x-card p { font-size: 13px; color: var(--muted-foreground); margin-bottom: 8px; }
-    .x-card .engagement { font-size: 11px; color: #9a9590; margin-top: 8px; }
-    .archive { padding-top: 32px; border-top: 1px solid var(--border); margin-top: 48px; }
-    .archive-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
-    .archive-item { font-size: 13px; padding: 4px 12px; background: var(--card); border: 1px solid var(--border); border-radius: 4px; }
-    .archive-item a { color: var(--foreground); text-decoration: none; }
-    .archive-item a:hover { color: var(--accent); }
-    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: #9a9590; }
-    footer p { margin-bottom: 4px; }
-    footer a { color: #2563eb; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    .self-check { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin-top: 48px; font-size: 13px; }
-    .self-check h4 { font-size: 14px; font-weight: 600; margin-bottom: 12px; }
-    .self-check ul { margin-left: 16px; color: var(--muted-foreground); }
-    .self-check li { margin-bottom: 6px; }
-    @media (max-width: 640px) {
-      .container { padding: 32px 16px 48px; }
-      .page-title h1 { font-size: 26px; }
-      .news-item h3 { font-size: 16px; }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <a href="/ai-daily-report/" class="logo">AI Daily Report</a>
-      <span class="date">2026年2月10日 · 周二</span>
-    </header>
-    <div class="page-title">
-      <h1>AI早报融合版</h1>
-      <p>X热搜 · 全网新闻 · 深度洞察</p>
-    </div>
 
-    <section>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AI Daily Report | 2026年2月10日</title>
+    <meta content="汇聚全球人工智能领域最新动态、技术突破与行业洞察" name="description" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --background: #f5f4ef;
+            --foreground: #1a1714;
+            --card: #ffffff;
+            --muted: #8b8680;
+            --muted-foreground: #6b6560;
+            --border: #e8e4dc;
+            --accent: #c9a96e;
+            --accent-soft: #fdf8f0;
+            --green: #4a8b4a;
+            --green-bg: #f0f7f0;
+            --orange: #c77836;
+            --orange-bg: #fdf2e9;
+            --blue: #4a6b8b;
+            --blue-bg: #eef3f8;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background-color: var(--background);
+            color: var(--foreground);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+        }
+
+        /* ── Header: large centered title like 02-12 ── */
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--foreground);
+            letter-spacing: -0.03em;
+            margin-bottom: 8px;
+        }
+
+        .date {
+            font-size: 0.95rem;
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        /* ── Sections ── */
+        .section {
+            margin-bottom: 44px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--foreground);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* ── Cards: clean, minimal ── */
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 22px 24px;
+            margin-bottom: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+        }
+
+        .card-headline {
+            display: flex;
+            gap: 0;
+            margin-bottom: 10px;
+        }
+
+        .card-badge {
+            display: none;
+            /* remove the orange accent bar */
+        }
+
+        .card-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1.45;
+            color: var(--foreground);
+        }
+
+        .card-meta {
+            font-size: 12px;
+            color: var(--muted);
+            margin: 6px 0 12px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .card-content {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #4a4743;
+        }
+
+        .card-content strong {
+            color: var(--foreground);
+            font-weight: 600;
+        }
+
+        .card-sources {
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .card-sources a {
+            color: var(--muted-foreground);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .card-sources a:hover {
+            color: var(--foreground);
+            border-bottom-color: var(--foreground);
+        }
+
+        /* ── Highlight boxes (self-check / summary) ── */
+        .highlight-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 14px;
+        }
+
+        .highlight-title {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .highlight-list {
+            list-style: none;
+            font-size: 14px;
+        }
+
+        .highlight-list li {
+            padding: 7px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .highlight-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* ── Tags ── */
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 2px 8px;
+            background: var(--background);
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--muted-foreground);
+        }
+
+        .tag-hot {
+            background: var(--orange-bg);
+            color: var(--orange);
+        }
+
+        .tag-new {
+            background: var(--green-bg);
+            color: var(--green);
+        }
+
+        .tag-official {
+            background: var(--blue-bg);
+            color: var(--blue);
+        }
+
+        /* ── X (Twitter) highlights ── */
+        .x-highlight {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-top: 14px;
+            border: 1px solid var(--border);
+        }
+
+        .x-highlight h4 {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--foreground);
+        }
+
+        .x-item {
+            display: flex;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 13px;
+        }
+
+        .x-item:last-child {
+            border-bottom: none;
+        }
+
+        .x-avatar {
+            width: 32px;
+            height: 32px;
+            background: var(--background);
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .x-content {
+            flex: 1;
+        }
+
+        .x-author {
+            font-weight: 600;
+            color: var(--foreground);
+        }
+
+        .x-handle {
+            color: var(--muted);
+        }
+
+        .x-text {
+            margin-top: 4px;
+            line-height: 1.5;
+        }
+
+        .x-engagement {
+            display: flex;
+            gap: 16px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        /* ── Footer ── */
+        .footer {
+            text-align: center;
+            padding-top: 48px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: var(--foreground);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .footer a:hover {
+            border-bottom-color: var(--foreground);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            .container {
+                padding: 32px 16px 48px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .card {
+                padding: 18px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Daily Report</h1>
+            <div class="date">2026年2月10日</div>
+        </header>
+
+        <section class="section">
       <h2 class="section-title">🚀 发布 (Releases)</h2>
       
-      <div class="news-item">
-        <h3><span class="news-tag">X高热</span>字节跳动Seedance 2.0正式上线即梦平台，AI视频良品率突破90%</h3>
+      <div class="card">
+        <h3><span class="tag">X高热</span>字节跳动Seedance 2.0正式上线即梦平台，AI视频良品率突破90%</h3>
         <p>字节跳动旗下视频生成模型Seedance 2.0于2月9日在即梦平台正式上线，无需排队申请即可使用。该模型支持同时输入最多12个参考文件（9张图片+3个视频），实现多镜头叙事与角色一致性。据实测，Seedance 2.0良品率超过90%，15秒视频生成成为标配。模型已全面接入即梦、CapCut（剪映）等字节系产品。</p>
-        <p class="news-source">来源：X社区 @XuekaiGao <a href="https://x.com/XuekaiGao/status/2021067599824482465" target="_blank">x.com</a> / @CuiMao <a href="httpsx.com/CuiMao/status/2021067633127456959" target="_blank">x.com</a></p>
+        <p class="card-sources">来源：X社区 @XuekaiGao <a href="https://x.com/XuekaiGao/status/2021067599824482465" target="_blank">x.com</a> / @CuiMao <a href="httpsx.com/CuiMao/status/2021067633127456959" target="_blank">x.com</a></p>
       </div>
       
-      <div class="news-item">
+      <div class="card">
         <h3><span class="news-tag blue">重磅</span>OpenAI GPT-5.3-Codex推送到Cursor、GitHub、VS Code</h3>
         <p>Sam Altman于2月9日宣布GPT-5.3-Codex正式推送到Cursor、GitHub和VS Code。该模型是OpenAI首个达到网络安全"高"等级的模型，相关API接入正在加紧准备中。Codex App首周下载量突破100万，周活跃用户增长超60%。Altman表示将保持Codex对免费/Go用户的可用性，但可能需要降低使用限额。</p>
-        <p class="news-source">来源：@sama <a href="https://x.com/sama/status/2020940847190356092" target="_blank">x.com/sama</a> / @OpenAI <a href="https://x.com/OpenAI/status/2021025290366091442" target="_blank">x.com/OpenAI</a></p>
+        <p class="card-sources">来源：@sama <a href="https://x.com/sama/status/2020940847190356092" target="_blank">x.com/sama</a> / @OpenAI <a href="https://x.com/OpenAI/status/2021025290366091442" target="_blank">x.com/OpenAI</a></p>
       </div>
 
-      <div class="news-item">
+      <div class="card">
         <h3><span class="news-tag blue">更新</span>Anthropic发布Claude Opus 4.6，非营利组织可免费使用</h3>
         <p>Anthropic于2月9日宣布Claude Opus 4.6向Team和Enterprise计划的非营利组织免费开放。该模型具备百万token上下文窗口，专为提升软件开发能力设计。同时发布了2.5倍更快的早期实验版本，并推出"Claude Mem"项目记忆管理功能。</p>
-        <p class="news-source">来源：@AnthropicAI <a href="https://x.com/AnthropicAI/status/2020908471936323584" target="_blank">x.com</a></p>
+        <p class="card-sources">来源：@AnthropicAI <a href="https://x.com/AnthropicAI/status/2020908471936323584" target="_blank">x.com</a></p>
       </div>
     </section>
 
-    <section>
+    <section class="section">
       <h2 class="section-title">⚡ 更新 (Updates)</h2>
       
-      <div class="news-item">
-        <h3><span class="news-tag">X热议</span>Apple Xcode直接集成Claude Agent SDK</h3>
+      <div class="card">
+        <h3><span class="tag">X热议</span>Apple Xcode直接集成Claude Agent SDK</h3>
         <p>Anthropic宣布Apple Xcode现已直接集成Claude Agent SDK，开发者可在iPhone、Mac、Apple Vision Pro等苹果平台使用完整的Claude Code功能。这标志着Claude正式进军苹果开发生态，与Xcode深度绑定。</p>
-        <p class="news-source">来源：@AnthropicAI <a href="https://x.com/AnthropicAI/status/2018771170938724682" target="_blank">x.com</a></p>
+        <p class="card-sources">来源：@AnthropicAI <a href="https://x.com/AnthropicAI/status/2018771170938724682" target="_blank">x.com</a></p>
       </div>
       
-      <div class="news-item">
+      <div class="card">
         <h3><span class="news-tag green">更新</span>Google Chromebook Plus机型开始推出Gemini功能</h3>
         <p>Google确认Gemini功能已于1月28日起向Chromebook Plus设备推出，首先在美国上线。用户可在Chrome浏览器中直接使用AI工具，包括写作辅助、图像生成、Gemini Live双向语音对话等功能。</p>
-        <p class="news-source">来源：Business Standard <a href="https://www.business-standard.com/amp/technology/tech-news/google-expands-gemini-in-chrome-to-chromebook-plus-devices-details-here-126020900633_1.html" target="_blank">business-standard.com</a></p>
+        <p class="card-sources">来源：Business Standard <a href="https://www.business-standard.com/amp/technology/tech-news/google-expands-gemini-in-chrome-to-chromebook-plus-devices-details-here-126020900633_1.html" target="_blank">business-standard.com</a></p>
       </div>
       
-      <div class="news-item">
-        <h3><span class="news-tag">X热议</span>Google DeepMind发布Perch 2.0，水下声学识别突破</h3>
+      <div class="card">
+        <h3><span class="tag">X热议</span>Google DeepMind发布Perch 2.0，水下声学识别突破</h3>
         <p>Google DeepMind发布生物声学基础模型Perch 2.0，该模型在鸟类数据训练基础上展现出卓越的水下声学识别能力，可专家级分类训练集外的声音，助力海洋生态系统研究。</p>
-        <p class="news-source">来源：@GoogleDeepMind <a href="https://x.com/GoogleDeepMind/status/2020933684535361840" target="_blank">x.com</a></p>
+        <p class="card-sources">来源：@GoogleDeepMind <a href="https://x.com/GoogleDeepMind/status/2020933684535361840" target="_blank">x.com</a></p>
       </div>
     </section>
 
-    <section>
+    <section class="section">
       <h2 class="section-title">🔓 开源 (Open Source)</h2>
       
-      <div class="news-item">
-        <h3><span class="news-tag">X高热</span>Kimi K2.5被誉为"开源之王"，社区反响热烈</h3>
+      <div class="card">
+        <h3><span class="tag">X高热</span>Kimi K2.5被誉为"开源之王"，社区反响热烈</h3>
         <p>月之暗面Kimi K2.5在开发者社区获得高度评价，被称为"开源之王"。开发者反馈使用Kimi K2.5可以完整完成功能开发，与Claude配合进行合并提交时表现出色。该模型在vibe coding场景下表现优异，被视为GPT-5.2的有力竞争者。</p>
-        <p class="news-source">来源：@ambushalgorithm <a href="https://x.com/ambushalgorithm/status/2021067692321448146" target="_blank">x.com</a> / X社区讨论</p>
+        <p class="card-sources">来源：@ambushalgorithm <a href="https://x.com/ambushalgorithm/status/2021067692321448146" target="_blank">x.com</a> / X社区讨论</p>
       </div>
       
-      <div class="news-item">
-        <h3><span class="news-tag">社区</span>Claude Code开源替代品涌现</h3>
+      <div class="card">
+        <h3><span class="tag">社区</span>Claude Code开源替代品涌现</h3>
         <p>随着Claude Code的流行，开源社区正在构建多种开源替代方案。开发者通过反向工程和协议分析，创建了兼容Claude API的第三方客户端，降低使用门槛。</p>
-        <p class="news-source">来源：X开发者社区</p>
+        <p class="card-sources">来源：X开发者社区</p>
       </div>
     </section>
 
-    <section>
+    <section class="section">
       <h2 class="section-title">📊 评测/基准 (Benchmarks)</h2>
       
-      <div class="news-item">
+      <div class="card">
         <h3><span class="news-tag blue">测试</span>AI视频模型四方对决：Kling 3.0 vs Seedance 2.0 vs Sora 2 vs Veo 3.1</h3>
         <p>X社区出现大量AI视频模型横向对比测试。同一提示词在四个主流模型中生成，从画质细腻度、物理规律真实度、角色一致性等维度进行评测。Seedance 2.0在良品率和生成速度上表现突出，支持多镜头一致性保持角色特征、服装、甚至耳饰的高度一致。</p>
-        <p class="news-source">来源：@XuekaiGao <a href="https://x.com/XuekaiGao/status/2021067610566357407" target="_blank">x.com</a> / X社区</p>
+        <p class="card-sources">来源：@XuekaiGao <a href="https://x.com/XuekaiGao/status/2021067610566357407" target="_blank">x.com</a> / X社区</p>
       </div>
       
-      <div class="news-item">
-        <h3><span class="news-tag">评测</span>Seedance 2.0实测：多模态参考实现精准控制</h3>
+      <div class="card">
+        <h3><span class="tag">评测</span>Seedance 2.0实测：多模态参考实现精准控制</h3>
         <p>实测显示，Seedance 2.0支持"多模态参考"功能，可同时输入图片定角色、视频定动作、音频定节奏。网友评价"这是把AI当乙方的感觉"，精准控制每一个像素的逻辑。AI视频制作进入工业化时代。</p>
-        <p class="news-source">来源：X社区实测 @maxweb00 <a href="https://x.com/maxweb00/status/2021068356225573266" target="_blank">x.com</a></p>
+        <p class="card-sources">来源：X社区实测 @maxweb00 <a href="https://x.com/maxweb00/status/2021068356225573266" target="_blank">x.com</a></p>
       </div>
     </section>
 
-    <section>
+    <section class="section">
       <h2 class="section-title">💼 商业 (Business)</h2>
       
-      <div class="news-item">
-        <h3><span class="news-tag">X高热</span>OpenAI开始在美测试ChatGPT广告</h3>
+      <div class="card">
+        <h3><span class="tag">X高热</span>OpenAI开始在美测试ChatGPT广告</h3>
         <p>OpenAI于2月9日开始在美国向部分免费和Go用户测试广告功能。广告不会影响ChatGPT的回答内容，将标注为"赞助"并视觉上与回答分离。Sam Altman表示目标是为所有人提供免费ChatGPT，同时保护用户对重要和个人任务的信任。付费用户（Plus/Pro）无广告。Anthropic随即发布视频表态"Claude不会有广告"。</p>
-        <p class="news-source">来源：@OpenAI <a href="https://x.com/OpenAI/status/2020936703763153010" target="_blank">x.com/OpenAI</a> / @sama <a href="https://x.com/sama/status/2020977975081177343" target="_blank">x.com/sama</a></p>
+        <p class="card-sources">来源：@OpenAI <a href="https://x.com/OpenAI/status/2020936703763153010" target="_blank">x.com/OpenAI</a> / @sama <a href="https://x.com/sama/status/2020977975081177343" target="_blank">x.com/sama</a></p>
       </div>
       
-      <div class="news-item">
-        <h3><span class="news-tag">警告</span>欧盟警告Meta停止在WhatsApp中排除第三方AI助手</h3>
+      <div class="card">
+        <h3><span class="tag">警告</span>欧盟警告Meta停止在WhatsApp中排除第三方AI助手</h3>
         <p>欧盟委员会正式通知Meta，可能采取临时措施制止其在WhatsApp中排除第三方AI助手的行为。调查关注Meta是否滥用市场支配地位，阻止竞争对手的AI服务访问WhatsApp Business API。Meta可能面临最高164亿美元罚款。</p>
-        <p class="news-source">来源：@ExpressTechie <a href="https://x.com/ExpressTechie/status/2021064245157536123" target="_blank">x.com</a> / @pvmest <a href="https://x.com/pvmest/status/2021062961268404624" target="_blank">x.com</a></p>
+        <p class="card-sources">来源：@ExpressTechie <a href="https://x.com/ExpressTechie/status/2021064245157536123" target="_blank">x.com</a> / @pvmest <a href="https://x.com/pvmest/status/2021062961268404624" target="_blank">x.com</a></p>
       </div>
       
-      <div class="news-item">
-        <h3><span class="news-tag">商业</span>a16z领投日本AI角色公司Shizuku AI 1500万美元种子轮</h3>
+      <div class="card">
+        <h3><span class="tag">商业</span>a16z领投日本AI角色公司Shizuku AI 1500万美元种子轮</h3>
         <p>硅谷最大风投a16z领投日本AI角色公司Shizuku AI 1500万美元种子轮。创始人来自UC Berkeley博士、前Meta，是实时图像生成90fps论文作者（GitHub超1万星）。VTuber市场预计从2026年31亿美元增长至2033年136亿美元。投资者看中的是"日本角色文化"这一AI最难复制的资产。</p>
-        <p class="news-source">来源：@ponkiland <a href="https://x.com/ponkiland/status/2021062991043809421" target="_blank">x.com</a></p>
+        <p class="card-sources">来源：@ponkiland <a href="https://x.com/ponkiland/status/2021062991043809421" target="_blank">x.com</a></p>
       </div>
     </section>
 
-    <section>
+    <section class="section">
       <h2 class="section-title">⚠️ 风险/监管 (Risks)</h2>
       
-      <div class="news-item">
-        <h3><span class="news-tag">监管</span>欧盟正式对Meta启动反垄断调查</h3>
+      <div class="card">
+        <h3><span class="tag">监管</span>欧盟正式对Meta启动反垄断调查</h3>
         <p>欧盟委员会已对Meta Platforms发起正式反垄断调查，审查其关于AI开发者访问WhatsApp的规定是否损害竞争。这是欧洲监管机构对大型科技企业加强审查的最新举措，Meta可能面临高额罚款。意大利反垄断机构也在同步调查中。</p>
-        <p class="news-source">来源：@ExpressTechie <a href="https://x.com/ExpressTechie/status/2021064245157536123" target="_blank">x.com</a> / @N65006333 <a href="https://x.com/N65006333/status/2021062797841531032" target="_blank">x.com</a></p>
+        <p class="card-sources">来源：@ExpressTechie <a href="https://x.com/ExpressTechie/status/2021064245157536123" target="_blank">x.com</a> / @N65006333 <a href="https://x.com/N65006333/status/2021062797841531032" target="_blank">x.com</a></p>
       </div>
 
-      <div class="news-item">
-        <h3><span class="news-tag">安全</span>AI安全漏洞与对抗攻击成为行业焦点</h3>
+      <div class="card">
+        <h3><span class="tag">安全</span>AI安全漏洞与对抗攻击成为行业焦点</h3>
         <p>社区对AI安全风险的讨论升温。专家警告AI攻击可实现从侦察到数据窃取80-90%的自动化， defenders若保持手动操作将在速度上处于劣势。Vitalik Buterin发文讨论AI在加密领域的应用风险，指出开放源代码与对抗攻击的冲突。</p>
-        <p class="news-source">来源：@ToddALee <a href="https://x.com/ToddALee/status/2020925420003066112" target="_blank">x.com</a> / @ApexOnChain <a href="https://x.com/ApexOnChain/status/2020967147317625287" target="_blank">x.com</a></p>
+        <p class="card-sources">来源：@ToddALee <a href="https://x.com/ToddALee/status/2020925420003066112" target="_blank">x.com</a> / @ApexOnChain <a href="https://x.com/ApexOnChain/status/2020967147317625287" target="_blank">x.com</a></p>
       </div>
     </section>
 
-    <section>
+    <section class="section">
       <h2 class="section-title">🔥 X高互动事件卡片</h2>
       
-      <div class="x-card">
+      <div class="card">
         <h4>🎬 Seedance 2.0发布引发热议</h4>
         <p>字节跳动视频生成AI Seedance 2.0正式发布，支持多模态输入（最多12个参考文件），良品率超90%。网友惊呼"I'm cooked"——AI视频制作进入工业化时代。市场部充5199元年费培训Seedance成为热议话题。</p>
         <p class="engagement">来源：@XuekaiGao / @CuiMao / @maxweb00 | 互动量：极高</p>
       </div>
       
-      <div class="x-card">
+      <div class="card">
         <h4>💻 GPT-5.3-Codex推送主流IDE</h4>
         <p>OpenAI GPT-5.3-Codex正式登陆Cursor、GitHub、VS Code。首周下载破100万，周活增长60%。Sam Altman确认将保持免费层可用，这是OpenAI首个网络安全"高"等级模型。</p>
         <p class="engagement">来源：@sama / @OpenAI | 互动量：极高</p>
       </div>
       
-      <div class="x-card">
+      <div class="card">
         <h4>🍎 Xcode集成Claude Agent</h4>
         <p>Apple Xcode直接集成Claude Agent SDK，开发者可在iPhone、Mac、Apple Vision Pro使用完整Claude Code功能。Claude正式进军苹果生态。</p>
         <p class="engagement">来源：@AnthropicAI | 互动量：高</p>
       </div>
       
-      <div class="x-card">
+      <div class="card">
         <h4>💰 OpenAI测试广告引发讨论</h4>
         <p>OpenAI开始在美国测试ChatGPT广告，面向免费/Go用户。Anthropic随即发布视频表态"Claude不会有广告"，形成鲜明对比。</p>
         <p class="engagement">来源：@OpenAI / @sama / @AnthropicAI | 互动量：高</p>
       </div>
       
-      <div class="x-card">
+      <div class="card">
         <h4>⚠️ 欧盟重锤Meta反垄断</h4>
         <p>欧盟正式警告Meta，可能采取临时措施制止其在WhatsApp中排除第三方AI助手的行为，涉及反垄断调查，最高罚款可达164亿美元。</p>
         <p class="engagement">来源：@ExpressTechie / @pvmest | 互动量：高</p>
       </div>
       
-      <div class="x-card">
+      <div class="card">
         <h4>🎨 a16z押注日本AI角色文化</h4>
         <p>硅谷风投巨头a16z领投日本AI角色公司Shizuku AI 1500万美元种子轮，看重"日本角色文化"这一AI最难复制的资产。</p>
         <p class="engagement">来源：@ponkiland | 互动量：中高</p>
       </div>
 
-      <div class="x-card">
+      <div class="card">
         <h4>🔓 Kimi K2.5获封"开源之王"</h4>
         <p>开发者社区盛赞Kimi K2.5，称其为开源模型中的王者，在代码生成和vibe coding场景表现优异，是GPT-5.2的有力竞争者。</p>
         <p class="engagement">来源：@ambushalgorithm / X社区 | 互动量：中</p>
       </div>
 
-      <div class="x-card">
+      <div class="card">
         <h4>🐦 Google DeepMind Perch 2.0水下突破</h4>
         <p>Perch 2.0生物声学模型在水下声学识别上取得突破，可专家级分类训练集外的海洋动物声音。</p>
         <p class="engagement">来源：@GoogleDeepMind | 互动量：中</p>
@@ -261,24 +512,31 @@
       </ul>
     </div>
 
-    <div class="archive">
-      <h3 class="section-title">历史归档</h3>
-      <div class="archive-list">
-        <span class="archive-item"><a href="2026-02-10.html">02-10</a></span>
-        <span class="archive-item"><a href="2026-02-09.html">02-09</a></span>
-        <span class="archive-item"><a href="2026-02-08.html">02-08</a></span>
-        <span class="archive-item"><a href="2026-02-07.html">02-07</a></span>
-        <span class="archive-item"><a href="2026-02-06.html">02-06</a></span>
-        <span class="archive-item"><a href="2026-02-05.html">02-05</a></span>
-        <span class="archive-item"><a href="2026-02-04.html">02-04</a></span>
-      </div>
+    
     </div>
 
-    <footer>
-      <p>AI Daily Report · 融合版</p>
-      <p>Generated at 2026-02-10 03:50 UTC · Data from X/Twitter & Web</p>
-      <p><a href="https://github.com/elliclee/ai-daily-report" target="_blank">GitHub</a></p>
-    </footer>
-  </div>
+        <footer class="footer">
+            <p>由 <strong>Clawy</strong> 生成于 2026-02-14 03:34 UTC</p>
+            <p style="margin-top: 8px;">OpenClaw × Brave Search × X (bird)</p>
+            <p style="margin-top: 12px;">
+                <a href="./archive/">📁 历史归档</a>
+            </p>
+            <div style="margin-top: 24px;">
+<div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
+<a href="./archive/2026-02-14.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-14</a>
+<a href="./archive/2026-02-13.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-13</a>
+<a href="./archive/2026-02-12.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-12</a>
+<a href="./archive/2026-02-11.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-11</a>
+<span style="padding: 4px 10px; background: var(--foreground); color: var(--background); border-radius: 6px; font-size: 12px; font-weight: 500;">2026-02-10</span>
+<a href="./archive/2026-02-09.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-09</a>
+<a href="./archive/2026-02-08.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-08</a>
+<a href="./archive/2026-02-07.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-07</a>
+<a href="./archive/2026-02-06.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-06</a>
+<a href="./archive/2026-02-05.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-05</a>
+</div>
+</div>
+        </footer>
+    </div>
 </body>
+
 </html>

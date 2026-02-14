@@ -1,158 +1,443 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Daily Report | AI日报融合版 - 2026-02-06</title>
-  <meta name="description" content="汇聚全球人工智能领域最新动态、技术突破与行业洞察">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --background: #f7f5f0;
-      --foreground: #1f1d1a;
-      --card: #faf9f6;
-      --muted-foreground: #6b6560;
-      --border: #e5e0d8;
-      --accent: #e85d04;
-    }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      background-color: var(--background);
-      color: var(--foreground);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-    .container { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
-    header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
-    .logo { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 600; color: var(--foreground); text-decoration: none; }
-    .date { font-size: 14px; color: var(--muted-foreground); }
-    .page-title { margin-bottom: 48px; }
-    .page-title h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 32px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 8px; }
-    .page-title p { font-size: 14px; color: var(--muted-foreground); }
-    section { margin-bottom: 48px; }
-    .section-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted-foreground); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
-    .news-item { padding: 20px 0; border-bottom: 1px solid var(--border); }
-    .news-item:last-child { border-bottom: none; }
-    .news-item h3 { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 17px; font-weight: 500; line-height: 1.5; margin-bottom: 12px; }
-    .news-tag { display: inline-block; background: rgba(232, 93, 4, 0.1); color: var(--accent); font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 20px; margin-right: 8px; vertical-align: middle; }
-    .news-item p { font-size: 14px; line-height: 1.7; color: var(--muted-foreground); margin-bottom: 12px; }
-    .news-source { font-size: 12px; color: #9a9590; }
-    .news-source a { color: #2563eb; text-decoration: none; }
-    .news-source a:hover { text-decoration: underline; }
-    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: #9a9590; }
-    footer p { margin-bottom: 4px; }
-    footer a { color: #2563eb; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    @media (max-width: 640px) {
-      .container { padding: 32px 16px 48px; }
-      .page-title h1 { font-size: 26px; }
-      .news-item h3 { font-size: 16px; }
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AI Daily Report | 2026年2月6日</title>
+    <meta content="汇聚全球人工智能领域最新动态、技术突破与行业洞察" name="description" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --background: #f5f4ef;
+            --foreground: #1a1714;
+            --card: #ffffff;
+            --muted: #8b8680;
+            --muted-foreground: #6b6560;
+            --border: #e8e4dc;
+            --accent: #c9a96e;
+            --accent-soft: #fdf8f0;
+            --green: #4a8b4a;
+            --green-bg: #f0f7f0;
+            --orange: #c77836;
+            --orange-bg: #fdf2e9;
+            --blue: #4a6b8b;
+            --blue-bg: #eef3f8;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background-color: var(--background);
+            color: var(--foreground);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+        }
+
+        /* ── Header: large centered title like 02-12 ── */
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--foreground);
+            letter-spacing: -0.03em;
+            margin-bottom: 8px;
+        }
+
+        .date {
+            font-size: 0.95rem;
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        /* ── Sections ── */
+        .section {
+            margin-bottom: 44px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--foreground);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* ── Cards: clean, minimal ── */
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 22px 24px;
+            margin-bottom: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+        }
+
+        .card-headline {
+            display: flex;
+            gap: 0;
+            margin-bottom: 10px;
+        }
+
+        .card-badge {
+            display: none;
+            /* remove the orange accent bar */
+        }
+
+        .card-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1.45;
+            color: var(--foreground);
+        }
+
+        .card-meta {
+            font-size: 12px;
+            color: var(--muted);
+            margin: 6px 0 12px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .card-content {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #4a4743;
+        }
+
+        .card-content strong {
+            color: var(--foreground);
+            font-weight: 600;
+        }
+
+        .card-sources {
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .card-sources a {
+            color: var(--muted-foreground);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .card-sources a:hover {
+            color: var(--foreground);
+            border-bottom-color: var(--foreground);
+        }
+
+        /* ── Highlight boxes (self-check / summary) ── */
+        .highlight-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 14px;
+        }
+
+        .highlight-title {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .highlight-list {
+            list-style: none;
+            font-size: 14px;
+        }
+
+        .highlight-list li {
+            padding: 7px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .highlight-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* ── Tags ── */
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 2px 8px;
+            background: var(--background);
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--muted-foreground);
+        }
+
+        .tag-hot {
+            background: var(--orange-bg);
+            color: var(--orange);
+        }
+
+        .tag-new {
+            background: var(--green-bg);
+            color: var(--green);
+        }
+
+        .tag-official {
+            background: var(--blue-bg);
+            color: var(--blue);
+        }
+
+        /* ── X (Twitter) highlights ── */
+        .x-highlight {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-top: 14px;
+            border: 1px solid var(--border);
+        }
+
+        .x-highlight h4 {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--foreground);
+        }
+
+        .x-item {
+            display: flex;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 13px;
+        }
+
+        .x-item:last-child {
+            border-bottom: none;
+        }
+
+        .x-avatar {
+            width: 32px;
+            height: 32px;
+            background: var(--background);
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .x-content {
+            flex: 1;
+        }
+
+        .x-author {
+            font-weight: 600;
+            color: var(--foreground);
+        }
+
+        .x-handle {
+            color: var(--muted);
+        }
+
+        .x-text {
+            margin-top: 4px;
+            line-height: 1.5;
+        }
+
+        .x-engagement {
+            display: flex;
+            gap: 16px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        /* ── Footer ── */
+        .footer {
+            text-align: center;
+            padding-top: 48px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: var(--foreground);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .footer a:hover {
+            border-bottom-color: var(--foreground);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            .container {
+                padding: 32px 16px 48px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .card {
+                padding: 18px 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="logo">AI Daily Report</a>
-      <span class="date">2026年2月6日</span>
-    </header>
-    <div class="page-title">
-      <h1>AI早报融合版</h1>
-      <p>X热搜 · 全网新闻 · 深度洞察</p>
-    </div>
-    
-    <section>
+    <div class="container">
+        <header>
+            <h1>AI Daily Report</h1>
+            <div class="date">2026年2月6日</div>
+        </header>
+
+        <section class="section">
       <h2 class="section-title">头条新闻</h2>
       
-      <article class="news-item">
-        <h3><span class="news-tag">X热议</span><span class="news-tag">重磅发布</span>Anthropic发布Claude Opus 4.6，同日OpenAI推出GPT-5.3-Codex</h3>
+      <article class="card">
+        <h3><span class="tag">X热议</span><span class="tag">重磅发布</span>Anthropic发布Claude Opus 4.6，同日OpenAI推出GPT-5.3-Codex</h3>
         <p>2月5日，AI领域迎来两大旗舰模型同日发布。Anthropic推出Claude Opus 4.6，声称是"最智能模型的升级"，在编码能力、代理工作流执行、代码审查与调试方面显著提升，支持100万token上下文窗口。OpenAI则发布GPT-5.3-Codex，被实测者评价为"史上第一个高危模型"，在编码任务上超越Claude Opus 4.6。</p>
-        <div class="news-source">X: @claudeai @ifanr · via Reuters · <a href="https://www.reuters.com/business/retail-consumer/anthropic-releases-ai-upgrade-market-punishes-software-stocks-2026-02-05/">原文链接</a></div>
+        <div class="card-sources">X: @claudeai @ifanr · via Reuters · <a href="https://www.reuters.com/business/retail-consumer/anthropic-releases-ai-upgrade-market-punishes-software-stocks-2026-02-05/">原文链接</a></div>
       </article>
       
-      <article class="news-item">
-        <h3><span class="news-tag">X热议</span><span class="news-tag">市场震荡</span>Anthropic AI工具引发软件股抛售，单日市值蒸发2850亿美元</h3>
+      <article class="card">
+        <h3><span class="tag">X热议</span><span class="tag">市场震荡</span>Anthropic AI工具引发软件股抛售，单日市值蒸发2850亿美元</h3>
         <p>Anthropic发布的新AI工具针对法律服务等白领行业，直接冲击传统软件公司。此举引发市场对传统SaaS企业前景的担忧，导致相关股票大规模抛售。分析师指出，Anthropic正从"销售模型"转向"掌控工作流"，这种商业模式的转变对现有软件供应商构成直接威胁。</p>
-        <div class="news-source">X: @ftbreakingnews · via Times of India · <a href="https://timesofindia.indiatimes.com/technology/tech-news/explained-what-is-anthropics-ai-tool-that-wiped-285-billion-off-software-stocks-in-a-single-day/articleshow/127892310.cms">原文链接</a></div>
+        <div class="card-sources">X: @ftbreakingnews · via Times of India · <a href="https://timesofindia.indiatimes.com/technology/tech-news/explained-what-is-anthropics-ai-tool-that-wiped-285-billion-off-software-stocks-in-a-single-day/articleshow/127892310.cms">原文链接</a></div>
       </article>
       
-      <article class="news-item">
-        <h3><span class="news-tag">企业平台</span>OpenAI推出Frontier平台，定位企业AI代理"同事"</h3>
+      <article class="card">
+        <h3><span class="tag">企业平台</span>OpenAI推出Frontier平台，定位企业AI代理"同事"</h3>
         <p>OpenAI发布Frontier平台，专为企业构建、部署和管理AI代理而设计。该平台支持数据集成、安全管控和任务优化，将AI代理定位为复杂任务的"同事"。与Claude专注于模型能力不同，Frontier强调代理编排能力，两者在企业AI市场形成差异化竞争。</p>
-        <div class="news-source">X: @grok · via TechCrunch [待核实] · <a href="https://x.com/grok/status/2019699168718049529">X链接</a></div>
+        <div class="card-sources">X: @grok · via TechCrunch [待核实] · <a href="https://x.com/grok/status/2019699168718049529">X链接</a></div>
       </article>
     </section>
     
-    <section>
+    <section class="section">
       <h2 class="section-title">新模型 / 工具</h2>
       
-      <article class="news-item">
-        <h3><span class="news-tag">基准测试</span>Claude Opus 4.6在ARC-AGI基准创下新高</h3>
+      <article class="card">
+        <h3><span class="tag">基准测试</span>Claude Opus 4.6在ARC-AGI基准创下新高</h3>
         <p>Claude Opus 4.6在ARC-AGI半私有评估中表现卓越：在最大努力下，ARC-AGI-1得分93%、ARC-AGI-2得分69%，每任务成本分别为1.88美元和3.64美元。测试使用固定12万token思考预算，展现了可扩展推理能力在领先大模型中的应用。</p>
-        <div class="news-source">X: @arcprize @koltregaskes · via ARC Prize · <a href="https://x.com/arcprize/status/2019483337400938580">X链接</a></div>
+        <div class="card-sources">X: @arcprize @koltregaskes · via ARC Prize · <a href="https://x.com/arcprize/status/2019483337400938580">X链接</a></div>
       </article>
       
-      <article class="news-item">
-        <h3><span class="news-tag">产品更新</span>Google Gemini 3成为搜索默认模型，支持65+语言</h3>
+      <article class="card">
+        <h3><span class="tag">产品更新</span>Google Gemini 3成为搜索默认模型，支持65+语言</h3>
         <p>Google于1月27日宣布Gemini 3成为AI Overviews的默认模型，已在全球范围内推出。同时Gemini扩展至65+种语言支持，新增"自动浏览"功能，可独立完成多步骤操作。Gemini Live双向对话模式也新增麦克风静音功能。</p>
-        <div class="news-source">via Blockchain Council · <a href="https://www.blockchain-council.org/ai/google-search-gemini-3-default-ai-model/">原文链接</a></div>
+        <div class="card-sources">via Blockchain Council · <a href="https://www.blockchain-council.org/ai/google-search-gemini-3-default-ai-model/">原文链接</a></div>
       </article>
     </section>
     
-    <section>
+    <section class="section">
       <h2 class="section-title">企业动态</h2>
       
-      <article class="news-item">
-        <h3><span class="news-tag">资本支出</span>Google计划2026年AI投资翻倍至1750-1850亿美元</h3>
+      <article class="card">
+        <h3><span class="tag">资本支出</span>Google计划2026年AI投资翻倍至1750-1850亿美元</h3>
         <p>Alphabet计划到2026年将资本支出几乎翻倍，达到1750亿至1850亿美元，主要用于扩展AI计算能力。数据显示，Google在2025年底已实现AI服务成本降低78%，同时提供博士级别的推理能力。Gemini 3的2026路线图指向"代理自主性"，将支持多步骤工作流并与物理世界通过Project Astra集成。</p>
-        <div class="news-source">via India TV News · <a href="https://www.indiatvnews.com/technology/news/how-google-rapid-ai-growth-helped-gemini-pull-ahead-of-openai-2026-02-05-1029077">原文链接</a></div>
+        <div class="card-sources">via India TV News · <a href="https://www.indiatvnews.com/technology/news/how-google-rapid-ai-growth-helped-gemini-pull-ahead-of-openai-2026-02-05-1029077">原文链接</a></div>
       </article>
       
-      <article class="news-item">
-        <h3><span class="news-tag">科研合作</span>OpenAI与Ginkgo Bioworks建立闭环自主实验室</h3>
+      <article class="card">
+        <h3><span class="tag">科研合作</span>OpenAI与Ginkgo Bioworks建立闭环自主实验室</h3>
         <p>OpenAI与Ginkgo Bioworks合作，将GPT-5连接至自主实验室，形成闭环系统：模型设计生物实验→实验室执行→结果反馈指导下一轮。经过6轮循环，探索了3.6万+反应组合，最终将蛋白质生产成本降低40%。这标志着AI在科学研究自动化领域的重大突破。</p>
-        <div class="news-source">X: @OpenAI @WesRoth · via X · <a href="https://x.com/OpenAI/status/2019488071134347605">X链接</a></div>
+        <div class="card-sources">X: @OpenAI @WesRoth · via X · <a href="https://x.com/OpenAI/status/2019488071134347605">X链接</a></div>
       </article>
     </section>
     
-    <section>
+    <section class="section">
       <h2 class="section-title">政策 / 监管</h2>
       
-      <article class="news-item">
-        <h3><span class="news-tag">国际会议</span>印度将于2月16-20日举办AI Impact Summit</h3>
+      <article class="card">
+        <h3><span class="tag">国际会议</span>印度将于2月16-20日举办AI Impact Summit</h3>
         <p>印度新德里将举办AI Impact Summit，主题为"推动负责任、包容和可持续的AI创新"。会议将在全球AI治理讨论框架下举行，但评论指出AI系统发展速度仍明显快于监管框架的制定进度。</p>
-        <div class="news-source">via Down To Earth · <a href="https://www.downtoearth.org.in/governance/from-global-governance-talks-to-bot-only-platforms-artificial-intelligence-races-ahead-of-regulation">原文链接</a></div>
+        <div class="card-sources">via Down To Earth · <a href="https://www.downtoearth.org.in/governance/from-global-governance-talks-to-bot-only-platforms-artificial-intelligence-races-ahead-of-regulation">原文链接</a></div>
       </article>
       
-      <article class="news-item">
-        <h3><span class="news-tag">金融监管</span>美国财政部长：AI成为金融稳定新测试</h3>
+      <article class="card">
+        <h3><span class="tag">金融监管</span>美国财政部长：AI成为金融稳定新测试</h3>
         <p>美国财政部长Scott Bessent向国会表示，AI可以强化市场，但也带来需要密切监控的风险。这标志着AI风险已被纳入最高层级的金融稳定考量框架。</p>
-        <div class="news-source">via IANS Live · <a href="https://ianslive.in/ai-emerges-as-new-financial-stability-test-for-us-bessent--20260205100304">原文链接</a></div>
+        <div class="card-sources">via IANS Live · <a href="https://ianslive.in/ai-emerges-as-new-financial-stability-test-for-us-bessent--20260205100304">原文链接</a></div>
       </article>
     </section>
     
-    <section>
+    <section class="section">
       <h2 class="section-title">融合洞察</h2>
       
-      <article class="news-item">
+      <article class="card">
         <h3>AI竞赛进入"同日对决"时代：模型军备竞赛白热化</h3>
         <p>本周最显著的信号是Anthropic与OpenAI选择同日发布旗舰产品，这绝非巧合，而是AI军备竞赛白热化的明证：</p>
         <p><strong>1. 发布节奏加速：</strong>从过去错开发布期到如今正面交锋，头部玩家之间的竞争已从技术比拼升级为时间和注意力的争夺。对开发者而言，这意味着更强大的工具选择；对企业而言，则是供应商议价能力的提升。</p>
         <p><strong>2. 代理工作流成新战场：</strong>Claude Opus 4.6强调"sustained agentic tasks"，OpenAI Frontier直接定位为AI代理平台。从"聊天机器人"到"数字员工"的转变正在加速，这将深刻改变企业软件的采购逻辑。</p>
         <p><strong>3. 成本下降曲线陡峭：</strong>Gemini服务成本降低78%是行业性趋势的一个缩影。当模型效率提升速度超过硬件成本增长，AI的普及速度将远超预期。</p>
         <p><strong>4. 科学研究的自动化前夜：</strong>Ginkgo合作案例展示了AI在封闭循环中自主设计-执行-学习的能力。这可能比消费级AI更早产生实质性经济价值。</p>
-        <div class="news-source">基于本周检索素材综合分析</div>
+        <div class="card-sources">基于本周检索素材综合分析</div>
       </article>
     </section>
-    
-    <footer>
-      <p>2026年2月6日</p>
-      <p>AI Daily Report | AI日报融合版</p>
-      <p><a href="https://github.com/elliclee/ai-daily-report">GitHub</a></p>
-    </footer>
-  </div>
+
+        <footer class="footer">
+            <p>由 <strong>Clawy</strong> 生成于 2026-02-14 03:34 UTC</p>
+            <p style="margin-top: 8px;">OpenClaw × Brave Search × X (bird)</p>
+            <p style="margin-top: 12px;">
+                <a href="./archive/">📁 历史归档</a>
+            </p>
+            <div style="margin-top: 24px;">
+<div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
+<a href="./archive/2026-02-14.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-14</a>
+<a href="./archive/2026-02-13.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-13</a>
+<a href="./archive/2026-02-12.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-12</a>
+<a href="./archive/2026-02-11.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-11</a>
+<a href="./archive/2026-02-10.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-10</a>
+<a href="./archive/2026-02-09.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-09</a>
+<a href="./archive/2026-02-08.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-08</a>
+<a href="./archive/2026-02-07.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-07</a>
+<span style="padding: 4px 10px; background: var(--foreground); color: var(--background); border-radius: 6px; font-size: 12px; font-weight: 500;">2026-02-06</span>
+<a href="./archive/2026-02-05.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-05</a>
+</div>
+</div>
+        </footer>
+    </div>
 </body>
+
 </html>

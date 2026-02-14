@@ -1,210 +1,466 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Daily Report | AI日报融合版 - 2026年2月5日</title>
-  <meta name="description" content="汇聚全球人工智能领域最新动态、技术突破与行业洞察">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --background: #f7f5f0;
-      --foreground: #1f1d1a;
-      --card: #faf9f6;
-      --muted-foreground: #6b6560;
-      --border: #e5e0d8;
-      --accent: #e85d04;
-    }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background-color: var(--background);
-      color: var(--foreground);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-    .container { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
-    header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
-    .logo { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 600; color: var(--foreground); text-decoration: none; }
-    .date { font-size: 14px; color: var(--muted-foreground); }
-    .page-title { margin-bottom: 48px; }
-    .page-title h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 32px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 8px; }
-    .page-title p { font-size: 14px; color: var(--muted-foreground); }
-    section { margin-bottom: 48px; }
-    .section-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted-foreground); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
-    .news-item { padding: 20px 0; border-bottom: 1px solid var(--border); }
-    .news-item:last-child { border-bottom: none; }
-    .news-item h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 500; line-height: 1.4; margin-bottom: 12px; }
-    .news-tag { display: inline-block; background: rgba(232, 93, 4, 0.1); color: var(--accent); font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 20px; margin-right: 8px; vertical-align: middle; }
-    .news-item p { font-size: 14px; line-height: 1.7; color: var(--muted-foreground); margin-bottom: 12px; }
-    .news-source { font-size: 12px; color: #9a9590; }
-    .news-source a { color: #2563eb; text-decoration: none; }
-    .news-source a:hover { text-decoration: underline; }
-    .market-table { width: 100%; border-collapse: collapse; font-size: 14px; background: var(--card); border-radius: 8px; overflow: hidden; }
-    .market-table th, .market-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); }
-    .market-table th { font-weight: 500; color: var(--muted-foreground); font-size: 12px; text-transform: uppercase; letter-spacing: 0.03em; }
-    .market-table tr:last-child td { border-bottom: none; }
-    .market-table td:last-child { text-align: right; font-weight: 500; }
-    .market-note { font-size: 12px; color: #9a9590; margin-top: 16px; line-height: 1.6; }
-    .archive { padding-top: 32px; border-top: 1px solid var(--border); margin-top: 48px; }
-    .archive-title { font-size: 14px; font-weight: 500; margin-bottom: 16px; }
-    .archive-links { display: flex; flex-wrap: wrap; gap: 8px 24px; }
-    .archive-links a { font-size: 14px; color: #2563eb; text-decoration: none; }
-    .archive-links a:hover { text-decoration: underline; }
-    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: #9a9590; }
-    footer p { margin-bottom: 4px; }
-    footer a { color: #2563eb; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    @media (max-width: 640px) {
-      .container { padding: 32px 16px 48px; }
-      .page-title h1 { font-size: 26px; }
-      .news-item h3 { font-size: 16px; }
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AI Daily Report | 2026年2月5日</title>
+    <meta content="汇聚全球人工智能领域最新动态、技术突破与行业洞察" name="description" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --background: #f5f4ef;
+            --foreground: #1a1714;
+            --card: #ffffff;
+            --muted: #8b8680;
+            --muted-foreground: #6b6560;
+            --border: #e8e4dc;
+            --accent: #c9a96e;
+            --accent-soft: #fdf8f0;
+            --green: #4a8b4a;
+            --green-bg: #f0f7f0;
+            --orange: #c77836;
+            --orange-bg: #fdf2e9;
+            --blue: #4a6b8b;
+            --blue-bg: #eef3f8;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background-color: var(--background);
+            color: var(--foreground);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+        }
+
+        /* ── Header: large centered title like 02-12 ── */
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--foreground);
+            letter-spacing: -0.03em;
+            margin-bottom: 8px;
+        }
+
+        .date {
+            font-size: 0.95rem;
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        /* ── Sections ── */
+        .section {
+            margin-bottom: 44px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--foreground);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* ── Cards: clean, minimal ── */
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 22px 24px;
+            margin-bottom: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+        }
+
+        .card-headline {
+            display: flex;
+            gap: 0;
+            margin-bottom: 10px;
+        }
+
+        .card-badge {
+            display: none;
+            /* remove the orange accent bar */
+        }
+
+        .card-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1.45;
+            color: var(--foreground);
+        }
+
+        .card-meta {
+            font-size: 12px;
+            color: var(--muted);
+            margin: 6px 0 12px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .card-content {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #4a4743;
+        }
+
+        .card-content strong {
+            color: var(--foreground);
+            font-weight: 600;
+        }
+
+        .card-sources {
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .card-sources a {
+            color: var(--muted-foreground);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .card-sources a:hover {
+            color: var(--foreground);
+            border-bottom-color: var(--foreground);
+        }
+
+        /* ── Highlight boxes (self-check / summary) ── */
+        .highlight-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 14px;
+        }
+
+        .highlight-title {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .highlight-list {
+            list-style: none;
+            font-size: 14px;
+        }
+
+        .highlight-list li {
+            padding: 7px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .highlight-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* ── Tags ── */
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 2px 8px;
+            background: var(--background);
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--muted-foreground);
+        }
+
+        .tag-hot {
+            background: var(--orange-bg);
+            color: var(--orange);
+        }
+
+        .tag-new {
+            background: var(--green-bg);
+            color: var(--green);
+        }
+
+        .tag-official {
+            background: var(--blue-bg);
+            color: var(--blue);
+        }
+
+        /* ── X (Twitter) highlights ── */
+        .x-highlight {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-top: 14px;
+            border: 1px solid var(--border);
+        }
+
+        .x-highlight h4 {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--foreground);
+        }
+
+        .x-item {
+            display: flex;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 13px;
+        }
+
+        .x-item:last-child {
+            border-bottom: none;
+        }
+
+        .x-avatar {
+            width: 32px;
+            height: 32px;
+            background: var(--background);
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .x-content {
+            flex: 1;
+        }
+
+        .x-author {
+            font-weight: 600;
+            color: var(--foreground);
+        }
+
+        .x-handle {
+            color: var(--muted);
+        }
+
+        .x-text {
+            margin-top: 4px;
+            line-height: 1.5;
+        }
+
+        .x-engagement {
+            display: flex;
+            gap: 16px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        /* ── Footer ── */
+        .footer {
+            text-align: center;
+            padding-top: 48px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: var(--foreground);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .footer a:hover {
+            border-bottom-color: var(--foreground);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            .container {
+                padding: 32px 16px 48px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .card {
+                padding: 18px 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="logo">AI Daily Report</a>
-      <span class="date">2026年2月5日</span>
-    </header>
-    
-    <div class="page-title">
-      <h1>AI早报融合版</h1>
-      <p>X热搜 · 全网新闻 · 深度洞察</p>
-    </div>
-    
-    <!-- 头条新闻 -->
-    <section>
+    <div class="container">
+        <header>
+            <h1>AI Daily Report</h1>
+            <div class="date">2026年2月5日</div>
+        </header>
+
+        <!-- 头条新闻 -->
+    <section class="section">
       <h2 class="section-title">头条新闻</h2>
       
-      <article class="news-item">
-        <h3><span class="news-tag">X热议</span>Anthropic Claude Cowork引发"SaaS末日"恐慌，全球软件股市值蒸发约3000亿美元</h3>
+      <article class="card">
+        <h3><span class="tag">X热议</span>Anthropic Claude Cowork引发"SaaS末日"恐慌，全球软件股市值蒸发约3000亿美元</h3>
         <p>Anthropic发布Claude Cowork插件系统，可自动化法律审查、销售营销、财务工作流等核心企业任务。这直接冲击了传统SaaS商业模式，引发全球软件股抛售潮——伦敦证交所集团股价两日暴跌约20%，印度IT股集体下挫（Infosys跌7.3%、TCS跌6%），多家投行将此事件标记为"SaaSpocalypse"（SaaS末日）。与聊天机器人不同，Claude Cowork能在企业系统内执行端到端的完整专业工作流。</p>
-        <p class="news-source">via <a href="https://x.com/StratyQ/status/2019307701151404220">X @StratyQ</a>、<a href="https://x.com/TheBean_media/status/2019316788253847821">X @TheBean_media</a>、<a href="https://x.com/nucleusnewss/status/2019304809007137151">X @nucleusnewss</a>、<a href="https://x.com/grok/status/2019307478941405646">X @grok</a></p>
+        <p class="card-sources">via <a href="https://x.com/StratyQ/status/2019307701151404220">X @StratyQ</a>、<a href="https://x.com/TheBean_media/status/2019316788253847821">X @TheBean_media</a>、<a href="https://x.com/nucleusnewss/status/2019304809007137151">X @nucleusnewss</a>、<a href="https://x.com/grok/status/2019307478941405646">X @grok</a></p>
       </article>
       
-      <article class="news-item">
-        <h3><span class="news-tag">X热议</span>Anthropic与OpenAI超级碗广告大战升级</h3>
+      <article class="card">
+        <h3><span class="tag">X热议</span>Anthropic与OpenAI超级碗广告大战升级</h3>
         <p>Anthropic在超级碗期间投放广告，讽刺OpenAI和ChatGPT会在对话中插入侵入式广告，同时宣传Claude将保持无广告体验。Sam Altman回应称广告很有趣，但指责其"不诚实"——OpenAI最重要的广告原则正是不会这样做。Altman强调OpenAI致力于让AI免费惠及更多人，ChatGPT的免费用户已超过Claude的总用户数；同时批评Anthropic针对富人提供昂贵产品，并试图控制AI使用（如封锁竞争对手）。OpenAI的广告则主打Codex编程助手，已有50万次下载。</p>
-        <p class="news-source">via <a href="https://x.com/grok/status/2019319699364823237">X @grok</a>、<a href="https://x.com/sama">X @sama</a>、<a href="https://x.com/devua_official/status/2019319696122909031">X @devua_official</a></p>
+        <p class="card-sources">via <a href="https://x.com/grok/status/2019319699364823237">X @grok</a>、<a href="https://x.com/sama">X @sama</a>、<a href="https://x.com/devua_official/status/2019319696122909031">X @devua_official</a></p>
       </article>
       
-      <article class="news-item">
-        <h3><span class="news-tag">X热议</span>NVIDIA即将完成对OpenAI 200亿美元投资</h3>
+      <article class="card">
+        <h3><span class="tag">X热议</span>NVIDIA即将完成对OpenAI 200亿美元投资</h3>
         <p>NVIDIA接近完成对OpenAI的200亿美元投资，这将是NVIDIA史上最大单笔投资，但远低于此前传闻的1000亿美元。黄仁勋澄清称，2025年9月宣布的"最高1000亿美元滚动投资"并非具有约束力的承诺。OpenAI本轮融资目标超过1000亿美元，估值已达8300亿美元，Amazon和SoftBank也参与投资。这笔交易将深化芯片巨头与AI领军者的绑定关系。</p>
-        <p class="news-source">via <a href="https://x.com/SGUOIS/status/2019275759303438822">X @SGUOIS</a>、<a href="https://x.com/SwissCognitive/status/2019279868198858961">X @SwissCognitive</a>、<a href="https://x.com/TheFinancialD/status/2019259761087152262">X @TheFinancialD</a>、<a href="https://x.com/grok/status/2019184854005321973">X @grok</a></p>
+        <p class="card-sources">via <a href="https://x.com/SGUOIS/status/2019275759303438822">X @SGUOIS</a>、<a href="https://x.com/SwissCognitive/status/2019279868198858961">X @SwissCognitive</a>、<a href="https://x.com/TheFinancialD/status/2019259761087152262">X @TheFinancialD</a>、<a href="https://x.com/grok/status/2019184854005321973">X @grok</a></p>
       </article>
       
-      <article class="news-item">
+      <article class="card">
         <h3>AI驱动的裁员潮蔓延，Pinterest和Dow明确归因于AI转型</h3>
         <p>越来越多的公司将裁员归因于AI转型。Pinterest和Dow上个月宣布裁员时，明确提到部分原因是转向人工智能。这一趋势标志着企业正加大对AI的投资，同时精简人力资源，AI替代效应从理论走向现实。CBS News报道指出，AI正在从"辅助工具"转变为"人力替代者"。</p>
-        <p class="news-source">via <a href="https://www.cbsnews.com/news/ai-layoffs-2026-artificial-intelligence-amazon-pinterest/">CBS News</a></p>
+        <p class="card-sources">via <a href="https://www.cbsnews.com/news/ai-layoffs-2026-artificial-intelligence-amazon-pinterest/">CBS News</a></p>
       </article>
     </section>
     
     <!-- 新模型与工具 -->
-    <section>
+    <section class="section">
       <h2 class="section-title">新模型与工具</h2>
       
-      <article class="news-item">
-        <h3><span class="news-tag">X热议</span>Xcode深度集成OpenAI与Anthropic，推出智能编程代理功能</h3>
+      <article class="card">
+        <h3><span class="tag">X热议</span>Xcode深度集成OpenAI与Anthropic，推出智能编程代理功能</h3>
         <p>Apple的Xcode开发环境正在向智能编程方向迈进，深度集成Anthropic的Claude Agent和OpenAI的Codex，为开发者提供 agentic coding 能力。这标志着主流开发工具正全面拥抱AI辅助编程，开发者可直接在IDE中调用多模型能力。</p>
-        <p class="news-source">via <a href="https://x.com/TechoFlow/status/2019320125355122710">X @TechoFlow</a></p>
+        <p class="card-sources">via <a href="https://x.com/TechoFlow/status/2019320125355122710">X @TechoFlow</a></p>
       </article>
       
-      <article class="news-item">
-        <h3><span class="news-tag">X热议</span>2026年2月顶级实时对话AI模型榜单发布</h3>
+      <article class="card">
+        <h3><span class="tag">X热议</span>2026年2月顶级实时对话AI模型榜单发布</h3>
         <p>针对低延迟、自然对话和客户支持场景，当前排名前十的实时对话AI模型包括：Google Gemini 3 Flash/Pro、xAI Grok 4.1、OpenAI GPT-5.2/5.2-mini、Anthropic Claude 4.5 Haiku/Sonnet、Meta Llama 4 Maverick、DeepSeek V3.2（优化推理）、阿里巴巴Qwen 3系列、Mistral Ministral/Codestral变体、Cohere Command R+，以及Groq托管的Llama/Qwen快速版本。</p>
-        <p class="news-source">via <a href="https://x.com/Leapofcode/status/2019316801210052804">X @Leapofcode</a></p>
+        <p class="card-sources">via <a href="https://x.com/Leapofcode/status/2019316801210052804">X @Leapofcode</a></p>
       </article>
       
-      <article class="news-item">
+      <article class="card">
         <h3>Perplexity发布开源基准测试DRACO，评估AI深度研究代理</h3>
         <p>Perplexity推出名为DRACO的开源基准测试框架，专门用于测试AI深度研究代理的能力。这一举措有望推动AI研究代理的标准化评估，为行业提供更可靠的性能对比工具。</p>
-        <p class="news-source">via <a href="https://x.com/News9Tweets/status/2019320148721823858">X @News9Tweets</a></p>
+        <p class="card-sources">via <a href="https://x.com/News9Tweets/status/2019320148721823858">X @News9Tweets</a></p>
       </article>
       
-      <article class="news-item">
-        <h3><span class="news-tag">X热议</span>Google Gemini月活突破7.5亿，每分钟处理超100亿tokens</h3>
+      <article class="card">
+        <h3><span class="tag">X热议</span>Google Gemini月活突破7.5亿，每分钟处理超100亿tokens</h3>
         <p>Google Gemini月活跃用户已达7.5亿，每分钟处理超过100亿tokens。Alphabet年度营收首次突破4000亿美元，搜索业务同比增长17%，YouTube营收超600亿美元，Cloud业务营收超700亿美元且同比增长48%。这表明Gemini已成为Google生态系统的核心增长引擎。</p>
-        <p class="news-source">via <a href="https://x.com/trader2396/status/2019320197136720025">X @trader2396</a></p>
+        <p class="card-sources">via <a href="https://x.com/trader2396/status/2019320197136720025">X @trader2396</a></p>
       </article>
     </section>
     
     <!-- 企业动态 -->
-    <section>
+    <section class="section">
       <h2 class="section-title">企业动态</h2>
       
-      <article class="news-item">
+      <article class="card">
         <h3>印度IT公司受Anthropic工具冲击，Nifty IT指数下跌6%</h3>
         <p>Anthropic的Claude Cowork已对传统印度IT外包公司造成冲击，Nifty IT指数下跌5.9-6.3%，Infosys跌7.3%，TCS跌5.8-7%。分析师预测Google Gemini和OpenAI的类似产品将带来更大规模的市场重塑。不过，摩根大通和Cognizant等专家认为市场反应过度，AI可能创造新的AI集成工作岗位。</p>
-        <p class="news-source">via <a href="https://x.com/grok/status/2019307478941405646">X @grok</a>、<a href="https://x.com/SrinivasanSS52/status/2019315709738905915">X @SrinivasanSS52</a></p>
+        <p class="card-sources">via <a href="https://x.com/grok/status/2019307478941405646">X @grok</a>、<a href="https://x.com/SrinivasanSS52/status/2019315709738905915">X @SrinivasanSS52</a></p>
       </article>
       
-      <article class="news-item">
+      <article class="card">
         <h3>Publicis集团2026年将投资9亿欧元收购AI技术和数据资产</h3>
         <p>全球最大广告集团Publicis宣布，计划在2026年投入约9亿欧元（约10.6亿美元）用于收购AI驱动的技术和数据资产，显示出广告行业对AI能力的战略重视。这也是广告业应对AI颠覆的主动布局。</p>
-        <p class="news-source">via <a href="https://www.reuters.com/business/media-telecom/ai-concerns-pummel-european-software-stocks-2026-02-03/">Reuters</a></p>
+        <p class="card-sources">via <a href="https://www.reuters.com/business/media-telecom/ai-concerns-pummel-european-software-stocks-2026-02-03/">Reuters</a></p>
       </article>
       
-      <article class="news-item">
+      <article class="card">
         <h3>Alphabet宣布2026年资本支出1800亿美元，打破Big Tech纪录</h3>
         <p>Alphabet宣布2026年资本支出将达到1800亿美元，远超分析师预期的1195亿美元。财报电话会上，Google展示了Gemini 3系列模型的强劲增长势头。尽管业绩超预期，股价 initially 下跌6%后收复失地，显示出市场对AI投资的复杂情绪。</p>
-        <p class="news-source">via <a href="https://x.com/0xCaptainLevi/status/2019296603660775542">X @0xCaptainLevi</a>、<a href="https://x.com/thunhoon1/status/2019321948556439747">X @thunhoon1</a></p>
+        <p class="card-sources">via <a href="https://x.com/0xCaptainLevi/status/2019296603660775542">X @0xCaptainLevi</a>、<a href="https://x.com/thunhoon1/status/2019321948556439747">X @thunhoon1</a></p>
       </article>
     </section>
     
     <!-- 政策监管 -->
-    <section>
+    <section class="section">
       <h2 class="section-title">政策监管</h2>
       
-      <article class="news-item">
+      <article class="card">
         <h3>英国发布年度AI安全报告：深度伪造和AI伴侣成主要关切</h3>
         <p>英国政府发布的最新AI安全年度报告强调，深度伪造技术正在快速传播，AI伴侣应用日益普及，引发社会担忧。报告同时审视了AI模型能力的快速增长、网络攻击风险和就业市场扰乱等问题。年度审查凸显了AI能力提升带来的多方面安全挑战。</p>
-        <p class="news-source">via <a href="https://www.theguardian.com/technology/2026/feb/03/deepfakes-ai-companions-artificial-intelligence-safety-report">The Guardian</a></p>
+        <p class="card-sources">via <a href="https://www.theguardian.com/technology/2026/feb/03/deepfakes-ai-companions-artificial-intelligence-safety-report">The Guardian</a></p>
       </article>
       
-      <article class="news-item">
+      <article class="card">
         <h3>联合国秘书长赞扬印度在AI全球治理中的领导作用</h3>
         <p>联合国秘书长安东尼奥·古特雷斯赞扬印度在应对人工智能挑战方面发挥的领导作用。印度AI影响力峰会将于2026年2月16日至20日在新德里举行，届时将汇集全球AI政策制定者和专家。这是发展中国家在AI治理领域话语权提升的重要信号。</p>
-        <p class="news-source">via <a href="https://x.com/DDIndialive/status/2019320462300598333">X @DDIndialive</a></p>
+        <p class="card-sources">via <a href="https://x.com/DDIndialive/status/2019320462300598333">X @DDIndialive</a></p>
       </article>
     </section>
     
     <!-- 融合洞察 -->
-    <section>
+    <section class="section">
       <h2 class="section-title">融合洞察</h2>
       
-      <article class="news-item">
-        <h3><span class="news-tag">X热议</span>"这不是抛售，是轮动"——AI时代的资本重新配置</h3>
+      <article class="card">
+        <h3><span class="tag">X热议</span>"这不是抛售，是轮动"——AI时代的资本重新配置</h3>
         <p>X用户@0xCaptainLevi分析指出，近两日约1万亿美元从软件和服务股中蒸发，但这不是全面抛售，而是资本轮动。资金正从AI威胁的业务流向AI无法触及的领域——制药、能源、国防、工业。纳斯达克跌1.5%、标普跌0.5%，但道指接近历史新高；欧洲指数创历史新高。Palantir跌11%，AMD跌17%（尽管CEO称需求"火热"）。与此同时，Eli Lilly因业绩超预期飙升10%，市值重回1万亿美元以上。"AI提升所有船只"的投资论已死，投资者正在区分"被AI增强"和"被AI颠覆"的企业。</p>
-        <p class="news-source">via <a href="https://x.com/0xCaptainLevi/status/2019296603660775542">X @0xCaptainLevi</a></p>
+        <p class="card-sources">via <a href="https://x.com/0xCaptainLevi/status/2019296603660775542">X @0xCaptainLevi</a></p>
       </article>
       
-      <article class="news-item">
+      <article class="card">
         <h3>2026年：AI从炒作走向实用主义</h3>
         <p>TechCrunch分析指出，2026年将是AI从炒作期进入务实应用的关键年份。世界模型（World Models）成为新热点，LeCun离开Meta创立自己的世界模型实验室，寻求50亿美元估值。Google DeepMind持续推进Genie项目，显示出世界模型可能成为通往AGI的新路径。AI正在从"聊天工具"进化为"真正的同事"。</p>
-        <p class="news-source">via <a href="https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/">TechCrunch</a></p>
+        <p class="card-sources">via <a href="https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/">TechCrunch</a></p>
       </article>
       
-      <article class="news-item">
+      <article class="card">
         <h3>西方科技公司悄然采用中国开源模型，差距正在缩小</h3>
         <p>MIT Technology Review预测，2026年将看到更多硅谷应用基于中国开源模型构建。中国AI发布与西方前沿模型的差距正从数月缩短至数周，有时甚至更短。DeepSeek、阿里巴巴、Moonshot等中国公司已发布具有竞争力的大语言模型，美国公司越来越多地采用中国AI模型。</p>
-        <p class="news-source">via <a href="https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/">MIT Technology Review</a></p>
+        <p class="card-sources">via <a href="https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/">MIT Technology Review</a></p>
       </article>
       
-      <article class="news-item">
-        <h3><span class="news-tag">X热议</span>开发者对高端AI订阅的选择困境</h3>
+      <article class="card">
+        <h3><span class="tag">X热议</span>开发者对高端AI订阅的选择困境</h3>
         <p>X上开发者热议月付300美元的高端AI订阅选择：OpenAI"氛围不对"、Cursor可使用任意模型但限额消耗过快、Gemini还不够成熟、Anthropic Claude Code每日使用体验良好但Artifacts功能出色，成为最有希望的选择。这反映了高端AI产品竞争进入关键阶段，用户体验和性价比成为决胜因素。</p>
-        <p class="news-source">via <a href="https://x.com/jamesvanderhaak/status/2019316419058671883">X @jamesvanderhaak</a></p>
+        <p class="card-sources">via <a href="https://x.com/jamesvanderhaak/status/2019316419058671883">X @jamesvanderhaak</a></p>
       </article>
     </section>
     
     <!-- 市场数据速览 -->
-    <section>
+    <section class="section">
       <h2 class="section-title">市场数据速览</h2>
       
       <table class="market-table">
@@ -250,18 +506,31 @@
     </section>
     
     <!-- 历史归档 -->
-    <div class="archive">
-      <h3 class="archive-title">往日归档</h3>
-      <div class="archive-links">
-        <a href="./2026-02-05.html" style="color: var(--foreground); font-weight: 500;">2026.02.05</a>
-      </div>
-    </div>
     
-    <footer>
-      <p>2026.02.05</p>
-      <p>AI Daily Report | AI日报融合版</p>
-      <p><a href="https://github.com/elliclee/ai-daily-report">GitHub</a></p>
-    </footer>
-  </div>
+    </div>
+
+        <footer class="footer">
+            <p>由 <strong>Clawy</strong> 生成于 2026-02-14 03:34 UTC</p>
+            <p style="margin-top: 8px;">OpenClaw × Brave Search × X (bird)</p>
+            <p style="margin-top: 12px;">
+                <a href="./archive/">📁 历史归档</a>
+            </p>
+            <div style="margin-top: 24px;">
+<div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
+<a href="./archive/2026-02-14.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-14</a>
+<a href="./archive/2026-02-13.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-13</a>
+<a href="./archive/2026-02-12.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-12</a>
+<a href="./archive/2026-02-11.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-11</a>
+<a href="./archive/2026-02-10.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-10</a>
+<a href="./archive/2026-02-09.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-09</a>
+<a href="./archive/2026-02-08.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-08</a>
+<a href="./archive/2026-02-07.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-07</a>
+<a href="./archive/2026-02-06.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-06</a>
+<span style="padding: 4px 10px; background: var(--foreground); color: var(--background); border-radius: 6px; font-size: 12px; font-weight: 500;">2026-02-05</span>
+</div>
+</div>
+        </footer>
+    </div>
 </body>
+
 </html>

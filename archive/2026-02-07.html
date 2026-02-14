@@ -1,179 +1,456 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Daily Report | AI日报融合版 - 2026-02-07</title>
-  <meta name="description" content="汇聚全球人工智能领域最新动态、技术突破与行业洞察">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --background: #f7f5f0;
-      --foreground: #1f1d1a;
-      --card: #faf9f6;
-      --muted-foreground: #6b6560;
-      --border: #e5e0d8;
-      --accent: #e85d04;
-    }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      background-color: var(--background);
-      color: var(--foreground);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-    .container { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
-    header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
-    .logo { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 600; color: var(--foreground); text-decoration: none; }
-    .date { font-size: 14px; color: var(--muted-foreground); }
-    .page-title { margin-bottom: 48px; }
-    .page-title h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 32px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 8px; }
-    .page-title p { font-size: 14px; color: var(--muted-foreground); }
-    section { margin-bottom: 48px; }
-    .section-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted-foreground); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
-    .news-item { padding: 20px 0; border-bottom: 1px solid var(--border); }
-    .news-item:last-child { border-bottom: none; }
-    .news-item h3 { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 17px; font-weight: 500; line-height: 1.5; margin-bottom: 12px; }
-    .news-tag { display: inline-block; background: rgba(232, 93, 4, 0.1); color: var(--accent); font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 20px; margin-right: 8px; vertical-align: middle; }
-    .news-item p { font-size: 14px; line-height: 1.7; color: var(--muted-foreground); margin-bottom: 12px; }
-    .news-source { font-size: 12px; color: #9a9590; }
-    .news-source a { color: #2563eb; text-decoration: none; }
-    .news-source a:hover { text-decoration: underline; }
-    .archive { padding-top: 32px; border-top: 1px solid var(--border); margin-top: 48px; }
-    .archive-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-    .archive-list a { font-size: 13px; color: #2563eb; text-decoration: none; padding: 4px 12px; background: rgba(37, 99, 235, 0.05); border-radius: 4px; }
-    .archive-list a:hover { background: rgba(37, 99, 235, 0.1); }
-    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: #9a9590; }
-    footer p { margin-bottom: 4px; }
-    footer a { color: #2563eb; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    @media (max-width: 640px) {
-      .container { padding: 32px 16px 48px; }
-      .page-title h1 { font-size: 26px; }
-      .news-item h3 { font-size: 16px; }
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AI Daily Report | 2026年2月7日</title>
+    <meta content="汇聚全球人工智能领域最新动态、技术突破与行业洞察" name="description" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --background: #f5f4ef;
+            --foreground: #1a1714;
+            --card: #ffffff;
+            --muted: #8b8680;
+            --muted-foreground: #6b6560;
+            --border: #e8e4dc;
+            --accent: #c9a96e;
+            --accent-soft: #fdf8f0;
+            --green: #4a8b4a;
+            --green-bg: #f0f7f0;
+            --orange: #c77836;
+            --orange-bg: #fdf2e9;
+            --blue: #4a6b8b;
+            --blue-bg: #eef3f8;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background-color: var(--background);
+            color: var(--foreground);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+        }
+
+        /* ── Header: large centered title like 02-12 ── */
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--foreground);
+            letter-spacing: -0.03em;
+            margin-bottom: 8px;
+        }
+
+        .date {
+            font-size: 0.95rem;
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        /* ── Sections ── */
+        .section {
+            margin-bottom: 44px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--foreground);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* ── Cards: clean, minimal ── */
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 22px 24px;
+            margin-bottom: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+        }
+
+        .card-headline {
+            display: flex;
+            gap: 0;
+            margin-bottom: 10px;
+        }
+
+        .card-badge {
+            display: none;
+            /* remove the orange accent bar */
+        }
+
+        .card-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1.45;
+            color: var(--foreground);
+        }
+
+        .card-meta {
+            font-size: 12px;
+            color: var(--muted);
+            margin: 6px 0 12px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .card-content {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #4a4743;
+        }
+
+        .card-content strong {
+            color: var(--foreground);
+            font-weight: 600;
+        }
+
+        .card-sources {
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .card-sources a {
+            color: var(--muted-foreground);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .card-sources a:hover {
+            color: var(--foreground);
+            border-bottom-color: var(--foreground);
+        }
+
+        /* ── Highlight boxes (self-check / summary) ── */
+        .highlight-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 14px;
+        }
+
+        .highlight-title {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .highlight-list {
+            list-style: none;
+            font-size: 14px;
+        }
+
+        .highlight-list li {
+            padding: 7px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .highlight-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* ── Tags ── */
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 2px 8px;
+            background: var(--background);
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--muted-foreground);
+        }
+
+        .tag-hot {
+            background: var(--orange-bg);
+            color: var(--orange);
+        }
+
+        .tag-new {
+            background: var(--green-bg);
+            color: var(--green);
+        }
+
+        .tag-official {
+            background: var(--blue-bg);
+            color: var(--blue);
+        }
+
+        /* ── X (Twitter) highlights ── */
+        .x-highlight {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-top: 14px;
+            border: 1px solid var(--border);
+        }
+
+        .x-highlight h4 {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--foreground);
+        }
+
+        .x-item {
+            display: flex;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 13px;
+        }
+
+        .x-item:last-child {
+            border-bottom: none;
+        }
+
+        .x-avatar {
+            width: 32px;
+            height: 32px;
+            background: var(--background);
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .x-content {
+            flex: 1;
+        }
+
+        .x-author {
+            font-weight: 600;
+            color: var(--foreground);
+        }
+
+        .x-handle {
+            color: var(--muted);
+        }
+
+        .x-text {
+            margin-top: 4px;
+            line-height: 1.5;
+        }
+
+        .x-engagement {
+            display: flex;
+            gap: 16px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        /* ── Footer ── */
+        .footer {
+            text-align: center;
+            padding-top: 48px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: var(--foreground);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .footer a:hover {
+            border-bottom-color: var(--foreground);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            .container {
+                padding: 32px 16px 48px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .card {
+                padding: 18px 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <a href="/ai-daily-report/" class="logo">AI Daily Report</a>
-      <span class="date">2026年2月7日</span>
-    </header>
-    <div class="page-title">
-      <h1>AI早报融合版</h1>
-      <p>X热搜 · 全网新闻 · 深度洞察</p>
-    </div>
-    
-    <section>
+    <div class="container">
+        <header>
+            <h1>AI Daily Report</h1>
+            <div class="date">2026年2月7日</div>
+        </header>
+
+        <section class="section">
       <h2 class="section-title">头条新闻</h2>
       
-      <div class="news-item">
-        <h3><span class="news-tag">X热议</span> Anthropic与OpenAI同日发布新模型，AI竞争白热化</h3>
+      <div class="card">
+        <h3><span class="tag">X热议</span> Anthropic与OpenAI同日发布新模型，AI竞争白热化</h3>
         <p>2026年2月5日，Anthropic和OpenAI在同一天发布重磅产品：Claude Opus 4.6与GPT-5.3-Codex。Anthropic CEO Dario与OpenAI团队均现身播客讨论Agent工作流。此外，Anthropic在超级碗广告中讽刺OpenAI的ChatGPT广告，Sam Altman回应称"不诚实"。</p>
-        <div class="news-source">via Economic Times / Business Insider / TechCrunch | X: @BusinessInsider @TechCrunch</div>
+        <div class="card-sources">via Economic Times / Business Insider / TechCrunch | X: @BusinessInsider @TechCrunch</div>
       </div>
       
-      <div class="news-item">
-        <h3><span class="news-tag">X热议</span> Apple开放CarPlay支持第三方AI语音助手</h3>
+      <div class="card">
+        <h3><span class="tag">X热议</span> Apple开放CarPlay支持第三方AI语音助手</h3>
         <p>Apple宣布将允许OpenAI、Anthropic和Google的AI应用接入CarPlay，用户可直接通过车载界面使用ChatGPT、Claude和Gemini。Siri仍保持默认助手地位，但用户可手动打开第三方AI应用进行语音交互。</p>
-        <div class="news-source">via 9to5Mac / MacRumors / Tech Times | X: @lexdavid42 @DeccanChronicle</div>
+        <div class="card-sources">via 9to5Mac / MacRumors / Tech Times | X: @lexdavid42 @DeccanChronicle</div>
       </div>
       
-      <div class="news-item">
+      <div class="card">
         <h3>四大科技巨头2026年AI投资超6600亿美元</h3>
         <p>Amazon、Alphabet（Google）、Meta和Microsoft计划在2026年向AI相关项目投资超过6600亿美元，涵盖AI芯片、云计算基础设施、卫星项目（如Amazon的Project Leo）以及模型研发。</p>
-        <div class="news-source">via Markets Today | X: @marketsday</div>
+        <div class="card-sources">via Markets Today | X: @marketsday</div>
       </div>
       
-      <div class="news-item">
+      <div class="card">
         <h3>Sam Altman：轨道数据中心未来5年不会为OpenAI带来实质性算力</h3>
         <p>OpenAI CEO Sam Altman表示，尽管Elon Musk的xAI正在推进轨道数据中心计划，但这类设施在未来5年内不会为OpenAI增加有意义的计算能力。Altman对Musk表示"祝他好运"。</p>
-        <div class="news-source">via Tesla Owners Silicon Valley | X: @teslaownersSV</div>
+        <div class="card-sources">via Tesla Owners Silicon Valley | X: @teslaownersSV</div>
       </div>
     </section>
     
-    <section>
+    <section class="section">
       <h2 class="section-title">新模型/工具</h2>
       
-      <div class="news-item">
-        <h3><span class="news-tag">X热议</span> Claude Opus 4.6发布：100万token上下文、语音模式、Agent团队</h3>
+      <div class="card">
+        <h3><span class="tag">X热议</span> Claude Opus 4.6发布：100万token上下文、语音模式、Agent团队</h3>
         <p>Anthropic发布Claude Opus 4.6，核心亮点包括：100万token上下文窗口（Beta）、新增语音模式、Agent Teams支持多智能体协作、原生PowerPoint和Excel集成。在编码能力上超越GPT-5.2达144 Elo分。已上线GitHub Copilot。</p>
-        <div class="news-source">via Anthropic官方 / Digital Applied / TechCrunch | X: @acek71 @ned_malki @steveatwal</div>
+        <div class="card-sources">via Anthropic官方 / Digital Applied / TechCrunch | X: @acek71 @ned_malki @steveatwal</div>
       </div>
       
-      <div class="news-item">
+      <div class="card">
         <h3>OpenAI发布GPT-5.3-Codex与Frontier平台</h3>
         <p>OpenAI推出GPT-5.3-Codex编程专用模型，支持独立桌面应用，可根据英文指令生成复杂软件。同时发布Frontier企业平台，支持在现有基础设施中部署和管理AI Agent。与Snowflake达成2亿美元合作协议。</p>
-        <div class="news-source">via TechCrunch / MarketingProfs | X: @yoshi102774</div>
+        <div class="card-sources">via TechCrunch / MarketingProfs | X: @yoshi102774</div>
       </div>
       
-      <div class="news-item">
+      <div class="card">
         <h3>中国AI模型密集发布：百度、阿里、DeepSeek、月之暗面</h3>
         <p>2026年1月，中国AI迎来发布潮：百度文心5.0（全模态统一建模）、阿里Qwen3-Max-Thinking（旗舰推理模型）、DeepSeek-OCR-2（文档识别）、月之暗面Kimi K2.5（开源多模态）。2月中旬预期字节跳动、智谱AI将发布新模型。</p>
-        <div class="news-source">via 新华网 / 人民网 / 世界互联网大会 | X: @Aberdeenamain</div>
+        <div class="card-sources">via 新华网 / 人民网 / 世界互联网大会 | X: @Aberdeenamain</div>
       </div>
       
-      <div class="news-item">
+      <div class="card">
         <h3>面壁智能发布MiniCPM-o 4.5：全模态端侧模型</h3>
         <p>面壁智能于2月3日开源发布MiniCPM-o 4.5，支持语言、视觉、语音全模态，适配多种芯片，进一步降低端侧AI部署门槛。</p>
-        <div class="news-source">via 量子位 / 清华新闻网</div>
+        <div class="card-sources">via 量子位 / 清华新闻网</div>
       </div>
     </section>
     
-    <section>
+    <section class="section">
       <h2 class="section-title">企业动态</h2>
       
-      <div class="news-item">
+      <div class="card">
         <h3>Anthropic引发全球软件、法律、金融板块市值重估</h3>
         <p>Anthropic凭借近80%的API支出市场份额、以编码为核心的Agent能力及"无广告"差异化定位，推动全球多个行业进行AI替代白领工作的系统性评估。ServiceNow等企业的股价因此出现波动。</p>
-        <div class="news-source">via Aberdeen Research | X: @Aberdeenamain @Gigarex4</div>
+        <div class="card-sources">via Aberdeen Research | X: @Aberdeenamain @Gigarex4</div>
       </div>
       
-      <div class="news-item">
+      <div class="card">
         <h3>Google Gemini 3 Pro保持基准测试领先</h3>
         <p>Google Gemini 3 Pro在2026年初的基准测试中持续表现优异，与GPT 5.2和Claude Opus 4.5并列为顶级模型。Google同时推进TPU v6芯片和云端分布式部署战略。</p>
-        <div class="news-source">via VirtusLab / ZenMux | X: @gautamgoel978</div>
+        <div class="card-sources">via VirtusLab / ZenMux | X: @gautamgoel978</div>
       </div>
     </section>
     
-    <section>
+    <section class="section">
       <h2 class="section-title">政策/监管</h2>
       
-      <div class="news-item">
+      <div class="card">
         <h3>中国AI产业规模预计2026年超1.2万亿元</h3>
         <p>随着中国AI进入"百度-阿里-DeepSeek"三足鼎立格局，核心产业规模预计突破1.2万亿元人民币。政府持续支持多模态、推理和开源创新方向。</p>
-        <div class="news-source">via 清华大学 / 国家自然科学基金委</div>
+        <div class="card-sources">via 清华大学 / 国家自然科学基金委</div>
       </div>
     </section>
     
-    <section>
+    <section class="section">
       <h2 class="section-title">融合洞察</h2>
       
-      <div class="news-item">
+      <div class="card">
         <h3>AI竞争进入"同日发布"时代，企业级Agent成主战场</h3>
         <p>本周最显著的动向是Anthropic与OpenAI选择同一天发布旗舰产品，标志着AI竞争已从技术演示进入白热化的市场份额争夺阶段。双方均瞄准企业级Agent市场：Claude强调编码、金融分析和多Agent协作，OpenAI则通过Codex和Frontier平台锁定开发者和企业IT部门。</p>
         <p>Apple开放CarPlay给第三方AI，既是对Siri能力局限的妥协，也是希望在不失去生态控制的前提下满足用户多样化需求。这一"有限开放"策略可能成为其他平台效仿的模板。</p>
         <p>四大科技巨头超6600亿美元的AI投资表明，2026年将是基础设施军备竞赛的关键一年。资本正在流向芯片、数据中心和模型训练，而最终谁能将这些投入转化为可持续的企业收入，将决定下一轮行业洗牌的结果。</p>
-        <div class="news-source">基于上述材料综合分析</div>
+        <div class="card-sources">基于上述材料综合分析</div>
       </div>
     </section>
     
-    <div class="archive">
-      <h2 class="section-title">归档</h2>
-      <div class="archive-list">
-        <a href="2026-02-07.html">2026-02-07</a>
-      </div>
-    </div>
     
-    <footer>
-      <p>2026年2月7日</p>
-      <p>AI Daily Report | AI日报融合版</p>
-      <p><a href="https://github.com/elliclee/ai-daily-report">GitHub</a></p>
-    </footer>
-  </div>
+    </div>
+
+        <footer class="footer">
+            <p>由 <strong>Clawy</strong> 生成于 2026-02-14 03:34 UTC</p>
+            <p style="margin-top: 8px;">OpenClaw × Brave Search × X (bird)</p>
+            <p style="margin-top: 12px;">
+                <a href="./archive/">📁 历史归档</a>
+            </p>
+            <div style="margin-top: 24px;">
+<div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
+<a href="./archive/2026-02-14.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-14</a>
+<a href="./archive/2026-02-13.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-13</a>
+<a href="./archive/2026-02-12.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-12</a>
+<a href="./archive/2026-02-11.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-11</a>
+<a href="./archive/2026-02-10.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-10</a>
+<a href="./archive/2026-02-09.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-09</a>
+<a href="./archive/2026-02-08.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-08</a>
+<span style="padding: 4px 10px; background: var(--foreground); color: var(--background); border-radius: 6px; font-size: 12px; font-weight: 500;">2026-02-07</span>
+<a href="./archive/2026-02-06.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-06</a>
+<a href="./archive/2026-02-05.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-05</a>
+</div>
+</div>
+        </footer>
+    </div>
 </body>
+
 </html>
