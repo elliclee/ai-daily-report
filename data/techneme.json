@@ -1,29 +1,29 @@
 {
   "stories": [
     {
-      "title": "OpenAI 退役 GPT-4o 引发用户强烈反弹",
-      "url": "https://www.cnet.com/tech/services-and-software/bye-bye-chatgpt-4o-openai-retires-several-models-pushes-us-to-use-new-gpt-5-ones/",
-      "summary": "OpenAI 宣布正式退役 GPT-4o 等多款热门模型，仅保留 0.1% 活跃用户可继续访问，强制用户迁移至 GPT-5 系列。API 访问保持不变。"
+      "title": "MiniMax 开源 M2.5 模型：80.2% SWE-Bench，成本仅 Claude Opus 的 1/20",
+      "url": "https://www.minimax.io/news/minimax-m25",
+      "summary": "中国 AI 初创公司 MiniMax 发布 M2.5 和 M2.5-Lightning，230B MoE 架构，采用自研 Forge RL 框架训练，在 SWE-Bench Verified 上取得 80.2% 成绩，API 成本仅为 $1/小时。模型权重已开源至 HuggingFace。"
     },
     {
-      "title": "Anthropic 完成 300 亿美元 G 轮融资",
-      "url": "https://www.reuters.com/technology/anthropic-valued-380-billion-latest-funding-round-2026-02-12/",
-      "summary": "由 GIC 和 Coatue 领投，投后估值达 3800 亿美元，为 AI 领域年度最大单笔融资之一。年化收入已达 140 亿美元。"
-    },
-    {
-      "title": "OpenAI 发布 GPT-5.3-Codex-Spark 实时编码模型",
-      "url": "https://www.cerebras.ai/blog/openai-codexspark",
-      "summary": "首个专为实时编码设计的模型，由 Cerebras 晶圆级芯片支持，每秒超 1000 token，128K 上下文。"
-    },
-    {
-      "title": "字节发布 Seedance 2.0 视频生成模型",
+      "title": "字节 Seedance 2.0 发布：多模态视频生成，马斯克点赞但遭好莱坞谴责",
       "url": "https://www.36kr.com/p/3680115686895237",
-      "summary": "字节跳动正式发布视频生成模型 Seedance 2.0，已接入豆包和即梦产品。马斯克点赞该模型。"
+      "summary": "字节跳动正式发布视频生成模型 Seedance 2.0，支持文本、图像、视频、音频多模态输入，可生成 2K 画质 20 秒视频。马斯克点赞，但美国电影协会同日谴责该模型引发大规模版权侵权。"
     },
     {
-      "title": "Google Gemini 3 Deep Think 重大更新",
+      "title": "智谱 GLM-5 开源发布：744B 参数，基于 10 万片华为昇腾芯片训练",
+      "url": "https://www.testingcatalog.com/z-ai-launched-glm-5-new-open-source-model-on-chat-and-apis/",
+      "summary": "智谱 AI 发布新一代旗舰模型 GLM-5，744B 参数规模，在 SWE-bench-Verified 达到 77.8%，采用 MIT 许可证完全开源。模型基于 10 万片华为昇腾芯片训练，摆脱对 NVIDIA 硬件依赖。"
+    },
+    {
+      "title": "Anthropic 大幅升级 Claude 免费版：文件编辑、Connectors、Skills 全开放",
+      "url": "https://indianexpress.com/article/technology/tech-news-technology/claudes-free-plan-gets-a-major-upgrade-as-anthropic-adds-premium-features-10528937/",
+      "summary": "Anthropic 宣布向 Claude 免费用户开放文件创建与编辑、Connectors 外部服务连接、Skills 任务自动化等此前仅付费用户可用的核心功能。"
+    },
+    {
+      "title": "Google Gemini 3 Deep Think 重大更新：科学推理能力大幅提升",
       "url": "https://www.ghacks.net/2026/02/13/gemini-3-deep-think-raises-the-bar-for-advanced-ai-reasoning/",
-      "summary": "DeepMind 升级 Gemini 3 Deep Think，在 ARC-AGI-2、Humanity's Last Exam 等基准上达到 SOTA。"
+      "summary": "Google DeepMind 升级 Gemini 3 Deep Think 推理模式，在 ARC-AGI-2、Humanity's Last Exam 等基准上达到 SOTA，Codeforces Elo 3455（金牌水平）。已向 Google AI Ultra 订阅者推出，API 开放早期访问。"
     }
   ]
 }
