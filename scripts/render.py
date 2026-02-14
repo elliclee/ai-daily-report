@@ -224,8 +224,17 @@ def main():
     content_parts.append('</section>')
 
     # TechMeme 当日头条（从 data/techneme.json 或 daily.techmeme_headlines 读取；没有则不显示）
-    techmeme = load_json(DATA_DIR / "techneme.json", default={})
-    tm_list = daily.get("techmeme_headlines") or techmeme.get("headlines") or []
+    # Note: historical file name is "techneme.json" (typo kept for compatibility).
+    techmeme = load_json(DATA_DIR / "techmeme.json", default={})
+    if not techmeme:
+        techmeme = load_json(DATA_DIR / "techneme.json", default={})
+
+    # Accept multiple shapes:
+    # - daily.techmeme_headlines: [string|{text}]
+    # - data/*: {headlines:[...]}
+    # - data/*: {stories:[{title,url,summary}]}
+    tm_list = daily.get("techmeme_headlines") or techmeme.get("headlines") or techmeme.get("stories") or []
+
     if tm_list:
         content_parts.append('<!-- TechMeme 头条 -->')
         content_parts.append('<section class="section">')
@@ -233,8 +242,11 @@ def main():
         content_parts.append('<div class="highlight-box">')
         content_parts.append('<ul class="highlight-list">')
         for it in tm_list[:5]:
-            # support string or {text}
-            text = it if isinstance(it, str) else str((it or {}).get("text", ""))
+            if isinstance(it, str):
+                text = it
+            else:
+                d = it or {}
+                text = str(d.get("text") or d.get("title") or "")
             if text.strip():
                 content_parts.append(f'<li><span>⚡</span><div>{html_escape(text.strip())}</div></li>')
         content_parts.append('</ul>')
