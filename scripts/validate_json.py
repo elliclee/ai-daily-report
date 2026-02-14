@@ -20,6 +20,8 @@ DAILY_PATH = ROOT / "data" / "daily.json"
 
 REQUIRED_SECTIONS = ["releases", "updates", "opensource", "benchmarks", "business", "risks"]
 
+# Optional but recommended: X highlights (8-12 items). When present, validate shape.
+
 
 def die(msg: str):
     print(f"[validate_json] {msg}", file=sys.stderr)
@@ -79,6 +81,25 @@ def main():
             die(f"daily.sections.{k} must be list (can be empty)")
         for idx, it in enumerate(v, 1):
             validate_item(it, f"daily.sections.{k}[{idx}]")
+
+    # Optional X highlights
+    xh = daily.get("x_highlights")
+    if xh is not None:
+        if not isinstance(xh, list):
+            die("daily.x_highlights must be a list when present")
+        if not (0 <= len(xh) <= 20):
+            die(f"daily.x_highlights size out of range (got {len(xh)})")
+        for i, x in enumerate(xh, 1):
+            if not isinstance(x, dict):
+                die(f"daily.x_highlights[{i}] must be object")
+            must_str(x, "author", f"daily.x_highlights[{i}]")
+            must_str(x, "handle", f"daily.x_highlights[{i}]")
+            must_str(x, "text", f"daily.x_highlights[{i}]")
+            must_str(x, "url", f"daily.x_highlights[{i}]")
+            # engagement fields optional but if present must be int
+            for k in ("likes", "reposts", "replies"):
+                if k in x and not isinstance(x[k], int):
+                    die(f"daily.x_highlights[{i}].{k} must be int")
 
     summary = daily.get("summary")
     if not isinstance(summary, dict):

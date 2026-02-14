@@ -81,6 +81,49 @@ def render_items(items: list[dict]) -> str:
     return "\n".join([p for p in parts if p.strip()])
 
 
+def render_x_highlights(items: list[dict] | None) -> str:
+    # Always render to keep layout stable.
+    parts = [
+        '<section class="section">',
+        '  <h2 class="section-title">🔥 X 高互动事件（8-12条）</h2>',
+    ]
+
+    items = items or []
+    if not items:
+        parts.append('<div class="news-desc">今日无（或 bird 未配置/抓取失败）。</div>')
+        parts.append('</section>')
+        return "\n".join(parts)
+
+    for x in items[:12]:
+        author = html_escape(str(x.get("author", "")))
+        handle = html_escape(str(x.get("handle", "")))
+        text = html_escape(str(x.get("text", "")))
+        url = html_escape(str(x.get("url", "")))
+        likes = x.get("likes")
+        reposts = x.get("reposts")
+        replies = x.get("replies")
+        eng = []
+        if isinstance(likes, int):
+            eng.append(f"❤️ {likes}")
+        if isinstance(reposts, int):
+            eng.append(f"🔄 {reposts}")
+        if isinstance(replies, int):
+            eng.append(f"💬 {replies}")
+        eng_html = " | ".join(eng)
+
+        parts.append('<article class="news-item">')
+        parts.append(f'  <h3 class="news-title">{author} <span style="color: var(--text-secondary); font-weight: 400;">{handle}</span></h3>')
+        parts.append(f'  <div class="news-desc">{text}</div>')
+        if eng_html:
+            parts.append(f'  <div class="news-meta">{eng_html}</div>')
+        if url:
+            parts.append(f'  <a class="news-link" href="{url}" target="_blank">查看原贴 →</a>')
+        parts.append('</article>')
+
+    parts.append('</section>')
+    return "\n".join(parts)
+
+
 def render_techneme(stories: list[dict]) -> str:
     # Always render this section to keep page layout stable.
     parts = [
@@ -130,6 +173,9 @@ def main():
     content_parts.append('  <h2 class="section-title">🔥 核心看点</h2>')
     content_parts.append(render_items(daily.get("headlines") or []))
     content_parts.append('</section>')
+
+    # X highlights (layout-stable)
+    content_parts.append(render_x_highlights(daily.get("x_highlights")))
 
     # Keep section layout stable: always show TechMeme section (with placeholder when empty).
     content_parts.append(render_techneme((techneme or {}).get("stories") or []))
