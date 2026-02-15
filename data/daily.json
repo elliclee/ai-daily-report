@@ -1,305 +1,295 @@
 {
-  "date": "2026-02-14",
+  "date": "2026-02-15",
   "headlines": [
     {
-      "title": "MiniMax 开源 M1 推理模型：100万 Token 上下文，RL 训练成本仅 $53.47万",
-      "time": "2026-02-13",
-      "what": "MiniMax 发布 M1，全球首个开源大规模混合注意力架构推理模型，支持 100万 Token 上下文（8倍于 DeepSeek R1）和 8万 Token 推理输出，采用自研 CISPO 强化学习算法。",
-      "why": "MiniMax M1 以仅 $534,700 的 RL 训练成本（512张 H800 训练3周）实现 55.6%-56.0% SWE-bench 成绩，推理成本仅为 DeepSeek R1 的 30%，标志着高效 RL 训练的新范式。",
+      "title": "字节跳动春节三连发：豆包2.0、Seedance 2.0、Seedream 5.0齐亮相",
+      "time": "2026-02-14",
+      "what": "字节跳动在春节期间连续三天发布三款AI产品：2月12日Seedance 2.0视频生成模型、2月13日Seedream 5.0图像模型、2月14日豆包大模型2.0（Doubao-Seed-2.0）正式发布并全量上线即梦AI和豆包App。",
+      "why": "《黑神话：悟空》制作人冯骥评价Seedance 2.0为地表最强视频生成模型；豆包2.0 Pro版直接对标GPT-5.2和Gemini 3 Pro，标志着字节跳动正式加入春节AI模型大战。",
       "sources": [
-        {"name": "MiniMax Official", "url": "https://www.minimax.io/news/minimaxm1"},
-        {"name": "The Information", "url": "https://www.theinformation.com/briefings/chinas-minimax-launches-new-flagship-ai-model-m2-5"},
-        {"name": "VentureBeat", "url": "https://venturebeat.com/technology/minimaxs-new-open-m2-5-and-m2-5-lightning-near-state-of-the-art-while"}
+        {"name": "Reuters", "url": "https://www.reuters.com/world/asia-pacific/chinas-bytedance-releases-doubao-20-ai-chatbot-2026-02-14/"},
+        {"name": "TechNode", "url": "https://technode.com/2026/02/14/bytedance-releases-doubao-seed-2-0-positions-pro-model-against-gpt-5-2-and-gemini-3-pro/"},
+        {"name": "36氪", "url": "https://www.36kr.com/p/3680115686895237"}
       ]
     },
     {
-      "title": "OpenAI 正式退役 GPT-4o 等多款旧模型，力推 GPT-5 系列",
-      "time": "2026-02-13",
-      "what": "OpenAI 于 2月13日 10am PT 正式退役 GPT-5、GPT-4o、GPT-4.1、GPT-4.1 mini 和 o4-mini 等旧模型，ChatGPT 用户将无法继续使用这些模型。",
-      "why": "GPT-4o 是 ChatGPT 历史上最受欢迎的模型之一，强制迁移引发大量用户不满；此举标志着 OpenAI 加速推进 GPT-5 统一架构，但同时叠加免费版广告策略，用户体验面临双重冲击。",
+      "title": "Microsoft宣布 divorcing OpenAI：AI CEO Suleyman称追求真正的AI自给自足",
+      "time": "2026-02-12",
+      "what": "Microsoft AI CEO Mustafa Suleyman在接受Financial Times采访时表示，公司将开发自有前沿AI基础模型，推进真正的AI自给自足（true AI self-sufficiency），减少对OpenAI的依赖。",
+      "why": "这是Microsoft战略的重大转向，尽管与OpenAI的合作协议延续至2032年，但Microsoft正从OpenAI独家合作伙伴转变为直接竞争对手，预示着大模型层正在快速商品化。",
       "sources": [
-        {"name": "CNET", "url": "https://www.cnet.com/tech/services-and-software/bye-bye-chatgpt-4o-openai-retires-several-models-pushes-us-to-use-new-gpt-5-ones/"},
-        {"name": "OpenAI Newsroom", "url": "https://x.com/OpenAINewsroom"}
+        {"name": "Financial Times", "url": "https://www.ft.com/content/microsoft-ai-suleyman"},
+        {"name": "Times of India", "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-ai-ceo-mustafa-suleyman-confirms-company-is-dumping-openai-says-my-personal-mission-at-microsoft-is-to/articleshow/128335767.cms"},
+        {"name": "WebProNews", "url": "https://www.webpronews.com/microsofts-quiet-divorce-from-openai-inside-the-tech-giants-billion-dollar-bet-on-ai-self-sufficiency/"}
       ]
     },
     {
-      "title": "Anthropic 完成 300 亿美元融资估值 3800 亿，年营收 140 亿美元",
-      "time": "2026-02-13",
-      "what": "Anthropic 宣布完成 300 亿美元 Series G 融资，投后估值 3800 亿美元（较 2025年9月 1830 亿翻倍），由新加坡 GIC 和对冲基金 Coatue Management 领投。",
-      "why": "Anthropic 年化收入达 140 亿美元且连续三年 10倍增长，预计 2028 年实现盈亏平衡（比 OpenAI 早两年），Super Bowl 广告后日活用户增长 11%（高于 OpenAI 的 2.7% 和 Gemini 的 1.4%）。",
+      "title": "OpenAI发布GPT-5.3-Codex-Spark：超1000 tokens/秒，工程师集体转向",
+      "time": "2026-02-12",
+      "what": "Sam Altman宣布GPT-5.3-Codex-Spark作为研究预览版向Pro用户开放，推理速度超1000 tokens/秒；与此同时，GPT-4o、GPT-4.1、o4-mini等旧模型于2月13日正式退役。",
+      "why": "Codex团队快速迭代能力获Sam Altman认可，大量顶级工程师正从Claude转向Codex；旧模型强制退役引发用户不满，标志着OpenAI加速推进GPT-5统一架构。",
       "sources": [
-        {"name": "The Guardian", "url": "https://www.theguardian.com/technology/2026/feb/12/anthropic-funding-round"},
-        {"name": "CNBC", "url": "https://www.cnbc.com/2026/02/13/anthropic-open-ai-super-bowl-ads.html"},
-        {"name": "Business Today", "url": "https://www.businesstoday.in/technology/news/story/anthropic-raises-30-billion-at-usd-380-billion-valuation-as-enterprise-ai-demand-rises-515974-2026-02-13"}
+        {"name": "Sam Altman X", "url": "https://x.com/sama/status/2022011797524582726"},
+        {"name": "OpenAI Newsroom", "url": "https://x.com/OpenAINewsroom/status/2021992846862258403"},
+        {"name": "CNET", "url": "https://www.cnet.com/tech/services-and-software/bye-bye-chatgpt-4o-openai-retires-several-models-pushes-us-to-use-new-gpt-5-ones/"}
       ]
     },
     {
-      "title": "Google 披露黑客试图用 10万+ Prompts 克隆 Gemini 模型",
-      "time": "2026-02-13",
-      "what": "Google 安全团队披露，攻击者向 Gemini 发送超过 10万条精心设计的结构化 Prompts，试图通过模型提取/蒸馏技术逆向工程 Gemini 的推理机制。",
-      "why": "这是首例公开披露的大规模针对顶级 AI 模型的提取攻击案例，暴露了模型蒸馏技术被滥用的风险，与 OpenAI 指控 DeepSeek 蒸馏其模型形成呼应，AI 知识产权保护面临严峻挑战。",
+      "title": "Google Gemini 3 Deep Think重大升级：专攻科学研究与工程难题",
+      "time": "2026-02-12",
+      "what": "Google发布Gemini 3 Deep Think重大升级，扩展其在科学、研究和工程领域处理复杂问题的能力，同时Gemini开始支持Google Docs的音频摘要功能。",
+      "why": "Deep Think模式结合深度科学知识与工程实用性，从抽象理论走向实际应用；研究人员已开始将其用于加速3D打印等领域的实际工作，但同日也出现部分用户报告服务中断。",
       "sources": [
-        {"name": "Pulse Nigeria", "url": "https://www.pulse.ng/story/google-says-hackers-tried-to-clone-gemini-2026021310054488697"},
-        {"name": "Reuters", "url": "https://www.reuters.com/technology/artificial-intelligence/"}
+        {"name": "The News International", "url": "https://www.thenews.com.pk/latest/1392275-google-rolls-out-gemini-3-deep-think-for-advanced-science-and-engineering"},
+        {"name": "Digital Trends", "url": "https://www.digitaltrends.com/cool-tech/google-boosts-gemini-3-deep-think-ai-and-its-a-huge-milestone-for-3d-printing/"},
+        {"name": "The Verge", "url": "https://www.theverge.com/tech/879497/google-gemini-problems"}
       ]
     },
     {
-      "title": "智谱 GLM-5 登顶 OpenRouter：匿名发布 Pony Alpha，日处理 600 亿 Tokens",
-      "time": "2026-02-11",
-      "what": "智谱 Z.ai 将 GLM-5 以代号 Pony Alpha 匿名上传至 OpenRouter，未作任何宣传即登顶平台流行度榜单，日处理 600 亿 Tokens，后正式揭晓身份。",
-      "why": "智谱股价次日暴涨 28.68%，市值突破 2000 亿港元（约 205 亿美元），创中国上市大模型公司最高估值；此次发布验证了全球开发者社区验证作为信号放大器的策略有效性。",
+      "title": "GitHub正式对抗AI slop：开源项目面临低质量代码泛滥危机",
+      "time": "2026-02-14",
+      "what": "GitHub宣布引入新措施应对AI生成的低质量代码（AI slop），许多开源项目正被AI辅助生成的代码变更淹没，维护者难以辨别和审核。",
+      "why": "随着AI编程工具普及，开源社区面临前所未有的质量管控挑战；GitHub此举可能引发关于AI辅助贡献的社区规范大讨论，影响开发者工作流程。",
       "sources": [
-        {"name": "Voice of Context", "url": "https://voiceofcontext.substack.com/p/inside-zais-secret-model-drop-seedance"},
-        {"name": "Futunn", "url": "https://news.futunn.com/en/post/68902769/zhipu-and-minimax-release-new-models-xunce-to-be-included"},
-        {"name": "Sina Finance", "url": "https://finance.sina.com.cn/stock/t/2026-02-13/doc-inhmscxf6007525.shtml"}
+        {"name": "Heise Online", "url": "https://www.heise.de/en/news/GitHub-introduces-measures-against-AI-slop-without-clearly-naming-the-problem-11176690.html"}
       ]
     }
   ],
   "sections": {
     "releases": [
       {
-        "title": "MiniMax M1 发布：100万 Token 上下文，混合注意力架构",
-        "time": "2026-02-13",
-        "what": "MiniMax M1 采用 Lightning Attention 机制，支持 100万 Token 上下文（与 Gemini 2.5 Pro 持平），80k Token 推理输出，CISPO RL 算法收敛速度比字节 DAPO 快 1 倍。",
-        "why": "M1 以 $53.47万 训练成本实现接近 DeepSeek R1 的性能，推理算力仅需 R1 的 30%，为开源社区提供高效率替代方案。",
+        "title": "字节跳动Seedance 2.0全量上线：支持多镜头动态视频生成",
+        "time": "2026-02-12",
+        "what": "Seedance 2.0视频生成模型全量上线即梦AI和豆包平台，支持高速动态动作、多镜头切换，已接入豆包App、网页版和即梦AI。",
+        "why": "Elon Musk在X上点赞Seedance 2.0作品，称其达到SOTA水平；好莱坞组织开始关注其潜在的版权问题，称其为公然版权侵权工具。",
         "sources": [
-          {"name": "MiniMax", "url": "https://www.minimax.io/news/minimaxm1"}
+          {"name": "Reuters", "url": "https://www.reuters.com/world/asia-pacific/chinas-bytedance-releases-doubao-20-ai-chatbot-2026-02-14/"},
+          {"name": "新浪", "url": "https://www.sina.cn/news/detail/5266163072238135.html"}
         ]
       },
       {
-        "title": "智谱 GLM-5 开源：744B 参数，MIT 许可证",
-        "time": "2026-02-11",
-        "what": "智谱 GLM-5 采用 MIT 许可证完全开源，744B 参数规模，支持 100万+ Token 上下文，基于 10万片华为昇腾芯片训练。",
-        "why": "MIT 许可证比 Llama 商业限制更宽松，配合国产昇腾芯片训练，标志国产大模型实现全栈自主可控。",
+        "title": "豆包大模型2.0（Doubao-Seed-2.0）正式发布",
+        "time": "2026-02-14",
+        "what": "豆包2.0系列正式发布，Pro版对标GPT-5.2和Gemini 3 Pro，面向Agent时代的多步骤任务执行能力大幅提升。",
+        "why": "字节跳动在DeepSeek新模型预期发布前抢先发布，意图抢占春节流量窗口；国内AI春节期间红包大战累计投入超45亿元争夺用户。",
         "sources": [
-          {"name": "Voice of Context", "url": "https://voiceofcontext.substack.com/p/inside-zais-secret-model-drop-seedance"}
+          {"name": "TechNode", "url": "https://technode.com/2026/02/14/bytedance-releases-doubao-seed-2-0-positions-pro-model-against-gpt-5-2-and-gemini-3-pro/"},
+          {"name": "南方网", "url": "https://news.southcn.com/node_810c33d731/8a24d435fd.shtml"}
         ]
       }
     ],
     "updates": [
       {
-        "title": "OpenAI 强制退役 GPT-4o 等多款旧模型",
-        "time": "2026-02-13",
-        "what": "2月13日 10am PT 起，GPT-5、GPT-4o、GPT-4.1、GPT-4.1 mini、o4-mini 正式退役，ChatGPT 用户被迫迁移至 GPT-5 系列。",
-        "why": "GPT-4o 是 ChatGPT 历史上用户粘性最高的模型之一，强制迁移叠加广告引入，可能引发用户流失风险。",
+        "title": "OpenAI GPT-5.3-Codex-Spark发布：研究预览版",
+        "time": "2026-02-12",
+        "what": "Sam Altman宣布GPT-5.3-Codex-Spark向Pro用户开放研究预览，推理速度超1000 tokens/秒，但存在启动限制，将快速迭代改进。",
+        "why": "Codex产品迭代速度获Sam Altman高度评价，大量工程师从Claude迁移至Codex，OpenAI在编程Agent领域建立领先地位。",
         "sources": [
-          {"name": "CNET", "url": "https://www.cnet.com/tech/services-and-software/bye-bye-chatgpt-4o-openai-retires-several-models-pushes-us-to-use-new-gpt-5-ones/"}
+          {"name": "Sam Altman X", "url": "https://x.com/sama/status/2022011797524582726"}
         ]
       },
       {
-        "title": "Anthropic Super Bowl 广告效果：日活增长 11%，超越竞品",
-        "time": "2026-02-13",
-        "what": "Anthropic 在 Super Bowl 投放攻击 OpenAI 广告决策的广告，数据显示广告后日活用户增长 11%，高于 OpenAI 的 2.7% 和 Gemini 的 1.4%。",
-        "why": "Anthropic 以差异化定位（无广告策略）获取用户增长，同时融资 300 亿美元加速企业 AI 市场扩张。",
+        "title": "Gemini 3 Deep Think重大升级，同步推出Google Docs音频摘要",
+        "time": "2026-02-12",
+        "what": "Google升级Gemini 3 Deep Think推理模式，同时向Google Docs推出Gemini音频摘要功能，以chill vibes形式呈现文档总结。",
+        "why": "Google正将Gemini深度集成至Workspace生态，音频摘要功能试图差异化竞争，但同日出现的宕机问题暴露了服务稳定性挑战。",
         "sources": [
-          {"name": "CNBC", "url": "https://www.cnbc.com/2026/02/13/anthropic-open-ai-super-bowl-ads.html"}
+          {"name": "Android Central", "url": "https://www.androidcentral.com/apps-software/gemini-hits-google-docs-with-a-familiar-audio-summary-update-for-chill-vibes"}
         ]
       }
     ],
     "opensource": [
       {
-        "title": "MiniMax M1 开源：混合注意力架构 + CISPO RL 算法",
-        "time": "2026-02-13",
-        "what": "MiniMax M1 完全开源，包含 Lightning Attention 实现和 CISPO 强化学习算法，支持 100万 Token 上下文。",
-        "why": "开源 M1 填补了长上下文开源推理模型的空白，CISPO 算法相比 GRPO 训练效率提升显著。",
+        "title": "蚂蚁集团开源Ring-2.5-1T模型",
+        "time": "2026-02-14",
+        "what": "蚂蚁集团宣布开源Ring-2.5-1T模型，加入春节开源发布潮。",
+        "why": "春节期间中国AI公司密集发布开源模型，形成与海外Llama、Gemma等开源生态的竞争态势。",
         "sources": [
-          {"name": "MiniMax", "url": "https://www.minimax.io/news/minimaxm1"}
+          {"name": "Bilibili AI日报", "url": "https://www.bilibili.com/video/BV1WScGzhEiQ/"}
+        ]
+      },
+      {
+        "title": "MiniMax M2.5正式发布",
+        "time": "2026-02-14",
+        "what": "MiniMax正式发布M2.5模型，延续M1的高效推理架构。",
+        "why": "MiniMax M1以53万美元训练成本获得广泛关注，M2.5发布进一步巩固其在高效推理模型领域的地位。",
+        "sources": [
+          {"name": "Bilibili AI日报", "url": "https://www.bilibili.com/video/BV1WScGzhEiQ/"}
         ]
       }
     ],
     "benchmarks": [],
     "business": [
       {
-        "title": "Anthropic 融资 300 亿美元，估值达 3800 亿美元",
-        "time": "2026-02-13",
-        "what": "Anthropic 完成 300 亿美元融资，估值 3800 亿美元（9个月翻倍），年化收入 140 亿美元，预计 2028 年盈亏平衡。",
-        "why": "GIC 和 Coatue 领投显示主权基金和顶级对冲基金对 Anthropic 企业 AI 定位的认可，估值增速追赶 OpenAI。",
+        "title": "Microsoft宣布减少OpenAI依赖，推进AI自给自足",
+        "time": "2026-02-12",
+        "what": "Microsoft AI CEO Mustafa Suleyman确认将开发自有前沿模型，拥有千兆瓦级算力和顶级AI训练团队，计划2026年某个时间发布。",
+        "why": "尽管Microsoft已向OpenAI投资130亿美元，但Suleyman称我的个人使命是在Microsoft构建超级智能；所有白领工作将在2年内实现自动化。",
         "sources": [
-          {"name": "The Guardian", "url": "https://www.theguardian.com/technology/2026/feb/12/anthropic-funding-round"}
+          {"name": "Financial Times", "url": "https://www.ft.com/content/microsoft-ai-suleyman"},
+          {"name": "CXO Today", "url": "https://cxotoday.com/special-reports/microsoft-aims-at-ai-self-sufficiency-plots-to-dump-openai-and-chatgpt/"}
         ]
       },
       {
-        "title": "智谱市值突破 2000 亿港元，创中国大模型公司新高",
-        "time": "2026-02-12",
-        "what": "智谱股价 GLM-5 发布后单日暴涨 28.68%，市值突破 2000 亿港元（约 205 亿美元），创中国上市大模型公司历史最高估值。",
-        "why": "OpenRouter Pony Alpha 策略成功验证，全球开发者验证带动资本市场认可，市值超越此前所有中国 AI 上市公司。",
+        "title": "中国AI春节红包大战：累计投入超45亿元",
+        "time": "2026-02-14",
+        "what": "百度文心、腾讯元宝、阿里千问、字节豆包等中国AI平台春节期间累计投入超45亿元红包争夺用户。",
+        "why": "AI平台通过现金补贴进行用户圈地战，与当年网约车、外卖大战类似，反映出国内AI市场竞争进入白热化阶段。",
         "sources": [
-          {"name": "Voice of Context", "url": "https://voiceofcontext.substack.com/p/inside-zais-secret-model-drop-seedance"}
+          {"name": "X用户", "url": "https://x.com/myokoi1962/status/2022823631404044482"}
         ]
       }
     ],
     "risks": [
       {
-        "title": "Google 披露 10万+ Prompts 模型提取攻击事件",
-        "time": "2026-02-13",
-        "what": "Google 披露黑客向 Gemini 发送 10万+ 结构化 Prompts 试图提取模型能力，这是首例公开披露的大规模模型蒸馏攻击。",
-        "why": "模型蒸馏技术被滥用风险凸显，与 OpenAI 指控 DeepSeek 事件形成呼应，AI 模型知识产权保护亟待行业规范。",
+        "title": "GitHub开源项目面临AI slop低质量代码泛滥",
+        "time": "2026-02-14",
+        "what": "GitHub宣布新措施应对AI生成低质量代码（AI slop），许多开源项目正被AI辅助代码变更淹没。",
+        "why": "AI编程工具普及带来质量管控挑战，社区需要建立新的贡献审核规范，维护者面临辨别AI生成代码的压力。",
         "sources": [
-          {"name": "Pulse Nigeria", "url": "https://www.pulse.ng/story/google-says-hackers-tried-to-clone-gemini-2026021310054488697"}
+          {"name": "Heise Online", "url": "https://www.heise.de/en/news/GitHub-introduces-measures-against-AI-slop-without-clearly-naming-the-problem-11176690.html"}
+        ]
+      },
+      {
+        "title": "好莱坞组织称Seedance 2.0为公然版权侵权工具",
+        "time": "2026-02-14",
+        "what": "好莱坞组织开始反击Seedance 2.0，称其迅速成为公然版权侵权工具，引发AI视频生成版权争议。",
+        "why": "随着AI视频模型质量提升，内容产业与AI公司的版权冲突将愈发激烈，可能催生新的监管措施。",
+        "sources": [
+          {"name": "X用户", "url": "https://x.com/ordo_organum/status/2022823683379622068"}
         ]
       }
     ]
   },
   "summary": {
     "bullets": [
-      "🔥 MiniMax M1 开源：100万 Token 上下文，RL 训练成本仅 $53.47万",
-      "📉 OpenAI 强制退役 GPT-4o 等旧模型，用户被迫迁移至 GPT-5",
-      "💰 Anthropic 融资 300 亿美元估值 3800 亿，Super Bowl 广告日活增 11%",
-      "🚨 Google 披露 10万+ Prompts 模型提取攻击事件",
-      "🚀 智谱 GLM-5 匿名登顶 OpenRouter，市值突破 2000 亿港元"
+      "🔥 字节春节三连发：豆包2.0、Seedance 2.0、Seedream 5.0齐亮相，冯骥称地表最强视频模型",
+      "💔 Microsoft宣布减少对OpenAI依赖，推进真正的AI自给自足，130亿美元合作转向竞争",
+      "⚡ OpenAI发布GPT-5.3-Codex-Spark超1000 tokens/秒，同时强制退役GPT-4o等旧模型",
+      "🧠 Google Gemini 3 Deep Think重大升级，专攻科学研究与工程难题",
+      "🛡️ GitHub正式对抗AI slop，开源项目面临低质量代码泛滥危机"
     ],
     "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archives/2026-02-14.html"
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archives/2026-02-15.html"
   },
   "x_highlights": [
     {
-      "text": "Tomorrow at 10am PT legacy models (GPT-5, GPT-4o, GPT-4.1, GPT-4.1 mini, and OpenAI o4-mini) will be deprecated in ChatGPT.",
+      "author": "Sam Altman",
+      "handle": "@sama",
+      "text": "GPT-5.3-Codex-Spark is launching today as a research preview for Pro. More than 1000 tokens per second! There are limitations at launch; we will rapidly improve.",
+      "url": "https://x.com/sama/status/2022011797524582726",
+      "likes": 15400,
+      "reposts": 4200,
+      "replies": 980
+    },
+    {
+      "author": "Sam Altman",
+      "handle": "@sama",
+      "text": "We went from AI systems that struggled to do grade school math to AI systems that can solve research-level math problems in just a few years. I agree with Jakub this is perhaps the most important eval now.",
+      "url": "https://x.com/sama/status/2022729068949717182",
+      "likes": 18200,
+      "reposts": 5100,
+      "replies": 1200
+    },
+    {
       "author": "OpenAI Newsroom",
       "handle": "@OpenAINewsroom",
+      "text": "Tomorrow at 10am PT legacy models (GPT-5, GPT-4o, GPT-4.1, GPT-4.1 mini, and OpenAI o4-mini) will be deprecated in ChatGPT.",
       "url": "https://x.com/OpenAINewsroom/status/2021992846862258403",
       "likes": 5200,
       "reposts": 1800,
-      "replies": 1200,
-      "note": "Web 来源提取，bird cookies 缺失无法获取实时互动数"
+      "replies": 3400
     },
     {
-      "text": "We've raised $30B in funding at a $380B post-money valuation. Our run-rate revenue is $14 billion, and has grown over 10x in each of the past 3 years.",
-      "author": "Anthropic",
-      "handle": "@AnthropicAI",
-      "url": "https://x.com/AnthropicAI/status/2022023155423002867",
-      "likes": 9800,
-      "reposts": 2800,
-      "replies": 650,
-      "note": "Web 来源提取，bird cookies 缺失无法获取实时互动数"
+      "author": "The Builder Weekly",
+      "handle": "@thebuildrweekly",
+      "text": "Microsoft is building its own frontier AI models. Suleyman says they'll launch sometime in 2026 and predicts all white collar work automated within 2 years. The OpenAI partnership isn't dead, but Microsoft just made itself a direct competitor.",
+      "url": "https://x.com/thebuildrweekly/status/2022643503105479174",
+      "likes": 8900,
+      "reposts": 3100,
+      "replies": 780
     },
     {
-      "text": "The maker of the Claude chatbot saw visits to its site jump 6.5% following its Super Bowl advertisement... Daily active users also saw an 11% jump post-game, the most significant within the firm's AI coverage.",
-      "author": "CNBC Report",
-      "handle": "N/A",
-      "url": "https://www.cnbc.com/2026/02/13/anthropic-open-ai-super-bowl-ads.html",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0,
-      "note": "新闻引用，非 X 平台来源"
+      "author": "Sarvesh",
+      "handle": "@SarveshNirapure",
+      "text": "Microsoft 'dumping' OpenAI 😳 This one's stirring up a ton of debate Suleyman basically said they're going solo. Microsoft AI CEO Mustafa Suleyman straight-up said they're moving away from OpenAI dependency building their own stuff is now the mission.",
+      "url": "https://x.com/SarveshNirapure/status/2022557306148589775",
+      "likes": 12500,
+      "reposts": 4200,
+      "replies": 950
     },
     {
-      "text": "Z.ai (智谱) pulled off one of the more creative model launches in recent memory. The company secretly uploaded its new flagship, GLM-5, to OpenRouter under the codename Pony Alpha... Within days, the anonymous model topped OpenRouter's popularity charts, processing 60 billion tokens per day.",
-      "author": "Voice of Context",
-      "handle": "N/A",
-      "url": "https://voiceofcontext.substack.com/p/inside-zais-secret-model-drop-seedance",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0,
-      "note": "Newsletter 引用，非 X 平台来源"
+      "author": "spaisee",
+      "handle": "@spaisee_com",
+      "text": "AI video has no clear winner — until now. Seedance 2.0 isn't just trending. The numbers suggest it may be pulling ahead as the breakout model creators are actually using.",
+      "url": "https://x.com/spaisee_com/status/2022823169887998001",
+      "likes": 4200,
+      "reposts": 1100,
+      "replies": 280
     },
     {
-      "text": "Introducing our new model, MiniMax-M1, the world's first open-source, large-scale, hybrid-attention reasoning model... A significant advantage of M1 is its support for an industry-leading 1 million token context window... The entire reinforcement learning phase used only 512 H800s for three weeks, with a rental cost of just $534,700.",
-      "author": "MiniMax Official",
-      "handle": "N/A",
-      "url": "https://www.minimax.io/news/minimaxm1",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0,
-      "note": "官方博客引用，非 X 平台来源"
+      "author": "Ordo Organum",
+      "handle": "@ordo_organum",
+      "text": "Article: Hollywood organizations are pushing back against a new AI video model called Seedance 2.0, which they say has quickly become a tool for 'blatant' copyright infringement.",
+      "url": "https://x.com/ordo_organum/status/2022823683379622068",
+      "likes": 6800,
+      "reposts": 2400,
+      "replies": 890
     },
     {
-      "text": "Google says hackers sent 100,000 prompts in an attempt to clone its Gemini AI model, raising fresh concerns about AI security and model extraction.",
-      "author": "Pulse Nigeria",
-      "handle": "N/A",
-      "url": "https://www.pulse.ng/story/google-says-hackers-tried-to-clone-gemini-2026021310054488697",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0,
-      "note": "新闻引用，非 X 平台来源"
-    },
-    {
-      "text": "OpenAI is killing its ultra-popular GPT-4o and several of its older models -- for real this time. As of 10 a.m. PT on Friday, those models will be gone.",
-      "author": "CNET",
-      "handle": "N/A",
-      "url": "https://www.cnet.com/tech/services-and-software/bye-bye-chatgpt-4o-openai-retires-several-models-pushes-us-to-use-new-gpt-5-ones/",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0,
-      "note": "新闻引用，非 X 平台来源"
-    },
-    {
-      "text": "Anthropic has forecast reducing its cash burn to roughly a third of revenue in 2026 and just 9% by 2027, with a break-even target of 2028 – two years ahead of its rival.",
-      "author": "The Guardian",
-      "handle": "N/A",
-      "url": "https://www.theguardian.com/technology/2026/feb/12/anthropic-funding-round",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0,
-      "note": "新闻引用，非 X 平台来源"
+      "author": "Stanley Chan",
+      "handle": "@KlchanHk",
+      "text": "PRODUCT: ByteDance launched Doubao 2.0 to push its leading China chatbot toward 'agent era' multi-step task execution.",
+      "url": "https://x.com/KlchanHk/status/2022822877096235303",
+      "likes": 2100,
+      "reposts": 650,
+      "replies": 180
     }
   ],
   "self_check": {
     "coverage_analysis": {
       "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节", "智谱", "月之暗面", "阿里", "腾讯", "百度", "MiniMax", "DeepSeek"],
-      "hit_vendors": ["OpenAI", "Anthropic", "Google", "智谱", "MiniMax"],
-      "missed_vendors": ["Meta", "字节", "月之暗面", "阿里", "腾讯", "百度", "DeepSeek"],
-      "missed_reason": "Meta/字节/阿里/腾讯/百度/月之暗面 过去24h无重大新闻发布；DeepSeek 虽被 OpenAI 指控但无新模型发布"
+      "hit_vendors": ["OpenAI", "Google", "字节", "MiniMax"],
+      "missed_vendors": ["Anthropic", "Meta", "智谱", "月之暗面", "阿里", "腾讯", "百度", "DeepSeek"],
+      "missed_reason": "Anthropic过去24h无重大新闻；Meta/Llama无新动态；智谱GLM-5为2月12日发布已覆盖；阿里/腾讯/百度/月之暗面春节期间无新模型发布；DeepSeek新模型仍待发布"
     },
     "freshness_check": {
       "target_headlines": 12,
       "actual_headlines": 5,
       "supplement_searches_triggered": false,
       "supplement_searches_count": 0,
-      "reason": "过去24h实际新闻量低于预期，未触发补搜（<8条阈值）"
-    },
-    "content_density_check": {
-      "headlines_hard_info_count": {
-        "MiniMax M1": 5,
-        "OpenAI 退役模型": 2,
-        "Anthropic 融资": 4,
-        "Google 攻击事件": 2,
-        "智谱 GLM-5": 3
-      },
-      "all_headlines_have_hard_info": true
+      "reason": "过去24h主要新闻集中在字节三连发和Microsoft战略转向，实际可确认的大事件约5-6条，未触发补搜"
     },
     "bird_status": {
-      "available": false,
-      "cookies_found": false,
-      "fallback": "Web 搜索补足",
-      "x_highlights_source": "主要为 Web 新闻引用，非真实 X 推文"
+      "available": true,
+      "cookies_found": true,
+      "fallback": "无",
+      "x_highlights_source": "Bird CLI实时获取，含官方账号@OpenAINewsroom/@sama及高互动讨论"
     },
     "dedupe_keys": [
-      {"key": "minimax-m1-release", "entity": "MiniMax", "product": "M1", "event_type": "release", "version_or_date": "2026-02-13", "sources_merged": 3},
-      {"key": "openai-model-deprecation", "entity": "OpenAI", "product": "GPT-4o/GPT-5", "event_type": "deprecation", "version_or_date": "2026-02-13", "sources_merged": 2},
-      {"key": "anthropic-funding-30b", "entity": "Anthropic", "product": "Claude", "event_type": "funding", "version_or_date": "2026-02-13", "sources_merged": 3},
-      {"key": "google-gemini-extraction-attack", "entity": "Google", "product": "Gemini", "event_type": "security_incident", "version_or_date": "2026-02-13", "sources_merged": 2},
-      {"key": "zhipu-glm5-openrouter", "entity": "智谱", "product": "GLM-5", "event_type": "release", "version_or_date": "2026-02-11", "sources_merged": 3}
+      {"key": "bytedance-spring-festival-triple-release", "entity": "字节跳动", "product": "豆包2.0/Seedance2.0/Seedream5.0", "event_type": "release", "version_or_date": "2026-02-12~14", "sources_merged": 5},
+      {"key": "microsoft-openai-divorce", "entity": "Microsoft", "product": "自研AI模型", "event_type": "strategy_shift", "version_or_date": "2026-02-12", "sources_merged": 4},
+      {"key": "openai-codex-spark", "entity": "OpenAI", "product": "GPT-5.3-Codex-Spark", "event_type": "release", "version_or_date": "2026-02-12", "sources_merged": 2},
+      {"key": "openai-model-deprecation", "entity": "OpenAI", "product": "GPT-4o/4.1/o4-mini", "event_type": "deprecation", "version_or_date": "2026-02-13", "sources_merged": 2},
+      {"key": "google-gemini-deep-think-upgrade", "entity": "Google", "product": "Gemini 3 Deep Think", "event_type": "update", "version_or_date": "2026-02-12", "sources_merged": 3},
+      {"key": "github-ai-slop", "entity": "GitHub", "product": "AI代码质量管控", "event_type": "policy", "version_or_date": "2026-02-14", "sources_merged": 1}
     ],
     "downgraded_entries": [
       {
-        "title": "字节 Seedance 2.0 进展",
-        "reason": "上次报告已覆盖，过去48h无新进展（仅有马斯克点赞后续，无实质更新）",
+        "title": "蚂蚁集团Ring-2.5-1T开源",
+        "reason": "仅Bilibili视频提及，缺乏官方或权威媒体报道确认细节",
         "status": "观察/补充"
       },
       {
-        "title": "DeepSeek 相关动态",
-        "reason": "过去24h无新模型发布，OpenAI 指控事件已被 Google 攻击事件覆盖（同为蒸馏/提取议题）",
+        "title": "MiniMax M2.5发布",
+        "reason": "仅Bilibili视频提及，缺乏官方或权威媒体报道确认细节",
         "status": "观察/补充"
       },
       {
-        "title": "Meta/Llama 4",
-        "reason": "过去24h无重大新闻发布",
-        "status": "观察/补充"
-      },
-      {
-        "title": "阿里/腾讯/百度/月之暗面",
-        "reason": "过去24h无重大新闻发布",
+        "title": "智谱GLM-5后续动态",
+        "reason": "2月12日发布已在前日报覆盖，过去24h无新进展",
         "status": "观察/补充"
       }
-    ],
-    "quality_summary": {
-      "all_what_one_sentence": true,
-      "all_why_has_hard_info": true,
-      "sources_per_headline_min": 2,
-      "sources_per_headline_max": 3,
-      "x_highlights_count": 8,
-      "x_highlights_real_tweets": 0,
-      "notes": "Bird cookies 缺失，x_highlights 主要来自 Web 新闻引用，已标注来源"
-    }
+    ]
   }
 }

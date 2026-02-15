@@ -1,30 +1,40 @@
 {
-  "date": "2026-02-14",
-  "stories": [
+  "date": "2026-02-15",
+  "technemes": [
     {
-      "title": "MiniMax 开源 M1 推理模型：100万 Token 上下文，RL 训练成本仅 $53.47万",
-      "url": "https://www.minimax.io/news/minimaxm1",
-      "summary": "MiniMax 发布全球首个开源大规模混合注意力架构推理模型 M1，支持 100万 Token 上下文（8倍于 DeepSeek R1）和 8万 Token 推理输出。采用自研 CISPO 强化学习算法，整个 RL 阶段仅使用 512 张 H800 训练 3 周，成本仅 $534,700，实现 55.6%-56.0% SWE-bench 成绩。"
+      "term": "AI Self-Sufficiency",
+      "translation": "AI自给自足",
+      "definition": "Microsoft AI CEO Mustafa Suleyman提出的战略概念，指企业通过开发自有前沿AI基础模型，减少对外部供应商（如OpenAI）的依赖，实现技术自主可控。",
+      "context": "Microsoft宣布将在2026年发布自研前沿模型，尽管与OpenAI合作协议延续至2032年，但正从'独家合作伙伴'转变为'直接竞争对手'。",
+      "sources": [{"name": "Financial Times", "url": "https://www.ft.com/content/microsoft-ai-suleyman"}]
     },
     {
-      "title": "OpenAI 正式退役 GPT-4o 等多款旧模型，力推 GPT-5 系列",
-      "url": "https://www.cnet.com/tech/services-and-software/bye-bye-chatgpt-4o-openai-retires-several-models-pushes-us-to-use-new-gpt-5-ones/",
-      "summary": "OpenAI 于 2月13日 10am PT 正式退役 GPT-5、GPT-4o、GPT-4.1、GPT-4.1 mini 和 o4-mini 等旧模型。GPT-4o 是 ChatGPT 历史上最受欢迎的模型之一，强制迁移引发大量用户不满，Reddit 上有用户表示哀悼。"
+      "term": "AI Slop",
+      "translation": "AI渣滓/低质AI内容",
+      "definition": "指AI生成的低质量、重复、无意义或缺乏创意的代码和内容。GitHub正在引入措施对抗开源项目被AI slop淹没的问题。",
+      "context": "随着AI编程工具普及，开源社区面临前所未有的质量管控挑战，维护者难以辨别和审核AI生成的低质量代码贡献。",
+      "sources": [{"name": "Heise Online", "url": "https://www.heise.de/en/news/GitHub-introduces-measures-against-AI-slop-without-clearly-naming-the-problem-11176690.html"}]
     },
     {
-      "title": "Anthropic 完成 300 亿美元融资估值 3800 亿，Super Bowl 广告日活增 11%",
-      "url": "https://www.theguardian.com/technology/2026/feb/12/anthropic-funding-round",
-      "summary": "Anthropic 完成 300 亿美元 Series G 融资，投后估值 3800 亿美元（较 2025年9月 1830 亿翻倍），年化收入 140 亿美元。Super Bowl 广告后日活用户增长 11%，高于 OpenAI 的 2.7% 和 Gemini 的 1.4%。预计 2028 年实现盈亏平衡，比 OpenAI 目标早两年。"
+      "term": "Agent Era",
+      "translation": "Agent时代",
+      "definition": "指AI从单次问答交互向多步骤任务执行、自主决策和工具调用的范式转变，代表产品包括豆包2.0、OpenAI Codex等具备Agent能力的系统。",
+      "context": "字节跳动发布豆包2.0时明确提出面向'Agent时代'的多步骤任务执行能力，反映行业从对话AI向行动AI的演进。",
+      "sources": [{"name": "Reuters", "url": "https://www.reuters.com/world/asia-pacific/chinas-bytedance-releases-doubao-20-ai-chatbot-2026-02-14/"}]
     },
     {
-      "title": "Google 披露黑客试图用 10万+ Prompts 克隆 Gemini 模型",
-      "url": "https://www.pulse.ng/story/google-says-hackers-tried-to-clone-gemini-2026021310054488697",
-      "summary": "Google 安全团队披露攻击者向 Gemini 发送超过 10万条精心设计的结构化 Prompts，试图通过模型提取/蒸馏技术逆向工程 Gemini 的推理机制。这是首例公开披露的大规模针对顶级 AI 模型的提取攻击案例。"
+      "term": "Deep Think",
+      "translation": "深度思考模式",
+      "definition": "Google Gemini的专门化推理模式，通过增加推理时间和计算资源来处理科学、研究和工程领域的复杂问题，与OpenAI的o系列推理模型竞争。",
+      "context": "Google于2月12日发布Gemini 3 Deep Think重大升级，扩展其在科学研究领域的复杂问题处理能力，从抽象理论走向实际应用。",
+      "sources": [{"name": "The News International", "url": "https://www.thenews.com.pk/latest/1392275-google-rolls-out-gemini-3-deep-think-for-advanced-science-and-engineering"}]
     },
     {
-      "title": "智谱 GLM-5 登顶 OpenRouter：匿名发布 Pony Alpha，日处理 600 亿 Tokens",
-      "url": "https://voiceofcontext.substack.com/p/inside-zais-secret-model-drop-seedance",
-      "summary": "智谱 Z.ai 将 GLM-5 以代号 Pony Alpha 匿名上传至 OpenRouter，未作宣传即登顶平台流行度榜单，日处理 600 亿 Tokens。正式揭晓后股价次日暴涨 28.68%，市值突破 2000 亿港元（约 205 亿美元），创中国上市大模型公司历史最高估值。"
+      "term": "Spring Festival AI War",
+      "translation": "春节AI大战",
+      "definition": "中国AI公司在2026年春节期间密集发布新模型和产品的竞争现象，包括字节跳动（豆包/Seedance）、智谱（GLM-5）、MiniMax（M2.5）等，累计投入超45亿元红包争夺用户。",
+      "context": "春节期间中国AI公司通过红包补贴和模型发布进行用户圈地战，与当年网约车、外卖大战类似，反映国内AI市场竞争白热化。",
+      "sources": [{"name": "X用户", "url": "https://x.com/myokoi1962/status/2022823631404044482"}]
     }
   ]
 }
