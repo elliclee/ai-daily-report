@@ -1,40 +1,30 @@
 {
-  "date": "2026-02-15",
+  "date": "2026-02-16",
   "technemes": [
     {
-      "term": "AI Self-Sufficiency",
-      "translation": "AI自给自足",
-      "definition": "Microsoft AI CEO Mustafa Suleyman提出的战略概念，指企业通过开发自有前沿AI基础模型，减少对外部供应商（如OpenAI）的依赖，实现技术自主可控。",
-      "context": "Microsoft宣布将在2026年发布自研前沿模型，尽管与OpenAI合作协议延续至2032年，但正从'独家合作伙伴'转变为'直接竞争对手'。",
-      "sources": [{"name": "Financial Times", "url": "https://www.ft.com/content/microsoft-ai-suleyman"}]
+      "title": "AI资本集中度达到历史新高",
+      "summary": "Anthropic单轮融资300亿美元，估值3800亿美元，超越OpenAI历史融资总额。AI赛道呈现'赢者通吃'态势，资本向头部集中趋势明显。",
+      "sources": [{"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Anthropic"}]
     },
     {
-      "term": "AI Slop",
-      "translation": "AI渣滓/低质AI内容",
-      "definition": "指AI生成的低质量、重复、无意义或缺乏创意的代码和内容。GitHub正在引入措施对抗开源项目被AI slop淹没的问题。",
-      "context": "随着AI编程工具普及，开源社区面临前所未有的质量管控挑战，维护者难以辨别和审核AI生成的低质量代码贡献。",
-      "sources": [{"name": "Heise Online", "url": "https://www.heise.de/en/news/GitHub-introduces-measures-against-AI-slop-without-clearly-naming-the-problem-11176690.html"}]
+      "title": "模型退役常态化：GPT-4o生命周期的终结",
+      "summary": "OpenAI强制退役GPT-4o引发用户 mourning，标志着大模型生命周期管理进入新阶段——快速迭代、强制升级成为常态。",
+      "sources": [{"name": "Money Control", "url": "https://www.moneycontrol.com/technology/openai-retires-gpt-4o-for-good-as-chatgpt-moves-fully-to-gpt-5-2-article-13828707.html"}]
     },
     {
-      "term": "Agent Era",
-      "translation": "Agent时代",
-      "definition": "指AI从单次问答交互向多步骤任务执行、自主决策和工具调用的范式转变，代表产品包括豆包2.0、OpenAI Codex等具备Agent能力的系统。",
-      "context": "字节跳动发布豆包2.0时明确提出面向'Agent时代'的多步骤任务执行能力，反映行业从对话AI向行动AI的演进。",
-      "sources": [{"name": "Reuters", "url": "https://www.reuters.com/world/asia-pacific/chinas-bytedance-releases-doubao-20-ai-chatbot-2026-02-14/"}]
+      "title": "中美AI竞争从技术竞争转向法律战",
+      "summary": "OpenAI公开指控DeepSeek窃取技术，标志着中美AI竞争进入新阶段——从隐性的技术追赶转向显性的法律与舆论对抗。",
+      "sources": [{"name": "Los Angeles Times", "url": "https://www.latimes.com/business/story/2026-02-13/openai-accuses-chinas-deepseek-of-stealing-ai-technology"}]
     },
     {
-      "term": "Deep Think",
-      "translation": "深度思考模式",
-      "definition": "Google Gemini的专门化推理模式，通过增加推理时间和计算资源来处理科学、研究和工程领域的复杂问题，与OpenAI的o系列推理模型竞争。",
-      "context": "Google于2月12日发布Gemini 3 Deep Think重大升级，扩展其在科学研究领域的复杂问题处理能力，从抽象理论走向实际应用。",
-      "sources": [{"name": "The News International", "url": "https://www.thenews.com.pk/latest/1392275-google-rolls-out-gemini-3-deep-think-for-advanced-science-and-engineering"}]
+      "title": "AGI测试门槛：ARC-AGI-2成为新标杆",
+      "summary": "Gemini 3 Deep Think在ARC-AGI-2达到84.6%，该测试被视为AGI的重要门槛。科学推理能力成为衡量模型先进性的新标准。",
+      "sources": [{"name": "MarkTechPost", "url": "https://www.marktechpost.com/2026/02/15/moonshot-ai-launches-kimi-claw-native-openclaw-on-kimi-com-with-5000-community-skills-and-40gb-cloud-storage-now/"}]
     },
     {
-      "term": "Spring Festival AI War",
-      "translation": "春节AI大战",
-      "definition": "中国AI公司在2026年春节期间密集发布新模型和产品的竞争现象，包括字节跳动（豆包/Seedance）、智谱（GLM-5）、MiniMax（M2.5）等，累计投入超45亿元红包争夺用户。",
-      "context": "春节期间中国AI公司通过红包补贴和模型发布进行用户圈地战，与当年网约车、外卖大战类似，反映国内AI市场竞争白热化。",
-      "sources": [{"name": "X用户", "url": "https://x.com/myokoi1962/status/2022823631404044482"}]
+      "title": "国产开源模型技术路径趋同",
+      "summary": "智谱GLM-5采用DeepSeek验证的稀疏注意力架构，标志着国产开源模型在技术路径上开始收敛，竞争焦点转向应用与生态。",
+      "sources": [{"name": "36氪", "url": "https://36kr.com/p/3678132374709128"}]
     }
   ]
 }
