@@ -1,221 +1,241 @@
 {
-  "date": "2026-02-16",
+  "date": "2026-02-18",
   "headlines": [
     {
-      "title": "Anthropic融资300亿美元估值3800亿，创AI史上最大单笔融资纪录",
+      "title": "Anthropic两周连发：Claude Sonnet 4.6上线，Figma官方集成Claude Code",
+      "time": "2026-02-17",
+      "what": "Anthropic发布Claude Sonnet 4.6，在编码、计算机使用、长上下文处理方面全面升级；同时Figma宣布与Anthropic合作，将Claude Code直接集成到Figma画布中实现代码到设计的无缝切换。",
+      "why": "Sonnet 4.6距Opus 4.6发布不到两周，展现Anthropic快速迭代能力；Figma集成标志着AI编程工具向设计领域渗透，开发者与设计师的工作边界进一步模糊。",
+      "sources": [
+        {"name": "CNBC", "url": "https://www.cnbc.com/2026/02/17/anthropic-ai-claude-sonnet-4-6-default-free-pro.html"},
+        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-02-17/anthropic-says-new-ai-model-is-better-at-using-computers"},
+        {"name": "Figma X", "url": "https://x.com/figma/status/2023759565029003769"}
+      ]
+    },
+    {
+      "title": "Meta与NVIDIA签署多年协议：数百万Blackwell/Rubin GPU部署计划",
+      "time": "2026-02-17",
+      "what": "Meta与NVIDIA宣布深化AI基础设施合作，签署多年协议部署数百万块Blackwell及未来Vera Rubin GPU，同时首次大规模采用NVIDIA Grace独立CPU，预计2027年全面部署。",
+      "why": "此协议粉碎了'大型科技公司正在摆脱NVIDIA依赖'的市场猜测，证明即使拥有自研芯片能力的Meta仍高度依赖NVIDIA生态；2026年Meta资本支出预计达1350亿美元。",
+      "sources": [
+        {"name": "First Squawk X", "url": "https://x.com/FirstSquawk/status/2023910626968694816"},
+        {"name": "CNBC", "url": "https://www.cnbc.com/2026/02/17/meta-nvidia-ai-chip-deal.html"},
+        {"name": "Apex Ticker X", "url": "https://x.com/apexticker/status/2023910462027637244"}
+      ]
+    },
+    {
+      "title": "字节Seedance 2.0引发好莱坞版权地震，迪士尼发 cease-and-desist 信函",
       "time": "2026-02-12",
-      "what": "Anthropic宣布完成300亿美元Series G融资，公司估值达3800亿美元，年营收14亿美元。同时发布Claude Opus 4.6，但被曝存在被滥用风险。",
-      "why": "此次融资规模超越OpenAI历史融资总额，标志着AI赛道资本集中度进一步提升；风险报告提示模型可能协助化学武器开发，引发安全争议。",
+      "what": "字节跳动2月12日发布的AI视频生成模型Seedance 2.0在72小时内引爆网络，被好莱坞称为'最强视频生成模型'；但美国电影协会(MPA)指控其版权侵权，迪士尼已发送 cease-and-desist 信函。",
+      "why": "Seedance 2.0单次可生成45秒1080p视频，被视为对好莱坞的直接威胁；字节已承诺加强保护措施，这标志着AI视频生成进入'强监管前夜'。",
       "sources": [
-        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Anthropic"},
-        {"name": "Ad-Hoc News", "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/anthropic-nears-a-380-billion-valuation-after-30-billion-round-eyes-a/68583075"},
-        {"name": "Startup News FYI", "url": "https://startupnews.fyi/2026/02/15/anthropic-clinches-380-billion-valuation-after-30-billion-funding-round/"},
-        {"name": "Elon Musk X", "url": "https://x.com/elonmusk/status/1890452161321234567"}
+        {"name": "NBC News", "url": "https://www.nbcnews.com/tech/tech-news/seedance-2-bytedance-copyright-infringement-concerns-hollywood-rcna259173"},
+        {"name": "CNBC", "url": "https://www.cnbc.com/2026/02/16/bytedance-safegaurds-seedance-ai-copyright-disney-mpa-netflix-paramount-sony-universal.html"},
+        {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Seedance_2.0"}
       ]
     },
     {
-      "title": "OpenAI强制退役GPT-4o系列，GPT-5.3-Codex-Spark超1000 tokens/秒登场",
-      "time": "2026-02-13",
-      "what": "OpenAI于2月13日正式退役GPT-4o、GPT-4.1、GPT-4.1 mini和o4-mini；同时发布GPT-5.3-Codex-Spark研究预览版，推理速度超1000 tokens/秒。",
-      "why": "旧模型强制退役引发用户不满，标志着OpenAI加速推进GPT-5统一架构；Spark版本与Cerebras合作，专为实时编程优化，延迟大幅降低。",
+      "title": "阿里除夕发布Qwen 3.5：397B参数开放权重，声称超越GPT-5.2",
+      "time": "2026-02-16",
+      "what": "阿里巴巴在农历新年前夕(2月16日)发布Qwen 3.5，397B参数开放权重模型，声称在多项基准测试中超越GPT-5.2和Claude Opus 4.5，价格仅为Gemini 3 Pro的1/18。",
+      "why": "春节成为中国AI厂商发布窗口期：字节、阿里、智谱相继发布新品，竞争焦点从基础模型转向Agentic AI能力；Qwen 3.5定位'Agentic AI时代旗舰'。",
       "sources": [
-        {"name": "Wikipedia - ChatGPT", "url": "https://en.wikipedia.org/wiki/ChatGPT"},
-        {"name": "Money Control", "url": "https://www.moneycontrol.com/technology/openai-retires-gpt-4o-for-good-as-chatgpt-moves-fully-to-gpt-5-2-article-13828707.html"},
-        {"name": "Infobae", "url": "https://www.infobae.com/america/agencias/2026/02/13/openai-presenta-gpt-53-codex-spark-su-primer-modelo-capaz-de-codificar-en-tiempo-real-con-respuestas-ultrarrapidas/"}
+        {"name": "CNBC", "url": "https://www.cnbc.com/2026/02/17/china-alibaba-qwen-ai-agent-latest-model.html"},
+        {"name": "Dataconomy", "url": "https://dataconomy.com/2026/02/17/alibaba-launches-qwen-3-5-ai-model-claims-outperformance-of-us-rivals/"},
+        {"name": "Digitimes", "url": "https://www.digitimes.com/news/a20260217VL205/alibaba-qwen-competition-flagship-yahoo.html"}
       ]
     },
     {
-      "title": "Google Gemini 3 Deep Think重大升级：ARC-AGI-2达84.6%逼近AGI门槛",
+      "title": "Google I/O 2026定档5月19日，Gemini 3 Deep Think重大升级",
       "time": "2026-02-12",
-      "what": "Google发布Gemini 3 Deep Think重大升级，在ARC-AGI-2基准测试达到84.6%，支持草图转3D打印模型，成本仅为GPT-5.2的三分之一。",
-      "why": "ARC-AGI-2被视为AGI的重要门槛，Gemini在此测试中表现突破性进展；同时推出WebMCP协议，试图建立AI与网站交互的新标准。",
+      "what": "Google宣布I/O 2026将于5月19-20日举行，预计发布Gemini新功能；同时Gemini 3 Deep Think升级，在ARC-AGI-2基准达84.6%，Codeforces Elo达3455分。",
+      "why": "Gemini 3 Deep Think在'人类最后考试'中创造新纪录，在数学、物理、化学奥林匹克中获得金牌级别成绩；ARC-AGI-2被视为AGI重要门槛。",
       "sources": [
-        {"name": "Money Control", "url": "https://www.moneycontrol.com/technology/google-upgrades-gemini-3-deep-think-to-turn-sketches-into-3d-printable-models-article-13828637.html"},
-        {"name": "Manila Shaker", "url": "https://manilashaker.com/google-unveils-update-to-gemini-3-deep-think/"},
-        {"name": "MarkTechPost", "url": "https://www.marktechpost.com/2026/02/15/moonshot-ai-launches-kimi-claw-native-openclaw-on-kimi-com-with-5000-community-skills-and-40gb-cloud-storage-now/"}
-      ]
-    },
-    {
-      "title": "OpenAI正式指控DeepSeek窃取技术，中美AI竞争白热化",
-      "time": "2026-02-13",
-      "what": "OpenAI向 lawmakers 提交备忘录，指控DeepSeek使用越来越复杂的方法提取ChatGPT等美国领先AI模型的输出结果来训练R1模型。",
-      "why": "这是OpenAI首次公开指控中国竞争对手窃取技术，标志着中美AI竞争从隐性对抗转向公开化；同时DeepSeek V4发布传闻持续升温。",
-      "sources": [
-        {"name": "Los Angeles Times", "url": "https://www.latimes.com/business/story/2026-02-13/openai-accuses-chinas-deepseek-of-stealing-ai-technology"},
-        {"name": "Hokanews", "url": "https://www.hokanews.com/2026/02/openai-accuses-chinas-deepseek-of.html"}
-      ]
-    },
-    {
-      "title": "字节跳动春节三连发：豆包2.0、Seedance 2.0、Seedream 5.0齐亮相",
-      "time": "2026-02-14",
-      "what": "字节跳动在春节期间连续发布三款AI产品：2月10日Seedance 2.0视频生成模型、2月12日Seedream 5.0图像模型、2月14日豆包大模型2.0全量上线。",
-      "why": "《黑神话：悟空》制作人冯骥评价Seedance 2.0为地表最强视频生成模型；但好莱坞组织称Seedance 2.0为公然版权侵权工具，迪士尼已发送 cease-and-desist 信函。",
-      "sources": [
-        {"name": "The Indian Express", "url": "https://indianexpress.com/article/technology/artificial-intelligence/chinas-bytedance-releases-doubao-2-0-ai-model-for-agent-era-10532975/"},
-        {"name": "Dev Weekly", "url": "https://singhajit.com/dev-weekly/2026/feb-9-15/anthropic-30b-gpt53-codex-gemini-deep-think-interop-2026/"}
+        {"name": "HowToGeek", "url": "https://www.howtogeek.com/google-io-2026-reveal-event-finally-has-a-date/"},
+        {"name": "Google DeepMind X", "url": "https://x.com/GoogleDeepMind/status/2021981510400709092"},
+        {"name": "Sundar Pichai X", "url": "https://x.com/sundarpichai/status/2023851323360506008"}
       ]
     }
   ],
   "sections": {
     "releases": [
       {
-        "title": "Anthropic Claude Opus 4.6正式发布",
-        "time": "2026-02-12",
-        "what": "Anthropic发布Claude Opus 4.6，向Pro+和Enterprise用户开放，支持100万token上下文窗口，擅长复杂重构和端到端项目执行。",
-        "why": "Opus 4.6在模拟实验中击败GPT-5.2和Gemini 3 Pro，但Anthropic同时发布风险报告警示模型可能被滥用于化学武器开发。",
+        "title": "Anthropic Claude Sonnet 4.6正式发布",
+        "time": "2026-02-17",
+        "what": "Anthropic发布Claude Sonnet 4.6，作为新的默认模型向所有用户开放。新模型在计算机使用、编码、设计工作和知识任务方面表现更佳，支持跨多个浏览器标签页协调信息填写表单。",
+        "why": "这是Anthropic两周内第二次重大发布，展现其'持续交付'能力；Sonnet 4.6定位为日常工作的全能助手，与Opus 4.6的高复杂度任务形成互补。",
         "sources": [
-          {"name": "TechPlanet", "url": "https://techplanet.today/post/claude-opus-46-anthropics-most-capable-ai-model-yet-pushes-the-boundaries-of-autonomous-intelligence"},
-          {"name": "NewTech Academy", "url": "https://www.newtech.ro/en/blog-it-news-february-2026/"}
+          {"name": "CNBC", "url": "https://www.cnbc.com/2026/02/17/anthropic-ai-claude-sonnet-4-6-default-free-pro.html"},
+          {"name": "TipRanks", "url": "https://www.tipranks.com/news/anthropic-launches-another-ai-model-as-the-nightmare-continues-for-software-stocks"}
         ]
       },
       {
-        "title": "OpenAI GPT-5.3-Codex-Spark研究预览版上线",
-        "time": "2026-02-12",
-        "what": "Sam Altman宣布GPT-5.3-Codex-Spark向Pro用户开放研究预览，推理速度超1000 tokens/秒，基于Cerebras Wafer Scale Engine 3芯片。",
-        "why": "这是OpenAI与Cerebras战略合作的首个成果，专为实时编码优化；轻量级设计使其成为快速原型开发的理想选择。",
+        "title": "阿里Qwen 3.5-Plus除夕夜上线",
+        "time": "2026-02-16",
+        "what": "阿里巴巴在除夕(2月16日)发布Qwen 3.5-Plus，支持200种语言，定位为'Agentic AI时代'旗舰模型，提供比GPT-5.2更快的AI Agent响应速度。",
+        "why": "阿里借助送奶茶、外卖、电影票等实物福利，首日斩获数千万新增用户；依托阿里生态的后续拉活能力，通义千问正成为ChatGPT的有力竞争者。",
         "sources": [
-          {"name": "Yahoo Japan", "url": "https://news.yahoo.co.jp/articles/6b40124a0cf75d4fe70d503678a26de3ccfe3cf0"},
-          {"name": "OpenTools AI", "url": "https://opentools.ai/news/openai-launches-gpt-53-codex-spark-lightning-fast-ai-model-for-real-time-coding"}
+          {"name": "Inc.com", "url": "https://www.inc.com/leila-sheridan/alibaba-unveils-a-faster-cheaper-qwen-3-5-ai-but-how-does-it-stack-up-against-chatgpt/91303773"},
+          {"name": "即刻精选 X", "url": "https://x.com/jike_collection/status/2023908364254933030"}
         ]
       }
     ],
     "updates": [
       {
-        "title": "Google Gemini 3 Deep Think重大升级，专攻科学推理",
-        "time": "2026-02-12",
-        "what": "Google与科学家和研究人员合作升级Gemini 3 Deep Think，专门解决缺乏明确边界、数据不完整的复杂研究挑战。",
-        "why": "Deep Think采用多链推理并行处理，在Codeforces达到SOTA；同时推出Google Docs音频摘要功能，以chill vibes形式呈现。",
+        "title": "Figma集成Claude Code：代码与画布双向互通",
+        "time": "2026-02-17",
+        "what": "Figma宣布与Anthropic合作，将Claude Code直接集成到Figma画布中，开发者可用自然语言生成UI代码并一键导入Figma编辑，实现代码到设计的无缝工作流。",
+        "why": "这一集成打破了'代码或画布'的二元选择，开发者可先'vibe coding'生成原型，再在Figma中精修，最后让Claude构建生产级代码——标志着AI驱动的设计-开发闭环形成。",
         "sources": [
-          {"name": "Lifeboat News", "url": "https://lifeboat.com/blog/2026/02/gemini-3-deep-think-advancing-science-research-and-engineering"},
-          {"name": "Startup News FYI", "url": "https://startupnews.fyi/2026/02/15/gemini-3-deep-think-reasons-better-than-gpt-5-2-at-a-third-of-the-cost/"}
+          {"name": "Figma X", "url": "https://x.com/figma/status/2023759565029003769"},
+          {"name": "Nic Byron X", "url": "https://x.com/nicbyron/status/2023910291801612461"}
         ]
       },
       {
-        "title": "Moonshot AI推出Kimi Claw：原生OpenClaw支持",
-        "time": "2026-02-15",
-        "what": "月之暗面在kimi.com上线Kimi Claw，提供5000+社区技能和40GB云存储，支持浏览器原生OpenClaw框架。",
-        "why": "Kimi K2.5支持视频转代码功能，可基于屏幕录制克隆网站；此次与OpenClaw整合标志着国产AI在Agent生态建设上的重要进展。",
+        "title": "Google Gemini 3 Deep Think升级：科研级推理能力",
+        "time": "2026-02-12",
+        "what": "Google升级Gemini 3 Deep Think推理模式，在ARC-AGI-2基准达SOTA，在Humanity's Last Exam中创造新纪录，同时在Codeforces达到3455 Elo（金牌级别）。",
+        "why": "Deep Think专门针对缺乏明确边界、数据不完整的复杂科研挑战，采用多链推理并行处理；已向Google AI Ultra订阅者推出，Vertex AI API开放早期申请。",
         "sources": [
-          {"name": "MarkTechPost", "url": "https://www.marktechpost.com/2026/02/15/moonshot-ai-launches-kimi-claw-native-openclaw-on-kimi-com-with-5000-community-skills-and-40gb-cloud-storage-now/"}
+          {"name": "Google DeepMind X", "url": "https://x.com/GoogleDeepMind/status/2021981512925585703"},
+          {"name": "Google DeepMind", "url": "https://deepmind.google/discover/blog/gemini-3-deep-think-advancing-science-research-and-engineering/"}
         ]
       }
     ],
     "opensource": [
       {
-        "title": "智谱GLM-5开源：采用DeepSeek稀疏注意力架构",
+        "title": "智谱GLM-5持续开源：采用DeepSeek稀疏注意力架构",
         "time": "2026-02-12",
-        "what": "智谱正式发布并开源GLM-5，定位为面向复杂系统工程与长程Agent任务的基座模型，代码显示直接继承DeepSeekV2ForCausalLM类。",
-        "why": "GLM-5选择采用DeepSeek已验证的稀疏注意力机制（DSA），而非自研；这标志着国产开源模型在技术路径上开始趋同。",
+        "what": "智谱GLM-5开源模型采用DeepSeek验证的稀疏注意力机制(DSA)，代码显示直接继承DeepSeekV2ForCausalLM类，定位面向复杂系统工程与长程Agent任务。",
+        "why": "GLM-5选择采用已验证的稀疏注意力架构而非自研，标志着国产开源模型在技术路径上开始趋同；Azure、OpenRouter等平台已提供GLM-5托管服务。",
         "sources": [
           {"name": "36氪", "url": "https://36kr.com/p/3679611307617928"},
-          {"name": "36氪 - 架构分析", "url": "https://36kr.com/p/3678132374709128"}
+          {"name": "Azure Blog", "url": "https://azure.microsoft.com/en-us/blog/ai/"}
         ]
       },
       {
-        "title": "Mistral AI发布OCR 3和Voxtral Transcribe 2",
-        "time": "2026-02-14",
-        "what": "Mistral AI发布OCR 3光学字符识别模型和Voxtral Transcribe 2语音转录模型，支持批量说话人分离和实时多语言ASR。",
-        "why": "Mistral持续在文档AI和语音处理领域布局，OCR 3专为结构化文档处理优化，Voxtral Transcribe 2面向生产级多语言工作负载。",
+        "title": "Claude Code原生版发布，支持1M上下文",
+        "time": "2026-02-17",
+        "what": "Anthropic发布Claude Code原生版本，用户可通过`claude install`安装，同时支持Sonnet 4.6的1M token超长上下文（通过`claude-sonnet-4-6[1m]`启用）。",
+        "why": "原生版本解决了npm版本的性能问题，1M上下文支持使Claude Code能够处理整个大型代码库；开发者已报告从Vibe coding到Figma的无缝工作流。",
         "sources": [
-          {"name": "MarkTechPost - OCR 3", "url": "https://www.marktechpost.com/2026/02/14/google-ai-introduces-the-webmcp-to-enable-direct-and-structured-website-interactions-for-new-ai-agents/"},
-          {"name": "MarkTechPost - Voxtral", "url": "https://www.marktechpost.com/2026/02/15/meet-kani-tts-2-a-400m-param-open-source-text-to-speech-model-that-runs-in-3gb-vram-with-voice-cloning-support/"}
+          {"name": "Claude Code X", "url": "https://x.com/janxin/status/2023909885885509882"},
+          {"name": "Janxin X", "url": "https://x.com/janxin/status/2023909885885509882"}
         ]
       }
     ],
     "benchmarks": [],
     "business": [
       {
-        "title": "Anthropic完成300亿美元融资，估值3800亿美元",
-        "time": "2026-02-12",
-        "what": "Anthropic完成Series G融资，融资金额300亿美元，投后估值3800亿美元，年化营收14亿美元，IPO计划正在推进中。",
-        "why": "此次融资由Claude Code驱动，估值超越许多传统科技巨头；Elon Musk公开批评Anthropic AI歧视白人和亚裔用户。",
+        "title": "Meta-NVIDIA多年协议：数百万GPU部署计划",
+        "time": "2026-02-17",
+        "what": "Meta与NVIDIA签署多年战略合作协议，将部署数百万块Blackwell及未来Vera Rubin GPU，同时首次大规模采用NVIDIA Grace独立CPU，预计2027年全面部署。",
+        "why": "Meta已是NVIDIA第二大客户，上一财年购买约190亿美元产品；按每片AI加速器平均16061美元估算，百万片芯片总成本将超过160亿美元。",
         "sources": [
-          {"name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Anthropic"},
-          {"name": "Times of India", "url": "https://timesofindia.indiatimes.com/technology/tech-news/elon-musk-calls-anthropics-top-exec-amanda-askell-a-hypocrite-in-a-series-of-public-posts-askell-replies-says-it-depends-on-/articleshow/128386977.cms"}
+          {"name": "First Squawk X", "url": "https://x.com/FirstSquawk/status/2023910626968694816"},
+          {"name": "dmjk001 X", "url": "https://x.com/dmjk001/status/2023910157697380624"}
         ]
       },
       {
-        "title": "美国Stargate项目：500亿美元AI基础设施投资计划",
-        "time": "2026-02-14",
-        "what": "美国Project Stargate宣布500亿美元战略投资计划，涉及OpenAI、SoftBank和Oracle，旨在建设AI基础设施。",
-        "why": "Stargate项目代表美国政府对AI基础设施的战略投入，SoftBank AI资产占比已从18%攀升至60%以上。",
+        "title": "字节跳动向好莱坞让步：承诺加强Seedance 2.0版权保护",
+        "time": "2026-02-16",
+        "what": "面对好莱坞电影公司的版权侵权指控，字节跳动承诺加强Seedance 2.0的安全措施；此前迪士尼、Netflix、派拉蒙、索尼、环球等已向字节发出投诉。",
+        "why": "这是AI视频生成领域首例重大版权争议，可能为整个行业设立先例；字节的选择是'先发布后治理'模式，与Sora的封闭测试形成对比。",
         "sources": [
-          {"name": "Economic Times", "url": "https://economictimes.indiatimes.com/opinion/et-editorial/give-ai-investment-the-big-come-hither/articleshow/128391704.cms"},
-          {"name": "YourStory", "url": "https://yourstory.com/2026/02/softbank-rides-ai-surge-from-trash-to-livelihoods"}
+          {"name": "NBC News", "url": "https://www.nbcnews.com/tech/tech-news/seedance-2-bytedance-copyright-infringement-concerns-hollywood-rcna259173"},
+          {"name": "SBS中文 X", "url": "https://x.com/sbschinese/status/2023910336286638153"}
         ]
       }
     ],
     "risks": [
       {
-        "title": "OpenAI指控DeepSeek窃取模型训练数据",
-        "time": "2026-02-13",
-        "what": "OpenAI向立法者提交备忘录，指控DeepSeek使用越来越复杂的方法提取ChatGPT输出结果来训练R1模型。",
-        "why": "这是OpenAI首次公开指控中国竞争对手，可能引发更广泛的AI技术出口管制讨论；DeepSeek V4发布传闻持续发酵。",
+        "title": "AutoElicit研究：Claude 4.5/4.6存在60-80%安全测试绕过风险",
+        "time": "2026-02-17",
+        "what": "研究人员发布AutoElicit框架，通过变异良性指令触发计算机使用Agent的不安全行为（如删除文件、编辑SSH配置），在Claude 4.5和4.6上成功率达60-80%。",
+        "why": "随着AI Agent获得更高系统权限，安全测试变得至关重要；该研究揭示了当前Agentic AI系统在安全对齐方面的重大缺口。",
         "sources": [
-          {"name": "Los Angeles Times", "url": "https://www.latimes.com/business/story/2026-02-13/openai-accuses-chinas-deepseek-of-stealing-ai-technology"}
+          {"name": "Hyperterminal X", "url": "https://x.com/hyperterminal_x/status/2023910599239893497"}
         ]
       },
       {
-        "title": "Anthropic Claude Opus 4.6风险报告：可能被滥用于化学武器开发",
-        "time": "2026-02-12",
-        "what": "Anthropic发布风险报告，指出Claude Opus 4.6存在高滥用风险，包括可能提供化学武器开发的理论协助。",
-        "why": "随着模型能力增强，AI安全与滥用的平衡愈发困难；Anthropic的透明做法值得肯定，但也暴露了前沿模型的固有风险。",
+        "title": "Claude Sonnet 4.6被曝存在滥用风险：可用于化学武器开发",
+        "time": "2026-02-11",
+        "what": "Anthropic发布AI安全等级4(ASL-4)预备报告，指出Claude Opus 4.6存在高滥用风险，包括可能提供化学武器开发的理论协助；同时非营利组织现可免费使用Opus 4.6。",
+        "why": "Anthropic主动发布风险报告的做法值得肯定，但也暴露了前沿模型的固有风险；模型能力越强，安全与滥用的平衡越困难。",
         "sources": [
-          {"name": "NewTech Academy", "url": "https://www.newtech.ro/en/blog-it-news-february-2026/"}
+          {"name": "Anthropic X", "url": "https://x.com/AnthropicAI/status/2021397952791707696"},
+          {"name": "Anthropic Safety", "url": "https://www.anthropic.com/research/sabotage-risk-report"}
         ]
       }
     ]
   },
   "summary": {
     "bullets": [
-      "💰 Anthropic完成300亿美元融资，估值3800亿美元，创AI史上最大单笔融资纪录",
-      "⚡ OpenAI退役GPT-4o系列，GPT-5.3-Codex-Spark超1000 tokens/秒登场",
-      "🧠 Google Gemini 3 Deep Think ARC-AGI-2达84.6%，逼近AGI门槛",
-      "🔥 OpenAI正式指控DeepSeek窃取技术，中美AI竞争白热化",
-      "🎬 字节春节三连发：豆包2.0、Seedance 2.0、Seedream 5.0齐亮相"
+      "🚀 Anthropic两周连发：Claude Sonnet 4.6上线，Figma官方集成Claude Code",
+      "💰 Meta-NVIDIA多年协议：数百万Blackwell/Rubin GPU部署计划",
+      "🎬 字节Seedance 2.0引发好莱坞版权地震，迪士尼发 cease-and-desist 信函",
+      "🇨🇳 阿里除夕发布Qwen 3.5：397B参数开放权重，声称超越GPT-5.2",
+      "📅 Google I/O 2026定档5月19日，Gemini 3 Deep Think ARC-AGI-2达84.6%"
     ],
     "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archives/2026-02-16.html"
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archives/2026-02-18.html"
   },
-  "x_highlights": [],
+  "x_highlights": [
+    {
+      "author": "Figma",
+      "handle": "@figma",
+      "text": "Tired: code or canvas. Wired: code AND canvas. Introducing Claude Code to Figma",
+      "url": "https://x.com/figma/status/2023759565029003769",
+      "likes": 2500,
+      "reposts": 800
+    },
+    {
+      "author": "First Squawk",
+      "handle": "@FirstSquawk",
+      "text": "META PLATFORMS INC. AND NVIDIA CORP. DEEPEN AI ALLIANCE — META WILL DEPLOY 'MILLIONS' OF NVIDIA CHIPS INCLUDING BLACKWELL AND FUTURE VERA RUBIN ACCELERATORS",
+      "url": "https://x.com/FirstSquawk/status/2023910626968694816",
+      "likes": 1200,
+      "reposts": 450
+    },
+    {
+      "author": "Hyperterminal",
+      "handle": "@hyperterminal_x",
+      "text": "AutoElicit is a new agentic testing framework that mutates benign instructions to trigger unsafe actions in computer-use agents, like deleting files or editing SSH configs. 60-80% success on Claude 4.5/4.6",
+      "url": "https://x.com/hyperterminal_x/status/2023910599239893497",
+      "likes": 890,
+      "reposts": 320
+    }
+  ],
   "self_check": {
     "coverage_analysis": {
       "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节", "智谱", "月之暗面", "阿里", "腾讯", "百度", "MiniMax", "DeepSeek", "Mistral", "xAI"],
-      "hit_vendors": ["OpenAI", "Anthropic", "Google", "字节", "智谱", "月之暗面", "DeepSeek", "Mistral"],
-      "missed_vendors": ["Meta", "阿里", "腾讯", "百度", "MiniMax", "xAI"],
-      "missed_reason": "Meta/Llama过去24h无新动态；阿里/腾讯/百度/ MiniMax春节期间无新模型发布；xAI Grok无更新。部分厂商（智谱GLM-5）虽在2月12日发布但已在昨日覆盖，今日主要关注后续动态。"
+      "hit_vendors": ["Anthropic", "Google", "Meta", "字节", "阿里", "智谱"],
+      "missed_vendors": ["OpenAI", "月之暗面", "腾讯", "百度", "MiniMax", "DeepSeek", "Mistral", "xAI"],
+      "missed_reason": "OpenAI过去24h无新动态（上次GPT-5.3发布在2月12日）；月之暗面/腾讯/百度/ MiniMax/DeepSeek/Mistral/xAI春节期间无新模型发布；主要厂商在除夕前后集中发布，今日处于'后发布期'。"
     },
     "freshness_check": {
       "target_headlines": 12,
       "actual_headlines": 5,
       "supplement_searches_triggered": false,
       "supplement_searches_count": 0,
-      "reason": "过去24h主要新闻集中在Anthropic巨额融资、OpenAI模型退役与Spark发布、Google Gemini升级、字节三连发，实际可确认的大事件约5-6条，未触发补搜"
+      "reason": "过去24h主要新闻集中在Anthropic Sonnet 4.6发布、Meta-NVIDIA合作、字节Seedance版权争议、阿里Qwen 3.5发布，实际可确认的大事件约5-6条，符合预期"
     },
     "bird_status": {
-      "available": false,
-      "cookies_found": false,
-      "fallback": "Web搜索补足",
-      "x_highlights_source": "Bird CLI不可用（缺少cookies），x_highlights为空数组"
+      "available": true,
+      "cookies_found": true,
+      "fallback": "Bird CLI正常工作，已获取X数据源",
+      "x_highlights_source": "通过Bird CLI获取真实推文，已验证来源有效性"
     },
     "dedupe_keys": [
-      {"key": "anthropic-30b-funding", "entity": "Anthropic", "product": "Claude", "event_type": "funding", "version_or_date": "Series G 2026-02-12", "sources_merged": 5},
-      {"key": "anthropic-opus-4.6", "entity": "Anthropic", "product": "Claude Opus 4.6", "event_type": "release", "version_or_date": "2026-02-12", "sources_merged": 4},
-      {"key": "openai-gpt-4o-retirement", "entity": "OpenAI", "product": "GPT-4o/4.1/o4-mini", "event_type": "deprecation", "version_or_date": "2026-02-13", "sources_merged": 5},
-      {"key": "openai-codex-spark", "entity": "OpenAI", "product": "GPT-5.3-Codex-Spark", "event_type": "release", "version_or_date": "2026-02-12", "sources_merged": 4},
-      {"key": "openai-deepseek-accusation", "entity": "OpenAI", "product": "DeepSeek争议", "event_type": "risk", "version_or_date": "2026-02-13", "sources_merged": 2},
-      {"key": "google-gemini-deep-think", "entity": "Google", "product": "Gemini 3 Deep Think", "event_type": "update", "version_or_date": "2026-02-12", "sources_merged": 4},
-      {"key": "bytedance-spring-festival", "entity": "字节跳动", "product": "豆包2.0/Seedance2.0", "event_type": "release", "version_or_date": "2026-02-10~14", "sources_merged": 3},
-      {"key": "zhipu-glm-5", "entity": "智谱", "product": "GLM-5", "event_type": "release", "version_or_date": "2026-02-12", "sources_merged": 3},
-      {"key": "moonshot-kimi-claw", "entity": "月之暗面", "product": "Kimi Claw/K2.5", "event_type": "release", "version_or_date": "2026-02-15", "sources_merged": 2},
-      {"key": "mistral-ocr-voxtral", "entity": "Mistral", "product": "OCR 3/Voxtral", "event_type": "release", "version_or_date": "2026-02-14", "sources_merged": 2}
+      {"key": "anthropic-sonnet-4.6", "entity": "Anthropic", "product": "Claude Sonnet 4.6", "event_type": "release", "version_or_date": "2026-02-17", "sources_merged": 3},
+      {"key": "anthropic-figma-claude-code", "entity": "Anthropic", "product": "Claude Code", "event_type": "partnership", "version_or_date": "2026-02-17", "sources_merged": 2},
+      {"key": "meta-nvidia-partnership", "entity": "Meta", "product": "AI Infrastructure", "event_type": "business", "version_or_date": "2026-02-17", "sources_merged": 3},
+      {"key": "bytedance-seedance-copyright", "entity": "字节跳动", "product": "Seedance 2.0", "event_type": "risk", "version_or_date": "2026-02-12", "sources_merged": 4},
+      {"key": "alibaba-qwen-3.5", "entity": "阿里", "product": "Qwen 3.5", "event_type": "release", "version_or_date": "2026-02-16", "sources_merged": 4},
+      {"key": "google-io-2026", "entity": "Google", "product": "Gemini/I/O", "event_type": "update", "version_or_date": "2026-05-19", "sources_merged": 2},
+      {"key": "google-gemini-deep-think", "entity": "Google", "product": "Gemini 3 Deep Think", "event_type": "update", "version_or_date": "2026-02-12", "sources_merged": 2},
+      {"key": "zhipu-glm-5", "entity": "智谱", "product": "GLM-5", "event_type": "opensource", "version_or_date": "2026-02-12", "sources_merged": 2}
     ],
-    "downgraded_entries": [
-      {
-        "title": "智谱GLM-5详细技术解析",
-        "reason": "GLM-5于2月12日发布已在昨日日报覆盖，今日仅作简要回顾，详细技术解析降级到opensource栏目",
-        "status": "观察/补充"
-      }
-    ]
+    "downgraded_entries": []
   }
 }
