@@ -1,30 +1,30 @@
 {
-  "date": "2026-02-18",
+  "date": "2026-02-19",
   "technemes": [
     {
-      "title": "AI Agent安全测试框架的紧迫性",
-      "summary": "AutoElicit研究显示Claude 4.5/4.6存在60-80%的安全测试绕过风险，随着AI Agent获得更高系统权限，专门的安全测试框架将成为基础设施必备组件。",
-      "sources": [{"name": "Hyperterminal X", "url": "https://x.com/hyperterminal_x/status/2023910599239893497"}]
+      "title": "中东主权基金成为AI最大金主",
+      "summary": "阿布扎比MGX同时投资OpenAI和Anthropic，目标管理1000亿美元AI资产，中东资本正通过AI投资争夺全球科技话语权，可能重塑AI产业的地缘政治格局。",
+      "sources": [{"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-02-17/openai-anthropic-deals-power-abu-dhabi-s-100-billion-ai-bet"}]
     },
     {
-      "title": "代码与设计的AI驱动融合",
-      "summary": "Figma与Claude Code的集成标志着开发者与设计师的工作边界进一步模糊，'vibe coding'生成原型→Figma精修→Claude构建生产代码的闭环正在形成。",
-      "sources": [{"name": "Figma X", "url": "https://x.com/figma/status/2023759565029003769"}]
+      "title": "AI代理保险的兴起",
+      "summary": "ElevenLabs获得AIUC-1认证并推出AI语音代理保险，标志着AI Agent商业化进入'可投保'阶段，责任认定和风险分摊机制将成为AI基础设施的关键组件。",
+      "sources": [{"name": "X@elevenlabsio", "url": "https://x.com/elevenlabsio/status/2024121832278757850"}]
     },
     {
-      "title": "AI视频生成的'强监管前夜'",
-      "summary": "Seedance 2.0引发的好莱坞版权争议标志着AI视频生成进入强监管前夜，'先发布后治理'模式可能面临法律和舆论的双重压力。",
-      "sources": [{"name": "NBC News", "url": "https://www.nbcnews.com/tech/tech-news/seedance-2-bytedance-copyright-infringement-concerns-hollywood-rcna259173"}]
+      "title": "脑机接口基础模型的开源突破",
+      "summary": "Zyphra ZUNA的发布填补了开源BCI-AI模型的空白，'思维到文本'技术从实验室走向开源社区，可能加速AR/VR无手柄交互和辅助医疗应用的商业化。",
+      "sources": [{"name": "PRNewswire", "url": "https://www.prnewswire.com/news-releases/zyphra-releases-zuna---bci-foundation-model-advancing-towards-thought-to-text-302691176.html"}]
     },
     {
-      "title": "NVIDIA生态锁定效应持续强化",
-      "summary": "Meta与NVIDIA的多年协议证明，即使有自研芯片能力的大型科技公司仍高度依赖NVIDIA生态，'Peak NVIDIA'预测被证伪，CUDA护城河依然深不可测。",
-      "sources": [{"name": "First Squawk X", "url": "https://x.com/FirstSquawk/status/2023910626968694816"}]
+      "title": "中国AI训练基础设施的'去美化'",
+      "summary": "智谱GLM-5完全基于华为昇腾芯片和MindSpore框架训练，代表国产AI训练基础设施的里程碑，为其他寻求硬件独立性的AI团队提供可行路径。",
+      "sources": [{"name": "X@real_Bluecat", "url": "https://x.com/real_Bluecat/status/2024267498875478133"}]
     },
     {
-      "title": "春节成为中国AI发布窗口期",
-      "summary": "字节、阿里、智谱相继在春节期间发布新品，中国AI厂商选择'除夕发布'策略，既避开了西方媒体的注意力竞争，又能在假期获得国内用户的深度体验。",
-      "sources": [{"name": "CNBC", "url": "https://www.cnbc.com/2026/02/17/china-alibaba-qwen-ai-agent-latest-model.html"}]
+      "title": "AI模型的'持续学习'新范式",
+      "summary": "Grok 4.2引入每周自进化的快速学习架构，区别于传统模型的静态发布模式，可能开启AI模型'在线进化'时代，但也引发模型一致性和安全性的新挑战。",
+      "sources": [{"name": "Basenor", "url": "https://www.basenor.com/blogs/news/grok-4-2-public-beta-live-xais-rapid-learning-ai-now-available"}]
     }
   ]
 }
