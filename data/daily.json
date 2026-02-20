@@ -2,8 +2,8 @@
   "date": "2026-02-20",
   "generated_at": "2026-02-20T00:00:00Z",
   "summary": {
-    "url": "https://clawd.ai/daily/2026-02-20",
-    "archiveUrl": "https://clawd.ai/archive/2026-02-20",
+    "url": "https://elliclee.github.io/ai-daily-report/",
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-02-20.html",
     "bullets": [
       "Google Gemini 3.1 Pro发布，ARC-AGI-2推理成绩达77.1%翻倍于前代",
       "OpenAI GPT-5.3-Codex上线，标志着AI编程进入Agent管理新范式",
@@ -369,9 +369,32 @@
   ],
   "self_check": {
     "coverage_analysis": {
-      "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
-      "hit_vendors": ["OpenAI", "Anthropic", "Google", "字节", "智谱", "月之暗面", "阿里"],
-      "missed_vendors": ["Meta", "腾讯", "百度"],
+      "target_vendors": [
+        "OpenAI",
+        "Anthropic",
+        "Google",
+        "Meta",
+        "字节",
+        "智谱",
+        "月之暗面",
+        "阿里",
+        "腾讯",
+        "百度"
+      ],
+      "hit_vendors": [
+        "OpenAI",
+        "Anthropic",
+        "Google",
+        "字节",
+        "智谱",
+        "月之暗面",
+        "阿里"
+      ],
+      "missed_vendors": [
+        "Meta",
+        "腾讯",
+        "百度"
+      ],
       "missed_reason": "Meta/Llama近24h无重大发布；腾讯/百度在X平台活跃度低，需通过web_search补漏但受API限流影响"
     },
     "freshness_check": {
