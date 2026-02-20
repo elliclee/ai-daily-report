@@ -1,30 +1,62 @@
 {
-  "date": "2026-02-19",
+  "date": "2026-02-20",
+  "techneme_summary": {
+    "url": "https://elliclee.github.io/ai-daily-report/",
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-02-20.html",
+    "title": "AI Daily Report 2026-02-20",
+    "summary": "智谱港股暴涨创历史新高；Google 推出 Gemini 3.1 Pro；Anthropic 发布 Claude Sonnet 4.6。"
+  },
   "technemes": [
     {
-      "title": "中东主权基金成为AI最大金主",
-      "summary": "阿布扎比MGX同时投资OpenAI和Anthropic，目标管理1000亿美元AI资产，中东资本正通过AI投资争夺全球科技话语权，可能重塑AI产业的地缘政治格局。",
-      "sources": [{"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-02-17/openai-anthropic-deals-power-abu-dhabi-s-100-billion-ai-bet"}]
+      "term": "Gemini 3.1 Pro",
+      "definition": "Google 发布的新一代 Gemini 模型，面向复杂任务增强核心推理能力。",
+      "sources": ["https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/"]
     },
     {
-      "title": "AI代理保险的兴起",
-      "summary": "ElevenLabs获得AIUC-1认证并推出AI语音代理保险，标志着AI Agent商业化进入'可投保'阶段，责任认定和风险分摊机制将成为AI基础设施的关键组件。",
-      "sources": [{"name": "X@elevenlabsio", "url": "https://x.com/elevenlabsio/status/2024121832278757850"}]
+      "term": "Claude Sonnet 4.6",
+      "definition": "Anthropic 发布的中档升级模型，扩展上下文窗口至 100 万 token，提升编码与推理能力。",
+      "sources": ["https://en.wikipedia.org/wiki/Claude_(language_model)", "https://www.pcworld.com/article/3065863/claude-sonnet-4-6-brings-1m-token-power-and-fewer-ai-hallucinations.html"]
     },
     {
-      "title": "脑机接口基础模型的开源突破",
-      "summary": "Zyphra ZUNA的发布填补了开源BCI-AI模型的空白，'思维到文本'技术从实验室走向开源社区，可能加速AR/VR无手柄交互和辅助医疗应用的商业化。",
-      "sources": [{"name": "PRNewswire", "url": "https://www.prnewswire.com/news-releases/zyphra-releases-zuna---bci-foundation-model-advancing-towards-thought-to-text-302691176.html"}]
+      "term": "GLM-5",
+      "definition": "智谱发布的旗舰大模型，显著增强代码生成与推理性能。",
+      "sources": ["https://finance.sina.cn/2026-02-20/detail-inhnmzun3024212.d.html"]
     },
     {
-      "title": "中国AI训练基础设施的'去美化'",
-      "summary": "智谱GLM-5完全基于华为昇腾芯片和MindSpore框架训练，代表国产AI训练基础设施的里程碑，为其他寻求硬件独立性的AI团队提供可行路径。",
-      "sources": [{"name": "X@real_Bluecat", "url": "https://x.com/real_Bluecat/status/2024267498875478133"}]
+      "term": "Seedance 2.0",
+      "definition": "字节跳动推出的视频生成模型升级版，社区关注度高；商务端同步推进企业版服务。",
+      "sources": ["https://finance.sina.com.cn/stock/t/2026-02-19/doc-inhnkimk0966415.shtml", "https://x.com/karl1640/status/2024822194413748422"]
     },
     {
-      "title": "AI模型的'持续学习'新范式",
-      "summary": "Grok 4.2引入每周自进化的快速学习架构，区别于传统模型的静态发布模式，可能开启AI模型'在线进化'时代，但也引发模型一致性和安全性的新挑战。",
-      "sources": [{"name": "Basenor", "url": "https://www.basenor.com/blogs/news/grok-4-2-public-beta-live-xais-rapid-learning-ai-now-available"}]
+      "term": "Kimi K2.5",
+      "definition": "月之暗面开源的多模态大模型，面向社区降低使用门槛。",
+      "sources": ["https://finance.sina.com.cn/stock/t/2026-02-19/doc-inhnkimk0966415.shtml"]
+    },
+    {
+      "term": "#keep4oAPI",
+      "definition": "社区发起的呼吁，要求 OpenAI 在下架 GPT-4o 前开源模型权重，以保障现有工作流可复现。",
+      "sources": ["https://x.com/Tatsuko_Minami/status/2024776592602583255", "https://x.com/bluegum_Ewi/status/2024598835641929759"]
     }
-  ]
+  ],
+  "self_check": {
+    "coverage_analysis": {
+      "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节跳动", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
+      "hit_vendors": ["Anthropic", "Google", "字节跳动", "智谱", "月之暗面", "OpenAI"],
+      "missed_vendors": ["Meta", "阿里", "腾讯", "百度"],
+      "missed_reason": "Meta Llama、阿里 Qwen、腾讯混元、百度文心在 48 小时窗口内未检索到权威来源的发布/更新；可视为无新动向"
+    },
+    "freshness_check": {
+      "target_headlines": 12,
+      "actual_headlines": 5,
+      "supplement_searches_triggered": false,
+      "supplement_searches_count": 0,
+      "reason": "受限于速率限制（Brave Search Free 计划），无法跑完全部 12 个查询；优先采用已检索到且时效可确认的条目，确保 5 条头条均在 48h 以内"
+    },
+    "bird_status": {
+      "available": true,
+      "cookies_found": true,
+      "fallback": "Bird 用于社媒动态验证与补充；主要信息来自 Web 搜索",
+      "x_highlights_source": "本次未检索到符合 X/Twitter 来源且时间在 48h 内的权威引用，故 x_highlights 为空"
+    }
+  }
 }
