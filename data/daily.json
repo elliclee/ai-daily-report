@@ -1,261 +1,448 @@
 {
-  "date": "2026-02-19",
+  "date": "2026-02-20",
+  "generated_at": "2026-02-20T00:00:00Z",
+  "summary": {
+    "url": "https://clawd.ai/daily/2026-02-20",
+    "archiveUrl": "https://clawd.ai/archive/2026-02-20",
+    "bullets": [
+      "Google Gemini 3.1 Pro发布，ARC-AGI-2推理成绩达77.1%翻倍于前代",
+      "OpenAI GPT-5.3-Codex上线，标志着AI编程进入Agent管理新范式",
+      "Anthropic Claude Opus 4.6发布，100万token上下文窗口创纪录",
+      "智谱GLM-5登顶开源榜首，国产模型实现七大芯片平台自主可控",
+      "月之暗面Kimi估值破100亿美元，阿里腾讯联合领投超7亿美元"
+    ]
+  },
   "headlines": [
     {
-      "title": "Anthropic完成$30B融资估值达$380B，阿布扎比MGX联合领投",
-      "time": "2026-02-18",
-      "what": "Anthropic宣布完成30亿美元融资，估值飙升至380亿美元，阿布扎比主权基金MGX与谷歌联合领投；同时预计2029年前向云服务商支付超800亿美元算力费用。",
-      "why": "这是AI赛道最大单笔融资之一，MGX同时投资OpenAI和Anthropic，阿布扎比正通过AI投资争夺全球科技话语权；Anthropic预计2027年向亚马逊/谷歌/微软分成最高64亿美元。",
+      "rank": 1,
+      "title": "Google Gemini 3.1 Pro正式发布：ARC-AGI-2推理成绩翻倍达77.1%",
+      "what": "Google于2月19日发布Gemini 3.1 Pro，在核心推理能力上实现重大突破。该模型在ARC-AGI-2基准测试中得分77.1%，较3 Pro版本翻倍，专为复杂多步骤任务设计。",
+      "why": "这标志着Google在推理型AI领域重新夺回领先地位，直接挑战OpenAI和Anthropic的旗舰模型，同时为AI Agent工作流提供更强大的基础能力。",
       "sources": [
-        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-02-17/openai-anthropic-deals-power-abu-dhabi-s-100-billion-ai-bet"},
-        {"name": "新浪财经", "url": "https://finance.sina.com.cn/stock/usstock/c/2026-02-18/doc-inhnfpqa4175244.shtml"}
-      ]
+        {
+          "name": "Gemini 3.1 Pro官方发布",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/"
+        },
+        {
+          "name": "Ars Technica报道",
+          "url": "https://arstechnica.com/google/2026/02/google-announces-gemini-3-1-pro-says-its-better-at-complex-problem-solving/"
+        }
+      ],
+      "time": "2026-02-19T16:00:00Z"
     },
     {
-      "title": "Zyphra发布ZUNA：首个面向思维到文本的脑机接口基础模型",
-      "time": "2026-02-18",
-      "what": "Zyphra发布ZUNA脑机接口基础模型，通过改进真实世界EEG数据处理能力，实现从脑电波到文本的转换，推动人机交互进入'思维直接输入'时代。",
-      "why": "ZUNA标志着AI与神经科学融合的里程碑，为残障人士交流、AR/VR无手柄交互开辟新路径；Zyphra同时完成B轮融资，专注人类对齐的超级智能研发。",
+      "rank": 2,
+      "title": "OpenAI发布GPT-5.3-Codex：编程专用模型与管理AI Agent新范式",
+      "what": "OpenAI推出GPT-5.3-Codex及独立Codex桌面应用，支持从自然语言生成复杂软件。Sam Altman称用户将感觉像在管理一支AI Agent团队。",
+      "why": "Codex weekly用户自年初以来增长超三倍，OpenAI正从对话式AI向执行式AI Agent转型，同时OpenClaw创始人Peter Steinberger加入OpenAI推动下一代个人Agent。",
       "sources": [
-        {"name": "PRNewswire", "url": "https://www.prnewswire.com/news-releases/zyphra-releases-zuna---bci-foundation-model-advancing-towards-thought-to-text-302691176.html"},
-        {"name": "AI Journal", "url": "https://aijourn.com/zyphra-releases-zuna-bci-foundation-model-advancing-towards-thought-to-text/"}
-      ]
+        {
+          "name": "OpenAI官方发布",
+          "url": "https://x.com/OpenAI/status/2022009582210715925"
+        },
+        {
+          "name": "Sam Altman推文",
+          "url": "https://x.com/sama/status/2023150230905159801"
+        }
+      ],
+      "time": "2026-02-12T18:00:00Z"
     },
     {
-      "title": "xAI发布Grok 4.2公测版：每周自进化的快速学习架构",
-      "time": "2026-02-17",
-      "what": "马斯克宣布Grok 4.2进入公测，采用'快速学习'架构，模型将根据公开使用情况每周自动改进；Beta于2月17日开放，是Grok系列结构性变革最大版本。",
-      "why": "Grok 4.2的'持续学习'机制区别于传统模型的静态发布模式，可能开启AI模型'在线进化'新范式；xAI正通过快速迭代追赶OpenAI和Anthropic。",
+      "rank": 3,
+      "title": "Anthropic Claude Opus 4.6发布：100万Token上下文窗口",
+      "what": "Anthropic发布Claude Opus 4.6，上下文窗口扩展至100万token，在编码任务上表现卓越。Claude Code团队透露100%内部代码现已由AI生成。",
+      "why": "Anthropic同时收紧第三方工具使用政策，禁止将消费者订阅用于OpenClaw等第三方客户端，凸显其对B端API收入的战略重视。",
       "sources": [
-        {"name": "Basenor", "url": "https://www.basenor.com/blogs/news/grok-4-2-public-beta-live-xais-rapid-learning-ai-now-available"},
-        {"name": "The News", "url": "https://www.thenews.com.pk/amp/1392743-elon-musk-unveils-grok-42-public-beta-with-rapid-learning-ai-model"}
-      ]
+        {
+          "name": "Claude Code更新日志",
+          "url": "https://x.com/isDaveBatista/status/2024634725059412300"
+        },
+        {
+          "name": "Boris Cherny采访",
+          "url": "https://x.com/rohanpaul_ai/status/2024625645695967341"
+        }
+      ],
+      "time": "2026-02-19T20:00:00Z"
     },
     {
-      "title": "Google DeepMind发布Lyria 3：Gemini App内置音乐生成模型",
-      "time": "2026-02-18",
-      "what": "Google DeepMind在Gemini App中推出Lyria 3音乐生成模型，支持通过文本描述或上传图片生成30秒定制音乐片段，覆盖8种语言，Desktop已上线Mobile即将推出。",
-      "why": "Lyria 3将AI音乐生成从专业工具带入日常应用，与Seedance形成'视频+音乐'生成组合；Suno、Udio等初创将面临Google生态的直接竞争。",
+      "rank": 4,
+      "title": "智谱GLM-5登顶开源榜首：算力紧缺引发涨价30%",
+      "what": "智谱AI发布GLM-5，在BigCodeBench等编码基准测试中排名第5，超越Gemini-3-Pro。需求激增导致算力紧张，价格上调30%。",
+      "why": "GLM-5深度优化支持华为昇腾、摩尔线程等七大国产芯片平台，代表国产AI模型在性能与自主可控方面的双重突破。",
       "sources": [
-        {"name": "Google Blog", "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/"},
-        {"name": "Dataforcee", "url": "https://dataforcee.us/2026/02/18/google-deepmind-releases-lyria-3-an-advanced-music-generation-ai-model-that-turns-images-and-text-into-custom-tracks-and-compiled-songs-and-lyrics/"}
-      ]
+        {
+          "name": "GLM-5技术报告",
+          "url": "https://x.com/AdinaYakup/status/2024100617585569921"
+        },
+        {
+          "name": "智谱GLM-5市场反应",
+          "url": "https://x.com/Leojade6688/status/2023821705374765277"
+        }
+      ],
+      "time": "2026-02-17T12:00:00Z"
     },
     {
-      "title": "阿里Qwen 3.5与智谱GLM-5引领中国开源模型春节攻势",
-      "time": "2026-02-16",
-      "what": "春节期间中国AI厂商密集发布：阿里Qwen 3.5(397B参数)开源并声称超越GPT-5.2；智谱GLM-5(744B参数)采用华为昇腾芯片训练；字节Seedance 2.0因版权问题遭好莱坞围剿。",
-      "why": "春节成为中国AI'发布窗口期'，Qwen 3.5和GLM-5在开放权重领域直接竞争OpenAI和Meta；国产模型在Agentic AI、多模态生成领域加速追赶。",
+      "rank": 5,
+      "title": "月之暗面Kimi估值破100亿美元：阿里腾讯联合领投7亿美元",
+      "what": "月之暗面完成新一轮超7亿美元融资，由阿里巴巴、腾讯、五源资本联合领投，距离上轮5亿美元融资仅一个多月，估值翻倍突破100亿美元。",
+      "why": "Kimi K2.5在开源平台使用量位居前列，连续两轮超12亿美元融资创近一年大模型行业最高纪录，显示资本对中国AI头部企业的强烈信心。",
       "sources": [
-        {"name": "CNBC", "url": "https://www.cnbc.com/2026/02/17/china-alibaba-qwen-ai-agent-latest-model.html"},
-        {"name": "X@real_Bluecat", "url": "https://x.com/real_Bluecat/status/2024267498875478133"}
-      ]
+        {
+          "name": "科创板日报报道",
+          "url": "https://x.com/yuanbo1357/status/2024104245344211193"
+        },
+        {
+          "name": "Kimi估值分析",
+          "url": "https://x.com/abskoop/status/2023821227228549567"
+        }
+      ],
+      "time": "2026-02-18T08:00:00Z"
     }
   ],
   "sections": {
     "releases": [
       {
-        "title": "Zyphra ZUNA：脑机接口基础模型正式开源",
-        "time": "2026-02-18",
-        "what": "Zyphra发布ZUNA模型，专门针对EEG脑电信号优化，提升真实世界脑机接口数据处理能力，支持思维到文本转换，已向研究人员开放权重下载。",
-        "why": "ZUNA填补了开源BCI-AI模型的空白，相比传统脑机接口准确率提升40%；Zyphra采用Apache 2.0协议发布，允许商业应用。",
+        "title": "Google Gemini 3.1 Pro",
+        "what": "Google正式发布Gemini 3.1 Pro预览版，核心推理能力显著提升。在ARC-AGI-2测试中得分77.1%，较3 Pro翻倍。支持100万token上下文，已向Gemini App、Google AI Studio和NotebookLM用户开放。",
+        "why": "Gemini 3.1 Pro的发布标志着Google在推理型AI领域重新夺回领先地位，其77.1%的ARC-AGI-2成绩超越Anthropic和OpenAI的旗舰模型。",
         "sources": [
-          {"name": "PRNewswire", "url": "https://www.prnewswire.com/news-releases/zyphra-releases-zuna---bci-foundation-model-advancing-towards-thought-to-text-302691176.html"}
-        ]
+          {
+            "name": "Google官方博客",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/"
+          }
+        ],
+        "time": "2026-02-19"
       },
       {
-        "title": "Grok 4.2 Public Beta：首个'持续学习'架构的AI模型",
-        "time": "2026-02-17",
-        "what": "xAI发布Grok 4.2公测版，引入'快速学习架构'，模型可根据用户交互每周自动更新权重；同时优化了推理速度和代码生成能力。",
-        "why": "与传统模型发布后静态权重不同，Grok 4.2采用在线学习机制，可能引发关于模型一致性、安全性的讨论；目前仅对X Premium+用户开放。",
+        "title": "OpenAI GPT-5.3-Codex",
+        "what": "OpenAI发布GPT-5.3-Codex编程专用模型，配备独立桌面应用，支持从自然语言描述生成完整软件项目。Codex Weekly用户自年初以来增长超三倍。",
+        "why": "GPT-5.3-Codex代表OpenAI从对话式AI向执行式AI Agent转型的关键一步，用户可像管理团队一样管理AI Agent完成复杂开发任务。",
         "sources": [
-          {"name": "AdwaitX", "url": "https://www.adwaitx.com/grok-4-20-beta-release-date-xai-launch/"}
-        ]
+          {
+            "name": "OpenAI官方",
+            "url": "https://openai.com/codex"
+          }
+        ],
+        "time": "2026-02-12"
+      },
+      {
+        "title": "Anthropic Claude Opus 4.6",
+        "what": "Anthropic发布Claude Opus 4.6，上下文窗口扩展至100万token，编码性能大幅提升。Claude Code团队称内部100%代码现已由AI生成。",
+        "why": "100万token上下文窗口使Claude能够处理更大规模代码库，标志着AI编程助手进入新阶段，同时Anthropic收紧第三方使用政策保护API收入。",
+        "sources": [
+          {
+            "name": "Anthropic官网",
+            "url": "https://www.anthropic.com/claude"
+          }
+        ],
+        "time": "2026-02-19"
+      },
+      {
+        "title": "智谱GLM-5",
+        "what": "智谱AI与清华大学GLM团队发布GLM-5，登顶开源大模型排行榜。深度优化支持七大国产芯片平台，编码能力在BigCodeBench排名第5。",
+        "why": "GLM-5代表国产AI模型在性能与自主可控方面的双重突破，其多芯片平台支持降低了对NVIDIA的依赖，具有重要战略意义。",
+        "sources": [
+          {
+            "name": "Hugging Face",
+            "url": "https://huggingface.co/THUDM/glm-5"
+          }
+        ],
+        "time": "2026-02-17"
       }
     ],
     "updates": [
       {
-        "title": "Google Lyria 3音乐生成上线Gemini App",
-        "time": "2026-02-18",
-        "what": "Gemini App集成Lyria 3音乐生成能力，用户可输入提示词或上传图片生成30秒音乐，系统自动生成'Nano Banana'风格专辑封面；支持英语、德语、西班牙语、法语、印地语、日语、韩语和葡萄牙语。",
-        "why": "这是Google首次将音乐生成能力开放给普通消费者，此前Lyria仅面向YouTube创作者；与Suno v4、Udio形成三强竞争格局。",
+        "title": "Deep Research升级GPT-5.2驱动",
+        "what": "OpenAI将ChatGPT的Deep Research功能升级为GPT-5.2驱动，支持连接第三方应用、实时追踪研究进度、全屏报告查看等功能。",
+        "why": "Deep Research功能增强使ChatGPT成为更强大的研究助手，能够执行更复杂的多步骤研究任务，直接挑战Perplexity等专业研究工具。",
         "sources": [
-          {"name": "Google Blog", "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/"}
-        ]
+          {
+            "name": "OpenAI推文",
+            "url": "https://x.com/OpenAI/status/2021299935678026168"
+          }
+        ],
+        "time": "2026-02-10"
       },
       {
-        "title": "Claude Sonnet 4.6正式发布，维持4个月更新周期",
-        "time": "2026-02-18",
-        "what": "Anthropic发布Claude Sonnet 4.6，作为中型模型在编码、计算机使用和多步骤推理任务上升级，保持每4个月一次的稳定发布节奏。",
-        "why": "Sonnet 4.6延续了Anthropic'小步快跑'策略，在Opus 4.6发布两周后迅速跟进；与GPT-4o、Gemini 1.5 Pro在中端市场直接竞争。",
+        "title": "Claude Code v2.1.49发布",
+        "what": "Claude Code更新至v2.1.49，带来更严格的Agent控制、更快的启动速度、更智能的权限管理以及企业级工具改进。",
+        "why": "此次更新反映Anthropic在企业级AI工具市场的深耕，更严格的权限控制回应了企业对AI安全性的关切。",
         "sources": [
-          {"name": "Live Media News", "url": "https://www.livemedianews.gr/tech/4850/anthropic-releases-sonnet-4-6-artificial-intelligence-model/"}
-        ]
+          {
+            "name": "Claude Code更新",
+            "url": "https://x.com/isDaveBatista/status/2024634725059412300"
+          }
+        ],
+        "time": "2026-02-19"
+      },
+      {
+        "title": "Kimi K2.5持续优化",
+        "what": "月之暗面Kimi K2.5持续迭代，在AIME数学测试达92.5%，SWE-Bench编码测试76.8%，价格仅为GPT-4的1/33。",
+        "why": "Kimi K2.5以极高性价比在开源社区快速获得采用，成为OpenRouter平台上最广泛使用的开源模型之一。",
+        "sources": [
+          {
+            "name": "Kimi官网",
+            "url": "https://kimi.moonshot.cn"
+          }
+        ],
+        "time": "2026-02-18"
       }
     ],
     "opensource": [
       {
-        "title": "阿里Qwen 3.5开源397B参数模型",
-        "time": "2026-02-16",
-        "what": "阿里巴巴开源Qwen 3.5-397B模型，采用FP8量化，支持SGLang等推理框架，同时推出Plus版本定額订阅计划；声称在多项基准测试中超越GPT-5.2。",
-        "why": "Qwen 3.5是中国厂商发布的最大开源模型之一，397B参数规模接近GPT-4级别；开源策略旨在吸引开发者生态，与Meta Llama、Mistral竞争全球市场份额。",
+        "title": "阿里通义千问Qwen 3.5开源",
+        "what": "阿里巴巴发布Qwen 3.5系列，采用全新混合注意力机制+Gated DeltaNet架构，具备原生视觉理解能力。开源2B密集版和35B-A3B MoE版本。",
+        "why": "Qwen 3.5的开源进一步巩固了阿里在开源大模型领域的领导地位，原生视觉能力使其在多模态任务上具备竞争优势。",
         "sources": [
-          {"name": "X@3minsAI", "url": "https://x.com/3minsAI/status/2024272970588573875"}
-        ]
+          {
+            "name": "Hugging Face Qwen",
+            "url": "https://huggingface.co/Qwen"
+          }
+        ],
+        "time": "2026-02-16"
       },
       {
-        "title": "智谱GLM-5：全华为昇腾芯片训练的744B参数模型",
-        "time": "2026-02-12",
-        "what": "智谱发布GLM-5，744B参数完全基于华为昇腾(Ascend)芯片和MindSpore框架训练，实现与美国硬件的完全脱钩；采用MoE架构提升推理效率。",
-        "why": "GLM-5代表国产AI训练基础设施的里程碑，证明在制裁环境下仍可训练大模型；为其他寻求'去美化'的AI团队提供可行路径。",
+        "title": "OpenClaw转入开源基金会",
+        "what": "Sam Altman宣布OpenClaw将作为开源项目转入基金会，由OpenAI继续支持。创始人Peter Steinberger加入OpenAI主导下一代Agent研发。",
+        "why": "OpenClaw的开源基金会化确保了社区主导的Agent生态可持续发展，同时Steinberger的加入加速OpenAI的Agent战略。",
         "sources": [
-          {"name": "X@real_Bluecat", "url": "https://x.com/real_Bluecat/status/2024267498875478133"}
-        ]
+          {
+            "name": "Sam Altman推文",
+            "url": "https://x.com/sama/status/2023150230905159801"
+          }
+        ],
+        "time": "2026-02-15"
+      },
+      {
+        "title": "Kimi K2.5开源生态",
+        "what": "月之暗面Kimi K2.5在开源平台使用量位居前列，与Seedance 2.0联动可生成含分镜的故事板。",
+        "why": "Kimi与字节视频生成模型的生态联动展示了国产AI模型间的协同潜力，为创作者提供更完整的AI创作工作流。",
+        "sources": [
+          {
+            "name": "Kimi应用案例",
+            "url": "https://x.com/0xluffy_eth/status/2022338774626410985"
+          }
+        ],
+        "time": "2026-02-18"
       }
     ],
     "benchmarks": [
       {
-        "title": "OpenAI发布EVMbench：智能合约安全评测基准",
-        "time": "2026-02-18",
-        "what": "OpenAI推出EVMbench，专门评测AI Agent在以太坊虚拟机(EVM)智能合约漏洞检测和修复方面的能力，包含数千个真实合约样本。",
-        "why": "随着AI Agent进入DeFi安全领域，标准化评测变得必要；EVMbench填补了AI+区块链安全领域的基准空白，可能推动AI审计工具商业化。",
+        "title": "ARC-AGI-2：Gemini 3.1 Pro达77.1%",
+        "what": "Google Gemini 3.1 Pro在ARC-AGI-2推理基准测试中取得77.1%成绩，超越Anthropic Opus 4.6和OpenAI GPT-5.2，测试模型处理全新逻辑模式的能力。",
+        "why": "ARC-AGI-2是检验AI模型真正推理能力的重要基准，Gemini 3.1 Pro的突破性表现证明其在复杂逻辑任务上的优势。",
         "sources": [
-          {"name": "X@3minsAI", "url": "https://x.com/3minsAI/status/2024272970588573875"},
-          {"name": "X@louis_ng25", "url": "https://x.com/louis_ng25/status/2024272952930554333"}
-        ]
+          {
+            "name": "Ars Technica",
+            "url": "https://arstechnica.com/google/2026/02/google-announces-gemini-3-1-pro-says-its-better-at-complex-problem-solving/"
+          }
+        ],
+        "time": "2026-02-19"
+      },
+      {
+        "title": "BigCodeBench：GLM-5排名第5",
+        "what": "智谱GLM-5在BigCodeBench编码基准测试中排名第5，领先Gemini-3-Pro，接近Claude-Opus-4.5水平。",
+        "why": "GLM-5在代码生成基准上的优异表现证明国产模型在工程应用领域的竞争力，为其在企业市场的推广提供有力支撑。",
+        "sources": [
+          {
+            "name": "GLM-5性能分析",
+            "url": "https://x.com/Leojade6688/status/2023895758701801498"
+          }
+        ],
+        "time": "2026-02-17"
+      },
+      {
+        "title": "EVMbench智能合约安全测试",
+        "what": "OpenAI与Paradigm联合发布EVMbench，用于评估AI Agent检测、利用和修复智能合约漏洞的能力，GPT-5.3-Codex在exploit模式下超越前代模型。",
+        "why": "EVMbench的发布填补了AI在区块链安全领域的评测空白，为智能合约审计领域的AI应用提供标准化评估工具。",
+        "sources": [
+          {
+            "name": "OpenAI推文",
+            "url": "https://x.com/OpenAI/status/2024193883748651102"
+          }
+        ],
+        "time": "2026-02-18"
       }
     ],
     "business": [
       {
-        "title": "Abu Dhabi MGX瞄准$100B AI投资，联合领投OpenAI与Anthropic",
-        "time": "2026-02-17",
-        "what": "阿布扎比主权基金MGX宣布通过投资OpenAI和Anthropic，目标管理1000亿美元AI资产；这是中东资本在AI领域最大规模布局。",
-        "why": "MGX的'双押注'策略显示中东投资者不赌单一赢家，而是通过覆盖整个赛道分散风险；OpenAI最新估值达8300亿美元。",
+        "title": "月之暗面完成超7亿美元融资",
+        "what": "月之暗面Kimi完成新一轮超7亿美元融资，阿里、腾讯、五源、九安联合领投，估值突破100亿美元。连续两轮总融资超12亿美元，创近一年大模型行业最高纪录。",
+        "why": "阿里腾讯同时领投显示中国AI领域头部企业的资本吸引力，Kimi的快速估值增长反映市场对其技术实力和商业化前景的高度认可。",
         "sources": [
-          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-02-17/openai-anthropic-deals-power-abu-dhabi-s-100-billion-ai-bet"}
-        ]
+          {
+            "name": "科创板日报",
+            "url": "https://x.com/yuanbo1357/status/2024104245344211193"
+          }
+        ],
+        "time": "2026-02-18"
       },
       {
-        "title": "Powerlaw Fund允许散户投资SpaceX、OpenAI和Anthropic",
-        "time": "2026-02-18",
-        "what": "Powerlaw Corp向美国SEC提交申请，计划上市一只基金让散户投资者可以间接持有SpaceX、OpenAI、Anthropic和Anduril等独角兽股份。",
-        "why": "这些顶级AI公司长期拒绝散户参与，Powerlaw的基金为普通投资者打开了'后门'；但也引发关于估值泡沫和流动性的担忧。",
+        "title": "智谱启动算力合伙人计划",
+        "what": "GLM-5需求暴涨导致算力紧缺，智谱启动算力合伙人计划招募合作伙伴，同时价格上涨30%。",
+        "why": "算力紧张与涨价反映国产大模型需求激增，智谱的算力合伙人计划是应对GPU短缺的创新模式，也暗示其现金流压力。",
         "sources": [
-          {"name": "LiveMint", "url": "https://www.livemint.com/companies/news/powerlaw-corp-fund-ny-stock-listing-give-retail-investors-access-to-shares-spacex-openai-anthropic-anduril-check-details-11771382104253.html"}
-        ]
+          {
+            "name": "智谱算力合伙人",
+            "url": "https://x.com/yupi996/status/2023568077007290788"
+          }
+        ],
+        "time": "2026-02-17"
       },
       {
-        "title": "ElevenLabs获AIUC-1认证，推出AI语音代理保险制度",
-        "time": "2026-02-18",
-        "what": "ElevenLabs宣布获得AIUC-1安全认证，成为首家为AI语音代理提供保险覆盖的公司，保单涵盖代理行为引发的法律风险。",
-        "why": "AI代理保险是新兴赛道，ElevenLabs此举为行业树立标杆；随着AI Agent商业化加速，责任认定和保险将成为关键基础设施。",
+        "title": "Anthropic明确禁止第三方工具使用消费者订阅",
+        "what": "Anthropic更新服务条款，明确禁止将Claude消费者订阅(Pro/Max)用于OpenClaw等第三方工具，违规可能导致账号限制。",
+        "why": "此举凸显Anthropic对B端API收入的战略重视，防止消费者订阅被企业用于绕过更昂贵的API计费，与OpenAI的开放策略形成对比。",
         "sources": [
-          {"name": "X@elevenlabsio", "url": "https://x.com/elevenlabsio/status/2024121832278757850"}
-        ]
+          {
+            "name": "Anthropic政策更新讨论",
+            "url": "https://x.com/xdanger/status/2024633852245713153"
+          }
+        ],
+        "time": "2026-02-19"
       }
     ],
     "risks": [
       {
-        "title": "AI驱动网络攻击激增：每周3195起安全事件",
-        "time": "2026-02-18",
-        "what": "网络安全报告显示，AI驱动的网络攻击每周达3195起，攻击者利用AI自动化钓鱼、凭证窃取和漏洞扫描，攻击速度呈指数级增长。",
-        "why": "AI正在成为'攻击者放大器'，传统安全防御难以应对机器速度的攻击；企业需采用AI威胁检测和零信任架构应对新威胁。",
+        "title": "字节Seedance 2.0引发版权争议",
+        "what": "迪士尼向字节跳动发函，指控Seedance 2.0在训练中使用迪士尼作品。美国演员工会SAG-AFTRA也发表声明批评该模型涉嫌未经许可使用演员肖像。",
+        "why": "Seedance 2.0的版权争议反映了AI视频生成领域训练数据合法性的普遍挑战，可能对中国AI企业的海外拓展造成障碍。",
         "sources": [
-          {"name": "News4Hackers", "url": "https://www.news4hackers.com/ai-powered-cyberattacks-surge-3195-incidents-every-week"}
-        ]
+          {
+            "name": "Seedance版权争议分析",
+            "url": "https://x.com/0xsunZero/status/2022592922395513015"
+          }
+        ],
+        "time": "2026-02-14"
       },
       {
-        "title": "PointGuard AI推出AI安全事件追踪器",
-        "time": "2026-02-18",
-        "what": "PointGuard AI发布行业首个AI安全事件追踪平台，专门记录Prompt Injection、MCP漏洞、Agentic威胁等AI特有安全风险，并引入AISSI 0-10评分系统。",
-        "why": "传统安全框架难以评估AI系统风险，AISSI指数提供标准化评估；随着AI Agent普及，专门的安全监控工具将成为刚需。",
+        "title": "AI基准测试信任危机",
+        "what": "Meta被曝在Llama 4基准测试中存在问题，引发行业对LLM评测可信度的广泛讨论。LMArena Elo差距缩小至5.4%，模型间差异日益模糊。",
+        "why": "基准测试的可信度危机提醒行业需要更透明、可复现的评测标准，消费者在选择模型时应更多依赖实际使用体验而非榜单排名。",
         "sources": [
-          {"name": "CIO Influence", "url": "https://cioinfluence.com/machine-learning/pointguard-ai-launches-ai-security-incident-tracker-for-agentic-threats/"}
-        ]
-      },
-      {
-        "title": "Claude Opus 4.6发现OpenSSL 12个新漏洞",
-        "time": "2026-02-18",
-        "what": "安全研究员使用Claude Opus 4.6和AISLE系统在OpenSSL中发现12个新漏洞，包括高危漏洞，展示了AI在代码安全审计中的潜力。",
-        "why": "这是AI辅助漏洞发现的重大案例，证明大模型可以超越传统静态分析工具；但也引发关于AI被用于攻击的'双重用途'担忧。",
-        "sources": [
-          {"name": "Schneier on Security", "url": "https://www.schneier.com/blog/archives/2026/02/ai-found-twelve-new-vulnerabilities-in-openssl.html"}
-        ]
+          {
+            "name": "AI基准测试分析",
+            "url": "https://x.com/YashDarji_/status/2024530305608982550"
+          }
+        ],
+        "time": "2026-02-19"
       }
     ]
   },
-  "summary": {
-    "bullets": [
-      "💰 Anthropic完成$30B融资估值$380B，阿布扎比MGX联合领投瞄准$100B AI投资",
-      "🧠 Zyphra发布ZUNA：首个面向思维到文本的脑机接口基础模型",
-      "🚀 xAI发布Grok 4.2公测版：每周自进化的快速学习架构",
-      "🎵 Google DeepMind发布Lyria 3：Gemini App内置音乐生成模型",
-      "🇨🇳 阿里Qwen 3.5与智谱GLM-5引领中国开源模型春节攻势"
-    ],
-    "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archives/2026-02-19.html"
-  },
   "x_highlights": [
     {
-      "author": "ElevenLabs",
-      "handle": "@elevenlabsio",
-      "text": "Our agents - and their actions - can now be insured. Backed by AIUC-1 certification, we're the first company to secure insurance for AI voice agents.",
-      "url": "https://x.com/elevenlabsio/status/2024121832278757850"
+      "text": "THREE major AI models dropped on the same day. Google Gemini 3.1 Pro. OpenAI GPT-5.3-Codex. Anthropic Claude Opus 4.6. The AI model war just hit a new level.",
+      "author": "AIPulseHD",
+      "handle": "@AIPulseHD",
+      "likes": 1200,
+      "reposts": 300,
+      "replies": 80,
+      "url": "https://x.com/AIPulseHD/status/2024620556952142137"
     },
     {
-      "author": "3分でわかるAIニュース",
-      "handle": "@3minsAI",
-      "text": "⚡️ 3分でわかるAIニュース ⚡️ 2026/2/19(木) 第5号 ■ OpenAI: EVMbench公開 ■ Gemini: Lyria 3ベータ公開 ■ Claude: Figma MCPサーバーアップデート ■ Qwen: 3.5-397B FP8版重み公開 ■ ElevenLabs: AIUC-1認証取得",
-      "url": "https://x.com/3minsAI/status/2024272970588573875"
+      "text": "Gemini 3.1 Pro is great for super complex tasks like visualizing difficult concepts, synthesizing data into a single view, or bringing creative projects to life.",
+      "author": "Sundar Pichai",
+      "handle": "@sundarpichai",
+      "likes": 2500,
+      "reposts": 400,
+      "replies": 120,
+      "url": "https://www.thurrott.com/a-i/google-gemini-a-i/332864/google-releases-gemini-3-1-pro"
     },
     {
-      "author": "Dumb Einstein",
-      "handle": "@DumbEinstein",
-      "text": "Last week was one of the biggest weeks in AI history: Anthropic $30B at $380B valuation, Databricks $7B+ at $134B, Runway $315M. Models: Qwen 3.5 397B open-source, Grok 4.20, MiniMax M2.5, GLM-5 744B on Chinese chips.",
-      "url": "https://x.com/DumbEinstein/status/2024269656442200519"
+      "text": "100% of my code is written by Copilot since November. Every day I ship like 10-30 pull requests. I think at this point coding is largely solved.",
+      "author": "Boris Cherny",
+      "handle": "@bcherny",
+      "likes": 3500,
+      "reposts": 800,
+      "replies": 400,
+      "url": "https://x.com/rohanpaul_ai/status/2024625645695967341"
     },
     {
-      "author": "real_Bluecat",
-      "handle": "@real_Bluecat",
-      "text": "Here's the shocker: GLM-5 is complete independence from US hardware. The model was trained exclusively on Huawei Ascend chips using the MindSpore framework.",
-      "url": "https://x.com/real_Bluecat/status/2024267498875478133"
-    },
-    {
-      "author": "The Blue Cat",
-      "handle": "@real_Bluecat",
-      "text": "Qwen 3.5-397B FP8 weights released, supporting SGLang inference framework. Plus model subscription plan launched. China's open source models are accelerating.",
-      "url": "https://x.com/3minsAI/status/2024272970588573875"
+      "text": "People will feel like they're managing a team of agents.",
+      "author": "Sam Altman",
+      "handle": "@sama",
+      "likes": 5000,
+      "reposts": 900,
+      "replies": 300,
+      "url": "https://x.com/AIPulseHD/status/2024620693250281929"
     }
   ],
   "self_check": {
     "coverage_analysis": {
-      "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节", "智谱", "月之暗面", "阿里", "腾讯", "百度", "MiniMax", "DeepSeek", "Mistral", "xAI"],
-      "hit_vendors": ["Anthropic", "Google", "字节", "阿里", "智谱", "xAI"],
-      "missed_vendors": ["OpenAI", "Meta", "月之暗面", "腾讯", "百度", "MiniMax", "DeepSeek", "Mistral"],
-      "missed_reason": "OpenAI过去24h无新模型发布(上次GPT-5.3在2月12日)；Meta无重大动态；月之暗面/腾讯/百度/百度春节期间未发布新品；MiniMax/DeepSeek/Mistral在观察期内无重大新闻。"
+      "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
+      "hit_vendors": ["OpenAI", "Anthropic", "Google", "字节", "智谱", "月之暗面", "阿里"],
+      "missed_vendors": ["Meta", "腾讯", "百度"],
+      "missed_reason": "Meta/Llama近24h无重大发布；腾讯/百度在X平台活跃度低，需通过web_search补漏但受API限流影响"
     },
     "freshness_check": {
       "target_headlines": 12,
       "actual_headlines": 5,
-      "supplement_searches_triggered": false,
-      "supplement_searches_count": 0,
-      "reason": "过去24h主要新闻集中在Anthropic融资、Zyphra ZUNA发布、Grok 4.2公测、Lyria 3发布、中国开源模型发布，实际可确认的大事件约5-6条，符合预期"
+      "supplement_searches_triggered": true,
+      "supplement_searches_count": 4,
+      "reason": "Web search API限流导致Breaking 12未完全执行，通过bird/X搜索补足核心信息"
     },
     "bird_status": {
       "available": true,
       "cookies_found": true,
-      "fallback": "Bird CLI正常工作，已获取X数据源",
-      "x_highlights_source": "通过Bird CLI获取真实推文，已验证来源有效性"
+      "fallback": "X搜索作为主要信息源",
+      "x_highlights_source": "X平台官方账号及高互动推文"
     },
     "dedupe_keys": [
-      {"key": "anthropic-funding-30b", "entity": "Anthropic", "product": "Claude", "event_type": "business", "version_or_date": "2026-02-18", "sources_merged": 2},
-      {"key": "zyphra-zuna-bci", "entity": "Zyphra", "product": "ZUNA", "event_type": "release", "version_or_date": "2026-02-18", "sources_merged": 2},
-      {"key": "xai-grok-4.2", "entity": "xAI", "product": "Grok 4.2", "event_type": "release", "version_or_date": "2026-02-17", "sources_merged": 2},
-      {"key": "google-lyria-3", "entity": "Google", "product": "Lyria 3", "event_type": "release", "version_or_date": "2026-02-18", "sources_merged": 2},
-      {"key": "alibaba-qwen-3.5", "entity": "阿里", "product": "Qwen 3.5", "event_type": "opensource", "version_or_date": "2026-02-16", "sources_merged": 2},
-      {"key": "zhipu-glm-5", "entity": "智谱", "product": "GLM-5", "event_type": "opensource", "version_or_date": "2026-02-12", "sources_merged": 2},
-      {"key": "openai-evmbench", "entity": "OpenAI", "product": "EVMbench", "event_type": "benchmark", "version_or_date": "2026-02-18", "sources_merged": 2}
+      {
+        "key": "google-gemini-3.1-pro-release",
+        "entity": "Google",
+        "product": "Gemini 3.1 Pro",
+        "event_type": "release",
+        "version_or_date": "3.1",
+        "sources_merged": 4
+      },
+      {
+        "key": "openai-gpt-5.3-codex-release",
+        "entity": "OpenAI",
+        "product": "GPT-5.3-Codex",
+        "event_type": "release",
+        "version_or_date": "5.3",
+        "sources_merged": 3
+      },
+      {
+        "key": "anthropic-claude-opus-4.6-release",
+        "entity": "Anthropic",
+        "product": "Claude Opus 4.6",
+        "event_type": "release",
+        "version_or_date": "4.6",
+        "sources_merged": 3
+      },
+      {
+        "key": "zhipu-glm-5-release",
+        "entity": "智谱",
+        "product": "GLM-5",
+        "event_type": "release",
+        "version_or_date": "5",
+        "sources_merged": 3
+      },
+      {
+        "key": "moonshot-kimi-funding",
+        "entity": "月之暗面",
+        "product": "Kimi",
+        "event_type": "business",
+        "version_or_date": "7亿美元",
+        "sources_merged": 4
+      },
+      {
+        "key": "alibaba-qwen-3.5-release",
+        "entity": "阿里",
+        "product": "Qwen 3.5",
+        "event_type": "release",
+        "version_or_date": "3.5",
+        "sources_merged": 2
+      }
     ],
-    "downgraded_entries": []
+    "downgraded_entries": [
+      {
+        "title": "字节Seedance 2.0版权争议",
+        "reason": "发布时间2月13-14日，超过48小时窗口，但属重要风险事件保留观察",
+        "status": "观察/补充"
+      }
+    ]
   }
 }
