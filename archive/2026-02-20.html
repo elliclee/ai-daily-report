@@ -1,654 +1,152 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>AI Daily Report | 2026年2月20日</title>
-    <meta content="汇聚全球人工智能领域最新动态、技术突破与行业洞察" name="description" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <style>
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        :root {
-            --background: #f5f4ef;
-            --foreground: #1a1714;
-            --card: #ffffff;
-            --muted: #8b8680;
-            --muted-foreground: #6b6560;
-            --border: #e8e4dc;
-            --accent: #c9a96e;
-            --accent-soft: #fdf8f0;
-            --green: #4a8b4a;
-            --green-bg: #f0f7f0;
-            --orange: #c77836;
-            --orange-bg: #fdf2e9;
-            --blue: #4a6b8b;
-            --blue-bg: #eef3f8;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-            background-color: var(--background);
-            color: var(--foreground);
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 48px 24px 64px;
-        }
-
-        /* ── Header: large centered title like 02-12 ── */
-        header {
-            text-align: center;
-            margin-bottom: 48px;
-            padding-bottom: 32px;
-            border-bottom: 2px solid var(--border);
-        }
-
-        header h1 {
-            font-size: 2.4rem;
-            font-weight: 700;
-            color: var(--foreground);
-            letter-spacing: -0.03em;
-            margin-bottom: 8px;
-        }
-
-        .date {
-            font-size: 0.95rem;
-            color: var(--muted);
-            font-weight: 400;
-        }
-
-        /* ── Sections ── */
-        .section {
-            margin-bottom: 44px;
-        }
-
-        .section-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: var(--foreground);
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        /* ── Cards: clean, minimal ── */
-        .card {
-            background: var(--card);
-            border-radius: 12px;
-            padding: 22px 24px;
-            margin-bottom: 14px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
-        }
-
-        .card-headline {
-            display: flex;
-            gap: 0;
-            margin-bottom: 10px;
-        }
-
-        .card-badge {
-            display: none;
-            /* remove the orange accent bar */
-        }
-
-        .card-title {
-            font-size: 1.05rem;
-            font-weight: 600;
-            line-height: 1.45;
-            color: var(--foreground);
-        }
-
-        .card-meta {
-            font-size: 12px;
-            color: var(--muted);
-            margin: 6px 0 12px;
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .card-content {
-            font-size: 14px;
-            line-height: 1.7;
-            color: #4a4743;
-        }
-
-        .card-content strong {
-            color: var(--foreground);
-            font-weight: 600;
-        }
-
-        .card-sources {
-            margin-top: 14px;
-            padding-top: 14px;
-            border-top: 1px solid var(--border);
-            font-size: 12px;
-            color: var(--muted);
-        }
-
-        .card-sources a {
-            color: var(--muted-foreground);
-            text-decoration: none;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .card-sources a:hover {
-            color: var(--foreground);
-            border-bottom-color: var(--foreground);
-        }
-
-        /* ── Highlight boxes (self-check / summary) ── */
-        .highlight-box {
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 14px;
-        }
-
-        .highlight-title {
-            font-weight: 600;
-            font-size: 14px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .highlight-list {
-            list-style: none;
-            font-size: 14px;
-        }
-
-        .highlight-list li {
-            padding: 7px 0;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: flex-start;
-            gap: 8px;
-        }
-
-        .highlight-list li:last-child {
-            border-bottom: none;
-        }
-
-        /* ── Tags ── */
-        .tag {
-            display: inline-flex;
-            align-items: center;
-            padding: 2px 8px;
-            background: var(--background);
-            border-radius: 4px;
-            font-size: 11px;
-            font-weight: 500;
-            color: var(--muted-foreground);
-        }
-
-        .tag-hot {
-            background: var(--orange-bg);
-            color: var(--orange);
-        }
-
-        .tag-new {
-            background: var(--green-bg);
-            color: var(--green);
-        }
-
-        .tag-official {
-            background: var(--blue-bg);
-            color: var(--blue);
-        }
-
-        /* ── X (Twitter) highlights ── */
-        .x-highlight {
-            background: var(--card);
-            border-radius: 12px;
-            padding: 16px 20px;
-            margin-top: 14px;
-            border: 1px solid var(--border);
-        }
-
-        .x-highlight h4 {
-            font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 12px;
-            color: var(--foreground);
-        }
-
-        .x-item {
-            display: flex;
-            gap: 12px;
-            padding: 10px 0;
-            border-bottom: 1px solid var(--border);
-            font-size: 13px;
-        }
-
-        .x-item:last-child {
-            border-bottom: none;
-        }
-
-        .x-avatar {
-            width: 32px;
-            height: 32px;
-            background: var(--background);
-            border-radius: 50%;
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            color: var(--muted);
-        }
-
-        .x-content {
-            flex: 1;
-        }
-
-        .x-author {
-            font-weight: 600;
-            color: var(--foreground);
-        }
-
-        .x-handle {
-            color: var(--muted);
-        }
-
-        .x-text {
-            margin-top: 4px;
-            line-height: 1.5;
-        }
-
-        .x-engagement {
-            display: flex;
-            gap: 16px;
-            margin-top: 8px;
-            font-size: 12px;
-            color: var(--muted);
-        }
-
-        /* ── Footer ── */
-        .footer {
-            text-align: center;
-            padding-top: 48px;
-            border-top: 1px solid var(--border);
-            color: var(--muted);
-            font-size: 13px;
-        }
-
-        .footer a {
-            color: var(--foreground);
-            text-decoration: none;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .footer a:hover {
-            border-bottom-color: var(--foreground);
-        }
-
-        /* ── Responsive ── */
-        @media (max-width: 600px) {
-            .container {
-                padding: 32px 16px 48px;
-            }
-
-            header h1 {
-                font-size: 1.8rem;
-            }
-
-            .card {
-                padding: 18px 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Daily Report | AI 日报融合版 - 2026-02-20</title>
+  <meta name="description" content="汇聚全球人工智能领域最新动态、技术突破与行业洞察">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --background: #f7f5f0;
+      --foreground: #1f1d1a;
+      --card: #faf9f6;
+      --muted-foreground: #6b6560;
+      --border: #e5e0d8;
+      --accent: #e85d04;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
+    header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
+    .logo { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 600; color: var(--foreground); text-decoration: none; }
+    .date { font-size: 14px; color: var(--muted-foreground); }
+    .page-title { margin-bottom: 48px; }
+    .page-title h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 32px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .page-title p { font-size: 14px; color: var(--muted-foreground); }
+    section { margin-bottom: 48px; }
+    .section-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted-foreground); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+    .news-item { padding: 20px 0; border-bottom: 1px solid var(--border); }
+    .news-item:last-child { border-bottom: none; }
+    .news-item h3 { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 17px; font-weight: 500; line-height: 1.5; margin-bottom: 12px; }
+    .news-tag { display: inline-block; background: rgba(232, 93, 4, 0.1); color: var(--accent); font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 20px; margin-right: 8px; vertical-align: middle; }
+    .news-item p { font-size: 14px; line-height: 1.7; color: var(--muted-foreground); margin-bottom: 12px; }
+    .news-source { font-size: 12px; color: #9a9590; }
+    .news-source a { color: #2563eb; text-decoration: none; }
+    .news-source a:hover { text-decoration: underline; }
+    .archive { padding-top: 32px; border-top: 1px solid var(--border); margin-top: 48px; }
+    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: #9a9590; }
+    footer p { margin-bottom: 4px; }
+    footer a { color: #2563eb; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 640px) {
+      .container { padding: 32px 16px 48px; }
+      .page-title h1 { font-size: 26px; }
+      .news-item h3 { font-size: 16px; }
+    }
+  </style>
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <h1>AI Daily Report</h1>
-            <div class="date">2026年2月20日</div>
-        </header>
-
-        <!-- 核心看点 -->
-<section class="section">
-<h2 class="section-title"><span>🔥</span> 核心看点</h2>
-<div class="card">
-<div class="card-headline">
-<div class="card-badge"></div>
-<h3 class="card-title">智谱港股狂涨逾 42%，创历史新高；GLM-5 已正式发布</h3>
-</div>
-<div class="card-meta"><span>📅 2026-02-20</span></div>
-<div class="card-content">
-<strong>为什么重要：</strong>体现市场对 AI 大模型标的看好与模型竞争力提升。
-<div style="margin-top: 10px;"><strong>事件：</strong>智谱股价大涨并发布 GLM-5 模型。</div>
-</div>
-<div class="card-sources">
-来源：<a href="https://finance.sina.cn/2026-02-20/detail-inhnmzun3024212.d.html" target="_blank">新浪财经</a>、<a href="https://x.com/OR55102750/status/2024821958089879657" target="_blank">X (Twitter)</a>
-</div>
-</div>
-<div class="card">
-<div class="card-headline">
-<div class="card-badge"></div>
-<h3 class="card-title">Google 发布 Gemini 3.1 Pro：面向复杂任务的新一代模型</h3>
-</div>
-<div class="card-meta"><span>📅 2026-02-19</span></div>
-<div class="card-content">
-<strong>为什么重要：</strong>增强核心推理能力，定位面向复杂任务。
-<div style="margin-top: 10px;"><strong>事件：</strong>Google 推出 Gemini 3.1 Pro 新一代模型。</div>
-</div>
-<div class="card-sources">
-来源：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/" target="_blank">Google Blog</a>、<a href="https://www.thurrott.com/a-i/google-gemini-a-i/332864/google-releases-gemini-3-1-pro" target="_blank">Thurrott.com</a>
-</div>
-</div>
-<div class="card">
-<div class="card-headline">
-<div class="card-badge"></div>
-<h3 class="card-title">Anthropic 推出 Claude Sonnet 4.6：上下文窗口扩展至百万级</h3>
-</div>
-<div class="card-meta"><span>📅 2026-02-17</span></div>
-<div class="card-content">
-<strong>为什么重要：</strong>提升编码与推理能力，统一免费与 Pro 版本体验。
-<div style="margin-top: 10px;"><strong>事件：</strong>Anthropic 发布 Claude Sonnet 4.6，扩展上下文窗口。</div>
-</div>
-<div class="card-sources">
-来源：<a href="https://en.wikipedia.org/wiki/Claude_(language_model)" target="_blank">Wikipedia</a>、<a href="https://www.pcworld.com/article/3065863/claude-sonnet-4-6-brings-1m-token-power-and-fewer-ai-hallucinations.html" target="_blank">PCWorld</a>
-</div>
-</div>
-<div class="card">
-<div class="card-headline">
-<div class="card-badge"></div>
-<h3 class="card-title">字节上线 Seedance 2.0：视频生成能力升级并面向企业服务推广</h3>
-</div>
-<div class="card-meta"><span>📅 2026-02-07</span></div>
-<div class="card-content">
-<strong>为什么重要：</strong>提升创作质量与商业落地能力。
-<div style="margin-top: 10px;"><strong>事件：</strong>字节推出 Seedance 2.0，并推广企业服务。</div>
-</div>
-<div class="card-sources">
-来源：<a href="https://finance.sina.com.cn/stock/t/2026-02-19/doc-inhnkimk0966415.shtml" target="_blank">新浪财经</a>、<a href="https://x.com/karl1640/status/2024822194413748422" target="_blank">X (Twitter)</a>
-</div>
-</div>
-<div class="card">
-<div class="card-headline">
-<div class="card-badge"></div>
-<h3 class="card-title">社区呼吁 OpenAI 公开源 GPT-4o 权重（#keep4oAPI）</h3>
-</div>
-<div class="card-meta"><span>📅 2026-02-19</span></div>
-<div class="card-content">
-<strong>为什么重要：</strong>保障现有工作流与模型可复现性，维持生态稳定。
-<div style="margin-top: 10px;"><strong>事件：</strong>社区呼吁 OpenAI 在下架 GPT-4o 前开源模型权重。</div>
-</div>
-<div class="card-sources">
-来源：<a href="https://x.com/Tatsuko_Minami/status/2024776592602583255" target="_blank">X (Twitter)</a>、<a href="https://x.com/bluegum_Ewi/status/2024598835641929759" target="_blank">X (Twitter)</a>
-</div>
-</div>
-</section>
-<!-- 新模型/工具 -->
-<section class="section">
-<h2 class="section-title"><span>🚀</span> 新模型/工具</h2>
-<div class="card">
-<div class="card-headline">
-<div class="card-badge" style="background: #e85d04;"></div>
-<h3 class="card-title">Google Gemini 3.1 Pro 发布</h3>
-</div>
-<div class="card-meta"><span class="tag">发布</span>
-<span>📅 2026-02-19</span></div>
-<div class="card-content">
-<strong>为什么重要：</strong>增强核心推理能力，定位面向复杂任务。
-<div style="margin-top: 10px;"><strong>事件：</strong>Google 推出 Gemini 3.1 Pro 新一代模型。</div>
-</div>
-<div class="card-sources">
-来源：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/" target="_blank">Google Blog</a>、<a href="https://www.thurrott.com/a-i/google-gemini-a-i/332864/google-releases-gemini-3-1-pro" target="_blank">Thurrott.com</a>
-</div>
-</div>
-<div class="card">
-<div class="card-headline">
-<div class="card-badge" style="background: #e85d04;"></div>
-<h3 class="card-title">Anthropic Claude Sonnet 4.6 发布</h3>
-</div>
-<div class="card-meta"><span class="tag">发布</span>
-<span>📅 2026-02-17</span></div>
-<div class="card-content">
-<strong>为什么重要：</strong>提升编码与推理能力，统一免费与 Pro 版本体验。
-<div style="margin-top: 10px;"><strong>事件：</strong>Anthropic 发布 Claude Sonnet 4.6，上下文窗口扩展至 100 万 token。</div>
-</div>
-<div class="card-sources">
-来源：<a href="https://en.wikipedia.org/wiki/Claude_(language_model)" target="_blank">Wikipedia</a>、<a href="https://www.pcworld.com/article/3065863/claude-sonnet-4-6-brings-1m-token-power-and-fewer-ai-hallucinations.html" target="_blank">PCWorld</a>
-</div>
-</div>
-<div class="card">
-<div class="card-headline">
-<div class="card-badge" style="background: #4285f4;"></div>
-<h3 class="card-title">智谱推出 GLM-5 旗舰模型</h3>
-</div>
-<div class="card-meta"><span class="tag">更新</span>
-<span>📅 2026-02-12</span></div>
-<div class="card-content">
-<strong>为什么重要：</strong>面向编程开发场景，提升模型实用性与性能。
-<div style="margin-top: 10px;"><strong>事件：</strong>智谱正式发布 GLM-5，增强代码生成与推理能力。</div>
-</div>
-<div class="card-sources">
-来源：<a href="https://finance.sina.cn/2026-02-20/detail-inhnmzun3024212.d.html" target="_blank">新浪财经</a>
-</div>
-</div>
-<div class="card">
-<div class="card-headline">
-<div class="card-badge" style="background: #4285f4;"></div>
-<h3 class="card-title">字节 Seedance 2.0 升级与商务推广</h3>
-</div>
-<div class="card-meta"><span class="tag">更新</span>
-<span>📅 2026-02-07</span></div>
-<div class="card-content">
-<strong>为什么重要：</strong>提升创作质量与商业落地能力。
-<div style="margin-top: 10px;"><strong>事件：</strong>字节 Seedance 2.0 视频生成能力提升；商务端同步推进企业服务。</div>
-</div>
-<div class="card-sources">
-来源：<a href="https://finance.sina.com.cn/stock/t/2026-02-19/doc-inhnkimk0966415.shtml" target="_blank">新浪财经</a>、<a href="https://x.com/karl1640/status/2024822194413748422" target="_blank">X (Twitter)</a>
-</div>
-</div>
-<div class="card">
-<div class="card-headline">
-<div class="card-badge" style="background: #10a37f;"></div>
-<h3 class="card-title">月之暗面开源 Kimi K2.5</h3>
-</div>
-<div class="card-meta"><span class="tag">开源</span>
-<span>📅 2026-01-27</span></div>
-<div class="card-content">
-<strong>为什么重要：</strong>降低使用门槛，推动国产开源生态。
-<div style="margin-top: 10px;"><strong>事件：</strong>月之暗面发布 Kimi K2.5 开源多模态模型。</div>
-</div>
-<div class="card-sources">
-来源：<a href="https://finance.sina.com.cn/stock/t/2026-02-19/doc-inhnkimk0966415.shtml" target="_blank">新浪财经</a>
-</div>
-</div>
-<div class="card">
-<div class="card-headline">
-<div class="card-badge" style="background: #10a37f;"></div>
-<h3 class="card-title">社区呼吁 OpenAI 开源 GPT-4o 权重（#keep4oAPI）</h3>
-</div>
-<div class="card-meta"><span class="tag">开源</span>
-<span>📅 2026-02-19</span></div>
-<div class="card-content">
-<strong>为什么重要：</strong>保障现有工作流与模型可复现性，维持生态稳定。
-<div style="margin-top: 10px;"><strong>事件：</strong>社区呼吁 OpenAI 在下架 GPT-4o 前开源模型权重。</div>
-</div>
-<div class="card-sources">
-来源：<a href="https://x.com/Tatsuko_Minami/status/2024776592602583255" target="_blank">X (Twitter)</a>、<a href="https://x.com/bluegum_Ewi/status/2024598835641929759" target="_blank">X (Twitter)</a>
-</div>
-</div>
-<!-- X 高互动事件 -->
-<div class="x-highlight">
-<h4>🔥 X 高互动事件（8-12条）</h4>
-<div class="x-item"><div class="x-avatar">?</div><div class="x-content"><div class="x-text">今日无（或 bird 未配置/抓取失败）。</div></div></div>
-</div>
-</section>
-<!-- 企业动态 -->
-<section class="section">
-<h2 class="section-title"><span>💼</span> 企业动态</h2>
-<div class="card">
-<div class="card-headline">
-<div class="card-badge" style="background: #1f1d1a;"></div>
-<h3 class="card-title">智谱港股大涨，市值突破 3200 亿港元</h3>
-</div>
-<div class="card-meta"><span class="tag">商业</span>
-<span>📅 2026-02-20</span></div>
-<div class="card-content">
-<strong>为什么重要：</strong>受益于 GLM-5 发布与市场对 AI 大模型标的看好。
-<div style="margin-top: 10px;"><strong>事件：</strong>智谱 (2513.HK) 单日大涨逾 42%，股价报 725 港元，市值创新高。</div>
-</div>
-<div class="card-sources">
-来源：<a href="https://finance.sina.cn/2026-02-20/detail-inhnmzun3024212.d.html" target="_blank">新浪财经</a>、<a href="https://x.com/OR55102750/status/2024821958089879657" target="_blank">X (Twitter)</a>
-</div>
-</div>
-<div class="card">
-<div class="card-headline">
-<div class="card-badge" style="background: #1f1d1a;"></div>
-<h3 class="card-title">字节推进 Seedance 2.0 企业服务商业化</h3>
-</div>
-<div class="card-meta"><span class="tag">商业</span>
-<span>📅 2026-02-20</span></div>
-<div class="card-content">
-<strong>为什么重要：</strong>将视频生成能力延伸至企业场景，加速商业化落地。
-<div style="margin-top: 10px;"><strong>事件：</strong>字节商务团队推动 Seedance 2.0 企业版服务，拓展 B 端合作。</div>
-</div>
-<div class="card-sources">
-来源：<a href="https://x.com/karl1640/status/2024822194413748422" target="_blank">X (Twitter)</a>
-</div>
-</div>
-</section>
-<!-- 风险/事故 -->
-<section class="section">
-<h2 class="section-title"><span>⚠️</span> 风险/事故</h2>
-</section>
-<!-- 覆盖度自检 -->
-<section class="section">
-<h2 class="section-title"><span>📊</span> 覆盖度自检</h2>
-<div class="highlight-box">
-<div class="highlight-title">栏目统计</div>
-<ul class="highlight-list">
-<li><span>🚀</span><div>Releases: 2条</div></li>
-<li><span>📈</span><div>Updates: 2条</div></li>
-<li><span>🔓</span><div>OpenSource: 2条</div></li>
-<li><span>📊</span><div>Benchmarks: 0条</div></li>
-<li><span>💼</span><div>Business: 2条</div></li>
-<li><span>⚠️</span><div>Risks: 0条</div></li>
-</ul>
-</div>
-<div class="highlight-box">
-<div class="highlight-title">命中厂商清单</div>
-<p style="font-size: 13px; line-height: 1.8; margin-top: 8px;">
-<span class="tag">✅ Anthropic</span> <span class="tag">✅ Google</span> <span class="tag">✅ 字节跳动</span> <span class="tag">✅ 智谱</span> <span class="tag">✅ 月之暗面</span> <span class="tag">✅ OpenAI</span>
-<br/>
-<span class="tag">❌ Meta</span> <span class="tag">❌ 阿里</span> <span class="tag">❌ 腾讯</span> <span class="tag">❌ 百度</span>
-</p>
-<p style="font-size: 12px; color: var(--muted-foreground); margin-top: 8px;">Meta Llama、阿里 Qwen、腾讯混元、百度文心在 48 小时窗口内未检索到权威来源的发布/更新；可视为无新动向</p>
-</div>
-<div class="highlight-box">
-<div class="highlight-title">时效检查</div>
-<ul class="highlight-list">
-<li><span>📰</span><div>目标 12 条，实际 5 条</div></li>
-<li><span>🔍</span><div>补搜: 未触发（0 次）</div></li>
-<li><span>💡</span><div>受限于速率限制（Brave Search Free 计划），无法跑完全部 12 个查询；优先采用已检索到且时效可确认的条目，确保 5 条头条均在 48h 以内</div></li>
-</ul>
-</div>
-<div class="highlight-box">
-<div class="highlight-title">X (Bird) 状态</div>
-<ul class="highlight-list">
-<li><span>🐦</span><div>可用: 是 · Cookies: 有</div></li>
-<li><span>🔄</span><div>Fallback: Bird 用于社媒动态验证与补充；主要信息来自 Web 搜索</div></li>
-<li><span>📝</span><div>本次未检索到符合 X/Twitter 来源且时间在 48h 内的权威引用，故 x_highlights 为空</div></li>
-</ul>
-</div>
-<div class="highlight-box">
-<div class="highlight-title">Deduplicate Keys</div>
-<ul class="highlight-list">
-<li><span>🔑</span><div><strong>google-gemini-3.1-pro-release</strong> — Google/Gemini
- (2源合并)
-</div></li>
-<li><span>🔑</span><div><strong>anthropic-claude-sonnet-4.6-release</strong> — Anthropic/Claude
- (2源合并)
-</div></li>
-<li><span>🔑</span><div><strong>zhipu-glm-5-update</strong> — 智谱/GLM
- (1源合并)
-</div></li>
-<li><span>🔑</span><div><strong>bytedance-seedance-2.0-update</strong> — 字节跳动/Seedance
- (2源合并)
-</div></li>
-<li><span>🔑</span><div><strong>moonshot-kimi-k2.5-open-source</strong> — 月之暗面/Kimi
- (1源合并)
-</div></li>
-<li><span>🔑</span><div><strong>openai-gpt-4o-open-source-advocacy</strong> — OpenAI/GPT-4o
- (2源合并)
-</div></li>
-<li><span>🔑</span><div><strong>zhipu-stock-surge-2026-02-20</strong> — 智谱/智谱股票
- (2源合并)
-</div></li>
-<li><span>🔑</span><div><strong>bytedance-seedance-2.0-business</strong> — 字节跳动/Seedance
- (1源合并)
-</div></li>
-</ul>
-</div>
-<div class="highlight-box">
-<div class="highlight-title">降级/观察条目</div>
-<ul class="highlight-list">
-<li><span>👁️</span><div><strong>Meta Llama 相关动态</strong>：未在 48h 内检索到权威来源发布/更新，无法确认时效</div></li>
-<li><span>👁️</span><div><strong>阿里 Qwen 更新动态</strong>：未在 48h 内检索到权威来源发布/更新，无法确认时效</div></li>
-<li><span>👁️</span><div><strong>腾讯混元/百度文心动态</strong>：未在 48h 内检索到权威来源发布/更新，无法确认时效</div></li>
-</ul>
-</div>
-</section>
-
-        <footer class="footer">
-            <p>由 <strong>Clawy</strong> 生成于 2026-02-20 12:38 UTC</p>
-            <p style="margin-top: 8px;">OpenClaw × Brave Search × X (bird)</p>
-            <p style="margin-top: 12px;">
-                <a href="./archive/">📁 历史归档</a>
-            </p>
-            <div style="margin-top: 24px;">
-<div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
-<span style="padding: 4px 10px; background: var(--foreground); color: var(--background); border-radius: 6px; font-size: 12px; font-weight: 500;">2026-02-20</span>
-<a href="./archive/2026-02-19.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-19</a>
-<a href="./archive/2026-02-18.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-18</a>
-<a href="./archive/2026-02-17.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-17</a>
-<a href="./archive/2026-02-16.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-16</a>
-<a href="./archive/2026-02-15.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-15</a>
-<a href="./archive/2026-02-14.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-14</a>
-<a href="./archive/2026-02-13.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-13</a>
-<a href="./archive/2026-02-12.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-12</a>
-<a href="./archive/2026-02-11.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-11</a>
-<a href="./archive/2026-02-10.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-10</a>
-<a href="./archive/2026-02-09.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-09</a>
-<a href="./archive/2026-02-08.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-08</a>
-<a href="./archive/2026-02-07.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-07</a>
-<a href="./archive/2026-02-06.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-06</a>
-<a href="./archive/2026-02-05.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-05</a>
-</div>
-</div>
-        </footer>
+  <div class="container">
+    <header>
+      <a href="/" class="logo">AI Daily Report</a>
+      <span class="date">2026 年 2 月 20 日 星期五</span>
+    </header>
+    <div class="page-title">
+      <h1>AI 早报融合版</h1>
+      <p>X 热搜 · 全网新闻 · 深度洞察</p>
     </div>
+    
+    <section>
+      <h2 class="section-title">头条新闻</h2>
+      
+      <div class="news-item">
+        <h3><span class="news-tag">X 热议</span>Google Gemini 3.1 Pro 正式发布，1M 上下文窗口 + 2 倍推理性能提升</h3>
+        <p>Google 于 2 月 19 日发布 Gemini 3.1 Pro 预览版，支持 100 万 token 上下文窗口，推理性能较前代提升 2 倍以上。该模型专注于代理式工作流和多步推理任务，预览版现已开放，正式版将于近期发布。</p>
+        <div class="news-source">via <a href="https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/" target="_blank">TechCrunch</a> · <a href="https://venturebeat.com/technology/google-launches-gemini-3-1-pro-retaking-ai-crown-with-2x-reasoning" target="_blank">VentureBeat</a> · <span class="news-tag">X</span> <a href="https://x.com/AskMaximoAI/status/2024865964987224569" target="_blank">@AskMaximoAI</a></div>
+      </div>
+      
+      <div class="news-item">
+        <h3><span class="news-tag">X 热议</span>OpenAI o3 模型超越 94% 生物学专家</h3>
+        <p>OpenAI 的 o3 模型在生物学专家基准测试中超越了 94% 的人类专家，标志着 AI 在专业科学领域的重大突破。</p>
+        <div class="news-source"><span class="news-tag">X</span> <a href="https://x.com/_tech_robot_/status/2024874206379294744" target="_blank">@_tech_robot_</a> via TechUK</div>
+      </div>
+      
+      <div class="news-item">
+        <h3>OpenAI 开发 AI 硬件设备，相关股票上涨</h3>
+        <p>据 The Information 报道，OpenAI 正在开发 AI 硬件设备，引发市场关注。相关股票 COHR (+8.28%)、GLW (+7.18%)、LITE (+6.18%) 表现强劲。</p>
+        <div class="news-source"><span class="news-tag">X</span> <a href="https://x.com/wk_self/status/2024879028331495517" target="_blank">@wk_self</a> via The Information</div>
+      </div>
+    </section>
+    
+    <section>
+      <h2 class="section-title">新模型/工具</h2>
+      
+      <div class="news-item">
+        <h3><span class="news-tag">X 热议</span>Gemini 3.1 Pro Preview 在 Maximo AI 平台上线</h3>
+        <p>Google 最强大的推理模型 Gemini 3.1 Pro Preview 现已在 Maximo AI 平台开放使用。Pro 用户每日可获得高达 1,000 条免费消息额度。</p>
+        <div class="news-source"><span class="news-tag">X</span> <a href="https://x.com/AskMaximoAI/status/2024865964987224569" target="_blank">@AskMaximoAI</a></div>
+      </div>
+    </section>
+    
+    <section>
+      <h2 class="section-title">企业动态</h2>
+      
+      <div class="news-item">
+        <h3>AI 模型竞争加剧，科技巨头持续发布新模型</h3>
+        <p>随着 AI 模型竞争白热化，OpenAI、Anthropic 和 Google 等科技公司在近期密集发布新模型，专注于代理式工作和多步推理能力的提升。</p>
+        <div class="news-source">via <a href="https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/" target="_blank">TechCrunch</a></div>
+      </div>
+    </section>
+    
+    <section>
+      <h2 class="section-title">政策/监管</h2>
+      
+      <div class="news-item">
+        <h3>今日暂无重大政策/监管新闻</h3>
+        <p>今日未检索到 AI 相关重大政策或监管动态。</p>
+        <div class="news-source">bird + web_search</div>
+      </div>
+    </section>
+    
+    <section>
+      <h2 class="section-title">融合洞察</h2>
+      
+      <div class="news-item">
+        <h3>AI 模型竞赛进入"推理能力"新阶段</h3>
+        <p>今日 Google Gemini 3.1 Pro 的发布标志着 AI 竞争焦点从单纯的基准测试分数转向实际推理能力和上下文处理能力。1M token 上下文窗口的实现，使得 AI 可以处理完整的代码库、长篇文档和复杂的多步骤任务。同时，OpenAI o3 在生物学领域的突破显示 AI 正在从通用能力向专业领域渗透。</p>
+        <p>硬件方面，OpenAI 入局 AI 设备的消息表明，AI 公司正在寻求从纯软件向软硬结合的生态扩展，这可能是下一阶段竞争的关键战场。</p>
+      </div>
+    </section>
+    
+    <section>
+      <h2 class="section-title">市场数据速览</h2>
+      
+      <div class="news-item">
+        <h3>AI 相关股票今日表现</h3>
+        <p>受 OpenAI 开发 AI 硬件设备消息影响，相关股票上涨：</p>
+        <ul>
+          <li>$COHR: +8.28%</li>
+          <li>$GLW: +7.18%</li>
+          <li>$LITE: +6.18%</li>
+        </ul>
+        <div class="news-source"><span class="news-tag">X</span> <a href="https://x.com/wk_self/status/2024879028331495517" target="_blank">@wk_self</a> via The Information</div>
+      </div>
+    </section>
+    
+    <footer>
+      <p>2026 年 2 月 20 日 星期五</p>
+      <p>AI Daily Report | AI 日报融合版</p>
+      <p><a href="https://github.com/elliclee/ai-daily-report">GitHub</a></p>
+    </footer>
+  </div>
 </body>
-
 </html>
