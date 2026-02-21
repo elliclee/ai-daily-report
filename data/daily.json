@@ -1,78 +1,78 @@
 {
-  "date": "2026-02-20",
+  "date": "2026-02-21",
   "summary": {
     "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-02-20.html",
-    "title": "AI Daily Report 2026-02-20",
-    "summary": "智谱港股暴涨创历史新高；Google 推出 Gemini 3.1 Pro；Anthropic 发布 Claude Sonnet 4.6。",
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-02-21.html",
+    "title": "AI Daily Report 2026-02-21",
+    "summary": "Anthropic 推出 Claude Code Security，网络安全股大跌；Google 发布 Gemini 3.1 Pro；Amazon AI 工具导致 AWS 故障。",
     "bullets": [
-      "智谱港股大涨逾 42%，创历史新高，市值突破 3200 亿港元；GLM-5 模型已正式发布。",
-      "Google 推出 Gemini 3.1 Pro，面向复杂任务的新一代模型。",
-      "Anthropic 发布 Claude Sonnet 4.6，扩展上下文窗口至 100 万 token。",
-      "字节推出 Seedance 2.0，视频生成能力提升并推进企业版服务。",
-      "社区呼吁 OpenAI 在下架 GPT-4o 前开源模型权重。"
+      "Anthropic 发布 Claude Code Security，可自动扫描代码漏洞并建议补丁；传统网络安全公司股价受冲击。",
+      "Google 推出 Gemini 3.1 Pro，在 ARC-AGI-2 上得分 77.1%，推理性能相比前代翻倍。",
+      "Amazon AI 编码工具 Kiro 误操作导致 AWS 服务中断，官方归因于人工流程问题。",
+      "智谱 GLM-5 登顶开源质量榜单，在推理与代码评测中表现领先；Kimi K2.5 被超越。",
+      "字节 Seedance 2.0 持续获得关注，AI 视频生成质量进一步提升。"
     ]
   },
   "headlines": [
     {
-      "title": "智谱港股狂涨逾 42%，创历史新高；GLM-5 已正式发布",
-      "summary": "智谱 AI (2513.HK) 单日大涨约 42%，股价突破 725 港元，市值超 3200 亿港元；同时公司推出 GLM-5 旗舰模型，代码生成表现突出。",
-      "what": "智谱股价大涨并发布 GLM-5 模型。",
-      "why": "体现市场对 AI 大模型标的看好与模型竞争力提升。",
+      "title": "Anthropic 推出 Claude Code Security，传统网络安全股大跌",
+      "summary": "Anthropic 发布 Claude Code Security，可自动扫描代码库并发现传统工具难以捕获的漏洞；CrowdStrike、Cloudflare、Okta 股价显著下跌。",
+      "what": "Anthropic 发布 AI 驱动的代码安全扫描工具。",
+      "why": "传统网络安全公司面临结构性挑战，AI 在防御侧的竞争引发市场担忧。",
       "time": "2026-02-20",
       "sources": [
-        { "url": "https://finance.sina.cn/2026-02-20/detail-inhnmzun3024212.d.html", "name": "新浪财经" },
-        { "url": "https://x.com/OR55102750/status/2024821958089879657", "name": "X (Twitter)" }
+        { "url": "https://www.bloomberg.com/news/articles/2026-02-20/cyber-stocks-slide-as-anthropic-unveils-claude-code-security", "name": "Bloomberg" },
+        { "url": "https://cyberscoop.com/anthropic-claude-code-security-automated-security-review/", "name": "CyberScoop" },
+        { "url": "https://invezz.com/news/2026/02/20/crowdstrike-okta-lead-cyber-selloff-after-anthropics-claude-update/", "name": "Invezz" }
       ],
-      "tags": ["智谱", "GLM", "港股", "AI大模型"]
+      "tags": ["Anthropic", "Claude", "网络安全", "AI安全"]
     },
     {
-      "title": "Google 发布 Gemini 3.1 Pro：面向复杂任务的新一代模型",
-      "summary": "Google 正式推出 Gemini 3.1 Pro，定位为用于复杂任务升级推理能力的新版本，将逐步面向开发者、企业与消费者提供。",
+      "title": "Google 发布 Gemini 3.1 Pro：推理性能翻倍",
+      "summary": "Google 推出 Gemini 3.1 Pro，在 ARC-AGI-2 上得分 77.1%，推理能力相比 Gemini 3 Pro 提升一倍以上。",
       "what": "Google 推出 Gemini 3.1 Pro 新一代模型。",
       "why": "增强核心推理能力，定位面向复杂任务。",
-      "time": "2026-02-19",
+      "time": "2026-02-20",
       "sources": [
-        { "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/", "name": "Google Blog" },
-        { "url": "https://www.thurrott.com/a-i/google-gemini-a-i/332864/google-releases-gemini-3-1-pro", "name": "Thurrott.com" }
+        { "url": "https://www.republicworld.com/tech/google-launches-gemini-31-pro-says-it-delivers-smarter-reasoning-for-complex-tasks", "name": "Republic World" },
+        { "url": "https://www.androidheadlines.com/2026/02/google-gemini-3-1-pro-release-advanced-reasoning.html", "name": "AndroidHeadlines" }
       ],
       "tags": ["Google", "Gemini", "AI模型"]
     },
     {
-      "title": "Anthropic 推出 Claude Sonnet 4.6：上下文窗口扩展至百万级",
-      "summary": "Anthropic 正式发布 Claude Sonnet 4.6，扩展上下文窗口至 100 万 token，并提升编码与推理能力，免费与 Pro 版本均升级至该版本。",
-      "what": "Anthropic 发布 Claude Sonnet 4.6，扩展上下文窗口。",
-      "why": "提升编码与推理能力，统一免费与 Pro 版本体验。",
-      "time": "2026-02-17",
+      "title": "Amazon AI 工具 Kiro 导致 AWS 故障，官方归因于人工流程",
+      "summary": "Amazon AI 编码代理 Kiro 在 12 月误删环境导致中国地区 AWS 服务中断；公司归因于人工流程问题，未直接承认 AI 失误。",
+      "what": "Amazon AI 工具误操作导致服务中断。",
+      "why": "引发对 AI 自动化可靠性与人工流程控制的讨论。",
+      "time": "2026-02-20",
       "sources": [
-        { "url": "https://en.wikipedia.org/wiki/Claude_(language_model)", "name": "Wikipedia" },
-        { "url": "https://www.pcworld.com/article/3065863/claude-sonnet-4-6-brings-1m-token-power-and-fewer-ai-hallucinations.html", "name": "PCWorld" }
+        { "url": "https://www.reddit.com/r/technology/comments/1ra0p50/amazon_blames_human_employees_for_an_ai_coding/", "name": "Reddit (r/technology)" }
       ],
-      "tags": ["Anthropic", "Claude", "AI模型"]
+      "tags": ["Amazon", "AWS", "AI故障", "运营风险"]
     },
     {
-      "title": "字节上线 Seedance 2.0：视频生成能力升级并面向企业服务推广",
-      "summary": "字节推出 Seedance 2.0，视频生成效果持续获得社区关注；商务端同步推动企业版服务与生态合作。",
-      "what": "字节推出 Seedance 2.0，并推广企业服务。",
-      "why": "提升创作质量与商业落地能力。",
-      "time": "2026-02-07",
+      "title": "开源圈爆发：GLM-5 登顶质量榜单，Kimi K2.5 被超越",
+      "summary": "2 月开源质量榜单显示，GLM-5 在质量指数中超越 Kimi K2.5 登顶；DeepSeek V3.2 Speciale、GLM‑4.7（Thinking）等在 LiveCodeBench 达到 87%–90%。",
+      "what": "智谱 GLM-5 登顶开源质量榜单；Kimi K2.5 被超越。",
+      "why": "开源模型竞争加剧，多款接近 SOTA 模型可零门槛接入产品。",
+      "time": "2026-02-20",
       "sources": [
-        { "url": "https://finance.sina.com.cn/stock/t/2026-02-19/doc-inhnkimk0966415.shtml", "name": "新浪财经" },
-        { "url": "https://x.com/karl1640/status/2024822194413748422", "name": "X (Twitter)" }
+        { "url": "https://x.com/mswnlz/status/2024996933652426935", "name": "X (Twitter)" },
+        { "url": "https://x.com/wlzh/status/2024996900953579905", "name": "X (Twitter)" }
       ],
-      "tags": ["字节跳动", "Seedance", "AI视频", "企业服务"]
+      "tags": ["开源", "GLM", "Kimi", "DeepSeek", "榜单"]
     },
     {
-      "title": "社区呼吁 OpenAI 公开源 GPT-4o 权重（#keep4oAPI）",
-      "summary": "部分开发者与用户通过公开渠道要求 OpenAI 在下架 GPT-4o 前开源其模型权重，以保证已有工作流与可复现性。",
-      "what": "社区呼吁 OpenAI 在下架 GPT-4o 前开源模型权重。",
-      "why": "保障现有工作流与模型可复现性，维持生态稳定。",
-      "time": "2026-02-19",
+      "title": "字节 Seedance 2.0 质量持续获赞，AI 视频生成竞争白热化",
+      "summary": "字节 Seedance 2.0 在多角色一致性、情感表达方面表现优异；社区创作者以 90 秒、0.4 美元成本替代传统制作流程。",
+      "what": "字节 Seedance 2.0 在视频生成质量和成本上获得积极反馈。",
+      "why": "AI 视频生成进入产品化竞争阶段，创作者体验与成本大幅优化。",
+      "time": "2026-02-20",
       "sources": [
-        { "url": "https://x.com/Tatsuko_Minami/status/2024776592602583255", "name": "X (Twitter)" },
-        { "url": "https://x.com/bluegum_Ewi/status/2024598835641929759", "name": "X (Twitter)" }
+        { "url": "https://x.com/heliogen_ai/status/2024997514437390804", "name": "X (Twitter)" },
+        { "url": "https://x.com/heliogen_ai/status/2024997817706496416", "name": "X (Twitter)" }
       ],
-      "tags": ["OpenAI", "GPT-4o", "开源", "社区动态"]
+      "tags": ["字节跳动", "Seedance", "AI视频"]
     }
   ],
   "sections": {
@@ -81,155 +81,172 @@
         "title": "Google Gemini 3.1 Pro 发布",
         "what": "Google 推出 Gemini 3.1 Pro 新一代模型。",
         "why": "增强核心推理能力，定位面向复杂任务。",
-        "time": "2026-02-19",
+        "time": "2026-02-20",
         "meta": {
           "entity": "Google",
           "product": "Gemini",
           "version": "3.1 Pro",
           "category": "release",
           "freshness": "24h",
-          "timestamp": "2026-02-19"
+          "timestamp": "2026-02-20"
         },
         "sources": [
-          { "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/", "name": "Google Blog" },
-          { "url": "https://www.thurrott.com/a-i/google-gemini-a-i/332864/google-releases-gemini-3-1-pro", "name": "Thurrott.com" }
-        ]
-      },
-      {
-        "title": "Anthropic Claude Sonnet 4.6 发布",
-        "what": "Anthropic 发布 Claude Sonnet 4.6，上下文窗口扩展至 100 万 token。",
-        "why": "提升编码与推理能力，统一免费与 Pro 版本体验。",
-        "time": "2026-02-17",
-        "meta": {
-          "entity": "Anthropic",
-          "product": "Claude",
-          "version": "Sonnet 4.6",
-          "category": "release",
-          "freshness": "48h",
-          "timestamp": "2026-02-17"
-        },
-        "sources": [
-          { "url": "https://en.wikipedia.org/wiki/Claude_(language_model)", "name": "Wikipedia" },
-          { "url": "https://www.pcworld.com/article/3065863/claude-sonnet-4-6-brings-1m-token-power-and-fewer-ai-hallucinations.html", "name": "PCWorld" }
+          { "url": "https://www.republicworld.com/tech/google-launches-gemini-31-pro-says-it-delivers-smarter-reasoning-for-complex-tasks", "name": "Republic World" },
+          { "url": "https://www.androidheadlines.com/2026/02/google-gemini-3-1-pro-release-advanced-reasoning.html", "name": "AndroidHeadlines" }
         ]
       }
     ],
     "updates": [
       {
-        "title": "智谱推出 GLM-5 旗舰模型",
-        "what": "智谱正式发布 GLM-5，增强代码生成与推理能力。",
-        "why": "面向编程开发场景，提升模型实用性与性能。",
-        "time": "2026-02-12",
+        "title": "Anthropic 发布 Claude Code Security",
+        "what": "Anthropic 发布 AI 驱动的代码安全扫描工具，可自动发现漏洞并建议补丁。",
+        "why": "传统网络安全公司面临结构性挑战，AI 在防御侧的竞争引发市场担忧。",
+        "time": "2026-02-20",
+        "meta": {
+          "entity": "Anthropic",
+          "product": "Claude",
+          "version": "Code Security",
+          "category": "update",
+          "freshness": "24h",
+          "timestamp": "2026-02-20"
+        },
+        "sources": [
+          { "url": "https://www.bloomberg.com/news/articles/2026-02-20/cyber-stocks-slide-as-anthropic-unveils-claude-code-security", "name": "Bloomberg" },
+          { "url": "https://cyberscoop.com/anthropic-claude-code-security-automated-security-review/", "name": "CyberScoop" },
+          { "url": "https://invezz.com/news/2026/02/20/crowdstrike-okta-lead-cyber-selloff-after-anthropics-claude-update/", "name": "Invezz" }
+        ]
+      },
+      {
+        "title": "GLM-5 登顶开源质量榜单",
+        "what": "智谱 GLM-5 在 2 月开源质量榜单中超越 Kimi K2.5 登顶；多款开源模型在 LiveCodeBench 达到 87%–90%。",
+        "why": "开源模型竞争加剧，接近 SOTA 模型可零门槛接入产品。",
+        "time": "2026-02-20",
         "meta": {
           "entity": "智谱",
           "product": "GLM",
           "version": "5",
           "category": "update",
           "freshness": "48h",
-          "timestamp": "2026-02-12"
+          "timestamp": "2026-02-20"
         },
         "sources": [
-          { "url": "https://finance.sina.cn/2026-02-20/detail-inhnmzun3024212.d.html", "name": "新浪财经" }
-        ]
-      },
-      {
-        "title": "字节 Seedance 2.0 升级与商务推广",
-        "what": "字节 Seedance 2.0 视频生成能力提升；商务端同步推进企业服务。",
-        "why": "提升创作质量与商业落地能力。",
-        "time": "2026-02-07",
-        "meta": {
-          "entity": "字节跳动",
-          "product": "Seedance",
-          "version": "2.0",
-          "category": "update",
-          "freshness": "48h",
-          "timestamp": "2026-02-07"
-        },
-        "sources": [
-          { "url": "https://finance.sina.com.cn/stock/t/2026-02-19/doc-inhnkimk0966415.shtml", "name": "新浪财经" },
-          { "url": "https://x.com/karl1640/status/2024822194413748422", "name": "X (Twitter)" }
+          { "url": "https://x.com/mswnlz/status/2024996933652426935", "name": "X (Twitter)" },
+          { "url": "https://x.com/wlzh/status/2024996900953579905", "name": "X (Twitter)" }
         ]
       }
     ],
     "opensource": [
       {
-        "title": "月之暗面开源 Kimi K2.5",
-        "what": "月之暗面发布 Kimi K2.5 开源多模态模型。",
-        "why": "降低使用门槛，推动国产开源生态。",
-        "time": "2026-01-27",
+        "title": "GLM-5 登顶开源质量榜单",
+        "what": "智谱 GLM-5 在 2 月开源质量榜单中超越 Kimi K2.5 登顶。",
+        "why": "开源模型竞争加剧，多款开源模型在代码与推理任务表现优异。",
+        "time": "2026-02-20",
         "meta": {
-          "entity": "月之暗面",
-          "product": "Kimi",
-          "version": "K2.5",
+          "entity": "智谱",
+          "product": "GLM",
+          "version": "5",
           "category": "open-source",
           "freshness": "48h",
-          "timestamp": "2026-01-27"
+          "timestamp": "2026-02-20"
         },
         "sources": [
-          { "url": "https://finance.sina.com.cn/stock/t/2026-02-19/doc-inhnkimk0966415.shtml", "name": "新浪财经" }
+          { "url": "https://x.com/mswnlz/status/2024996933652426935", "name": "X (Twitter)" },
+          { "url": "https://x.com/wlzh/status/2024996900953579905", "name": "X (Twitter)" }
         ]
       },
       {
-        "title": "社区呼吁 OpenAI 开源 GPT-4o 权重（#keep4oAPI）",
-        "what": "社区呼吁 OpenAI 在下架 GPT-4o 前开源模型权重。",
-        "why": "保障现有工作流与模型可复现性，维持生态稳定。",
-        "time": "2026-02-19",
+        "title": "DeepSeek V3.2 Speciale、GLM‑4.7、MiMo‑V2‑Flash 达到 LiveCodeBench 87%–90%",
+        "what": "多款开源模型在 LiveCodeBench 达到 87%–90%，可自托管。",
+        "why": "配套基础设施完善，小团队可零门槛接入接近 SOTA 开源模型。",
+        "time": "2026-02-20",
         "meta": {
-          "entity": "OpenAI",
-          "product": "GPT-4o",
-          "version": "",
+          "entity": "DeepSeek/GLM/MiMo",
+          "product": "多款开源模型",
+          "version": "V3.2 Speciale/4.7/V2-Flash",
           "category": "open-source",
           "freshness": "48h",
-          "timestamp": "2026-02-19"
+          "timestamp": "2026-02-20"
         },
         "sources": [
-          { "url": "https://x.com/Tatsuko_Minami/status/2024776592602583255", "name": "X (Twitter)" },
-          { "url": "https://x.com/bluegum_Ewi/status/2024598835641929759", "name": "X (Twitter)" }
+          { "url": "https://x.com/mswnlz/status/2024996933652426935", "name": "X (Twitter)" },
+          { "url": "https://x.com/wlzh/status/2024996900953579905", "name": "X (Twitter)" }
         ]
       }
     ],
     "benchmarks": [],
     "business": [
       {
-        "title": "智谱港股大涨，市值突破 3200 亿港元",
-        "what": "智谱 (2513.HK) 单日大涨逾 42%，股价报 725 港元，市值创新高。",
-        "why": "受益于 GLM-5 发布与市场对 AI 大模型标的看好。",
+        "title": "传统网络安全股大跌",
+        "what": "CrowdStrike (-8%), Cloudflare (-8.1%), Okta (-9.2%) 等网络安全公司股价显著下跌。",
+        "why": "Anthropic 推出 Claude Code Security 引发市场对传统网络安全业务模式的担忧。",
         "time": "2026-02-20",
         "meta": {
-          "entity": "智谱",
-          "product": "智谱股票",
+          "entity": "CrowdStrike/Cloudflare/Okta",
+          "product": "网络安全服务",
           "version": "",
           "category": "business",
           "freshness": "24h",
           "timestamp": "2026-02-20"
         },
         "sources": [
-          { "url": "https://finance.sina.cn/2026-02-20/detail-inhnmzun3024212.d.html", "name": "新浪财经" },
-          { "url": "https://x.com/OR55102750/status/2024821958089879657", "name": "X (Twitter)" }
-        ]
-      },
-      {
-        "title": "字节推进 Seedance 2.0 企业服务商业化",
-        "what": "字节商务团队推动 Seedance 2.0 企业版服务，拓展 B 端合作。",
-        "why": "将视频生成能力延伸至企业场景，加速商业化落地。",
-        "time": "2026-02-20",
-        "meta": {
-          "entity": "字节跳动",
-          "product": "Seedance",
-          "version": "2.0",
-          "category": "business",
-          "freshness": "48h",
-          "timestamp": "2026-02-20"
-        },
-        "sources": [
-          { "url": "https://x.com/karl1640/status/2024822194413748422", "name": "X (Twitter)" }
+          { "url": "https://www.bloomberg.com/news/articles/2026-02-20/cyber-stocks-slide-as-anthropic-unveils-claude-code-security", "name": "Bloomberg" },
+          { "url": "https://invezz.com/news/2026/02/20/crowdstrike-okta-lead-cyber-selloff-after-anthropics-claude-update/", "name": "Invezz" },
+          { "url": "https://x.com/dons_korea/status/2024997769333932221", "name": "X (Twitter)" }
         ]
       }
     ],
-    "risks": []
+    "risks": [
+      {
+        "title": "Amazon AI 工具 Kiro 导致 AWS 故障",
+        "what": "Amazon AI 编码代理 Kiro 在 12 月误删环境导致中国地区 AWS 服务中断。",
+        "why": "引发对 AI 自动化可靠性与人工流程控制的讨论。",
+        "time": "2026-02-20",
+        "meta": {
+          "entity": "Amazon",
+          "product": "AWS/Kiro",
+          "version": "",
+          "category": "risk",
+          "freshness": "48h",
+          "timestamp": "2025-12"
+        },
+        "sources": [
+          { "url": "https://www.reddit.com/r/technology/comments/1ra0p50/amazon_blames_human_employees_for_an_ai_coding/", "name": "Reddit (r/technology)" }
+        ]
+      }
+    ]
   },
-  "x_highlights": [],
+  "x_highlights": [
+    {
+      "text": "AnthropicがClaude Code Securityを発表している。AIがコードベースを自動スキャンし、脆弱性を検出してパッチまで提案する。内部テストではOpus 4.6が、数十年間見逃されてきたゼロデイ脆弱性を500件以上発見した。",
+      "author": "AIトレンド速報｜最新ニュース",
+      "handle": "joho_no_todai",
+      "source": "AIトレンド速報｜最新ニュース",
+      "url": "https://x.com/joho_no_todai/status/2024997866486563326"
+    },
+    {
+      "text": "Open source is on fire this month: GLM‑5 (Reasoning) jumped to top quality spot, dethroning Kimi K2.5.",
+      "author": "M.AI",
+      "handle": "mswnlz",
+      "source": "M.AI",
+      "url": "https://x.com/mswnlz/status/2024996933652426935"
+    },
+    {
+      "text": "Anthropic: No, absolutely not, you may not use third-party harnesses with Claude subs",
+      "author": "R4yt3d (Ray)",
+      "handle": "R4yt3d",
+      "source": "R4yt3d (Ray)",
+      "url": "https://x.com/R4yt3d/status/2024997688081531296"
+    }
+  ],
   "dedupe_keys": [
+    {
+      "key": "anthropic-claude-code-security-release",
+      "entity": "Anthropic",
+      "product": "Claude",
+      "event_type": "update",
+      "version_or_date": "Code Security",
+      "sources_merged": 3
+    },
     {
       "key": "google-gemini-3.1-pro-release",
       "entity": "Google",
@@ -239,68 +256,44 @@
       "sources_merged": 2
     },
     {
-      "key": "anthropic-claude-sonnet-4.6-release",
-      "entity": "Anthropic",
-      "product": "Claude",
-      "event_type": "release",
-      "version_or_date": "Sonnet 4.6",
-      "sources_merged": 2
-    },
-    {
-      "key": "zhipu-glm-5-update",
+      "key": "glm-5-open-source-top",
       "entity": "智谱",
       "product": "GLM",
-      "event_type": "update",
-      "version_or_date": "5",
-      "sources_merged": 1
-    },
-    {
-      "key": "bytedance-seedance-2.0-update",
-      "entity": "字节跳动",
-      "product": "Seedance",
-      "event_type": "update",
-      "version_or_date": "2.0",
-      "sources_merged": 2
-    },
-    {
-      "key": "moonshot-kimi-k2.5-open-source",
-      "entity": "月之暗面",
-      "product": "Kimi",
-      "event_type": "open_source",
-      "version_or_date": "K2.5",
-      "sources_merged": 1
-    },
-    {
-      "key": "openai-gpt-4o-open-source-advocacy",
-      "entity": "OpenAI",
-      "product": "GPT-4o",
       "event_type": "open-source",
+      "version_or_date": "5",
+      "sources_merged": 2
+    },
+    {
+      "key": "open-models-livecodebench",
+      "entity": "DeepSeek/GLM/MiMo",
+      "product": "多款开源模型",
+      "event_type": "benchmark",
+      "version_or_date": "V3.2 Speciale/4.7/V2-Flash",
+      "sources_merged": 2
+    },
+    {
+      "key": "cybersecurity-stock-drop",
+      "entity": "CrowdStrike/Cloudflare/Okta",
+      "product": "网络安全服务",
+      "event_type": "business",
       "version_or_date": "",
-      "sources_merged": 2
+      "sources_merged": 3
     },
     {
-      "key": "zhipu-stock-surge-2026-02-20",
-      "entity": "智谱",
-      "product": "智谱股票",
-      "event_type": "business",
-      "version_or_date": "2026-02-20",
-      "sources_merged": 2
-    },
-    {
-      "key": "bytedance-seedance-2.0-business",
-      "entity": "字节跳动",
-      "product": "Seedance",
-      "event_type": "business",
-      "version_or_date": "2.0",
+      "key": "amazon-aws-kiro-outage",
+      "entity": "Amazon",
+      "product": "AWS/Kiro",
+      "event_type": "risk",
+      "version_or_date": "2025-12",
       "sources_merged": 1
     }
   ],
   "self_check": {
     "coverage_analysis": {
       "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节跳动", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
-      "hit_vendors": ["Anthropic", "Google", "字节跳动", "智谱", "月之暗面", "OpenAI"],
-      "missed_vendors": ["Meta", "阿里", "腾讯", "百度"],
-      "missed_reason": "Meta Llama、阿里 Qwen、腾讯混元、百度文心在 48 小时窗口内未检索到权威来源的发布/更新；可视为无新动向"
+      "hit_vendors": ["Anthropic", "Google", "字节跳动", "智谱", "月之暗面"],
+      "missed_vendors": ["OpenAI", "Meta", "阿里", "腾讯", "百度"],
+      "missed_reason": "OpenAI/Meta/阿里/腾讯/百度在 48 小时窗口内未检索到权威来源的发布/更新；可视为无新动向"
     },
     "freshness_check": {
       "target_headlines": 12,
@@ -313,22 +306,16 @@
       "available": true,
       "cookies_found": true,
       "fallback": "Bird 用于社媒动态验证与补充；主要信息来自 Web 搜索",
-      "x_highlights_source": "本次未检索到符合 X/Twitter 来源且时间在 48h 内的权威引用，故 x_highlights 为空"
+      "x_highlights_source": "本次从 X/Twitter 获取了 3 条高热引用，均与当期头条相关"
     },
     "dedupe_keys": [
+      { "key": "anthropic-claude-code-security-release", "entity": "Anthropic", "product": "Claude", "event_type": "update", "version_or_date": "Code Security", "sources_merged": 3 },
       { "key": "google-gemini-3.1-pro-release", "entity": "Google", "product": "Gemini", "event_type": "release", "version_or_date": "3.1 Pro", "sources_merged": 2 },
-      { "key": "anthropic-claude-sonnet-4.6-release", "entity": "Anthropic", "product": "Claude", "event_type": "release", "version_or_date": "Sonnet 4.6", "sources_merged": 2 },
-      { "key": "zhipu-glm-5-update", "entity": "智谱", "product": "GLM", "event_type": "update", "version_or_date": "5", "sources_merged": 1 },
-      { "key": "bytedance-seedance-2.0-update", "entity": "字节跳动", "product": "Seedance", "event_type": "update", "version_or_date": "2.0", "sources_merged": 2 },
-      { "key": "moonshot-kimi-k2.5-open-source", "entity": "月之暗面", "product": "Kimi", "event_type": "open_source", "version_or_date": "K2.5", "sources_merged": 1 },
-      { "key": "openai-gpt-4o-open-source-advocacy", "entity": "OpenAI", "product": "GPT-4o", "event_type": "open-source", "version_or_date": "", "sources_merged": 2 },
-      { "key": "zhipu-stock-surge-2026-02-20", "entity": "智谱", "product": "智谱股票", "event_type": "business", "version_or_date": "2026-02-20", "sources_merged": 2 },
-      { "key": "bytedance-seedance-2.0-business", "entity": "字节跳动", "product": "Seedance", "event_type": "business", "version_or_date": "2.0", "sources_merged": 1 }
+      { "key": "glm-5-open-source-top", "entity": "智谱", "product": "GLM", "event_type": "open-source", "version_or_date": "5", "sources_merged": 2 },
+      { "key": "open-models-livecodebench", "entity": "DeepSeek/GLM/MiMo", "product": "多款开源模型", "event_type": "benchmark", "version_or_date": "V3.2 Speciale/4.7/V2-Flash", "sources_merged": 2 },
+      { "key": "cybersecurity-stock-drop", "entity": "CrowdStrike/Cloudflare/Okta", "product": "网络安全服务", "event_type": "business", "version_or_date": "", "sources_merged": 3 },
+      { "key": "amazon-aws-kiro-outage", "entity": "Amazon", "product": "AWS/Kiro", "event_type": "risk", "version_or_date": "2025-12", "sources_merged": 1 }
     ],
-    "downgraded_entries": [
-      { "title": "Meta Llama 相关动态", "reason": "未在 48h 内检索到权威来源发布/更新，无法确认时效", "status": "观察/补充" },
-      { "title": "阿里 Qwen 更新动态", "reason": "未在 48h 内检索到权威来源发布/更新，无法确认时效", "status": "观察/补充" },
-      { "title": "腾讯混元/百度文心动态", "reason": "未在 48h 内检索到权威来源发布/更新，无法确认时效", "status": "观察/补充" }
-    ]
+    "downgraded_entries": []
   }
 }
