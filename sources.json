@@ -1,0 +1,30 @@
+{
+  "sources": [
+    {
+      "id": "hackernews-top",
+      "type": "hackernews",
+      "enabled": true,
+      "config": {
+        "filter": "top",
+        "min_score": 200,
+        "limit": 10
+      }
+    },
+    {
+      "id": "github-trending-python",
+      "type": "github_trending",
+      "enabled": true,
+      "config": {
+        "language": "python",
+        "since": "daily",
+        "limit": 5
+      }
+    }
+  ],
+  "_comment": "Twitter sources are managed separately via bird CLI. Reddit requires API key.",
+  "_disabled": {
+    "reddit-localllama": "Reddit blocks unauthed requests",
+    "openai-blog": "RSS redirects, needs handling",
+    "anthropic-blog": "No public RSS"
+  }
+}

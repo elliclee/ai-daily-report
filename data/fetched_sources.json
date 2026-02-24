@@ -1,0 +1,147 @@
+{
+  "fetched_at": "2026-02-24T13:28:52.130174",
+  "sources": {
+    "hackernews-top": {
+      "type": "hackernews",
+      "count": 10,
+      "items": [
+        {
+          "title": "Terence Tao, at 8 years old (1984) [pdf]",
+          "url": "https://gwern.net/doc/iq/high/smpy/1984-clements.pdf",
+          "score": 340,
+          "by": "gurjeet",
+          "time": "2026-02-23T15:36:50",
+          "comments": "https://news.ycombinator.com/item?id=47123689",
+          "description": ""
+        },
+        {
+          "title": "I Ported Coreboot to the ThinkPad X270",
+          "url": "https://dork.dev/posts/2026-02-20-ported-coreboot/",
+          "score": 233,
+          "by": "todsacerdoti",
+          "time": "2026-02-23T23:58:45",
+          "comments": "https://news.ycombinator.com/item?id=47130860",
+          "description": ""
+        },
+        {
+          "title": "Blood test boosts Alzheimer's diagnosis accuracy to 94.5%, clinical study shows",
+          "url": "https://medicalxpress.com/news/2026-02-blood-boosts-alzheimer-diagnosis-accuracy.html",
+          "score": 314,
+          "by": "wglb",
+          "time": "2026-02-24T03:10:16",
+          "comments": "https://news.ycombinator.com/item?id=47132388",
+          "description": ""
+        },
+        {
+          "title": "The Age Verification Trap: Verifying age undermines everyone's data protection",
+          "url": "https://spectrum.ieee.org/age-verification",
+          "score": 1518,
+          "by": "oldnetguy",
+          "time": "2026-02-23T14:22:39",
+          "comments": "https://news.ycombinator.com/item?id=47122715",
+          "description": "Platforms are caught in a dilemma: enforce age restrictions or protect user privacy. How are they navigating this tricky terrain?"
+        },
+        {
+          "title": "Show HN: Steerling-8B, a language model that can explain any token it generates",
+          "url": "https://www.guidelabs.ai/post/steerling-8b-base-model-release/",
+          "score": 216,
+          "by": "adebayoj",
+          "time": "2026-02-24T00:38:02",
+          "comments": "https://news.ycombinator.com/item?id=47131225",
+          "description": "We release Steerling-8B, an 8B-parameter causal diffusion language model that is interpretable by construction — its predictions are routed through concepts you can measure, audit, and control."
+        },
+        {
+          "title": "Firefox 148 Launches with AI Kill Switch Feature and More Enhancements",
+          "url": "https://serverhost.com/blog/firefox-148-launches-with-exciting-ai-kill-switch-feature-and-more-enhancements/",
+          "score": 331,
+          "by": "shaunpud",
+          "time": "2026-02-24T05:47:23",
+          "comments": "https://news.ycombinator.com/item?id=47133313",
+          "description": "The latest update of Firefox, version 148, introduces a much-anticipated &quot;AI kill switch&quot; feature, allowing users to disable AI functionalities such as chatbot prompts and AI-generated link summaries. Mozilla emphasizes that once AI features are turned off, future updates will not override"
+        },
+        {
+          "title": "Making Wolfram tech available as a foundation tool for LLM systems",
+          "url": "https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/",
+          "score": 210,
+          "by": "surprisetalk",
+          "time": "2026-02-23T22:11:34",
+          "comments": "https://news.ycombinator.com/item?id=47129727",
+          "description": "Wolfram"
+        },
+        {
+          "title": "“Car Wash” test with 53 models",
+          "url": "https://opper.ai/blog/car-wash-test",
+          "score": 271,
+          "by": "felix089",
+          "time": "2026-02-23T20:16:08",
+          "comments": "https://news.ycombinator.com/item?id=47128138",
+          "description": "The developer platform for reliable agents"
+        },
+        {
+          "title": "A simple web we own",
+          "url": "https://rsdoiel.github.io/blog/2026/02/21/a_simple_web_we_own.html",
+          "score": 266,
+          "by": "speckx",
+          "time": "2026-02-23T16:01:18",
+          "comments": "https://news.ycombinator.com/item?id=47124149",
+          "description": ""
+        },
+        {
+          "title": "Show HN: PgDog – Scale Postgres without changing the app",
+          "url": "https://github.com/pgdogdev/pgdog",
+          "score": 282,
+          "by": "levkk",
+          "time": "2026-02-23T15:33:24",
+          "comments": "https://news.ycombinator.com/item?id=47123631",
+          "description": "PostgreSQL connection pooler, load balancer and database sharder. - pgdogdev/pgdog"
+        }
+      ]
+    },
+    "github-trending-python": {
+      "type": "github_trending",
+      "count": 5,
+      "items": [
+        {
+          "repo": "huggingface/skills",
+          "name": "skills",
+          "url": "https://github.com/huggingface/skills",
+          "description": "Contribute to huggingface/skills development by creating an account on GitHub.",
+          "stars_today": "1269",
+          "language": "Python"
+        },
+        {
+          "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+          "name": "Agent-Skills-for-Context-Engineering",
+          "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+          "description": "A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent systems. Use when building, optimizing, or debugging agent systems that require effective context management.",
+          "stars_today": "771",
+          "language": "Python"
+        },
+        {
+          "repo": "OpenBB-finance/OpenBB",
+          "name": "OpenBB",
+          "url": "https://github.com/OpenBB-finance/OpenBB",
+          "description": "Financial data platform for analysts, quants and AI agents.",
+          "stars_today": "517",
+          "language": "Python"
+        },
+        {
+          "repo": "GVCLab/PersonaLive",
+          "name": "PersonaLive",
+          "url": "https://github.com/GVCLab/PersonaLive",
+          "description": "[CVPR 2026] PersonaLive! : Expressive Portrait Image Animation for Live Streaming",
+          "stars_today": "75",
+          "language": "Python"
+        },
+        {
+          "repo": "HunxByts/GhostTrack",
+          "name": "GhostTrack",
+          "url": "https://github.com/HunxByts/GhostTrack",
+          "description": "Useful tool to track location or mobile number",
+          "stars_today": "142",
+          "language": "Python"
+        }
+      ]
+    }
+  }
+}

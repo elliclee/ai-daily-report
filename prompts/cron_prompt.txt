@@ -14,6 +14,12 @@
 #    运行 python3 scripts/validate_json.py 校验通过后才可继续
 #
 # 3. 禁止调用 message 工具；禁止调用 cron.run 触发其他 job
+#
+# 4. ⛔ 时效硬约束：所有新闻必须确认发布时间 ≤48h
+#    - 无法确认时间的新闻：直接剔除
+#    - 超过 48h 的新闻：直接剔除
+#    - 禁止降级到「观察/补充」绕过时间限制
+#    - 禁止使用 freshness=pw 或更宽范围搜索
 # ════════════════════════════════════════════════════════
 
 执行 AI 日报生成任务（强时效版）。
@@ -24,9 +30,12 @@
   - 英文 6 + 中文 6；全部 freshness=pd（过去24h）
 - 第二层：按需补搜（动态触发，4~8 条上限）
   - 触发：栏目缺口 / 漏报检查命中但缺权威来源 / 发布时间不可确认
-  - 默认 freshness=pw（7d），并在条目 meta 标注「7d补漏」
+  - ⛔ 硬约束：仅限 freshness=pd（24h）或 pd-2（48h）
+  - ⛔ 禁止使用 freshness=pw 或更宽范围
+  - 任何超过 48h 的新闻一律不得进入日报
 - 第三层：二次补时间（必须做一次）
-  - 若发布时间无法确认 ≤48h：必须再找第二来源补时间；补不到 → 降级到「观察/补充」，不得进"头条/核心看点"
+  - 若发布时间无法确认 ≤48h：必须再找第二来源补时间；补不到 → 直接剔除，不得入报
+  - ⛔ 禁止降级到「观察/补充」绕过时间限制
 
 ## 1) Web（web_search）Breaking 固定 12（pd）
 
@@ -48,9 +57,10 @@
 
 硬规则（时效过滤）：
 - 任何条目若无法确认发布时间 ≤48h：
-  - 禁止进入"核心看点"
+  - ⛔ 直接剔除，不得入报
   - 必须做 1 次第二来源补时间
-  - 补不到：归入「观察/补充」，标注 [时间无法确认，未入头条]
+  - 补不到确认 ≤48h：禁止进入日报，无例外
+- ⛔ 禁止使用超过 48h 的新闻填充任何栏目
 
 ## 2) X（bird）策略：关键词组 + watchlist 双轨 + 24h 过滤（带 fallback）
 
@@ -119,14 +129,17 @@
 - 若 X 高热但 web 缺：必须追加 1 次定向 web_search 补权威来源；补不到就写"仅社媒热度，暂无权威报道"。
 - ⛔ dedupe_keys 放在 self_check.dedupe_keys 中，格式为对象数组，不是字符串数组
 
-## 7) 扩展 query（按需触发，pw，标注「7d补漏」）
+## 7) 扩展 query（按需触发，仅 pd/pd-2，禁止 pw）
 
 - 仅触发才跑，上限 4~8 条，按缺口选择：
   - 厂商补漏：Seedance/GLM/Kimi/Qwen/混元/文心
   - 评测补漏：SWE-bench 最新评测/leaderboard
   - 商业补漏：pricing change / funding / partnership
+- ⛔ freshness 限制：仅用 pd（24h）或 pd-2（48h）
+- ⛔ 禁止使用 pw（7d）或更宽范围
+- 补到的新闻若无法确认 ≤48h：直接剔除
 
-## 8) 今日漏报检查（必须执行；24h 主，必要时 pw 补漏）
+## 8) 今日漏报检查（必须执行；仅 48h 内）
 
 清单：
 - 字节：Seedance/即梦/豆包
@@ -136,7 +149,10 @@
 - 腾讯：混元
 - 百度：文心
 - 海外：OpenAI/Anthropic/Gemini/Meta
-规则：若 X 命中但 web 缺 → 必须补 1 次定向 web_search；补不到明确标注。
+规则：
+- 若 X 命中但 web 缺 → 必须补 1 次定向 web_search
+- ⛔ 补到的新闻必须确认 ≤48h，否则直接剔除
+- 补不到 ≤48h 内的权威来源：明确标注「今日无新动态」
 
 ## 9) self_check 结构化字段（必须完整输出）
 
@@ -155,6 +171,7 @@ self_check 必须包含以下子字段（均为必填）：
     "actual_headlines": 5,
     "supplement_searches_triggered": false,
     "supplement_searches_count": 0,
+    "rejected_over_48h": ["被剔除的旧新闻标题"],
     "reason": "说明"
   },
   "bird_status": {
@@ -166,8 +183,8 @@ self_check 必须包含以下子字段（均为必填）：
   "dedupe_keys": [
     { "key": "xxx", "entity": "xxx", "product": "xxx", "event_type": "xxx", "version_or_date": "xxx", "sources_merged": 2 }
   ],
-  "downgraded_entries": [
-    { "title": "xxx", "reason": "xxx", "status": "观察/补充" }
+  "rejected_entries": [
+    { "title": "xxx", "reason": "发布时间超过48h / 时间无法确认", "published_time": "YYYY-MM-DD" }
   ]
 }
 ```
