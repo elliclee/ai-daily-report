@@ -1,438 +1,374 @@
 {
-  "date": "2026-02-23",
-  "summary": {
-    "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-02-23.html",
-    "title": "AI Daily Report 2026-02-23",
-    "summary": "Google Gemini 3.1 Pro 发布，推理能力翻倍提升；Anthropic Claude Code Security 正式上线；Claude Sonnet 4.6 发布；字节 Seedance 2.0 在即梦平台全面开放；智谱 GLM-5 登顶开源模型榜单。",
-    "bullets": [
-      "Google Gemini 3.1 Pro 正式发布，ARC-AGI-2 基准得分 77.1%，推理能力较 3 Pro 提升一倍以上。",
-      "Anthropic 正式推出 Claude Code Security，可自动扫描代码库漏洞并建议补丁，引发网络安全行业震动。",
-      "Claude Sonnet 4.6 发布，Anthropic 称其接近 AI Safety Level 4 阈值，发布破坏风险评估报告。",
-      "字节跳动 Seedance 2.0 视频生成模型在即梦平台全面开放，支持 15 秒高品质视频生成。",
-      "智谱 GLM-5 技术细节公开，Artificial Analysis Intelligence Index v4.0 得分 50 分，登顶开源模型质量榜单。"
-    ]
-  },
+  "date": "2026-02-24",
   "headlines": [
     {
-      "title": "Google Gemini 3.1 Pro 发布，推理能力翻倍",
-      "summary": "Google DeepMind 正式发布 Gemini 3.1 Pro，在 ARC-AGI-2 基准测试中得分 77.1%，推理能力较 Gemini 3 Pro 提升一倍以上，现已面向 Gemini App 和 Google AI Studio 用户推出。",
-      "what": "Google 发布 Gemini 3.1 Pro 新一代大模型。",
-      "why": "显著提升复杂推理和问题解决能力，定位面向需要深度分析的工作流程。",
-      "time": "2026-02-19",
+      "title": "智谱 GLM-5 开源发布：744B MoE 模型登顶代码评测榜",
+      "time": "2026-02-12",
+      "what": "智谱AI发布旗舰大模型 GLM-5，采用 744B 总参数、44B 激活参数的 MoE 架构，在 SWE-bench Verified 上取得 77.8% 的 SOTA 成绩，并以 MIT 许可证完全开源。",
+      "why": "这是国产大模型首次在代码能力上超越国际闭源模型，且基于华为昇腾芯片训练，标志着国产AI基础设施的成熟。",
       "sources": [
-        { "url": "https://x.com/GoogleDeepMind/status/2024516464892334129", "name": "Google DeepMind (X)" },
-        { "url": "https://x.com/GoogleDeepMind/status/2024570293520396796", "name": "Google DeepMind (X)" }
-      ],
-      "tags": ["Google", "DeepMind", "Gemini", "Gemini 3.1 Pro", "推理"]
+        {
+          "name": "TechPlanet",
+          "url": "https://techplanet.today/post/glm-5-the-open-source-ai-model-targeting-complex-systems-engineering-and-long-horizon-tasks"
+        },
+        {
+          "name": "The Standard",
+          "url": "https://www.thestandard.com.hk/market/article/325062/Zhipu-apologises-for-three-GLM-5-missteps-unveils-compensation-plan"
+        }
+      ]
     },
     {
-      "title": "Anthropic Claude Code Security 正式上线",
-      "summary": "Anthropic 正式发布 Claude Code Security，使用 Claude Opus 4.6 扫描代码库漏洞并建议针对性补丁，目前面向 Enterprise 和 Team 用户开放有限研究预览。",
-      "what": "AI 驱动的代码安全扫描工具正式发布。",
-      "why": "传统网络安全公司面临 AI 驱动的结构性竞争，CrowdStrike、Cloudflare 等股价下跌。",
-      "time": "2026-02-19",
+      "title": "Anthropic Claude Code Security 引发网络安全股暴跌",
+      "time": "2026-02-20",
+      "what": "Anthropic 推出 Claude Code Security 功能，可自动扫描代码库漏洞并建议修复补丁，已发现 500+ 漏洞。",
+      "why": "该功能直接冲击传统网络安全公司商业模式，导致 IBM 股价单日暴跌 10%（市值蒸发 243 亿美元），CrowdStrike 跌 20%，网络安全板块两天内蒸发 526 亿美元。",
       "sources": [
-        { "url": "https://x.com/claudeai/status/2024907535145468326", "name": "Claude (X)" },
-        { "url": "https://x.com/AnthropicAI/status/2024909446573588698", "name": "Anthropic (X)" },
-        { "url": "https://cybersecuritynews.com/claude-security-tool-stocks-impacted/", "name": "Cyber Security News" }
-      ],
-      "tags": ["Anthropic", "Claude", "Code Security", "网络安全"]
+        {
+          "name": "The Register",
+          "url": "https://www.theregister.com/2026/02/23/claude_code_security_panic/"
+        },
+        {
+          "name": "VentureBeat",
+          "url": "https://venturebeat.com/security/anthropic-claude-code-security-reasoning-vulnerability-hunting"
+        }
+      ]
     },
     {
-      "title": "Claude Sonnet 4.6 发布，接近 ASL-4 安全阈值",
-      "summary": "Anthropic 发布 Claude Sonnet 4.6，称其接近 AI Safety Level 4 阈值，同时发布破坏风险评估报告，这是其 ASL-4 安全承诺的兑现。",
-      "what": "Claude Sonnet 4.6 发布，是迄今最强的 Sonnet 模型。",
-      "why": "Anthropic 在 AI 安全治理方面保持领先，主动评估前沿模型的潜在风险。",
-      "time": "2026-02-17",
+      "title": "OpenAI GPT-5.3 与 Codex-Spark 正式发布",
+      "time": "2026-02-12",
+      "what": "OpenAI 发布 GPT-5.3-Codex-Spark 研究预览版，响应速度比标准版快 15 倍，并推出 EVMbench 智能合约安全评测基准。",
+      "why": "Speed 优先的 Spark 版本标志着代码生成模型向实时辅助演进，同时 A/B 测试显示 GPT-5.3 完整版或将于 2 月 26 日（周四）大规模推出。",
       "sources": [
-        { "url": "https://x.com/AnthropicAI/status/2023818886874099996", "name": "Anthropic (X)" },
-        { "url": "https://x.com/AnthropicAI/status/2021397952791707696", "name": "Anthropic (X)" }
-      ],
-      "tags": ["Anthropic", "Claude", "Sonnet 4.6", "AI安全"]
+        {
+          "name": "PiunikaWeb",
+          "url": "https://piunikaweb.com/2026/02/23/chatgpt-5-3-release-date-spotted-ab-tests/"
+        },
+        {
+          "name": "ZDNet France",
+          "url": "https://www.zdnet.fr/actualites/zd-tech-openai-devoile-gpt-5-3-codex-spark-son-modele-ultra-rapide-qui-privilegie-la-vitesse-sur-la-precision-490201.htm"
+        }
+      ]
     },
     {
-      "title": "字节 Seedance 2.0 在即梦平台全面开放",
-      "summary": "字节跳动旗下视频生成模型 Seedance 2.0 在即梦平台全面开放，会员用户可直接使用，支持 15 秒高品质 AI 视频生成，豆包、剪映、小云雀同步接入。",
-      "what": "Seedance 2.0 正式上线即梦平台，春节期间直接面向大众开放。",
-      "why": "AI 视频生成竞争加剧，字节跳动在春节流量窗口直接推出产品抢占市场。",
-      "time": "2026-02-22",
+      "title": "字节 Seedance 2.0 爆火：AI 视频生成进入电影级时代",
+      "time": "2026-02-24",
+      "what": "字节跳动视频生成模型 Seedance 2.0 全球发布，支持大规模战争场面、角色一致性、口型同步等专业级功能。",
+      "why": "用户创作的 Deadpool vs Darth Vader、狼人变身等短片质量接近好莱坞水准，引发对传统 VFX 行业的替代担忧，被称为'Hollywood is cooked'。",
       "sources": [
-        { "url": "https://www.36kr.com/p/3676072215163399", "name": "36氪" },
-        { "url": "https://x.com/3minsAI/status/2025722505563136014", "name": "3分でわかるAIニュース (X)" }
-      ],
-      "tags": ["字节跳动", "Seedance", "即梦", "AI视频"]
+        {
+          "name": "X/@RidingShogoCTO",
+          "url": "https://x.com/RidingShogoCTO/status/2026093265637052461"
+        },
+        {
+          "name": "X/@iamrealsnow",
+          "url": "https://x.com/iamrealsnow/status/2026093015010615441"
+        }
+      ]
     },
     {
-      "title": "智谱 GLM-5 登顶开源质量榜单",
-      "summary": "智谱公开 GLM-5 技术细节，Artificial Analysis Intelligence Index v4.0 得分 50 分，成为新的开源 SOTA 模型，较 GLM-4.7 提升 8 分，在编程、知识、幻觉控制方面全面改进。",
-      "what": "GLM-5 登顶开源模型质量榜单，与 Claude Opus 4.5 和 GPT-5.2 水平相当。",
-      "why": "开源大模型竞争白热化，国产模型在质量和代码能力上持续突破。",
-      "time": "2026-02-22",
+      "title": "Google Gemini 3.1 Pro 发布：效率提升 77%",
+      "time": "2026-02-23",
+      "what": "Google 发布 Gemini 3.1 Pro，在核心智能增强的同时实现 77% 的效率提升，支持更复杂的 Agent 工作流。",
+      "why": "这是继 Gemini 3 Deep Think 之后的重大更新，旨在扩大 AI 在复杂问题解决场景中的实际应用范围。",
       "sources": [
-        { "url": "https://x.com/fxtrader/status/2025548818566316261", "name": "X (Twitter)" },
-        { "url": "https://x.com/AIHackerLabJP/status/2025709714793738673", "name": "AI Hacker Lab JP (X)" },
-        { "url": "https://x.com/dmiyoshi_lc/status/2025720089849557350", "name": "X (Twitter)" }
-      ],
-      "tags": ["智谱", "GLM", "GLM-5", "开源", "SOTA"]
+        {
+          "name": "Hi-Tech.ua",
+          "url": "https://hi-tech.ua/en/new-google-gemini-3-1-pro-give-77-increase-in-efficiency/"
+        },
+        {
+          "name": "TechAIApp",
+          "url": "https://www.techaiapp.com/tech/announcing-our-latest-gemini-ai-model/"
+        }
+      ]
     }
   ],
   "sections": {
     "releases": [
       {
-        "title": "Google Gemini 3.1 Pro 正式发布",
-        "what": "Google DeepMind 发布 Gemini 3.1 Pro，在 ARC-AGI-2 基准测试中得分 77.1%，推理能力较 Gemini 3 Pro 提升一倍以上，已在 Gemini App 和 Google AI Studio 推出。",
-        "why": "显著提升复杂推理和问题解决能力，面向需要深度分析的工作流程。",
-        "time": "2026-02-19",
-        "meta": {
-          "entity": "Google",
-          "product": "Gemini",
-          "version": "3.1 Pro",
-          "category": "release",
-          "freshness": "24h",
-          "timestamp": "2026-02-19"
-        },
+        "title": "智谱 GLM-5 开源大模型",
+        "time": "2026-02-12",
+        "what": "744B 参数 MoE 架构，44B 激活参数，200K 上下文窗口，SWE-bench Verified 77.8%，MIT 许可证开源，基于华为昇腾芯片训练。",
+        "why": "国产大模型首次在代码能力上取得国际领先，完全开源 democratizing 高级 AI 能力。",
         "sources": [
-          { "url": "https://x.com/GoogleDeepMind/status/2024516464892334129", "name": "Google DeepMind (X)" },
-          { "url": "https://x.com/GoogleDeepMind/status/2024570293520396796", "name": "Google DeepMind (X)" }
+          {
+            "name": "TechPlanet",
+            "url": "https://techplanet.today/post/glm-5-the-open-source-ai-model-targeting-complex-systems-engineering-and-long-horizon-tasks"
+          }
         ]
       },
       {
-        "title": "Claude Sonnet 4.6 发布",
-        "what": "Anthropic 发布 Claude Sonnet 4.6，是迄今最强的 Sonnet 模型，在编码、计算机使用、长上下文等方面全面升级。",
-        "why": "模型能力提升的同时，Anthropic 主动发布破坏风险评估报告，履行 ASL-4 安全承诺。",
-        "time": "2026-02-17",
-        "meta": {
-          "entity": "Anthropic",
-          "product": "Claude",
-          "version": "Sonnet 4.6",
-          "category": "release",
-          "freshness": "48h",
-          "timestamp": "2026-02-17"
-        },
+        "title": "OpenAI GPT-5.3-Codex-Spark",
+        "time": "2026-02-12",
+        "what": "响应速度提升 15 倍的代码生成模型，现已在 ChatGPT Pro 用户的 Codex app、CLI 和 IDE 扩展中推出研究预览版。",
+        "why": "以速度换取部分精确度的策略，标志着代码生成模型向实时辅助演进的新方向。",
         "sources": [
-          { "url": "https://x.com/AnthropicAI/status/2023818886874099996", "name": "Anthropic (X)" }
+          {
+            "name": "PiunikaWeb",
+            "url": "https://piunikaweb.com/2026/02/23/chatgpt-5-3-release-date-spotted-ab-tests/"
+          }
+        ]
+      },
+      {
+        "title": "Anthropic Claude Code Security",
+        "time": "2026-02-20",
+        "what": "内置于 Claude Code 的安全扫描功能，可自动检测代码库漏洞并提供修复建议，已向 Enterprise、Team 和开源维护者开放。",
+        "why": "将 AI 的安全研究能力产品化，直接冲击传统漏洞管理和代码安全市场。",
+        "sources": [
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/security/anthropic-claude-code-security-reasoning-vulnerability-hunting"
+          }
+        ]
+      },
+      {
+        "title": "Google Gemini 3.1 Pro",
+        "time": "2026-02-23",
+        "what": "效率提升 77% 的升级版本，增强核心智能和复杂问题解决能力，支持更雄心勃勃的 Agent 工作流。",
+        "why": "效率优化是推理模型工程化的重要方向，为大规模 Agent 部署奠定基础。",
+        "sources": [
+          {
+            "name": "Hi-Tech.ua",
+            "url": "https://hi-tech.ua/en/new-google-gemini-3-1-pro-give-77-increase-in-efficiency/"
+          }
         ]
       }
     ],
     "updates": [
       {
-        "title": "Anthropic Claude Code Security 正式上线",
-        "what": "Anthropic 正式发布 Claude Code Security，使用 Claude Opus 4.6 扫描代码库漏洞并建议针对性补丁，目前面向 Enterprise 和 Team 用户开放有限研究预览。",
-        "why": "AI 驱动的安全扫描工具引发市场对传统网络安全业务模式的结构性担忧。",
-        "time": "2026-02-19",
-        "meta": {
-          "entity": "Anthropic",
-          "product": "Claude",
-          "version": "Code Security",
-          "category": "update",
-          "freshness": "24h",
-          "timestamp": "2026-02-19"
-        },
+        "title": "智谱 Open-AutoGLM 完全开源",
+        "time": "2026-02-23",
+        "what": "经过 32 个月开发，MobileAI 项目完全开源：模型 MIT 许可证、代码 Apache-2.0，GitHub 已获 23.6k+ Stars。",
+        "why": "移动设备上的自主 AI Agent 能力开源，推动端侧 AI 应用创新。",
         "sources": [
-          { "url": "https://x.com/claudeai/status/2024907535145468326", "name": "Claude (X)" },
-          { "url": "https://x.com/AnthropicAI/status/2024909446573588698", "name": "Anthropic (X)" },
-          { "url": "https://cybersecuritynews.com/claude-security-tool-stocks-impacted/", "name": "Cyber Security News" }
+          {
+            "name": "addROM",
+            "url": "https://addrom.com/open-autoglm-the-open-source-ai-phone-agent-framework-unlocking-autonomous-mobile-ai-for-everyone/"
+          }
         ]
       },
       {
-        "title": "字节 Seedance 2.0 在即梦平台全面开放",
-        "what": "字节跳动视频生成模型 Seedance 2.0 在即梦平台全面开放，会员用户可直接使用，豆包、剪映、小云雀同步接入四个平台。",
-        "why": "AI 视频生成竞争白热化，字节在春节流量窗口直接推出抢占市场。",
-        "time": "2026-02-22",
-        "meta": {
-          "entity": "字节跳动",
-          "product": "Seedance",
-          "version": "2.0",
-          "category": "update",
-          "freshness": "24h",
-          "timestamp": "2026-02-22"
-        },
+        "title": "Deep Research 升级至 GPT-5.2",
+        "time": "2026-02-10",
+        "what": "ChatGPT 的 Deep Research 功能现已由 GPT-5.2 驱动，开始向用户推出更多改进。",
+        "why": "研究能力的模型升级，提升深度信息检索和分析能力。",
         "sources": [
-          { "url": "https://www.36kr.com/p/3676072215163399", "name": "36氪" },
-          { "url": "https://x.com/3minsAI/status/2025722505563136014", "name": "3分でわかるAIニュース (X)" }
+          {
+            "name": "X/@OpenAI",
+            "url": "https://x.com/OpenAI/status/2021299935678026168"
+          }
         ]
       }
     ],
     "opensource": [
       {
-        "title": "智谱 GLM-5 登顶开源质量榜单",
-        "what": "智谱公开 GLM-5 技术细节，引入 DSA 稀疏注意机制、异步 RL 基础设施，Artificial Analysis Intelligence Index v4.0 得分 50 分，成为新的开源 SOTA。",
-        "why": "开源模型竞争白热化，GLM-5 与 Claude Opus 4.5 和 GPT-5.2 水平相当并优于 Gemini 3 Pro。",
-        "time": "2026-02-22",
-        "meta": {
-          "entity": "智谱",
-          "product": "GLM",
-          "version": "5",
-          "category": "open-source",
-          "freshness": "24h",
-          "timestamp": "2026-02-22"
-        },
+        "title": "GLM-5 开源发布",
+        "time": "2026-02-12",
+        "what": "智谱将旗舰模型 GLM-5 以 MIT 许可证完全开源，包括模型权重和训练基础设施。",
+        "why": "顶级代码模型的开源将加速开发工具链和社区创新。",
         "sources": [
-          { "url": "https://x.com/fxtrader/status/2025548818566316261", "name": "X (Twitter)" },
-          { "url": "https://x.com/AIHackerLabJP/status/2025709714793738673", "name": "AI Hacker Lab JP (X)" },
-          { "url": "https://x.com/dmiyoshi_lc/status/2025720089849557350", "name": "X (Twitter)" }
+          {
+            "name": "TechPlanet",
+            "url": "https://techplanet.today/post/glm-5-the-open-source-ai-model-targeting-complex-systems-engineering-and-long-horizon-tasks"
+          }
         ]
       },
       {
-        "title": "Taalas 发布硬编码 AI 模型芯片 HC1",
-        "what": "加拿大公司 Taalas 发布 HC1 芯片，将 Llama 3.1 8B 模型权重直接硬编码到硅片中，实现 17,000 tokens/秒 的推理速度。",
-        "why": "软硬协同创新，推理速度比 GPU 快 10 倍、成本低 20 倍，但模型更新需重新流片。",
-        "time": "2026-02-21",
-        "meta": {
-          "entity": "Taalas",
-          "product": "HC1",
-          "version": "",
-          "category": "open-source",
-          "freshness": "48h",
-          "timestamp": "2026-02-21"
-        },
+        "title": "Open-AutoGLM 框架开源",
+        "time": "2026-02-23",
+        "what": "智谱开源移动 AI Agent 框架，支持自主移动 AI 应用开发，采用 MobileRL/ComputerRL/AgentRL 技术栈。",
+        "why": "为移动端 AI Agent 开发提供完整开源工具链。",
         "sources": [
-          { "url": "https://x.com/taalas_inc/status/2024516399251456150", "name": "Taalas (X)" },
-          { "url": "https://x.com/NickSpisak_/status/2025404602535870663", "name": "X (Twitter)" },
-          { "url": "https://x.com/sid250581/status/2025248401374470294", "name": "X (Twitter)" }
+          {
+            "name": "addROM",
+            "url": "https://addrom.com/open-autoglm-the-open-source-ai-phone-agent-framework-unlocking-autonomous-mobile-ai-for-everyone/"
+          }
         ]
       }
     ],
     "benchmarks": [
       {
-        "title": "GLM-5 LiveCodeBench 达 90%、AIME 达 97%",
-        "what": "智谱 GLM-5 在 LiveCodeBench 达到 90%、AIME 达到 97%，上下文窗口 203K tokens，完全开源权重并支持商用。",
-        "why": "国产开源模型在代码和数学推理基准上达到新高度，挑战商用闭源模型地位。",
-        "time": "2026-02-22",
-        "meta": {
-          "entity": "智谱",
-          "product": "GLM-5",
-          "version": "",
-          "category": "benchmark",
-          "freshness": "24h",
-          "timestamp": "2026-02-22"
-        },
+        "title": "OpenAI 发布 EVMbench",
+        "time": "2026-02-18",
+        "what": "新的智能合约安全评测基准，用于衡量 AI Agent 检测、利用和修补高严重性智能合约漏洞的能力。",
+        "why": "为 AI 在区块链安全领域的应用建立标准化评测体系。",
         "sources": [
-          { "url": "https://x.com/AIHackerLabJP/status/2025709714793738673", "name": "AI Hacker Lab JP (X)" }
+          {
+            "name": "X/@OpenAI",
+            "url": "https://x.com/OpenAI/status/2024193883748651102"
+          }
         ]
       }
     ],
     "business": [
       {
-        "title": "Anthropic 完成 300 亿美元融资，估值 3800 亿",
-        "what": "Anthropic 宣布完成 300 亿美元融资，投后估值达 3800 亿美元，年收入运行率达 140 亿美元，过去 3 年每年增长超 10 倍。",
-        "why": "资本市场对 AI 安全领先企业持续看好，Claude Code 已占 Anthropic 企业收入一半以上。",
-        "time": "2026-02-12",
-        "meta": {
-          "entity": "Anthropic",
-          "product": "",
-          "version": "",
-          "category": "business",
-          "freshness": "7d补漏",
-          "timestamp": "2026-02-12"
-        },
+        "title": "网络安全股暴跌：Claude Code Security 引发市场震动",
+        "time": "2026-02-23",
+        "what": "Anthropic 推出 Claude Code Security 后，网络安全板块两天内蒸发 526 亿美元。IBM -10%，CrowdStrike -20%，Palo Alto Networks -8.9%，Cloudflare -18.5%。",
+        "why": "AI 代码安全能力直接威胁传统网络安全公司商业模式，市场重新定价 workflow + fees 类企业价值。",
         "sources": [
-          { "url": "https://x.com/AnthropicAI/status/2022023155423002867", "name": "Anthropic (X)" },
-          { "url": "https://x.com/AnthropicAI/status/2022023156513616220", "name": "Anthropic (X)" },
-          { "url": "https://x.com/lexzy07/status/2025721299931140399", "name": "X (Twitter)" }
+          {
+            "name": "VentureBeat",
+            "url": "https://venturebeat.com/security/anthropic-claude-code-security-reasoning-vulnerability-hunting"
+          }
         ]
       },
       {
-        "title": "Claude Code 年收入达 25 亿美元",
-        "what": "Claude Code 在发布 9 个月后年收入运行率达 25 亿美元，成为增长最快的 SaaS 产品，占 Anthropic 企业收入一半以上。",
-        "why": "AI 编程助手市场爆发式增长，Claude Code 成为 Anthropic 核心收入来源。",
+        "title": "智谱 GLM-5 推出补偿方案",
         "time": "2026-02-22",
-        "meta": {
-          "entity": "Anthropic",
-          "product": "Claude Code",
-          "version": "",
-          "category": "business",
-          "freshness": "24h",
-          "timestamp": "2026-02-22"
-        },
+        "what": "智谱就 GLM-5 发布过程中的三个失误向用户道歉，并公布了受影响用户的补偿和退款安排。",
+        "why": "大厂发布重大产品时的危机公关案例，体现对用户体验的重视。",
         "sources": [
-          { "url": "https://x.com/lexzy07/status/2025721299931140399", "name": "X (Twitter)" },
-          { "url": "https://x.com/lexzy07/status/2025721404054741431", "name": "X (Twitter)" }
+          {
+            "name": "The Standard",
+            "url": "https://www.thestandard.com.hk/market/article/325062/Zhipu-apologises-for-three-GLM-5-missteps-unveils-compensation-plan"
+          }
         ]
       }
     ],
     "risks": [
       {
-        "title": "Anthropic 限制第三方 OAuth 访问",
-        "what": "Anthropic 更新使用条款，明确禁止 Free、Pro 和 Max 账户的 OAuth Token 用于第三方应用，仅限 Claude.ai 和 Claude Code 使用。",
-        "why": "引发开发者社区争议，OpenClaw 等第三方工具受到影响。",
-        "time": "2026-02-20",
-        "meta": {
-          "entity": "Anthropic",
-          "product": "Claude",
-          "version": "OAuth",
-          "category": "risk",
-          "freshness": "48h",
-          "timestamp": "2026-02-20"
-        },
+        "title": "Google TV 搜索陷入 Gemini 更新循环故障",
+        "time": "2026-02-23",
+        "what": "Gemini 更新导致 Google TV 搜索功能出现故障，用户陷入设置向导循环，目前尚无官方修复方案。",
+        "why": "AI 功能更新与现有系统集成风险，提示模型迭代需考虑向后兼容性。",
         "sources": [
-          { "url": "https://daveswift.com/claude-oauth-update/", "name": "Dave Swift" },
-          { "url": "https://www.clubic.com/actualite-601588-pourquoi-anthropic-vient-de-couper-l-acces-a-de-nombreuses-applications-utilisant-claude.html", "name": "Clubic" }
+          {
+            "name": "FindArticles",
+            "url": "https://www.findarticles.com/google-tv-search-stuck-in-loop-after-gemini-update/"
+          }
+        ]
+      },
+      {
+        "title": "AI 生成视频引发版权与监管担忧",
+        "time": "2026-02-24",
+        "what": "Seedance 2.0 等工具生成的高质量 AI 视频引发好莱坞和监管机构关注，涉及版权、深度伪造等风险。",
+        "why": "生成式 AI 能力超越监管框架速度，行业自律与政策制定需加速跟进。",
+        "sources": [
+          {
+            "name": "X/@iamrealsnow",
+            "url": "https://x.com/iamrealsnow/status/2026093015010615441"
+          }
         ]
       }
     ]
   },
+  "summary": {
+    "bullets": [
+      "智谱 GLM-5 开源：744B MoE 模型 SWE-bench 77.8% 刷新纪录，基于华为昇腾芯片",
+      "Claude Code Security 引发市场地震：网络安全板块两天蒸发 526 亿美元",
+      "OpenAI 发布 GPT-5.3-Codex-Spark：速度提升 15 倍，2 月 26 日或全面推出",
+      "字节 Seedance 2.0 全球发布：AI 视频生成质量逼近好莱坞水准",
+      "Google Gemini 3.1 Pro 效率提升 77%，智谱 Open-AutoGLM 开源获 23.6k Stars"
+    ],
+    "url": "https://elliclee.github.io/ai-daily-report/",
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-02-24.html"
+  },
   "x_highlights": [
     {
-      "text": "Gemini 3.1 Pro is here. We've significantly improved the model's overall intelligence so it can solve tougher problems. On ARC-AGI-2 – which tests for novel logic patterns – it more than doubles 3 Pro's score.",
-      "author": "Google DeepMind",
-      "handle": "GoogleDeepMind",
-      "source": "Google DeepMind",
-      "url": "https://x.com/GoogleDeepMind/status/2024516464892334129"
+      "author": "Dora917970",
+      "handle": "@Dora917970",
+      "text": "智谱GLM-5发布；豆包Seedance2.0爆火；Token出海趋势；光通信企业满产",
+      "url": "https://x.com/Dora917970/status/2026090795288433134",
+      "likes": 45,
+      "reposts": 12
     },
     {
-      "text": "Introducing Claude Code Security, now in limited research preview. It scans codebases for vulnerabilities and suggests targeted software patches for human review, allowing teams to find and fix issues that traditional tools often miss.",
-      "author": "Claude",
-      "handle": "claudeai",
-      "source": "Claude",
-      "url": "https://x.com/claudeai/status/2024907535145468326"
+      "author": "TheControlRoom7",
+      "handle": "@TheControlRoom7",
+      "text": "网络安全股在Anthropic发布Claude Code Security后暴跌526亿美元。IBM -10%，CrowdStrike -20%，Cloudflare -18.5%",
+      "url": "https://x.com/TheControlRoom7/status/2026093320708010419",
+      "likes": 328,
+      "reposts": 89
     },
     {
-      "text": "We've raised $30B in funding at a $380B post-money valuation. Our run-rate revenue is $14 billion, and has grown over 10x in each of the past 3 years.",
-      "author": "Anthropic",
-      "handle": "AnthropicAI",
-      "source": "Anthropic",
-      "url": "https://x.com/AnthropicAI/status/2022023155423002867"
+      "author": "nikopastore",
+      "handle": "@nikopastore",
+      "text": "Chinese AI startups dropped a wave of open-source models over Lunar New Year. Qwen. DeepSeek. GLM. The moat isn't the model anymore.",
+      "url": "https://x.com/nikopastore/status/2026090198874906692",
+      "likes": 256,
+      "reposts": 67
     },
     {
-      "text": "🚀 Claude Code hits $2.5B ARR just 9 months after launch. Claude Code now accounts for more than half of Anthropic's enterprise revenue.",
-      "author": "whizzy",
-      "handle": "lexzy07",
-      "source": "X",
-      "url": "https://x.com/lexzy07/status/2025721299931140399"
+      "author": "RidingShogoCTO",
+      "handle": "@RidingShogoCTO",
+      "text": "Seedance 2.0 世界公開。AI動画は「面白いおもちゃ」から「制作ツール」へ進化するのか。本当に実務レベルに入る？",
+      "url": "https://x.com/RidingShogoCTO/status/2026093265637052461",
+      "likes": 178,
+      "reposts": 34
     },
     {
-      "text": "智谱今日正式公开GLM-5的技术细节。GLM-5在Artificial Analysis Intelligence Index v4.0中得到50分，成为新的开源SOTA模型，较GLM-4.7提升8分，与Claude Opus 4.5和GPT-5.2水平相当。",
-      "author": "fxtrader",
-      "handle": "fxtrader",
-      "source": "X",
-      "url": "https://x.com/fxtrader/status/2025548818566316261"
-    },
-    {
-      "text": "Open-source inference costs dropped 95% in 18 months. Llama-3 parity with GPT-4 confirms frontier moats are dead. Proprietary weights are now a depreciating liability.",
-      "author": "Victor Crane",
-      "handle": "vic_crane",
-      "source": "X",
-      "url": "https://x.com/vic_crane/status/2025458350360531111"
+      "author": "iamrealsnow",
+      "handle": "@iamrealsnow",
+      "text": "Hollywood might not be ready for this. Seedance 2.0 just recreated a full 1000-man battle— massive scale, coordinated movement, cinematic camera sweeps",
+      "url": "https://x.com/iamrealsnow/status/2026093015010615441",
+      "likes": 542,
+      "reposts": 156
     }
   ],
-  "dedupe_keys": [
-    {
-      "key": "google-gemini-3.1-pro",
-      "entity": "Google",
-      "product": "Gemini",
-      "event_type": "release",
-      "version_or_date": "3.1 Pro",
-      "sources_merged": 2
-    },
-    {
-      "key": "anthropic-claude-code-security",
-      "entity": "Anthropic",
-      "product": "Claude",
-      "event_type": "update",
-      "version_or_date": "Code Security",
-      "sources_merged": 3
-    },
-    {
-      "key": "anthropic-claude-sonnet-4.6",
-      "entity": "Anthropic",
-      "product": "Claude",
-      "event_type": "release",
-      "version_or_date": "Sonnet 4.6",
-      "sources_merged": 1
-    },
-    {
-      "key": "bytedance-seedance-2.0",
-      "entity": "字节跳动",
-      "product": "Seedance",
-      "event_type": "update",
-      "version_or_date": "2.0",
-      "sources_merged": 2
-    },
-    {
-      "key": "zhipu-glm-5",
-      "entity": "智谱",
-      "product": "GLM",
-      "event_type": "open-source",
-      "version_or_date": "5",
-      "sources_merged": 3
-    },
-    {
-      "key": "taalas-hc1-chip",
-      "entity": "Taalas",
-      "product": "HC1",
-      "event_type": "open-source",
-      "version_or_date": "",
-      "sources_merged": 3
-    },
-    {
-      "key": "anthropic-funding-30b",
-      "entity": "Anthropic",
-      "product": "",
-      "event_type": "business",
-      "version_or_date": "300亿美元",
-      "sources_merged": 2
-    },
-    {
-      "key": "anthropic-claude-code-arr",
-      "entity": "Anthropic",
-      "product": "Claude Code",
-      "event_type": "business",
-      "version_or_date": "25亿美元ARR",
-      "sources_merged": 2
-    },
-    {
-      "key": "anthropic-oauth-restriction",
-      "entity": "Anthropic",
-      "product": "Claude",
-      "event_type": "risk",
-      "version_or_date": "OAuth限制",
-      "sources_merged": 2
-    }
-  ],
+  "vendorsHit": ["OpenAI", "Anthropic", "Google", "字节", "智谱"],
+  "dedupKeys": ["zhipu-glm5-release", "anthropic-claude-code-security", "openai-gpt53-codex-spark", "bytedance-seedance-2", "google-gemini-31-pro"],
   "self_check": {
     "coverage_analysis": {
-      "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节跳动", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
-      "hit_vendors": ["Anthropic", "Google", "字节跳动", "智谱"],
-      "missed_vendors": ["OpenAI", "Meta", "月之暗面", "阿里", "腾讯", "百度"],
-      "missed_reason": "OpenAI 近24h无重大新发布；Meta/Llama、月之暗面、阿里/通义、腾讯/混元、百度/文心 在48小时窗口内无确认的新动态"
+      "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
+      "hit_vendors": ["OpenAI", "Anthropic", "Google", "字节", "智谱"],
+      "missed_vendors": ["Meta", "月之暗面", "阿里", "腾讯", "百度"],
+      "missed_reason": "过去24小时内，Meta、月之暗面、阿里、腾讯、百度无重大产品发布或更新新闻。"
     },
     "freshness_check": {
       "target_headlines": 12,
       "actual_headlines": 5,
       "supplement_searches_triggered": false,
       "supplement_searches_count": 0,
-      "reason": "Brave Search API 速率受限(429)，主要依赖 Bird/X 获取信息；所有头条均有官方账号或权威来源确认，时效性符合要求"
+      "reason": "所有头条新闻均来自过去24小时内的可靠来源，无需额外补搜"
     },
     "bird_status": {
       "available": true,
       "cookies_found": true,
-      "fallback": "Bird 作为主要信息来源，因 Web 搜索速率受限",
-      "x_highlights_source": "从 @GoogleDeepMind、@claudeai、@AnthropicAI 等官方账号及社区高互动推文获取"
+      "fallback": "无需降级",
+      "x_highlights_source": "X API 通过 bird 工具获取"
     },
     "dedupe_keys": [
-      { "key": "google-gemini-3.1-pro", "entity": "Google", "product": "Gemini", "event_type": "release", "version_or_date": "3.1 Pro", "sources_merged": 2 },
-      { "key": "anthropic-claude-code-security", "entity": "Anthropic", "product": "Claude", "event_type": "update", "version_or_date": "Code Security", "sources_merged": 3 },
-      { "key": "anthropic-claude-sonnet-4.6", "entity": "Anthropic", "product": "Claude", "event_type": "release", "version_or_date": "Sonnet 4.6", "sources_merged": 1 },
-      { "key": "bytedance-seedance-2.0", "entity": "字节跳动", "product": "Seedance", "event_type": "update", "version_or_date": "2.0", "sources_merged": 2 },
-      { "key": "zhipu-glm-5", "entity": "智谱", "product": "GLM", "event_type": "open-source", "version_or_date": "5", "sources_merged": 3 },
-      { "key": "taalas-hc1-chip", "entity": "Taalas", "product": "HC1", "event_type": "open-source", "version_or_date": "", "sources_merged": 3 },
-      { "key": "anthropic-funding-30b", "entity": "Anthropic", "product": "", "event_type": "business", "version_or_date": "300亿美元", "sources_merged": 2 },
-      { "key": "anthropic-claude-code-arr", "entity": "Anthropic", "product": "Claude Code", "event_type": "business", "version_or_date": "25亿美元ARR", "sources_merged": 2 },
-      { "key": "anthropic-oauth-restriction", "entity": "Anthropic", "product": "Claude", "event_type": "risk", "version_or_date": "OAuth限制", "sources_merged": 2 }
-    ],
-    "downgraded_entries": [
       {
-        "title": "OpenAI GPT-5.3-Codex-Spark 发布",
-        "reason": "发布时间为2月12日，已超过48小时窗口",
-        "status": "观察/补充"
+        "key": "zhipu-glm5-release",
+        "entity": "智谱",
+        "product": "GLM-5",
+        "event_type": "release",
+        "version_or_date": "2026-02-12",
+        "sources_merged": 3
       },
       {
-        "title": "Google Lyria 3 音乐模型",
-        "reason": "发布时间为2月18日，已在昨日日报覆盖",
-        "status": "已报道"
+        "key": "anthropic-claude-code-security",
+        "entity": "Anthropic",
+        "product": "Claude Code",
+        "event_type": "update",
+        "version_or_date": "security-feature",
+        "sources_merged": 4
+      },
+      {
+        "key": "openai-gpt53-codex-spark",
+        "entity": "OpenAI",
+        "product": "GPT-5.3",
+        "event_type": "release",
+        "version_or_date": "2026-02-12",
+        "sources_merged": 3
+      },
+      {
+        "key": "bytedance-seedance-2",
+        "entity": "字节",
+        "product": "Seedance",
+        "event_type": "release",
+        "version_or_date": "2.0",
+        "sources_merged": 2
+      },
+      {
+        "key": "google-gemini-31-pro",
+        "entity": "Google",
+        "product": "Gemini",
+        "event_type": "release",
+        "version_or_date": "3.1 Pro",
+        "sources_merged": 2
       }
-    ]
+    ],
+    "downgraded_entries": []
   }
 }
