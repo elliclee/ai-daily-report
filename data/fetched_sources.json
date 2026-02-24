@@ -1,14 +1,23 @@
 {
-  "fetched_at": "2026-02-24T13:28:52.130174",
+  "fetched_at": "2026-02-24T14:07:26.712127",
   "sources": {
     "hackernews-top": {
       "type": "hackernews",
       "count": 10,
       "items": [
         {
+          "title": "Diode – Build, program, and simulate hardware",
+          "url": "https://www.withdiode.com/",
+          "score": 213,
+          "by": "rossant",
+          "time": "2026-02-20T22:14:13",
+          "comments": "https://news.ycombinator.com/item?id=47094768",
+          "description": "Diode is a 3D hardware simulator capable of simulating arduinos, integrated circuits, capacitors, transistors and much more."
+        },
+        {
           "title": "Terence Tao, at 8 years old (1984) [pdf]",
           "url": "https://gwern.net/doc/iq/high/smpy/1984-clements.pdf",
-          "score": 340,
+          "score": 360,
           "by": "gurjeet",
           "time": "2026-02-23T15:36:50",
           "comments": "https://news.ycombinator.com/item?id=47123689",
@@ -17,79 +26,70 @@
         {
           "title": "I Ported Coreboot to the ThinkPad X270",
           "url": "https://dork.dev/posts/2026-02-20-ported-coreboot/",
-          "score": 233,
+          "score": 239,
           "by": "todsacerdoti",
           "time": "2026-02-23T23:58:45",
           "comments": "https://news.ycombinator.com/item?id=47130860",
           "description": ""
         },
         {
-          "title": "Blood test boosts Alzheimer's diagnosis accuracy to 94.5%, clinical study shows",
-          "url": "https://medicalxpress.com/news/2026-02-blood-boosts-alzheimer-diagnosis-accuracy.html",
-          "score": 314,
-          "by": "wglb",
-          "time": "2026-02-24T03:10:16",
-          "comments": "https://news.ycombinator.com/item?id=47132388",
-          "description": ""
-        },
-        {
           "title": "The Age Verification Trap: Verifying age undermines everyone's data protection",
           "url": "https://spectrum.ieee.org/age-verification",
-          "score": 1518,
+          "score": 1537,
           "by": "oldnetguy",
           "time": "2026-02-23T14:22:39",
           "comments": "https://news.ycombinator.com/item?id=47122715",
           "description": "Platforms are caught in a dilemma: enforce age restrictions or protect user privacy. How are they navigating this tricky terrain?"
         },
         {
+          "title": "Blood test boosts Alzheimer's diagnosis accuracy to 94.5%, clinical study shows",
+          "url": "https://medicalxpress.com/news/2026-02-blood-boosts-alzheimer-diagnosis-accuracy.html",
+          "score": 330,
+          "by": "wglb",
+          "time": "2026-02-24T03:10:16",
+          "comments": "https://news.ycombinator.com/item?id=47132388",
+          "description": ""
+        },
+        {
           "title": "Show HN: Steerling-8B, a language model that can explain any token it generates",
           "url": "https://www.guidelabs.ai/post/steerling-8b-base-model-release/",
-          "score": 216,
+          "score": 226,
           "by": "adebayoj",
           "time": "2026-02-24T00:38:02",
           "comments": "https://news.ycombinator.com/item?id=47131225",
           "description": "We release Steerling-8B, an 8B-parameter causal diffusion language model that is interpretable by construction — its predictions are routed through concepts you can measure, audit, and control."
         },
         {
-          "title": "Firefox 148 Launches with AI Kill Switch Feature and More Enhancements",
-          "url": "https://serverhost.com/blog/firefox-148-launches-with-exciting-ai-kill-switch-feature-and-more-enhancements/",
-          "score": 331,
-          "by": "shaunpud",
-          "time": "2026-02-24T05:47:23",
-          "comments": "https://news.ycombinator.com/item?id=47133313",
-          "description": "The latest update of Firefox, version 148, introduces a much-anticipated &quot;AI kill switch&quot; feature, allowing users to disable AI functionalities such as chatbot prompts and AI-generated link summaries. Mozilla emphasizes that once AI features are turned off, future updates will not override"
-        },
-        {
           "title": "Making Wolfram tech available as a foundation tool for LLM systems",
           "url": "https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/",
-          "score": 210,
+          "score": 217,
           "by": "surprisetalk",
           "time": "2026-02-23T22:11:34",
           "comments": "https://news.ycombinator.com/item?id=47129727",
           "description": "Wolfram"
         },
         {
+          "title": "Firefox 148 Launches with AI Kill Switch Feature and More Enhancements",
+          "url": "https://serverhost.com/blog/firefox-148-launches-with-exciting-ai-kill-switch-feature-and-more-enhancements/",
+          "score": 340,
+          "by": "shaunpud",
+          "time": "2026-02-24T05:47:23",
+          "comments": "https://news.ycombinator.com/item?id=47133313",
+          "description": "The latest update of Firefox, version 148, introduces a much-anticipated &quot;AI kill switch&quot; feature, allowing users to disable AI functionalities such as chatbot prompts and AI-generated link summaries. Mozilla emphasizes that once AI features are turned off, future updates will not override"
+        },
+        {
           "title": "“Car Wash” test with 53 models",
           "url": "https://opper.ai/blog/car-wash-test",
-          "score": 271,
+          "score": 288,
           "by": "felix089",
           "time": "2026-02-23T20:16:08",
           "comments": "https://news.ycombinator.com/item?id=47128138",
           "description": "The developer platform for reliable agents"
         },
         {
-          "title": "A simple web we own",
-          "url": "https://rsdoiel.github.io/blog/2026/02/21/a_simple_web_we_own.html",
-          "score": 266,
-          "by": "speckx",
-          "time": "2026-02-23T16:01:18",
-          "comments": "https://news.ycombinator.com/item?id=47124149",
-          "description": ""
-        },
-        {
           "title": "Show HN: PgDog – Scale Postgres without changing the app",
           "url": "https://github.com/pgdogdev/pgdog",
-          "score": 282,
+          "score": 290,
           "by": "levkk",
           "time": "2026-02-23T15:33:24",
           "comments": "https://news.ycombinator.com/item?id=47123631",
@@ -126,19 +126,19 @@
           "language": "Python"
         },
         {
+          "repo": "D4Vinci/Scrapling",
+          "name": "Scrapling",
+          "url": "https://github.com/D4Vinci/Scrapling",
+          "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+          "stars_today": "1970",
+          "language": "Python"
+        },
+        {
           "repo": "GVCLab/PersonaLive",
           "name": "PersonaLive",
           "url": "https://github.com/GVCLab/PersonaLive",
           "description": "[CVPR 2026] PersonaLive! : Expressive Portrait Image Animation for Live Streaming",
           "stars_today": "75",
-          "language": "Python"
-        },
-        {
-          "repo": "HunxByts/GhostTrack",
-          "name": "GhostTrack",
-          "url": "https://github.com/HunxByts/GhostTrack",
-          "description": "Useful tool to track location or mobile number",
-          "stars_today": "142",
           "language": "Python"
         }
       ]
