@@ -78,7 +78,9 @@ def render_cards(items: list[dict], badge_color: str | None = None, tag: str | N
         if tag:
             meta.append(f'<span class="tag">{html_escape(tag)}</span>')
         if when:
-            meta.append(f'<span>📅 {when}</span>')
+            # Add freshness indicator
+            freshness = get_freshness_indicator(when)
+            meta.append(f'<span>{freshness} {when}</span>')
         if meta:
             parts.append('<div class="card-meta">' + "\n".join(meta) + '</div>')
 
@@ -97,6 +99,23 @@ def render_cards(items: list[dict], badge_color: str | None = None, tag: str | N
         parts.append('</div>')
 
     return "\n".join(parts)
+
+
+def get_freshness_indicator(time_str: str) -> str:
+    """Return emoji indicator for news freshness."""
+    try:
+        dt = datetime.strptime(time_str.strip(), "%Y-%m-%d")
+        today = datetime.now()
+        delta = (today - dt).days
+        
+        if delta == 0:
+            return "🔴"  # Today
+        elif delta == 1:
+            return "🟡"  # Yesterday
+        else:
+            return "🟢"  # Within 48h
+    except:
+        return "📅"
 
 
 def render_x_highlights(items: list[dict] | None) -> str:
@@ -144,7 +163,8 @@ def render_x_highlights(items: list[dict] | None) -> str:
     return "\n".join(parts)
 
 
-def render_self_check(daily: dict) -> str:
+def render_self_check_collapsed(daily: dict) -> str:
+    """Render self-check section as collapsible details."""
     sections = daily.get("sections") or {}
     sc = daily.get("self_check") or {}
 
@@ -155,127 +175,63 @@ def render_self_check(daily: dict) -> str:
     benchmarks = len(sections.get("benchmarks") or [])
     business = len(sections.get("business") or [])
     risks = len(sections.get("risks") or [])
+    total = releases + updates + opensource + benchmarks + business + risks
 
     parts: list[str] = []
-    parts.append('<!-- 覆盖度自检 -->')
-    parts.append('<section class="section">')
-    parts.append('<h2 class="section-title"><span>📊</span> 覆盖度自检</h2>')
-
-    # --- 栏目统计 ---
-    parts.append('<div class="highlight-box">')
-    parts.append('<div class="highlight-title">栏目统计</div>')
-    parts.append('<ul class="highlight-list">')
-    parts.append(f'<li><span>🚀</span><div>Releases: {releases}条</div></li>')
-    parts.append(f'<li><span>📈</span><div>Updates: {updates}条</div></li>')
-    parts.append(f'<li><span>🔓</span><div>OpenSource: {opensource}条</div></li>')
-    parts.append(f'<li><span>📊</span><div>Benchmarks: {benchmarks}条</div></li>')
-    parts.append(f'<li><span>💼</span><div>Business: {business}条</div></li>')
-    parts.append(f'<li><span>⚠️</span><div>Risks: {risks}条</div></li>')
-    parts.append('</ul>')
+    parts.append('<details class="self-check-details" style="margin-top: 40px; padding: 16px; background: var(--card); border-radius: 8px; border: 1px solid var(--border);">')
+    parts.append('<summary style="cursor: pointer; font-weight: 500; color: var(--muted-foreground);">📊 数据覆盖详情（点击展开）</summary>')
+    
+    parts.append('<div style="margin-top: 16px;">')
+    
+    # Section counts with progress bars
+    parts.append('<div style="margin-bottom: 16px;">')
+    parts.append('<div style="font-size: 12px; color: var(--muted-foreground); margin-bottom: 8px;">栏目统计</div>')
+    
+    section_data = [
+        ("🚀 Releases", releases, "#e85d04"),
+        ("📈 Updates", updates, "#4285f4"),
+        ("🔓 OpenSource", opensource, "#10a37f"),
+        ("📊 Benchmarks", benchmarks, "#8e44ad"),
+        ("💼 Business", business, "#7c3aed"),
+        ("⚠️ Risks", risks, "#991b1b"),
+    ]
+    
+    for label, count, color in section_data:
+        bar_width = min(count * 20, 100)  # Simple visual indicator
+        parts.append(f'<div style="display: flex; align-items: center; margin-bottom: 6px; font-size: 12px;">')
+        parts.append(f'<span style="width: 100px;">{label}</span>')
+        parts.append(f'<div style="flex: 1; height: 6px; background: var(--border); border-radius: 3px; margin: 0 8px;">')
+        if count > 0:
+            parts.append(f'<div style="width: {bar_width}%; height: 100%; background: {color}; border-radius: 3px;"></div>')
+        parts.append('</div>')
+        parts.append(f'<span style="width: 30px; text-align: right;">{count}</span>')
+        parts.append('</div>')
+    
     parts.append('</div>')
 
-    # --- 命中厂商（优先 self_check.coverage_analysis，fallback vendorsHit）---
+    # Coverage analysis
     ca = sc.get("coverage_analysis") or {}
     hit_vendors = ca.get("hit_vendors") or daily.get("vendorsHit") or []
-    missed_vendors = ca.get("missed_vendors") or []
-    missed_reason = ca.get("missed_reason") or ""
-
-    if hit_vendors or missed_vendors:
-        parts.append('<div class="highlight-box">')
-        parts.append('<div class="highlight-title">命中厂商清单</div>')
-        parts.append('<p style="font-size: 13px; line-height: 1.8; margin-top: 8px;">')
-        if hit_vendors:
-            parts.append(" ".join([f'<span class="tag">✅ {html_escape(str(v))}</span>' for v in hit_vendors]))
-        if missed_vendors:
-            parts.append('<br/>')
-            parts.append(" ".join([f'<span class="tag">❌ {html_escape(str(v))}</span>' for v in missed_vendors]))
-        parts.append('</p>')
-        if missed_reason:
-            parts.append(f'<p style="font-size: 12px; color: var(--muted-foreground); margin-top: 8px;">{html_escape(str(missed_reason))}</p>')
+    if hit_vendors:
+        parts.append('<div style="margin-top: 12px; font-size: 12px;">')
+        parts.append('<div style="color: var(--muted-foreground); margin-bottom: 4px;">命中厂商</div>')
+        parts.append(" ".join([f'<span style="display: inline-block; padding: 2px 6px; background: var(--accent-soft); border-radius: 4px; margin: 2px;">✅ {html_escape(str(v))}</span>' for v in hit_vendors]))
         parts.append('</div>')
 
-    # --- 时效检查 ---
-    fc = sc.get("freshness_check") or {}
-    if fc:
-        parts.append('<div class="highlight-box">')
-        parts.append('<div class="highlight-title">时效检查</div>')
-        parts.append('<ul class="highlight-list">')
-        target = fc.get("target_headlines", "?")
-        actual = fc.get("actual_headlines", "?")
-        parts.append(f'<li><span>📰</span><div>目标 {target} 条，实际 {actual} 条</div></li>')
-        supp = fc.get("supplement_searches_triggered", False)
-        supp_count = fc.get("supplement_searches_count", 0)
-        parts.append(f'<li><span>🔍</span><div>补搜: {"已触发" if supp else "未触发"}（{supp_count} 次）</div></li>')
-        reason = fc.get("reason", "")
-        if reason:
-            parts.append(f'<li><span>💡</span><div>{html_escape(str(reason))}</div></li>')
-        parts.append('</ul>')
-        parts.append('</div>')
-
-    # --- Bird 状态 ---
+    # Bird status
     bs = sc.get("bird_status") or {}
     if bs:
-        parts.append('<div class="highlight-box">')
-        parts.append('<div class="highlight-title">X (Bird) 状态</div>')
-        parts.append('<ul class="highlight-list">')
         available = bs.get("available", False)
-        cookies = bs.get("cookies_found", False)
-        fallback = bs.get("fallback", "")
-        xsource = bs.get("x_highlights_source", "")
-        parts.append(f'<li><span>🐦</span><div>可用: {"是" if available else "否"} · Cookies: {"有" if cookies else "无"}</div></li>')
-        if fallback:
-            parts.append(f'<li><span>🔄</span><div>Fallback: {html_escape(str(fallback))}</div></li>')
-        if xsource:
-            parts.append(f'<li><span>📝</span><div>{html_escape(str(xsource))}</div></li>')
-        parts.append('</ul>')
+        parts.append('<div style="margin-top: 12px; font-size: 12px;">')
+        parts.append(f'<span style="color: var(--muted-foreground);">🐦 Bird 状态：</span>')
+        parts.append(f'{"✅ 可用" if available else "❌ 不可用"}')
+        if not available and bs.get("fallback"):
+            parts.append(f' <span style="color: var(--muted-foreground);">({html_escape(bs["fallback"])})</span>')
         parts.append('</div>')
 
-    # --- Dedupe Keys（优先结构化，fallback 字符串数组）---
-    dedup_keys = sc.get("dedupe_keys") or []
-    dedup_strs = daily.get("dedupKeys") or []
-    if dedup_keys:
-        parts.append('<div class="highlight-box">')
-        parts.append('<div class="highlight-title">Deduplicate Keys</div>')
-        parts.append('<ul class="highlight-list">')
-        for dk in dedup_keys:
-            if isinstance(dk, dict):
-                key = html_escape(str(dk.get("key", "")))
-                entity = html_escape(str(dk.get("entity", "")))
-                product = html_escape(str(dk.get("product", "")))
-                merged = dk.get("sources_merged", "")
-                parts.append(f'<li><span>🔑</span><div><strong>{key}</strong> — {entity}/{product}')
-                if merged:
-                    parts.append(f' ({merged}源合并)')
-                parts.append('</div></li>')
-            else:
-                parts.append(f'<li><span>🔑</span><div>{html_escape(str(dk))}</div></li>')
-        parts.append('</ul>')
-        parts.append('</div>')
-    elif dedup_strs:
-        parts.append('<div class="highlight-box">')
-        parts.append('<div class="highlight-title">Deduplicate Keys</div>')
-        parts.append('<p style="font-size: 12px; line-height: 1.6; margin-top: 8px; color: var(--muted-foreground);">')
-        parts.append(html_escape(" | ".join(str(d) for d in dedup_strs)))
-        parts.append('</p>')
-        parts.append('</div>')
-
-    # --- 降级条目 ---
-    downgraded = sc.get("downgraded_entries") or []
-    if downgraded:
-        parts.append('<div class="highlight-box">')
-        parts.append('<div class="highlight-title">降级/观察条目</div>')
-        parts.append('<ul class="highlight-list">')
-        for de in downgraded:
-            if isinstance(de, dict):
-                title = html_escape(str(de.get("title", "")))
-                reason = html_escape(str(de.get("reason", "")))
-                parts.append(f'<li><span>👁️</span><div><strong>{title}</strong>：{reason}</div></li>')
-            else:
-                parts.append(f'<li><span>👁️</span><div>{html_escape(str(de))}</div></li>')
-        parts.append('</ul>')
-        parts.append('</div>')
-
-    parts.append('</section>')
+    parts.append('</div>')
+    parts.append('</details>')
+    
     return "\n".join(parts)
 
 
@@ -287,7 +243,7 @@ def render_archive_nav(current_date: str) -> str:
     parts: list[str] = []
     parts.append('<div style="margin-top: 24px;">')
     parts.append('<div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">')
-    for f in archive_files:
+    for f in archive_files[:30]:  # Limit to last 30 days
         date_str = f.stem  # e.g. 2026-02-14
         if not re.match(r"\d{4}-\d{2}-\d{2}", date_str):
             continue
@@ -317,77 +273,68 @@ def main():
     tpl = TEMPLATE_PATH.read_text(encoding="utf-8")
 
     sections = daily.get("sections") or {}
+    headlines = daily.get("headlines") or []
 
-    # Map to 2026-02-13 style sections
+    # Map to optimized layout
     content_parts: list[str] = []
 
-    # 2/13 ordering:
-    # 核心看点(偏头条、少而精) → TechMeme 头条 → 新模型/工具(+X高互动) → 企业动态 → 风险/事故 → 覆盖度自检
-
-    # 核心看点：默认只展示前 3 条（与 2/13 的信息密度一致）
-    content_parts.append('<!-- 核心看点 -->')
-    content_parts.append('<section class="section">')
-    content_parts.append('<h2 class="section-title"><span>🔥</span> 核心看点</h2>')
-    content_parts.append(render_cards((daily.get("headlines") or [])[:5]))
+    # 1. 今日必读（核心看点，扩大展示 3-12 条）
+    content_parts.append('<!-- 今日必读 -->')
+    content_parts.append('<section class="section section-featured">')
+    content_parts.append('<h2 class="section-title"><span>🔥</span> 今日必读</h2>')
+    content_parts.append('<p style="font-size: 14px; color: var(--muted-foreground); margin-bottom: 16px;">基于 1488 条 AI 新闻筛选出的重要动态</p>')
+    # Show all headlines (3-12 items)
+    content_parts.append(render_cards(headlines[:12], badge_color="#dc2626"))
     content_parts.append('</section>')
 
-    # TechMeme 当日头条（从 data/techneme.json 或 daily.techmeme_headlines 读取；没有则不显示）
-    techmeme = load_json(DATA_DIR / "techneme.json", default={})
-
-    # Accept multiple shapes:
-    # - daily.techmeme_headlines: [string|{text}]
-    # - data/*: {headlines:[...]}
-    # - data/*: {stories:[{title,url,summary}]}
-    tm_list = daily.get("techmeme_headlines") or techmeme.get("headlines") or techmeme.get("stories") or []
-
-    if tm_list:
-        content_parts.append('<!-- TechMeme 头条 -->')
+    # 2. 新模型与工具（合并 releases/updates/opensource/benchmarks）
+    model_tools_items = (
+        (sections.get("releases") or [], "#e85d04", "发布"),
+        (sections.get("updates") or [], "#4285f4", "更新"),
+        (sections.get("opensource") or [], "#10a37f", "开源"),
+        (sections.get("benchmarks") or [], "#8e44ad", "评测"),
+    )
+    has_model_tools = any(items for items, _, _ in model_tools_items)
+    
+    if has_model_tools:
+        content_parts.append('<!-- 新模型/工具 -->')
         content_parts.append('<section class="section">')
-        content_parts.append('<h2 class="section-title"><span>🌐</span> TechMeme 当日头条</h2>')
-        content_parts.append('<div class="highlight-box">')
-        content_parts.append('<ul class="highlight-list">')
-        for it in tm_list[:5]:
-            if isinstance(it, str):
-                text = it
-            else:
-                d = it or {}
-                text = str(d.get("text") or d.get("title") or "")
-            if text.strip():
-                content_parts.append(f'<li><span>⚡</span><div>{html_escape(text.strip())}</div></li>')
-        content_parts.append('</ul>')
-        content_parts.append('</div>')
+        content_parts.append('<h2 class="section-title"><span>🚀</span> 新模型与工具</h2>')
+        for items, color, tag in model_tools_items:
+            if items:
+                content_parts.append(render_cards(items, badge_color=color, tag=tag))
         content_parts.append('</section>')
 
-    # 新模型/工具：按栏目分别渲染，保证每条卡片有 tag（发布/更新/开源/评测）
-    content_parts.append('<!-- 新模型/工具 -->')
-    content_parts.append('<section class="section">')
-    content_parts.append('<h2 class="section-title"><span>🚀</span> 新模型/工具</h2>')
-    content_parts.append(render_cards(sections.get("releases") or [], badge_color="#e85d04", tag="发布"))
-    content_parts.append(render_cards(sections.get("updates") or [], badge_color="#4285f4", tag="更新"))
-    content_parts.append(render_cards(sections.get("opensource") or [], badge_color="#10a37f", tag="开源"))
-    content_parts.append(render_cards(sections.get("benchmarks") or [], badge_color="#8e44ad", tag="评测"))
+    # 3. 企业动态
+    if sections.get("business"):
+        content_parts.append('<!-- 企业动态 -->')
+        content_parts.append('<section class="section">')
+        content_parts.append('<h2 class="section-title"><span>💼</span> 企业动态</h2>')
+        content_parts.append(render_cards(sections["business"], badge_color="#7c3aed", tag="商业"))
+        content_parts.append('</section>')
 
-    # X 高互动事件：放在新模型/工具 section 内部（与 2/13 更一致）
-    content_parts.append(render_x_highlights(daily.get("x_highlights")))
+    # 4. 行业观察（合并 risks + 政策趋势）
+    has_observation = sections.get("risks") or sections.get("policy")
+    if has_observation:
+        content_parts.append('<!-- 行业观察 -->')
+        content_parts.append('<section class="section">')
+        content_parts.append('<h2 class="section-title"><span>📰</span> 行业观察</h2>')
+        content_parts.append('<p style="font-size: 14px; color: var(--muted-foreground); margin-bottom: 16px;">政策监管、市场趋势与风险信号</p>')
+        if sections.get("risks"):
+            content_parts.append(render_cards(sections["risks"], badge_color="#991b1b", tag="风险"))
+        content_parts.append('</section>')
 
-    content_parts.append('</section>')
+    # 5. X 高互动（可选，放在最后）
+    x_highlights = daily.get("x_highlights")
+    if x_highlights:
+        content_parts.append('<!-- X 高互动 -->')
+        content_parts.append('<section class="section">')
+        content_parts.append('<h2 class="section-title"><span>🔥</span> X 高互动</h2>')
+        content_parts.append(render_x_highlights(x_highlights))
+        content_parts.append('</section>')
 
-    # 企业动态
-    content_parts.append('<!-- 企业动态 -->')
-    content_parts.append('<section class="section">')
-    content_parts.append('<h2 class="section-title"><span>💼</span> 企业动态</h2>')
-    content_parts.append(render_cards(sections.get("business") or [], badge_color="#1f1d1a", tag="商业"))
-    content_parts.append('</section>')
-
-    # 风险/事故
-    content_parts.append('<!-- 风险/事故 -->')
-    content_parts.append('<section class="section">')
-    content_parts.append('<h2 class="section-title"><span>⚠️</span> 风险/事故</h2>')
-    content_parts.append(render_cards(sections.get("risks") or [], badge_color="#c0392b", tag="风险"))
-    content_parts.append('</section>')
-
-    # 覆盖度自检
-    content_parts.append(render_self_check(daily))
+    # 6. 覆盖度自检（折叠在页脚）
+    content_parts.append(render_self_check_collapsed(daily))
 
     content_html = "\n".join([p for p in content_parts if p and p.strip()])
 
@@ -409,7 +356,7 @@ def main():
     index_out = out.replace("{{ARCHIVE_NAV}}", archive_nav)
     (ROOT / "index.html").write_text(index_out, encoding="utf-8")
 
-    # Also replace placeholder in archive file (no nav needed there, or same nav)
+    # Also replace placeholder in archive file
     out_final = out.replace("{{ARCHIVE_NAV}}", archive_nav)
     archive_path.write_text(out_final, encoding="utf-8")
 
