@@ -3,146 +3,213 @@
   "generated_at": "2026-02-25T00:40:00Z",
   "summary": {
     "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-02-25.html"
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-02-25.html",
+    "bullets": [
+      "月之暗面 Kimi K2.5 发布首月商业化爆发，近20天收入超2025年全年",
+      "字节跳动 Seedance 2.0 正式上线，AI视频生成支持原生音效与口型同步",
+      "Anthropic 推出 Claude Cowork 企业级版本，正式进军数字办公市场",
+      "Anthropic 指控三家中国 AI 公司未经授权蒸馏 Claude 模型",
+      "Terra Security 发现 Claude Code 等 AI 编程工具存在广泛安全漏洞"
+    ]
   },
   "headlines": [
     {
       "title": "月之暗面 Kimi K2.5 发布首月商业化爆发，近20天收入超2025年全年",
-      "source": "新浪新闻",
-      "url": "https://k.sina.cn/article_7857201856_1d45362c001902kbtk.html",
-      "published": "2026-02-24",
-      "time_note": "据知情人士2月23日透露",
-      "summary": "月之暗面于2026年1月27日推出并开源 Kimi K2.5 模型，发布不到一个月内近20天累计收入已超过2025年全年总收入。海外收入目前已超过国内收入，OpenRouter平台数据显示 Kimi K2.5 调用量持续保持行业领先，在 OpenClaw 模型调用榜中排名第一。",
-      "category": "business"
+      "time": "2026-02-24",
+      "what": "月之暗面于2026年1月27日推出并开源 Kimi K2.5 模型，发布不到一个月内近20天累计收入已超过2025年全年总收入。海外收入目前已超过国内收入，OpenRouter平台数据显示 Kimi K2.5 调用量持续保持行业领先，在 OpenClaw 模型调用榜中排名第一。",
+      "why": "[business] ",
+      "sources": [
+        {
+          "name": "新浪新闻",
+          "url": "https://k.sina.cn/article_7857201856_1d45362c001902kbtk.html"
+        },
+        {
+          "name": "X/Twitter",
+          "url": "https://x.com/"
+        }
+      ]
     },
     {
       "title": "字节跳动 Seedance 2.0 正式上线，AI视频生成支持原生音效与口型同步",
-      "source": "36氪",
-      "url": "https://www.36kr.com/p/3676072215163399",
-      "published": "2026-02-24",
-      "time_note": "10小时前发布",
-      "summary": "字节跳动旗下视频模型 Seedance 2.0 在即梦平台正式上线，支持生成视频时同步生成匹配音效和配乐，具备口型同步和情绪匹配能力。模型引入自动分镜和运镜功能，角色一致性较上一代显著提升，会员用户可直接使用。",
-      "category": "releases"
+      "time": "2026-02-24",
+      "what": "字节跳动旗下视频模型 Seedance 2.0 在即梦平台正式上线，支持生成视频时同步生成匹配音效和配乐，具备口型同步和情绪匹配能力。模型引入自动分镜和运镜功能，角色一致性较上一代显著提升，会员用户可直接使用。",
+      "why": "[releases] ",
+      "sources": [
+        {
+          "name": "36氪",
+          "url": "https://www.36kr.com/p/3676072215163399"
+        }
+      ]
     },
     {
       "title": "Anthropic 推出 Claude Cowork 企业级版本，正式进军数字办公市场",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/02/24/anthropic-claude-cowork-office-worker.html",
-      "published": "2026-02-24",
-      "time_note": "3小时前发布",
-      "summary": "Anthropic 宣布 Claude Cowork 从研究预览版正式转为企业级产品，标志着其首次明确挑战微软和 OpenAI 在 AI 办公领域的地位。该工具面向普通办公人员提供生产力增强功能，与 Microsoft 365 Copilot 和 OpenAI Frontier 形成直接竞争。",
-      "category": "releases"
+      "time": "2026-02-24",
+      "what": "Anthropic 宣布 Claude Cowork 从研究预览版正式转为企业级产品，标志着其首次明确挑战微软和 OpenAI 在 AI 办公领域的地位。该工具面向普通办公人员提供生产力增强功能，与 Microsoft 365 Copilot 和 OpenAI Frontier 形成直接竞争。",
+      "why": "[releases] ",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/02/24/anthropic-claude-cowork-office-worker.html"
+        }
+      ]
     },
     {
       "title": "Anthropic 指控三家中国 AI 公司未经授权蒸馏 Claude 模型",
-      "source": "NBC News",
-      "url": "https://www.nbcnews.com/world/asia/chinese-ai-companies-distilled-claude-improve-models-anthropic-says-rcna260386",
-      "published": "2026-02-24",
-      "time_note": "14小时前发布",
-      "summary": "Anthropic 在博客中披露，识别出超过1300万次来自三家中国 AI 公司的模型交互，指控其使用 Claude 未经授权提取能力来改进自身模型。Anthropic 称当发布新模型时，对方能在24小时内转向捕获新系统能力，并借此案例呼吁加强芯片出口管制。",
-      "category": "risks"
+      "time": "2026-02-24",
+      "what": "Anthropic 在博客中披露，识别出超过1300万次来自三家中国 AI 公司的模型交互，指控其使用 Claude 未经授权提取能力来改进自身模型。Anthropic 称当发布新模型时，对方能在24小时内转向捕获新系统能力，并借此案例呼吁加强芯片出口管制。",
+      "why": "[risks] ",
+      "sources": [
+        {
+          "name": "NBC News",
+          "url": "https://www.nbcnews.com/world/asia/chinese-ai-companies-distilled-claude-improve-models-anthropic-says-rcna260386"
+        }
+      ]
     },
     {
       "title": "Terra Security 发现 Claude Code 等 AI 编程工具存在广泛安全漏洞",
-      "source": "BusinessWire / AI Journal",
-      "url": "https://aijourn.com/terra-security-finds-widespread-exploitable-flaws-in-ai-driven-applications-copilots-and-ai-generated-code/",
-      "published": "2026-02-24",
-      "time_note": "8小时前发布",
-      "summary": "Terra Security 发布研究报告，在 Claude Code、Loveable、Base44 等 AI 编程工具和平台中发现可被利用的安全漏洞模式，包括 CVE-2026-25724 漏洞。这些新型漏洞与传统软件安全问题不同，企业软件中嵌入的 AI 聊天界面和 Copilot 也存在类似风险。",
-      "category": "risks"
+      "time": "2026-02-24",
+      "what": "Terra Security 发布研究报告，在 Claude Code、Loveable、Base44 等 AI 编程工具和平台中发现可被利用的安全漏洞模式，包括 CVE-2026-25724 漏洞。这些新型漏洞与传统软件安全问题不同，企业软件中嵌入的 AI 聊天界面和 Copilot 也存在类似风险。",
+      "why": "[risks] ",
+      "sources": [
+        {
+          "name": "BusinessWire / AI Journal",
+          "url": "https://aijourn.com/terra-security-finds-widespread-exploitable-flaws-in-ai-driven-applications-copilots-and-ai-generated-code/"
+        }
+      ]
     }
   ],
   "sections": {
     "releases": [
       {
         "title": "字节跳动正式发布 Seed 2.0 系列多模态基础模型",
-        "source": "Apiyi.com",
-        "url": "https://help.apiyi.com/seed-2-0-pro-lite-mini-model-comparison.html",
-        "published": "2026-02-14",
-        "time_note": "2月14日发布，近期持续发酵",
-        "summary": "字节跳动 Seed 团队于2月14日正式发布 Seed 2.0 系列大模型，这是新一代多模态基础模型家族，已支撑豆包、即梦等业务。系列包含 Pro、Lite、Mini 三个版本，针对不同场景提供分层策略。"
+        "time": "2026-02-14",
+        "what": "字节跳动 Seed 团队于2月14日正式发布 Seed 2.0 系列大模型，这是新一代多模态基础模型家族，已支撑豆包、即梦等业务。系列包含 Pro、Lite、Mini 三个版本，针对不同场景提供分层策略。",
+        "why": "releases动态",
+        "sources": [
+          {
+            "name": "Apiyi.com",
+            "url": "https://help.apiyi.com/seed-2-0-pro-lite-mini-model-comparison.html"
+          }
+        ]
       },
       {
         "title": "Claude Code v2.1.52 发布，修复 Windows VS Code 扩展关键问题",
-        "source": "ClaudeWorld",
-        "url": "https://claude-world.com/articles/claude-code-2152-release/",
-        "published": "2026-02-24",
-        "time_note": "17小时前发布",
-        "summary": "Anthropic 发布 Claude Code v2.1.52 版本，主要修复影响 Windows 用户使用 VS Code 扩展的关键问题。此次为聚焦 bug 修复的更新，同时改进了长时间会话的内存使用效率。"
+        "time": "2026-02-24",
+        "what": "Anthropic 发布 Claude Code v2.1.52 版本，主要修复影响 Windows 用户使用 VS Code 扩展的关键问题。此次为聚焦 bug 修复的更新，同时改进了长时间会话的内存使用效率。",
+        "why": "releases动态",
+        "sources": [
+          {
+            "name": "ClaudeWorld",
+            "url": "https://claude-world.com/articles/claude-code-2152-release/"
+          }
+        ]
       }
     ],
     "updates": [
       {
         "title": "Anthropic 更新 Claude Cowork，从研究预览升级为真正的企业级产品",
-        "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/02/24/anthropic-claude-cowork-office-worker.html",
-        "published": "2026-02-24",
-        "time_note": "3小时前发布",
-        "summary": "Claude Cowork 上个月以研究能力形式推出时已引发软件股票震动，此次更新标志着其正式转型为企业级产品，为普通办公工作者提供生产力提升。"
+        "time": "2026-02-24",
+        "what": "Claude Cowork 上个月以研究能力形式推出时已引发软件股票震动，此次更新标志着其正式转型为企业级产品，为普通办公工作者提供生产力提升。",
+        "why": "updates动态",
+        "sources": [
+          {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/2026/02/24/anthropic-claude-cowork-office-worker.html"
+          }
+        ]
       },
       {
         "title": "阿里 CoPaw 发布，对标 OpenClaw 的国产个人助理平台",
-        "source": "哔哩哔哩",
-        "url": "https://www.bilibili.com/video/BV1xvfqBcE6e/",
-        "published": "2026-02-24",
-        "time_note": "9小时前发布",
-        "summary": "阿里云发布 CoPaw 个人助理平台，支持钉钉、飞书、QQ、Discord、iMessage 等多平台接入，提供本地+云端双部署模式，被视为 OpenClaw 的国产替代方案。"
+        "time": "2026-02-24",
+        "what": "阿里云发布 CoPaw 个人助理平台，支持钉钉、飞书、QQ、Discord、iMessage 等多平台接入，提供本地+云端双部署模式，被视为 OpenClaw 的国产替代方案。",
+        "why": "updates动态",
+        "sources": [
+          {
+            "name": "哔哩哔哩",
+            "url": "https://www.bilibili.com/video/BV1xvfqBcE6e/"
+          }
+        ]
       }
     ],
     "opensource": [
       {
         "title": "AWS 开源 Strands Agents SDK，支持 Python 和 TypeScript",
-        "source": "AWS Open Source Blog",
-        "url": "https://aws.amazon.com/blogs/opensource/introducing-strands-labs-get-hands-on-today-with-state-of-the-art-experimental-approaches-to-agentic-development/",
-        "published": "2026-02-24",
-        "time_note": "6小时前发布",
-        "summary": "AWS 推出 Strands Labs，提供最先进的代理式开发实验方法。Strands Agents SDK 于2025年5月开源，现已获得开发者社区广泛认可，支持 Python 和 TypeScript。"
+        "time": "2026-02-24",
+        "what": "AWS 推出 Strands Labs，提供最先进的代理式开发实验方法。Strands Agents SDK 于2025年5月开源，现已获得开发者社区广泛认可，支持 Python 和 TypeScript。",
+        "why": "opensource动态",
+        "sources": [
+          {
+            "name": "AWS Open Source Blog",
+            "url": "https://aws.amazon.com/blogs/opensource/introducing-strands-labs-get-hands-on-today-with-state-of-the-art-experimental-approaches-to-agentic-development/"
+          }
+        ]
       },
       {
         "title": "Kimi K2.5 模型开源，春节期间上线 Kimi Claw 一键部署工具",
-        "source": "新浪新闻 / 工商时报",
-        "url": "https://k.sina.cn/article_7857201856_1d45362c001902kbtk.html",
-        "published": "2026-01-27",
-        "time_note": "1月27日开源发布",
-        "summary": "月之暗面于1月27日宣布推出并开源 Kimi K2.5 模型，春节期间上线的一键部署工具 Kimi Claw 进一步降低用户使用门槛，无需购买硬件服务器或输入代码即可快速使用 OpenClaw 相关功能。"
+        "time": "2026-01-27",
+        "what": "月之暗面于1月27日宣布推出并开源 Kimi K2.5 模型，春节期间上线的一键部署工具 Kimi Claw 进一步降低用户使用门槛，无需购买硬件服务器或输入代码即可快速使用 OpenClaw 相关功能。",
+        "why": "opensource动态",
+        "sources": [
+          {
+            "name": "新浪新闻 / 工商时报",
+            "url": "https://k.sina.cn/article_7857201856_1d45362c001902kbtk.html"
+          }
+        ]
       }
     ],
     "business": [
       {
         "title": "月之暗面再获超7亿美元融资，阿里腾讯联合领投",
-        "source": "工商时报",
-        "url": "https://www.ctee.com.tw/news/20260224700147-439901",
-        "published": "2026-02-24",
-        "time_note": "18小时前发布",
-        "summary": "月之暗面在过去两个月先后完成5亿美元和超7亿美元融资并再次超募，新一轮融资由阿里巴巴、腾讯控股等联合领投。从天使轮估值3亿美元到突破百亿美元仅用时两年多，创下国内公司晋级十角兽最快速度。"
+        "time": "2026-02-24",
+        "what": "月之暗面在过去两个月先后完成5亿美元和超7亿美元融资并再次超募，新一轮融资由阿里巴巴、腾讯控股等联合领投。从天使轮估值3亿美元到突破百亿美元仅用时两年多，创下国内公司晋级十角兽最快速度。",
+        "why": "business动态",
+        "sources": [
+          {
+            "name": "工商时报",
+            "url": "https://www.ctee.com.tw/news/20260224700147-439901"
+          }
+        ]
       },
       {
         "title": "2026年2月 AI API 定价对比：GPT-5 $1.25、Claude Sonnet $3、DeepSeek V3.2 $0.27/百万token",
-        "source": "DevTk.AI",
-        "url": "https://devtk.ai/en/blog/ai-api-pricing-comparison-2026/",
-        "published": "2026-02-24",
-        "time_note": "1天前更新",
-        "summary": "最新 AI API 定价对比显示，OpenAI GPT-5 定价 $1.25、Anthropic Claude Sonnet $3、Google Gemini 2.5 $1.25、DeepSeek V3.2 仅 $0.27（每百万token）。国产模型在价格上保持显著优势。"
+        "time": "2026-02-24",
+        "what": "最新 AI API 定价对比显示，OpenAI GPT-5 定价 $1.25、Anthropic Claude Sonnet $3、Google Gemini 2.5 $1.25、DeepSeek V3.2 仅 $0.27（每百万token）。国产模型在价格上保持显著优势。",
+        "why": "business动态",
+        "sources": [
+          {
+            "name": "DevTk.AI",
+            "url": "https://devtk.ai/en/blog/ai-api-pricing-comparison-2026/"
+          }
+        ]
       }
     ],
     "risks": [
       {
         "title": "Terra Security 发现 Claude Code 存在 CVE-2026-25724 漏洞",
-        "source": "BusinessWire",
-        "url": "https://www.businesswire.com/news/home/20260224886429/en/Terra-Security-Finds-Widespread-Exploitable-Flaws-in-AI-Driven-Applications-Copilots-and-AI-Generated-Code",
-        "published": "2026-02-24",
-        "time_note": "8小时前发布",
-        "summary": "Terra Security 研究人员在 Anthropic Claude Code 中发现 CVE-2026-25724 漏洞，同时在 Loveable、Base44 等 AI 应用生成平台中发现反复出现的漏洞模式，这些模式与传统软件安全漏洞不同。"
+        "time": "2026-02-24",
+        "what": "Terra Security 研究人员在 Anthropic Claude Code 中发现 CVE-2026-25724 漏洞，同时在 Loveable、Base44 等 AI 应用生成平台中发现反复出现的漏洞模式，这些模式与传统软件安全漏洞不同。",
+        "why": "risks动态",
+        "sources": [
+          {
+            "name": "BusinessWire",
+            "url": "https://www.businesswire.com/news/home/20260224886429/en/Terra-Security-Finds-Widespread-Exploitable-Flaws-in-AI-Driven-Applications-Copilots-and-AI-Generated-Code"
+          }
+        ]
       },
       {
         "title": "Anthropic 披露中国公司通过超过1300万次交互蒸馏 Claude",
-        "source": "NBC News",
-        "url": "https://www.nbcnews.com/world/asia/chinese-ai-companies-distilled-claude-improve-models-anthropic-says-rcna260386",
-        "published": "2026-02-24",
-        "time_note": "14小时前发布",
-        "summary": "Anthropic 称当发布新模型时，对方公司能在24小时内转向捕获新系统能力，近一半流量被重定向至最新系统。此事件紧随 OpenAI 本月早些时候警告美国芯片出口管制必要性的备忘录之后。"
+        "time": "2026-02-24",
+        "what": "Anthropic 称当发布新模型时，对方公司能在24小时内转向捕获新系统能力，近一半流量被重定向至最新系统。此事件紧随 OpenAI 本月早些时候警告美国芯片出口管制必要性的备忘录之后。",
+        "why": "risks动态",
+        "sources": [
+          {
+            "name": "NBC News",
+            "url": "https://www.nbcnews.com/world/asia/chinese-ai-companies-distilled-claude-improve-models-anthropic-says-rcna260386"
+          }
+        ]
       }
-    ]
+    ],
+    "benchmarks": []
   },
   "x_highlights": []
 }
