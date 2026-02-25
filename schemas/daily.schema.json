@@ -17,7 +17,7 @@
     "headlines": {
       "type": "array",
       "minItems": 3,
-      "maxItems": 5,
+      "maxItems": 12,
       "items": {
         "$ref": "#/$defs/item"
       }
@@ -83,7 +83,7 @@
         "bullets": {
           "type": "array",
           "minItems": 3,
-          "maxItems": 5,
+          "maxItems": 12,
           "items": {
             "type": "string",
             "minLength": 1
