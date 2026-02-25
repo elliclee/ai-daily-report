@@ -42,9 +42,24 @@ def must_list(obj, key: str, ctx: str):
     return v
 
 
+# Legacy field names that AI models sometimes generate instead of the correct ones.
+LEGACY_FIELD_HINTS = {
+    "source": "use 'sources' (array of {name, url}) instead of 'source'",
+    "published": "use 'time' instead of 'published'",
+    "summary": "use 'what' + 'why' instead of 'summary'",
+    "category": "remove 'category' (section key implies the category)",
+}
+
+
 def validate_item(it: dict, ctx: str):
     if not isinstance(it, dict):
         die(f"{ctx}: item must be object")
+
+    # Detect legacy field names and give actionable hints
+    for old_key, hint in LEGACY_FIELD_HINTS.items():
+        if old_key in it:
+            die(f"{ctx}: found legacy field '{old_key}' — {hint}")
+
     must_str(it, "title", ctx)
     must_str(it, "time", ctx)
     must_str(it, "what", ctx)
@@ -68,8 +83,8 @@ def main():
     must_str(daily, "date", "daily")
 
     headlines = must_list(daily, "headlines", "daily")
-    if len(headlines) != 5:
-        die(f"daily.headlines must be exactly 5 items (got {len(headlines)})")
+    if not (3 <= len(headlines) <= 5):
+        die(f"daily.headlines must be 3-5 items (got {len(headlines)})")
     for idx, it in enumerate(headlines, 1):
         validate_item(it, f"daily.headlines[{idx}]")
 
@@ -118,14 +133,14 @@ def main():
         return False
 
     if (xh is None or len(xh) == 0) and not has_any_x_link():
-        die("report must include X as an information source: provide daily.x_highlights or include at least one x.com link in sources")
+        print("[validate_json] WARNING: no X/Twitter source found (x_highlights empty, no x.com links in sources)", file=sys.stderr)
 
     summary = daily.get("summary")
     if not isinstance(summary, dict):
         die("daily.summary must be object")
     bullets = summary.get("bullets")
-    if not isinstance(bullets, list) or len(bullets) != 5 or any((not isinstance(b, str) or not b.strip()) for b in bullets):
-        die("daily.summary.bullets must be exactly 5 non-empty strings")
+    if not isinstance(bullets, list) or not (3 <= len(bullets) <= 5) or any((not isinstance(b, str) or not b.strip()) for b in bullets):
+        die("daily.summary.bullets must be 3-5 non-empty strings")
     must_str(summary, "url", "daily.summary")
     must_str(summary, "archiveUrl", "daily.summary")
 

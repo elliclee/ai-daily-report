@@ -337,23 +337,54 @@ def fetch_all():
     return results
 
 
+def fetch_news_radar():
+    """Fetch ai-news-radar latest-24h data as a pre-read source for the AI cron job."""
+    url = "https://raw.githubusercontent.com/LearnPrompt/ai-news-radar/master/data/latest-24h.json"
+    print(f"\nFetching ai-news-radar data...")
+    try:
+        data = fetch_json(url, timeout=15)
+        if data:
+            items_ai = data.get("items_ai") or data.get("items") or []
+            print(f"  Got {len(items_ai)} AI-related items from ai-news-radar")
+            return data
+        else:
+            print("  Warning: ai-news-radar returned empty data")
+            return None
+    except Exception as e:
+        print(f"  Warning: failed to fetch ai-news-radar: {e}")
+        return None
+
+
 def main():
     print(f"[{datetime.now()}] Starting source fetch...")
     
+    data_dir = Path(__file__).parent.parent / "data"
+    data_dir.mkdir(parents=True, exist_ok=True)
+
+    # 1. Fetch local sources (HN, GitHub Trending, etc.)
     results = fetch_all()
     
-    # Save to file
-    output_path = Path(__file__).parent.parent / "data" / "fetched_sources.json"
+    output_path = data_dir / "fetched_sources.json"
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     
-    print(f"\n[{datetime.now()}] Fetch completed")
-    print(f"Saved to: {output_path}")
-    
-    # Summary
     total = sum(s["count"] for s in results["sources"].values())
-    print(f"Total items: {total}")
-    
+    print(f"Saved local sources to: {output_path} ({total} items)")
+
+    # 2. Fetch ai-news-radar 24h data (pre-read for AI cron job)
+    radar_data = fetch_news_radar()
+    radar_path = data_dir / "news-radar-24h.json"
+    if radar_data:
+        with open(radar_path, "w", encoding="utf-8") as f:
+            json.dump(radar_data, f, ensure_ascii=False, indent=2)
+        print(f"Saved ai-news-radar to: {radar_path}")
+    else:
+        # Write empty marker so the AI knows the fetch was attempted
+        with open(radar_path, "w", encoding="utf-8") as f:
+            json.dump({"items_ai": [], "error": "fetch failed or empty", "fetched_at": datetime.now().isoformat()}, f)
+        print(f"Saved empty marker to: {radar_path}")
+
+    print(f"\n[{datetime.now()}] Fetch completed")
     return results
 
 

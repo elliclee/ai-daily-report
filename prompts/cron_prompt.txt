@@ -24,11 +24,45 @@
 
 执行 AI 日报生成任务（强时效版）。
 
-## 0) 总体策略：分层执行（控制成本，避免 20+ query 全跑）
+## 0-A) JSON 输出字段格式（最高优先级，违反即校验失败）
 
-- 第一层：Breaking 12（固定必跑）
-  - 英文 6 + 中文 6；全部 freshness=pd（过去24h）
-- 第二层：按需补搜（动态触发，4~8 条上限）
+每条 item（headlines / sections 内的条目）的 **唯一合法结构** 如下：
+```json
+{
+  "title": "新闻标题",
+  "time": "2026-02-25",
+  "what": "发生了什么（1-2 句事实描述）",
+  "why": "为什么重要（1-2 句影响分析）",
+  "sources": [
+    {"name": "来源名称", "url": "https://..."}
+  ]
+}
+```
+⛔ 禁止使用以下旧字段名（校验脚本会直接报错）：
+  - `source`（应为 `sources` 数组）
+  - `url`（应嵌套在 sources 内）
+  - `published`（应为 `time`）
+  - `summary`（应拆分为 `what` + `why`）
+  - `category`（由 section key 隐含，无需此字段）
+
+## 0-B) 预读信息源（节省搜索时间，必须在搜索前执行）
+
+读取本地文件 `data/news-radar-24h.json`（由 `scripts/fetch_sources.py` 预先采集）。
+
+使用规则：
+- 取 `items_ai` 数组作为候选新闻池
+- 对其中每条记录：标题可作为线索，但必须用 web_search 验证原始来源和发布时间
+- 已被预读数据覆盖的厂商/事件，可跳过对应 Breaking query
+- 预读数据的 `published_at` 仅供参考，仍需确认 ≤48h
+- 如果文件不存在或为空，直接跳过此步骤，按原流程搜索
+
+## 0-C) 总体策略：分层执行（控制成本）
+
+- 第一层：预读数据 + 补搜（动态调整）
+  - 先检查预读数据覆盖了哪些厂商/事件
+  - 仅对未覆盖的领域执行 Breaking query（预期 4-6 条，而非全部 12 条）
+  - 全部 freshness=pd（过去24h）
+- 第二层：按需补搜（动态触发，2~4 条上限）
   - 触发：栏目缺口 / 漏报检查命中但缺权威来源 / 发布时间不可确认
   - ⛔ 硬约束：仅限 freshness=pd（24h）或 pd-2（48h）
   - ⛔ 禁止使用 freshness=pw 或更宽范围
@@ -37,7 +71,9 @@
   - 若发布时间无法确认 ≤48h：必须再找第二来源补时间；补不到 → 直接剔除，不得入报
   - ⛔ 禁止降级到「观察/补充」绕过时间限制
 
-## 1) Web（web_search）Breaking 固定 12（pd）
+## 1) Web（web_search）按需补搜（pd）
+
+根据预读数据覆盖情况，**仅搜索未覆盖的领域**。以下为完整 query 清单，跳过已覆盖的：
 
 英文 6：
 1. AI model release
@@ -54,6 +90,11 @@
 10. 字节 Seedance 即梦 豆包 发布 上线 24小时
 11. 智谱 GLM 发布 更新 开源 24小时
 12. 月之暗面 Kimi 通义 Qwen 混元 文心 更新 发布 24小时
+
+跳过规则：
+- 若预读数据中已有某厂商/事件的 ≤48h 新闻且有权威来源 → 跳过对应 query
+- 中文厂商 query（10-12）优先保留（预读数据中文覆盖较弱）
+- 在 self_check.freshness_check 中记录实际执行了多少条 query
 
 硬规则（时效过滤）：
 - 任何条目若无法确认发布时间 ≤48h：
@@ -210,16 +251,18 @@ git add -A && git commit -m "AI日报 YYYY-MM-DD" && git push
 
 📰 AI日报 YYYY-MM-DD
 
-1) 一句话结论 — 来源：<url>
-2) ...
-3) ...
-4) ...
-5) ...
+<emoji> 一句话结论
+  → <url>
+<emoji> ...
+  → <url>
+...
 
 🔗 在线阅读: <summary.url>
 📁 归档: <summary.archiveUrl>
 
-规则：严格 5 条；每条至少 1 个来源链接；若合并事件，优先给最权威链接。
+emoji 对照表：🚀=releases, 📈=updates, 🔓=opensource, 📊=benchmarks, 💼=business, ⚠️=risks
+
+规则：3-5 条（与 headlines 数量一致）；每条至少 1 个来源链接（单独一行，以 → 开头）；若合并事件，优先给最权威链接。
 
 ⛔ 严禁：调用 message 工具；调用 cron.run 触发其他 job；输出状态总结覆盖推送文案。
 ⛔ 严禁：直接输出/修改 HTML 文件。你的唯一产出是 JSON 文件。
