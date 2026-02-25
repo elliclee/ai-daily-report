@@ -1,81 +1,90 @@
 {
-  "fetched_at": "2026-02-25T00:00:28.954198",
+  "fetched_at": "2026-02-25T17:44:16.563597",
   "sources": {
     "hackernews-top": {
       "type": "hackernews",
-      "count": 8,
+      "count": 9,
       "items": [
+        {
+          "title": "Never Buy A .online Domain",
+          "url": "https://www.0xsid.com/blog/online-tld-is-pain",
+          "score": 474,
+          "by": "ssiddharth",
+          "time": "2026-02-25T13:31:17",
+          "comments": "https://news.ycombinator.com/item?id=47151233",
+          "description": ""
+        },
+        {
+          "title": "Claude Code Remote Control",
+          "url": "https://code.claude.com/docs/en/remote-control",
+          "score": 341,
+          "by": "empressplay",
+          "time": "2026-02-25T07:22:56",
+          "comments": "https://news.ycombinator.com/item?id=47148454",
+          "description": "Continue a local Claude Code session from your phone, tablet, or any browser using Remote Control. Works with claude.ai/code and the Claude mobile app."
+        },
+        {
+          "title": "Danish government agency to ditch Microsoft software (2025)",
+          "url": "https://therecord.media/denmark-digital-agency-microsoft-digital-independence",
+          "score": 565,
+          "by": "robtherobber",
+          "time": "2026-02-25T10:16:22",
+          "comments": "https://news.ycombinator.com/item?id=47149701",
+          "description": "Denmark&#x27;s digital affairs ministry says it plans to switch to the open source LibreOffice software and away from Microsoft products as part of an effort to make the government more digitally independent."
+        },
         {
           "title": "I'm helping my dog vibe code games",
           "url": "https://www.calebleak.com/posts/dog-game/",
-          "score": 536,
+          "score": 1061,
           "by": "cleak",
           "time": "2026-02-24T17:15:17",
           "comments": "https://news.ycombinator.com/item?id=47139675",
           "description": "My cavapoo Momo vibe coded playable Godot games. All I had to do was teach her to type, route her input to Claude Code, and build the right tools."
         },
         {
-          "title": "Mac mini will be made at a new facility in Houston",
-          "url": "https://www.apple.com/newsroom/2026/02/apple-accelerates-us-manufacturing-with-mac-mini-production/",
-          "score": 267,
-          "by": "haunter",
-          "time": "2026-02-24T21:13:45",
-          "comments": "https://news.ycombinator.com/item?id=47143152",
-          "description": "Apple today announced a significant expansion of factory operations in Houston, bringing the future production of Mac mini to the U.S. for the first time."
+          "title": "Pi – A minimal terminal coding harness",
+          "url": "https://pi.dev",
+          "score": 527,
+          "by": "kristianpaul",
+          "time": "2026-02-24T21:53:59",
+          "comments": "https://news.ycombinator.com/item?id=47143754",
+          "description": "A terminal-based coding agent"
+        },
+        {
+          "title": "Mercury 2: Fast reasoning LLM powered by diffusion",
+          "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2",
+          "score": 315,
+          "by": "fittingopposite",
+          "time": "2026-02-24T22:46:23",
+          "comments": "https://news.ycombinator.com/item?id=47144464",
+          "description": "Today, we"
+        },
+        {
+          "title": "US orders diplomats to fight data sovereignty initiatives",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/us-orders-diplomats-fight-data-sovereignty-initiatives-2026-02-25/",
+          "score": 268,
+          "by": "colinhb",
+          "time": "2026-02-25T14:48:17",
+          "comments": "https://news.ycombinator.com/item?id=47152252",
+          "description": ""
+        },
+        {
+          "title": "Show HN: Moonshine Open-Weights STT models – higher accuracy than WhisperLargev3",
+          "url": "https://github.com/moonshine-ai/moonshine",
+          "score": 299,
+          "by": "petewarden",
+          "time": "2026-02-24T21:54:07",
+          "comments": "https://news.ycombinator.com/item?id=47143755",
+          "description": "Fast and accurate automatic speech recognition (ASR) for edge devices - moonshine-ai/moonshine"
         },
         {
           "title": "I pitched a roller coaster to Disneyland at age 10 in 1978",
           "url": "https://wordglyph.xyz/one-piece-at-a-time",
-          "score": 379,
+          "score": 527,
           "by": "wordglyph",
           "time": "2026-02-24T13:03:51",
           "comments": "https://news.ycombinator.com/item?id=47136604",
           "description": "A story about Disneyland"
-        },
-        {
-          "title": "How we rebuilt Next.js with AI in one week",
-          "url": "https://blog.cloudflare.com/vinext/",
-          "score": 293,
-          "by": "ghostwriternr",
-          "time": "2026-02-24T20:07:00",
-          "comments": "https://news.ycombinator.com/item?id=47142156",
-          "description": "One engineer used AI to rebuild Next.js on Vite in a week. vinext builds up to 4x faster, produces 57% smaller bundles, and deploys to Cloudflare Workers with a single command."
-        },
-        {
-          "title": "OpenAI, the US government and Persona built an identity surveillance machine",
-          "url": "https://vmfunc.re/blog/persona/",
-          "score": 402,
-          "by": "rzk",
-          "time": "2026-02-24T18:23:03",
-          "comments": "https://news.ycombinator.com/item?id=47140632",
-          "description": "53MB of source code leaked from a government endpoint. 269 verification checks. biometric face databases. SAR filings to FinCEN. and the same company that verifies your ChatGPT account."
-        },
-        {
-          "title": "We installed a single turnstile to feel secure",
-          "url": "https://idiallo.com/blog/installed-single-turnstile-for-security-theater",
-          "score": 257,
-          "by": "firefoxd",
-          "time": "2026-02-22T21:07:11",
-          "comments": "https://news.ycombinator.com/item?id=47114678",
-          "description": "After the acquisition by a much larger company, security became a top priority. Our company occupied three tall buildings, each at least 13 stories high. Key card readers were installed next to every"
-        },
-        {
-          "title": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
-          "url": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot",
-          "score": 1118,
-          "by": "Qem",
-          "time": "2026-02-24T12:16:45",
-          "comments": "https://news.ycombinator.com/item?id=47136179",
-          "description": "A minute-by-minute reconstruction of the massacre by Earshot and Forensic Architecture found Israeli soldiers fired over 900 bullets at the aid workers, killing 15."
-        },
-        {
-          "title": "The Missing Semester of Your CS Education – Revised for 2026",
-          "url": "https://missing.csail.mit.edu/",
-          "score": 374,
-          "by": "anishathalye",
-          "time": "2026-02-23T16:02:48",
-          "comments": "https://news.ycombinator.com/item?id=47124171",
-          "description": "Master powerful tools that will make you a more productive computer scientist and programmer."
         }
       ]
     },
@@ -84,11 +93,19 @@
       "count": 5,
       "items": [
         {
+          "repo": "D4Vinci/Scrapling",
+          "name": "Scrapling",
+          "url": "https://github.com/D4Vinci/Scrapling",
+          "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+          "stars_today": "1828",
+          "language": "Python"
+        },
+        {
           "repo": "huggingface/skills",
           "name": "skills",
           "url": "https://github.com/huggingface/skills",
           "description": "Contribute to huggingface/skills development by creating an account on GitHub.",
-          "stars_today": "1206",
+          "stars_today": "1538",
           "language": "Python"
         },
         {
@@ -96,31 +113,23 @@
           "name": "Agent-Skills-for-Context-Engineering",
           "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
           "description": "A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent systems. Use when building, optimizing, or debugging agent systems that require effective context management.",
-          "stars_today": "722",
+          "stars_today": "1043",
           "language": "Python"
         },
         {
-          "repo": "OpenBB-finance/OpenBB",
-          "name": "OpenBB",
-          "url": "https://github.com/OpenBB-finance/OpenBB",
-          "description": "Financial data platform for analysts, quants and AI agents.",
-          "stars_today": "504",
+          "repo": "datawhalechina/hello-agents",
+          "name": "hello-agents",
+          "url": "https://github.com/datawhalechina/hello-agents",
+          "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
+          "stars_today": "283",
           "language": "Python"
         },
         {
-          "repo": "D4Vinci/Scrapling",
-          "name": "Scrapling",
-          "url": "https://github.com/D4Vinci/Scrapling",
-          "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
-          "stars_today": "1970",
-          "language": "Python"
-        },
-        {
-          "repo": "GVCLab/PersonaLive",
-          "name": "PersonaLive",
-          "url": "https://github.com/GVCLab/PersonaLive",
-          "description": "[CVPR 2026] PersonaLive! : Expressive Portrait Image Animation for Live Streaming",
-          "stars_today": "73",
+          "repo": "VectifyAI/PageIndex",
+          "name": "PageIndex",
+          "url": "https://github.com/VectifyAI/PageIndex",
+          "description": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+          "stars_today": "378",
           "language": "Python"
         }
       ]
