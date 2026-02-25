@@ -143,8 +143,8 @@
 
 ## 4) headlines 与 sections 的关系（禁止重复）
 
-⛔ headlines 的 5 条新闻 **禁止** 与 sections 内的条目使用完全相同的 title
-- headlines 是「当天最重要 5 件事的总结/综述视角」
+⛔ headlines 的 3-5 条新闻 **禁止** 与 sections 内的条目使用完全相同的 title
+- headlines 是「当天最重要的新闻总结/综述视角」
 - sections 是「按分类的详细报道」
 - 允许同一事件同时出现在 headlines 和 sections，但 title 和 what/why 的措辞必须不同
   - headlines：侧重宏观影响和意义
@@ -170,17 +170,7 @@
 - 若 X 高热但 web 缺：必须追加 1 次定向 web_search 补权威来源；补不到就写"仅社媒热度，暂无权威报道"。
 - ⛔ dedupe_keys 放在 self_check.dedupe_keys 中，格式为对象数组，不是字符串数组
 
-## 7) 扩展 query（按需触发，仅 pd/pd-2，禁止 pw）
-
-- 仅触发才跑，上限 4~8 条，按缺口选择：
-  - 厂商补漏：Seedance/GLM/Kimi/Qwen/混元/文心
-  - 评测补漏：SWE-bench 最新评测/leaderboard
-  - 商业补漏：pricing change / funding / partnership
-- ⛔ freshness 限制：仅用 pd（24h）或 pd-2（48h）
-- ⛔ 禁止使用 pw（7d）或更宽范围
-- 补到的新闻若无法确认 ≤48h：直接剔除
-
-## 8) 今日漏报检查（必须执行；仅 48h 内）
+## 7) 今日漏报检查（必须执行；仅 48h 内）
 
 清单：
 - 字节：Seedance/即梦/豆包
@@ -195,7 +185,7 @@
 - ⛔ 补到的新闻必须确认 ≤48h，否则直接剔除
 - 补不到 ≤48h 内的权威来源：明确标注「今日无新动态」
 
-## 9) self_check 结构化字段（必须完整输出）
+## 8) self_check 结构化字段（必须完整输出）
 
 self_check 必须包含以下子字段（均为必填）：
 
@@ -230,7 +220,7 @@ self_check 必须包含以下子字段（均为必填）：
 }
 ```
 
-## 10) 交付物（严格按顺序执行）
+## 9) 交付物（严格按顺序执行）
 
 ```bash
 # 1. 写入 data/daily.json + data/techneme.json（你的唯一输出）
@@ -247,7 +237,7 @@ git add -A && git commit -m "AI日报 YYYY-MM-DD" && git push
 ⛔ 步骤 2 校验失败 → 必须修正 daily.json 后重试，不得跳过
 ⛔ 步骤 4 校验失败 → 必须排查原因后重试，不得跳过
 
-## 11) 推送文案（必须是最后输出，禁止再输出总结覆盖）
+## 10) 推送文案（必须是最后输出，禁止再输出总结覆盖）
 
 📰 AI日报 YYYY-MM-DD
 

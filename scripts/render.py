@@ -303,13 +303,13 @@ def render_archive_nav(current_date: str) -> str:
 
 def main():
     daily = load_json(DATA_DIR / "daily.json", default={})
-    date = str(daily.get("date") or datetime.utcnow().strftime("%Y-%m-%d"))
+    date = str(daily.get("date") or datetime.now(timezone.utc).strftime("%Y-%m-%d"))
 
     # date parts for header
     try:
         dt = datetime.strptime(date, "%Y-%m-%d")
     except Exception:
-        dt = datetime.utcnow()
+        dt = datetime.now(timezone.utc)
     date_day = str(dt.day)
     date_month = dt.strftime("%B %Y")
     date_human = f"{dt.year}年{dt.month}月{dt.day}日"

@@ -7,8 +7,11 @@ Automatically fetches TechMeme headlines and updates the daily report.
 import json
 import subprocess
 import re
+import html as html_module
 from datetime import datetime
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
 
 def fetch_technews():
     """Fetch TechMeme headlines using technews skill."""
@@ -52,9 +55,10 @@ def generate_techneme_html(stories):
     }
     
     for story in stories[:5]:
-        title = story.get("title", "").split("(")[0].strip()
+        title = html_module.escape(story.get("title", "").split("(")[0].strip())
         url = story.get("url", "")
-        summary = story.get("summary", "")[:150] + "..." if len(story.get("summary", "")) > 150 else story.get("summary", "")
+        raw_summary = story.get("summary", "")
+        summary = html_module.escape(raw_summary[:150] + "..." if len(raw_summary) > 150 else raw_summary)
         timestamp = story.get("timestamp", "")
         
         # Determine tag
@@ -82,7 +86,7 @@ def generate_techneme_html(stories):
 
 def update_daily_report(techneme_html):
     """Update the index.html with new TechMeme section."""
-    report_path = Path.home() / "clawd" / "ai-daily-report" / "index.html"
+    report_path = ROOT / "index.html"
     
     with open(report_path, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -107,7 +111,7 @@ def update_daily_report(techneme_html):
 
 def git_push():
     """Commit and push changes."""
-    report_dir = Path.home() / "clawd" / "ai-daily-report"
+    report_dir = ROOT
     
     try:
         subprocess.run(

@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json
 import sys
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -61,9 +62,19 @@ def validate_item(it: dict, ctx: str):
             die(f"{ctx}: found legacy field '{old_key}' — {hint}")
 
     must_str(it, "title", ctx)
-    must_str(it, "time", ctx)
+    time_str = must_str(it, "time", ctx)
     must_str(it, "what", ctx)
     must_str(it, "why", ctx)
+
+    # Warn if time is older than 48h (prompt constraint)
+    try:
+        dt = datetime.strptime(time_str.strip(), "%Y-%m-%d")
+        cutoff = datetime.now(timezone.utc) - timedelta(hours=48)
+        if dt.replace(tzinfo=timezone.utc) < cutoff:
+            print(f"[validate_json] WARNING: {ctx} time '{time_str}' is older than 48h", file=sys.stderr)
+    except ValueError:
+        pass  # non-standard date format, skip check
+
     sources = must_list(it, "sources", ctx)
     if len(sources) < 1:
         die(f"{ctx}: sources must have at least 1 entry")
@@ -145,6 +156,17 @@ def main():
     must_str(summary, "archiveUrl", "daily.summary")
 
     print("[validate_json] ok")
+
+    # Validate self_check sub-fields (warnings only, not blocking)
+    sc = daily.get("self_check")
+    if not isinstance(sc, dict) or not sc:
+        print("[validate_json] WARNING: self_check is missing or empty", file=sys.stderr)
+    else:
+        for required_key in ["coverage_analysis", "freshness_check", "bird_status", "dedupe_keys"]:
+            if required_key not in sc:
+                print(f"[validate_json] WARNING: self_check.{required_key} is missing", file=sys.stderr)
+            elif not sc[required_key]:
+                print(f"[validate_json] WARNING: self_check.{required_key} is empty", file=sys.stderr)
 
 
 if __name__ == "__main__":
