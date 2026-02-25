@@ -1,0 +1,47 @@
+{
+  "watchlist": {
+    "description": "X/Twitter 账号监控列表，用于 AI 早报信息源",
+    "updated_at": "2025-02-24",
+    "accounts": {
+      "labs": [
+        { "handle": "OpenAI", "name": "OpenAI", "category": "lab" },
+        { "handle": "AnthropicAI", "name": "Anthropic", "category": "lab" },
+        { "handle": "GoogleDeepMind", "name": "DeepMind", "category": "lab" },
+        { "handle": "GeminiApp", "name": "Google Gemini", "category": "lab" },
+        { "handle": "MetaAI", "name": "Meta AI", "category": "lab" }
+      ],
+      "researchers": [
+        { "handle": "karpathy", "name": "Andrej Karpathy", "category": "researcher" },
+        { "handle": "ylecun", "name": "Yann LeCun", "category": "researcher" },
+        { "handle": "ilyasut", "name": "Ilya Sutskever", "category": "researcher" },
+        { "handle": "demishassabis", "name": "Demis Hassabis", "category": "researcher" },
+        { "handle": "daboracle", "name": "Dario Amodei", "category": "researcher" },
+        { "handle": "fchollet", "name": "François Chollet", "category": "researcher" },
+        { "handle": "jeremyphoward", "name": "Jeremy Howard", "category": "researcher" }
+      ],
+      "engineers": [
+        { "handle": "simonw", "name": "Simon Willison", "category": "engineer" },
+        { "handle": "goodside", "name": "Riley Goodside", "category": "engineer" },
+        { "handle": "alexalbert__", "name": "Alex Albert (Claude)", "category": "engineer" },
+        { "handle": "sharifshameem", "name": "Sharif Shameem", "category": "engineer" }
+      ],
+      "robotics": [
+        { "handle": "DrJimFan", "name": "Jim Fan", "category": "robotics" },
+        { "handle": "pieterabbeel", "name": "Pieter Abbeel", "category": "robotics" }
+      ],
+      "founders": [
+        { "handle": "sama", "name": "Sam Altman", "category": "founder" }
+      ],
+      "aggregators": [
+        { "handle": "ai_pub", "name": "AI Publications", "category": "aggregator" },
+        { "handle": "hwchung27", "name": "Hugging Face", "category": "aggregator" },
+        { "handle": "wongmjane", "name": "Jane Wong", "category": "aggregator" }
+      ],
+      "cn_vendors": [
+        { "handle": "seedance", "name": "字节 Seedance", "category": "cn_vendor", "note": "需确认官方账号" },
+        { "handle": "zhipu_ai", "name": "智谱 AI", "category": "cn_vendor", "note": "需确认官方账号" },
+        { "handle": "MoonshotAI", "name": "月之暗面 Kimi", "category": "cn_vendor" }
+      ]
+    }
+  }
+}

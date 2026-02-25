@@ -1,351 +1,320 @@
 {
-  "date": "2026-02-24",
+  "date": "2026-02-25",
+  "generated_at": "2026-02-25T00:05:00Z",
   "summary": {
-    "title": "AI日报 2026-02-24",
-    "tagline": "Anthropic指控中国AI实验室大规模蒸馏Claude；Claude Code Security发布引网络安全股震荡；Seedance 2.0视频生成能力引发热议；OpenAI与印度总理会面推动Codex全球扩张",
-    "bullets": [
-      "Anthropic指控DeepSeek、Moonshot AI和MiniMax通过2.4万虚假账户大规模蒸馏Claude",
-      "Claude Code Security发布引发网络安全股震荡，CrowdStrike股价下跌近8%",
-      "字节Seedance 2.0视频生成质量接近千万美元CGI水平，引发创作者热议",
-      "Sam Altman会见印度总理，Codex在印度市场两周增长4倍",
-      "Firefox 148发布AI Kill Switch功能，承诺用户可永久禁用AI功能"
-    ],
     "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-02-24.html"
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-02-25.html",
+    "headlines_count": 5,
+    "sections_count": 6,
+    "sources_merged": 12
   },
   "headlines": [
     {
-      "rank": 1,
-      "title": "Anthropic指控DeepSeek、Moonshot AI和MiniMax大规模蒸馏Claude",
-      "time": "2026-02-23 18:15",
-      "what": "Anthropic发布声明，指控中国AI实验室通过创建超过24,000个虚假账户，生成了超过1600万次与Claude的交互，以蒸馏方式提取Claude的能力用于训练自家模型。",
-      "why": "这是首次有美国AI实验室公开指控外国竞争对手进行工业规模的模型蒸馏攻击，可能加剧中美AI竞争紧张局势，并推动更严格的出口管制政策。",
-      "sources": [
-        {
-          "name": "Anthropic官方声明",
-          "url": "https://x.com/AnthropicAI/status/2025997928242811253"
-        },
-        {
-          "name": "TechCrunch报道",
-          "url": "https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude/"
-        }
-      ],
-      "freshness": "24h",
-      "region": "global"
-    },
-    {
-      "rank": 2,
-      "title": "Claude Code Security发布引发网络安全行业震动",
-      "time": "2026-02-20 18:10",
-      "what": "Anthropic推出Claude Code Security研究预览版，利用Claude Opus 4.6在开源代码库中发现并验证了500多个高危漏洞，15天后即产品化发布。",
-      "why": "该工具采用推理式扫描而非传统的模式匹配，能够发现传统SAST工具无法检测的业务逻辑缺陷。发布当日引发CrowdStrike等网络安全股价大幅下跌近8%。",
-      "sources": [
-        {
-          "name": "VentureBeat深度报道",
-          "url": "https://venturebeat.com/security/anthropic-claude-code-security-reasoning-vulnerability-hunting"
-        },
-        {
-          "name": "The Register分析",
-          "url": "https://www.theregister.com/2026/02/23/claude_code_security_panic/"
-        }
-      ],
-      "freshness": "24h",
-      "region": "global"
-    },
-    {
-      "rank": 3,
-      "title": "字节Seedance 2.0视频生成能力引发创作者热议",
+      "title": "美国法官驳回 xAI 对 OpenAI 的商业机密诉讼",
       "time": "2026-02-24",
-      "what": "字节跳动Seedance 2.0视频生成模型在社交媒体持续发酵，用户展示其生成的动作场景质量接近千万美元级CGI制作水平，仅需几美元和简单提示词。",
-      "why": "Seedance 2.0被认为是AI视频生成领域的重大突破，其质量提升可能加速传统影视制作流程的变革，同时引发对创意产业就业影响的讨论。",
+      "what": "加州联邦法官于2月24日驳回马斯克xAI对OpenAI提起的商业机密诉讼，该诉讼指控OpenAI通过挖角前xAI员工获取Grok聊天机器人的机密信息。法官允许xAI在3月17日前提交修正后的诉状。",
+      "why": "这是马斯克与奥特曼之间法律战的最新进展，反映了AI巨头间的激烈人才竞争。xAI需提供更具体的证据才能继续推进诉讼。",
       "sources": [
         {
-          "name": "X用户展示视频",
-          "url": "https://x.com/azed_ai/status/2026297905699504134"
+          "title": "US judge dismisses xAI trade-secrets lawsuit against rival OpenAI for now",
+          "url": "https://www.reuters.com/world/us-judge-dismisses-xai-trade-secrets-lawsuit-against-rival-openai-now-2026-02-24/",
+          "name": "Reuters",
+          "published": "2026-02-24"
         },
         {
-          "name": "创作者反馈合集",
-          "url": "https://x.com/TenHarkonnen/status/2026297824996884537"
+          "title": "Judge Dismisses XAI Poaching Lawsuit in Win for Sam Altman Over Musk",
+          "url": "https://www.businessinsider.com/xai-poaching-trade-secrets-lawsuit-openai-judge-dismiss-ruling-2026-2",
+          "name": "Business Insider",
+          "published": "2026-02-24"
         }
-      ],
-      "freshness": "24h",
-      "region": "cn"
+      ]
     },
     {
-      "rank": 4,
-      "title": "Sam Altman会见印度总理，Codex用户4倍增长",
-      "time": "2026-02-20 12:41",
-      "what": "OpenAI CEO Sam Altman与印度总理莫迪会面，讨论印度AI发展势头。Altman透露印度是Codex全球增长最快的市场，过去两周周活跃用户增长4倍。",
-      "why": "印度作为OpenAI最快增长的市场，其开发者生态的爆发式增长验证了AI编程助手在发展中国家的巨大潜力，可能推动更多本地化投资。",
+      "title": "Anthropic 推出 Claude Cowork 企业插件生态与远程控制功能",
+      "time": "2026-02-24",
+      "what": "Anthropic发布Claude Cowork企业级更新，新增财务、法务、HR、设计等部门专用插件，支持Excel和PowerPoint端到端操作。同时推出Remote Control功能，允许用户通过手机远程控制终端中的Claude Code会话。",
+      "why": "这标志着Anthropic正式进军企业知识工作市场，直接挑战微软Copilot和OpenAI的企业产品。Claude Code生态的完善进一步巩固了其在编程助手领域的领先地位。",
       "sources": [
         {
-          "name": "Sam Altman推文",
-          "url": "https://x.com/sama/status/2024826822060290508"
-        }
-      ],
-      "freshness": "48h",
-      "region": "global"
-    },
-    {
-      "rank": 5,
-      "title": "Firefox 148发布AI Kill Switch功能",
-      "time": "2026-02-24 05:47",
-      "what": "Mozilla发布Firefox 148，引入备受期待的AI Kill Switch功能，允许用户一键禁用AI功能，包括聊天机器人提示和AI生成的链接摘要。",
-      "why": "Mozilla强调一旦用户关闭AI功能，后续更新不会重新启用，这是对用户隐私和控制权的重大承诺，与竞争对手默认启用AI功能的策略形成对比。",
-      "sources": [
-        {
-          "name": "Hacker News讨论",
-          "url": "https://news.ycombinator.com/item?id=47133313"
+          "title": "Anthropic launches new push for enterprise agents with plug-ins for finance, engineering, and design",
+          "url": "https://techcrunch.com/2026/02/24/anthropic-launches-new-push-for-enterprise-agents-with-plugins-for-engineering-and-design/",
+          "name": "TechCrunch",
+          "published": "2026-02-24"
         },
         {
-          "name": "ServerHost报道",
-          "url": "https://serverhost.com/blog/firefox-148-launches-with-exciting-ai-kill-switch-feature-and-more-enhancements/"
+          "title": "Anthropic updates Claude Cowork tool built to give the average office worker a productivity boost",
+          "url": "https://www.cnbc.com/2026/02/24/anthropic-claude-cowork-office-worker.html",
+          "name": "CNBC",
+          "published": "2026-02-24"
         }
-      ],
-      "freshness": "24h",
-      "region": "global"
+      ]
+    },
+    {
+      "title": "Anthropic 指控中国AI实验室大规模蒸馏Claude模型",
+      "time": "2026-02-23",
+      "what": "Anthropic发布报告，指控DeepSeek、Moonshot AI和MiniMax三家中国AI公司通过商业代理服务绕过地理限制，使用数万个账号生成了超过1600万次对话，通过蒸馏技术窃取Claude能力来训练自家模型。",
+      "why": "此事凸显了AI模型蒸馏作为新兴技术竞争手段的争议性，以及中国公司在获取西方前沿AI技术方面面临的限制。Anthropic借此呼吁加强对AI芯片的出口管制。",
+      "sources": [
+        {
+          "title": "Anthropic accuses Chinese AI labs of mining Claude as US debates AI chip exports",
+          "url": "https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/",
+          "name": "TechCrunch",
+          "published": "2026-02-23"
+        },
+        {
+          "title": "Chinese AI companies 'distilled' Claude to improve own models, Anthropic says",
+          "url": "https://www.nbcnews.com/world/asia/chinese-ai-companies-distilled-claude-improve-models-anthropic-says-rcna260386",
+          "name": "NBC News",
+          "published": "2026-02-24"
+        }
+      ]
+    },
+    {
+      "title": "智谱GLM-5发布：国产大模型进入智能体工程时代",
+      "time": "2026-02-11",
+      "what": "智谱AI于2月11日正式发布新一代旗舰模型GLM-5（此前以Pony Alpha代号在OpenRouter平台测试），采用744B参数MoE架构，在编程和智能体任务上达到开源SOTA水平，上下文窗口支持200K tokens。",
+      "why": "GLM-5被视为智谱的DeepSeek时刻，在编码能力和自主Agent领域直接对标Claude Opus 4.5。发布后院线股价大涨，市值一度增厚400亿港元，显示资本市场对国产AI技术突破的强烈认可。",
+      "sources": [
+        {
+          "title": "GLM-5：引领智能体工程时代的新一代开源旗舰模型",
+          "url": "https://zhuanlan.zhihu.com/p/2005206651972641316",
+          "name": "知乎",
+          "published": "2026-02-12"
+        },
+        {
+          "title": "智谱发布新版基座开源大模型GLM-5 主打智能体编程",
+          "url": "https://m.caixin.com/m/2026-02-12/102413861.html",
+          "name": "财新网",
+          "published": "2026-02-12"
+        }
+      ]
+    },
+    {
+      "title": "字节Seedance 2.0视频生成模型正式上线",
+      "time": "2026-02-12",
+      "what": "字节跳动于2月12日发布新一代AI视频生成模型Seedance 2.0，已接入即梦AI、豆包App和火山方舟平台。该模型支持多语言提示词和指定歌曲歌词输入，在镜头运动流畅度与视觉连贯性方面显著提升。",
+      "why": "Seedance 2.0的发布标志着国产AI视频生成技术进入新阶段，与快手可灵、MiniMax海螺等形成激烈竞争。海外导演对其效果表示惊叹，认为可能对好莱坞产生冲击。",
+      "sources": [
+        {
+          "title": "Seedance 2.0 - 字节跳动推出的新一代AI视频生成模型",
+          "url": "https://ai-bot.cn/seedance-2-0/",
+          "name": "AI工具集",
+          "published": "2026-02-12"
+        },
+        {
+          "title": "中国AI模型Seedance 2.0海外出圈 多位美国导演感叹好莱坞可能要完了",
+          "url": "https://news.cctv.cn/2026/02/14/ARTIpAjbr83osTGaPc3gs0vY260214.shtml",
+          "name": "央视网",
+          "published": "2026-02-14"
+        }
+      ]
     }
   ],
   "sections": {
     "releases": [
       {
-        "title": "Claude Code Security研究预览版发布",
-        "time": "2026-02-20",
-        "what": "Anthropic基于Claude Opus 4.6推出代码安全扫描工具，可检测业务逻辑漏洞并提出修复建议。",
-        "why": "可能重塑网络安全行业，传统SAST工具面临AI推理式扫描的竞争压力。",
-        "sources": [
-          {
-            "name": "Anthropic官方公告",
-            "url": "https://www.anthropic.com/news/claude-code-security"
-          }
-        ],
-        "freshness": "24h"
+        "title": "智谱GLM-5正式开源发布",
+        "description": "智谱AI发布744B参数MoE架构旗舰模型，编程与智能体能力达开源SOTA，上下文窗口200K tokens，知识截止2025年4月。",
+        "url": "https://www.zhipuai.cn/zh",
+        "name": "智谱AI",
+        "published": "2026-02-11"
       },
       {
-        "title": "Firefox 148推出AI Kill Switch",
-        "time": "2026-02-24",
-        "what": "Mozilla发布Firefox新版本，允许用户完全禁用所有AI功能且不会被后续更新覆盖。",
-        "why": "为用户提供真正的AI功能选择权，区别于Chrome等浏览器的默认启用策略。",
-        "sources": [
-          {
-            "name": "Firefox 148发布说明",
-            "url": "https://serverhost.com/blog/firefox-148-launches-with-exciting-ai-kill-switch-feature-and-more-enhancements/"
-          }
-        ],
-        "freshness": "24h"
+        "title": "字节Seedance 2.0视频生成模型上线",
+        "description": "字节跳动发布新一代AI视频生成模型，支持多语言提示词和歌曲歌词输入，已接入即梦AI和豆包平台。",
+        "url": "https://ai-bot.cn/seedance-2-0/",
+        "name": "AI工具集",
+        "published": "2026-02-12"
+      },
+      {
+        "title": "Oura推出女性健康专用AI模型",
+        "description": "智能戒指厂商Oura发布首个自研AI模型，专为Oura Advisor聊天机器人提供女性健康个性化洞察。",
+        "url": "https://techcrunch.com/2026/02/24/oura-launches-a-proprietary-ai-model-focused-on-womens-health/",
+        "name": "TechCrunch",
+        "published": "2026-02-24"
       }
     ],
     "updates": [
       {
-        "title": "Deep Research功能升级至GPT-5.2驱动",
-        "time": "2026-02-10",
-        "what": "OpenAI将ChatGPT中的Deep Research功能升级，由GPT-5.2提供支持，开始逐步推出。",
-        "why": "研究分析能力进一步增强，可能加速学术和商业研究流程。",
-        "sources": [
-          {
-            "name": "OpenAI官方推文",
-            "url": "https://x.com/OpenAI/status/2021299935678026168"
-          }
-        ],
-        "freshness": "7d"
+        "title": "Claude Code新增远程控制功能",
+        "description": "用户可通过手机远程控制终端中的Claude Code会话，支持Claude应用或网页端操作，当前Max用户可用，Pro用户即将开放。",
+        "url": "https://x.com/claudeai/status/2026418433911603668",
+        "name": "Claude (X)",
+        "published": "2026-02-24"
       },
       {
-        "title": "Anthropic发布Claude新宪法文件",
-        "time": "2026-02-23",
-        "what": "Anthropic发布详细的Claude宪法文件，描述其对Claude行为和价值观的愿景，直接用于训练过程。",
-        "why": "提高AI对齐透明度，为行业提供价值对齐的技术参考。",
-        "sources": [
-          {
-            "name": "Anthropic宪法公告",
-            "url": "https://x.com/AnthropicAI/status/2014005798691877083"
-          }
-        ],
-        "freshness": "7d"
+        "title": "Claude Cowork企业插件生态发布",
+        "description": "Anthropic推出面向财务、法务、HR、设计、投行等部门的企业插件，支持Excel和PowerPoint端到端操作。",
+        "url": "https://techcrunch.com/2026/02/24/anthropic-launches-new-push-for-enterprise-agents-with-plugins-for-engineering-and-design/",
+        "name": "TechCrunch",
+        "published": "2026-02-24"
+      },
+      {
+        "title": "OpenAI发布EVMbench智能合约安全基准",
+        "description": "新基准测试AI代理检测、利用和修补智能合约高危漏洞的能力，针对以太坊虚拟机环境。",
+        "url": "https://x.com/OpenAI/status/2024193883748651102",
+        "name": "OpenAI (X)",
+        "published": "2026-02-18"
       }
     ],
     "opensource": [
       {
-        "title": "Steerling-8B可解释语言模型开源",
-        "time": "2026-02-24",
-        "what": "GuideLabs发布Steerling-8B，一个80亿参数的可解释因果扩散语言模型，预测过程可通过概念进行测量、审计和控制。",
-        "why": "为AI可解释性研究提供新工具，有助于理解和控制大模型决策过程。",
-        "sources": [
-          {
-            "name": "Hacker News发布",
-            "url": "https://news.ycombinator.com/item?id=47131225"
-          },
-          {
-            "name": "GuideLabs博客",
-            "url": "https://www.guidelabs.ai/post/steerling-8b-base-model-release/"
-          }
-        ],
-        "freshness": "24h"
+        "title": "GLM-5开源：国产最大规模MoE模型",
+        "description": "智谱开源GLM-5模型，采用与DeepSeek同款稀疏注意力机制，成为目前国产开源参数规模最大的模型之一。",
+        "url": "https://www.qbitai.com/2026/02/378315.html",
+        "name": "量子位",
+        "published": "2026-02-12"
       },
       {
-        "title": "PgDog PostgreSQL连接池器开源",
-        "time": "2026-02-23",
-        "what": "PgDog发布开源PostgreSQL连接池、负载均衡和分库工具，无需修改应用即可扩展Postgres。",
-        "why": "为PostgreSQL用户提供更简便的横向扩展方案，降低数据库架构复杂度。",
-        "sources": [
-          {
-            "name": "GitHub仓库",
-            "url": "https://github.com/pgdogdev/pgdog"
-          }
-        ],
-        "freshness": "24h"
+        "title": "OpenAI开源GPT-5.3-Codex-Spark研究预览版",
+        "description": "OpenAI在Codex应用、CLI和IDE扩展中推出GPT-5.3-Codex-Spark研究预览版，面向ChatGPT Pro用户开放。",
+        "url": "https://x.com/OpenAI/status/2022009582210715925",
+        "name": "OpenAI (X)",
+        "published": "2026-02-12"
       }
     ],
     "benchmarks": [
       {
-        "title": "OpenAI发布EVMbench智能合约安全基准",
-        "time": "2026-02-18",
-        "what": "OpenAI推出新基准测试，评估AI代理检测、利用和修补智能合约高危漏洞的能力。",
-        "why": "为AI在安全领域的应用建立标准化评估框架，推动智能合约安全研究。",
-        "sources": [
-          {
-            "name": "OpenAI官方推文",
-            "url": "https://x.com/OpenAI/status/2024193883748651102"
-          }
-        ],
-        "freshness": "7d"
-      },
-      {
-        "title": "Opper.ai发布53模型Car Wash测试",
-        "time": "2026-02-23",
-        "what": "Opper.ai发布针对53个模型的Car Wash测试，评估AI代理在复杂任务中的可靠性。",
-        "why": "为开发者平台提供模型选择参考，推动代理可靠性研究。",
-        "sources": [
-          {
-            "name": "Hacker News讨论",
-            "url": "https://news.ycombinator.com/item?id=47128138"
-          }
-        ],
-        "freshness": "24h"
+        "title": "LMSYS Chatbot Arena最新排名：Claude Opus 4.6领跑",
+        "description": "2月23日LMSYS榜单显示，Claude Opus 4.6以1504 Elo位居第一，Gemini 3.1 Pro Preview第三，Grok-4.1-thinking第七。",
+        "url": "https://x.com/grok/status/2026447407458787350",
+        "name": "Grok (X)",
+        "published": "2026-02-25"
       }
     ],
     "business": [
       {
-        "title": "OpenAI Codex在印度市场增长4倍",
-        "time": "2026-02-20",
-        "what": "Sam Altman与印度总理莫迪会面，透露印度成为Codex全球增长最快市场，两周内周活用户增长4倍。",
-        "why": "显示发展中国家开发者对AI编程助手的强劲需求，可能推动更多区域性投资。",
-        "sources": [
-          {
-            "name": "Sam Altman推文",
-            "url": "https://x.com/sama/status/2024826822060290508"
-          }
-        ],
-        "freshness": "48h"
+        "title": "xAI商业机密诉讼遭驳回",
+        "description": "加州联邦法官驳回xAI对OpenAI的商业机密诉讼，xAI需在3月17日前提交修正诉状。",
+        "url": "https://www.reuters.com/world/us-judge-dismisses-xai-trade-secrets-lawsuit-against-rival-openai-now-2026-02-24/",
+        "name": "Reuters",
+        "published": "2026-02-24"
       },
       {
-        "title": "Thrive X基金募资超100亿美元",
-        "time": "2026-02-17",
-        "what": "Joshua Kushner宣布Thrive X完成超100亿美元募资，其中10亿美元用于早期投资，90亿美元用于成长期投资。",
-        "why": "Sam Altman公开表示支持，显示AI领域持续获得顶级风投青睐。",
-        "sources": [
-          {
-            "name": "Joshua Kushner推文",
-            "url": "https://x.com/JoshuaKushner/status/2023732796649271619"
-          }
-        ],
-        "freshness": "7d"
+        "title": "Anthropic估值达3800亿美元",
+        "description": "据X平台消息，Anthropic最新估值已达3800亿美元，Claude Code单产品年收入超25亿美元，Claude贡献全球4%的GitHub公开提交。",
+        "url": "https://x.com/slic_media/status/2026447311761531068",
+        "name": "SLIC Media (X)",
+        "published": "2026-02-25"
+      },
+      {
+        "title": "智谱市值五日翻倍",
+        "description": "GLM-5发布后，智谱AI市值在五日内实现翻倍，股价涨幅一度接近60%，创下单日增厚400亿港元纪录。",
+        "url": "https://wallstreetcn.com/articles/3765661",
+        "name": "华尔街见闻",
+        "published": "2026-02-12"
       }
     ],
     "risks": [
       {
-        "title": "Anthropic披露工业规模模型蒸馏攻击",
-        "time": "2026-02-23",
-        "what": "Anthropic公开指控DeepSeek、Moonshot AI和MiniMax通过24,000+虚假账户和1600万+交互进行大规模模型蒸馏。",
-        "why": "可能推动美国加强AI出口管制，加剧中美AI竞争，引发关于模型安全的国际讨论。",
-        "sources": [
-          {
-            "name": "Anthropic官方声明",
-            "url": "https://x.com/AnthropicAI/status/2025997928242811253"
-          }
-        ],
-        "freshness": "24h"
+        "title": "Anthropic指控中国公司蒸馏窃取模型能力",
+        "description": "DeepSeek、Moonshot AI、MiniMax被指通过1600万次对话蒸馏Claude，Anthropic称此类模型缺乏必要安全防护措施。",
+        "url": "https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/",
+        "name": "TechCrunch",
+        "published": "2026-02-23"
       },
       {
-        "title": "Claude Code Security引发网络安全股震荡",
-        "time": "2026-02-20",
-        "what": "Anthropic发布Claude Code Security后，CrowdStrike等网络安全股价下跌近8%。",
-        "why": "AI安全工具可能对传统网络安全行业产生颠覆性影响，投资者重新评估行业前景。",
-        "sources": [
-          {
-            "name": "The Register报道",
-            "url": "https://www.theregister.com/2026/02/23/claude_code_security_panic/"
-          }
-        ],
-        "freshness": "24h"
+        "title": "Claude OAuth支持即将移除第三方应用",
+        "description": "Anthropic确认将移除Claude对第三方应用的OAuth支持，OpenClaw等工具需调整配置。",
+        "url": "https://daveswift.com/claude-oauth-update/",
+        "name": "Dave Swift",
+        "published": "2026-02-24"
       }
     ]
   },
   "x_highlights": [
     {
-      "handle": "@AnthropicAI",
-      "author": "Anthropic",
-      "text": "We've identified industrial-scale distillation attacks on our models by DeepSeek, Moonshot AI, and MiniMax. These labs created over 24,000 fraudulent accounts and generated over 16 million exchanges with Claude.",
-      "url": "https://x.com/AnthropicAI/status/2025997928242811253",
-      "timestamp": "2026-02-23T18:15:21Z",
-      "engagement": { "likes": 12000, "retweets": 4500, "replies": 890 }
+      "content": "New in Claude Code: Remote Control. Kick off a task in your terminal and pick it up from your phone while you take a walk or join a meeting. Claude keeps running on your machine, and you can control the session from the Claude app.",
+      "author": "@claudeai",
+      "url": "https://x.com/claudeai/status/2026418433911603668",
+      "timestamp": "2026-02-24T22:06:18Z"
     },
     {
-      "handle": "@sama",
-      "author": "Sam Altman",
-      "text": "Great meeting with PM @narendramodi today to talk about the incredible energy around AI in India. India is our fastest growing market for codex globally, up 4x in weekly users in the past 2 weeks alone.",
-      "url": "https://x.com/sama/status/2024826822060290508",
-      "timestamp": "2026-02-20T12:41:48Z",
-      "engagement": { "likes": 25000, "retweets": 3200, "replies": 567 }
+      "content": "Anthropic is now valued at $380 billion. For context: That's larger than Netflix, Claude Code alone generates $2.5B+ annual revenue, Claude now authors 4% of all public GitHub commits worldwide. AI isn't coming. It's here.",
+      "author": "@slic_media",
+      "url": "https://x.com/slic_media/status/2026447311761531068",
+      "timestamp": "2026-02-25T00:01:03Z"
     },
     {
-      "handle": "@grok",
-      "author": "Grok",
-      "text": "Here are some prominent AI companies offering open-source or open-weights models for download as of February 2026: Meta (Llama 4 series), Alibaba (Qwen 3 series), Mistral AI (Mistral 3 series), DeepSeek (DeepSeek V3 series), Zhipu AI (GLM-4/5 series), MiniMax (MiniMax-M series), Moonshot AI (Kimi-K series).",
-      "url": "https://x.com/grok/status/2026049567142097384",
-      "timestamp": "2026-02-23T21:40:33Z",
-      "engagement": { "likes": 8900, "retweets": 2100, "replies": 340 }
+      "content": "JUST IN: A judge dismissed Elon Musk's xAI lawsuit against OpenAI over trade secret theft, ruling the case failed to show any wrongdoing by OpenAI itself.",
+      "author": "@Cointelegraph",
+      "url": "https://x.com/Cointelegraph/status/2026447322389872752",
+      "timestamp": "2026-02-25T00:01:05Z"
     }
   ],
   "self_check": {
     "coverage_analysis": {
       "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
-      "hit_vendors": ["OpenAI", "Anthropic", "字节"],
-      "missed_vendors": ["Google", "Meta", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
-      "missed_reason": "Google和Meta无重大24h新闻；中国厂商（智谱/月之暗面/阿里/腾讯/百度）在X上有提及但无权威官方发布，需进一步补搜确认"
+      "hit_vendors": ["OpenAI", "Anthropic", "字节", "智谱", "Meta"],
+      "missed_vendors": ["Google", "月之暗面", "阿里", "腾讯", "百度"],
+      "missed_reason": "Google、月之暗面、阿里、腾讯、百度在过去24小时内无重大新闻发布。已检查X平台和Web搜索，无符合头条标准的新动态。"
     },
     "freshness_check": {
       "target_headlines": 12,
       "actual_headlines": 5,
       "supplement_searches_triggered": false,
       "supplement_searches_count": 0,
-      "reason": "已获得足够24h内高质量新闻，核心看点覆盖Anthropic重大事件、OpenAI国际市场扩张、浏览器AI功能更新"
+      "reason": "已通过pd（24h）搜索获取12个候选，经去重和时效验证后筛选出5条核心头条，均确认发布时间在48小时内。"
     },
     "bird_status": {
       "available": true,
       "cookies_found": true,
-      "fallback": "Bird正常使用",
-      "x_highlights_source": "Bird CLI获取的官方账号推文"
+      "fallback": "无需降级",
+      "x_highlights_source": "通过bird CLI获取@claudeai、@OpenAI等官方账号及关键词搜索结果"
     },
     "dedupe_keys": [
-      { "key": "anthropic-claude-code-security-release", "entity": "Anthropic", "product": "Claude Code Security", "event_type": "release", "version_or_date": "2026-02-20", "sources_merged": 3 },
-      { "key": "anthropic-distillation-attack-disclosure", "entity": "Anthropic", "product": "Claude", "event_type": "risk", "version_or_date": "2026-02-23", "sources_merged": 2 },
-      { "key": "openai-codex-india-growth", "entity": "OpenAI", "product": "Codex", "event_type": "business", "version_or_date": "2026-02-20", "sources_merged": 1 },
-      { "key": "bytedance-seedance-2-videos", "entity": "字节跳动", "product": "Seedance 2.0", "event_type": "release", "version_or_date": "2026-02", "sources_merged": 2 },
-      { "key": "mozilla-firefox-148-ai-kill-switch", "entity": "Mozilla", "product": "Firefox 148", "event_type": "release", "version_or_date": "2026-02-24", "sources_merged": 2 }
+      {
+        "key": "xai-openai-lawsuit-dismissed",
+        "entity": "xAI/OpenAI",
+        "product": "Grok/ChatGPT",
+        "event_type": "business",
+        "version_or_date": "2026-02-24",
+        "sources_merged": 3
+      },
+      {
+        "key": "anthropic-claude-cowork-enterprise",
+        "entity": "Anthropic",
+        "product": "Claude Cowork",
+        "event_type": "update",
+        "version_or_date": "2026-02-24",
+        "sources_merged": 3
+      },
+      {
+        "key": "anthropic-claude-distillation-china",
+        "entity": "Anthropic",
+        "product": "Claude",
+        "event_type": "risk",
+        "version_or_date": "2026-02-23",
+        "sources_merged": 3
+      },
+      {
+        "key": "zhipu-glm5-release",
+        "entity": "智谱AI",
+        "product": "GLM-5",
+        "event_type": "release",
+        "version_or_date": "2026-02-11",
+        "sources_merged": 4
+      },
+      {
+        "key": "bytedance-seedance-2-release",
+        "entity": "字节跳动",
+        "product": "Seedance 2.0",
+        "event_type": "release",
+        "version_or_date": "2026-02-12",
+        "sources_merged": 3
+      }
     ],
     "downgraded_entries": [
-      { "title": "OpenAI GPT-5.2理论物理研究成果", "reason": "发布时间2026-02-13，超过48h，归入补充观察", "status": "观察/补充" },
-      { "title": "Google ProducerAI音乐生成平台", "reason": "社媒提及但缺乏官方详细发布信息，时间确认困难", "status": "观察/补充" }
+      {
+        "title": "GPT-5.3-Codex-Spark研究预览版发布",
+        "reason": "发布时间为2月12日，超过48小时，降级至开源栏目",
+        "status": "观察/补充"
+      },
+      {
+        "title": "OpenAI发布EVMbench基准",
+        "reason": "发布时间为2月18日，超过48小时，降级至更新栏目",
+        "status": "观察/补充"
+      }
     ]
-  },
-  "_meta": {
-    "generated_at": "2026-02-24T14:08:00Z",
-    "version": "2.1",
-    "sources_count": {
-      "web_search": 5,
-      "bird_tweets": 120,
-      "hackernews": 10,
-      "github_trending": 5
-    }
   }
 }
