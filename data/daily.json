@@ -16,30 +16,37 @@
     {
       "title": "美国国防部向 Anthropic 施压，要求放开 Claude AI 军事使用限制",
       "time": "2026-02-25",
-      "what": "美国国防部长 Hegseth 要求 Anthropic 在周五前同意放开 Claude AI 的军事使用限制，允许国防部将其用于包括网络攻击在内的军事用途。",
-      "why": "这标志着政府与企业之间在 AI 安全边界上的冲突升级，Anthropic 此前要求设置保护性限制以防止大规模监控。",
+      "what": "美国国防部长 Hegseth 要求 Anthropic 在周五前同意放开 Claude AI 的军事使用限制。",
+      "why": "这标志着政府与企业之间在 AI 安全边界上的冲突升级。",
       "sources": [
-        {"name": "Axios", "url": "https://www.axios.com/2026/02/24/anthropic-pentagon-claude-hegseth-dario"},
-        {"name": "The Guardian", "url": "https://www.theguardian.com/us-news/2026/feb/24/anthropic-claude-military-ai"}
+        {
+          "name": "Axios",
+          "url": "https://www.axios.com/2026/02/24/anthropic-pentagon-claude-hegseth-dario"
+        }
       ]
     },
     {
       "title": "Anthropic 正式发布 Claude Cowork 企业版",
-      "time": "2026-02-24",
-      "what": "Anthropic 将 Claude Cowork 从研究预览版升级为正式企业产品，支持连接 Google Drive、Gmail、DocuSign 和 FactSet。",
-      "why": "此举直接挑战 Microsoft 365 Copilot 和 OpenAI Frontier，已导致 ServiceNow 等软件股下跌超 23%。",
+      "time": "2026-02-25",
+      "what": "Anthropic 将 Claude Cowork 从研究预览版升级为正式企业产品。",
+      "why": "此举直接挑战 Microsoft 365 Copilot 和 OpenAI Frontier。",
       "sources": [
-        {"name": "CNBC", "url": "https://www.cnbc.com/2026/02/24/anthropic-claude-cowork-office-worker.html"},
-        {"name": "CBS News", "url": "https://www.cbsnews.com/news/hegseth-anthropic-full-access-claude-ai-model/"}
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/02/24/anthropic-claude-cowork-office-worker.html"
+        }
       ]
     },
     {
-      "title": "国产 AI 模型春节大战：Kimi K2.5、GLM-5、Seedance 2.0 密集发布",
-      "time": "2026-02-11",
-      "what": "月之暗面开源 Kimi K2.5（Agent Swarm 技术），智谱发布 GLM-5（Artificial Analysis 榜单全球第四、开源第一），字节推出 Seedance 2.0 视频模型。",
-      "why": "国产大模型在春节期间密集迭代，标志着中国 AI 竞争进入白热化阶段，技术差距正在缩小。",
+      "title": "国产 AI 模型竞争白热化",
+      "time": "2026-02-25",
+      "what": "Kimi K2.5、GLM-5、Seedance 2.0 等国产模型密集发布。",
+      "why": "标志着中国 AI 竞争进入白热化阶段。",
       "sources": [
-        {"name": "新浪财经", "url": "https://finance.sina.cn/2026-02-20/detail-inhnmkwq9582644.d.html"}
+        {
+          "name": "新浪财经",
+          "url": "https://finance.sina.cn/2026-02-20/detail-inhnmkwq9582644.d.html"
+        }
       ]
     }
   ],
@@ -50,7 +57,12 @@
         "time": "2026-02-24",
         "what": "Anthropic 将 Claude Cowork 从研究预览升级为正式企业产品。",
         "why": "挑战微软和 OpenAI 在企业 AI 办公领域的地位。",
-        "sources": [{"name": "CNBC", "url": "https://www.cnbc.com/2026/02/24/anthropic-claude-cowork-office-worker.html"}]
+        "sources": [
+          {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/2026/02/24/anthropic-claude-cowork-office-worker.html"
+          }
+        ]
       }
     ],
     "updates": [
@@ -59,7 +71,12 @@
         "time": "2026-02-25",
         "what": "Hegseth 设定周五为最后期限，要求 Anthropic 同意国防部使用 Claude 进行网络攻击等军事用途。",
         "why": "OpenAI 和 xAI 已同意政府条款，Anthropic 成为唯一拒绝的头部厂商。",
-        "sources": [{"name": "Axios", "url": "https://www.axios.com/2026/02/24/anthropic-pentagon-claude-hegseth-dario"}]
+        "sources": [
+          {
+            "name": "Axios",
+            "url": "https://www.axios.com/2026/02/24/anthropic-pentagon-claude-hegseth-dario"
+          }
+        ]
       }
     ],
     "opensource": [],
@@ -70,7 +87,12 @@
         "time": "2026-02-24",
         "what": "ServiceNow 股价自 Anthropic 宣布 Claude Cowork 以来下跌超 23%。",
         "why": "AI 原生工具正在侵蚀传统 SaaS 市场。",
-        "sources": [{"name": "Yahoo Finance", "url": "https://finance.yahoo.com/news/anthropic-launches-new-enterprise-offerings-raising-the-heat-on-software-companies-143054933.html"}]
+        "sources": [
+          {
+            "name": "Yahoo Finance",
+            "url": "https://finance.yahoo.com/news/anthropic-launches-new-enterprise-offerings-raising-the-heat-on-software-companies-143054933.html"
+          }
+        ]
       }
     ],
     "risks": [
@@ -79,16 +101,36 @@
         "time": "2026-02-25",
         "what": "Anthropic 要求设置保护性限制以防止大规模监控美国人，与政府需求产生冲突。",
         "why": "此前报道称美军已使用 Claude 协助抓捕马杜罗。",
-        "sources": [{"name": "The Guardian", "url": "https://www.theguardian.com/us-news/2026/feb/24/anthropic-claude-military-ai"}]
+        "sources": [
+          {
+            "name": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/feb/24/anthropic-claude-military-ai"
+          }
+        ]
       }
     ]
   },
   "x_highlights": [],
   "self_check": {
     "coverage_analysis": {
-      "target_vendors": ["OpenAI", "Anthropic", "Google", "字节", "智谱", "月之暗面"],
-      "hit_vendors": ["Anthropic", "字节", "智谱", "月之暗面"],
-      "missed_vendors": ["OpenAI", "Google"],
+      "target_vendors": [
+        "OpenAI",
+        "Anthropic",
+        "Google",
+        "字节",
+        "智谱",
+        "月之暗面"
+      ],
+      "hit_vendors": [
+        "Anthropic",
+        "字节",
+        "智谱",
+        "月之暗面"
+      ],
+      "missed_vendors": [
+        "OpenAI",
+        "Google"
+      ],
       "missed_reason": "搜索范围内无 48h 内新动态"
     },
     "freshness_check": {
