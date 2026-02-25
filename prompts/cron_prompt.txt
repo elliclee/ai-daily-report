@@ -24,7 +24,23 @@
 
 执行 AI 日报生成任务（强时效版）。
 
-## 0-A) JSON 输出字段格式（最高优先级，违反即校验失败）
+## 0) 前置检查（必须在采集前执行）
+
+### 0-A) Bird (X/Twitter) 配置检查
+执行以下命令验证 bird 可用性：
+```bash
+export PATH="/root/.local/bin:$PATH"
+bird check && bird whoami
+```
+- 如果成功：记录 bird_status.available = true，后续可使用 bird 搜索 X 内容
+- 如果失败：记录 bird_status.available = false，降级为仅用 web_search
+
+### 0-B) 预读信息源（节省搜索时间）
+
+读取本地文件 `data/news-radar-24h.json`（由 `scripts/fetch_sources.py` 预先采集）。
+如果文件存在且包含近期数据，优先使用其中的线索，减少实时搜索次数。
+
+## 1) JSON 输出字段格式（最高优先级，违反即校验失败）
 
 每条 item（headlines / sections 内的条目）的 **唯一合法结构** 如下：
 ```json
@@ -45,33 +61,7 @@
   - `summary`（应拆分为 `what` + `why`）
   - `category`（由 section key 隐含，无需此字段）
 
-## 0-B) 预读信息源（节省搜索时间，必须在搜索前执行）
-
-读取本地文件 `data/news-radar-24h.json`（由 `scripts/fetch_sources.py` 预先采集）。
-
-使用规则：
-- 取 `items_ai` 数组作为候选新闻池
-- 对其中每条记录：标题可作为线索，但必须用 web_search 验证原始来源和发布时间
-- 已被预读数据覆盖的厂商/事件，可跳过对应 Breaking query
-- 预读数据的 `published_at` 仅供参考，仍需确认 ≤48h
-- 如果文件不存在或为空，直接跳过此步骤，按原流程搜索
-
-## 0-C) 总体策略：分层执行（控制成本）
-
-- 第一层：预读数据 + 补搜（动态调整）
-  - 先检查预读数据覆盖了哪些厂商/事件
-  - 仅对未覆盖的领域执行 Breaking query（预期 4-6 条，而非全部 12 条）
-  - 全部 freshness=pd（过去24h）
-- 第二层：按需补搜（动态触发，2~4 条上限）
-  - 触发：栏目缺口 / 漏报检查命中但缺权威来源 / 发布时间不可确认
-  - ⛔ 硬约束：仅限 freshness=pd（24h）或 pd-2（48h）
-  - ⛔ 禁止使用 freshness=pw 或更宽范围
-  - 任何超过 48h 的新闻一律不得进入日报
-- 第三层：二次补时间（必须做一次）
-  - 若发布时间无法确认 ≤48h：必须再找第二来源补时间；补不到 → 直接剔除，不得入报
-  - ⛔ 禁止降级到「观察/补充」绕过时间限制
-
-## 1) Web（web_search）按需补搜（pd）
+## 2) Web（web_search）按需补搜（pd）
 
 根据预读数据覆盖情况，**仅搜索未覆盖的领域**。以下为完整 query 清单，跳过已覆盖的：
 
@@ -103,7 +93,7 @@
   - 补不到确认 ≤48h：禁止进入日报，无例外
 - ⛔ 禁止使用超过 48h 的新闻填充任何栏目
 
-## 2) X（bird）策略：关键词组 + watchlist 双轨 + 24h 过滤（带 fallback）
+## 3) X（bird）策略：关键词组 + watchlist 双轨 + 24h 过滤（带 fallback）
 
 2.1 关键词组（每组取最新 N 条，建议 N=30）
 英文 4 组：
@@ -129,7 +119,7 @@
   3) 再做时间判定：相对时间>48h剔除；时间缺失→降级「观察/补充」
 互动阈值建议：likes/retweets/replies 任一 ≥20（可调）；来自 watchlist 直接放行。
 
-## 3) 栏目规则（硬约束，不可违反）
+## 4) 栏目规则（硬约束，不可违反）
 
 每个 section 都是 list，可以为空但必须存在：
 - releases：目标 ≥2，下限 1
@@ -141,7 +131,7 @@
 
 若某栏目低于下限 → 必须触发补搜（第二层）
 
-## 4) headlines 与 sections 的关系（禁止重复）
+## 5) headlines 与 sections 的关系（禁止重复）
 
 ⛔ headlines 的 3-5 条新闻 **禁止** 与 sections 内的条目使用完全相同的 title
 - headlines 是「当天最重要的新闻总结/综述视角」
@@ -150,7 +140,7 @@
   - headlines：侧重宏观影响和意义
   - sections：侧重技术细节和事实
 
-## 5) x_highlights 来源约束
+## 6) x_highlights 来源约束
 
 - x_highlights 中的 url 字段必须是 x.com/ 或 twitter.com/ 链接
 - ⛔ 非 X 来源（如新闻网站、博客、官方公告页）不得放入 x_highlights
@@ -158,7 +148,7 @@
 - 若 bird 不可用导致无法获取真实推文，x_highlights 可以为空数组 []
   - 此时必须在 self_check.bird_status 说明原因
 
-## 6) 去重合并：dedupe_key（必须生成结构化对象数组）
+## 7) 去重合并：dedupe_key（必须生成结构化对象数组）
 
 - dedupe_key = { key, entity, product, event_type, version_or_date, sources_merged }
   - entity：OpenAI/Anthropic/字节/智谱/…
@@ -170,7 +160,7 @@
 - 若 X 高热但 web 缺：必须追加 1 次定向 web_search 补权威来源；补不到就写"仅社媒热度，暂无权威报道"。
 - ⛔ dedupe_keys 放在 self_check.dedupe_keys 中，格式为对象数组，不是字符串数组
 
-## 7) 今日漏报检查（必须执行；仅 48h 内）
+## 8) 今日漏报检查（必须执行；仅 48h 内）
 
 清单：
 - 字节：Seedance/即梦/豆包
@@ -185,7 +175,7 @@
 - ⛔ 补到的新闻必须确认 ≤48h，否则直接剔除
 - 补不到 ≤48h 内的权威来源：明确标注「今日无新动态」
 
-## 8) self_check 结构化字段（必须完整输出）
+## 9) self_check 结构化字段（必须完整输出）
 
 self_check 必须包含以下子字段（均为必填）：
 
@@ -220,7 +210,7 @@ self_check 必须包含以下子字段（均为必填）：
 }
 ```
 
-## 9) 交付物（严格按顺序执行）
+## 10) 交付物（严格按顺序执行）
 
 ```bash
 # 1. 写入 data/daily.json + data/techneme.json（你的唯一输出）
@@ -237,7 +227,7 @@ git add -A && git commit -m "AI日报 YYYY-MM-DD" && git push
 ⛔ 步骤 2 校验失败 → 必须修正 daily.json 后重试，不得跳过
 ⛔ 步骤 4 校验失败 → 必须排查原因后重试，不得跳过
 
-## 10) 推送文案（必须是最后输出，禁止再输出总结覆盖）
+## 11) 推送文案（必须是最后输出，禁止再输出总结覆盖）
 
 📰 AI日报 YYYY-MM-DD
 
@@ -257,7 +247,7 @@ emoji 对照表：🚀=releases, 📈=updates, 🔓=opensource, 📊=benchmarks,
 ⛔ 严禁：调用 message 工具；调用 cron.run 触发其他 job；输出状态总结覆盖推送文案。
 ⛔ 严禁：直接输出/修改 HTML 文件。你的唯一产出是 JSON 文件。
 
-## 11) 推送到 Telegram 群 Topic（必须执行）
+## 12) 推送到 Telegram 群 Topic（必须执行）
 
 任务完成后，你必须调用 message.send 推送日报到指定群：
 
