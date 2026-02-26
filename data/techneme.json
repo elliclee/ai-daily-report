@@ -1,62 +1,63 @@
 {
-  "date": "2026-02-21",
+  "date": "2026-02-26",
   "techneme_summary": {
     "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-02-21.html",
-    "title": "AI Daily Report 2026-02-21",
-    "summary": "Anthropic 推出 Claude Code Security，网络安全股大跌；Google 发布 Gemini 3.1 Pro；Amazon AI 工具导致 AWS 故障。"
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-02-26.html",
+    "title": "AI Daily Report 2026-02-26",
+    "summary": "英伟达财报验证AI需求持续强劲；Meta/AMD千亿美元协议打破芯片垄断；DeepSeek V4拒绝向美芯片厂商开放；Anthropic面临五角大楼黑名单威胁。"
   },
   "technemes": [
     {
-      "term": "Claude Code Security",
-      "definition": "Anthropic 推出的 AI 驱动代码安全扫描工具，可自动扫描代码库中的漏洞并建议补丁。",
-      "sources": ["https://www.bloomberg.com/news/articles/2026-02-20/cyber-stocks-slide-as-anthropic-unveils-claude-code-security", "https://cyberscoop.com/anthropic-claude-code-security-automated-security-review/"]
+      "term": "Grace Blackwell + NVLink",
+      "definition": "英伟达下一代AI芯片架构组合，被CEO黄仁勋称为"推理的王者"，代表英伟达在AI训练和推理领域的最新技术路线。",
+      "sources": ["https://wallstreetcn.com/livenews/3059067"]
     },
     {
-      "term": "Gemini 3.1 Pro",
-      "definition": "Google 推出的新一代 Gemini 模型，在 ARC-AGI-2 上得分 77.1%，推理性能相比前代翻倍。",
-      "sources": ["https://www.republicworld.com/tech/google-launches-gemini-31-pro-says-it-delivers-smarter-reasoning-for-complex-tasks", "https://www.androidheadlines.com/2026/02/google-gemini-3-1-pro-release-advanced-reasoning.html"]
+      "term": "Galaxy AI",
+      "definition": "三星在Galaxy S26系列中集成的AI系统，深度融合谷歌Gemini智能体，支持自动信息管理、跨应用操作等端侧AI功能。",
+      "sources": ["https://www.ithome.com/0/923/676.htm", "https://arstechnica.com/gadgets/2026/02/samsung-reveals-galaxy-s26-lineup-with-privacy-display-and-exclusive-gemini-smarts"]
     },
     {
-      "term": "Kiro (Amazon AI Tool)",
-      "definition": "Amazon 的 AI 编码代理，因误删环境导致中国地区 AWS 服务中断。",
-      "sources": ["https://www.reddit.com/r/technology/comments/1ra0p50/amazon_blames_human_employees_for_an_ai_coding/"]
+      "term": "隐私屏 (Privacy Display)",
+      "definition": "三星Galaxy S26 Ultra首发的防窥屏技术，通过AI驱动视线追踪，仅对设备正前方用户显示内容，侧面视角呈现模糊效果。",
+      "sources": ["https://www.ithome.com/0/923/675.htm"]
     },
     {
-      "term": "GLM-5",
-      "definition": "智谱发布的开源大模型，在 2 月开源质量榜单中登顶，在推理与代码评测中表现领先。",
-      "sources": ["https://x.com/mswnlz/status/2024996933652426935", "https://x.com/wlzh/status/2024996900953579905"]
+      "term": "Constitutional AI",
+      "definition": "Anthropic开发的AI安全训练方法，通过一套原则(Constitution)指导模型自我修正。当前正面临五角大楼要求移除"人在回路"安全机制的压力。",
+      "sources": ["https://x.com/J_Sterling__/status/2026810248502120923"]
     },
     {
-      "term": "LiveCodeBench",
-      "definition": "开源模型代码评测基准，DeepSeek V3.2 Speciale、GLM‑4.7（Thinking）、MiMo‑V2‑Flash 等在此基准上达到 87%–90%。",
-      "sources": ["https://x.com/mswnlz/status/2024996933652426935", "https://x.com/wlzh/status/2024996900953579905"]
+      "term": "6吉瓦AI芯片部署",
+      "definition": "Meta与AMD协议中的芯片部署规模，相当于约150万块AI加速器的功率，是迄今为止公开的最大的非英伟达AI芯片采购案。",
+      "sources": ["https://finance.yahoo.com/news/meta-strikes-100b-amd-chip-151516400.html"]
     },
     {
-      "term": "Seedance 2.0",
-      "definition": "字节跳动推出的视频生成模型，在多角色一致性、情感表达方面表现优异，大幅降低创作成本。",
-      "sources": ["https://x.com/heliogen_ai/status/2024997514437390804", "https://x.com/heliogen_ai/status/2024997817706496416"]
+      "term": "主权计算 (Sovereign Compute)",
+      "definition": "英伟达CFO提及的新兴业务领域，指各国政府为本国AI发展建设的本土化算力基础设施，预计将与AI基础设施业务同步增长。",
+      "sources": ["https://flash.jin10.com/detail/20260226061338644800"]
     }
   ],
   "self_check": {
     "coverage_analysis": {
       "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节跳动", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
-      "hit_vendors": ["Anthropic", "Google", "字节跳动", "智谱", "月之暗面"],
-      "missed_vendors": ["OpenAI", "Meta", "阿里", "腾讯", "百度"],
-      "missed_reason": "OpenAI/Meta/阿里/腾讯/百度在 48 小时窗口内未检索到权威来源的发布/更新；可视为无新动向"
+      "hit_vendors": ["OpenAI", "Anthropic", "Google", "Meta"],
+      "missed_vendors": ["字节跳动", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
+      "missed_reason": "虽有Seedance相关讨论但无新模型发布；国内厂商48小时内无重大发布动态"
     },
     "freshness_check": {
       "target_headlines": 12,
-      "actual_headlines": 5,
+      "actual_headlines": 7,
       "supplement_searches_triggered": false,
       "supplement_searches_count": 0,
-      "reason": "受限于速率限制（Brave Search Free 计划），无法跑完全部 12 个查询；优先采用已检索到且时效可确认的条目，确保 5 条头条均在 48h 以内"
+      "rejected_over_48h": [],
+      "reason": "基于预读数据和X验证，7条头条均确认时效性"
     },
     "bird_status": {
       "available": true,
       "cookies_found": true,
-      "fallback": "Bird 用于社媒动态验证与补充；主要信息来自 Web 搜索",
-      "x_highlights_source": "本次从 X/Twitter 获取了 3 条高热引用，均与当前头条相关"
+      "fallback": "Bird用于社媒验证",
+      "x_highlights_source": "X获取3条高互动推文"
     }
   }
 }

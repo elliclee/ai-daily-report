@@ -94,7 +94,7 @@ def main():
     must_str(daily, "date", "daily")
 
     headlines = must_list(daily, "headlines", "daily")
-    if not (3 <= len(headlines) <= 5):
+    if not (3 <= len(headlines) <= 12):
         die(f"daily.headlines must be 3-12 items (got {len(headlines)})")
     for idx, it in enumerate(headlines, 1):
         validate_item(it, f"daily.headlines[{idx}]")
@@ -150,7 +150,7 @@ def main():
     if not isinstance(summary, dict):
         die("daily.summary must be object")
     bullets = summary.get("bullets")
-    if not isinstance(bullets, list) or not (3 <= len(bullets) <= 5) or any((not isinstance(b, str) or not b.strip()) for b in bullets):
+    if not isinstance(bullets, list) or not (3 <= len(bullets) <= 12) or any((not isinstance(b, str) or not b.strip()) for b in bullets):
         die("daily.summary.bullets must be 3-12 non-empty strings")
     must_str(summary, "url", "daily.summary")
     must_str(summary, "archiveUrl", "daily.summary")

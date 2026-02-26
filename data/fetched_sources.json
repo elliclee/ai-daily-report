@@ -1,14 +1,59 @@
 {
-  "fetched_at": "2026-02-25T17:44:16.563597",
+  "fetched_at": "2026-02-25T23:30:08.392023",
   "sources": {
     "hackernews-top": {
       "type": "hackernews",
-      "count": 9,
+      "count": 10,
       "items": [
         {
-          "title": "Never Buy A .online Domain",
+          "title": "Jimi Hendrix was a systems engineer",
+          "url": "https://spectrum.ieee.org/jimi-hendrix-systems-engineer",
+          "score": 221,
+          "by": "tintinnabula",
+          "time": "2026-02-25T20:16:47",
+          "comments": "https://news.ycombinator.com/item?id=47157224",
+          "description": "How did Jimi Hendrix turn his guitar into a wave synthesizer? Dive into the engineering behind his iconic sound."
+        },
+        {
+          "title": "The Om Programming Language",
+          "url": "https://www.om-language.com/",
+          "score": 213,
+          "by": "tosh",
+          "time": "2026-02-25T17:48:21",
+          "comments": "https://news.ycombinator.com/item?id=47154971",
+          "description": ""
+        },
+        {
+          "title": "Bus stop balancing is fast, cheap, and effective",
+          "url": "https://worksinprogress.co/issue/the-united-states-needs-fewer-bus-stops/",
+          "score": 263,
+          "by": "surprisetalk",
+          "time": "2026-02-25T16:31:26",
+          "comments": "https://news.ycombinator.com/item?id=47153798",
+          "description": "Bus stop balancing is fast, cheap, and effective. It can turn a service people tolerate into one they’re happy to use."
+        },
+        {
+          "title": "Following 35% growth, solar has passed hydro on US grid",
+          "url": "https://arstechnica.com/science/2026/02/final-2025-data-is-in-us-energy-use-is-up-as-solar-passes-hydro/",
+          "score": 356,
+          "by": "rbanffy",
+          "time": "2026-02-25T16:44:54",
+          "comments": "https://news.ycombinator.com/item?id=47154009",
+          "description": "Coal makes a bit of a comeback, if only by accident."
+        },
+        {
+          "title": "How to fold the Blade Runner origami unicorn (1996)",
+          "url": "https://web.archive.org/web/20011104015933/www.linkclub.or.jp/~null/index_br.html",
+          "score": 240,
+          "by": "exvi",
+          "time": "2026-02-22T22:42:12",
+          "comments": "https://news.ycombinator.com/item?id=47115574",
+          "description": ""
+        },
+        {
+          "title": "Never buy a .online domain",
           "url": "https://www.0xsid.com/blog/online-tld-is-pain",
-          "score": 474,
+          "score": 635,
           "by": "ssiddharth",
           "time": "2026-02-25T13:31:17",
           "comments": "https://news.ycombinator.com/item?id=47151233",
@@ -17,74 +62,38 @@
         {
           "title": "Claude Code Remote Control",
           "url": "https://code.claude.com/docs/en/remote-control",
-          "score": 341,
+          "score": 465,
           "by": "empressplay",
           "time": "2026-02-25T07:22:56",
           "comments": "https://news.ycombinator.com/item?id=47148454",
           "description": "Continue a local Claude Code session from your phone, tablet, or any browser using Remote Control. Works with claude.ai/code and the Claude mobile app."
         },
         {
+          "title": "New accounts on HN more likely to use em-dashes",
+          "url": "https://www.marginalia.nu/weird-ai-crap/hn/",
+          "score": 556,
+          "by": "todsacerdoti",
+          "time": "2026-02-25T14:37:21",
+          "comments": "https://news.ycombinator.com/item?id=47152085",
+          "description": "I&rsquo;ve had this sense that HN has gotten absolutely innundated with bots last few months. First most obvious giveaway is the frequency with which you see accounts posting brilliant insights like\n13 60 well and t6ctctfuvuh7hguhuig8h88gd to f6gug7h8j8h6fzbuvubt GB I be cugttc fav uhz cb ibub8vgxgv"
+        },
+        {
           "title": "Danish government agency to ditch Microsoft software (2025)",
           "url": "https://therecord.media/denmark-digital-agency-microsoft-digital-independence",
-          "score": 565,
+          "score": 706,
           "by": "robtherobber",
           "time": "2026-02-25T10:16:22",
           "comments": "https://news.ycombinator.com/item?id=47149701",
           "description": "Denmark&#x27;s digital affairs ministry says it plans to switch to the open source LibreOffice software and away from Microsoft products as part of an effort to make the government more digitally independent."
         },
         {
-          "title": "I'm helping my dog vibe code games",
-          "url": "https://www.calebleak.com/posts/dog-game/",
-          "score": 1061,
-          "by": "cleak",
-          "time": "2026-02-24T17:15:17",
-          "comments": "https://news.ycombinator.com/item?id=47139675",
-          "description": "My cavapoo Momo vibe coded playable Godot games. All I had to do was teach her to type, route her input to Claude Code, and build the right tools."
-        },
-        {
-          "title": "Pi – A minimal terminal coding harness",
-          "url": "https://pi.dev",
-          "score": 527,
-          "by": "kristianpaul",
-          "time": "2026-02-24T21:53:59",
-          "comments": "https://news.ycombinator.com/item?id=47143754",
-          "description": "A terminal-based coding agent"
-        },
-        {
-          "title": "Mercury 2: Fast reasoning LLM powered by diffusion",
-          "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2",
-          "score": 315,
-          "by": "fittingopposite",
-          "time": "2026-02-24T22:46:23",
-          "comments": "https://news.ycombinator.com/item?id=47144464",
-          "description": "Today, we"
-        },
-        {
           "title": "US orders diplomats to fight data sovereignty initiatives",
           "url": "https://www.reuters.com/sustainability/boards-policy-regulation/us-orders-diplomats-fight-data-sovereignty-initiatives-2026-02-25/",
-          "score": 268,
+          "score": 411,
           "by": "colinhb",
           "time": "2026-02-25T14:48:17",
           "comments": "https://news.ycombinator.com/item?id=47152252",
           "description": ""
-        },
-        {
-          "title": "Show HN: Moonshine Open-Weights STT models – higher accuracy than WhisperLargev3",
-          "url": "https://github.com/moonshine-ai/moonshine",
-          "score": 299,
-          "by": "petewarden",
-          "time": "2026-02-24T21:54:07",
-          "comments": "https://news.ycombinator.com/item?id=47143755",
-          "description": "Fast and accurate automatic speech recognition (ASR) for edge devices - moonshine-ai/moonshine"
-        },
-        {
-          "title": "I pitched a roller coaster to Disneyland at age 10 in 1978",
-          "url": "https://wordglyph.xyz/one-piece-at-a-time",
-          "score": 527,
-          "by": "wordglyph",
-          "time": "2026-02-24T13:03:51",
-          "comments": "https://news.ycombinator.com/item?id=47136604",
-          "description": "A story about Disneyland"
         }
       ]
     },
