@@ -140,13 +140,38 @@ bird check && bird whoami
   - headlines：侧重宏观影响和意义
   - sections：侧重技术细节和事实
 
-## 6) x_highlights 来源约束
+## 6) x_highlights 来源约束与处理
 
-- x_highlights 中的 url 字段必须是 x.com/ 或 twitter.com/ 链接
+**来源约束：**
+- x_highlights 中的 url 字段必须是 x.com 或 twitter.com 链接
 - ⛔ 非 X 来源（如新闻网站、博客、官方公告页）不得放入 x_highlights
 - 非 X 来源的精彩引用应放入对应 section 条目的 sources 数组
 - 若 bird 不可用导致无法获取真实推文，x_highlights 可以为空数组 []
   - 此时必须在 self_check.bird_status 说明原因
+
+**内容处理（必须执行）：**
+对于每条选中的 X 推文，必须：
+1. **翻译**：将英文内容翻译成流畅的中文
+2. **总结**：用 1-2 句话概括核心观点（比翻译更精炼）
+3. **保留链接**：附上原贴入口 url
+
+**输出格式：**
+```json
+{
+  "author": "原文作者名",
+  "handle": "@用户名",
+  "text": "中文总结（1-2句话，概括核心观点）",
+  "url": "https://x.com/...",
+  "likes": 1234,
+  "reposts": 567,
+  "replies": 89
+}
+```
+
+**示例转换：**
+- 原文："Nvidia's Jensen Huang says markets 'got it wrong' on AI threat to software companies"
+- 处理："英伟达CEO黄仁勋表示，市场对AI威胁软件公司的判断'错了'，AI将扩大软件市场而非摧毁"
+- 链接：https://x.com/CNBC/status/...
 
 ## 7) 去重合并：dedupe_key（必须生成结构化对象数组）
 
