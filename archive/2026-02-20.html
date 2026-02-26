@@ -7,52 +7,496 @@
   <meta name="description" content="汇聚全球人工智能领域最新动态、技术突破与行业洞察">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --background: #f7f5f0;
-      --foreground: #1f1d1a;
-      --card: #faf9f6;
-      --muted-foreground: #6b6560;
-      --border: #e5e0d8;
-      --accent: #e85d04;
-    }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      background-color: var(--background);
-      color: var(--foreground);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-    .container { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
-    header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
-    .logo { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 600; color: var(--foreground); text-decoration: none; }
-    .date { font-size: 14px; color: var(--muted-foreground); }
-    .page-title { margin-bottom: 48px; }
-    .page-title h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 32px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 8px; }
-    .page-title p { font-size: 14px; color: var(--muted-foreground); }
-    section { margin-bottom: 48px; }
-    .section-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted-foreground); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
-    .news-item { padding: 20px 0; border-bottom: 1px solid var(--border); }
-    .news-item:last-child { border-bottom: none; }
-    .news-item h3 { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 17px; font-weight: 500; line-height: 1.5; margin-bottom: 12px; }
-    .news-tag { display: inline-block; background: rgba(232, 93, 4, 0.1); color: var(--accent); font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 20px; margin-right: 8px; vertical-align: middle; }
-    .news-item p { font-size: 14px; line-height: 1.7; color: var(--muted-foreground); margin-bottom: 12px; }
-    .news-source { font-size: 12px; color: #9a9590; }
-    .news-source a { color: #2563eb; text-decoration: none; }
-    .news-source a:hover { text-decoration: underline; }
-    .archive { padding-top: 32px; border-top: 1px solid var(--border); margin-top: 48px; }
-    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: #9a9590; }
-    footer p { margin-bottom: 4px; }
-    footer a { color: #2563eb; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    @media (max-width: 640px) {
-      .container { padding: 32px 16px 48px; }
-      .page-title h1 { font-size: 26px; }
-      .news-item h3 { font-size: 16px; }
-    }
-  </style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --background: #f4f6f9;
+            --foreground: #15181d;
+            --card: #ffffff;
+            --muted: #525b66;
+            --muted-foreground: #3f4750;
+            --border: #dde3ea;
+            --accent: #0f3d73;
+            --accent-soft: #edf2f8;
+            --green: #246748;
+            --green-bg: transparent;
+            --orange: #8a4d24;
+            --orange-bg: transparent;
+            --blue: #244e78;
+            --blue-bg: transparent;
+        }
+
+        body {
+            font-family: 'Source Sans 3', 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(180deg, #fafbfd 0%, var(--background) 100%);
+            color: var(--foreground);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 34px 20px 56px;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 14px;
+            align-items: end;
+            margin-bottom: 22px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid #cbd4df;
+        }
+
+        header h1 {
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: clamp(2rem, 4.6vw, 2.7rem);
+            font-weight: 700;
+            color: var(--foreground);
+            line-height: 1.12;
+            letter-spacing: -0.01em;
+        }
+
+        .logo {
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: clamp(2rem, 4.6vw, 2.7rem);
+            font-weight: 700;
+            color: var(--foreground);
+            line-height: 1.12;
+            letter-spacing: -0.01em;
+            text-decoration: none;
+        }
+
+        .date {
+            font-size: 0.95rem;
+            color: var(--muted);
+            font-weight: 400;
+            text-align: right;
+        }
+
+        .content-shell {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 20px 18px 10px;
+            box-shadow: 0 1px 8px rgba(21, 24, 29, 0.03);
+        }
+
+        .page-title {
+            margin: 4px 0 18px;
+        }
+
+        .page-title h1 {
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.35;
+            color: var(--foreground);
+        }
+
+        .page-title p {
+            margin-top: 6px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .section {
+            margin-bottom: 26px;
+        }
+
+        .section-title {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--foreground);
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #2f3741;
+        }
+
+        .card {
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 12px 12px;
+            margin-bottom: 10px;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .card:hover {
+                background: #f8fafd;
+                box-shadow: 0 2px 8px rgba(21, 24, 29, 0.04);
+            }
+        }
+
+        .card-headline {
+            display: flex;
+            gap: 0;
+            margin-bottom: 8px;
+        }
+
+        .card-badge {
+            display: none;
+        }
+
+        .card-title {
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.32rem;
+            font-weight: 600;
+            line-height: 1.38;
+            color: var(--foreground);
+        }
+
+        /* Compatibility for older archive pages using <article class="card"><h3>... */
+        .card h3 {
+            margin: 0;
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.28rem;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--foreground);
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
+        }
+
+        .card-meta {
+            font-size: 14px;
+            color: var(--muted);
+            margin: 6px 0 10px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .card-content {
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
+        }
+
+        .card-content strong {
+            color: var(--foreground);
+            font-weight: 600;
+        }
+
+        .card-sources {
+            margin-top: 12px;
+            padding-top: 10px;
+            border-top: none;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .card p.card-sources {
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .news-item {
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 12px 12px;
+            margin-bottom: 10px;
+        }
+
+        .news-item h3 {
+            margin: 0;
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.28rem;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--foreground);
+        }
+
+        .news-item p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
+        }
+
+        .news-source {
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .news-source a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .news-source a:hover {
+            color: #0b2f5a;
+        }
+
+        .news-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 1px 8px;
+            border-radius: 999px;
+            border: none;
+            background: #eef2f6;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--muted-foreground);
+        }
+
+        .card-sources a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .card p.card-sources a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .card-sources a:hover {
+            color: #0b2f5a;
+        }
+
+        .card p.card-sources a:hover {
+            color: #0b2f5a;
+        }
+
+        .highlight-box {
+            background: #fbfcfe;
+            border: none;
+            border-radius: 10px;
+            padding: 16px 14px;
+            margin-bottom: 12px;
+        }
+
+        .highlight-title {
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--muted-foreground);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .highlight-list {
+            list-style: none;
+            font-size: 15px;
+        }
+
+        .highlight-list li {
+            padding: 7px 0;
+            border-bottom: none;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .highlight-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* ── Tags ── */
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 1px 8px;
+            border-radius: 999px;
+            border: none;
+            background: #eef2f6;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--muted-foreground);
+        }
+
+        .tag-hot {
+            color: var(--orange);
+            background: #f4ece6;
+        }
+
+        .tag-new {
+            color: var(--green);
+            background: #e9f2ed;
+        }
+
+        .tag-official {
+            color: var(--blue);
+            background: #e8eef5;
+        }
+
+        .x-highlight {
+            background: transparent;
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin-top: 14px;
+            border: none;
+        }
+
+        .x-highlight h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--foreground);
+        }
+
+        .x-item {
+            display: block;
+            padding: 10px 0;
+            border-bottom: none;
+            font-size: 14px;
+        }
+
+        .x-item:last-child {
+            border-bottom: none;
+        }
+
+        .x-content {
+            width: 100%;
+        }
+
+        .x-author {
+            font-weight: 600;
+            color: var(--foreground);
+        }
+
+        .x-handle {
+            color: var(--muted);
+        }
+
+        .x-text {
+            margin-top: 4px;
+            line-height: 1.5;
+        }
+
+        .x-engagement {
+            display: flex;
+            gap: 16px;
+            margin-top: 8px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .x-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #263241;
+        }
+
+        .x-table th,
+        .x-table td {
+            text-align: left;
+            padding: 8px 6px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .x-table th {
+            font-weight: 600;
+            color: var(--muted-foreground);
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: none;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .footer a:hover {
+            color: #0b2f5a;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 860px) {
+            header {
+                grid-template-columns: 1fr;
+            }
+
+            .date {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 26px 14px 42px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .content-shell {
+                padding: 14px 10px 6px;
+                box-shadow: none;
+            }
+
+            .card {
+                padding: 14px 12px 12px;
+            }
+
+            .card-title {
+                font-size: 1.16rem;
+            }
+
+            .card-content {
+                font-size: 16px;
+            }
+
+            .card-meta,
+            .card-sources {
+                font-size: 14px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
 </head>
 <body>
   <div class="container">
@@ -65,72 +509,74 @@
       <p>X 热搜 · 全网新闻 · 深度洞察</p>
     </div>
     
-    <section>
+    
+    <main class="content-shell">
+<section class="section">
       <h2 class="section-title">头条新闻</h2>
       
-      <div class="news-item">
-        <h3><span class="news-tag">X 热议</span>Google Gemini 3.1 Pro 正式发布，1M 上下文窗口 + 2 倍推理性能提升</h3>
+      <div class="card">
+        <h3><span class="tag">X 热议</span>Google Gemini 3.1 Pro 正式发布，1M 上下文窗口 + 2 倍推理性能提升</h3>
         <p>Google 于 2 月 19 日发布 Gemini 3.1 Pro 预览版，支持 100 万 token 上下文窗口，推理性能较前代提升 2 倍以上。该模型专注于代理式工作流和多步推理任务，预览版现已开放，正式版将于近期发布。</p>
-        <div class="news-source">via <a href="https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/" target="_blank">TechCrunch</a> · <a href="https://venturebeat.com/technology/google-launches-gemini-3-1-pro-retaking-ai-crown-with-2x-reasoning" target="_blank">VentureBeat</a> · <span class="news-tag">X</span> <a href="https://x.com/AskMaximoAI/status/2024865964987224569" target="_blank">@AskMaximoAI</a></div>
+        <div class="card-sources">via <a href="https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/" target="_blank">TechCrunch</a> · <a href="https://venturebeat.com/technology/google-launches-gemini-3-1-pro-retaking-ai-crown-with-2x-reasoning" target="_blank">VentureBeat</a> · <span class="tag">X</span> <a href="https://x.com/AskMaximoAI/status/2024865964987224569" target="_blank">@AskMaximoAI</a></div>
       </div>
       
-      <div class="news-item">
-        <h3><span class="news-tag">X 热议</span>OpenAI o3 模型超越 94% 生物学专家</h3>
+      <div class="card">
+        <h3><span class="tag">X 热议</span>OpenAI o3 模型超越 94% 生物学专家</h3>
         <p>OpenAI 的 o3 模型在生物学专家基准测试中超越了 94% 的人类专家，标志着 AI 在专业科学领域的重大突破。</p>
-        <div class="news-source"><span class="news-tag">X</span> <a href="https://x.com/_tech_robot_/status/2024874206379294744" target="_blank">@_tech_robot_</a> via TechUK</div>
+        <div class="card-sources"><span class="tag">X</span> <a href="https://x.com/_tech_robot_/status/2024874206379294744" target="_blank">@_tech_robot_</a> via TechUK</div>
       </div>
       
-      <div class="news-item">
+      <div class="card">
         <h3>OpenAI 开发 AI 硬件设备，相关股票上涨</h3>
         <p>据 The Information 报道，OpenAI 正在开发 AI 硬件设备，引发市场关注。相关股票 COHR (+8.28%)、GLW (+7.18%)、LITE (+6.18%) 表现强劲。</p>
-        <div class="news-source"><span class="news-tag">X</span> <a href="https://x.com/wk_self/status/2024879028331495517" target="_blank">@wk_self</a> via The Information</div>
+        <div class="card-sources"><span class="tag">X</span> <a href="https://x.com/wk_self/status/2024879028331495517" target="_blank">@wk_self</a> via The Information</div>
       </div>
     </section>
     
-    <section>
+    <section class="section">
       <h2 class="section-title">新模型/工具</h2>
       
-      <div class="news-item">
-        <h3><span class="news-tag">X 热议</span>Gemini 3.1 Pro Preview 在 Maximo AI 平台上线</h3>
+      <div class="card">
+        <h3><span class="tag">X 热议</span>Gemini 3.1 Pro Preview 在 Maximo AI 平台上线</h3>
         <p>Google 最强大的推理模型 Gemini 3.1 Pro Preview 现已在 Maximo AI 平台开放使用。Pro 用户每日可获得高达 1,000 条免费消息额度。</p>
-        <div class="news-source"><span class="news-tag">X</span> <a href="https://x.com/AskMaximoAI/status/2024865964987224569" target="_blank">@AskMaximoAI</a></div>
+        <div class="card-sources"><span class="tag">X</span> <a href="https://x.com/AskMaximoAI/status/2024865964987224569" target="_blank">@AskMaximoAI</a></div>
       </div>
     </section>
     
-    <section>
+    <section class="section">
       <h2 class="section-title">企业动态</h2>
       
-      <div class="news-item">
+      <div class="card">
         <h3>AI 模型竞争加剧，科技巨头持续发布新模型</h3>
         <p>随着 AI 模型竞争白热化，OpenAI、Anthropic 和 Google 等科技公司在近期密集发布新模型，专注于代理式工作和多步推理能力的提升。</p>
-        <div class="news-source">via <a href="https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/" target="_blank">TechCrunch</a></div>
+        <div class="card-sources">via <a href="https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/" target="_blank">TechCrunch</a></div>
       </div>
     </section>
     
-    <section>
+    <section class="section">
       <h2 class="section-title">政策/监管</h2>
       
-      <div class="news-item">
+      <div class="card">
         <h3>今日暂无重大政策/监管新闻</h3>
         <p>今日未检索到 AI 相关重大政策或监管动态。</p>
-        <div class="news-source">bird + web_search</div>
+        <div class="card-sources">bird + web_search</div>
       </div>
     </section>
     
-    <section>
+    <section class="section">
       <h2 class="section-title">融合洞察</h2>
       
-      <div class="news-item">
+      <div class="card">
         <h3>AI 模型竞赛进入"推理能力"新阶段</h3>
         <p>今日 Google Gemini 3.1 Pro 的发布标志着 AI 竞争焦点从单纯的基准测试分数转向实际推理能力和上下文处理能力。1M token 上下文窗口的实现，使得 AI 可以处理完整的代码库、长篇文档和复杂的多步骤任务。同时，OpenAI o3 在生物学领域的突破显示 AI 正在从通用能力向专业领域渗透。</p>
         <p>硬件方面，OpenAI 入局 AI 设备的消息表明，AI 公司正在寻求从纯软件向软硬结合的生态扩展，这可能是下一阶段竞争的关键战场。</p>
       </div>
     </section>
     
-    <section>
+    <section class="section">
       <h2 class="section-title">市场数据速览</h2>
       
-      <div class="news-item">
+      <div class="card">
         <h3>AI 相关股票今日表现</h3>
         <p>受 OpenAI 开发 AI 硬件设备消息影响，相关股票上涨：</p>
         <ul>
@@ -138,11 +584,12 @@
           <li>$GLW: +7.18%</li>
           <li>$LITE: +6.18%</li>
         </ul>
-        <div class="news-source"><span class="news-tag">X</span> <a href="https://x.com/wk_self/status/2024879028331495517" target="_blank">@wk_self</a> via The Information</div>
+        <div class="card-sources"><span class="tag">X</span> <a href="https://x.com/wk_self/status/2024879028331495517" target="_blank">@wk_self</a> via The Information</div>
       </div>
     </section>
-    
-    <footer>
+        </main>
+
+    <footer class="footer">
       <p>2026 年 2 月 20 日 星期五</p>
       <p>AI Daily Report | AI 日报融合版</p>
       <p><a href="https://github.com/elliclee/ai-daily-report">GitHub</a></p>

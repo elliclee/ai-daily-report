@@ -8,7 +8,7 @@
     <meta content="汇聚全球人工智能领域最新动态、技术突破与行业洞察" name="description" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
     <style>
         *,
         *::before,
@@ -19,121 +19,179 @@
         }
 
         :root {
-            --background: #f5f4ef;
-            --foreground: #1a1714;
+            --background: #f4f6f9;
+            --foreground: #15181d;
             --card: #ffffff;
-            --muted: #8b8680;
-            --muted-foreground: #6b6560;
-            --border: #e8e4dc;
-            --accent: #c9a96e;
-            --accent-soft: #fdf8f0;
-            --green: #4a8b4a;
-            --green-bg: #f0f7f0;
-            --orange: #c77836;
-            --orange-bg: #fdf2e9;
-            --blue: #4a6b8b;
-            --blue-bg: #eef3f8;
+            --muted: #525b66;
+            --muted-foreground: #3f4750;
+            --border: #dde3ea;
+            --accent: #0f3d73;
+            --accent-soft: #edf2f8;
+            --green: #246748;
+            --green-bg: transparent;
+            --orange: #8a4d24;
+            --orange-bg: transparent;
+            --blue: #244e78;
+            --blue-bg: transparent;
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-            background-color: var(--background);
+            font-family: 'Source Sans 3', 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(180deg, #fafbfd 0%, var(--background) 100%);
             color: var(--foreground);
             line-height: 1.7;
             -webkit-font-smoothing: antialiased;
         }
 
         .container {
-            max-width: 680px;
+            max-width: 980px;
             margin: 0 auto;
-            padding: 48px 24px 64px;
+            padding: 34px 20px 56px;
         }
 
-        /* ── Header: large centered title like 02-12 ── */
         header {
-            text-align: center;
-            margin-bottom: 48px;
-            padding-bottom: 32px;
-            border-bottom: 2px solid var(--border);
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 14px;
+            align-items: end;
+            margin-bottom: 22px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid #cbd4df;
         }
 
         header h1 {
-            font-size: 2.4rem;
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: clamp(2rem, 4.6vw, 2.7rem);
             font-weight: 700;
             color: var(--foreground);
-            letter-spacing: -0.03em;
-            margin-bottom: 8px;
+            line-height: 1.12;
+            letter-spacing: -0.01em;
+        }
+
+        .logo {
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: clamp(2rem, 4.6vw, 2.7rem);
+            font-weight: 700;
+            color: var(--foreground);
+            line-height: 1.12;
+            letter-spacing: -0.01em;
+            text-decoration: none;
         }
 
         .date {
             font-size: 0.95rem;
             color: var(--muted);
             font-weight: 400;
+            text-align: right;
         }
 
-        /* ── Sections ── */
+        .content-shell {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 20px 18px 10px;
+            box-shadow: 0 1px 8px rgba(21, 24, 29, 0.03);
+        }
+
+        .page-title {
+            margin: 4px 0 18px;
+        }
+
+        .page-title h1 {
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.35;
+            color: var(--foreground);
+        }
+
+        .page-title p {
+            margin-top: 6px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
         .section {
-            margin-bottom: 44px;
+            margin-bottom: 26px;
         }
 
         .section-title {
-            font-size: 1.3rem;
+            font-size: 0.88rem;
             font-weight: 600;
             color: var(--foreground);
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--border);
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
             display: flex;
             align-items: center;
             gap: 10px;
+            color: #2f3741;
         }
 
-        /* ── Cards: clean, minimal ── */
         .card {
-            background: var(--card);
-            border-radius: 12px;
-            padding: 22px 24px;
-            margin-bottom: 14px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-            transition: transform 0.2s, box-shadow 0.2s;
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 12px 12px;
+            margin-bottom: 10px;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
         }
 
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+        @media (hover: hover) and (pointer: fine) {
+            .card:hover {
+                background: #f8fafd;
+                box-shadow: 0 2px 8px rgba(21, 24, 29, 0.04);
+            }
         }
 
         .card-headline {
             display: flex;
             gap: 0;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .card-badge {
             display: none;
-            /* remove the orange accent bar */
         }
 
         .card-title {
-            font-size: 1.05rem;
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.32rem;
             font-weight: 600;
-            line-height: 1.45;
+            line-height: 1.38;
             color: var(--foreground);
         }
 
+        /* Compatibility for older archive pages using <article class="card"><h3>... */
+        .card h3 {
+            margin: 0;
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.28rem;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--foreground);
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
+        }
+
         .card-meta {
-            font-size: 12px;
+            font-size: 14px;
             color: var(--muted);
-            margin: 6px 0 12px;
+            margin: 6px 0 10px;
             display: flex;
             gap: 12px;
             flex-wrap: wrap;
         }
 
         .card-content {
-            font-size: 14px;
-            line-height: 1.7;
-            color: #4a4743;
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
         }
 
         .card-content strong {
@@ -142,50 +200,119 @@
         }
 
         .card-sources {
-            margin-top: 14px;
-            padding-top: 14px;
-            border-top: 1px solid var(--border);
-            font-size: 12px;
+            margin-top: 12px;
+            padding-top: 10px;
+            border-top: none;
+            font-size: 14px;
             color: var(--muted);
         }
 
-        .card-sources a {
+        .card p.card-sources {
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .news-item {
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 12px 12px;
+            margin-bottom: 10px;
+        }
+
+        .news-item h3 {
+            margin: 0;
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.28rem;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--foreground);
+        }
+
+        .news-item p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
+        }
+
+        .news-source {
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .news-source a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .news-source a:hover {
+            color: #0b2f5a;
+        }
+
+        .news-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 1px 8px;
+            border-radius: 999px;
+            border: none;
+            background: #eef2f6;
+            font-size: 12px;
+            font-weight: 500;
             color: var(--muted-foreground);
-            text-decoration: none;
-            border-bottom: 1px solid var(--border);
+        }
+
+        .card-sources a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .card p.card-sources a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
         }
 
         .card-sources a:hover {
-            color: var(--foreground);
-            border-bottom-color: var(--foreground);
+            color: #0b2f5a;
         }
 
-        /* ── Highlight boxes (self-check / summary) ── */
+        .card p.card-sources a:hover {
+            color: #0b2f5a;
+        }
+
         .highlight-box {
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 14px;
+            background: #fbfcfe;
+            border: none;
+            border-radius: 10px;
+            padding: 16px 14px;
+            margin-bottom: 12px;
         }
 
         .highlight-title {
             font-weight: 600;
-            font-size: 14px;
-            margin-bottom: 12px;
+            font-size: 13px;
+            margin-bottom: 10px;
             display: flex;
             align-items: center;
             gap: 8px;
+            color: var(--muted-foreground);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
         }
 
         .highlight-list {
             list-style: none;
-            font-size: 14px;
+            font-size: 15px;
         }
 
         .highlight-list li {
             padding: 7px 0;
-            border-bottom: 1px solid var(--border);
+            border-bottom: none;
             display: flex;
             align-items: flex-start;
             gap: 8px;
@@ -199,72 +326,58 @@
         .tag {
             display: inline-flex;
             align-items: center;
-            padding: 2px 8px;
-            background: var(--background);
-            border-radius: 4px;
-            font-size: 11px;
+            padding: 1px 8px;
+            border-radius: 999px;
+            border: none;
+            background: #eef2f6;
+            font-size: 12px;
             font-weight: 500;
             color: var(--muted-foreground);
         }
 
         .tag-hot {
-            background: var(--orange-bg);
             color: var(--orange);
+            background: #f4ece6;
         }
 
         .tag-new {
-            background: var(--green-bg);
             color: var(--green);
+            background: #e9f2ed;
         }
 
         .tag-official {
-            background: var(--blue-bg);
             color: var(--blue);
+            background: #e8eef5;
         }
 
-        /* ── X (Twitter) highlights ── */
         .x-highlight {
-            background: var(--card);
-            border-radius: 12px;
-            padding: 16px 20px;
+            background: transparent;
+            border-radius: 10px;
+            padding: 12px 14px;
             margin-top: 14px;
-            border: 1px solid var(--border);
+            border: none;
         }
 
         .x-highlight h4 {
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 600;
             margin-bottom: 12px;
             color: var(--foreground);
         }
 
         .x-item {
-            display: flex;
-            gap: 12px;
+            display: block;
             padding: 10px 0;
-            border-bottom: 1px solid var(--border);
-            font-size: 13px;
+            border-bottom: none;
+            font-size: 14px;
         }
 
         .x-item:last-child {
             border-bottom: none;
         }
 
-        .x-avatar {
-            width: 32px;
-            height: 32px;
-            background: var(--background);
-            border-radius: 50%;
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            color: var(--muted);
-        }
-
         .x-content {
-            flex: 1;
+            width: 100%;
         }
 
         .x-author {
@@ -285,41 +398,103 @@
             display: flex;
             gap: 16px;
             margin-top: 8px;
-            font-size: 12px;
-            color: var(--muted);
-        }
-
-        /* ── Footer ── */
-        .footer {
-            text-align: center;
-            padding-top: 48px;
-            border-top: 1px solid var(--border);
-            color: var(--muted);
             font-size: 13px;
+            color: var(--muted);
         }
 
-        .footer a {
-            color: var(--foreground);
-            text-decoration: none;
+        .x-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #263241;
+        }
+
+        .x-table th,
+        .x-table td {
+            text-align: left;
+            padding: 8px 6px;
             border-bottom: 1px solid var(--border);
         }
 
-        .footer a:hover {
-            border-bottom-color: var(--foreground);
+        .x-table th {
+            font-weight: 600;
+            color: var(--muted-foreground);
         }
 
-        /* ── Responsive ── */
-        @media (max-width: 600px) {
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: none;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .footer a:hover {
+            color: #0b2f5a;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 860px) {
+            header {
+                grid-template-columns: 1fr;
+            }
+
+            .date {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 640px) {
             .container {
-                padding: 32px 16px 48px;
+                padding: 26px 14px 42px;
             }
 
             header h1 {
                 font-size: 1.8rem;
             }
 
+            .content-shell {
+                padding: 14px 10px 6px;
+                box-shadow: none;
+            }
+
             .card {
-                padding: 18px 20px;
+                padding: 14px 12px 12px;
+            }
+
+            .card-title {
+                font-size: 1.16rem;
+            }
+
+            .card-content {
+                font-size: 16px;
+            }
+
+            .card-meta,
+            .card-sources {
+                font-size: 14px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+                scroll-behavior: auto !important;
             }
         }
     </style>
@@ -332,6 +507,7 @@
             <div class="date">2026年2月19日</div>
         </header>
 
+        <main class="content-shell">
         <!-- 核心看点 -->
 <section class="section">
 <h2 class="section-title"><span>🔥</span> 核心看点</h2>
@@ -517,41 +693,31 @@
 <!-- X 高互动事件 -->
 <div class="x-highlight">
 <h4>🔥 X 高互动事件（8-12条）</h4>
-<div class="x-item">
-<div class="x-avatar">🧵</div>
-<div class="x-content">
+<div class="x-item"><div class="x-content">
 <div class="x-author">ElevenLabs <span class="x-handle">@elevenlabsio</span></div>
 <div class="x-text">Our agents - and their actions - can now be insured. Backed by AIUC-1 certification, we&#39;re the first company to secure insurance for AI voice agents.</div>
 <div style="margin-top:6px;"><a href="https://x.com/elevenlabsio/status/2024121832278757850" target="_blank" style="color: var(--accent); text-decoration:none; font-size:12px;">查看原贴 →</a></div>
 </div>
 </div>
-<div class="x-item">
-<div class="x-avatar">🧵</div>
-<div class="x-content">
+<div class="x-item"><div class="x-content">
 <div class="x-author">3分でわかるAIニュース <span class="x-handle">@3minsAI</span></div>
 <div class="x-text">⚡️ 3分でわかるAIニュース ⚡️ 2026/2/19(木) 第5号 ■ OpenAI: EVMbench公開 ■ Gemini: Lyria 3ベータ公開 ■ Claude: Figma MCPサーバーアップデート ■ Qwen: 3.5-397B FP8版重み公開 ■ ElevenLabs: AIUC-1認証取得</div>
 <div style="margin-top:6px;"><a href="https://x.com/3minsAI/status/2024272970588573875" target="_blank" style="color: var(--accent); text-decoration:none; font-size:12px;">查看原贴 →</a></div>
 </div>
 </div>
-<div class="x-item">
-<div class="x-avatar">🧵</div>
-<div class="x-content">
+<div class="x-item"><div class="x-content">
 <div class="x-author">Dumb Einstein <span class="x-handle">@DumbEinstein</span></div>
 <div class="x-text">Last week was one of the biggest weeks in AI history: Anthropic $30B at $380B valuation, Databricks $7B+ at $134B, Runway $315M. Models: Qwen 3.5 397B open-source, Grok 4.20, MiniMax M2.5, GLM-5 744B on Chinese chips.</div>
 <div style="margin-top:6px;"><a href="https://x.com/DumbEinstein/status/2024269656442200519" target="_blank" style="color: var(--accent); text-decoration:none; font-size:12px;">查看原贴 →</a></div>
 </div>
 </div>
-<div class="x-item">
-<div class="x-avatar">🧵</div>
-<div class="x-content">
+<div class="x-item"><div class="x-content">
 <div class="x-author">real_Bluecat <span class="x-handle">@real_Bluecat</span></div>
 <div class="x-text">Here&#39;s the shocker: GLM-5 is complete independence from US hardware. The model was trained exclusively on Huawei Ascend chips using the MindSpore framework.</div>
 <div style="margin-top:6px;"><a href="https://x.com/real_Bluecat/status/2024267498875478133" target="_blank" style="color: var(--accent); text-decoration:none; font-size:12px;">查看原贴 →</a></div>
 </div>
 </div>
-<div class="x-item">
-<div class="x-avatar">🧵</div>
-<div class="x-content">
+<div class="x-item"><div class="x-content">
 <div class="x-author">The Blue Cat <span class="x-handle">@real_Bluecat</span></div>
 <div class="x-text">Qwen 3.5-397B FP8 weights released, supporting SGLang inference framework. Plus model subscription plan launched. China&#39;s open source models are accelerating.</div>
 <div style="margin-top:6px;"><a href="https://x.com/3minsAI/status/2024272970588573875" target="_blank" style="color: var(--accent); text-decoration:none; font-size:12px;">查看原贴 →</a></div>
@@ -723,6 +889,7 @@
 </ul>
 </div>
 </section>
+        </main>
 
         <footer class="footer">
             <p>由 <strong>Clawy</strong> 生成于 2026-02-19 00:06 UTC</p>

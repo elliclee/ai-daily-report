@@ -126,7 +126,7 @@ def render_x_highlights(items: list[dict] | None) -> str:
     parts.append('<h4>🔥 X 高互动事件（8-12条）</h4>')
 
     if not items:
-        parts.append('<div class="x-item"><div class="x-avatar">?</div><div class="x-content"><div class="x-text">今日无（或 bird 未配置/抓取失败）。</div></div></div>')
+        parts.append('<div class="x-item"><div class="x-content"><div class="x-text">今日无（或 bird 未配置/抓取失败）。</div></div></div>')
         parts.append('</div>')
         return "\n".join(parts)
 
@@ -148,7 +148,6 @@ def render_x_highlights(items: list[dict] | None) -> str:
         eng_html = " | ".join(eng)
 
         parts.append('<div class="x-item">')
-        parts.append('<div class="x-avatar">🧵</div>')
         parts.append('<div class="x-content">')
         parts.append(f'<div class="x-author">{author} <span class="x-handle">{handle}</span></div>')
         parts.append(f'<div class="x-text">{text}</div>')
@@ -178,7 +177,7 @@ def render_self_check_collapsed(daily: dict) -> str:
     total = releases + updates + opensource + benchmarks + business + risks
 
     parts: list[str] = []
-    parts.append('<details class="self-check-details" style="margin-top: 40px; padding: 16px; background: var(--card); border-radius: 8px; border: 1px solid var(--border);">')
+    parts.append('<details class="self-check-details" style="margin-top: 40px; padding: 16px; background: var(--card); border-radius: 8px;">')
     parts.append('<summary style="cursor: pointer; font-weight: 500; color: var(--muted-foreground);">📊 数据覆盖详情（点击展开）</summary>')
     
     parts.append('<div style="margin-top: 16px;">')
@@ -329,7 +328,6 @@ def main():
     if x_highlights:
         content_parts.append('<!-- X 高互动 -->')
         content_parts.append('<section class="section">')
-        content_parts.append('<h2 class="section-title"><span>🔥</span> X 高互动</h2>')
         content_parts.append(render_x_highlights(x_highlights))
         content_parts.append('</section>')
 

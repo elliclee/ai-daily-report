@@ -4,26 +4,495 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Daily Report | 2026年2月17日</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Inter', sans-serif; background: #f5f4ef; color: #1a1714; line-height: 1.7; }
-        .container { max-width: 680px; margin: 0 auto; padding: 48px 24px; }
-        header { text-align: center; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 2px solid #e8e4dc; }
-        header h1 { font-size: 2.4rem; font-weight: 700; margin-bottom: 8px; }
-        .date { color: #8b8680; }
-        .section { margin-bottom: 44px; }
-        .section-title { font-size: 1.3rem; font-weight: 600; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #e8e4dc; }
-        .card { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
-        .card h3 { font-size: 1.15rem; margin-bottom: 12px; }
-        .card-meta { font-size: 0.85rem; color: #8b8680; margin-bottom: 12px; }
-        .card-content { font-size: 0.95rem; line-height: 1.8; }
-        .tag { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 500; margin-right: 6px; }
-        .tag-hot { background: #fdf2e9; color: #c77836; }
-        .x-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
-        .x-table th, .x-table td { padding: 12px; text-align: left; border-bottom: 1px solid #e8e4dc; }
-        .x-table th { font-weight: 600; }
-        .footer { text-align: center; padding-top: 48px; color: #8b8680; font-size: 13px; }
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --background: #f4f6f9;
+            --foreground: #15181d;
+            --card: #ffffff;
+            --muted: #525b66;
+            --muted-foreground: #3f4750;
+            --border: #dde3ea;
+            --accent: #0f3d73;
+            --accent-soft: #edf2f8;
+            --green: #246748;
+            --green-bg: transparent;
+            --orange: #8a4d24;
+            --orange-bg: transparent;
+            --blue: #244e78;
+            --blue-bg: transparent;
+        }
+
+        body {
+            font-family: 'Source Sans 3', 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(180deg, #fafbfd 0%, var(--background) 100%);
+            color: var(--foreground);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 34px 20px 56px;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 14px;
+            align-items: end;
+            margin-bottom: 22px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid #cbd4df;
+        }
+
+        header h1 {
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: clamp(2rem, 4.6vw, 2.7rem);
+            font-weight: 700;
+            color: var(--foreground);
+            line-height: 1.12;
+            letter-spacing: -0.01em;
+        }
+
+        .logo {
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: clamp(2rem, 4.6vw, 2.7rem);
+            font-weight: 700;
+            color: var(--foreground);
+            line-height: 1.12;
+            letter-spacing: -0.01em;
+            text-decoration: none;
+        }
+
+        .date {
+            font-size: 0.95rem;
+            color: var(--muted);
+            font-weight: 400;
+            text-align: right;
+        }
+
+        .content-shell {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 20px 18px 10px;
+            box-shadow: 0 1px 8px rgba(21, 24, 29, 0.03);
+        }
+
+        .page-title {
+            margin: 4px 0 18px;
+        }
+
+        .page-title h1 {
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.35;
+            color: var(--foreground);
+        }
+
+        .page-title p {
+            margin-top: 6px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .section {
+            margin-bottom: 26px;
+        }
+
+        .section-title {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--foreground);
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #2f3741;
+        }
+
+        .card {
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 12px 12px;
+            margin-bottom: 10px;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .card:hover {
+                background: #f8fafd;
+                box-shadow: 0 2px 8px rgba(21, 24, 29, 0.04);
+            }
+        }
+
+        .card-headline {
+            display: flex;
+            gap: 0;
+            margin-bottom: 8px;
+        }
+
+        .card-badge {
+            display: none;
+        }
+
+        .card-title {
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.32rem;
+            font-weight: 600;
+            line-height: 1.38;
+            color: var(--foreground);
+        }
+
+        /* Compatibility for older archive pages using <article class="card"><h3>... */
+        .card h3 {
+            margin: 0;
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.28rem;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--foreground);
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
+        }
+
+        .card-meta {
+            font-size: 14px;
+            color: var(--muted);
+            margin: 6px 0 10px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .card-content {
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
+        }
+
+        .card-content strong {
+            color: var(--foreground);
+            font-weight: 600;
+        }
+
+        .card-sources {
+            margin-top: 12px;
+            padding-top: 10px;
+            border-top: none;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .card p.card-sources {
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .news-item {
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 12px 12px;
+            margin-bottom: 10px;
+        }
+
+        .news-item h3 {
+            margin: 0;
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.28rem;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--foreground);
+        }
+
+        .news-item p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
+        }
+
+        .news-source {
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .news-source a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .news-source a:hover {
+            color: #0b2f5a;
+        }
+
+        .news-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 1px 8px;
+            border-radius: 999px;
+            border: none;
+            background: #eef2f6;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--muted-foreground);
+        }
+
+        .card-sources a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .card p.card-sources a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .card-sources a:hover {
+            color: #0b2f5a;
+        }
+
+        .card p.card-sources a:hover {
+            color: #0b2f5a;
+        }
+
+        .highlight-box {
+            background: #fbfcfe;
+            border: none;
+            border-radius: 10px;
+            padding: 16px 14px;
+            margin-bottom: 12px;
+        }
+
+        .highlight-title {
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--muted-foreground);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .highlight-list {
+            list-style: none;
+            font-size: 15px;
+        }
+
+        .highlight-list li {
+            padding: 7px 0;
+            border-bottom: none;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .highlight-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* ── Tags ── */
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 1px 8px;
+            border-radius: 999px;
+            border: none;
+            background: #eef2f6;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--muted-foreground);
+        }
+
+        .tag-hot {
+            color: var(--orange);
+            background: #f4ece6;
+        }
+
+        .tag-new {
+            color: var(--green);
+            background: #e9f2ed;
+        }
+
+        .tag-official {
+            color: var(--blue);
+            background: #e8eef5;
+        }
+
+        .x-highlight {
+            background: transparent;
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin-top: 14px;
+            border: none;
+        }
+
+        .x-highlight h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--foreground);
+        }
+
+        .x-item {
+            display: block;
+            padding: 10px 0;
+            border-bottom: none;
+            font-size: 14px;
+        }
+
+        .x-item:last-child {
+            border-bottom: none;
+        }
+
+        .x-content {
+            width: 100%;
+        }
+
+        .x-author {
+            font-weight: 600;
+            color: var(--foreground);
+        }
+
+        .x-handle {
+            color: var(--muted);
+        }
+
+        .x-text {
+            margin-top: 4px;
+            line-height: 1.5;
+        }
+
+        .x-engagement {
+            display: flex;
+            gap: 16px;
+            margin-top: 8px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .x-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #263241;
+        }
+
+        .x-table th,
+        .x-table td {
+            text-align: left;
+            padding: 8px 6px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .x-table th {
+            font-weight: 600;
+            color: var(--muted-foreground);
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: none;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .footer a:hover {
+            color: #0b2f5a;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 860px) {
+            header {
+                grid-template-columns: 1fr;
+            }
+
+            .date {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 26px 14px 42px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .content-shell {
+                padding: 14px 10px 6px;
+                box-shadow: none;
+            }
+
+            .card {
+                padding: 14px 12px 12px;
+            }
+
+            .card-title {
+                font-size: 1.16rem;
+            }
+
+            .card-content {
+                font-size: 16px;
+            }
+
+            .card-meta,
+            .card-sources {
+                font-size: 14px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -33,6 +502,7 @@
             <div class="date">2026年2月17日</div>
         </header>
 
+        <main class="content-shell">
         <section class="section">
             <h2 class="section-title">🔥 本周最重要的 5 个变化</h2>
             
@@ -153,6 +623,7 @@
                 </div>
             </div>
         </section>
+        </main>
 
         <div class="footer">
             <p>数据来源：X 平台实时搜索 | 采集时间：2026-02-17</p>
