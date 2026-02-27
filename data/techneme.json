@@ -1,63 +1,33 @@
 {
-  "date": "2026-02-26",
-  "techneme_summary": {
-    "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-02-26.html",
-    "title": "AI Daily Report 2026-02-26",
-    "summary": "英伟达财报验证AI需求持续强劲；Meta/AMD千亿美元协议打破芯片垄断；DeepSeek V4拒绝向美芯片厂商开放；Anthropic面临五角大楼黑名单威胁。"
-  },
+  "version": "2.0",
+  "date": "2026-02-27",
   "technemes": [
     {
-      "term": "Grace Blackwell + NVLink",
-      "definition": "英伟达下一代AI芯片架构组合，被CEO黄仁勋称为"推理的王者"，代表英伟达在AI训练和推理领域的最新技术路线。",
-      "sources": ["https://wallstreetcn.com/livenews/3059067"]
+      "title": "AI图像生成进入速度与质量平衡新阶段",
+      "thesis": "谷歌Nano Banana 2的发布标志着AI图像生成从单纯追求质量转向速度与质量的平衡，Flash速度+Pro质量成为新标准。",
+      "what": "新一代图像模型通过架构优化，在保持生成质量的同时大幅提升推理速度，使实时图像生成成为可能。",
+      "implication": "这将推动AI图像生成从专业创作工具向实时交互应用演进，可能彻底改变内容创作工作流程。",
+      "sources": [
+        {"name": "Ars Technica", "url": "https://arstechnica.com/ai/2026/02/google-releases-nano-banana-2-ai-image-generator-promises-pro-results-with-flash-speed/"}
+      ]
     },
     {
-      "term": "Galaxy AI",
-      "definition": "三星在Galaxy S26系列中集成的AI系统，深度融合谷歌Gemini智能体，支持自动信息管理、跨应用操作等端侧AI功能。",
-      "sources": ["https://www.ithome.com/0/923/676.htm", "https://arstechnica.com/gadgets/2026/02/samsung-reveals-galaxy-s26-lineup-with-privacy-display-and-exclusive-gemini-smarts"]
+      "title": "政府与AI公司的控制权之争白热化",
+      "thesis": "美国国防部与Anthropic的冲突表明，政府机构与AI公司就数据使用和控制权的分歧正在激化，可能成为行业监管转折点。",
+      "what": "五角大楼采取强硬态度要求不受限使用AI工具，反映出政府对AI能力的迫切需求与商业公司安全政策之间的根本冲突。",
+      "implication": "此类争端可能推动更明确的AI政府采购法规出台，同时也可能影响AI公司的安全策略设计。",
+      "sources": [
+        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-02-26/pentagon-hardens-its-ultimatum-to-anthropic-in-feud-over-ai-use"}
+      ]
     },
     {
-      "term": "隐私屏 (Privacy Display)",
-      "definition": "三星Galaxy S26 Ultra首发的防窥屏技术，通过AI驱动视线追踪，仅对设备正前方用户显示内容，侧面视角呈现模糊效果。",
-      "sources": ["https://www.ithome.com/0/923/675.htm"]
-    },
-    {
-      "term": "Constitutional AI",
-      "definition": "Anthropic开发的AI安全训练方法，通过一套原则(Constitution)指导模型自我修正。当前正面临五角大楼要求移除"人在回路"安全机制的压力。",
-      "sources": ["https://x.com/J_Sterling__/status/2026810248502120923"]
-    },
-    {
-      "term": "6吉瓦AI芯片部署",
-      "definition": "Meta与AMD协议中的芯片部署规模，相当于约150万块AI加速器的功率，是迄今为止公开的最大的非英伟达AI芯片采购案。",
-      "sources": ["https://finance.yahoo.com/news/meta-strikes-100b-amd-chip-151516400.html"]
-    },
-    {
-      "term": "主权计算 (Sovereign Compute)",
-      "definition": "英伟达CFO提及的新兴业务领域，指各国政府为本国AI发展建设的本土化算力基础设施，预计将与AI基础设施业务同步增长。",
-      "sources": ["https://flash.jin10.com/detail/20260226061338644800"]
+      "title": "AI引发的企业裁员潮开始显现",
+      "thesis": "Block裁员近半标志着AI驱动的企业重组进入实质阶段，效率提升与就业冲击的矛盾将更加突出。",
+      "what": "企业开始系统性利用AI重构工作流程，传统岗位被大规模替代的趋势从制造业向科技行业蔓延。",
+      "implication": "这可能导致全球性就业结构快速调整，各国政府需要加速制定AI时代的就业政策和再培训计划。",
+      "sources": [
+        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-02-26/jack-dorsey-s-block-slashes-nearly-half-of-workforce-in-ai-bet"}
+      ]
     }
-  ],
-  "self_check": {
-    "coverage_analysis": {
-      "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节跳动", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
-      "hit_vendors": ["OpenAI", "Anthropic", "Google", "Meta"],
-      "missed_vendors": ["字节跳动", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
-      "missed_reason": "虽有Seedance相关讨论但无新模型发布；国内厂商48小时内无重大发布动态"
-    },
-    "freshness_check": {
-      "target_headlines": 12,
-      "actual_headlines": 7,
-      "supplement_searches_triggered": false,
-      "supplement_searches_count": 0,
-      "rejected_over_48h": [],
-      "reason": "基于预读数据和X验证，7条头条均确认时效性"
-    },
-    "bird_status": {
-      "available": true,
-      "cookies_found": true,
-      "fallback": "Bird用于社媒验证",
-      "x_highlights_source": "X获取3条高互动推文"
-    }
-  }
+  ]
 }

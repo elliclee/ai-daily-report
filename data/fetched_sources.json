@@ -1,99 +1,72 @@
 {
-  "fetched_at": "2026-02-25T23:30:08.392023",
+  "fetched_at": "2026-02-26T23:30:06.037425",
   "sources": {
     "hackernews-top": {
       "type": "hackernews",
-      "count": 10,
+      "count": 7,
       "items": [
         {
-          "title": "Jimi Hendrix was a systems engineer",
-          "url": "https://spectrum.ieee.org/jimi-hendrix-systems-engineer",
-          "score": 221,
-          "by": "tintinnabula",
-          "time": "2026-02-25T20:16:47",
-          "comments": "https://news.ycombinator.com/item?id=47157224",
-          "description": "How did Jimi Hendrix turn his guitar into a wave synthesizer? Dive into the engineering behind his iconic sound."
+          "title": "Statement from Dario Amodei on Our Discussions with the Department of War",
+          "url": "https://www.anthropic.com/news/statement-department-of-war",
+          "score": 216,
+          "by": "qwertox",
+          "time": "2026-02-26T22:42:47",
+          "comments": "https://news.ycombinator.com/item?id=47173121",
+          "description": "A statement from our CEO on national security uses of AI"
         },
         {
-          "title": "The Om Programming Language",
-          "url": "https://www.om-language.com/",
-          "score": 213,
-          "by": "tosh",
-          "time": "2026-02-25T17:48:21",
-          "comments": "https://news.ycombinator.com/item?id=47154971",
+          "title": "Layoffs at Block",
+          "url": "https://twitter.com/jack/status/2027129697092731343",
+          "score": 241,
+          "by": "mlex",
+          "time": "2026-02-26T21:17:56",
+          "comments": "https://news.ycombinator.com/item?id=47172119",
           "description": ""
         },
         {
-          "title": "Bus stop balancing is fast, cheap, and effective",
-          "url": "https://worksinprogress.co/issue/the-united-states-needs-fewer-bus-stops/",
-          "score": 263,
-          "by": "surprisetalk",
-          "time": "2026-02-25T16:31:26",
-          "comments": "https://news.ycombinator.com/item?id=47153798",
-          "description": "Bus stop balancing is fast, cheap, and effective. It can turn a service people tolerate into one they’re happy to use."
-        },
-        {
-          "title": "Following 35% growth, solar has passed hydro on US grid",
-          "url": "https://arstechnica.com/science/2026/02/final-2025-data-is-in-us-energy-use-is-up-as-solar-passes-hydro/",
-          "score": 356,
-          "by": "rbanffy",
-          "time": "2026-02-25T16:44:54",
-          "comments": "https://news.ycombinator.com/item?id=47154009",
-          "description": "Coal makes a bit of a comeback, if only by accident."
-        },
-        {
-          "title": "How to fold the Blade Runner origami unicorn (1996)",
-          "url": "https://web.archive.org/web/20011104015933/www.linkclub.or.jp/~null/index_br.html",
-          "score": 240,
-          "by": "exvi",
-          "time": "2026-02-22T22:42:12",
-          "comments": "https://news.ycombinator.com/item?id=47115574",
+          "title": "AirSnitch: Demystifying and breaking client isolation in Wi-Fi networks [pdf]",
+          "url": "https://www.ndss-symposium.org/wp-content/uploads/2026-f1282-paper.pdf",
+          "score": 304,
+          "by": "DamnInteresting",
+          "time": "2026-02-26T15:55:48",
+          "comments": "https://news.ycombinator.com/item?id=47167763",
           "description": ""
         },
         {
-          "title": "Never buy a .online domain",
-          "url": "https://www.0xsid.com/blog/online-tld-is-pain",
-          "score": 635,
-          "by": "ssiddharth",
-          "time": "2026-02-25T13:31:17",
-          "comments": "https://news.ycombinator.com/item?id=47151233",
-          "description": ""
+          "title": "Will vibe coding end like the maker movement?",
+          "url": "https://read.technically.dev/p/vibe-coding-and-the-maker-movement",
+          "score": 264,
+          "by": "itunpredictable",
+          "time": "2026-02-26T16:07:11",
+          "comments": "https://news.ycombinator.com/item?id=47167931",
+          "description": "Is your vibe-coded app a Crapject or a Gift?"
         },
         {
-          "title": "Claude Code Remote Control",
-          "url": "https://code.claude.com/docs/en/remote-control",
-          "score": 465,
-          "by": "empressplay",
-          "time": "2026-02-25T07:22:56",
-          "comments": "https://news.ycombinator.com/item?id=47148454",
-          "description": "Continue a local Claude Code session from your phone, tablet, or any browser using Remote Control. Works with claude.ai/code and the Claude mobile app."
+          "title": "Show HN: Terminal Phone – E2EE Walkie Talkie from the Command Line",
+          "url": "https://gitlab.com/here_forawhile/terminalphone",
+          "score": 279,
+          "by": "smalltorch",
+          "time": "2026-02-26T10:40:45",
+          "comments": "https://news.ycombinator.com/item?id=47164270",
+          "description": "GitLab.com"
         },
         {
-          "title": "New accounts on HN more likely to use em-dashes",
-          "url": "https://www.marginalia.nu/weird-ai-crap/hn/",
-          "score": 556,
-          "by": "todsacerdoti",
-          "time": "2026-02-25T14:37:21",
-          "comments": "https://news.ycombinator.com/item?id=47152085",
-          "description": "I&rsquo;ve had this sense that HN has gotten absolutely innundated with bots last few months. First most obvious giveaway is the frequency with which you see accounts posting brilliant insights like\n13 60 well and t6ctctfuvuh7hguhuig8h88gd to f6gug7h8j8h6fzbuvubt GB I be cugttc fav uhz cb ibub8vgxgv"
+          "title": "Nano Banana 2: Google's latest AI image generation model",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/",
+          "score": 452,
+          "by": "davidbarker",
+          "time": "2026-02-26T16:02:37",
+          "comments": "https://news.ycombinator.com/item?id=47167858",
+          "description": "Our latest image generation model offers advanced world knowledge, production-ready specs, subject consistency and more, all at Flash speed."
         },
         {
-          "title": "Danish government agency to ditch Microsoft software (2025)",
-          "url": "https://therecord.media/denmark-digital-agency-microsoft-digital-independence",
-          "score": 706,
-          "by": "robtherobber",
-          "time": "2026-02-25T10:16:22",
-          "comments": "https://news.ycombinator.com/item?id=47149701",
-          "description": "Denmark&#x27;s digital affairs ministry says it plans to switch to the open source LibreOffice software and away from Microsoft products as part of an effort to make the government more digitally independent."
-        },
-        {
-          "title": "US orders diplomats to fight data sovereignty initiatives",
-          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/us-orders-diplomats-fight-data-sovereignty-initiatives-2026-02-25/",
-          "score": 411,
-          "by": "colinhb",
-          "time": "2026-02-25T14:48:17",
-          "comments": "https://news.ycombinator.com/item?id=47152252",
-          "description": ""
+          "title": "Banned in California",
+          "url": "https://www.bannedincalifornia.org/",
+          "score": 527,
+          "by": "pie_flavor",
+          "time": "2026-02-25T23:16:40",
+          "comments": "https://news.ycombinator.com/item?id=47159430",
+          "description": "An interactive visualization of the industrial processes effectively banned by California"
         }
       ]
     },
@@ -102,11 +75,11 @@
       "count": 5,
       "items": [
         {
-          "repo": "D4Vinci/Scrapling",
-          "name": "Scrapling",
-          "url": "https://github.com/D4Vinci/Scrapling",
-          "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
-          "stars_today": "1828",
+          "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+          "name": "Agent-Skills-for-Context-Engineering",
+          "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+          "description": "A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent systems. Use when building, optimizing, or debugging agent systems that require effective context management.",
+          "stars_today": "923",
           "language": "Python"
         },
         {
@@ -114,31 +87,31 @@
           "name": "skills",
           "url": "https://github.com/huggingface/skills",
           "description": "Contribute to huggingface/skills development by creating an account on GitHub.",
-          "stars_today": "1538",
+          "stars_today": "711",
           "language": "Python"
         },
         {
-          "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
-          "name": "Agent-Skills-for-Context-Engineering",
-          "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
-          "description": "A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent systems. Use when building, optimizing, or debugging agent systems that require effective context management.",
-          "stars_today": "1043",
+          "repo": "GVCLab/PersonaLive",
+          "name": "PersonaLive",
+          "url": "https://github.com/GVCLab/PersonaLive",
+          "description": "[CVPR 2026] PersonaLive! : Expressive Portrait Image Animation for Live Streaming",
+          "stars_today": "65",
           "language": "Python"
         },
         {
-          "repo": "datawhalechina/hello-agents",
-          "name": "hello-agents",
-          "url": "https://github.com/datawhalechina/hello-agents",
-          "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
-          "stars_today": "283",
+          "repo": "deepseek-ai/DeepSeek-V3",
+          "name": "DeepSeek-V3",
+          "url": "https://github.com/deepseek-ai/DeepSeek-V3",
+          "description": "Contribute to deepseek-ai/DeepSeek-V3 development by creating an account on GitHub.",
+          "stars_today": "34",
           "language": "Python"
         },
         {
-          "repo": "VectifyAI/PageIndex",
-          "name": "PageIndex",
-          "url": "https://github.com/VectifyAI/PageIndex",
-          "description": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
-          "stars_today": "378",
+          "repo": "alibaba/OpenSandbox",
+          "name": "OpenSandbox",
+          "url": "https://github.com/alibaba/OpenSandbox",
+          "description": "OpenSandbox is a general-purpose sandbox platform for AI applications, offering multi-language SDKs, unified sandbox APIs, and Docker/Kubernetes runtimes for scenarios like Coding Agents, GUI Agents, Agent Evaluation, AI Code Execution, and RL Training.",
+          "stars_today": "83",
           "language": "Python"
         }
       ]
