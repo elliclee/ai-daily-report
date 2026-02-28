@@ -1,33 +1,20 @@
 {
-  "version": "2.0",
-  "date": "2026-02-27",
+  "date": "2026-02-28",
   "technemes": [
     {
-      "title": "AI图像生成进入速度与质量平衡新阶段",
-      "thesis": "谷歌Nano Banana 2的发布标志着AI图像生成从单纯追求质量转向速度与质量的平衡，Flash速度+Pro质量成为新标准。",
-      "what": "新一代图像模型通过架构优化，在保持生成质量的同时大幅提升推理速度，使实时图像生成成为可能。",
-      "implication": "这将推动AI图像生成从专业创作工具向实时交互应用演进，可能彻底改变内容创作工作流程。",
-      "sources": [
-        {"name": "Ars Technica", "url": "https://arstechnica.com/ai/2026/02/google-releases-nano-banana-2-ai-image-generator-promises-pro-results-with-flash-speed/"}
-      ]
+      "term": "Agentic Engineering",
+      "context": "Andrej Karpathy提出的新概念，指开发者不再编写代码，而是通过自然语言指挥AI代理完成任务。这标志着从"编码"到"任务编排"的范式转变。",
+      "sources": [{"name": "X/Twitter", "url": "https://x.com/karpathy"}]
     },
     {
-      "title": "政府与AI公司的控制权之争白热化",
-      "thesis": "美国国防部与Anthropic的冲突表明，政府机构与AI公司就数据使用和控制权的分歧正在激化，可能成为行业监管转折点。",
-      "what": "五角大楼采取强硬态度要求不受限使用AI工具，反映出政府对AI能力的迫切需求与商业公司安全政策之间的根本冲突。",
-      "implication": "此类争端可能推动更明确的AI政府采购法规出台，同时也可能影响AI公司的安全策略设计。",
-      "sources": [
-        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-02-26/pentagon-hardens-its-ultimatum-to-anthropic-in-feud-over-ai-use"}
-      ]
+      "term": "有状态运行时环境",
+      "context": "Amazon与OpenAI合作计划为AWS开发的特性，让AI代理能够持续保持上下文，处理长期项目而非单次对话。",
+      "sources": [{"name": "Techmeme", "url": "http://www.techmeme.com/260227/p28"}]
     },
     {
-      "title": "AI引发的企业裁员潮开始显现",
-      "thesis": "Block裁员近半标志着AI驱动的企业重组进入实质阶段，效率提升与就业冲击的矛盾将更加突出。",
-      "what": "企业开始系统性利用AI重构工作流程，传统岗位被大规模替代的趋势从制造业向科技行业蔓延。",
-      "implication": "这可能导致全球性就业结构快速调整，各国政府需要加速制定AI时代的就业政策和再培训计划。",
-      "sources": [
-        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-02-26/jack-dorsey-s-block-slashes-nearly-half-of-workforce-in-ai-bet"}
-      ]
+      "term": "供应链安全风险",
+      "context": "五角大楼对Anthropic的新 designation，禁止军事承包商与该公司开展业务，代表政府干预AI公司的最强硬手段。",
+      "sources": [{"name": "Politico", "url": "https://www.politico.com/news/2026/02/27/trump-orders-all-federal-agencies-to-stop-using-anthropic-00804517"}]
     }
   ]
 }
