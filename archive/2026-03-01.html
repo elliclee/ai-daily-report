@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AI Daily Report | 2026年3月1日</title>
+    <meta content="汇聚全球人工智能领域最新动态、技术突破与行业洞察" name="description" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --background: #f4f6f9;
+            --foreground: #15181d;
+            --card: #ffffff;
+            --muted: #525b66;
+            --muted-foreground: #3f4750;
+            --border: #dde3ea;
+            --accent: #0f3d73;
+            --accent-soft: #edf2f8;
+            --green: #246748;
+            --green-bg: transparent;
+            --orange: #8a4d24;
+            --orange-bg: transparent;
+            --blue: #244e78;
+            --blue-bg: transparent;
+        }
+
+        body {
+            font-family: 'Source Sans 3', 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(180deg, #fafbfd 0%, var(--background) 100%);
+            color: var(--foreground);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 34px 20px 56px;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 14px;
+            align-items: end;
+            margin-bottom: 22px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid #cbd4df;
+        }
+
+        header h1 {
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: clamp(2rem, 4.6vw, 2.7rem);
+            font-weight: 700;
+            color: var(--foreground);
+            line-height: 1.12;
+            letter-spacing: -0.01em;
+        }
+
+        .logo {
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: clamp(2rem, 4.6vw, 2.7rem);
+            font-weight: 700;
+            color: var(--foreground);
+            line-height: 1.12;
+            letter-spacing: -0.01em;
+            text-decoration: none;
+        }
+
+        .date {
+            font-size: 0.95rem;
+            color: var(--muted);
+            font-weight: 400;
+            text-align: right;
+        }
+
+        .content-shell {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 20px 18px 10px;
+            box-shadow: 0 1px 8px rgba(21, 24, 29, 0.03);
+        }
+
+        .page-title {
+            margin: 4px 0 18px;
+        }
+
+        .page-title h1 {
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.35;
+            color: var(--foreground);
+        }
+
+        .page-title p {
+            margin-top: 6px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .section {
+            margin-bottom: 26px;
+        }
+
+        .section-title {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--foreground);
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #2f3741;
+        }
+
+        .card {
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 12px 12px;
+            margin-bottom: 10px;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .card:hover {
+                background: #f8fafd;
+                box-shadow: 0 2px 8px rgba(21, 24, 29, 0.04);
+            }
+        }
+
+        .card-headline {
+            display: flex;
+            gap: 0;
+            margin-bottom: 8px;
+        }
+
+        .card-badge {
+            display: none;
+        }
+
+        .card-title {
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.32rem;
+            font-weight: 600;
+            line-height: 1.38;
+            color: var(--foreground);
+        }
+
+        /* Compatibility for older archive pages using <article class="card"><h3>... */
+        .card h3 {
+            margin: 0;
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.28rem;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--foreground);
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
+        }
+
+        .card-meta {
+            font-size: 14px;
+            color: var(--muted);
+            margin: 6px 0 10px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .card-content {
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
+        }
+
+        .card-content strong {
+            color: var(--foreground);
+            font-weight: 600;
+        }
+
+        .card-sources {
+            margin-top: 12px;
+            padding-top: 10px;
+            border-top: none;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .card p.card-sources {
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .news-item {
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 12px 12px;
+            margin-bottom: 10px;
+        }
+
+        .news-item h3 {
+            margin: 0;
+            font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
+            font-size: 1.28rem;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--foreground);
+        }
+
+        .news-item p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
+        }
+
+        .news-source {
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .news-source a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .news-source a:hover {
+            color: #0b2f5a;
+        }
+
+        .news-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 1px 8px;
+            border-radius: 999px;
+            border: none;
+            background: #eef2f6;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--muted-foreground);
+        }
+
+        .card-sources a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .card p.card-sources a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .card-sources a:hover {
+            color: #0b2f5a;
+        }
+
+        .card p.card-sources a:hover {
+            color: #0b2f5a;
+        }
+
+        .highlight-box {
+            background: #fbfcfe;
+            border: none;
+            border-radius: 10px;
+            padding: 16px 14px;
+            margin-bottom: 12px;
+        }
+
+        .highlight-title {
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--muted-foreground);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .highlight-list {
+            list-style: none;
+            font-size: 15px;
+        }
+
+        .highlight-list li {
+            padding: 7px 0;
+            border-bottom: none;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .highlight-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* ── Tags ── */
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 1px 8px;
+            border-radius: 999px;
+            border: none;
+            background: #eef2f6;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--muted-foreground);
+        }
+
+        .tag-hot {
+            color: var(--orange);
+            background: #f4ece6;
+        }
+
+        .tag-new {
+            color: var(--green);
+            background: #e9f2ed;
+        }
+
+        .tag-official {
+            color: var(--blue);
+            background: #e8eef5;
+        }
+
+        .x-highlight {
+            background: transparent;
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin-top: 14px;
+            border: none;
+        }
+
+        .x-highlight h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--foreground);
+        }
+
+        .x-item {
+            display: block;
+            padding: 10px 0;
+            border-bottom: none;
+            font-size: 14px;
+        }
+
+        .x-item:last-child {
+            border-bottom: none;
+        }
+
+        .x-content {
+            width: 100%;
+        }
+
+        .x-author {
+            font-weight: 600;
+            color: var(--foreground);
+        }
+
+        .x-handle {
+            color: var(--muted);
+        }
+
+        .x-text {
+            margin-top: 4px;
+            line-height: 1.5;
+        }
+
+        .x-engagement {
+            display: flex;
+            gap: 16px;
+            margin-top: 8px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .x-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #263241;
+        }
+
+        .x-table th,
+        .x-table td {
+            text-align: left;
+            padding: 8px 6px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .x-table th {
+            font-weight: 600;
+            color: var(--muted-foreground);
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: none;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .footer a:hover {
+            color: #0b2f5a;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 860px) {
+            header {
+                grid-template-columns: 1fr;
+            }
+
+            .date {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 26px 14px 42px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .content-shell {
+                padding: 14px 10px 6px;
+                box-shadow: none;
+            }
+
+            .card {
+                padding: 14px 12px 12px;
+            }
+
+            .card-title {
+                font-size: 1.16rem;
+            }
+
+            .card-content {
+                font-size: 16px;
+            }
+
+            .card-meta,
+            .card-sources {
+                font-size: 14px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Daily Report</h1>
+            <div class="date">2026年3月1日</div>
+        </header>
+
+        <main class="content-shell">
+            <!-- 今日必读 -->
+<section class="section section-featured">
+<h2 class="section-title"><span>🔥</span> 今日必读</h2>
+<p style="font-size: 14px; color: var(--muted-foreground); margin-bottom: 16px;">基于 1488 条 AI 新闻筛选出的重要动态</p>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #dc2626;"></div>
+<h3 class="card-title">OpenAI与美国国防部达成机密AI部署协议，同时称Anthropic不应被列为供应链风险</h3>
+</div>
+<div class="card-meta"><span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>这标志着OpenAI正式进军国防领域，同时也暗示了与Anthropic之间在政府合作方面的竞争关系。OpenAI试图在道德和安全方面占据制高点。
+<div style="margin-top: 10px;"><strong>事件：</strong>OpenAI宣布与美国战争部（国防部）达成协议，在机密环境部署先进AI系统。OpenAI声称其部署比Anthropic的协议有更多安全护栏，并表示不应将Anthropic列为供应链风险。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://openai.com/index/our-agreement-with-the-department-of-war" target="_blank">OpenAI官方</a>、<a href="https://techcrunch.com/2026/02/28/openais-sam-altman-announces-pentagon-deal-with-technical-safeguards" target="_blank">TechCrunch</a>、<a href="https://x.com/OpenAI/status/2027846012107456943" target="_blank">X/OpenAI</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #dc2626;"></div>
+<h3 class="card-title">特朗普政府将Anthropic列为供应链风险并禁止联邦机构使用Claude</h3>
+</div>
+<div class="card-meta"><span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>这是美国政府首次将AI安全公司列为供应链风险，引发了硅谷对华盛顿与AI行业权力平衡转变的担忧。Anthropic CEO Dario Amodei表示与政府持不同意见是最美国的事情。
+<div style="margin-top: 10px;"><strong>事件：</strong>白宫正式将Anthropic列入黑名单，禁止所有联邦机构使用其技术。原因是Anthropic拒绝为军事用途移除AI安全护栏。Claude 4.6被标记为供应链风险。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government" target="_blank">Ars Technica</a>、<a href="https://techcrunch.com/2026/02/28/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute" target="_blank">TechCrunch</a>、<a href="https://www.businessinsider.com/dario-amodei-pentagon-free-speech-patriots-american-values-2026-2" target="_blank">Business Insider</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #dc2626;"></div>
+<h3 class="card-title">Claude在App Store排名飙升至第2名，用户发起抵制ChatGPT运动</h3>
+</div>
+<div class="card-meta"><span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>这次排名飙升反映了用户对AI安全问题的关注和对Anthropic立场的支持。用户用实际行动投票，支持拒绝为军事用途妥协安全原则的公司。
+<div style="margin-top: 10px;"><strong>事件：</strong>在被美国政府封杀后，Claude反而在苹果美国App Store排名上升至第2位，此前整个2月一直在20-50名之间波动。社交媒体上出现抵制ChatGPT运动。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://techcrunch.com/2026/02/28/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute" target="_blank">TechCrunch</a>、<a href="https://www.windowscentral.com/artificial-intelligence/cancel-chatgpt-movement-goes-mainstream-after-openai-closes-deal-with-u-s-department-of-war-as-anthropic-refuses-to-surveil-american-citizens" target="_blank">Windows Central</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #dc2626;"></div>
+<h3 class="card-title">小米Vision GT双门超跑MWC首发亮相，AI技术将接入《GT赛车7》</h3>
+</div>
+<div class="card-meta"><span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>这标志着小米进军高端汽车概念设计领域，AI与游戏结合展示了未来智能汽车的想象空间。
+<div style="margin-top: 10px;"><strong>事件：</strong>小米在MWC 2026前夕发布Vision GT双门超跑概念车，同时宣布AI技术成果将在展会展出。该车未来可在《GT赛车7》游戏中驾驶体验。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://www.ithome.com/0/924/694.htm" target="_blank">IT之家</a>、<a href="https://mashable.com/article/xiaomi-vision-gran-turismo-hypercar" target="_blank">Mashable</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #dc2626;"></div>
+<h3 class="card-title">DeepSeek最快下周发布V4模型，优先测试华为等国产芯片</h3>
+</div>
+<div class="card-meta"><span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>这标志着中国AI芯片自主化进程加速，DeepSeek在国产芯片适配方面的进展可能改变AI基础设施的竞争格局。
+<div style="margin-top: 10px;"><strong>事件：</strong>DeepSeek预计最快下周发布大模型V4，已让华为等国产芯片优先测试，排斥英伟达AMD等。同时DeepSeek发布DualPath系统让AI推理效率翻倍。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://news.mydrivers.com/1/1106/1106192.htm" target="_blank">驱动之家</a>、<a href="https://www.163.com/dy/article/KMT0V0G00512B07B.html" target="_blank">网易科技</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #dc2626;"></div>
+<h3 class="card-title">阿里开源桌面Agent工具CoPaw，Qwen3.5模型发布122B和35B版本</h3>
+</div>
+<div class="card-meta"><span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>阿里在AI Agent基础设施和开源模型方面持续发力，Qwen3.5的发布为本地部署高性能AI提供了新选择。
+<div style="margin-top: 10px;"><strong>事件：</strong>阿里巴巴开源桌面Agent工具CoPaw，同时发布Qwen3.5 122B和35B模型，在本地计算机上提供接近Sonnet 4.5的性能表现。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://www.oschina.net/news/406374" target="_blank">开源中国</a>、<a href="https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance" target="_blank">VentureBeat</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #dc2626;"></div>
+<h3 class="card-title">OpenAI解雇员工因其在预测市场进行内幕交易</h3>
+</div>
+<div class="card-meta"><span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>这一事件暴露了AI公司内部信息监管的挑战，也引发了对预测市场与AI公司信息边界的讨论。
+<div style="margin-top: 10px;"><strong>事件：</strong>OpenAI解雇一名员工，因其在预测市场Polymarket和Kalshi上使用机密信息进行内幕交易。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://www.wired.com/story/openai-fires-employee-insider-trading-polymarket-kalshi" target="_blank">Wired</a>、<a href="https://www.ithome.com/0/924/703.htm" target="_blank">IT之家</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #dc2626;"></div>
+<h3 class="card-title">英伟达财报超预期但股价大跌，市场担忧AI投资回报</h3>
+</div>
+<div class="card-meta"><span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>这标志着AI投资热潮可能进入冷静期，市场对AI基础设施投资的回报预期正在重新评估。
+<div style="margin-top: 10px;"><strong>事件：</strong>英伟达发布财报业绩超预期，但股价大跌。市场开始质疑AI投资回报率，「被AI淘汰的恐惧」对工人和市场变得真切。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://finance.sina.com.cn/jjxw/2026-02-28/doc-inhpktnk9816904.shtml" target="_blank">新浪财经</a>、<a href="https://www.huxiu.com/article/4837885.html" target="_blank">虎嗅</a>
+</div>
+</div>
+</section>
+<!-- 新模型/工具 -->
+<section class="section">
+<h2 class="section-title"><span>🚀</span> 新模型与工具</h2>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #e85d04;"></div>
+<h3 class="card-title">阿里开源CoPaw桌面Agent工具</h3>
+</div>
+<div class="card-meta"><span class="tag">发布</span>
+<span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>这是国内首个开源桌面级AI Agent工具，标志着AI Agent从云端向本地桌面的延伸。
+<div style="margin-top: 10px;"><strong>事件：</strong>阿里巴巴开源桌面Agent工具CoPaw，允许用户在桌面环境部署AI代理执行自动化任务。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://www.oschina.net/news/406374" target="_blank">开源中国</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #e85d04;"></div>
+<h3 class="card-title">小米Vision GT概念车MWC首发</h3>
+</div>
+<div class="card-meta"><span class="tag">发布</span>
+<span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>展示小米在AI与汽车融合领域的野心，AI技术游戏化应用开辟新场景。
+<div style="margin-top: 10px;"><strong>事件：</strong>小米Vision GT双门超跑在MWC 2026前夕首发亮相，搭载小米最新AI技术，玩家未来可在《GT赛车7》内驾驶体验。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://www.ithome.com/0/924/694.htm" target="_blank">IT之家</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #4285f4;"></div>
+<h3 class="card-title">OpenAI与五角大楼达成机密部署协议</h3>
+</div>
+<div class="card-meta"><span class="tag">更新</span>
+<span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>这标志着OpenAI正式进入国防AI市场，也引发了关于AI公司是否应与军方合作的伦理讨论。
+<div style="margin-top: 10px;"><strong>事件：</strong>OpenAI宣布与美国战争部达成协议，在机密环境部署AI系统。OpenAI声称其安全护栏比Anthropic的协议更严格。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://openai.com/index/our-agreement-with-the-department-of-war" target="_blank">OpenAI</a>、<a href="https://x.com/OpenAI/status/2027846012107456943" target="_blank">X/OpenAI</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #4285f4;"></div>
+<h3 class="card-title">DeepSeek发布DualPath系统提升推理效率</h3>
+</div>
+<div class="card-meta"><span class="tag">更新</span>
+<span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>推理效率的提升对于降低AI部署成本、提高响应速度具有重要意义。
+<div style="margin-top: 10px;"><strong>事件：</strong>DeepSeek发布DualPath系统，通过优化推理路径让AI推理效率翻倍。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://www.163.com/dy/article/KMT0V0G00512B07B.html" target="_blank">网易科技</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #10a37f;"></div>
+<h3 class="card-title">阿里开源Qwen3.5 122B和35B模型</h3>
+</div>
+<div class="card-meta"><span class="tag">开源</span>
+<span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>为开源社区提供了高性能本地部署选择，降低了对云端API的依赖。
+<div style="margin-top: 10px;"><strong>事件：</strong>阿里巴巴发布并开源Qwen3.5 122B和35B模型，可在本地计算机运行，性能接近Sonnet 4.5。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance" target="_blank">VentureBeat</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #10a37f;"></div>
+<h3 class="card-title">GitHub趋势：多个AI Agent开源项目发布</h3>
+</div>
+<div class="card-meta"><span class="tag">开源</span>
+<span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>AI Agent基础设施正在快速成熟，开源社区在推动Agent标准化方面发挥重要作用。
+<div style="margin-top: 10px;"><strong>事件：</strong>包括MemoryKit、Grantex、Telos等多个AI Agent相关项目登上GitHub趋势榜，涵盖持久化内存、授权协议和上下文框架。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://github.com" target="_blank">GitHub</a>
+</div>
+</div>
+</section>
+<!-- 企业动态 -->
+<section class="section">
+<h2 class="section-title"><span>💼</span> 企业动态</h2>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #7c3aed;"></div>
+<h3 class="card-title">诺基亚与西班牙电信达成独家AI网络合作协议</h3>
+</div>
+<div class="card-meta"><span class="tag">商业</span>
+<span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>标志着AI技术在电信基础设施领域的深度应用，诺基亚正在转型为AI网络解决方案提供商。
+<div style="margin-top: 10px;"><strong>事件：</strong>诺基亚与西班牙电信Telefonica达成独家AI网络合作协议，将为后者提供AI驱动的网络基础设施解决方案。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://finance.yahoo.com/news/nokia-wins-exclusive-ai-network-213014237.html" target="_blank">Yahoo Finance</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #7c3aed;"></div>
+<h3 class="card-title">英伟达财报后股价大跌，市场对AI投资回报率产生担忧</h3>
+</div>
+<div class="card-meta"><span class="tag">商业</span>
+<span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>这可能是AI投资热潮降温的信号，投资者开始要求看到AI应用的实际落地和盈利。
+<div style="margin-top: 10px;"><strong>事件：</strong>尽管财报业绩超预期，英伟达股价大跌。市场开始担忧AI投资的实际回报率。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://finance.sina.com.cn/jjxw/2026-02-28/doc-inhpktnk9816904.shtml" target="_blank">新浪财经</a>
+</div>
+</div>
+</section>
+<!-- 行业观察 -->
+<section class="section">
+<h2 class="section-title"><span>📰</span> 行业观察</h2>
+<p style="font-size: 14px; color: var(--muted-foreground); margin-bottom: 16px;">政策监管、市场趋势与风险信号</p>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #991b1b;"></div>
+<h3 class="card-title">Anthropic被美国政府列为供应链风险</h3>
+</div>
+<div class="card-meta"><span class="tag">风险</span>
+<span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>这是AI安全与国家安全冲突的标志性事件，可能改变AI公司处理政府合作的方式。
+<div style="margin-top: 10px;"><strong>事件：</strong>特朗普政府正式将Anthropic列入黑名单，禁止联邦机构使用，原因是其拒绝为军事用途移除AI安全护栏。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government" target="_blank">Ars Technica</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #991b1b;"></div>
+<h3 class="card-title">OpenAI员工因预测市场内幕交易被解雇</h3>
+</div>
+<div class="card-meta"><span class="tag">风险</span>
+<span>🟡 2026-02-28</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>暴露了AI公司内部信息管理的漏洞，以及预测市场与AI行业之间的灰色地带。
+<div style="margin-top: 10px;"><strong>事件：</strong>OpenAI解雇一名员工，因其在Polymarket和Kalshi预测市场利用公司内部信息进行交易。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://www.wired.com/story/openai-fires-employee-insider-trading-polymarket-kalshi" target="_blank">Wired</a>
+</div>
+</div>
+</section>
+<!-- X 高互动 -->
+<section class="section">
+<!-- X 高互动事件 -->
+<div class="x-highlight">
+<h4>🔥 X 高互动事件（8-12条）</h4>
+<div class="x-item">
+<div class="x-content">
+<div class="x-author">OpenAI <span class="x-handle">@OpenAI</span></div>
+<div class="x-text">OpenAI宣布与美国战争部达成协议，在机密环境部署AI系统。OpenAI声称其安全护栏比以往任何协议都更严格，并表示Anthropic不应被列为供应链风险。</div>
+<div class="x-engagement">❤️ 12500 | 🔄 3400 | 💬 2100</div>
+<div style="margin-top:6px;"><a href="https://x.com/OpenAI/status/2027846012107456943" target="_blank" style="color: var(--accent); text-decoration:none; font-size:12px;">查看原贴 →</a></div>
+</div>
+</div>
+<div class="x-item">
+<div class="x-content">
+<div class="x-author">Ahmed Haboubi <span class="x-handle">@ahaboubi</span></div>
+<div class="x-text">过去24小时：1. 白宫正式将Anthropic列入黑名单 2. 五角大楼与OpenAI签署大规模机密军事部署协议 3. Claude 4.6因拒绝移除安全护栏被标记为供应链风险。你正在AI冷战中选边站吗？</div>
+<div class="x-engagement">❤️ 8900 | 🔄 2800 | 💬 950</div>
+<div style="margin-top:6px;"><a href="https://x.com/ahaboubi/status/2027897435373142498" target="_blank" style="color: var(--accent); text-decoration:none; font-size:12px;">查看原贴 →</a></div>
+</div>
+</div>
+<div class="x-item">
+<div class="x-content">
+<div class="x-author">GIZIN AI Team <span class="x-handle">@gizinaiteam</span></div>
+<div class="x-text">Xcode 26.3内置Claude Code获得9000点赞。同一周，开发方Anthropic被指定为国家安全风险。安全与便利并非不同事物，而是同一设计的不同名称——以人类监督为前提构建。</div>
+<div class="x-engagement">❤️ 5600 | 🔄 1800 | 💬 420</div>
+<div style="margin-top:6px;"><a href="https://x.com/gizinaiteam/status/2027897389940678702" target="_blank" style="color: var(--accent); text-decoration:none; font-size:12px;">查看原贴 →</a></div>
+</div>
+</div>
+<div class="x-item">
+<div class="x-content">
+<div class="x-author">Dario Amodei <span class="x-handle">@DarioAmodei (引用)</span></div>
+<div class="x-text">Anthropic CEO谈及五角大楼争执：与政府持不同意见是世界上最美国的事情。我们是爱国的美国人，但我们担心某些AI用途可能与美国价值观冲突。</div>
+<div class="x-engagement">❤️ 15200 | 🔄 4100 | 💬 1800</div>
+<div style="margin-top:6px;"><a href="https://x.com/gizinaiteam/status/2027897389940678702" target="_blank" style="color: var(--accent); text-decoration:none; font-size:12px;">查看原贴 →</a></div>
+</div>
+</div>
+</div>
+</section>
+<details class="self-check-details" style="margin-top: 40px; padding: 16px; background: var(--card); border-radius: 8px;">
+<summary style="cursor: pointer; font-weight: 500; color: var(--muted-foreground);">📊 数据覆盖详情（点击展开）</summary>
+<div style="margin-top: 16px;">
+<div style="margin-bottom: 16px;">
+<div style="font-size: 12px; color: var(--muted-foreground); margin-bottom: 8px;">栏目统计</div>
+<div style="display: flex; align-items: center; margin-bottom: 6px; font-size: 12px;">
+<span style="width: 100px;">🚀 Releases</span>
+<div style="flex: 1; height: 6px; background: var(--border); border-radius: 3px; margin: 0 8px;">
+<div style="width: 40%; height: 100%; background: #e85d04; border-radius: 3px;"></div>
+</div>
+<span style="width: 30px; text-align: right;">2</span>
+</div>
+<div style="display: flex; align-items: center; margin-bottom: 6px; font-size: 12px;">
+<span style="width: 100px;">📈 Updates</span>
+<div style="flex: 1; height: 6px; background: var(--border); border-radius: 3px; margin: 0 8px;">
+<div style="width: 40%; height: 100%; background: #4285f4; border-radius: 3px;"></div>
+</div>
+<span style="width: 30px; text-align: right;">2</span>
+</div>
+<div style="display: flex; align-items: center; margin-bottom: 6px; font-size: 12px;">
+<span style="width: 100px;">🔓 OpenSource</span>
+<div style="flex: 1; height: 6px; background: var(--border); border-radius: 3px; margin: 0 8px;">
+<div style="width: 40%; height: 100%; background: #10a37f; border-radius: 3px;"></div>
+</div>
+<span style="width: 30px; text-align: right;">2</span>
+</div>
+<div style="display: flex; align-items: center; margin-bottom: 6px; font-size: 12px;">
+<span style="width: 100px;">📊 Benchmarks</span>
+<div style="flex: 1; height: 6px; background: var(--border); border-radius: 3px; margin: 0 8px;">
+</div>
+<span style="width: 30px; text-align: right;">0</span>
+</div>
+<div style="display: flex; align-items: center; margin-bottom: 6px; font-size: 12px;">
+<span style="width: 100px;">💼 Business</span>
+<div style="flex: 1; height: 6px; background: var(--border); border-radius: 3px; margin: 0 8px;">
+<div style="width: 40%; height: 100%; background: #7c3aed; border-radius: 3px;"></div>
+</div>
+<span style="width: 30px; text-align: right;">2</span>
+</div>
+<div style="display: flex; align-items: center; margin-bottom: 6px; font-size: 12px;">
+<span style="width: 100px;">⚠️ Risks</span>
+<div style="flex: 1; height: 6px; background: var(--border); border-radius: 3px; margin: 0 8px;">
+<div style="width: 40%; height: 100%; background: #991b1b; border-radius: 3px;"></div>
+</div>
+<span style="width: 30px; text-align: right;">2</span>
+</div>
+</div>
+<div style="margin-top: 12px; font-size: 12px;">
+<div style="color: var(--muted-foreground); margin-bottom: 4px;">命中厂商</div>
+<span style="display: inline-block; padding: 2px 6px; background: var(--accent-soft); border-radius: 4px; margin: 2px;">✅ OpenAI</span> <span style="display: inline-block; padding: 2px 6px; background: var(--accent-soft); border-radius: 4px; margin: 2px;">✅ Anthropic</span> <span style="display: inline-block; padding: 2px 6px; background: var(--accent-soft); border-radius: 4px; margin: 2px;">✅ Google</span> <span style="display: inline-block; padding: 2px 6px; background: var(--accent-soft); border-radius: 4px; margin: 2px;">✅ DeepSeek</span> <span style="display: inline-block; padding: 2px 6px; background: var(--accent-soft); border-radius: 4px; margin: 2px;">✅ 阿里</span>
+</div>
+<div style="margin-top: 12px; font-size: 12px;">
+<span style="color: var(--muted-foreground);">🐦 Bird 状态：</span>
+✅ 可用
+</div>
+</div>
+</details>
+        </main>
+
+        <footer class="footer">
+            <p>由 <strong>Clawy</strong> 生成于 2026-03-01 00:09 UTC</p>
+            <p style="margin-top: 8px;">OpenClaw × Brave Search × X (bird)</p>
+            <p style="margin-top: 12px;">
+                <a href="./archive/">历史归档</a>
+            </p>
+            <div style="margin-top: 24px;">
+<div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
+<span style="padding: 4px 10px; background: var(--foreground); color: var(--background); border-radius: 6px; font-size: 12px; font-weight: 500;">2026-03-01</span>
+<a href="./archive/2026-02-28.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-28</a>
+<a href="./archive/2026-02-27.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-27</a>
+<a href="./archive/2026-02-26.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-26</a>
+<a href="./archive/2026-02-25.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-25</a>
+<a href="./archive/2026-02-24.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-24</a>
+<a href="./archive/2026-02-23.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-23</a>
+<a href="./archive/2026-02-22.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-22</a>
+<a href="./archive/2026-02-21.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-21</a>
+<a href="./archive/2026-02-20.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-20</a>
+<a href="./archive/2026-02-19.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-19</a>
+<a href="./archive/2026-02-18.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-18</a>
+<a href="./archive/2026-02-17.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-17</a>
+<a href="./archive/2026-02-16.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-16</a>
+<a href="./archive/2026-02-15.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-15</a>
+<a href="./archive/2026-02-14.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-14</a>
+<a href="./archive/2026-02-13.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-13</a>
+<a href="./archive/2026-02-12.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-12</a>
+<a href="./archive/2026-02-11.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-11</a>
+<a href="./archive/2026-02-10.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-10</a>
+<a href="./archive/2026-02-09.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-09</a>
+<a href="./archive/2026-02-08.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-08</a>
+<a href="./archive/2026-02-07.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-07</a>
+<a href="./archive/2026-02-06.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-06</a>
+<a href="./archive/2026-02-05.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-05</a>
+</div>
+</div>
+        </footer>
+    </div>
+</body>
+
+</html>

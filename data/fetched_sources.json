@@ -1,81 +1,72 @@
 {
-  "fetched_at": "2026-02-27T23:30:07.520749",
+  "fetched_at": "2026-02-28T23:30:07.171760",
   "sources": {
     "hackernews-top": {
       "type": "hackernews",
-      "count": 8,
+      "count": 7,
       "items": [
         {
-          "title": "OpenAI raises $110B on $730B pre-money valuation",
-          "url": "https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/",
-          "score": 298,
-          "by": "zlatkov",
-          "time": "2026-02-27T14:56:05",
-          "comments": "https://news.ycombinator.com/item?id=47181211",
-          "description": "The new funding consists of a $50 billion investment from Amazon as well as $30 billion each from Nvidia and SoftBank, against a $730 billion valuation."
+          "title": "Obsidian Sync now has a headless client",
+          "url": "https://help.obsidian.md/sync/headless",
+          "score": 352,
+          "by": "adilmoujahid",
+          "time": "2026-02-28T16:31:53",
+          "comments": "https://news.ycombinator.com/item?id=47197267",
+          "description": "Headless Sync - Obsidian Help"
         },
         {
-          "title": "I am directing the Department of War to designate Anthropic a Supply-Chain Risk",
-          "url": "https://twitter.com/secwar/status/2027507717469049070",
-          "score": 398,
-          "by": "jacobedawson",
-          "time": "2026-02-27T22:31:18",
-          "comments": "https://news.ycombinator.com/item?id=47186677",
-          "description": ""
+          "title": "The happiest I've ever been",
+          "url": "https://ben-mini.com/2026/the-happiest-ive-ever-been",
+          "score": 258,
+          "by": "bewal416",
+          "time": "2026-02-26T04:13:47",
+          "comments": "https://news.ycombinator.com/item?id=47161759",
+          "description": "It was around January 2020. I became the head coach of a youth basketball team."
         },
         {
-          "title": "A new California law says all operating systems need to have age verification",
-          "url": "https://www.pcgamer.com/software/operating-systems/a-new-california-law-says-all-operating-systems-including-linux-need-to-have-some-form-of-age-verification-at-account-setup/",
-          "score": 239,
-          "by": "WalterSobchak",
-          "time": "2026-02-27T14:55:49",
-          "comments": "https://news.ycombinator.com/item?id=47181208",
-          "description": "It"
+          "title": "Woxi: Wolfram Mathematica Reimplementation in Rust",
+          "url": "https://github.com/ad-si/Woxi",
+          "score": 222,
+          "by": "adamnemecek",
+          "time": "2026-02-25T18:24:46",
+          "comments": "https://news.ycombinator.com/item?id=47155526",
+          "description": "Wolfram Language / Mathematica reimplementation in Rust (Wolfram oxidized) - ad-si/Woxi"
         },
         {
-          "title": "A better streams API is possible for JavaScript",
-          "url": "https://blog.cloudflare.com/a-better-web-streams-api/",
-          "score": 348,
-          "by": "nnx",
-          "time": "2026-02-27T14:02:53",
-          "comments": "https://news.ycombinator.com/item?id=47180569",
-          "description": "The Web streams API has become ubiquitous in JavaScript runtimes but was designed for a different era. Here"
+          "title": "The whole thing was a scam",
+          "url": "https://garymarcus.substack.com/p/the-whole-thing-was-scam",
+          "score": 490,
+          "by": "guilamu",
+          "time": "2026-02-28T16:51:49",
+          "comments": "https://news.ycombinator.com/item?id=47197505",
+          "description": "The fix was in, and Dario never had a chance."
         },
         {
-          "title": "Get free Claude max 20x for open-source maintainers",
-          "url": "https://claude.com/contact-sales/claude-for-oss",
-          "score": 386,
-          "by": "zhisme",
-          "time": "2026-02-27T09:08:58",
-          "comments": "https://news.ycombinator.com/item?id=47178371",
-          "description": "Apply to the Claude for Open Source program. Eligible OSS maintainers and contributors get Claude Max for 6 months on us."
+          "title": "We Will Not Be Divided",
+          "url": "https://notdivided.org",
+          "score": 2522,
+          "by": "BloondAndDoom",
+          "time": "2026-02-28T00:54:53",
+          "comments": "https://news.ycombinator.com/item?id=47188473",
+          "description": "Employees of Google and OpenAI stand together to refuse the Department of War"
         },
         {
-          "title": "Leaving Google has actively improved my life",
-          "url": "https://pseudosingleton.com/leaving-google-improved-my-life/",
-          "score": 351,
-          "by": "speckx",
-          "time": "2026-02-27T19:08:25",
-          "comments": "https://news.ycombinator.com/item?id=47184288",
-          "description": "In May of 2023, Google introduced “AI overviews” into their search engine.^1] This followed years of decisions leading to worse search quality and the consum..."
+          "title": "The Eternal Promise: A History of Attempts to Eliminate Programmers",
+          "url": "https://www.ivanturkovic.com/2026/01/22/history-software-simplification-cobol-ai-hype/",
+          "score": 213,
+          "by": "dinvlad",
+          "time": "2026-02-25T05:14:09",
+          "comments": "https://news.ycombinator.com/item?id=47147597",
+          "description": "From COBOL in the 1960s to AI in the 2020s, every generation promises to eliminate programmers. Explore the recurring cycles of software simplification hype."
         },
         {
-          "title": "Court finds Fourth Amendment doesn’t support broad search of protesters’ devices",
-          "url": "https://www.eff.org/deeplinks/2026/02/victory-tenth-circuit-finds-fourth-amendment-doesnt-support-broad-search-0",
-          "score": 457,
-          "by": "hn_acker",
-          "time": "2026-02-27T15:09:04",
-          "comments": "https://news.ycombinator.com/item?id=47181391",
-          "description": "In a big win for protesters’ rights, the U.S. Court of Appeals for the Tenth Circuit overturned a lower court’s dismissal of a challenge to sweeping warrants to search a protester’s devices and digital data and a nonprofit’s social media data.The case, Armendariz v. City of Colorado Springs, arose.."
-        },
-        {
-          "title": "Can you reverse engineer our neural network?",
-          "url": "https://blog.janestreet.com/can-you-reverse-engineer-our-neural-network/",
-          "score": 251,
-          "by": "jsomers",
-          "time": "2026-02-25T02:20:13",
-          "comments": "https://news.ycombinator.com/item?id=47146487",
-          "description": "A lot of “capture-the-flag” style ML puzzles give you a black box neural net, and your jobis to figure out what it does. When we were thinking of creating ou..."
+          "title": "The United States and Israel have launched a major attack on Iran",
+          "url": "https://www.cnn.com/2026/02/28/middleeast/israel-attack-iran-intl-hnk",
+          "score": 962,
+          "by": "lavp",
+          "time": "2026-02-28T06:34:07",
+          "comments": "https://news.ycombinator.com/item?id=47191232",
+          "description": "The United States and Israel have launched a major attack on Iran, which President Donald Trump said would lay waste to the country’s military, obliterate its military program, and could even topple its regime."
         }
       ]
     },
@@ -88,39 +79,39 @@
           "name": "wifi-densepose",
           "url": "https://github.com/ruvnet/wifi-densepose",
           "description": "Production-ready implementation of InvisPose - a revolutionary WiFi-based dense human pose estimation system that enables real-time full-body tracking through walls using commodity mesh routers",
-          "stars_today": "362",
+          "stars_today": "2152",
+          "language": "Rust"
+        },
+        {
+          "repo": "Shubhamsaboo/awesome-llm-apps",
+          "name": "awesome-llm-apps",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.",
+          "stars_today": "605",
           "language": "Python"
         },
         {
-          "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
-          "name": "Agent-Skills-for-Context-Engineering",
-          "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
-          "description": "A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent systems. Use when building, optimizing, or debugging agent systems that require effective context management.",
-          "stars_today": "836",
+          "repo": "NousResearch/hermes-agent",
+          "name": "hermes-agent",
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "description": "Contribute to NousResearch/hermes-agent development by creating an account on GitHub.",
+          "stars_today": "183",
           "language": "Python"
         },
         {
-          "repo": "datawhalechina/hello-agents",
-          "name": "hello-agents",
-          "url": "https://github.com/datawhalechina/hello-agents",
-          "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
-          "stars_today": "312",
+          "repo": "datagouv/datagouv-mcp",
+          "name": "datagouv-mcp",
+          "url": "https://github.com/datagouv/datagouv-mcp",
+          "description": "Official data.gouv.fr Model Context Protocol (MCP) server that allows AI chatbots to search, explore, and analyze datasets from the French national Open Data platform, directly through conversation.",
+          "stars_today": "122",
           "language": "Python"
         },
         {
-          "repo": "D4Vinci/Scrapling",
-          "name": "Scrapling",
-          "url": "https://github.com/D4Vinci/Scrapling",
-          "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
-          "stars_today": "1127",
-          "language": "Python"
-        },
-        {
-          "repo": "alibaba/OpenSandbox",
-          "name": "OpenSandbox",
-          "url": "https://github.com/alibaba/OpenSandbox",
-          "description": "OpenSandbox is a general-purpose sandbox platform for AI applications, offering multi-language SDKs, unified sandbox APIs, and Docker/Kubernetes runtimes for scenarios like Coding Agents, GUI Agents, Agent Evaluation, AI Code Execution, and RL Training.",
-          "stars_today": "107",
+          "repo": "X-PLUG/MobileAgent",
+          "name": "MobileAgent",
+          "url": "https://github.com/X-PLUG/MobileAgent",
+          "description": "Mobile-Agent: The Powerful GUI Agent Family",
+          "stars_today": "33",
           "language": "Python"
         }
       ]
