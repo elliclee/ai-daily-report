@@ -256,6 +256,23 @@ def render_archive_nav(current_date: str) -> str:
     return "\n".join(parts)
 
 
+def get_total_news_count():
+    """Calculate total news count from fetched sources and news-radar."""
+    total = 0
+    
+    # Count from fetched_sources.json (local sources like HN, GitHub)
+    fetched = load_json(DATA_DIR / "fetched_sources.json", default={})
+    for source in fetched.get("sources", {}).values():
+        total += source.get("count", 0)
+    
+    # Count from news-radar-24h.json (ai-news-radar)
+    radar = load_json(DATA_DIR / "news-radar-24h.json", default={})
+    items = radar.get("items_ai") or radar.get("items") or []
+    total += len(items)
+    
+    return total if total > 0 else None
+
+
 def main():
     daily = load_json(DATA_DIR / "daily.json", default={})
     date = str(daily.get("date") or datetime.now(timezone.utc).strftime("%Y-%m-%d"))
@@ -277,11 +294,15 @@ def main():
     # Map to optimized layout
     content_parts: list[str] = []
 
+    # Calculate actual news count
+    total_news = get_total_news_count()
+    news_count_text = f"基于 {total_news} 条 AI 新闻筛选出的重要动态" if total_news else "基于 AI 新闻筛选出的重要动态"
+
     # 1. 今日必读（核心看点，扩大展示 3-12 条）
     content_parts.append('<!-- 今日必读 -->')
     content_parts.append('<section class="section section-featured">')
     content_parts.append('<h2 class="section-title"><span>🔥</span> 今日必读</h2>')
-    content_parts.append('<p style="font-size: 14px; color: var(--muted-foreground); margin-bottom: 16px;">基于 1488 条 AI 新闻筛选出的重要动态</p>')
+    content_parts.append(f'<p style="font-size: 14px; color: var(--muted-foreground); margin-bottom: 16px;">{news_count_text}</p>')
     # Show all headlines (3-12 items)
     content_parts.append(render_cards(headlines[:12], badge_color="#dc2626"))
     content_parts.append('</section>')
