@@ -1,72 +1,81 @@
 {
-  "fetched_at": "2026-02-28T23:30:07.171760",
+  "fetched_at": "2026-03-01T23:30:04.017095",
   "sources": {
     "hackernews-top": {
       "type": "hackernews",
-      "count": 7,
+      "count": 8,
       "items": [
         {
-          "title": "Obsidian Sync now has a headless client",
-          "url": "https://help.obsidian.md/sync/headless",
-          "score": 352,
-          "by": "adilmoujahid",
-          "time": "2026-02-28T16:31:53",
-          "comments": "https://news.ycombinator.com/item?id=47197267",
-          "description": "Headless Sync - Obsidian Help"
+          "title": "How to talk to anyone, and why you should",
+          "url": "https://www.theguardian.com/lifeandstyle/2026/feb/24/stranger-secret-how-to-talk-to-anyone-why-you-should",
+          "score": 304,
+          "by": "Looky1173",
+          "time": "2026-02-24T20:08:38",
+          "comments": "https://news.ycombinator.com/item?id=47142183",
+          "description": "Forget fear of public speaking. A lot of people now shy away completely from speaking to anyone in public. But if we learn to do this it’s enriching, for ourselves and society"
         },
         {
-          "title": "The happiest I've ever been",
-          "url": "https://ben-mini.com/2026/the-happiest-ive-ever-been",
-          "score": 258,
-          "by": "bewal416",
-          "time": "2026-02-26T04:13:47",
-          "comments": "https://news.ycombinator.com/item?id=47161759",
-          "description": "It was around January 2020. I became the head coach of a youth basketball team."
+          "title": "Ghostty – Terminal Emulator",
+          "url": "https://ghostty.org/docs",
+          "score": 565,
+          "by": "oli5679",
+          "time": "2026-03-01T12:13:03",
+          "comments": "https://news.ycombinator.com/item?id=47206009",
+          "description": "Ghostty is a fast, feature-rich, and cross-platform terminal emulator\nthat uses platform-native UI and GPU acceleration."
         },
         {
-          "title": "Woxi: Wolfram Mathematica Reimplementation in Rust",
-          "url": "https://github.com/ad-si/Woxi",
-          "score": 222,
-          "by": "adamnemecek",
-          "time": "2026-02-25T18:24:46",
-          "comments": "https://news.ycombinator.com/item?id=47155526",
-          "description": "Wolfram Language / Mathematica reimplementation in Rust (Wolfram oxidized) - ad-si/Woxi"
+          "title": "When does MCP make sense vs CLI?",
+          "url": "https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html",
+          "score": 205,
+          "by": "ejholmes",
+          "time": "2026-03-01T16:54:49",
+          "comments": "https://news.ycombinator.com/item?id=47208398",
+          "description": ""
         },
         {
-          "title": "The whole thing was a scam",
-          "url": "https://garymarcus.substack.com/p/the-whole-thing-was-scam",
-          "score": 490,
-          "by": "guilamu",
-          "time": "2026-02-28T16:51:49",
-          "comments": "https://news.ycombinator.com/item?id=47197505",
-          "description": "The fix was in, and Dario never had a chance."
+          "title": "Decision trees – the unreasonable power of nested decision rules",
+          "url": "https://mlu-explain.github.io/decision-tree/",
+          "score": 374,
+          "by": "mschnell",
+          "time": "2026-03-01T08:55:52",
+          "comments": "https://news.ycombinator.com/item?id=47204964",
+          "description": "An introduction to the Decision Trees, Entropy, and Information Gain."
         },
         {
-          "title": "We Will Not Be Divided",
-          "url": "https://notdivided.org",
-          "score": 2522,
-          "by": "BloondAndDoom",
-          "time": "2026-02-28T00:54:53",
-          "comments": "https://news.ycombinator.com/item?id=47188473",
-          "description": "Employees of Google and OpenAI stand together to refuse the Department of War"
+          "title": "Microgpt",
+          "url": "http://karpathy.github.io/2026/02/12/microgpt/",
+          "score": 1648,
+          "by": "tambourine_man",
+          "time": "2026-03-01T01:39:26",
+          "comments": "https://news.ycombinator.com/item?id=47202708",
+          "description": "Musings of a Computer Scientist."
         },
         {
-          "title": "The Eternal Promise: A History of Attempts to Eliminate Programmers",
-          "url": "https://www.ivanturkovic.com/2026/01/22/history-software-simplification-cobol-ai-hype/",
-          "score": 213,
-          "by": "dinvlad",
-          "time": "2026-02-25T05:14:09",
-          "comments": "https://news.ycombinator.com/item?id=47147597",
-          "description": "From COBOL in the 1960s to AI in the 2020s, every generation promises to eliminate programmers. Explore the recurring cycles of software simplification hype."
+          "title": "10-202: Introduction to Modern AI (CMU)",
+          "url": "https://modernaicourse.org",
+          "score": 217,
+          "by": "vismit2000",
+          "time": "2026-03-01T07:35:03",
+          "comments": "https://news.ycombinator.com/item?id=47204559",
+          "description": ""
         },
         {
-          "title": "The United States and Israel have launched a major attack on Iran",
-          "url": "https://www.cnn.com/2026/02/28/middleeast/israel-attack-iran-intl-hnk",
-          "score": 962,
-          "by": "lavp",
-          "time": "2026-02-28T06:34:07",
-          "comments": "https://news.ycombinator.com/item?id=47191232",
-          "description": "The United States and Israel have launched a major attack on Iran, which President Donald Trump said would lay waste to the country’s military, obliterate its military program, and could even topple its regime."
+          "title": "I built a demo of what AI chat will look like when it's \"free\" and ad-supported",
+          "url": "https://99helpers.com/tools/ad-supported-chat",
+          "score": 439,
+          "by": "nickk81",
+          "time": "2026-03-01T11:49:01",
+          "comments": "https://news.ycombinator.com/item?id=47205890",
+          "description": "Experience what AI chat looks like with heavy advertising: banners, interstitials, sponsored responses, freemium gates, and more."
+        },
+        {
+          "title": "New iron nanomaterial wipes out cancer cells without harming healthy tissue",
+          "url": "https://www.sciencedaily.com/releases/2026/02/260228093456.htm",
+          "score": 209,
+          "by": "gradus_ad",
+          "time": "2026-03-01T15:09:55",
+          "comments": "https://news.ycombinator.com/item?id=47207404",
+          "description": "Scientists at Oregon State University have engineered a powerful new nanomaterial that zeroes in on cancer cells and destroys them from the inside out. Designed to exploit cancer’s unique chemistry—its acidity and high hydrogen peroxide levels—the tiny iron-based structure sparks not one but two int"
         }
       ]
     },
@@ -75,43 +84,43 @@
       "count": 5,
       "items": [
         {
-          "repo": "ruvnet/wifi-densepose",
-          "name": "wifi-densepose",
-          "url": "https://github.com/ruvnet/wifi-densepose",
-          "description": "Production-ready implementation of InvisPose - a revolutionary WiFi-based dense human pose estimation system that enables real-time full-body tracking through walls using commodity mesh routers",
-          "stars_today": "2152",
-          "language": "Rust"
+          "repo": "microsoft/markitdown",
+          "name": "markitdown",
+          "url": "https://github.com/microsoft/markitdown",
+          "description": "Python tool for converting files and office documents to Markdown.",
+          "stars_today": "798",
+          "language": "Python"
+        },
+        {
+          "repo": "bytedance/deer-flow",
+          "name": "deer-flow",
+          "url": "https://github.com/bytedance/deer-flow",
+          "description": "An open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skills and subagents, it handles different levels of tasks that could take minutes to hours.",
+          "stars_today": "352",
+          "language": "Python"
+        },
+        {
+          "repo": "alibaba/OpenSandbox",
+          "name": "OpenSandbox",
+          "url": "https://github.com/alibaba/OpenSandbox",
+          "description": "OpenSandbox is a general-purpose sandbox platform for AI applications, offering multi-language SDKs, unified sandbox APIs, and Docker/Kubernetes runtimes for scenarios like Coding Agents, GUI Agents, Agent Evaluation, AI Code Execution, and RL Training.",
+          "stars_today": "1186",
+          "language": "Python"
         },
         {
           "repo": "Shubhamsaboo/awesome-llm-apps",
           "name": "awesome-llm-apps",
           "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
           "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.",
-          "stars_today": "605",
+          "stars_today": "475",
           "language": "Python"
         },
         {
-          "repo": "NousResearch/hermes-agent",
-          "name": "hermes-agent",
-          "url": "https://github.com/NousResearch/hermes-agent",
-          "description": "Contribute to NousResearch/hermes-agent development by creating an account on GitHub.",
-          "stars_today": "183",
-          "language": "Python"
-        },
-        {
-          "repo": "datagouv/datagouv-mcp",
-          "name": "datagouv-mcp",
-          "url": "https://github.com/datagouv/datagouv-mcp",
-          "description": "Official data.gouv.fr Model Context Protocol (MCP) server that allows AI chatbots to search, explore, and analyze datasets from the French national Open Data platform, directly through conversation.",
-          "stars_today": "122",
-          "language": "Python"
-        },
-        {
-          "repo": "X-PLUG/MobileAgent",
-          "name": "MobileAgent",
-          "url": "https://github.com/X-PLUG/MobileAgent",
-          "description": "Mobile-Agent: The Powerful GUI Agent Family",
-          "stars_today": "33",
+          "repo": "K-Dense-AI/claude-scientific-skills",
+          "name": "claude-scientific-skills",
+          "url": "https://github.com/K-Dense-AI/claude-scientific-skills",
+          "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
+          "stars_today": "184",
           "language": "Python"
         }
       ]

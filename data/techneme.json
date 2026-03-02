@@ -1,20 +1,24 @@
 {
-  "date": "2026-02-28",
-  "technemes": [
+  "generated_at": "2026-03-02T01:00:00Z",
+  "date": "2026-03-02",
+  "stories": [
     {
-      "term": "Agentic Engineering",
-      "context": "Andrej Karpathy提出的新概念，指开发者不再编写代码，而是通过自然语言指挥AI代理完成任务。这标志着从"编码"到"任务编排"的范式转变。",
-      "sources": [{"name": "X/Twitter", "url": "https://x.com/karpathy"}]
+      "title": "Anthropic拒绝五角大楼后Claude登顶App Store",
+      "time": "2026-03-01",
+      "what": "因坚持AI伦理原则拒绝参与美国国防部监控项目，Anthropic反而获得用户支持，Claude应用下载量激增登顶美国App Store。",
+      "sources": [{"name": "Techmeme", "url": "http://www.techmeme.com"}]
     },
     {
-      "term": "有状态运行时环境",
-      "context": "Amazon与OpenAI合作计划为AWS开发的特性，让AI代理能够持续保持上下文，处理长期项目而非单次对话。",
-      "sources": [{"name": "Techmeme", "url": "http://www.techmeme.com/260227/p28"}]
+      "title": "OpenAI与五角大楼合作协议细节披露",
+      "time": "2026-03-01",
+      "what": "OpenAI分享了与五角大楼合作协议的更多细节，与Anthropic形成鲜明对比。",
+      "sources": [{"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/01/openai-shares-more-details-about-its-agreement-with-the-pentagon"}]
     },
     {
-      "term": "供应链安全风险",
-      "context": "五角大楼对Anthropic的新 designation，禁止军事承包商与该公司开展业务，代表政府干预AI公司的最强硬手段。",
-      "sources": [{"name": "Politico", "url": "https://www.politico.com/news/2026/02/27/trump-orders-all-federal-agencies-to-stop-using-anthropic-00804517"}]
+      "title": "MWC 2026：荣耀机器人手机和华为Agentic Core成为焦点",
+      "time": "2026-03-01",
+      "what": "世界移动通信大会上，中国厂商荣耀和华为分别发布了具身智能机器人和智能体网络解决方案。",
+      "sources": [{"name": "Engadget", "url": "https://www.engadget.com"}]
     }
   ]
 }

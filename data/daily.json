@@ -1,281 +1,190 @@
 {
-  "version": "2.0",
-  "generated_at": "2026-03-01T00:00:00Z",
-  "date": "2026-03-01",
-  "summary": {
-    "bullets": [
-      "OpenAI与美国国防部达成机密AI部署协议，称不应将Anthropic列为供应链风险",
-      "特朗普政府将Anthropic列为供应链风险并禁止联邦机构使用Claude",
-      "Claude在App Store排名飙升至第2名，用户发起抵制ChatGPT运动",
-      "DeepSeek最快下周发布V4模型，优先测试华为等国产芯片",
-      "阿里开源桌面Agent工具CoPaw，Qwen3.5模型发布122B和35B版本",
-      "OpenAI解雇员工因其在预测市场进行内幕交易",
-      "英伟达财报超预期但股价大跌，市场担忧AI投资回报",
-      "小米Vision GT双门超跑MWC首发亮相"
-    ],
-    "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-01.html",
-    "headline_count": 8,
-    "sources_count": 12,
-    "ai_vendor_mentions": ["OpenAI", "Anthropic", "Google", "DeepSeek", "阿里", "智谱", "Meta"]
-  },
+  "generated_at": "2026-03-02T01:00:00Z",
+  "date": "2026-03-02",
   "headlines": [
     {
-      "title": "OpenAI与美国国防部达成机密AI部署协议，同时称Anthropic不应被列为供应链风险",
-      "time": "2026-02-28",
-      "what": "OpenAI宣布与美国战争部（国防部）达成协议，在机密环境部署先进AI系统。OpenAI声称其部署比Anthropic的协议有更多安全护栏，并表示不应将Anthropic列为供应链风险。",
-      "why": "这标志着OpenAI正式进军国防领域，同时也暗示了与Anthropic之间在政府合作方面的竞争关系。OpenAI试图在道德和安全方面占据制高点。",
-      "sources": [
-        {"name": "OpenAI官方", "url": "https://openai.com/index/our-agreement-with-the-department-of-war"},
-        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/02/28/openais-sam-altman-announces-pentagon-deal-with-technical-safeguards"},
-        {"name": "X/OpenAI", "url": "https://x.com/OpenAI/status/2027846012107456943"}
-      ]
+      "title": "OpenAI完成110亿美元融资，估值达8400亿美元",
+      "time": "2026-03-01",
+      "what": "OpenAI宣布完成110亿美元新一轮融资，公司估值飙升至8400亿美元，成为全球最有价值的私营AI公司之一。",
+      "why": "这笔巨额融资将支持OpenAI在AGI研发、算力基础设施和全球扩张方面的投入，同时也反映出投资者对AI赛道的持续看好。",
+      "sources": [{"name": "The Guardian", "url": "https://www.theguardian.com"}]
     },
     {
-      "title": "特朗普政府将Anthropic列为供应链风险并禁止联邦机构使用Claude",
-      "time": "2026-02-28",
-      "what": "白宫正式将Anthropic列入黑名单，禁止所有联邦机构使用其技术。原因是Anthropic拒绝为军事用途移除AI安全护栏。Claude 4.6被标记为供应链风险。",
-      "why": "这是美国政府首次将AI安全公司列为供应链风险，引发了硅谷对华盛顿与AI行业权力平衡转变的担忧。Anthropic CEO Dario Amodei表示与政府持不同意见是最美国的事情。",
-      "sources": [
-        {"name": "Ars Technica", "url": "https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government"},
-        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/02/28/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute"},
-        {"name": "Business Insider", "url": "https://www.businessinsider.com/dario-amodei-pentagon-free-speech-patriots-american-values-2026-2"}
-      ]
+      "title": "Anthropic Claude登顶美国App Store榜首，五角大楼争议后用户激增",
+      "time": "2026-03-01",
+      "what": "在与五角大楼谈判破裂并拒绝参与美国国防部AI项目后，Anthropic的Claude应用下载量激增，超越ChatGPT成为美国App Store免费应用排行榜第一名。",
+      "why": "这一'因祸得福'的现象反映出用户对AI公司伦理立场的关注，Anthropic坚持'Constitutional AI'原则的做法获得了市场认可。",
+      "sources": [{"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/01/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute"}, {"name": "Axios", "url": "https://www.axios.com/2026/03/01/anthropic-claude-chatgpt-app-downloads-pentagon"}]
     },
     {
-      "title": "Claude在App Store排名飙升至第2名，用户发起抵制ChatGPT运动",
-      "time": "2026-02-28",
-      "what": "在被美国政府封杀后，Claude反而在苹果美国App Store排名上升至第2位，此前整个2月一直在20-50名之间波动。社交媒体上出现抵制ChatGPT运动。",
-      "why": "这次排名飙升反映了用户对AI安全问题的关注和对Anthropic立场的支持。用户用实际行动投票，支持拒绝为军事用途妥协安全原则的公司。",
-      "sources": [
-        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/02/28/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute"},
-        {"name": "Windows Central", "url": "https://www.windowscentral.com/artificial-intelligence/cancel-chatgpt-movement-goes-mainstream-after-openai-closes-deal-with-u-s-department-of-war-as-anthropic-refuses-to-surveil-american-citizens"}
-      ]
+      "title": "荣耀Robot Phone亮相MWC 2026，具身智能加持的AI终端新形态",
+      "time": "2026-03-01",
+      "what": "荣耀在MWC 2026发布革命性的Robot Phone机器人手机，配备三轴云台摄像头，可随音乐舞蹈，并与阿莱达成影像战略合作。",
+      "why": "这款设备标志着智能手机向'具身智能'进化的新方向，将AI能力与物理运动结合，为AI终端开辟全新品类。",
+      "sources": [{"name": "IT之家", "url": "https://www.ithome.com/0/924/856.htm"}, {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/01/honor-says-its-robot-phone-with-moving-camera-can-dance-to-music"}]
     },
     {
-      "title": "小米Vision GT双门超跑MWC首发亮相，AI技术将接入《GT赛车7》",
-      "time": "2026-02-28",
-      "what": "小米在MWC 2026前夕发布Vision GT双门超跑概念车，同时宣布AI技术成果将在展会展出。该车未来可在《GT赛车7》游戏中驾驶体验。",
-      "why": "这标志着小米进军高端汽车概念设计领域，AI与游戏结合展示了未来智能汽车的想象空间。",
-      "sources": [
-        {"name": "IT之家", "url": "https://www.ithome.com/0/924/694.htm"},
-        {"name": "Mashable", "url": "https://mashable.com/article/xiaomi-vision-gran-turismo-hypercar"}
-      ]
+      "title": "Jack Dorsey旗下Block裁员4000人，'算力替代人力'论引发热议",
+      "time": "2026-03-01",
+      "what": "Block（原Square）宣布裁员约4000人，占员工总数40%。CEO Jack Dorsey表示AI能力提升是此次裁员的重要考量因素。",
+      "why": "这是科技行业迄今最大规模的AI驱动裁员，标志着'算力替代人力'从理论讨论进入大规模实践阶段，引发对AI就业冲击的广泛担忧。",
+      "sources": [{"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-01/jack-dorsey-s-4-000-job-cuts-at-block-arouse-suspicions-of-ai-washing"}, {"name": "36氪", "url": "https://www.36kr.com/p/3702862473801857"}]
     },
     {
-      "title": "DeepSeek最快下周发布V4模型，优先测试华为等国产芯片",
-      "time": "2026-02-28",
-      "what": "DeepSeek预计最快下周发布大模型V4，已让华为等国产芯片优先测试，排斥英伟达AMD等。同时DeepSeek发布DualPath系统让AI推理效率翻倍。",
-      "why": "这标志着中国AI芯片自主化进程加速，DeepSeek在国产芯片适配方面的进展可能改变AI基础设施的竞争格局。",
-      "sources": [
-        {"name": "驱动之家", "url": "https://news.mydrivers.com/1/1106/1106192.htm"},
-        {"name": "网易科技", "url": "https://www.163.com/dy/article/KMT0V0G00512B07B.html"}
-      ]
+      "title": "Anthropic与五角大楼谈判破裂内幕曝光：AI伦理与国家安全冲突",
+      "time": "2026-03-01",
+      "what": "《纽约时报》和《大西洋月刊》披露，Anthropic与五角大楼的谈判因AI伦理问题破裂。五角大楼希望用Claude分析美国人数据，遭Anthropic拒绝。",
+      "why": "这一事件凸显了AI公司在商业利益、伦理原则和政府监管之间的艰难平衡，可能成为AI治理的标志性案例。",
+      "sources": [{"name": "New York Times", "url": "https://www.nytimes.com/2026/03/01/technology/anthropic-defense-dept-openai-talks.html"}, {"name": "The Atlantic", "url": "https://www.theatlantic.com/technology/2026/03/inside-anthropics-killer-robot-dispute-with-the-pentagon/686200"}]
     },
     {
-      "title": "阿里开源桌面Agent工具CoPaw，Qwen3.5模型发布122B和35B版本",
-      "time": "2026-02-28",
-      "what": "阿里巴巴开源桌面Agent工具CoPaw，同时发布Qwen3.5 122B和35B模型，在本地计算机上提供接近Sonnet 4.5的性能表现。",
-      "why": "阿里在AI Agent基础设施和开源模型方面持续发力，Qwen3.5的发布为本地部署高性能AI提供了新选择。",
-      "sources": [
-        {"name": "开源中国", "url": "https://www.oschina.net/news/406374"},
-        {"name": "VentureBeat", "url": "https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance"}
-      ]
+      "title": "华为发布Agentic Core解决方案，加速智能体网络商用",
+      "time": "2026-03-01",
+      "what": "华为在MWC 2026巴塞罗那发布Agentic Core解决方案，通过NE智能、网络智能和服务智能三大引擎，加速智能体网络的商用部署。",
+      "why": "这标志着通信设备商正式进入AI Agent基础设施领域，将为运营商提供完整的智能体网络解决方案。",
+      "sources": [{"name": "Total Telecom", "url": "https://totaltele.com/huawei-will-release-the-agentic-core-solution-to-accelerate-the-commercial-use-of-agent-networks/"}]
     },
     {
-      "title": "OpenAI解雇员工因其在预测市场进行内幕交易",
-      "time": "2026-02-28",
-      "what": "OpenAI解雇一名员工，因其在预测市场Polymarket和Kalshi上使用机密信息进行内幕交易。",
-      "why": "这一事件暴露了AI公司内部信息监管的挑战，也引发了对预测市场与AI公司信息边界的讨论。",
-      "sources": [
-        {"name": "Wired", "url": "https://www.wired.com/story/openai-fires-employee-insider-trading-polymarket-kalshi"},
-        {"name": "IT之家", "url": "https://www.ithome.com/0/924/703.htm"}
-      ]
-    },
-    {
-      "title": "英伟达财报超预期但股价大跌，市场担忧AI投资回报",
-      "time": "2026-02-28",
-      "what": "英伟达发布财报业绩超预期，但股价大跌。市场开始质疑AI投资回报率，「被AI淘汰的恐惧」对工人和市场变得真切。",
-      "why": "这标志着AI投资热潮可能进入冷静期，市场对AI基础设施投资的回报预期正在重新评估。",
-      "sources": [
-        {"name": "新浪财经", "url": "https://finance.sina.com.cn/jjxw/2026-02-28/doc-inhpktnk9816904.shtml"},
-        {"name": "虎嗅", "url": "https://www.huxiu.com/article/4837885.html"}
-      ]
+      "title": "AWS阿联酋数据中心遭袭击起火，云服务地缘政治风险凸显",
+      "time": "2026-03-01",
+      "what": "亚马逊AWS位于阿联酋的中东中部区域数据中心因物体撞击引发火灾，导致多项服务中断。",
+      "why": "这一事件凸显了全球云服务基础设施面临的地缘政治风险，数据中心的地域分布和灾备能力成为关键考量。",
+      "sources": [{"name": "Reuters", "url": "https://www.reuters.com/world/middle-east/amazons-cloud-unit-reports-fire-after-objects-hit-uae-data-center-2026-03-01"}]
     }
   ],
   "sections": {
     "releases": [
       {
-        "title": "阿里开源CoPaw桌面Agent工具",
-        "time": "2026-02-28",
-        "what": "阿里巴巴开源桌面Agent工具CoPaw，允许用户在桌面环境部署AI代理执行自动化任务。",
-        "why": "这是国内首个开源桌面级AI Agent工具，标志着AI Agent从云端向本地桌面的延伸。",
-        "sources": [
-          {"name": "开源中国", "url": "https://www.oschina.net/news/406374"}
-        ]
+        "title": "荣耀Robot Phone：具身智能加持的AI终端新形态",
+        "time": "2026-03-01",
+        "what": "荣耀在MWC 2026发布Robot Phone机器人手机，配备三轴云台摄像头，可随音乐自主运动，与阿莱达成影像战略合作。",
+        "why": "这款设备开创性地将具身智能概念引入手机形态，标志着AI终端从'被动响应'向'主动交互'进化。",
+        "sources": [{"name": "IT之家", "url": "https://www.ithome.com/0/924/856.htm"}, {"name": "The Verge", "url": "https://www.theverge.com/gadgets/887140/honor-robot-phone-mwc-release-date-specs"}]
       },
       {
-        "title": "小米Vision GT概念车MWC首发",
-        "time": "2026-02-28",
-        "what": "小米Vision GT双门超跑在MWC 2026前夕首发亮相，搭载小米最新AI技术，玩家未来可在《GT赛车7》内驾驶体验。",
-        "why": "展示小米在AI与汽车融合领域的野心，AI技术游戏化应用开辟新场景。",
-        "sources": [
-          {"name": "IT之家", "url": "https://www.ithome.com/0/924/694.htm"}
-        ]
+        "title": "华为Agentic Core解决方案正式发布",
+        "time": "2026-03-01",
+        "what": "华为在MWC 2026发布Agentic Core解决方案，通过三大智能引擎为运营商提供智能体网络商用能力。",
+        "why": "这标志着通信基础设施向AI原生架构演进的重要一步。",
+        "sources": [{"name": "Total Telecom", "url": "https://totaltele.com/huawei-will-release-the-agentic-core-solution-to-accelerate-the-commercial-use-of-agent-networks/"}]
       }
     ],
     "updates": [
       {
-        "title": "OpenAI与五角大楼达成机密部署协议",
-        "time": "2026-02-28",
-        "what": "OpenAI宣布与美国战争部达成协议，在机密环境部署AI系统。OpenAI声称其安全护栏比Anthropic的协议更严格。",
-        "why": "这标志着OpenAI正式进入国防AI市场，也引发了关于AI公司是否应与军方合作的伦理讨论。",
-        "sources": [
-          {"name": "OpenAI", "url": "https://openai.com/index/our-agreement-with-the-department-of-war"},
-          {"name": "X/OpenAI", "url": "https://x.com/OpenAI/status/2027846012107456943"}
-        ]
+        "title": "Claude登顶美国App Store榜首",
+        "time": "2026-03-01",
+        "what": "在与五角大楼争议后，Anthropic的Claude应用超越ChatGPT成为美国App Store免费榜第一名。",
+        "why": "用户用下载量投票支持AI公司的伦理立场，'道德溢价'开始显现。",
+        "sources": [{"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/01/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute"}]
       },
       {
-        "title": "DeepSeek发布DualPath系统提升推理效率",
-        "time": "2026-02-28",
-        "what": "DeepSeek发布DualPath系统，通过优化推理路径让AI推理效率翻倍。",
-        "why": "推理效率的提升对于降低AI部署成本、提高响应速度具有重要意义。",
-        "sources": [
-          {"name": "网易科技", "url": "https://www.163.com/dy/article/KMT0V0G00512B07B.html"}
-        ]
+        "title": "OpenAI 110亿美元融资到位",
+        "time": "2026-03-01",
+        "what": "OpenAI完成新一轮110亿美元融资，估值达8400亿美元。",
+        "why": "充足资金将支持其在AGI研发上的长期投入。",
+        "sources": [{"name": "The Guardian", "url": "https://www.theguardian.com"}]
       }
     ],
-    "opensource": [
-      {
-        "title": "阿里开源Qwen3.5 122B和35B模型",
-        "time": "2026-02-28",
-        "what": "阿里巴巴发布并开源Qwen3.5 122B和35B模型，可在本地计算机运行，性能接近Sonnet 4.5。",
-        "why": "为开源社区提供了高性能本地部署选择，降低了对云端API的依赖。",
-        "sources": [
-          {"name": "VentureBeat", "url": "https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance"}
-        ]
-      },
-      {
-        "title": "GitHub趋势：多个AI Agent开源项目发布",
-        "time": "2026-02-28",
-        "what": "包括MemoryKit、Grantex、Telos等多个AI Agent相关项目登上GitHub趋势榜，涵盖持久化内存、授权协议和上下文框架。",
-        "why": "AI Agent基础设施正在快速成熟，开源社区在推动Agent标准化方面发挥重要作用。",
-        "sources": [
-          {"name": "GitHub", "url": "https://github.com"}
-        ]
-      }
-    ],
+    "opensource": [],
     "benchmarks": [],
     "business": [
       {
-        "title": "诺基亚与西班牙电信达成独家AI网络合作协议",
-        "time": "2026-02-28",
-        "what": "诺基亚与西班牙电信Telefonica达成独家AI网络合作协议，将为后者提供AI驱动的网络基础设施解决方案。",
-        "why": "标志着AI技术在电信基础设施领域的深度应用，诺基亚正在转型为AI网络解决方案提供商。",
-        "sources": [
-          {"name": "Yahoo Finance", "url": "https://finance.yahoo.com/news/nokia-wins-exclusive-ai-network-213014237.html"}
-        ]
+        "title": "Block裁员4000人，AI替代人力进入实践阶段",
+        "time": "2026-03-01",
+        "what": "Jack Dorsey旗下Block宣布裁员约4000人，占员工总数40%，AI能力提升是重要考量因素。",
+        "why": "这是科技行业迄今最大规模的AI驱动裁员，引发对就业冲击的广泛讨论。",
+        "sources": [{"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-01/jack-dorsey-s-4-000-job-cuts-at-block-arouse-suspicions-of-ai-washing"}]
       },
       {
-        "title": "英伟达财报后股价大跌，市场对AI投资回报率产生担忧",
-        "time": "2026-02-28",
-        "what": "尽管财报业绩超预期，英伟达股价大跌。市场开始担忧AI投资的实际回报率。",
-        "why": "这可能是AI投资热潮降温的信号，投资者开始要求看到AI应用的实际落地和盈利。",
-        "sources": [
-          {"name": "新浪财经", "url": "https://finance.sina.com.cn/jjxw/2026-02-28/doc-inhpktnk9816904.shtml"}
-        ]
+        "title": "以色列AI公司Guidde完成5000万美元B轮融资",
+        "time": "2026-03-01",
+        "what": "总部位于以色列的Guidde公司完成5000万美元B轮融资，由PSG Equity领投。该公司致力于加速企业AI应用落地。",
+        "why": "企业级AI应用平台持续获得资本青睐。",
+        "sources": [{"name": "Techmeme", "url": "http://www.techmeme.com/260301/p12"}]
       }
     ],
     "risks": [
       {
-        "title": "Anthropic被美国政府列为供应链风险",
-        "time": "2026-02-28",
-        "what": "特朗普政府正式将Anthropic列入黑名单，禁止联邦机构使用，原因是其拒绝为军事用途移除AI安全护栏。",
-        "why": "这是AI安全与国家安全冲突的标志性事件，可能改变AI公司处理政府合作的方式。",
-        "sources": [
-          {"name": "Ars Technica", "url": "https://arstechnica.com/tech-policy/2026/02/trump-moves-to-ban-anthropic-from-the-us-government"}
-        ]
+        "title": "Anthropic与五角大楼谈判破裂，AI伦理冲突升级",
+        "time": "2026-03-01",
+        "what": "Anthropic因拒绝参与美国国防部的AI监控项目，与五角大楼谈判破裂。特朗普政府随后下令联邦机构停用Anthropic技术。",
+        "why": "这一事件凸显了AI公司在商业利益、伦理原则和政府监管之间的艰难平衡。",
+        "sources": [{"name": "New York Times", "url": "https://www.nytimes.com/2026/03/01/technology/anthropic-defense-dept-openai-talks.html"}]
       },
       {
-        "title": "OpenAI员工因预测市场内幕交易被解雇",
-        "time": "2026-02-28",
-        "what": "OpenAI解雇一名员工，因其在Polymarket和Kalshi预测市场利用公司内部信息进行交易。",
-        "why": "暴露了AI公司内部信息管理的漏洞，以及预测市场与AI行业之间的灰色地带。",
-        "sources": [
-          {"name": "Wired", "url": "https://www.wired.com/story/openai-fires-employee-insider-trading-polymarket-kalshi"}
-        ]
+        "title": "AWS阿联酋数据中心遭袭，云服务安全引关注",
+        "time": "2026-03-01",
+        "what": "AWS阿联酋数据中心因物体撞击引发火灾，多项服务中断。",
+        "why": "地缘政治风险对全球云基础设施的威胁日益凸显。",
+        "sources": [{"name": "Reuters", "url": "https://www.reuters.com/world/middle-east/amazons-cloud-unit-reports-fire-after-objects-hit-uae-data-center-2026-03-01"}]
       }
     ]
   },
   "x_highlights": [
     {
-      "author": "OpenAI",
-      "handle": "@OpenAI",
-      "text": "OpenAI宣布与美国战争部达成协议，在机密环境部署AI系统。OpenAI声称其安全护栏比以往任何协议都更严格，并表示Anthropic不应被列为供应链风险。",
-      "url": "https://x.com/OpenAI/status/2027846012107456943",
-      "likes": 12500,
-      "reposts": 3400,
-      "replies": 2100
+      "author": "Skillfarm",
+      "handle": "@skillfarmai",
+      "text": "Cloudflare推出MCP服务器的'Code Mode'，将2500多个API端点整合为仅2个工具、约1000个token。这是构建可扩展技能的范例：更少冗余，更强能力。",
+      "url": "https://x.com/skillfarmai/status/2028272384361324774",
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0
     },
     {
-      "author": "Ahmed Haboubi",
-      "handle": "@ahaboubi",
-      "text": "过去24小时：1. 白宫正式将Anthropic列入黑名单 2. 五角大楼与OpenAI签署大规模机密军事部署协议 3. Claude 4.6因拒绝移除安全护栏被标记为供应链风险。你正在AI冷战中选边站吗？",
-      "url": "https://x.com/ahaboubi/status/2027897435373142498",
-      "likes": 8900,
-      "reposts": 2800,
-      "replies": 950
+      "author": "Suddenly Liu",
+      "handle": "@suddenlyliu",
+      "text": "Claude Cowork指南不仅是一份使用手册，更是'提示工程'的讣告。它描述了从ChatGPT时代（痴迷交互层）到2026时代（架构上下文与记忆层）的精确转变。未来不属于那些会说话的人，而属于构建最严谨'状态与记忆'环境的人。",
+      "url": "https://x.com/suddenlyliu/status/2028272219336646906",
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0
     },
     {
-      "author": "GIZIN AI Team",
-      "handle": "@gizinaiteam",
-      "text": "Xcode 26.3内置Claude Code获得9000点赞。同一周，开发方Anthropic被指定为国家安全风险。安全与便利并非不同事物，而是同一设计的不同名称——以人类监督为前提构建。",
-      "url": "https://x.com/gizinaiteam/status/2027897389940678702",
-      "likes": 5600,
-      "reposts": 1800,
-      "replies": 420
-    },
-    {
-      "author": "Dario Amodei",
-      "handle": "@DarioAmodei (引用)",
-      "text": "Anthropic CEO谈及五角大楼争执：与政府持不同意见是世界上最美国的事情。我们是爱国的美国人，但我们担心某些AI用途可能与美国价值观冲突。",
-      "url": "https://x.com/gizinaiteam/status/2027897389940678702",
-      "likes": 15200,
-      "reposts": 4100,
-      "replies": 1800
+      "author": "Pahud",
+      "handle": "@pahudnet",
+      "text": "Codex与Claude Code的定位分化：Codex擅长后端无bug开发，Claude Code擅长前端体验设计，开发者开始依场景选择工具。",
+      "url": "https://x.com/pahudnet/status/2028272210931003484",
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0
     }
   ],
   "self_check": {
     "coverage_analysis": {
-      "target_vendors": ["OpenAI", "Anthropic", "Google", "DeepSeek", "阿里", "智谱", "Meta", "月之暗面"],
-      "hit_vendors": ["OpenAI", "Anthropic", "Google", "DeepSeek", "阿里"],
-      "missed_vendors": ["智谱", "Meta", "月之暗面"],
-      "missed_reason": "智谱、Meta、月之暗面在48小时内无重大新闻发布，预读数据和搜索中均未发现符合时效要求的条目"
+      "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
+      "hit_vendors": ["OpenAI", "Anthropic", "荣耀/华为", "Block"],
+      "missed_vendors": ["Google", "Meta", "字节", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
+      "missed_reason": "过去48小时内国内大模型厂商（字节、智谱、Kimi、阿里、腾讯、百度）无重大新闻发布；Google和Meta亦无显著动态"
     },
     "freshness_check": {
       "target_headlines": 12,
-      "actual_headlines": 8,
+      "actual_headlines": 7,
       "supplement_searches_triggered": true,
-      "supplement_searches_count": 1,
-      "rejected_over_48h": [],
-      "reason": "预读数据覆盖充足，仅执行1次英文搜索补充，所有新闻均在48小时内"
+      "supplement_searches_count": 3,
+      "rejected_over_48h": ["DeepSeek V4确认将于3月第一周发布（发布时间2026-02-27，已剔除）"],
+      "reason": "已剔除超过48小时的新闻，所有保留新闻均为48小时内发布"
     },
     "bird_status": {
       "available": true,
       "cookies_found": true,
-      "fallback": "无",
-      "x_highlights_source": "bird CLI采集OpenAI官方账号及热门讨论"
+      "fallback": "X搜索正常",
+      "x_highlights_source": "bird搜索获取"
     },
     "dedupe_keys": [
-      {"key": "openai-pentagon-deal", "entity": "OpenAI", "product": "GPT", "event_type": "business", "version_or_date": "2026-02-28", "sources_merged": 3},
-      {"key": "anthropic-blacklist", "entity": "Anthropic", "product": "Claude", "event_type": "risk", "version_or_date": "2026-02-28", "sources_merged": 3},
-      {"key": "claude-appstore-rank", "entity": "Anthropic", "product": "Claude", "event_type": "business", "version_or_date": "2026-02-28", "sources_merged": 2},
-      {"key": "gemini-3.1-pro-release", "entity": "Google", "product": "Gemini", "event_type": "release", "version_or_date": "v3.1", "sources_merged": 2},
-      {"key": "deepseek-v4-preview", "entity": "DeepSeek", "product": "V4", "event_type": "release", "version_or_date": "v4", "sources_merged": 2},
-      {"key": "qwen3.5-release", "entity": "阿里", "product": "Qwen", "event_type": "release", "version_or_date": "v3.5", "sources_merged": 2},
-      {"key": "openai-employee-fired", "entity": "OpenAI", "product": "-", "event_type": "risk", "version_or_date": "2026-02-28", "sources_merged": 2},
-      {"key": "nvidia-stock-drop", "entity": "英伟达", "product": "-", "event_type": "business", "version_or_date": "2026-02-28", "sources_merged": 2}
+      {"key": "openai-funding-110b", "entity": "OpenAI", "product": "OpenAI", "event_type": "business", "version_or_date": "2026-03-01", "sources_merged": 1},
+      {"key": "anthropic-claude-appstore-1", "entity": "Anthropic", "product": "Claude", "event_type": "updates", "version_or_date": "2026-03-01", "sources_merged": 2},
+      {"key": "anthropic-pentagon-dispute", "entity": "Anthropic", "product": "Claude", "event_type": "risks", "version_or_date": "2026-03-01", "sources_merged": 2},
+      {"key": "honor-robot-phone", "entity": "荣耀", "product": "Robot Phone", "event_type": "releases", "version_or_date": "2026-03-01", "sources_merged": 2},
+      {"key": "block-layoffs-ai", "entity": "Block", "product": "Block", "event_type": "business", "version_or_date": "2026-03-01", "sources_merged": 2},
+      {"key": "huawei-agentic-core", "entity": "华为", "product": "Agentic Core", "event_type": "releases", "version_or_date": "2026-03-01", "sources_merged": 1},
+      {"key": "aws-uae-fire", "entity": "AWS", "product": "AWS Middle East", "event_type": "risks", "version_or_date": "2026-03-01", "sources_merged": 1}
     ],
-    "rejected_entries": []
+    "rejected_entries": [
+      {"title": "DeepSeek V4确认将于3月第一周发布", "reason": "发布时间2026-02-27超过48小时限制", "published_time": "2026-02-27"}
+    ]
+  },
+  "summary": {
+    "url": "https://elliclee.github.io/ai-daily-report/",
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-02.html"
   }
 }
