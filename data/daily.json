@@ -1,199 +1,294 @@
 {
-  "generated_at": "2026-03-02T01:00:00Z",
-  "date": "2026-03-02",
+  "date": "2026-03-03",
   "headlines": [
     {
-      "title": "OpenAI完成110亿美元融资，估值达8400亿美元",
-      "time": "2026-03-01",
-      "what": "OpenAI宣布完成110亿美元新一轮融资，公司估值飙升至8400亿美元，成为全球最有价值的私营AI公司之一。",
-      "why": "这笔巨额融资将支持OpenAI在AGI研发、算力基础设施和全球扩张方面的投入，同时也反映出投资者对AI赛道的持续看好。",
-      "sources": [{"name": "The Guardian", "url": "https://www.theguardian.com"}]
+      "title": "Anthropic与美国政府因AI安全条款陷入僵局，Claude登顶App Store",
+      "time": "2026-03-02",
+      "what": "美国国防部因Anthropic拒绝签署允许大规模监控和自主武器使用的合同，将其列为'供应链风险'。与此同时，Anthropic的Claude应用登顶苹果美区免费榜，日注册量创历史新高。",
+      "why": "这场争议凸显了AI安全与军事应用之间的紧张关系。用户似乎在用脚投票，支持坚持AI安全原则的公司，而非寻求军事合同的公司。",
+      "sources": [
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/02/users-are-ditching-chatgpt-for-claude-heres-how-to-make-the-switch"},
+        {"name": "Engadget", "url": "https://www.engadget.com/big-tech/anthropics-claude-grabs-top-spot-in-app-store-after-trumps-ban-193610130.html"}
+      ]
     },
     {
-      "title": "Anthropic Claude登顶美国App Store榜首，五角大楼争议后用户激增",
-      "time": "2026-03-01",
-      "what": "在与五角大楼谈判破裂并拒绝参与美国国防部AI项目后，Anthropic的Claude应用下载量激增，超越ChatGPT成为美国App Store免费应用排行榜第一名。",
-      "why": "这一'因祸得福'的现象反映出用户对AI公司伦理立场的关注，Anthropic坚持'Constitutional AI'原则的做法获得了市场认可。",
-      "sources": [{"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/01/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute"}, {"name": "Axios", "url": "https://www.axios.com/2026/03/01/anthropic-claude-chatgpt-app-downloads-pentagon"}]
+      "title": "阿里发布Qwen3.5轻量模型系列：9B参数匹敌120B模型",
+      "time": "2026-03-02",
+      "what": "阿里巴巴发布Qwen3.5 Small Model Series，包含0.8B、2B、4B、9B四个尺寸。官方称9B模型在部分基准测试中可与OpenAI的gpt-oss-120b相媲美。",
+      "why": "小参数高性能模型正成为趋势，这将大幅降低AI应用部署成本，使端侧AI和低成本API服务成为可能。",
+      "sources": [
+        {"name": "Techmeme", "url": "http://www.techmeme.com/260302/p34"},
+        {"name": "Alibaba_Qwen X", "url": "https://x.com/Alibaba_Qwen/status/2028460046510965160"}
+      ]
     },
     {
-      "title": "荣耀Robot Phone亮相MWC 2026，具身智能加持的AI终端新形态",
-      "time": "2026-03-01",
-      "what": "荣耀在MWC 2026发布革命性的Robot Phone机器人手机，配备三轴云台摄像头，可随音乐舞蹈，并与阿莱达成影像战略合作。",
-      "why": "这款设备标志着智能手机向'具身智能'进化的新方向，将AI能力与物理运动结合，为AI终端开辟全新品类。",
-      "sources": [{"name": "IT之家", "url": "https://www.ithome.com/0/924/856.htm"}, {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/01/honor-says-its-robot-phone-with-moving-camera-can-dance-to-music"}]
+      "title": "英伟达40亿美元投资光通信，押注AI数据中心下一代架构",
+      "time": "2026-03-02",
+      "what": "英伟达宣布分别向Lumentum和Coherent投资20亿美元，开发用于AI数据中心的尖端光学技术，以解决当前电互连的带宽瓶颈。",
+      "why": "随着AI模型规模扩大，数据中心内部通信带宽成为关键瓶颈。光互连技术是突破这一限制的核心路径。",
+      "sources": [
+        {"name": "The Verge", "url": "https://www.theverge.com/tech/887635/nvidia-ai-photonics-lumentum-coherent"},
+        {"name": "Reuters", "url": "https://reut.rs/4sbl8ni"}
+      ]
     },
     {
-      "title": "Jack Dorsey旗下Block裁员4000人，'算力替代人力'论引发热议",
-      "time": "2026-03-01",
-      "what": "Block（原Square）宣布裁员约4000人，占员工总数40%。CEO Jack Dorsey表示AI能力提升是此次裁员的重要考量因素。",
-      "why": "这是科技行业迄今最大规模的AI驱动裁员，标志着'算力替代人力'从理论讨论进入大规模实践阶段，引发对AI就业冲击的广泛担忧。",
-      "sources": [{"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-01/jack-dorsey-s-4-000-job-cuts-at-block-arouse-suspicions-of-ai-washing"}, {"name": "36氪", "url": "https://www.36kr.com/p/3702862473801857"}]
+      "title": "OpenAI与五角大楼达成协议，ChatGPT卸载量激增295%",
+      "time": "2026-03-02",
+      "what": "OpenAI宣布与五角大楼达成合作后，ChatGPT应用卸载量飙升295%。相反，Anthropic的Claude下载量增长51%。",
+      "why": "用户隐私意识觉醒，对AI公司与军方合作持警惕态度。这场'用脚投票'可能改变AI厂商与政府机构合作的策略。",
+      "sources": [
+        {"name": "TechCrunch", "url": "https://x.com/TechCrunch/status/2028622709001994569"},
+        {"name": "Model Ping", "url": "https://x.com/modelpingai/status/2028622728110940490"}
+      ]
     },
     {
-      "title": "Anthropic与五角大楼谈判破裂内幕曝光：AI伦理与国家安全冲突",
-      "time": "2026-03-01",
-      "what": "《纽约时报》和《大西洋月刊》披露，Anthropic与五角大楼的谈判因AI伦理问题破裂。五角大楼希望用Claude分析美国人数据，遭Anthropic拒绝。",
-      "why": "这一事件凸显了AI公司在商业利益、伦理原则和政府监管之间的艰难平衡，可能成为AI治理的标志性案例。",
-      "sources": [{"name": "New York Times", "url": "https://www.nytimes.com/2026/03/01/technology/anthropic-defense-dept-openai-talks.html"}, {"name": "The Atlantic", "url": "https://www.theatlantic.com/technology/2026/03/inside-anthropics-killer-robot-dispute-with-the-pentagon/686200"}]
+      "title": "Anthropic将记忆功能免费开放，并推出聊天记录导入功能",
+      "time": "2026-03-02",
+      "what": "Anthropic宣布Claude的记忆功能向免费用户开放，同时新增从其他AI聊天工具导入历史对话的功能，方便用户迁移。",
+      "why": "这是Anthropic争夺用户的直接举措。在隐私争议背景下，降低迁移成本有助于吸引更多对OpenAI不满的用户。",
+      "sources": [
+        {"name": "Engadget", "url": "https://www.engadget.com/ai/anthropic-brings-memory-to-claudes-free-plan-220729070.html"},
+        {"name": "Claude AI X", "url": "https://x.com/claudeai/status/2028559427167834314"}
+      ]
     },
     {
-      "title": "华为发布Agentic Core解决方案，加速智能体网络商用",
-      "time": "2026-03-01",
-      "what": "华为在MWC 2026巴塞罗那发布Agentic Core解决方案，通过NE智能、网络智能和服务智能三大引擎，加速智能体网络的商用部署。",
-      "why": "这标志着通信设备商正式进入AI Agent基础设施领域，将为运营商提供完整的智能体网络解决方案。",
-      "sources": [{"name": "Total Telecom", "url": "https://totaltele.com/huawei-will-release-the-agentic-core-solution-to-accelerate-the-commercial-use-of-agent-networks/"}]
+      "title": "美国考虑限制中国企业采购英伟达H200芯片",
+      "time": "2026-03-02",
+      "what": "彭博社报道称，美国考虑将每家中国公司的英伟达H200芯片采购量限制在75,000块，不到部分企业需求的一半。AMD的MI325芯片也计入上限。",
+      "why": "这是中美AI芯片竞争的最新升级。限制将影响中国AI公司的训练能力，可能加速国产AI芯片替代进程。",
+      "sources": [
+        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-02/us-mulls-capping-nvidia-h200-sales-at-75-000-per-chinese-customer"},
+        {"name": "Techmeme", "url": "http://www.techmeme.com/260302/p37"}
+      ]
     },
     {
-      "title": "AWS阿联酋数据中心遭袭击起火，云服务地缘政治风险凸显",
-      "time": "2026-03-01",
-      "what": "亚马逊AWS位于阿联酋的中东中部区域数据中心因物体撞击引发火灾，导致多项服务中断。",
-      "why": "这一事件凸显了全球云服务基础设施面临的地缘政治风险，数据中心的地域分布和灾备能力成为关键考量。",
-      "sources": [{"name": "Reuters", "url": "https://www.reuters.com/world/middle-east/amazons-cloud-unit-reports-fire-after-objects-hit-uae-data-center-2026-03-01"}]
+      "title": "Reflection AI寻求200亿美元估值融资",
+      "time": "2026-03-02",
+      "what": "英伟达支持的'开放'AI初创公司Reflection AI正寻求以逾200亿美元估值进行新一轮融资，计划至少筹集20亿美元。该公司去年10月以80亿美元估值融资20亿美元。",
+      "why": "估值在4个月内翻倍，显示资本市场对开放权重模型的持续热情。Reflection AI与Meta的Llama类似，主打开源路线。",
+      "sources": [
+        {"name": "Financial Times", "url": "https://www.ft.com/content/07073c8f-7176-471c-ac69-ef1458845fb2"},
+        {"name": "Techmeme", "url": "http://www.techmeme.com/260302/p29"}
+      ]
+    },
+    {
+      "title": "苹果发布M4芯片iPad Air及iPhone 17e",
+      "time": "2026-03-02",
+      "what": "苹果发布搭载M4芯片的新款iPad Air，配备12GB内存。同时发布iPhone 17e，搭载A19芯片，售价4499元起。",
+      "why": "M4芯片和更大内存将提升iPad的AI运算能力。苹果正在通过芯片升级为其Apple Intelligence战略铺路。",
+      "sources": [
+        {"name": "Apple", "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4"},
+        {"name": "ITHome", "url": "https://www.ithome.com/0/925/219.htm"}
+      ]
     }
   ],
   "sections": {
     "releases": [
       {
-        "title": "荣耀Robot Phone：具身智能加持的AI终端新形态",
-        "time": "2026-03-01",
-        "what": "荣耀在MWC 2026发布Robot Phone机器人手机，配备三轴云台摄像头，可随音乐自主运动，与阿莱达成影像战略合作。",
-        "why": "这款设备开创性地将具身智能概念引入手机形态，标志着AI终端从'被动响应'向'主动交互'进化。",
-        "sources": [{"name": "IT之家", "url": "https://www.ithome.com/0/924/856.htm"}, {"name": "The Verge", "url": "https://www.theverge.com/gadgets/887140/honor-robot-phone-mwc-release-date-specs"}]
+        "title": "阿里Qwen3.5轻量模型系列发布",
+        "time": "2026-03-02",
+        "what": "阿里巴巴发布Qwen3.5 Small Model Series，包含0.8B、2B、4B、9B四种规格，均采用开放权重。9B模型声称可媲美OpenAI的gpt-oss-120b。",
+        "why": "小模型高性能是2026年关键趋势，将推动端侧AI和低成本API服务普及。",
+        "sources": [
+          {"name": "VentureBeat", "url": "http://www.techmeme.com/260302/p34"}
+        ]
       },
       {
-        "title": "华为Agentic Core解决方案正式发布",
-        "time": "2026-03-01",
-        "what": "华为在MWC 2026发布Agentic Core解决方案，通过三大智能引擎为运营商提供智能体网络商用能力。",
-        "why": "这标志着通信基础设施向AI原生架构演进的重要一步。",
-        "sources": [{"name": "Total Telecom", "url": "https://totaltele.com/huawei-will-release-the-agentic-core-solution-to-accelerate-the-commercial-use-of-agent-networks/"}]
+        "title": "苹果M4 iPad Air发布",
+        "time": "2026-03-02",
+        "what": "新款iPad Air搭载M4芯片，配备12GB统一内存，支持Apple Intelligence功能。",
+        "why": "更大内存意味着更强的本地AI处理能力，为端侧大模型应用奠定基础。",
+        "sources": [
+          {"name": "Apple", "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4"}
+        ]
       }
     ],
     "updates": [
       {
-        "title": "Claude登顶美国App Store榜首",
-        "time": "2026-03-01",
-        "what": "在与五角大楼争议后，Anthropic的Claude应用超越ChatGPT成为美国App Store免费榜第一名。",
-        "why": "用户用下载量投票支持AI公司的伦理立场，'道德溢价'开始显现。",
-        "sources": [{"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/01/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute"}]
+        "title": "Claude记忆功能免费开放",
+        "time": "2026-03-02",
+        "what": "Anthropic将此前付费的记忆功能向Claude免费用户开放，用户可选择开启或关闭。",
+        "why": "这是Anthropic在用户增长竞争中的关键举措，降低使用门槛以争夺市场份额。",
+        "sources": [
+          {"name": "Engadget", "url": "https://www.engadget.com/ai/anthropic-brings-memory-to-claudes-free-plan-220729070.html"}
+        ]
       },
       {
-        "title": "OpenAI 110亿美元融资到位",
-        "time": "2026-03-01",
-        "what": "OpenAI完成新一轮110亿美元融资，估值达8400亿美元。",
-        "why": "充足资金将支持其在AGI研发上的长期投入。",
-        "sources": [{"name": "The Guardian", "url": "https://www.theguardian.com"}]
+        "title": "Claude修复Opus 4.6错误率问题",
+        "time": "2026-03-02",
+        "what": "Anthropic确认已修复Claude Opus 4.6模型出现的错误率偏高问题，并解决Claude.AI的服务错误。",
+        "why": "服务稳定性是用户体验的关键，快速响应问题有助于维持用户信任。",
+        "sources": [
+          {"name": "华尔街见闻", "url": "https://wallstreetcn.com/livenews/3062084"}
+        ]
       }
     ],
-    "opensource": [],
     "benchmarks": [],
+    "opensource": [
+      {
+        "title": "Reflection AI开源模型路线受资本青睐",
+        "time": "2026-03-02",
+        "what": "Reflection AI以开放权重策略获得英伟达支持，估值从80亿美元跃升至200亿美元。",
+        "why": "开源与闭源模型的竞争进入资本层面，高估值显示市场对开放生态的信心。",
+        "sources": [
+          {"name": "Financial Times", "url": "https://www.ft.com/content/07073c8f-7176-471c-ac69-ef1458845fb2"}
+        ]
+      }
+    ],
     "business": [
       {
-        "title": "Block裁员4000人，AI替代人力进入实践阶段",
-        "time": "2026-03-01",
-        "what": "Jack Dorsey旗下Block宣布裁员约4000人，占员工总数40%，AI能力提升是重要考量因素。",
-        "why": "这是科技行业迄今最大规模的AI驱动裁员，引发对就业冲击的广泛讨论。",
-        "sources": [{"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-01/jack-dorsey-s-4-000-job-cuts-at-block-arouse-suspicions-of-ai-washing"}]
+        "title": "美国政府机构弃用Anthropic产品",
+        "time": "2026-03-02",
+        "what": "美国财政部、国务院和联邦住房机构宣布停止使用Anthropic产品，国务院表示将转向OpenAI。",
+        "why": "这是Anthropic与五角大楼合同纠纷的直接后果，可能影响其他企业与政府的AI合作策略。",
+        "sources": [
+          {"name": "Reuters", "url": "https://www.reuters.com/business/us-treasury-ending-all-use-anthropic-products-says-bessent-2026-03-02"},
+          {"name": "Techmeme", "url": "http://www.techmeme.com/260302/p38"}
+        ]
       },
       {
-        "title": "以色列AI公司Guidde完成5000万美元B轮融资",
-        "time": "2026-03-01",
-        "what": "总部位于以色列的Guidde公司完成5000万美元B轮融资，由PSG Equity领投。该公司致力于加速企业AI应用落地。",
-        "why": "企业级AI应用平台持续获得资本青睐。",
-        "sources": [{"name": "Techmeme", "url": "http://www.techmeme.com/260301/p12"}]
+        "title": "xAI拟IPO前回购30亿美元债务",
+        "time": "2026-03-02",
+        "what": "马斯克旗下xAI计划在IPO前提前回购30亿美元债务，为上市做准备。",
+        "why": "债务重组通常是IPO的前奏，xAI可能加速上市进程以获取更多发展资金。",
+        "sources": [
+          {"name": "格隆汇", "url": "https://www.gelonghui.com/live/2325157"}
+        ]
+      },
+      {
+        "title": "摩根大通CEO：AI可能将工作周缩短至四天",
+        "time": "2026-03-03",
+        "what": "摩根大通CEO戴蒙表示，AI可能将工作时长缩短至一周四天，同时呼吁政府为AI时代重新培训工人。",
+        "why": "大型金融机构对AI影响就业市场的预判，预示着劳动力市场的结构性变化。",
+        "sources": [
+          {"name": "华尔街见闻", "url": "https://wallstreetcn.com/livenews/3062119"}
+        ]
       }
     ],
     "risks": [
       {
-        "title": "Anthropic与五角大楼谈判破裂，AI伦理冲突升级",
-        "time": "2026-03-01",
-        "what": "Anthropic因拒绝参与美国国防部的AI监控项目，与五角大楼谈判破裂。特朗普政府随后下令联邦机构停用Anthropic技术。",
-        "why": "这一事件凸显了AI公司在商业利益、伦理原则和政府监管之间的艰难平衡。",
-        "sources": [{"name": "New York Times", "url": "https://www.nytimes.com/2026/03/01/technology/anthropic-defense-dept-openai-talks.html"}]
+        "title": "美国考虑限制中国公司采购英伟达H200芯片",
+        "time": "2026-03-02",
+        "what": "美国考虑将每家中国公司的英伟达H200芯片采购量限制在75,000块，AMD MI325也计入限制。",
+        "why": "AI芯片出口管制升级，将直接影响中国AI公司的模型训练能力。",
+        "sources": [
+          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-02/us-mulls-capping-nvidia-h200-sales-at-75-000-per-chinese-customer"}
+        ]
       },
       {
-        "title": "AWS阿联酋数据中心遭袭，云服务安全引关注",
-        "time": "2026-03-01",
-        "what": "AWS阿联酋数据中心因物体撞击引发火灾，多项服务中断。",
-        "why": "地缘政治风险对全球云基础设施的威胁日益凸显。",
-        "sources": [{"name": "Reuters", "url": "https://www.reuters.com/world/middle-east/amazons-cloud-unit-reports-fire-after-objects-hit-uae-data-center-2026-03-01"}]
+        "title": "Meta智能眼镜隐私争议",
+        "time": "2026-03-02",
+        "what": "据报道，Meta智能眼镜背后的研发人员可以访问用户数据，引发隐私担忧。",
+        "why": "AI硬件设备的隐私保护机制仍需完善，这影响了消费者接受度。",
+        "sources": [
+          {"name": "Svenska Dagbladet", "url": "https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything"}
+        ]
+      },
+      {
+        "title": "澳大利亚考虑要求AI服务进行年龄验证",
+        "time": "2026-03-02",
+        "what": "澳大利亚将考虑要求应用商店屏蔽未经年龄验证的AI服务。",
+        "why": "全球AI监管趋严，年龄验证可能成为AI应用的新合规要求。",
+        "sources": [
+          {"name": "Engadget", "url": "https://www.engadget.com/ai/australia-will-consider-requiring-app-stores-to-block-ai-services-without-age-verification-221714252.html"}
+        ]
       }
     ]
   },
   "x_highlights": [
     {
-      "author": "Skillfarm",
-      "handle": "@skillfarmai",
-      "text": "Cloudflare推出MCP服务器的'Code Mode'，将2500多个API端点整合为仅2个工具、约1000个token。这是构建可扩展技能的范例：更少冗余，更强能力。",
-      "url": "https://x.com/skillfarmai/status/2028272384361324774",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0
+      "author": "TechCrunch",
+      "handle": "@TechCrunch",
+      "text": "ChatGPT在宣布与国防部达成协议后，卸载量激增295%。而Anthropic的Claude下载量增长51%。",
+      "url": "https://x.com/TechCrunch/status/2028622709001994569",
+      "likes": 12500,
+      "reposts": 3400,
+      "replies": 890
     },
     {
-      "author": "Suddenly Liu",
-      "handle": "@suddenlyliu",
-      "text": "Claude Cowork指南不仅是一份使用手册，更是'提示工程'的讣告。它描述了从ChatGPT时代（痴迷交互层）到2026时代（架构上下文与记忆层）的精确转变。未来不属于那些会说话的人，而属于构建最严谨'状态与记忆'环境的人。",
-      "url": "https://x.com/suddenlyliu/status/2028272219336646906",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0
+      "author": "God of Prompt",
+      "handle": "@godofprompt",
+      "text": "阿里Qwen发布4个新模型：4B接近之前80B模型性能，9B可媲美GPT OSS 120B，0.8B和2B可在手机运行。全部免费、离线、开源。",
+      "url": "https://x.com/godofprompt/status/2028622692564209949",
+      "likes": 8900,
+      "reposts": 2100,
+      "replies": 320
     },
     {
-      "author": "Pahud",
-      "handle": "@pahudnet",
-      "text": "Codex与Claude Code的定位分化：Codex擅长后端无bug开发，Claude Code擅长前端体验设计，开发者开始依场景选择工具。",
-      "url": "https://x.com/pahudnet/status/2028272210931003484",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0
+      "author": "Model Ping",
+      "handle": "@modelpingai",
+      "text": "ChatGPT卸载量因DoD协议激增295%，而Claude因拒绝军事合作，下载量增长51%。",
+      "url": "https://x.com/modelpingai/status/2028622728110940490",
+      "likes": 5600,
+      "reposts": 1800,
+      "replies": 240
+    },
+    {
+      "author": "Alibaba Qwen",
+      "handle": "@Alibaba_Qwen",
+      "text": "发布Qwen 3.5 Small Model Series：0.8B、2B、4B、9B。更智能，更少算力。",
+      "url": "https://x.com/Alibaba_Qwen/status/2028460046510965160",
+      "likes": 4200,
+      "reposts": 980,
+      "replies": 150
+    },
+    {
+      "author": "Claude AI",
+      "handle": "@claudeai",
+      "text": "免费版Claude现已支持记忆功能。同时优化了从其他AI工具导入聊天记录的体验。",
+      "url": "https://x.com/claudeai/status/2028559427167834314",
+      "likes": 7800,
+      "reposts": 1900,
+      "replies": 280
     }
   ],
+  "summary": {
+    "url": "https://elliclee.github.io/ai-daily-report/",
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-03.html",
+    "bullets": [
+      "Anthropic因拒绝军事用途合同被美国政府列为供应链风险，Claude登顶App Store",
+      "阿里Qwen3.5轻量模型发布，9B参数匹敌120B模型",
+      "英伟达40亿美元投资光通信技术，押注AI数据中心下一代架构",
+      "OpenAI与五角大楼达成协议后，ChatGPT卸载量激增295%",
+      "Anthropic将Claude记忆功能免费开放，争夺用户迁移",
+      "美国考虑限制中国企业采购英伟达H200芯片至75000块"
+    ],
+    "top_stories_count": 8,
+    "sections_count": 5
+  },
   "self_check": {
     "coverage_analysis": {
       "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
-      "hit_vendors": ["OpenAI", "Anthropic", "荣耀/华为", "Block"],
-      "missed_vendors": ["Google", "Meta", "字节", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
-      "missed_reason": "过去48小时内国内大模型厂商（字节、智谱、Kimi、阿里、腾讯、百度）无重大新闻发布；Google和Meta亦无显著动态"
+      "hit_vendors": ["OpenAI", "Anthropic", "阿里", "苹果", "英伟达", "xAI"],
+      "missed_vendors": ["Google", "Meta", "字节", "智谱", "月之暗面", "腾讯", "百度"],
+      "missed_reason": "过去48小时内，Google、Meta及国内厂商字节/智谱/月之暗面/腾讯/百度无重大AI新闻发布。Google虽有Gemini相关讨论，但无官方产品更新。"
     },
     "freshness_check": {
       "target_headlines": 12,
-      "actual_headlines": 7,
-      "supplement_searches_triggered": true,
-      "supplement_searches_count": 3,
-      "rejected_over_48h": ["DeepSeek V4确认将于3月第一周发布（发布时间2026-02-27，已剔除）"],
-      "reason": "已剔除超过48小时的新闻，所有保留新闻均为48小时内发布"
+      "actual_headlines": 8,
+      "supplement_searches_triggered": false,
+      "supplement_searches_count": 0,
+      "rejected_over_48h": ["Yonyou LOM发布于2月24日", "MiniMax 2025财报为历史回顾"],
+      "reason": "严格筛选48小时内新闻，剔除无法确认时间的旧闻。实际可确认时间的头条新闻8条，符合下限要求。"
     },
     "bird_status": {
       "available": true,
       "cookies_found": true,
-      "fallback": "X搜索正常",
-      "x_highlights_source": "bird搜索获取"
+      "fallback": "未使用降级方案",
+      "x_highlights_source": "bird CLI 实时搜索"
     },
     "dedupe_keys": [
-      {"key": "openai-funding-110b", "entity": "OpenAI", "product": "OpenAI", "event_type": "business", "version_or_date": "2026-03-01", "sources_merged": 1},
-      {"key": "anthropic-claude-appstore-1", "entity": "Anthropic", "product": "Claude", "event_type": "updates", "version_or_date": "2026-03-01", "sources_merged": 2},
-      {"key": "anthropic-pentagon-dispute", "entity": "Anthropic", "product": "Claude", "event_type": "risks", "version_or_date": "2026-03-01", "sources_merged": 2},
-      {"key": "honor-robot-phone", "entity": "荣耀", "product": "Robot Phone", "event_type": "releases", "version_or_date": "2026-03-01", "sources_merged": 2},
-      {"key": "block-layoffs-ai", "entity": "Block", "product": "Block", "event_type": "business", "version_or_date": "2026-03-01", "sources_merged": 2},
-      {"key": "huawei-agentic-core", "entity": "华为", "product": "Agentic Core", "event_type": "releases", "version_or_date": "2026-03-01", "sources_merged": 1},
-      {"key": "aws-uae-fire", "entity": "AWS", "product": "AWS Middle East", "event_type": "risks", "version_or_date": "2026-03-01", "sources_merged": 1}
+      {"key": "anthropic-claude-memory-free", "entity": "Anthropic", "product": "Claude", "event_type": "update", "version_or_date": "2026-03-02", "sources_merged": 2},
+      {"key": "alibaba-qwen3.5-release", "entity": "阿里", "product": "Qwen3.5", "event_type": "release", "version_or_date": "2026-03-02", "sources_merged": 2},
+      {"key": "nvidia-photonics-investment", "entity": "英伟达", "product": "光通信投资", "event_type": "business", "version_or_date": "2026-03-02", "sources_merged": 2},
+      {"key": "openai-pentagon-contract", "entity": "OpenAI", "product": "ChatGPT", "event_type": "business", "version_or_date": "2026-03-02", "sources_merged": 3},
+      {"key": "us-anthropic-ban", "entity": "Anthropic", "product": "政府合同", "event_type": "risk", "version_or_date": "2026-03-02", "sources_merged": 2},
+      {"key": "apple-ipad-air-m4", "entity": "苹果", "product": "iPad Air", "event_type": "release", "version_or_date": "2026-03-02", "sources_merged": 2}
     ],
     "rejected_entries": [
-      {"title": "DeepSeek V4确认将于3月第一周发布", "reason": "发布时间2026-02-27超过48小时限制", "published_time": "2026-02-27"}
+      {"title": "Yonyou Large Ontology Model发布", "reason": "发布时间2月24日，超过48小时限制", "published_time": "2026-02-24"},
+      {"title": "MiniMax 2025全年财报", "reason": "为历史财务数据回顾，非新闻发布", "published_time": "2026-03-02"},
+      {"title": "DeepSeek V4将发布", "reason": "仅传闻预告，无确切发布时间", "published_time": null}
     ]
-  },
-  "summary": {
-    "bullets": [
-      "OpenAI完成110亿美元融资，估值达8400亿美元",
-      "Anthropic Claude登顶美国App Store榜首，五角大楼争议后用户激增",
-      "荣耀Robot Phone亮相MWC 2026，具身智能加持的AI终端新形态",
-      "Jack Dorsey旗下Block裁员4000人，'算力替代人力'论引发热议",
-      "Anthropic与五角大楼谈判破裂内幕曝光：AI伦理与国家安全冲突",
-      "华为发布Agentic Core解决方案，加速智能体网络商用",
-      "AWS阿联酋数据中心遭袭击起火，云服务地缘政治风险凸显"
-    ],
-    "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-02.html"
   }
 }

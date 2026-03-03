@@ -1,24 +1,29 @@
 {
-  "generated_at": "2026-03-02T01:00:00Z",
-  "date": "2026-03-02",
-  "stories": [
+  "date": "2026-03-03",
+  "technemes": [
     {
-      "title": "Anthropic拒绝五角大楼后Claude登顶App Store",
-      "time": "2026-03-01",
-      "what": "因坚持AI伦理原则拒绝参与美国国防部监控项目，Anthropic反而获得用户支持，Claude应用下载量激增登顶美国App Store。",
-      "sources": [{"name": "Techmeme", "url": "http://www.techmeme.com"}]
+      "pattern": "AI Safety vs Military Contracts",
+      "description": "Anthropic因拒绝允许军方将AI用于大规模监控和自主武器而被美国政府列为'供应链风险'，而OpenAI则与五角大楼达成协议。这一分歧引发了用户大规模迁移——ChatGPT卸载量激增295%，而Claude登顶App Store。这揭示了AI安全原则与商业利益之间的根本张力。",
+      "examples": ["Anthropic被美国政府列为供应链风险", "OpenAI与五角大楼达成合作", "ChatGPT卸载量激增295%", "Claude登顶美区App Store"],
+      "sources": [
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/02/users-are-ditching-chatgpt-for-claude-heres-how-to-make-the-switch"}
+      ]
     },
     {
-      "title": "OpenAI与五角大楼合作协议细节披露",
-      "time": "2026-03-01",
-      "what": "OpenAI分享了与五角大楼合作协议的更多细节，与Anthropic形成鲜明对比。",
-      "sources": [{"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/01/openai-shares-more-details-about-its-agreement-with-the-pentagon"}]
+      "pattern": "Small Models, Big Performance",
+      "description": "阿里Qwen3.5 Small Model Series以小参数实现高性能——9B模型可媲美120B模型。这代表了一种范式转变：不再盲目追求参数规模，而是通过架构优化和数据质量提升效率。这将加速端侧AI和低成本API服务的普及。",
+      "examples": ["阿里Qwen3.5 9B媲美120B模型", "0.8B和2B模型可在手机运行", "Reflection AI 200亿美元估值"],
+      "sources": [
+        {"name": "VentureBeat", "url": "http://www.techmeme.com/260302/p34"}
+      ]
     },
     {
-      "title": "MWC 2026：荣耀机器人手机和华为Agentic Core成为焦点",
-      "time": "2026-03-01",
-      "what": "世界移动通信大会上，中国厂商荣耀和华为分别发布了具身智能机器人和智能体网络解决方案。",
-      "sources": [{"name": "Engadget", "url": "https://www.engadget.com"}]
+      "pattern": "Optical Interconnect for AI Datacenters",
+      "description": "英伟达40亿美元投资光通信技术，押注光互连将成为下一代AI数据中心的核心基础设施。随着模型规模扩大，电互连的带宽瓶颈日益凸显，光互连是突破这一限制的关键技术路径。",
+      "examples": ["英伟达投资Lumentum 20亿美元", "英伟达投资Coherent 20亿美元", "光子学技术用于AI数据中心"],
+      "sources": [
+        {"name": "The Verge", "url": "https://www.theverge.com/tech/887635/nvidia-ai-photonics-lumentum-coherent"}
+      ]
     }
   ]
 }

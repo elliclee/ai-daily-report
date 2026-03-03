@@ -1,81 +1,63 @@
 {
-  "fetched_at": "2026-03-01T23:30:04.017095",
+  "fetched_at": "2026-03-02T23:30:03.917150",
   "sources": {
     "hackernews-top": {
       "type": "hackernews",
-      "count": 8,
+      "count": 6,
       "items": [
         {
-          "title": "How to talk to anyone, and why you should",
+          "title": "British Columbia to end time changes, adopt year-round daylight time",
+          "url": "https://www.cbc.ca/news/canada/british-columbia/b-c-adopting-year-round-daylight-time-9.7111657",
+          "score": 283,
+          "by": "ireflect",
+          "time": "2026-03-02T20:30:52",
+          "comments": "https://news.ycombinator.com/item?id=47223620",
+          "description": ""
+        },
+        {
+          "title": "First in-utero stem cell therapy for fetal spina bifida repair is safe: study",
+          "url": "https://health.ucdavis.edu/news/headlines/first-ever-in-utero-stem-cell-therapy-for-fetal-spina-bifida-repair-is-safe-study-finds/2026/02",
+          "score": 228,
+          "by": "gmays",
+          "time": "2026-03-02T14:54:58",
+          "comments": "https://news.ycombinator.com/item?id=47218743",
+          "description": "A UC Davis Health research team has safely performed the world&rsquo;s first spina bifida treatment combining fetal surgery with stem cells, according to results from Phase 1 of an ongoing clinical trial. These results have been published today in The Lancet."
+        },
+        {
+          "title": "New iPad Air, powered by M4",
+          "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4/",
+          "score": 288,
+          "by": "Garbage",
+          "time": "2026-03-02T14:11:23",
+          "comments": "https://news.ycombinator.com/item?id=47218175",
+          "description": "Apple announced the new iPad Air featuring M4 and more memory, giving users a big jump in performance and making it more versatile than ever."
+        },
+        {
+          "title": "Motorola announces a partnership with GrapheneOS",
+          "url": "https://motorolanews.com/motorola-three-new-b2b-solutions-at-mwc-2026/",
+          "score": 2001,
+          "by": "km",
+          "time": "2026-03-02T06:48:07",
+          "comments": "https://news.ycombinator.com/item?id=47214645",
+          "description": "Motorola announces three new B2B solutions at MWC 2026, including GrapheneOS partnership, Moto Analytics and more."
+        },
+        {
+          "title": "How to talk to anyone and why you should",
           "url": "https://www.theguardian.com/lifeandstyle/2026/feb/24/stranger-secret-how-to-talk-to-anyone-why-you-should",
-          "score": 304,
+          "score": 530,
           "by": "Looky1173",
-          "time": "2026-02-24T20:08:38",
-          "comments": "https://news.ycombinator.com/item?id=47142183",
+          "time": "2026-03-02T07:30:12",
+          "comments": "https://news.ycombinator.com/item?id=47214864",
           "description": "Forget fear of public speaking. A lot of people now shy away completely from speaking to anyone in public. But if we learn to do this it’s enriching, for ourselves and society"
         },
         {
-          "title": "Ghostty – Terminal Emulator",
-          "url": "https://ghostty.org/docs",
-          "score": 565,
-          "by": "oli5679",
-          "time": "2026-03-01T12:13:03",
-          "comments": "https://news.ycombinator.com/item?id=47206009",
-          "description": "Ghostty is a fast, feature-rich, and cross-platform terminal emulator\nthat uses platform-native UI and GPU acceleration."
-        },
-        {
-          "title": "When does MCP make sense vs CLI?",
-          "url": "https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html",
-          "score": 205,
-          "by": "ejholmes",
-          "time": "2026-03-01T16:54:49",
-          "comments": "https://news.ycombinator.com/item?id=47208398",
-          "description": ""
-        },
-        {
-          "title": "Decision trees – the unreasonable power of nested decision rules",
-          "url": "https://mlu-explain.github.io/decision-tree/",
-          "score": 374,
-          "by": "mschnell",
-          "time": "2026-03-01T08:55:52",
-          "comments": "https://news.ycombinator.com/item?id=47204964",
-          "description": "An introduction to the Decision Trees, Entropy, and Information Gain."
-        },
-        {
-          "title": "Microgpt",
-          "url": "http://karpathy.github.io/2026/02/12/microgpt/",
-          "score": 1648,
-          "by": "tambourine_man",
-          "time": "2026-03-01T01:39:26",
-          "comments": "https://news.ycombinator.com/item?id=47202708",
-          "description": "Musings of a Computer Scientist."
-        },
-        {
-          "title": "10-202: Introduction to Modern AI (CMU)",
-          "url": "https://modernaicourse.org",
-          "score": 217,
-          "by": "vismit2000",
-          "time": "2026-03-01T07:35:03",
-          "comments": "https://news.ycombinator.com/item?id=47204559",
-          "description": ""
-        },
-        {
-          "title": "I built a demo of what AI chat will look like when it's \"free\" and ad-supported",
-          "url": "https://99helpers.com/tools/ad-supported-chat",
-          "score": 439,
-          "by": "nickk81",
-          "time": "2026-03-01T11:49:01",
-          "comments": "https://news.ycombinator.com/item?id=47205890",
-          "description": "Experience what AI chat looks like with heavy advertising: banners, interstitials, sponsored responses, freemium gates, and more."
-        },
-        {
-          "title": "New iron nanomaterial wipes out cancer cells without harming healthy tissue",
-          "url": "https://www.sciencedaily.com/releases/2026/02/260228093456.htm",
-          "score": 209,
-          "by": "gradus_ad",
-          "time": "2026-03-01T15:09:55",
-          "comments": "https://news.ycombinator.com/item?id=47207404",
-          "description": "Scientists at Oregon State University have engineered a powerful new nanomaterial that zeroes in on cancer cells and destroys them from the inside out. Designed to exploit cancer’s unique chemistry—its acidity and high hydrogen peroxide levels—the tiny iron-based structure sparks not one but two int"
+          "title": "Inside the M4 Apple Neural Engine, Part 1: Reverse Engineering",
+          "url": "https://maderix.substack.com/p/inside-the-m4-apple-neural-engine",
+          "score": 240,
+          "by": "zdw",
+          "time": "2026-03-01T17:11:44",
+          "comments": "https://news.ycombinator.com/item?id=47208573",
+          "description": "How we bypassed CoreML and talked directly to the hardware"
         }
       ]
     },
@@ -84,35 +66,19 @@
       "count": 5,
       "items": [
         {
-          "repo": "microsoft/markitdown",
-          "name": "markitdown",
-          "url": "https://github.com/microsoft/markitdown",
-          "description": "Python tool for converting files and office documents to Markdown.",
-          "stars_today": "798",
-          "language": "Python"
-        },
-        {
-          "repo": "bytedance/deer-flow",
-          "name": "deer-flow",
-          "url": "https://github.com/bytedance/deer-flow",
-          "description": "An open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skills and subagents, it handles different levels of tasks that could take minutes to hours.",
-          "stars_today": "352",
-          "language": "Python"
-        },
-        {
           "repo": "alibaba/OpenSandbox",
           "name": "OpenSandbox",
           "url": "https://github.com/alibaba/OpenSandbox",
           "description": "OpenSandbox is a general-purpose sandbox platform for AI applications, offering multi-language SDKs, unified sandbox APIs, and Docker/Kubernetes runtimes for scenarios like Coding Agents, GUI Agents, Agent Evaluation, AI Code Execution, and RL Training.",
-          "stars_today": "1186",
+          "stars_today": "982",
           "language": "Python"
         },
         {
-          "repo": "Shubhamsaboo/awesome-llm-apps",
-          "name": "awesome-llm-apps",
-          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-          "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.",
-          "stars_today": "475",
+          "repo": "microsoft/markitdown",
+          "name": "markitdown",
+          "url": "https://github.com/microsoft/markitdown",
+          "description": "Python tool for converting files and office documents to Markdown.",
+          "stars_today": "646",
           "language": "Python"
         },
         {
@@ -120,7 +86,23 @@
           "name": "claude-scientific-skills",
           "url": "https://github.com/K-Dense-AI/claude-scientific-skills",
           "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
-          "stars_today": "184",
+          "stars_today": "848",
+          "language": "Python"
+        },
+        {
+          "repo": "NanmiCoder/MediaCrawler",
+          "name": "MediaCrawler",
+          "url": "https://github.com/NanmiCoder/MediaCrawler",
+          "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
+          "stars_today": "121",
+          "language": "Python"
+        },
+        {
+          "repo": "scrapy/scrapy",
+          "name": "scrapy",
+          "url": "https://github.com/scrapy/scrapy",
+          "description": "Scrapy, a fast high-level web crawling & scraping framework for Python.",
+          "stars_today": "204",
           "language": "Python"
         }
       ]
