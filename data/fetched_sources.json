@@ -1,63 +1,99 @@
 {
-  "fetched_at": "2026-03-02T23:30:03.917150",
+  "fetched_at": "2026-03-03T23:30:06.947643",
   "sources": {
     "hackernews-top": {
       "type": "hackernews",
-      "count": 6,
+      "count": 10,
       "items": [
         {
-          "title": "British Columbia to end time changes, adopt year-round daylight time",
-          "url": "https://www.cbc.ca/news/canada/british-columbia/b-c-adopting-year-round-daylight-time-9.7111657",
-          "score": 283,
-          "by": "ireflect",
-          "time": "2026-03-02T20:30:52",
-          "comments": "https://news.ycombinator.com/item?id=47223620",
+          "title": "MacBook Pro with new M5 Pro and M5 Max",
+          "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/",
+          "score": 607,
+          "by": "scrlk",
+          "time": "2026-03-03T14:02:06",
+          "comments": "https://news.ycombinator.com/item?id=47232453",
+          "description": "Apple announced the latest 14- and 16-inch MacBook Pro with the all-new M5 Pro and M5 Max."
+        },
+        {
+          "title": "Intel's make-or-break 18A process node debuts for data center with 288-core Xeon",
+          "url": "https://www.tomshardware.com/pc-components/cpus/intels-make-or-break-18a-process-node-debuts-for-data-center-with-288-core-xeon-6-cpu-multi-chip-monster-sports-12-channels-of-ddr5-8000-foveros-direct-3d-packaging-tech",
+          "score": 215,
+          "by": "vanburen",
+          "time": "2026-03-03T18:54:06",
+          "comments": "https://news.ycombinator.com/item?id=47236958",
+          "description": "Intel unveils x86 CPU with the industry"
+        },
+        {
+          "title": "GPT‑5.3 Instant",
+          "url": "https://openai.com/index/gpt-5-3-instant/",
+          "score": 250,
+          "by": "meetpateltech",
+          "time": "2026-03-03T17:57:33",
+          "comments": "https://news.ycombinator.com/item?id=47236169",
           "description": ""
         },
         {
-          "title": "First in-utero stem cell therapy for fetal spina bifida repair is safe: study",
-          "url": "https://health.ucdavis.edu/news/headlines/first-ever-in-utero-stem-cell-therapy-for-fetal-spina-bifida-repair-is-safe-study-finds/2026/02",
-          "score": 228,
-          "by": "gmays",
-          "time": "2026-03-02T14:54:58",
-          "comments": "https://news.ycombinator.com/item?id=47218743",
-          "description": "A UC Davis Health research team has safely performed the world&rsquo;s first spina bifida treatment combining fetal surgery with stem cells, according to results from Phase 1 of an ongoing clinical trial. These results have been published today in The Lancet."
+          "title": "Claude's Cycles [pdf]",
+          "url": "https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf",
+          "score": 403,
+          "by": "fs123",
+          "time": "2026-03-03T10:57:42",
+          "comments": "https://news.ycombinator.com/item?id=47230710",
+          "description": ""
         },
         {
-          "title": "New iPad Air, powered by M4",
-          "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4/",
-          "score": 288,
+          "title": "The Xkcd thing, now interactive",
+          "url": "https://editor.p5js.org/isohedral/full/vJa5RiZWs",
+          "score": 1085,
+          "by": "memalign",
+          "time": "2026-03-03T10:56:52",
+          "comments": "https://news.ycombinator.com/item?id=47230704",
+          "description": "A web editor for p5.js, a JavaScript library with the goal of making coding accessible to artists, designers, educators, and beginners."
+        },
+        {
+          "title": "Don't become an engineering manager",
+          "url": "https://newsletter.manager.dev/p/dont-become-an-engineering-manager",
+          "score": 277,
+          "by": "flail",
+          "time": "2026-03-03T14:19:14",
+          "comments": "https://news.ycombinator.com/item?id=47232727",
+          "description": "Over drinks a few weeks ago, a friend told me he&#x27;d been offered a promotion, to an Engineering Manager role."
+        },
+        {
+          "title": "Physics Girl: Super-Kamiokande – Imaging the sun by detecting neutrinos [video]",
+          "url": "https://www.youtube.com/watch?v=B3m3AMRlYfc",
+          "score": 393,
+          "by": "pcdavid",
+          "time": "2026-03-03T14:42:30",
+          "comments": "https://news.ycombinator.com/item?id=47233110",
+          "description": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+        },
+        {
+          "title": "I'm reluctant to verify my identity or age for any online services",
+          "url": "https://neilzone.co.uk/2026/03/im-struggling-to-think-of-any-online-services-for-which-id-be-willing-to-verify-my-identity-or-age/",
+          "score": 852,
+          "by": "speckx",
+          "time": "2026-03-03T14:22:25",
+          "comments": "https://news.ycombinator.com/item?id=47232768",
+          "description": "Identity verification and age verification is an increasinly common policy conversation at the moment, in numerous countries."
+        },
+        {
+          "title": "Arm's Cortex X925: Reaching Desktop Performance",
+          "url": "https://chipsandcheese.com/p/arms-cortex-x925-reaching-desktop",
+          "score": 254,
+          "by": "ingve",
+          "time": "2026-03-03T07:34:47",
+          "comments": "https://news.ycombinator.com/item?id=47229344",
+          "description": "A big, high performance core from Arm"
+        },
+        {
+          "title": "MacBook Air with M5",
+          "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-macbook-air-with-m5/",
+          "score": 341,
           "by": "Garbage",
-          "time": "2026-03-02T14:11:23",
-          "comments": "https://news.ycombinator.com/item?id=47218175",
-          "description": "Apple announced the new iPad Air featuring M4 and more memory, giving users a big jump in performance and making it more versatile than ever."
-        },
-        {
-          "title": "Motorola announces a partnership with GrapheneOS",
-          "url": "https://motorolanews.com/motorola-three-new-b2b-solutions-at-mwc-2026/",
-          "score": 2001,
-          "by": "km",
-          "time": "2026-03-02T06:48:07",
-          "comments": "https://news.ycombinator.com/item?id=47214645",
-          "description": "Motorola announces three new B2B solutions at MWC 2026, including GrapheneOS partnership, Moto Analytics and more."
-        },
-        {
-          "title": "How to talk to anyone and why you should",
-          "url": "https://www.theguardian.com/lifeandstyle/2026/feb/24/stranger-secret-how-to-talk-to-anyone-why-you-should",
-          "score": 530,
-          "by": "Looky1173",
-          "time": "2026-03-02T07:30:12",
-          "comments": "https://news.ycombinator.com/item?id=47214864",
-          "description": "Forget fear of public speaking. A lot of people now shy away completely from speaking to anyone in public. But if we learn to do this it’s enriching, for ourselves and society"
-        },
-        {
-          "title": "Inside the M4 Apple Neural Engine, Part 1: Reverse Engineering",
-          "url": "https://maderix.substack.com/p/inside-the-m4-apple-neural-engine",
-          "score": 240,
-          "by": "zdw",
-          "time": "2026-03-01T17:11:44",
-          "comments": "https://news.ycombinator.com/item?id=47208573",
-          "description": "How we bypassed CoreML and talked directly to the hardware"
+          "time": "2026-03-03T14:04:56",
+          "comments": "https://news.ycombinator.com/item?id=47232502",
+          "description": "Apple today announced the new MacBook Air with M5, bringing exceptional performance and expanded AI capabilities to the world’s most popular laptop."
         }
       ]
     },
@@ -66,43 +102,43 @@
       "count": 5,
       "items": [
         {
-          "repo": "alibaba/OpenSandbox",
-          "name": "OpenSandbox",
-          "url": "https://github.com/alibaba/OpenSandbox",
-          "description": "OpenSandbox is a general-purpose sandbox platform for AI applications, offering multi-language SDKs, unified sandbox APIs, and Docker/Kubernetes runtimes for scenarios like Coding Agents, GUI Agents, Agent Evaluation, AI Code Execution, and RL Training.",
-          "stars_today": "982",
-          "language": "Python"
-        },
-        {
-          "repo": "microsoft/markitdown",
-          "name": "markitdown",
-          "url": "https://github.com/microsoft/markitdown",
-          "description": "Python tool for converting files and office documents to Markdown.",
-          "stars_today": "646",
-          "language": "Python"
-        },
-        {
           "repo": "K-Dense-AI/claude-scientific-skills",
           "name": "claude-scientific-skills",
           "url": "https://github.com/K-Dense-AI/claude-scientific-skills",
           "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
-          "stars_today": "848",
+          "stars_today": "790",
           "language": "Python"
         },
         {
-          "repo": "NanmiCoder/MediaCrawler",
-          "name": "MediaCrawler",
-          "url": "https://github.com/NanmiCoder/MediaCrawler",
-          "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
-          "stars_today": "121",
+          "repo": "agentscope-ai/agentscope",
+          "name": "agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope",
+          "description": "Build and run agents you can see, understand and trust.",
+          "stars_today": "83",
           "language": "Python"
         },
         {
-          "repo": "scrapy/scrapy",
-          "name": "scrapy",
-          "url": "https://github.com/scrapy/scrapy",
-          "description": "Scrapy, a fast high-level web crawling & scraping framework for Python.",
-          "stars_today": "204",
+          "repo": "agentscope-ai/ReMe",
+          "name": "ReMe",
+          "url": "https://github.com/agentscope-ai/ReMe",
+          "description": "ReMe: Memory Management Kit for Agents - Remember Me, Refine Me.",
+          "stars_today": "27",
+          "language": "Python"
+        },
+        {
+          "repo": "LMCache/LMCache",
+          "name": "LMCache",
+          "url": "https://github.com/LMCache/LMCache",
+          "description": "Supercharge Your LLM with the Fastest KV Cache Layer",
+          "stars_today": "140",
+          "language": "Python"
+        },
+        {
+          "repo": "alibaba/OpenSandbox",
+          "name": "OpenSandbox",
+          "url": "https://github.com/alibaba/OpenSandbox",
+          "description": "OpenSandbox is a general-purpose sandbox platform for AI applications, offering multi-language SDKs, unified sandbox APIs, and Docker/Kubernetes runtimes for scenarios like Coding Agents, GUI Agents, Agent Evaluation, AI Code Execution, and RL Training.",
+          "stars_today": "1097",
           "language": "Python"
         }
       ]

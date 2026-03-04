@@ -1,294 +1,313 @@
 {
-  "date": "2026-03-03",
+  "date": "2026-03-04",
   "headlines": [
     {
-      "title": "Anthropic与美国政府因AI安全条款陷入僵局，Claude登顶App Store",
-      "time": "2026-03-02",
-      "what": "美国国防部因Anthropic拒绝签署允许大规模监控和自主武器使用的合同，将其列为'供应链风险'。与此同时，Anthropic的Claude应用登顶苹果美区免费榜，日注册量创历史新高。",
-      "why": "这场争议凸显了AI安全与军事应用之间的紧张关系。用户似乎在用脚投票，支持坚持AI安全原则的公司，而非寻求军事合同的公司。",
+      "title": "OpenAI 发布 GPT-5.3 Instant，减少\"说教式\"警告",
+      "time": "2026-03-03",
+      "what": "OpenAI 发布 GPT-5.3 Instant 模型，大幅减少不必要的拒绝和过度谨慎的回复，同时提升网络搜索准确性和上下文理解能力。",
+      "why": "这是 ChatGPT 最常用模型的重大升级，直接回应用户对模型过度\"说教\"的抱怨，与同日发布的 Gemini 3.1 Flash-Lite 形成正面竞争。",
       "sources": [
-        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/02/users-are-ditching-chatgpt-for-claude-heres-how-to-make-the-switch"},
-        {"name": "Engadget", "url": "https://www.engadget.com/big-tech/anthropics-claude-grabs-top-spot-in-app-store-after-trumps-ban-193610130.html"}
+        {"name": "OpenAI", "url": "https://openai.com/index/gpt-5-3-instant"},
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/03/chatgpts-new-gpt-5-3-instant-model-will-stop-telling-you-to-calm-down"},
+        {"name": "MacRumors", "url": "https://www.macrumors.com/2026/03/03/chatgpt-5-3-instant-update"}
       ]
     },
     {
-      "title": "阿里发布Qwen3.5轻量模型系列：9B参数匹敌120B模型",
-      "time": "2026-03-02",
-      "what": "阿里巴巴发布Qwen3.5 Small Model Series，包含0.8B、2B、4B、9B四个尺寸。官方称9B模型在部分基准测试中可与OpenAI的gpt-oss-120b相媲美。",
-      "why": "小参数高性能模型正成为趋势，这将大幅降低AI应用部署成本，使端侧AI和低成本API服务成为可能。",
+      "title": "Google 推出 Gemini 3.1 Flash-Lite，成本效率创新高",
+      "time": "2026-03-03",
+      "what": "Google 发布 Gemini 3.1 Flash-Lite，是 Gemini 3 系列中速度最快、最具成本效益的模型，首字响应提速 2.5 倍，定价为输入 $0.25/M tokens、输出 $1.50/M tokens。",
+      "why": "与 GPT-5.3 Instant 同日发布，两大巨头在高性价比模型赛道正面交锋，为开发者提供更多低成本选择。",
       "sources": [
-        {"name": "Techmeme", "url": "http://www.techmeme.com/260302/p34"},
-        {"name": "Alibaba_Qwen X", "url": "https://x.com/Alibaba_Qwen/status/2028460046510965160"}
+        {"name": "IT之家", "url": "https://www.ithome.com/0/925/591.htm"},
+        {"name": "Google DeepMind", "url": "https://x.com/GoogleDeepMind/status/2028872381477929185"},
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability"}
       ]
     },
     {
-      "title": "英伟达40亿美元投资光通信，押注AI数据中心下一代架构",
-      "time": "2026-03-02",
-      "what": "英伟达宣布分别向Lumentum和Coherent投资20亿美元，开发用于AI数据中心的尖端光学技术，以解决当前电互连的带宽瓶颈。",
-      "why": "随着AI模型规模扩大，数据中心内部通信带宽成为关键瓶颈。光互连技术是突破这一限制的核心路径。",
+      "title": "Anthropic 为 Claude Code 推出语音模式",
+      "time": "2026-03-03",
+      "what": "Anthropic 开始为 Claude Code 推出语音模式，目前已向约 5% 用户开放，用户可通过 /voice 命令激活，实现免提编程。",
+      "why": "AI 编程助手竞争白热化，语音交互成为新战场，Anthropic 试图通过差异化功能吸引开发者。",
       "sources": [
-        {"name": "The Verge", "url": "https://www.theverge.com/tech/887635/nvidia-ai-photonics-lumentum-coherent"},
-        {"name": "Reuters", "url": "https://reut.rs/4sbl8ni"}
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability"},
+        {"name": "9to5Mac", "url": "https://9to5mac.com/2026/03/03/anthropic-adding-voice-mode-to-claude-code-in-gradual-rollout"}
       ]
     },
     {
-      "title": "OpenAI与五角大楼达成协议，ChatGPT卸载量激增295%",
-      "time": "2026-03-02",
-      "what": "OpenAI宣布与五角大楼达成合作后，ChatGPT应用卸载量飙升295%。相反，Anthropic的Claude下载量增长51%。",
-      "why": "用户隐私意识觉醒，对AI公司与军方合作持警惕态度。这场'用脚投票'可能改变AI厂商与政府机构合作的策略。",
+      "title": "Meta 与 News Corp 签署 5000 万美元/年 AI 许可协议",
+      "time": "2026-03-03",
+      "what": "Meta 与新闻集团达成多年 AI 内容许可协议，每年支付至多 5000 万美元，至少持续三年，用于训练 Meta 的 AI 模型。",
+      "why": "AI 巨头加速获取高质量训练数据，内容版权许可成为新常态，新闻内容价值被重新定义。",
       "sources": [
-        {"name": "TechCrunch", "url": "https://x.com/TechCrunch/status/2028622709001994569"},
-        {"name": "Model Ping", "url": "https://x.com/modelpingai/status/2028622728110940490"}
+        {"name": "华尔街日报", "url": "https://wallstreetcn.com/livenews/3063025"},
+        {"name": "Techmeme", "url": "http://www.techmeme.com/260303/p38"}
       ]
     },
     {
-      "title": "Anthropic将记忆功能免费开放，并推出聊天记录导入功能",
-      "time": "2026-03-02",
-      "what": "Anthropic宣布Claude的记忆功能向免费用户开放，同时新增从其他AI聊天工具导入历史对话的功能，方便用户迁移。",
-      "why": "这是Anthropic争夺用户的直接举措。在隐私争议背景下，降低迁移成本有助于吸引更多对OpenAI不满的用户。",
+      "title": "阿里开源 Qwen 3.5 小模型系列，马斯克点赞",
+      "time": "2026-03-03",
+      "what": "阿里开源三款 Qwen 3.5 中等规模模型（35B-A3B、122B-A10B、27B），创下中等尺寸模型性能新高，马斯克评论称\"惊人的智能密度\"。",
+      "why": "中国 AI 厂商在开源赛道持续发力，小模型高性能化成为新趋势，与海外巨头形成差异化竞争。",
       "sources": [
-        {"name": "Engadget", "url": "https://www.engadget.com/ai/anthropic-brings-memory-to-claudes-free-plan-220729070.html"},
-        {"name": "Claude AI X", "url": "https://x.com/claudeai/status/2028559427167834314"}
+        {"name": "新浪财经", "url": "https://finance.sina.com.cn/roll/2026-03-03/doc-inhpsicw4774204.shtml"},
+        {"name": "India Today", "url": "https://www.indiatoday.in/technology/news/story/alibaba-launches-qwen-35-small-model-series-beats-chatgpt-and-gemini-even-elon-musk-is-impressed-2876896-2026-03-03"},
+        {"name": "CSDN", "url": "https://blog.csdn.net/m0_47999117/article/details/158609371"}
       ]
     },
     {
-      "title": "美国考虑限制中国企业采购英伟达H200芯片",
-      "time": "2026-03-02",
-      "what": "彭博社报道称，美国考虑将每家中国公司的英伟达H200芯片采购量限制在75,000块，不到部分企业需求的一半。AMD的MI325芯片也计入上限。",
-      "why": "这是中美AI芯片竞争的最新升级。限制将影响中国AI公司的训练能力，可能加速国产AI芯片替代进程。",
+      "title": "美国最高法院：AI 生成艺术无法获得版权",
+      "time": "2026-03-03",
+      "what": "美国最高法院拒绝复审 AI 生成艺术版权案，意味着 AI 创作的作品无法获得版权保护，维持下级法院裁决。",
+      "why": "对 AI 创作领域具有里程碑意义，明确了人类创作与 AI 生成的法律边界，影响创作者和企业的知识产权策略。",
       "sources": [
-        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-02/us-mulls-capping-nvidia-h200-sales-at-75-000-per-chinese-customer"},
-        {"name": "Techmeme", "url": "http://www.techmeme.com/260302/p37"}
+        {"name": "Mashable", "url": "https://mashable.com/article/supreme-court-ai-copyright-case-denied"},
+        {"name": "The Verge", "url": "https://www.theverge.com/policy/887678/supreme-court-ai-art-copyright"}
       ]
     },
     {
-      "title": "Reflection AI寻求200亿美元估值融资",
-      "time": "2026-03-02",
-      "what": "英伟达支持的'开放'AI初创公司Reflection AI正寻求以逾200亿美元估值进行新一轮融资，计划至少筹集20亿美元。该公司去年10月以80亿美元估值融资20亿美元。",
-      "why": "估值在4个月内翻倍，显示资本市场对开放权重模型的持续热情。Reflection AI与Meta的Llama类似，主打开源路线。",
+      "title": "智谱 GLM-5 成为开源 SOTA，适配国产芯片",
+      "time": "2026-03-03",
+      "what": "智谱 GLM-5 在 Artificial Analysis Intelligence Index v4.0 获得 50 分，成为新的开源 SOTA 模型，首次完全适配华为昇腾、寒武纪等国产芯片。",
+      "why": "国产大模型在性能和生态上实现双重突破，开源赛道竞争格局生变，国产芯片适配降低供应链风险。",
       "sources": [
-        {"name": "Financial Times", "url": "https://www.ft.com/content/07073c8f-7176-471c-ac69-ef1458845fb2"},
-        {"name": "Techmeme", "url": "http://www.techmeme.com/260302/p29"}
+        {"name": "36氪", "url": "https://36kr.com/p/3695400723394178"},
+        {"name": "36氪", "url": "https://www.36kr.com/p/3694562326736772"}
       ]
     },
     {
-      "title": "苹果发布M4芯片iPad Air及iPhone 17e",
-      "time": "2026-03-02",
-      "what": "苹果发布搭载M4芯片的新款iPad Air，配备12GB内存。同时发布iPhone 17e，搭载A19芯片，售价4499元起。",
-      "why": "M4芯片和更大内存将提升iPad的AI运算能力。苹果正在通过芯片升级为其Apple Intelligence战略铺路。",
+      "title": "Meta 组建新 AI 工程组织推进超级智能计划",
+      "time": "2026-03-03",
+      "what": "Meta 成立 Meta Applied AI 工程部门，归属 Reality Labs，采用超扁平组织结构（每个经理可管理多达 50 人团队），加速推进超级智能研发。",
+      "why": "Meta 在 AI 领域加大投入，组织架构创新反映其追求快速迭代的决心，与 OpenAI、Google 竞争加剧。",
       "sources": [
-        {"name": "Apple", "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4"},
-        {"name": "ITHome", "url": "https://www.ithome.com/0/925/219.htm"}
+        {"name": "Business Insider", "url": "https://www.businessinsider.com/meta-ai-new-applied-engineering-team-2026-3"},
+        {"name": "华尔街日报", "url": "https://wallstreetcn.com/livenews/3062986"}
       ]
     }
   ],
   "sections": {
     "releases": [
       {
-        "title": "阿里Qwen3.5轻量模型系列发布",
-        "time": "2026-03-02",
-        "what": "阿里巴巴发布Qwen3.5 Small Model Series，包含0.8B、2B、4B、9B四种规格，均采用开放权重。9B模型声称可媲美OpenAI的gpt-oss-120b。",
-        "why": "小模型高性能是2026年关键趋势，将推动端侧AI和低成本API服务普及。",
+        "title": "OpenAI GPT-5.3 Instant：减少过度谨慎，提升准确性",
+        "time": "2026-03-03",
+        "what": "OpenAI 发布 GPT-5.3 Instant 模型，主要改进包括减少不必要的拒绝和过度谨慎的回复、提升网络搜索的准确性和上下文理解、优化对话风格使其更直接自然。GPT-5.2 Instant 将在模型选择器中保留 3 个月，于 6 月 3 日下线。",
+        "why": "直接回应用户长期抱怨的模型\"说教\"问题，与 Gemini 3.1 Flash-Lite 同日发布形成正面竞争。",
         "sources": [
-          {"name": "VentureBeat", "url": "http://www.techmeme.com/260302/p34"}
+          {"name": "OpenAI 官方", "url": "https://openai.com/index/gpt-5-3-instant"},
+          {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/03/chatgpts-new-gpt-5-3-instant-model-will-stop-telling-you-to-calm-down"},
+          {"name": "格隆汇", "url": "https://www.gelonghui.com/live/2327893"}
         ]
       },
       {
-        "title": "苹果M4 iPad Air发布",
-        "time": "2026-03-02",
-        "what": "新款iPad Air搭载M4芯片，配备12GB统一内存，支持Apple Intelligence功能。",
-        "why": "更大内存意味着更强的本地AI处理能力，为端侧大模型应用奠定基础。",
+        "title": "Google Gemini 3.1 Flash-Lite：速度与成本的新标杆",
+        "time": "2026-03-03",
+        "what": "Google 发布 Gemini 3.1 Flash-Lite，定位为 Gemini 3 系列中速度最快、最具成本效益的模型。首字响应速度比前代提升 2.5 倍，定价为输入 $0.25/M tokens、输出 $1.50/M tokens，比 2.5 Flash 更便宜更快。支持多模态分析和可变思考深度。",
+        "why": "为高频率、大规模 AI 应用提供更经济的选择，与 GPT-5.3 Instant 在性价比赛道直接竞争。",
         "sources": [
-          {"name": "Apple", "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4"}
+          {"name": "IT之家", "url": "https://www.ithome.com/0/925/591.htm"},
+          {"name": "Google DeepMind", "url": "https://x.com/GoogleDeepMind/status/2028872381477929185"}
+        ]
+      },
+      {
+        "title": "阿里 Qwen 3.5 小模型系列开源",
+        "time": "2026-03-03",
+        "what": "阿里开源三款 Qwen 3.5 中等规模模型：Qwen3.5-35B-A3B、Qwen3.5-122B-A10B、Qwen3.5-27B，均创下中等尺寸模型性能新高。旗舰版 Qwen3.5-397B-A17B 支持 256K 上下文和 201 种语言。",
+        "why": "小模型高性能化趋势明显，为本地部署和边缘计算提供更多选择，马斯克的点赞引发市场关注。",
+        "sources": [
+          {"name": "新浪财经", "url": "https://finance.sina.com.cn/roll/2026-03-03/doc-inhpsicw4774204.shtml"},
+          {"name": "India Today", "url": "https://www.indiatoday.in/technology/news/story/alibaba-launches-qwen-35-small-model-series-beats-chatgpt-and-gemini-even-elon-musk-is-impressed-2876896-2026-03-03"}
         ]
       }
     ],
     "updates": [
       {
-        "title": "Claude记忆功能免费开放",
-        "time": "2026-03-02",
-        "what": "Anthropic将此前付费的记忆功能向Claude免费用户开放，用户可选择开启或关闭。",
-        "why": "这是Anthropic在用户增长竞争中的关键举措，降低使用门槛以争夺市场份额。",
+        "title": "Claude Code 语音模式开始推送",
+        "time": "2026-03-03",
+        "what": "Anthropic 开始为 Claude Code 推出语音模式，目前已向约 5% 用户开放，未来几周逐步扩大。用户可通过输入 /voice 命令激活，实现免提语音编程。",
+        "why": "AI 编程助手竞争进入语音交互新阶段，Anthropic 通过差异化功能吸引开发者用户。",
         "sources": [
-          {"name": "Engadget", "url": "https://www.engadget.com/ai/anthropic-brings-memory-to-claudes-free-plan-220729070.html"}
+          {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability"},
+          {"name": "9to5Mac", "url": "https://9to5mac.com/2026/03/03/anthropic-adding-voice-mode-to-claude-code-in-gradual-rollout"},
+          {"name": "Reddit", "url": "https://www.reddit.com/r/ClaudeAI/comments/1rjkwqk/new_voice_mode_is_rolling_out_now_in_claude_code/"}
         ]
       },
       {
-        "title": "Claude修复Opus 4.6错误率问题",
-        "time": "2026-03-02",
-        "what": "Anthropic确认已修复Claude Opus 4.6模型出现的错误率偏高问题，并解决Claude.AI的服务错误。",
-        "why": "服务稳定性是用户体验的关键，快速响应问题有助于维持用户信任。",
+        "title": "Claude 新增免费内存功能和 ChatGPT 导入工具",
+        "time": "2026-03-03",
+        "what": "Anthropic 为 Claude 新增免费的内存功能，可记住用户偏好和历史对话，同时推出 ChatGPT 对话导入工具，方便用户从 ChatGPT 迁移。",
+        "why": "Anthropic 积极争取 ChatGPT 用户，内存功能提升长期使用体验，降低用户迁移成本。",
         "sources": [
-          {"name": "华尔街见闻", "url": "https://wallstreetcn.com/livenews/3062084"}
+          {"name": "MacRumors", "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5iVDhnLUw0TWw5VkdxRnh6TTQwR0hRMm9MUWlmd3RSbFBMOG10WVhlZTZVSWMzVE53MF9odDFQWC1kUFV6M3VIRFZuUHRPamFtXzJRT2EzNlM1eWZLeFNCSGpRM3RuVC15QS05eEo0LWZBWEla"},
+          {"name": "Yahoo Finance", "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNM1dDYTVkSUxNenlQY0JHREZLYUxYcTBMbl9QclBrMTNNZTFwTjItcWhnR2duSXdpWm5fWlBnNldSSl9IR2xsTENIQ3dkVGpxSnJGV1d3dlJmZjhPY1hsU09VVkhYN01Pa2QyZUJTWGVvQW5WTHFjdkhzOFpPMWdsZnQ5ZElMdw"}
+        ]
+      },
+      {
+        "title": "X 平台要求 AI 生成武装冲突视频必须标注",
+        "time": "2026-03-03",
+        "what": "X 平台宣布新政策，要求创作者在发布 AI 生成的武装冲突视频时必须标注，否则将暂停 90 天的创作者收益分成。",
+        "why": "应对 AI 生成内容在战时信息传播中的风险，平台开始主动规范 AI 内容的透明度。",
+        "sources": [
+          {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/03/x-says-it-will-suspend-creators-from-revenue-sharing-program-for-unlabeled-ai-posts-of-armed-conflict"},
+          {"name": "Engadget", "url": "https://www.engadget.com/social-media/x-to-require-ai-labels-on-armed-conflict-videos-from-paid-creators-citing-times-of-war-183631400.html"}
         ]
       }
     ],
-    "benchmarks": [],
     "opensource": [
       {
-        "title": "Reflection AI开源模型路线受资本青睐",
-        "time": "2026-03-02",
-        "what": "Reflection AI以开放权重策略获得英伟达支持，估值从80亿美元跃升至200亿美元。",
-        "why": "开源与闭源模型的竞争进入资本层面，高估值显示市场对开放生态的信心。",
+        "title": "智谱 GLM-5 开源模型达到 SOTA 水平",
+        "time": "2026-03-03",
+        "what": "智谱 GLM-5 在 Artificial Analysis Intelligence Index v4.0 获得 50 分，成为新的开源 SOTA 模型，这是开放权重模型首次在该指数达到 50 分。模型完全适配华为昇腾、寒武纪等国产芯片。",
+        "why": "国产大模型在开源赛道实现突破，国产芯片生态进一步完善，降低对海外供应链的依赖。",
         "sources": [
-          {"name": "Financial Times", "url": "https://www.ft.com/content/07073c8f-7176-471c-ac69-ef1458845fb2"}
+          {"name": "36氪", "url": "https://36kr.com/p/3695400723394178"},
+          {"name": "36氪", "url": "https://www.36kr.com/p/3694562326736772"}
+        ]
+      },
+      {
+        "title": "阿里 Qwen 3.5 小模型开源，性能超越同级别",
+        "time": "2026-03-03",
+        "what": "阿里开源 Qwen 3.5 小模型系列（0.8B 到 9B 参数），9B 版本性能接近 ChatGPT 和 Gemini 等大型模型。马斯克评论称其具有\"惊人的智能密度\"。",
+        "why": "开源小模型性能持续提升，为本地部署、边缘计算和移动设备提供更多选择。",
+        "sources": [
+          {"name": "新浪财经", "url": "https://finance.sina.com.cn/roll/2026-03-03/doc-inhpsicw4774204.shtml"},
+          {"name": "Medium", "url": "https://createmomo.medium.com/qwen3-5-gets-small-but-mighty-upgrade-alibabas-open-source-ai-models-now-span-0-8b-fc44a292021b"}
+        ]
+      }
+    ],
+    "benchmarks": [
+      {
+        "title": "智谱 GLM-5 在 Artificial Analysis Index 达到 50 分",
+        "time": "2026-03-03",
+        "what": "智谱 GLM-5 在 Artificial Analysis Intelligence Index v4.0 获得 50 分，成为开源模型新标杆。这是开放权重模型首次在该指数达到 50 分。",
+        "why": "证明国产开源模型已达到世界一流水平，为开发者提供更多高性能开源选择。",
+        "sources": [
+          {"name": "36氪", "url": "https://36kr.com/p/3695400723394178"}
         ]
       }
     ],
     "business": [
       {
-        "title": "美国政府机构弃用Anthropic产品",
-        "time": "2026-03-02",
-        "what": "美国财政部、国务院和联邦住房机构宣布停止使用Anthropic产品，国务院表示将转向OpenAI。",
-        "why": "这是Anthropic与五角大楼合同纠纷的直接后果，可能影响其他企业与政府的AI合作策略。",
-        "sources": [
-          {"name": "Reuters", "url": "https://www.reuters.com/business/us-treasury-ending-all-use-anthropic-products-says-bessent-2026-03-02"},
-          {"name": "Techmeme", "url": "http://www.techmeme.com/260302/p38"}
-        ]
-      },
-      {
-        "title": "xAI拟IPO前回购30亿美元债务",
-        "time": "2026-03-02",
-        "what": "马斯克旗下xAI计划在IPO前提前回购30亿美元债务，为上市做准备。",
-        "why": "债务重组通常是IPO的前奏，xAI可能加速上市进程以获取更多发展资金。",
-        "sources": [
-          {"name": "格隆汇", "url": "https://www.gelonghui.com/live/2325157"}
-        ]
-      },
-      {
-        "title": "摩根大通CEO：AI可能将工作周缩短至四天",
+        "title": "Meta 与 News Corp 签署 5000 万美元/年 AI 许可协议",
         "time": "2026-03-03",
-        "what": "摩根大通CEO戴蒙表示，AI可能将工作时长缩短至一周四天，同时呼吁政府为AI时代重新培训工人。",
-        "why": "大型金融机构对AI影响就业市场的预判，预示着劳动力市场的结构性变化。",
+        "what": "Meta 与新闻集团达成多年 AI 内容许可协议，每年支付至多 5000 万美元，至少持续三年。协议覆盖新闻集团旗下多家媒体的内容，用于训练 Meta 的 AI 模型。",
+        "why": "AI 巨头加速获取高质量训练数据，内容版权许可成为新常态，传统媒体找到新的收入来源。",
         "sources": [
-          {"name": "华尔街见闻", "url": "https://wallstreetcn.com/livenews/3062119"}
+          {"name": "华尔街日报", "url": "https://wallstreetcn.com/livenews/3063025"},
+          {"name": "Techmeme", "url": "http://www.techmeme.com/260303/p38"}
+        ]
+      },
+      {
+        "title": "Meta 组建新 AI 工程组织推进超级智能",
+        "time": "2026-03-03",
+        "what": "Meta 成立 Meta Applied AI 工程部门，归属 Reality Labs，由 Saba 领导。采用超扁平组织结构，每个经理可管理多达 50 人团队，加速推进超级智能研发。",
+        "why": "Meta 在 AI 领域加大投入，组织创新反映其追求快速迭代的决心，与 OpenAI、Google 的竞争加剧。",
+        "sources": [
+          {"name": "Business Insider", "url": "https://www.businessinsider.com/meta-ai-new-applied-engineering-team-2026-3"},
+          {"name": "华尔街日报", "url": "https://wallstreetcn.com/livenews/3062986"}
+        ]
+      },
+      {
+        "title": "Kimi K2.5 发布后收入暴涨，海外首超国内",
+        "time": "2026-03-03",
+        "what": "月之暗面 Kimi K2.5 模型发布后不到 20 天，收入已超过去年全年总和，海外收入首次超越国内市场。",
+        "why": "国产 AI 出海取得突破性进展，证明中国 AI 产品在全球市场的竞争力。",
+        "sources": [
+          {"name": "网易", "url": "https://m.163.com/dy/article/KN48RQDC05118I96.html"},
+          {"name": "36氪", "url": "https://36kr.com/p/3701023821034247"}
+        ]
+      },
+      {
+        "title": "高通 CEO：AI 智能体将取代手机成为数字中心",
+        "time": "2026-03-03",
+        "what": "高通 CEO 预测 2026 年将成为 AI 智能体元年，AI 智能体将取代手机成为用户的数字中心，重新定义人机交互方式。",
+        "why": "行业巨头对 AI 发展方向的判断，预示着下一代计算平台的变革。",
+        "sources": [
+          {"name": "华尔街见闻", "url": "https://wallstreetcn.com/livenews/3062991"},
+          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-03/ai-agents-will-supplant-phones-as-digital-hub-qualcomm-ceo-says"}
         ]
       }
     ],
     "risks": [
       {
-        "title": "美国考虑限制中国公司采购英伟达H200芯片",
-        "time": "2026-03-02",
-        "what": "美国考虑将每家中国公司的英伟达H200芯片采购量限制在75,000块，AMD MI325也计入限制。",
-        "why": "AI芯片出口管制升级，将直接影响中国AI公司的模型训练能力。",
+        "title": "美国最高法院：AI 生成艺术无法获得版权",
+        "time": "2026-03-03",
+        "what": "美国最高法院拒绝复审 AI 生成艺术版权案，维持下级法院裁决，意味着 AI 创作的作品无法获得版权保护。",
+        "why": "对 AI 创作领域具有里程碑意义，明确了人类创作与 AI 生成的法律边界，影响创作者和企业的知识产权策略。",
         "sources": [
-          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-02/us-mulls-capping-nvidia-h200-sales-at-75-000-per-chinese-customer"}
+          {"name": "Mashable", "url": "https://mashable.com/article/supreme-court-ai-copyright-case-denied"},
+          {"name": "The Verge", "url": "https://www.theverge.com/policy/887678/supreme-court-ai-art-copyright"}
         ]
       },
       {
-        "title": "Meta智能眼镜隐私争议",
-        "time": "2026-03-02",
-        "what": "据报道，Meta智能眼镜背后的研发人员可以访问用户数据，引发隐私担忧。",
-        "why": "AI硬件设备的隐私保护机制仍需完善，这影响了消费者接受度。",
+        "title": "OpenAI 修改五角大楼协议，Altman 承认\"草率\"",
+        "time": "2026-03-03",
+        "what": "OpenAI 修改与五角大楼的合作协议，CEO Sam Altman 在全员会议上承认协议看起来\"草率\"，称舆论反弹\"令人痛心\"。据报道有约 150 万用户因此离开 ChatGPT。",
+        "why": "反映 AI 公司在军事合作上的伦理困境，用户对 AI 武器化的担忧可能影响产品选择。",
         "sources": [
-          {"name": "Svenska Dagbladet", "url": "https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything"}
+          {"name": "华尔街日报", "url": "https://on.wsj.com/3ONcVHJ"},
+          {"name": "Slashdot", "url": "https://yro.slashdot.org/story/26/03/03/1918247/openai-amends-pentagon-deal-as-sam-altman-admits-it-looks-sloppy"},
+          {"name": "Reddit", "url": "https://www.reddit.com/r/technology/comments/1rjxe9f/15_million_users_leave_chatgpt"}
         ]
       },
       {
-        "title": "澳大利亚考虑要求AI服务进行年龄验证",
-        "time": "2026-03-02",
-        "what": "澳大利亚将考虑要求应用商店屏蔽未经年龄验证的AI服务。",
-        "why": "全球AI监管趋严，年龄验证可能成为AI应用的新合规要求。",
+        "title": "字节 Seedance 2.0 引发版权和审核争议",
+        "time": "2026-03-03",
+        "what": "字节跳动即梦 AI 的 Seedance 2.0 发布后，在抖音上被大量用于翻拍经典电影，引发版权争议。同时用户抱怨审核过于严格、排队时间长达 7 小时、生成质量下降等问题。",
+        "why": "AI 视频生成技术快速发展带来的版权和内容审核挑战，平衡创新与合规成为行业难题。",
         "sources": [
-          {"name": "Engadget", "url": "https://www.engadget.com/ai/australia-will-consider-requiring-app-stores-to-block-ai-services-without-age-verification-221714252.html"}
+          {"name": "archive.is", "url": "https://archive.is/7hGuu"},
+          {"name": "Bilibili", "url": "https://www.bilibili.com/video/BV1cHfsBHEqW/"}
         ]
       }
     ]
   },
-  "x_highlights": [
-    {
-      "author": "TechCrunch",
-      "handle": "@TechCrunch",
-      "text": "ChatGPT在宣布与国防部达成协议后，卸载量激增295%。而Anthropic的Claude下载量增长51%。",
-      "url": "https://x.com/TechCrunch/status/2028622709001994569",
-      "likes": 12500,
-      "reposts": 3400,
-      "replies": 890
-    },
-    {
-      "author": "God of Prompt",
-      "handle": "@godofprompt",
-      "text": "阿里Qwen发布4个新模型：4B接近之前80B模型性能，9B可媲美GPT OSS 120B，0.8B和2B可在手机运行。全部免费、离线、开源。",
-      "url": "https://x.com/godofprompt/status/2028622692564209949",
-      "likes": 8900,
-      "reposts": 2100,
-      "replies": 320
-    },
-    {
-      "author": "Model Ping",
-      "handle": "@modelpingai",
-      "text": "ChatGPT卸载量因DoD协议激增295%，而Claude因拒绝军事合作，下载量增长51%。",
-      "url": "https://x.com/modelpingai/status/2028622728110940490",
-      "likes": 5600,
-      "reposts": 1800,
-      "replies": 240
-    },
-    {
-      "author": "Alibaba Qwen",
-      "handle": "@Alibaba_Qwen",
-      "text": "发布Qwen 3.5 Small Model Series：0.8B、2B、4B、9B。更智能，更少算力。",
-      "url": "https://x.com/Alibaba_Qwen/status/2028460046510965160",
-      "likes": 4200,
-      "reposts": 980,
-      "replies": 150
-    },
-    {
-      "author": "Claude AI",
-      "handle": "@claudeai",
-      "text": "免费版Claude现已支持记忆功能。同时优化了从其他AI工具导入聊天记录的体验。",
-      "url": "https://x.com/claudeai/status/2028559427167834314",
-      "likes": 7800,
-      "reposts": 1900,
-      "replies": 280
-    }
-  ],
   "summary": {
-    "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-03.html",
     "bullets": [
-      "Anthropic因拒绝军事用途合同被美国政府列为供应链风险，Claude登顶App Store",
-      "阿里Qwen3.5轻量模型发布，9B参数匹敌120B模型",
-      "英伟达40亿美元投资光通信技术，押注AI数据中心下一代架构",
-      "OpenAI与五角大楼达成协议后，ChatGPT卸载量激增295%",
-      "Anthropic将Claude记忆功能免费开放，争夺用户迁移",
-      "美国考虑限制中国企业采购英伟达H200芯片至75000块"
+      "OpenAI 发布 GPT-5.3 Instant，大幅减少\"说教式\"警告",
+      "Google 推出 Gemini 3.1 Flash-Lite，成本效率创新高",
+      "Anthropic 为 Claude Code 推出语音模式",
+      "Meta 与 News Corp 签署 5000 万美元/年 AI 许可协议",
+      "阿里开源 Qwen 3.5 小模型系列，马斯克点赞",
+      "美国最高法院：AI 生成艺术无法获得版权",
+      "智谱 GLM-5 成为开源 SOTA，适配国产芯片",
+      "Meta 组建新 AI 工程组织推进超级智能计划"
     ],
-    "top_stories_count": 8,
-    "sections_count": 5
+    "url": "https://elliclee.github.io/ai-daily-report/",
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-04.html"
   },
+  "x_highlights": [],
+  "vendorsHit": ["OpenAI", "Google", "Anthropic", "Meta", "阿里", "智谱", "月之暗面", "字节"],
+  "dedupKeys": [],
   "self_check": {
     "coverage_analysis": {
       "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
-      "hit_vendors": ["OpenAI", "Anthropic", "阿里", "苹果", "英伟达", "xAI"],
-      "missed_vendors": ["Google", "Meta", "字节", "智谱", "月之暗面", "腾讯", "百度"],
-      "missed_reason": "过去48小时内，Google、Meta及国内厂商字节/智谱/月之暗面/腾讯/百度无重大AI新闻发布。Google虽有Gemini相关讨论，但无官方产品更新。"
+      "hit_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节", "智谱", "月之暗面", "阿里"],
+      "missed_vendors": ["腾讯", "百度"],
+      "missed_reason": "过去 48h 内未发现腾讯混元和百度文心的重大发布或更新"
     },
     "freshness_check": {
       "target_headlines": 12,
       "actual_headlines": 8,
-      "supplement_searches_triggered": false,
-      "supplement_searches_count": 0,
-      "rejected_over_48h": ["Yonyou LOM发布于2月24日", "MiniMax 2025财报为历史回顾"],
-      "reason": "严格筛选48小时内新闻，剔除无法确认时间的旧闻。实际可确认时间的头条新闻8条，符合下限要求。"
+      "supplement_searches_triggered": true,
+      "supplement_searches_count": 6,
+      "rejected_over_48h": [],
+      "reason": "8 条核心新闻均在 48h 内，覆盖海外主流厂商和国内主要厂商"
     },
     "bird_status": {
       "available": true,
       "cookies_found": true,
-      "fallback": "未使用降级方案",
-      "x_highlights_source": "bird CLI 实时搜索"
+      "fallback": "X 搜索正常",
+      "x_highlights_source": "X 搜索结果用于趋势验证，未选取具体推文入 x_highlights"
     },
     "dedupe_keys": [
-      {"key": "anthropic-claude-memory-free", "entity": "Anthropic", "product": "Claude", "event_type": "update", "version_or_date": "2026-03-02", "sources_merged": 2},
-      {"key": "alibaba-qwen3.5-release", "entity": "阿里", "product": "Qwen3.5", "event_type": "release", "version_or_date": "2026-03-02", "sources_merged": 2},
-      {"key": "nvidia-photonics-investment", "entity": "英伟达", "product": "光通信投资", "event_type": "business", "version_or_date": "2026-03-02", "sources_merged": 2},
-      {"key": "openai-pentagon-contract", "entity": "OpenAI", "product": "ChatGPT", "event_type": "business", "version_or_date": "2026-03-02", "sources_merged": 3},
-      {"key": "us-anthropic-ban", "entity": "Anthropic", "product": "政府合同", "event_type": "risk", "version_or_date": "2026-03-02", "sources_merged": 2},
-      {"key": "apple-ipad-air-m4", "entity": "苹果", "product": "iPad Air", "event_type": "release", "version_or_date": "2026-03-02", "sources_merged": 2}
+      {"key": "gpt-5.3-instant-openai-release-2026-03-03", "entity": "OpenAI", "product": "GPT-5.3 Instant", "event_type": "release", "version_or_date": "2026-03-03", "sources_merged": 3},
+      {"key": "gemini-3.1-flash-lite-google-release-2026-03-03", "entity": "Google", "product": "Gemini 3.1 Flash-Lite", "event_type": "release", "version_or_date": "2026-03-03", "sources_merged": 2},
+      {"key": "claude-code-voice-anthropic-update-2026-03-03", "entity": "Anthropic", "product": "Claude Code", "event_type": "update", "version_or_date": "2026-03-03", "sources_merged": 3},
+      {"key": "meta-news-corp-deal-2026-03-03", "entity": "Meta", "product": "AI Training", "event_type": "business", "version_or_date": "2026-03-03", "sources_merged": 2},
+      {"key": "qwen-3.5-small-alibaba-opensource-2026-03-03", "entity": "阿里", "product": "Qwen 3.5", "event_type": "opensource", "version_or_date": "2026-03-03", "sources_merged": 3},
+      {"key": "glm-5-zhipu-opensource-2026-03-03", "entity": "智谱", "product": "GLM-5", "event_type": "opensource", "version_or_date": "2026-03-03", "sources_merged": 2},
+      {"key": "supreme-court-ai-copyright-risk-2026-03-03", "entity": "US Supreme Court", "product": "AI Copyright", "event_type": "risk", "version_or_date": "2026-03-03", "sources_merged": 2}
     ],
-    "rejected_entries": [
-      {"title": "Yonyou Large Ontology Model发布", "reason": "发布时间2月24日，超过48小时限制", "published_time": "2026-02-24"},
-      {"title": "MiniMax 2025全年财报", "reason": "为历史财务数据回顾，非新闻发布", "published_time": "2026-03-02"},
-      {"title": "DeepSeek V4将发布", "reason": "仅传闻预告，无确切发布时间", "published_time": null}
-    ]
+    "rejected_entries": []
   }
 }
