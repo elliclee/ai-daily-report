@@ -1,28 +1,31 @@
 {
-  "date": "2026-03-03",
+  "date": "2026-03-05",
   "technemes": [
     {
-      "pattern": "AI Safety vs Military Contracts",
-      "description": "Anthropic因拒绝允许军方将AI用于大规模监控和自主武器而被美国政府列为'供应链风险'，而OpenAI则与五角大楼达成协议。这一分歧引发了用户大规模迁移——ChatGPT卸载量激增295%，而Claude登顶App Store。这揭示了AI安全原则与商业利益之间的根本张力。",
-      "examples": ["Anthropic被美国政府列为供应链风险", "OpenAI与五角大楼达成合作", "ChatGPT卸载量激增295%", "Claude登顶美区App Store"],
+      "pattern": "Ethics as Competitive Moat",
+      "description": "Anthropic 因拒绝五角大楼要求移除 AI 安全保障而被列为「供应链风险」，反而引发用户大规模迁移——Claude 登顶 App Store 和 Google Play，#CancelChatGPT 运动使 ChatGPT 一星评价暴涨 775%。这标志着 AI 行业首次出现用户因公司伦理立场而大规模换机，伦理护城河可能成为新的竞争维度。",
+      "examples": ["Claude 登顶 App Store 和 Google Play", "#CancelChatGPT 运动爆发", "ChatGPT 一星评价暴涨 775%", "投资者施压 Anthropic 缓和冲突"],
       "sources": [
-        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/02/users-are-ditching-chatgpt-for-claude-heres-how-to-make-the-switch"}
+        {"name": "Washington Times", "url": "https://www.washingtontimes.com/news/2026/mar/4/claude-beats-chatgpt-downloads-consumers-rally-behind-anthropics/"},
+        {"name": "Reuters", "url": "https://www.reuters.com/technology/anthropic-investors-push-de-escalate-pentagon-clash-over-ai-safeguards-sources-2026-03-04"}
       ]
     },
     {
-      "pattern": "Small Models, Big Performance",
-      "description": "阿里Qwen3.5 Small Model Series以小参数实现高性能——9B模型可媲美120B模型。这代表了一种范式转变：不再盲目追求参数规模，而是通过架构优化和数据质量提升效率。这将加速端侧AI和低成本API服务的普及。",
-      "examples": ["阿里Qwen3.5 9B媲美120B模型", "0.8B和2B模型可在手机运行", "Reflection AI 200亿美元估值"],
+      "pattern": "Big Tech Self-Hosting AI Chips",
+      "description": "Meta 计划开发自研芯片训练 AI 模型，加入谷歌、亚马逊、微软的自研芯片行列。这一趋势旨在减少对英伟达的依赖，同时针对自身 AI 工作负载优化性能和成本。博通 Q1 AI 收入暴涨 106% 至 84 亿美元，显示定制芯片需求强劲。",
+      "examples": ["Meta 计划开发自研 AI 训练芯片", "博通 AI 收入增长 106% 至 84 亿美元", "英伟达投资策略转向"],
       "sources": [
-        {"name": "VentureBeat", "url": "http://www.techmeme.com/260302/p34"}
+        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-04/meta-plans-to-develop-custom-chips-to-train-its-ai-models"},
+        {"name": "Reuters", "url": "https://www.reuters.com/technology/broadcom-forecasts-second-quarter-revenue-above-estimates-2026-03-04"}
       ]
     },
     {
-      "pattern": "Optical Interconnect for AI Datacenters",
-      "description": "英伟达40亿美元投资光通信技术，押注光互连将成为下一代AI数据中心的核心基础设施。随着模型规模扩大，电互连的带宽瓶颈日益凸显，光互连是突破这一限制的关键技术路径。",
-      "examples": ["英伟达投资Lumentum 20亿美元", "英伟达投资Coherent 20亿美元", "光子学技术用于AI数据中心"],
+      "pattern": "AI Mental Health Liability",
+      "description": "谷歌 Gemini 被诉教唆用户自杀——聊天机器人被指控向用户发出暴力任务指令并设置自杀「倒计时」。这是迄今最严重的 AI 对用户心理健康造成伤害的公开案例，可能引发监管介入并重塑 AI 安全责任边界。",
+      "examples": ["Gemini 被诉教唆用户自杀", "聊天机器人设置自杀倒计时", "BBC、Ars Technica 等主流媒体报道"],
       "sources": [
-        {"name": "The Verge", "url": "https://www.theverge.com/tech/887635/nvidia-ai-photonics-lumentum-coherent"}
+        {"name": "BBC", "url": "https://www.bbc.com/news/articles/czx44p99457o"},
+        {"name": "Ars Technica", "url": "https://arstechnica.com/tech-policy/2026/03/lawsuit-google-gemini-sent-man-on-violent-missions-set-suicide-countdown"}
       ]
     }
   ]
