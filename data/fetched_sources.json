@@ -1,99 +1,63 @@
 {
-  "fetched_at": "2026-03-03T23:30:06.947643",
+  "fetched_at": "2026-03-04T23:30:07.151873",
   "sources": {
     "hackernews-top": {
       "type": "hackernews",
-      "count": 10,
+      "count": 6,
       "items": [
         {
-          "title": "MacBook Pro with new M5 Pro and M5 Max",
-          "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/",
-          "score": 607,
-          "by": "scrlk",
-          "time": "2026-03-03T14:02:06",
-          "comments": "https://news.ycombinator.com/item?id=47232453",
-          "description": "Apple announced the latest 14- and 16-inch MacBook Pro with the all-new M5 Pro and M5 Max."
+          "title": "MacBook Neo",
+          "url": "https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/",
+          "score": 1389,
+          "by": "dm",
+          "time": "2026-03-04T14:16:41",
+          "comments": "https://news.ycombinator.com/item?id=47247645",
+          "description": "Apple today unveiled MacBook Neo, an all-new laptop that delivers the magic of the Mac at a breakthrough price."
         },
         {
-          "title": "Intel's make-or-break 18A process node debuts for data center with 288-core Xeon",
-          "url": "https://www.tomshardware.com/pc-components/cpus/intels-make-or-break-18a-process-node-debuts-for-data-center-with-288-core-xeon-6-cpu-multi-chip-monster-sports-12-channels-of-ddr5-8000-foveros-direct-3d-packaging-tech",
-          "score": 215,
-          "by": "vanburen",
-          "time": "2026-03-03T18:54:06",
-          "comments": "https://news.ycombinator.com/item?id=47236958",
-          "description": "Intel unveils x86 CPU with the industry"
+          "title": "Something is afoot in the land of Qwen",
+          "url": "https://simonwillison.net/2026/Mar/4/qwen/",
+          "score": 457,
+          "by": "simonw",
+          "time": "2026-03-04T15:55:34",
+          "comments": "https://news.ycombinator.com/item?id=47249343",
+          "description": "I’m behind on writing about Qwen 3.5, a truly remarkable family of open weight models released by Alibaba’s Qwen team over the past few weeks. I’m hoping that the 3.5 …"
         },
         {
-          "title": "GPT‑5.3 Instant",
-          "url": "https://openai.com/index/gpt-5-3-instant/",
-          "score": 250,
-          "by": "meetpateltech",
-          "time": "2026-03-03T17:57:33",
-          "comments": "https://news.ycombinator.com/item?id=47236169",
+          "title": "An interactive map of Flock Cams",
+          "url": "https://deflock.org/map#map=5/37.125286/-96.284180",
+          "score": 458,
+          "by": "anjel",
+          "time": "2026-03-04T18:50:45",
+          "comments": "https://news.ycombinator.com/item?id=47252049",
+          "description": "Find license plate readers (LPRs) near you."
+        },
+        {
+          "title": "“It turns out” (2010)",
+          "url": "https://jsomers.net/blog/it-turns-out",
+          "score": 222,
+          "by": "Munksgaard",
+          "time": "2026-03-04T14:52:46",
+          "comments": "https://news.ycombinator.com/item?id=47248319",
           "description": ""
         },
         {
-          "title": "Claude's Cycles [pdf]",
-          "url": "https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf",
-          "score": 403,
-          "by": "fs123",
-          "time": "2026-03-03T10:57:42",
-          "comments": "https://news.ycombinator.com/item?id=47230710",
-          "description": ""
+          "title": "Qwen3.5 Fine-Tuning Guide – Unsloth Documentation",
+          "url": "https://unsloth.ai/docs/models/qwen3.5/fine-tune",
+          "score": 242,
+          "by": "bilsbie",
+          "time": "2026-03-04T12:04:31",
+          "comments": "https://news.ycombinator.com/item?id=47246296",
+          "description": "Learn how to fine-tune Qwen3.5 LLMs locally with Unsloth."
         },
         {
-          "title": "The Xkcd thing, now interactive",
-          "url": "https://editor.p5js.org/isohedral/full/vJa5RiZWs",
-          "score": 1085,
-          "by": "memalign",
-          "time": "2026-03-03T10:56:52",
-          "comments": "https://news.ycombinator.com/item?id=47230704",
-          "description": "A web editor for p5.js, a JavaScript library with the goal of making coding accessible to artists, designers, educators, and beginners."
-        },
-        {
-          "title": "Don't become an engineering manager",
-          "url": "https://newsletter.manager.dev/p/dont-become-an-engineering-manager",
-          "score": 277,
-          "by": "flail",
-          "time": "2026-03-03T14:19:14",
-          "comments": "https://news.ycombinator.com/item?id=47232727",
-          "description": "Over drinks a few weeks ago, a friend told me he&#x27;d been offered a promotion, to an Engineering Manager role."
-        },
-        {
-          "title": "Physics Girl: Super-Kamiokande – Imaging the sun by detecting neutrinos [video]",
-          "url": "https://www.youtube.com/watch?v=B3m3AMRlYfc",
-          "score": 393,
-          "by": "pcdavid",
-          "time": "2026-03-03T14:42:30",
-          "comments": "https://news.ycombinator.com/item?id=47233110",
-          "description": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
-        },
-        {
-          "title": "I'm reluctant to verify my identity or age for any online services",
-          "url": "https://neilzone.co.uk/2026/03/im-struggling-to-think-of-any-online-services-for-which-id-be-willing-to-verify-my-identity-or-age/",
-          "score": 852,
-          "by": "speckx",
-          "time": "2026-03-03T14:22:25",
-          "comments": "https://news.ycombinator.com/item?id=47232768",
-          "description": "Identity verification and age verification is an increasinly common policy conversation at the moment, in numerous countries."
-        },
-        {
-          "title": "Arm's Cortex X925: Reaching Desktop Performance",
-          "url": "https://chipsandcheese.com/p/arms-cortex-x925-reaching-desktop",
-          "score": 254,
-          "by": "ingve",
-          "time": "2026-03-03T07:34:47",
-          "comments": "https://news.ycombinator.com/item?id=47229344",
-          "description": "A big, high performance core from Arm"
-        },
-        {
-          "title": "MacBook Air with M5",
-          "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-macbook-air-with-m5/",
-          "score": 341,
-          "by": "Garbage",
-          "time": "2026-03-03T14:04:56",
-          "comments": "https://news.ycombinator.com/item?id=47232502",
-          "description": "Apple today announced the new MacBook Air with M5, bringing exceptional performance and expanded AI capabilities to the world’s most popular laptop."
+          "title": "Making Firefox's right-click not suck with about:config",
+          "url": "https://joshua.hu/firefox-making-right-click-not-suck",
+          "score": 222,
+          "by": "mmsc",
+          "time": "2026-03-04T18:12:39",
+          "comments": "https://news.ycombinator.com/item?id=47251480",
+          "description": "A practical about:config checklist to declutter Firefox right-click menus on macOS, disabling AI/chatbot prompts, link previews, OCR, visual search, and other low-value context menu items."
         }
       ]
     },
@@ -106,15 +70,7 @@
           "name": "claude-scientific-skills",
           "url": "https://github.com/K-Dense-AI/claude-scientific-skills",
           "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
-          "stars_today": "790",
-          "language": "Python"
-        },
-        {
-          "repo": "agentscope-ai/agentscope",
-          "name": "agentscope",
-          "url": "https://github.com/agentscope-ai/agentscope",
-          "description": "Build and run agents you can see, understand and trust.",
-          "stars_today": "83",
+          "stars_today": "926",
           "language": "Python"
         },
         {
@@ -122,15 +78,7 @@
           "name": "ReMe",
           "url": "https://github.com/agentscope-ai/ReMe",
           "description": "ReMe: Memory Management Kit for Agents - Remember Me, Refine Me.",
-          "stars_today": "27",
-          "language": "Python"
-        },
-        {
-          "repo": "LMCache/LMCache",
-          "name": "LMCache",
-          "url": "https://github.com/LMCache/LMCache",
-          "description": "Supercharge Your LLM with the Fastest KV Cache Layer",
-          "stars_today": "140",
+          "stars_today": "346",
           "language": "Python"
         },
         {
@@ -138,7 +86,23 @@
           "name": "OpenSandbox",
           "url": "https://github.com/alibaba/OpenSandbox",
           "description": "OpenSandbox is a general-purpose sandbox platform for AI applications, offering multi-language SDKs, unified sandbox APIs, and Docker/Kubernetes runtimes for scenarios like Coding Agents, GUI Agents, Agent Evaluation, AI Code Execution, and RL Training.",
-          "stars_today": "1097",
+          "stars_today": "745",
+          "language": "Python"
+        },
+        {
+          "repo": "FujiwaraChoki/MoneyPrinterV2",
+          "name": "MoneyPrinterV2",
+          "url": "https://github.com/FujiwaraChoki/MoneyPrinterV2",
+          "description": "Automate the process of making money online.",
+          "stars_today": "217",
+          "language": "Python"
+        },
+        {
+          "repo": "agentscope-ai/agentscope",
+          "name": "agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope",
+          "description": "Build and run agents you can see, understand and trust.",
+          "stars_today": "419",
           "language": "Python"
         }
       ]
