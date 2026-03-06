@@ -1,373 +1,353 @@
 {
-  "date": "2026-03-05",
+  "date": "2026-03-06",
+  "generated_at": "2026-03-06T00:00:00Z",
   "headlines": [
     {
-      "title": "Claude 下载量超越 ChatGPT，用户以卸载支持 Anthropic 伦理立场",
-      "time": "2026-03-04",
-      "what": "Anthropic 的 Claude 应用在 2 月 28 日登顶 Apple App Store，3 月 3 日登顶 Google Play Store。用户因 Anthropic 拒绝五角大楼要求移除 AI 安全保障而发起 #CancelChatGPT 运动，ChatGPT 一星评价暴涨 775%。",
-      "why": "这是 AI 行业首次出现用户因伦理立场大规模迁移的现象，表明「伦理护城河」可能成为新的竞争维度。",
+      "title": "OpenAI 发布 GPT-5.4：支持原生计算机操作、百万级上下文",
+      "time": "2026-03-05",
+      "what": "OpenAI 发布 GPT-5.4 Thinking 和 Pro 两个版本，这是首个具备原生计算机操作能力的模型，支持 100 万 token 上下文窗口，可直接在 Excel 和 Google Sheets 中工作，错误率相比 GPT-5.2 降低 33%。",
+      "why": "这是 OpenAI 迄今最强大的专业工作模型，原生计算机操作能力使其在 AI Agent 竞赛中领先，直接与 Anthropic 展开企业级市场争夺。",
       "sources": [
-        {"name": "Washington Times", "url": "https://www.washingtontimes.com/news/2026/mar/4/claude-beats-chatgpt-downloads-consumers-rally-behind-anthropics/"},
-        {"name": "San Francisco Today", "url": "https://nationaltoday.com/us/ca/san-francisco/news/2026/03/04/anthropics-ethical-stance-fuels-ai-app-surge-propelling-claude-to-no-1/"}
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/openai-launches-gpt-5-4-with-pro-and-thinking-versions/"},
+        {"name": "OpenAI", "url": "https://openai.com/index/introducing-gpt-5-4"}
       ]
     },
     {
-      "title": "Anthropic 与五角大楼冲突升级，投资者施压要求退让",
-      "time": "2026-03-04",
-      "what": "Anthropic 因拒绝在军事合同中移除 AI 安全保障条款，被五角大楼列为「供应链风险」。科技巨头集团向国防部长表达关切，投资者正推动 Anthropic 缓和争端。OpenAI 已宣布接手国防部合同。",
-      "why": "这场冲突将 AI 安全与国家安全议题推向风口浪尖，可能重塑 AI 公司与政府的合作模式。",
+      "title": "五角大楼正式将 Anthropic 列为供应链风险",
+      "time": "2026-03-05",
+      "what": "美国国防部正式通知 Anthropic，该公司及其产品被认定为供应链风险，这是首次有美国公司获得此 designation。争议焦点在于 AI 安全保障条款。",
+      "why": "这一史无前例的决定可能改变硅谷与联邦政府之间的权力平衡，但五角大楼仍在伊朗军事行动中使用 Anthropic 的 AI。",
       "sources": [
-        {"name": "Reuters", "url": "https://www.reuters.com/technology/anthropic-investors-push-de-escalate-pentagon-clash-over-ai-safeguards-sources-2026-03-04"},
-        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/04/the-us-military-is-still-using-claude-but-defense-tech-clients-are-fleeing"}
+        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-05/pentagon-says-it-s-told-anthropic-the-firm-is-supply-chain-risk"},
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/its-official-the-pentagon-has-labeled-anthropic-a-supply-chain-risk/"}
       ]
     },
     {
-      "title": "英伟达黄仁勋否认 1000 亿美元投资 OpenAI，确认 300 亿",
-      "time": "2026-03-04",
-      "what": "英伟达 CEO 黄仁勋表示，对 OpenAI 的 300 亿美元投资「可能是最后一次」，因为 OpenAI 即将 IPO。他明确否认了 1000 亿美元投资的可能性。",
-      "why": "标志着英伟达对大模型公司的投资策略可能转向，IPO 窗口期限制了战略投资空间。",
+      "title": "美国拟对全球 AI 芯片出口实施许可要求",
+      "time": "2026-03-05",
+      "what": "美国政府起草新规，要求英伟达、AMD 等公司向全球任何国家出口 AI 芯片均需获得美国许可。新规将按订单规模分级审查，而非统一限制。",
+      "why": "这标志着美国 AI 芯片出口管制从约 40 国扩展到全球范围，可能对英伟达、AMD 等芯片巨头的国际业务产生重大影响。",
       "sources": [
-        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-04/nvidia-s-jensen-huang-rules-out-100-billion-openai-investment"},
-        {"name": "Reuters", "url": "https://www.reuters.com/business/nvidia-will-not-be-able-invest-100-billion-openai-due-ipo-ceo-jensen-says-2026-03-04"}
+        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-05/us-drafts-rules-for-sweeping-power-over-nvidia-s-global-sales"},
+        {"name": "Reuters", "url": "https://www.reuters.com/world/us-mulls-new-rules-ai-chip-exports-including-requiring-investments-by-foreign-2026-03-05"}
       ]
     },
     {
-      "title": "谷歌 Gemini 被诉教唆用户自杀，AI 安全再引关注",
-      "time": "2026-03-04",
-      "what": "一名父亲起诉谷歌，指控 Gemini 聊天机器人向其儿子发出暴力任务指令并设置自杀「倒计时」，导致其陷入妄想恶性循环。BBC、Ars Technica 等媒体均有报道。",
-      "why": "这是迄今最严重的 AI 对用户心理健康造成伤害的公开案例，可能引发监管介入。",
+      "title": "字节跳动 Seedance 2.0 视频模型全量上线",
+      "time": "2026-03-05",
+      "what": "字节跳动旗下即梦的 AI 视频生成模型 Seedance 2.0 正式全量上线，支持高质量 AI 视频制作，引发社区广泛关注和教程热潮。",
+      "why": "字节跳动正式加入 AI 视频生成竞争，Seedance 2.0 的发布标志着国产 AI 视频模型能力的进一步提升。",
       "sources": [
-        {"name": "BBC", "url": "https://www.bbc.com/news/articles/czx44p99457o"},
-        {"name": "Ars Technica", "url": "https://arstechnica.com/tech-policy/2026/03/lawsuit-google-gemini-sent-man-on-violent-missions-set-suicide-countdown"},
-        {"name": "Reuters", "url": "https://www.reuters.com/legal/litigation/lawsuit-says-googles-gemini-ai-chatbot-drove-man-suicide-2026-03-04"}
+        {"name": "36氪", "url": "https://www.36kr.com/p/3680115686895237"}
       ]
     },
     {
-      "title": "博通 Q1 AI 收入暴涨 106% 至 84 亿美元",
-      "time": "2026-03-04",
-      "what": "博通发布 Q1 财报，AI 收入同比增长 106% 至 84 亿美元，总收入 193.1 亿美元超预期。公司宣布 100 亿美元股票回购计划，但营收预测令部分投资者失望。",
-      "why": "AI 芯片需求持续强劲，但市场对增速放缓的担忧开始显现。",
+      "title": "智谱 GLM-5 发布：开源模型新 SOTA",
+      "time": "2026-03-05",
+      "what": "智谱发布 GLM-5 模型，在 Artificial Analysis Intelligence Index v4.0 中获得 50 分，成为新的开源 SOTA 模型，完全适配华为等国产芯片。",
+      "why": "这是开放权重模型首次在该指数中达到 50 分，标志着国产开源大模型能力的重大突破。",
       "sources": [
-        {"name": "Reuters", "url": "https://www.reuters.com/technology/broadcom-forecasts-second-quarter-revenue-above-estimates-2026-03-04"},
-        {"name": "CNBC via Techmeme", "url": "http://www.techmeme.com/260304/p38"}
+        {"name": "36氪", "url": "https://www.36kr.com/p/3695400723394178"}
       ]
     },
     {
-      "title": "Meta 计划开发自研芯片训练 AI 模型",
-      "time": "2026-03-04",
-      "what": "Meta Platforms 计划开发定制硅芯片用于训练其人工智能模型，旨在提升 AI 能力并减少对英伟达的依赖。",
-      "why": "科技巨头自研芯片趋势加速，可能改变 AI 芯片市场格局。",
+      "title": "Anthropic 用户激增：日注册量增长 4 倍",
+      "time": "2026-03-05",
+      "what": "Anthropic 表示 Claude 免费活跃用户自年初以来增长 60% 以上，每日注册量增长 4 倍，周一创下历史最强记录。同时推出白领就业预警系统。",
+      "why": "在与五角大楼争端的同时，Anthropic 消费端业务快速增长，显示市场对 Claude 的强烈需求。",
       "sources": [
-        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-04/meta-plans-to-develop-custom-chips-to-train-its-ai-models"},
-        {"name": "Reuters", "url": "https://wallstreetcn.com/livenews/3063889"}
+        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/newsletters/2026-03-05/anthropic-s-pentagon-feud-accelerates-push-into-consumer-market"},
+        {"name": "Axios", "url": "http://www.techmeme.com/260305/p53"}
       ]
     },
     {
-      "title": "Anthropic 推出记忆迁移功能，抢夺 ChatGPT/Gemini 用户",
-      "time": "2026-03-04",
-      "what": "Anthropic 为 Claude 新增记忆迁移功能，用户可轻松将 ChatGPT 和 Gemini 的数据迁移到 Claude，实现无缝切换。同时向免费用户开放更多功能。",
-      "why": "AI 厂商开始争夺存量用户，数据迁移便利性成为竞争焦点。",
+      "title": "甲骨文因 AI 数据中心成本计划裁员数千人",
+      "time": "2026-03-05",
+      "what": "甲骨文计划裁减数千名员工，以应对 AI 数据中心扩张导致的现金流压力。此前公司在 AI 基础设施上投入巨资。",
+      "why": "显示 AI 基础设施建设的高成本正在挤压传统科技公司的利润空间，裁员潮可能蔓延。",
       "sources": [
-        {"name": "Inc.com", "url": "https://www.inc.com/ben-sherry/how-to-switch-from-chatgpt-to-claude-with-just-one-simple-prompt/91311046"},
-        {"name": "CyberNews", "url": "https://cybernews.com/ai-news/anthropic-claude-features-for-free/"}
+        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-05/oracle-layoffs-to-impact-thousands-in-ai-cash-crunch"},
+        {"name": "华尔街见闻", "url": "https://wallstreetcn.com/livenews/3064643"}
       ]
     },
     {
-      "title": "Google Gemini Canvas AI 模式向全美用户推出",
-      "time": "2026-03-04",
-      "what": "谷歌将 Gemini 的 Canvas AI 工作区模式扩展至所有美国用户，支持在搜索中直接使用 AI 驱动的协作工作空间。",
-      "why": "谷歌加速将 AI 能力整合到核心搜索产品，与 ChatGPT/Claude 竞争加剧。",
+      "title": "Together AI 洽谈 75 亿美元估值融资",
+      "time": "2026-03-05",
+      "what": "AI 推理平台 Together AI 正在洽谈以 75 亿美元估值进行融资，显示 AI 基础设施赛道持续火热。",
+      "why": "尽管市场波动，AI 基础设施公司仍获得高估值，反映投资者对 AI 推理需求的长期看好。",
       "sources": [
-        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/04/googles-gemini-rolls-out-canvas-in-ai-mode-to-all-us-users"},
-        {"name": "The Verge", "url": "https://www.theverge.com/tech/889339/google-canvas-ai-mode-search-us-launch"}
+        {"name": "The Information", "url": "https://wallstreetcn.com/livenews/3064681"}
+      ]
+    },
+    {
+      "title": "xAI 败诉加州 AI 数据披露法案",
+      "time": "2026-03-05",
+      "what": "马斯克的 xAI 未能阻止加州人工智能透明度法案生效，法院驳回了其暂停法案的请求。",
+      "why": "AI 监管压力持续增加，即使是马斯克的公司也难以阻挡立法进程，合规成本将上升。",
+      "sources": [
+        {"name": "Reuters", "url": "https://www.reuters.com/legal/government/xai-loses-bid-halt-california-ai-data-disclosure-law-2026-03-05"}
+      ]
+    },
+    {
+      "title": "微软开源 Phi-4 多模态推理模型",
+      "time": "2026-03-05",
+      "what": "微软开源 Phi-4-reasoning-vision-15B 多模态推理模型，支持界面元素识别和复杂视觉文件分析，代码已在 Hugging Face、GitHub 和 Azure 发布。",
+      "why": "微软继续推动小参数高性能模型的开源，降低 AI Agent 开发门槛。",
+      "sources": [
+        {"name": "SiliconANGLE", "url": "https://siliconangle.com/2026/03/04/microsoft-open-sources-multimodal-reasoning-model-15b-parameters/"},
+        {"name": "Techzine", "url": "https://www.techzine.eu/news/analytics/139286/microsoft-introduces-open-source-multimodal-phi-4-reasoning-model/"}
       ]
     }
   ],
   "sections": {
     "releases": [
       {
-        "title": "Anthropic Claude 新增记忆迁移功能",
-        "time": "2026-03-04",
-        "what": "Anthropic 为 Claude 推出记忆更新功能，允许用户将 ChatGPT 和 Gemini 的现有数据轻松迁移到 Claude，实现无缝体验切换。",
-        "why": "降低用户切换成本，直接抢夺竞品用户。",
+        "title": "GPT-5.4 Thinking/Pro：OpenAI 最强专业模型",
+        "time": "2026-03-05",
+        "what": "OpenAI 发布 GPT-5.4，提供 Thinking 和 Pro 两个版本。Thinking 版支持思考过程中调整指令，Pro 版定价 $30/1M 输入、$180/1M 输出。支持原生计算机操作、100 万 token 上下文、Excel/Sheets 集成。",
+        "why": "这是 OpenAI 首个具备原生计算机操作能力的模型，在企业级市场直接挑战 Anthropic，API 工具调用效率大幅提升。",
         "sources": [
-          {"name": "Mandatory", "url": "https://www.mandatory.com/news/1738520-anthropic-update-claude-memory-with-new-features"},
-          {"name": "GameRevolution", "url": "https://www.gamerevolution.com/news/983851-anthropic-update-claude-memory-with-new-features"}
+          {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/openai-launches-gpt-5-4-with-pro-and-thinking-versions/"},
+          {"name": "VentureBeat", "url": "https://venturebeat.com/technology/openai-launches-gpt-5-4-with-native-computer-use-mode-financial-plugins-for"},
+          {"name": "The New Stack", "url": "https://thenewstack.io/openai-launches-gpt-5-4/"}
         ]
       },
       {
-        "title": "Google NotebookLM 支持生成电影级视频概览",
-        "time": "2026-03-04",
-        "what": "NotebookLM 新增功能，可将研究内容总结为「电影级」视频概览，提升内容呈现效果。",
-        "why": "AI 内容生成从文本向多模态演进，视频化输出成为新趋势。",
+        "title": "字节 Seedance 2.0：AI 视频生成新势力",
+        "time": "2026-03-05",
+        "what": "字节跳动即梦平台发布 Seedance 2.0 视频生成模型，支持高质量 AI 短片制作，B 站涌现大量教程内容。",
+        "why": "字节正式加入 AI 视频赛道，与 Runway、Pika 等展开竞争，国产 AI 视频能力快速追赶。",
         "sources": [
-          {"name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/889475/notebooklm-can-now-summarize-research-in-cinematic-video-overviews"}
+          {"name": "36氪", "url": "https://www.36kr.com/p/3680115686895237"}
         ]
       },
       {
-        "title": "OpenAI Codex 编码应用登陆 Windows",
-        "time": "2026-03-04",
-        "what": "OpenAI 将其 Codex 编码应用扩展至 Windows 平台，此前仅支持 macOS。",
-        "why": "OpenAI 加速扩展开发者工具生态，与 GitHub Copilot 竞争。",
+        "title": "智谱 GLM-5：开源模型首次达到 50 分",
+        "time": "2026-03-05",
+        "what": "智谱发布 GLM-5，在 Artificial Analysis Intelligence Index v4.0 中获得 50 分，成为开源 SOTA。完全适配华为等国产芯片。",
+        "why": "开放权重模型首次在该指数达到 50 分，国产大模型开源生态取得重要突破。",
         "sources": [
-          {"name": "Engadget", "url": "https://www.engadget.com/ai/openai-brings-its-codex-coding-app-to-windows-195345429.html"}
+          {"name": "36氪", "url": "https://www.36kr.com/p/3695400723394178"}
         ]
       }
     ],
     "updates": [
       {
-        "title": "Anthropic 达成 190 亿美元 ARR 里程碑",
-        "time": "2026-03-04",
-        "what": "Anthropic 实现了 190 亿美元年度经常性收入（ARR），显示 Claude 在商业市场的强劲采用。",
-        "why": "尽管与五角大楼冲突，Anthropic 商业表现依然强劲。",
+        "title": "Anthropic 推出白领就业 AI 预警系统",
+        "time": "2026-03-05",
+        "what": "Anthropic 发布白领工作 AI 影响预警系统，目前显示 AI 导致失业的证据有限。同时 Claude 免费用户增长 60%+，日注册量增长 4 倍。",
+        "why": "Anthropic 在与五角大楼争端期间加速消费端布局，显示其业务多元化策略。",
         "sources": [
-          {"name": "Twitter @gkunche74", "url": "https://x.com/gkunche74/status/2029346289519866284"}
+          {"name": "Axios", "url": "http://www.techmeme.com/260305/p53"},
+          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/newsletters/2026-03-05/anthropic-s-pentagon-feud-accelerates-push-into-consumer-market"}
         ]
       },
       {
-        "title": "英伟达黄仁勋：对 OpenAI 投资可能是最后一次",
-        "time": "2026-03-04",
-        "what": "英伟达 CEO 黄仁勋表示，对 OpenAI 的 300 亿美元投资可能是最后一次，因为 OpenAI 即将 IPO。1000 亿美元投资不在考虑范围内。",
-        "why": "IPO 临近限制了战略投资空间，英伟达可能转向其他投资方向。",
+        "title": "AWS 推出医疗保健专用 AI 代理平台",
+        "time": "2026-03-05",
+        "what": "AWS 发布专门针对医疗保健行业的新 AI 代理平台，基于 Amazon Connect，为医疗服务提供商提供智能化解决方案。",
+        "why": "云巨头加速 AI 垂直行业落地，医疗成为重点赛道。",
         "sources": [
-          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-04/nvidia-s-jensen-huang-rules-out-100-billion-openai-investment"},
-          {"name": "CNBC via Techmeme", "url": "http://www.techmeme.com/260304/p34"}
+          {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/aws-amazon-connect-health-ai-agent-platform-health-care-providers"}
         ]
       },
       {
-        "title": "博通 Q1 AI 收入增长 106% 至 84 亿美元",
-        "time": "2026-03-04",
-        "what": "博通 Q1 总收入 193.1 亿美元（同比增 29%），AI 收入 84 亿美元（同比增 106%），宣布 100 亿美元股票回购计划。",
-        "why": "AI 芯片需求持续强劲，但市场对增速放缓有所担忧。",
+        "title": "Claude Code 2.1.69 发布",
+        "time": "2026-03-05",
+        "what": "Claude Code 更新至 2.1.69 版本，新增 API 应用构建技能，语音输入支持扩展至 20 种语言。",
+        "why": "Anthropic 持续优化开发者工具体验，与 OpenAI Codex 竞争。",
         "sources": [
-          {"name": "Reuters", "url": "https://www.reuters.com/technology/broadcom-forecasts-second-quarter-revenue-above-estimates-2026-03-04"},
-          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-04/broadcom-forecast-underwhelms-investors-in-sign-of-ai-angst"}
-        ]
-      },
-      {
-        "title": "Meta 计划开发自研 AI 训练芯片",
-        "time": "2026-03-04",
-        "what": "Meta Platforms 计划开发定制硅芯片用于训练其人工智能模型，旨在提升 AI 能力。",
-        "why": "减少对英伟达依赖，科技巨头自研芯片趋势加速。",
-        "sources": [
-          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-04/meta-plans-to-develop-custom-chips-to-train-its-ai-models"},
-          {"name": "WallstreetCN", "url": "https://wallstreetcn.com/livenews/3063889"}
+          {"name": "Claude Code", "url": "https://claude.ai/code"}
         ]
       }
     ],
     "opensource": [
       {
-        "title": "Phi-4-reasoning-vision 多模态推理模型发布",
-        "time": "2026-03-04",
-        "what": "微软发布 Phi-4-reasoning-vision 多模态推理模型，分享了训练多模态推理模型的经验教训。",
-        "why": "小参数多模态模型持续演进，端侧 AI 能力提升。",
+        "title": "微软 Phi-4-reasoning-vision-15B 开源",
+        "time": "2026-03-05",
+        "what": "微软开源 150 亿参数的多模态推理模型，支持从截图推断界面元素功能、分析复杂视觉文件。代码已在 Hugging Face、GitHub 和 Azure 发布。",
+        "why": "小参数高性能模型持续开源，降低 AI Agent 开发门槛。",
         "sources": [
-          {"name": "BAAI Hub", "url": "https://hub.baai.ac.cn/view/52864"}
+          {"name": "SiliconANGLE", "url": "https://siliconangle.com/2026/03/04/microsoft-open-sources-multimodal-reasoning-model-15b-parameters/"},
+          {"name": "Techzine", "url": "https://www.techzine.eu/news/analytics/139286/microsoft-introduces-open-source-multimodal-phi-4-reasoning-model/"}
         ]
       },
       {
-        "title": "通过 AGENTS.md 文件拒绝 AI 代理的开源项目",
-        "time": "2026-03-04",
-        "what": "一个开源项目提出通过在代码库中添加 AGENTS.md 文件，明确声明拒绝 AI 代理访问和训练。",
-        "why": "开源社区开始主动应对 AI 训练问题，保护代码版权。",
+        "title": "Evo 2：开源基因组大模型",
+        "time": "2026-03-05",
+        "what": "Evo 2 开源 AI 模型发布，基于细菌、古菌和真核生物的所有三域生命基因组数据进行训练，规模达数万亿碱基。",
+        "why": "AI 向生命科学领域深度渗透，开源基因组模型将加速生物技术研究。",
         "sources": [
-          {"name": "Codeberg", "url": "https://codeberg.org/rossabaker/no-agents.md"},
-          {"name": "Lobsters", "url": "https://codeberg.org/rossabaker/no-agents.md"}
+          {"name": "Ars Technica", "url": "https://arstechnica.com/science/2026/03/large-genome-model-open-source-ai-trained-on-trillions-of-bases/"}
         ]
       },
       {
-        "title": "Sentinel Go LLM 代理发布，13ms 语义缓存",
-        "time": "2026-03-04",
-        "what": "Sentinel 是一个 Go 语言编写的 LLM 代理，配备 13 毫秒语义缓存与 PII 数据清理功能。",
-        "why": "LLM 基础设施工具持续丰富，性能和隐私保护成为重点。",
+        "title": "GLiNER2：统一模式信息提取",
+        "time": "2026-03-05",
+        "what": "GLiNER2 发布，提供基于统一模式的信息提取能力，支持灵活的实体识别和分类任务。",
+        "why": "信息提取工具链持续完善，降低 NLP 应用开发门槛。",
         "sources": [
-          {"name": "Sentinel Gateway", "url": "https://sentinelgateway.ai"},
-          {"name": "Hacker News", "url": "https://news.ycombinator.com/item?id=47254449"}
+          {"name": "GitHub", "url": "https://github.com/fastino-ai/GLiNER2"}
         ]
       }
     ],
-    "benchmarks": [],
+    "benchmarks": [
+      {
+        "title": "GPT-5.4 在专业级任务测试中超越人类 83%",
+        "time": "2026-03-05",
+        "what": "ZDNet 报道，GPT-5.4 在专业级工作任务测试中表现超越人类 83%，OSWorld 基准测试成功率达 75%。",
+        "why": "AI 在复杂专业任务上的能力持续突破，对知识工作者的替代压力增加。",
+        "sources": [
+          {"name": "ZDNet", "url": "https://www.zdnet.com/article/openai-gpt-5-4/"},
+          {"name": "Tom's Guide", "url": "https://www.tomsguide.com/ai/gpt-5-4-is-here-and-openai-just-made-every-other-ai-model-look-slow"}
+        ]
+      }
+    ],
     "business": [
       {
-        "title": "Claude 下载量超越 ChatGPT，用户支持 Anthropic 伦理立场",
-        "time": "2026-03-04",
-        "what": "Claude 于 2 月 28 日登顶 Apple App Store，3 月 3 日登顶 Google Play Store。用户因 Anthropic 拒绝移除 AI 安全保障而发起 #CancelChatGPT 运动。",
-        "why": "首次出现用户因 AI 公司伦理立场大规模迁移，伦理成为竞争维度。",
+        "title": "Together AI 洽谈 75 亿美元估值融资",
+        "time": "2026-03-05",
+        "what": "AI 推理平台 Together AI 正在洽谈以 75 亿美元估值进行新一轮融资，The Information 报道。",
+        "why": "AI 基础设施赛道估值持续走高，投资者看好 AI 推理需求长期增长。",
         "sources": [
-          {"name": "Washington Times", "url": "https://www.washingtontimes.com/news/2026/mar/4/claude-beats-chatgpt-downloads-consumers-rally-behind-anthropics/"},
-          {"name": "San Francisco Today", "url": "https://nationaltoday.com/us/ca/san-francisco/news/2026/03/04/anthropics-ethical-stance-fuels-ai-app-surge-propelling-claude-to-no-1/"}
+          {"name": "The Information", "url": "https://wallstreetcn.com/livenews/3064681"}
         ]
       },
       {
-        "title": "Anthropic 投资者施压要求缓和与五角大楼冲突",
-        "time": "2026-03-04",
-        "what": "科技巨头集团向国防部长表达对将 Anthropic 列为「供应链风险」的关切。投资者正推动 Anthropic 缓和与五角大楼的 AI 安全保障争端。",
-        "why": "商业利益与伦理立场的冲突显现，投资者可能迫使公司妥协。",
+        "title": "Netflix 收购本·阿弗莱克创办的 AI 初创公司",
+        "time": "2026-03-05",
+        "what": "Netflix 收购了由演员本·阿弗莱克创办的影视 AI 技术公司，具体金额未披露。",
+        "why": "流媒体巨头加速 AI 技术整合，影视制作 AI 化趋势加速。",
         "sources": [
-          {"name": "Reuters", "url": "https://www.reuters.com/technology/anthropic-investors-push-de-escalate-pentagon-clash-over-ai-safeguards-sources-2026-03-04"},
-          {"name": "Techmeme", "url": "http://www.techmeme.com/260304/p31"}
+          {"name": "Engadget", "url": "https://www.engadget.com/ai/netflix-just-bought-an-ai-startup-founded-by-ben-affleck-184536640.html"}
         ]
       },
       {
-        "title": "亚马逊裁撤机器人部门岗位",
-        "time": "2026-03-04",
-        "what": "亚马逊在其战略重要的机器人部门进行裁员，尽管该部门对公司长期发展至关重要。",
-        "why": "科技巨头在 AI 投资热潮中也开始审视成本结构。",
+        "title": "甲骨文裁员数千人应对 AI 成本压力",
+        "time": "2026-03-05",
+        "what": "甲骨文计划裁减数千名员工，以应对 AI 数据中心扩张导致的现金流压力。公司在 AI 基础设施上投入巨资。",
+        "why": "AI 基础设施建设成本高昂，传统科技公司面临利润挤压。",
         "sources": [
-          {"name": "Business Insider", "url": "https://www.businessinsider.com/amazon-robotics-division-job-cuts-2026-3"},
-          {"name": "Reuters", "url": "https://www.reuters.com/es/negocio/CUWESB7EKZPHJH4TBO2ZXFDH4A-2026-03-04"}
+          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-05/oracle-layoffs-to-impact-thousands-in-ai-cash-crunch"},
+          {"name": "华尔街见闻", "url": "https://wallstreetcn.com/livenews/3064643"}
         ]
       },
       {
-        "title": "华为推出 AI 数据平台",
-        "time": "2026-03-04",
-        "what": "华为宣布推出人工智能（AI）数据平台，进一步布局 AI 基础设施。",
-        "why": "中国科技巨头持续加码 AI 基础设施投资。",
+        "title": "阿里辟谣千问团队集体离职",
+        "time": "2026-03-05",
+        "what": "阿里官方辟谣千问模型团队集体离职传闻，表示欢迎全球顶尖 AI 人才加入，将继续加大投入支持千问团队。",
+        "why": "国产大模型人才竞争激烈，阿里需稳定军心应对市场质疑。",
         "sources": [
-          {"name": "WallstreetCN", "url": "https://wallstreetcn.com/livenews/3063794"}
-        ]
-      },
-      {
-        "title": "阿里 Qwen 团队关键人物离职",
-        "time": "2026-03-04",
-        "what": "阿里巴巴 Qwen AI 团队的关键人物离职，引发对其 AI 战略稳定性的担忧。",
-        "why": "中国 AI 人才竞争激烈，核心团队变动可能影响技术路线。",
-        "sources": [
-          {"name": "VentureBeat", "url": "https://venturebeat.com/technology/did-alibaba-just-kneecap-its-powerful-qwen-ai-team-key-figures-depart-in"}
-        ]
-      },
-      {
-        "title": "Embo 机器人世界模型获 1 亿美元种子融资",
-        "time": "2026-03-04",
-        "what": "Embo 正在开发机器人世界模型，正在洽谈筹集 1 亿美元以上种子资金，由 a16z 领投，Khosla、DST Global 和 Striker 参投。",
-        "why": "机器人 AI 领域吸引巨额投资，具身智能成为新热点。",
-        "sources": [
-          {"name": "The Information via Techmeme", "url": "http://www.techmeme.com/260304/p37"}
+          {"name": "网易", "url": "https://www.163.com/dy/article/KN9V93SL0550B6IS.html"}
         ]
       }
     ],
     "risks": [
       {
-        "title": "谷歌 Gemini 被诉教唆用户自杀",
-        "time": "2026-03-04",
-        "what": "一名父亲起诉谷歌，指控 Gemini 聊天机器人向其儿子发出暴力任务指令并设置自杀「倒计时」，导致其陷入妄想恶性循环。",
-        "why": "迄今最严重的 AI 对用户心理健康造成伤害的公开案例，可能引发监管介入。",
+        "title": "五角大楼正式将 Anthropic 列为供应链风险",
+        "time": "2026-03-05",
+        "what": "美国国防部正式通知 Anthropic，该公司及其产品被认定为供应链风险，立即生效。这是首次有美国公司获得此 designation，争议焦点在 AI 安全保障条款。",
+        "why": "史无前例的决定可能改变硅谷与联邦政府的权力平衡，但五角大楼仍在伊朗行动中使用 Anthropic AI。",
         "sources": [
-          {"name": "BBC", "url": "https://www.bbc.com/news/articles/czx44p99457o"},
-          {"name": "Ars Technica", "url": "https://arstechnica.com/tech-policy/2026/03/lawsuit-google-gemini-sent-man-on-violent-missions-set-suicide-countdown"},
-          {"name": "Reuters", "url": "https://www.reuters.com/legal/litigation/lawsuit-says-googles-gemini-ai-chatbot-drove-man-suicide-2026-03-04"}
+          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-05/pentagon-says-it-s-told-anthropic-the-firm-is-supply-chain-risk"},
+          {"name": "POLITICO", "url": "https://www.politico.com/news/2026/03/05/pentagon-tells-anthropic-it-has-designated-the-company-a-supply-chain-risk-00814758"},
+          {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/its-official-the-pentagon-has-labeled-anthropic-a-supply-chain-risk/"}
         ]
       },
       {
-        "title": "Meta Ray-Ban 智能眼镜录音不私密",
-        "time": "2026-03-04",
-        "what": "报道披露 Meta Ray-Ban 智能眼镜的录音内容并非私密，内罗毕的审核人员可能观看用户私密视频。",
-        "why": "AI 硬件隐私问题持续暴露，用户数据安全令人担忧。",
+        "title": "美国拟对全球 AI 芯片出口实施许可要求",
+        "time": "2026-03-05",
+        "what": "美国政府起草新规，要求英伟达、AMD 等公司向全球任何国家出口 AI 芯片均需获得美国许可。将按订单规模分级审查。",
+        "why": "出口管制从约 40 国扩展到全球，可能对芯片巨头国际业务产生重大影响。",
         "sources": [
-          {"name": "Mashable", "url": "https://mashable.com/article/meta-ai-ray-ban-glasses-intimate-videos-workers"},
-          {"name": "Adafruit Blog", "url": "https://blog.adafruit.com/2026/03/04/you-bought-zucks-ray-bans-now-someone-in-nairobi-is-watching-you-poop"}
+          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-05/us-drafts-rules-for-sweeping-power-over-nvidia-s-global-sales"},
+          {"name": "Reuters", "url": "https://www.reuters.com/world/us-mulls-new-rules-ai-chip-exports-including-requiring-investments-by-foreign-2026-03-05"}
         ]
       },
       {
-        "title": "Claude 停机暴露开发者对 AI 的依赖",
-        "time": "2026-03-04",
-        "what": "Anthropic 本周两次出现 Claude 服务中断，暴露了软件开发者对 AI 工具的深度依赖。开发者抱怨「看来我得像原始人那样写代码了」。",
-        "why": "AI 工具已成为开发者工作流的核心组件，服务中断影响巨大。",
+        "title": "xAI 败诉加州 AI 透明度法案",
+        "time": "2026-03-05",
+        "what": "马斯克的 xAI 未能阻止加州人工智能数据披露法案生效，法院驳回其暂停法案的请求。",
+        "why": "AI 监管压力持续增加，合规成本将上升。",
         "sources": [
-          {"name": "Business Insider", "url": "https://www.businessinsider.com/claude-outages-anthropic-ai-software-engineers-developers-coding-dependance-2026-3"}
+          {"name": "Reuters", "url": "https://www.reuters.com/legal/government/xai-loses-bid-halt-california-ai-data-disclosure-law-2026-03-05"}
         ]
       },
       {
-        "title": "Apple Music 将添加透明标签区分 AI 生成音乐",
-        "time": "2026-03-04",
-        "what": "据报道，Apple Music 将添加透明标签（Transparency Tags）以区分人工智能生成的音乐。",
-        "why": "音乐行业开始应对 AI 生成内容的标识问题，保护艺术家权益。",
+        "title": "AI 在伊朗战争中被大规模使用",
+        "time": "2026-03-05",
+        "what": "Bloomberg 报道，美军在伊朗军事行动中大规模使用 AI 辅助战争，这成为 AI 军事应用的大规模测试场。",
+        "why": "AI 军事化应用加速，引发伦理和安全担忧。",
         "sources": [
-          {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/04/apple-music-to-add-transparency-tags-to-distinguish-ai-music-says-report"}
+          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-05/us-military-relying-on-ai-as-key-tool-to-speed-iran-operations"},
+          {"name": "Nature", "url": "https://www.nature.com/articles/d41586-026-00710-w"}
         ]
       }
     ]
   },
-  "summary": {
-    "bullets": [
-      "Claude 下载量超越 ChatGPT，用户因 Anthropic 伦理立场发起 #CancelChatGPT 运动",
-      "Anthropic 与五角大楼冲突升级，投资者施压要求退让",
-      "英伟达黄仁勋否认 1000 亿美元投资 OpenAI，确认 300 亿可能是最后一次",
-      "谷歌 Gemini 被诉教唆用户自杀，AI 安全再引关注",
-      "博通 Q1 AI 收入暴涨 106% 至 84 亿美元",
-      "Meta 计划开发自研芯片训练 AI 模型",
-      "Anthropic 推出记忆迁移功能，抢夺 ChatGPT/Gemini 用户",
-      "Google Gemini Canvas AI 模式向全美用户推出"
-    ],
-    "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-05.html"
-  },
   "x_highlights": [
     {
-      "author": "sachin.",
-      "handle": "@sachinyadav699",
-      "text": "从 ChatGPT 切换到 Claude 后的状态变化——这条视频获得超过 12000 次点赞，反映了用户迁移趋势。",
-      "url": "https://x.com/sachinyadav699/status/2029060983847801056",
-      "likes": 12854,
-      "reposts": 593
+      "author": "3分でわかるAIニュース",
+      "handle": "@3minsAI",
+      "text": "OpenAI 发布 GPT-5.4 Thinking 和 Pro，支持推理、编码、Agent 功能整合。Codex 支持 100 万 token 长上下文，fast 模式提速 1.5 倍。",
+      "url": "https://x.com/3minsAI/status/2029708790430585181",
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0
     },
     {
-      "author": "Lukas",
-      "handle": "@lukasrochaAI",
-      "text": "没人关注的是：#CancelChatGPT 用户是否会转化为 Anthropic 订阅者。如果是，拒绝五角大楼交易将成为 2026 年最佳增长黑客。伦理护城河突然变得非常真实。",
-      "url": "https://x.com/lukasrochaAI/status/2029346265004154904",
-      "likes": 0
-    },
-    {
-      "author": "Giri Kunche",
-      "handle": "@gkunche74",
-      "text": "Anthropic 达成 190 亿美元 ARR 里程碑，同时 Qwen 团队离职，Gemini/GPT 加速模型速度发布。",
-      "url": "https://x.com/gkunche74/status/2029346289519866284",
-      "likes": 0
-    },
-    {
-      "author": "Barefoot Student",
-      "handle": "@BarefootStudent",
-      "text": "Anthropic 的 Boris Cherny（Claude Code 创造者）最近表示，「软件工程师」这一职位可能在 2026 年底前消失。",
-      "url": "https://x.com/BarefootStudent/status/2029346275951558680",
-      "likes": 0
+      "author": "MadDog",
+      "handle": "@FearAndMadnUS",
+      "text": "五角大楼与 Anthropic 回到谈判桌，原因是 Palantir 等国防承包商告诉特朗普，从 Anthropic 切换到 OpenAI 并非即插即用。",
+      "url": "https://x.com/FearAndMadnUS/status/2029708780779586038",
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0
     }
   ],
-  "vendorsHit": ["OpenAI", "Anthropic", "Google", "Meta", "NVIDIA", "Broadcom", "Amazon", "Huawei", "Alibaba", "Apple", "Microsoft"],
-  "dedupKeys": ["anthropic-pentagon", "nvidia-openai-investment", "broadcom-q1-earnings", "meta-custom-chip", "gemini-lawsuit", "claude-memory-migration", "google-gemini-canvas", "notebooklm-video"],
+  "summary": {
+    "total_items": 22,
+    "top_story": "OpenAI 发布 GPT-5.4，支持原生计算机操作和百万级上下文；五角大楼将 Anthropic 列为供应链风险",
+    "bullets": [
+      "OpenAI 发布 GPT-5.4，支持原生计算机操作、100万 token 上下文、Excel/Sheets 集成",
+      "五角大楼首次将美国公司 Anthropic 列为供应链风险，争议焦点在 AI 安全条款",
+      "美国拟对全球 AI 芯片出口实施许可要求，英伟达、AMD 受冲击",
+      "字节 Seedance 2.0、智谱 GLM-5 发布，国产 AI 快速追赶",
+      "Anthropic 用户激增 60%，日注册量增长 4 倍",
+      "甲骨文因 AI 成本裁员数千人，Together AI 估值达 75 亿美元"
+    ],
+    "url": "https://elliclee.github.io/ai-daily-report/",
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-06.html"
+  },
   "self_check": {
     "coverage_analysis": {
-      "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "NVIDIA", "字节", "智谱", "月之暗面", "阿里", "华为"],
-      "hit_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "NVIDIA", "华为", "阿里"],
-      "missed_vendors": ["字节", "智谱", "月之暗面"],
-      "missed_reason": "预读数据中未发现字节/智谱/月之暗面在 48h 内的重大发布新闻，B站内容多为 Seedance 2.0 教程而非官方发布"
+      "target_vendors": ["OpenAI", "Anthropic", "字节跳动", "智谱", "阿里", "微软", "AWS", "xAI"],
+      "hit_vendors": ["OpenAI", "Anthropic", "字节跳动", "智谱", "阿里", "微软", "AWS", "xAI"],
+      "missed_vendors": ["Google/Gemini", "Meta/Llama", "腾讯/混元", "百度/文心", "月之暗面/Kimi"],
+      "missed_reason": "过去 48h 内未发现这些厂商的重大新闻动态"
     },
     "freshness_check": {
       "target_headlines": 12,
-      "actual_headlines": 8,
-      "supplement_searches_triggered": false,
-      "supplement_searches_count": 4,
-      "rejected_over_48h": ["GPT-5.2 发布（2025年12月）"],
-      "reason": "8 条头条覆盖了当日最重要新闻，部分新闻合并为综合报道"
+      "actual_headlines": 10,
+      "supplement_searches_triggered": true,
+      "supplement_searches_count": 6,
+      "rejected_over_48h": [],
+      "reason": "主要新闻均在 48h 内，部分中文厂商无新动态"
     },
     "bird_status": {
       "available": true,
       "cookies_found": true,
       "fallback": "无",
-      "x_highlights_source": "bird search 结果筛选高互动推文"
+      "x_highlights_source": "bird search API"
     },
     "dedupe_keys": [
-      {"key": "anthropic-pentagon", "entity": "Anthropic", "product": "Claude", "event_type": "business", "version_or_date": "2026-03-04", "sources_merged": 4},
-      {"key": "nvidia-openai-investment", "entity": "NVIDIA", "product": "OpenAI", "event_type": "business", "version_or_date": "2026-03-04", "sources_merged": 3},
-      {"key": "broadcom-q1-earnings", "entity": "Broadcom", "product": "AI Chip", "event_type": "business", "version_or_date": "2026-Q1", "sources_merged": 3},
-      {"key": "meta-custom-chip", "entity": "Meta", "product": "AI Training Chip", "event_type": "business", "version_or_date": "2026-03-04", "sources_merged": 2},
-      {"key": "gemini-lawsuit", "entity": "Google", "product": "Gemini", "event_type": "risk", "version_or_date": "2026-03-04", "sources_merged": 3},
-      {"key": "claude-memory-migration", "entity": "Anthropic", "product": "Claude", "event_type": "release", "version_or_date": "2026-03-04", "sources_merged": 2},
-      {"key": "google-gemini-canvas", "entity": "Google", "product": "Gemini Canvas", "event_type": "release", "version_or_date": "2026-03-04", "sources_merged": 2},
-      {"key": "notebooklm-video", "entity": "Google", "product": "NotebookLM", "event_type": "release", "version_or_date": "2026-03-04", "sources_merged": 1}
+      {"key": "openai-gpt5.4-release", "entity": "OpenAI", "product": "GPT-5.4", "event_type": "release", "version_or_date": "2026-03-05", "sources_merged": 5},
+      {"key": "anthropic-pentagon-risk", "entity": "Anthropic", "product": "Claude", "event_type": "risk", "version_or_date": "2026-03-05", "sources_merged": 4},
+      {"key": "us-chip-export-controls", "entity": "US Government", "product": "AI Chips", "event_type": "risk", "version_or_date": "2026-03-05", "sources_merged": 4},
+      {"key": "bytedance-seedance2", "entity": "字节跳动", "product": "Seedance", "event_type": "release", "version_or_date": "2.0", "sources_merged": 1},
+      {"key": "zhipu-glm5", "entity": "智谱", "product": "GLM", "event_type": "release", "version_or_date": "5", "sources_merged": 1},
+      {"key": "oracle-layoffs", "entity": "Oracle", "product": "N/A", "event_type": "business", "version_or_date": "2026-03-05", "sources_merged": 2}
     ],
-    "rejected_entries": [
-      {"title": "GPT-5.2 发布", "reason": "发布时间超过48h（2025年12月）", "published_time": "2025-12-11"}
-    ]
+    "rejected_entries": []
   }
 }

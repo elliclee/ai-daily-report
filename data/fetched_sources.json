@@ -1,63 +1,54 @@
 {
-  "fetched_at": "2026-03-04T23:30:07.151873",
+  "fetched_at": "2026-03-05T23:30:07.962048",
   "sources": {
     "hackernews-top": {
       "type": "hackernews",
-      "count": 6,
+      "count": 5,
       "items": [
         {
-          "title": "MacBook Neo",
-          "url": "https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/",
-          "score": 1389,
-          "by": "dm",
-          "time": "2026-03-04T14:16:41",
-          "comments": "https://news.ycombinator.com/item?id=47247645",
-          "description": "Apple today unveiled MacBook Neo, an all-new laptop that delivers the magic of the Mac at a breakthrough price."
-        },
-        {
-          "title": "Something is afoot in the land of Qwen",
-          "url": "https://simonwillison.net/2026/Mar/4/qwen/",
-          "score": 457,
-          "by": "simonw",
-          "time": "2026-03-04T15:55:34",
-          "comments": "https://news.ycombinator.com/item?id=47249343",
-          "description": "I’m behind on writing about Qwen 3.5, a truly remarkable family of open weight models released by Alibaba’s Qwen team over the past few weeks. I’m hoping that the 3.5 …"
-        },
-        {
-          "title": "An interactive map of Flock Cams",
-          "url": "https://deflock.org/map#map=5/37.125286/-96.284180",
-          "score": 458,
-          "by": "anjel",
-          "time": "2026-03-04T18:50:45",
-          "comments": "https://news.ycombinator.com/item?id=47252049",
-          "description": "Find license plate readers (LPRs) near you."
-        },
-        {
-          "title": "“It turns out” (2010)",
-          "url": "https://jsomers.net/blog/it-turns-out",
-          "score": 222,
-          "by": "Munksgaard",
-          "time": "2026-03-04T14:52:46",
-          "comments": "https://news.ycombinator.com/item?id=47248319",
+          "title": "GPT-5.4",
+          "url": "https://openai.com/index/introducing-gpt-5-4/",
+          "score": 543,
+          "by": "mudkipdev",
+          "time": "2026-03-05T18:08:10",
+          "comments": "https://news.ycombinator.com/item?id=47265045",
           "description": ""
         },
         {
-          "title": "Qwen3.5 Fine-Tuning Guide – Unsloth Documentation",
-          "url": "https://unsloth.ai/docs/models/qwen3.5/fine-tune",
-          "score": 242,
-          "by": "bilsbie",
-          "time": "2026-03-04T12:04:31",
-          "comments": "https://news.ycombinator.com/item?id=47246296",
-          "description": "Learn how to fine-tune Qwen3.5 LLMs locally with Unsloth."
+          "title": "Wikipedia was in read-only mode following mass admin account compromise",
+          "url": "https://www.wikimediastatus.net",
+          "score": 842,
+          "by": "greyface-",
+          "time": "2026-03-05T16:04:54",
+          "comments": "https://news.ycombinator.com/item?id=47263323",
+          "description": "Welcome to Wikimedia&#39;s home for real-time and historical data on system performance."
         },
         {
-          "title": "Making Firefox's right-click not suck with about:config",
-          "url": "https://joshua.hu/firefox-making-right-click-not-suck",
-          "score": 222,
-          "by": "mmsc",
-          "time": "2026-03-04T18:12:39",
-          "comments": "https://news.ycombinator.com/item?id=47251480",
-          "description": "A practical about:config checklist to declutter Firefox right-click menus on macOS, disabling AI/chatbot prompts, link previews, OCR, visual search, and other low-value context menu items."
+          "title": "Good software knows when to stop",
+          "url": "https://ogirardot.writizzy.com/p/good-software-knows-when-to-stop",
+          "score": 310,
+          "by": "ssaboum",
+          "time": "2026-03-05T13:52:43",
+          "comments": "https://news.ycombinator.com/item?id=47261561",
+          "description": "Good software knows what problem it solves and what needs to be tackled by another tool"
+        },
+        {
+          "title": "A GitHub Issue Title Compromised 4k Developer Machines",
+          "url": "https://grith.ai/blog/clinejection-when-your-ai-tool-installs-another",
+          "score": 288,
+          "by": "edf13",
+          "time": "2026-03-05T16:22:01",
+          "comments": "https://news.ycombinator.com/item?id=47263595",
+          "description": "A prompt injection in a GitHub issue triggered a chain reaction that ended with 4,000 developers getting OpenClaw installed without consent. The attack composes well-understood vulnerabilities into something new: one AI tool bootstrapping another."
+        },
+        {
+          "title": "Show HN: Jido 2.0, Elixir Agent Framework",
+          "url": "https://jido.run/blog/jido-2-0-is-here",
+          "score": 225,
+          "by": "mikehostetler",
+          "time": "2026-03-05T15:48:52",
+          "comments": "https://news.ycombinator.com/item?id=47263036",
+          "description": "After 18 months of building and rethinking, Jido 2.0 ships with a simpler BEAM-first agent core, production-ready AI strategies, and a growing ecosystem."
         }
       ]
     },
@@ -66,27 +57,19 @@
       "count": 5,
       "items": [
         {
-          "repo": "K-Dense-AI/claude-scientific-skills",
-          "name": "claude-scientific-skills",
-          "url": "https://github.com/K-Dense-AI/claude-scientific-skills",
-          "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
-          "stars_today": "926",
+          "repo": "TheCraigHewitt/seomachine",
+          "name": "seomachine",
+          "url": "https://github.com/TheCraigHewitt/seomachine",
+          "description": "A specialized Claude Code workspace for creating long-form, SEO-optimized blog content for any business. This system helps you research, write, analyze, and optimize content that ranks well and serves your target audience.",
+          "stars_today": "371",
           "language": "Python"
         },
         {
-          "repo": "agentscope-ai/ReMe",
-          "name": "ReMe",
-          "url": "https://github.com/agentscope-ai/ReMe",
-          "description": "ReMe: Memory Management Kit for Agents - Remember Me, Refine Me.",
-          "stars_today": "346",
-          "language": "Python"
-        },
-        {
-          "repo": "alibaba/OpenSandbox",
-          "name": "OpenSandbox",
-          "url": "https://github.com/alibaba/OpenSandbox",
-          "description": "OpenSandbox is a general-purpose sandbox platform for AI applications, offering multi-language SDKs, unified sandbox APIs, and Docker/Kubernetes runtimes for scenarios like Coding Agents, GUI Agents, Agent Evaluation, AI Code Execution, and RL Training.",
-          "stars_today": "745",
+          "repo": "inclusionAI/AReaL",
+          "name": "AReaL",
+          "url": "https://github.com/inclusionAI/AReaL",
+          "description": "Lightning-Fast RL for LLM Reasoning and Agents. Made Simple & Flexible.",
+          "stars_today": "161",
           "language": "Python"
         },
         {
@@ -94,15 +77,23 @@
           "name": "MoneyPrinterV2",
           "url": "https://github.com/FujiwaraChoki/MoneyPrinterV2",
           "description": "Automate the process of making money online.",
-          "stars_today": "217",
+          "stars_today": "511",
           "language": "Python"
         },
         {
-          "repo": "agentscope-ai/agentscope",
-          "name": "agentscope",
-          "url": "https://github.com/agentscope-ai/agentscope",
-          "description": "Build and run agents you can see, understand and trust.",
-          "stars_today": "419",
+          "repo": "agentscope-ai/ReMe",
+          "name": "ReMe",
+          "url": "https://github.com/agentscope-ai/ReMe",
+          "description": "ReMe: Memory Management Kit for Agents - Remember Me, Refine Me.",
+          "stars_today": "195",
+          "language": "Python"
+        },
+        {
+          "repo": "public-apis/public-apis",
+          "name": "public-apis",
+          "url": "https://github.com/public-apis/public-apis",
+          "description": "A collective list of free APIs",
+          "stars_today": "557",
           "language": "Python"
         }
       ]
