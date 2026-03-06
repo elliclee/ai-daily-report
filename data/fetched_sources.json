@@ -1,41 +1,77 @@
 {
-  "fetched_at": "2026-03-05T23:30:07.962048",
+  "fetched_at": "2026-03-06T03:27:42.069896",
   "sources": {
     "hackernews-top": {
       "type": "hackernews",
-      "count": 5,
+      "count": 10,
       "items": [
         {
           "title": "GPT-5.4",
           "url": "https://openai.com/index/introducing-gpt-5-4/",
-          "score": 543,
+          "score": 675,
           "by": "mudkipdev",
           "time": "2026-03-05T18:08:10",
           "comments": "https://news.ycombinator.com/item?id=47265045",
           "description": ""
         },
         {
-          "title": "Wikipedia was in read-only mode following mass admin account compromise",
-          "url": "https://www.wikimediastatus.net",
-          "score": 842,
-          "by": "greyface-",
-          "time": "2026-03-05T16:04:54",
-          "comments": "https://news.ycombinator.com/item?id=47263323",
-          "description": "Welcome to Wikimedia&#39;s home for real-time and historical data on system performance."
+          "title": "Where things stand with the Department of War",
+          "url": "https://www.anthropic.com/news/where-stand-department-war",
+          "score": 231,
+          "by": "surprisetalk",
+          "time": "2026-03-06T00:40:41",
+          "comments": "https://news.ycombinator.com/item?id=47269263",
+          "description": "A statement from Dario Amodei"
+        },
+        {
+          "title": "The Brand Age",
+          "url": "https://paulgraham.com/brandage.html",
+          "score": 254,
+          "by": "bigwheels",
+          "time": "2026-03-05T17:44:10",
+          "comments": "https://news.ycombinator.com/item?id=47264756",
+          "description": ""
+        },
+        {
+          "title": "10% of Firefox crashes are caused by bitflips",
+          "url": "https://mas.to/@gabrielesvelto/116171750653898304",
+          "score": 330,
+          "by": "marvinborner",
+          "time": "2026-03-04T19:58:24",
+          "comments": "https://news.ycombinator.com/item?id=47252971",
+          "description": "A few years ago I designed a way to detect bit-flips in Firefox crash reports and last year we deployed an actual memory tester that runs on user machines after the browser crashes. Today I was looking at the data that comes out of these tests and now I&#39;m 100% positive that the heuristic is soun"
+        },
+        {
+          "title": "CBP tapped into the online advertising ecosystem to track peoples’ movements",
+          "url": "https://www.404media.co/cbp-tapped-into-the-online-advertising-ecosystem-to-track-peoples-movements/",
+          "score": 386,
+          "by": "ece",
+          "time": "2026-03-04T15:57:29",
+          "comments": "https://news.ycombinator.com/item?id=47249387",
+          "description": "An internal DHS document obtained by 404 Media shows for the first time CBP used location data sourced from the online advertising industry to track phone locations. ICE has bought access to similar tools."
         },
         {
           "title": "Good software knows when to stop",
           "url": "https://ogirardot.writizzy.com/p/good-software-knows-when-to-stop",
-          "score": 310,
+          "score": 356,
           "by": "ssaboum",
           "time": "2026-03-05T13:52:43",
           "comments": "https://news.ycombinator.com/item?id=47261561",
           "description": "Good software knows what problem it solves and what needs to be tackled by another tool"
         },
         {
+          "title": "Wikipedia was in read-only mode following mass admin account compromise",
+          "url": "https://www.wikimediastatus.net",
+          "score": 902,
+          "by": "greyface-",
+          "time": "2026-03-05T16:04:54",
+          "comments": "https://news.ycombinator.com/item?id=47263323",
+          "description": "Welcome to Wikimedia&#39;s home for real-time and historical data on system performance."
+        },
+        {
           "title": "A GitHub Issue Title Compromised 4k Developer Machines",
           "url": "https://grith.ai/blog/clinejection-when-your-ai-tool-installs-another",
-          "score": 288,
+          "score": 345,
           "by": "edf13",
           "time": "2026-03-05T16:22:01",
           "comments": "https://news.ycombinator.com/item?id=47263595",
@@ -44,11 +80,20 @@
         {
           "title": "Show HN: Jido 2.0, Elixir Agent Framework",
           "url": "https://jido.run/blog/jido-2-0-is-here",
-          "score": 225,
+          "score": 251,
           "by": "mikehostetler",
           "time": "2026-03-05T15:48:52",
           "comments": "https://news.ycombinator.com/item?id=47263036",
           "description": "After 18 months of building and rethinking, Jido 2.0 ships with a simpler BEAM-first agent core, production-ready AI strategies, and a growing ecosystem."
+        },
+        {
+          "title": "Judge orders government to begin refunding more than $130B in tariffs",
+          "url": "https://www.wsj.com/politics/policy/judge-orders-government-to-begin-refunding-more-than-130-billion-in-tariffs-fdc1e62c",
+          "score": 832,
+          "by": "JumpCrisscross",
+          "time": "2026-03-05T14:05:46",
+          "comments": "https://news.ycombinator.com/item?id=47261688",
+          "description": ""
         }
       ]
     },
@@ -61,7 +106,7 @@
           "name": "seomachine",
           "url": "https://github.com/TheCraigHewitt/seomachine",
           "description": "A specialized Claude Code workspace for creating long-form, SEO-optimized blog content for any business. This system helps you research, write, analyze, and optimize content that ranks well and serves your target audience.",
-          "stars_today": "371",
+          "stars_today": "310",
           "language": "Python"
         },
         {
@@ -69,7 +114,7 @@
           "name": "AReaL",
           "url": "https://github.com/inclusionAI/AReaL",
           "description": "Lightning-Fast RL for LLM Reasoning and Agents. Made Simple & Flexible.",
-          "stars_today": "161",
+          "stars_today": "173",
           "language": "Python"
         },
         {
@@ -85,7 +130,7 @@
           "name": "ReMe",
           "url": "https://github.com/agentscope-ai/ReMe",
           "description": "ReMe: Memory Management Kit for Agents - Remember Me, Refine Me.",
-          "stars_today": "195",
+          "stars_today": "194",
           "language": "Python"
         },
         {
@@ -93,7 +138,7 @@
           "name": "public-apis",
           "url": "https://github.com/public-apis/public-apis",
           "description": "A collective list of free APIs",
-          "stars_today": "557",
+          "stars_today": "460",
           "language": "Python"
         }
       ]

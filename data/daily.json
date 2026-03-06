@@ -1,352 +1,249 @@
 {
   "date": "2026-03-06",
-  "generated_at": "2026-03-06T00:00:00Z",
   "headlines": [
     {
-      "title": "OpenAI 发布 GPT-5.4：支持原生计算机操作、百万级上下文",
+      "title": "OpenAI发布GPT-5.4：首个原生支持计算机操控的通用模型",
       "time": "2026-03-05",
-      "what": "OpenAI 发布 GPT-5.4 Thinking 和 Pro 两个版本，这是首个具备原生计算机操作能力的模型，支持 100 万 token 上下文窗口，可直接在 Excel 和 Google Sheets 中工作，错误率相比 GPT-5.2 降低 33%。",
-      "why": "这是 OpenAI 迄今最强大的专业工作模型，原生计算机操作能力使其在 AI Agent 竞赛中领先，直接与 Anthropic 展开企业级市场争夺。",
+      "what": "OpenAI正式发布GPT-5.4系列模型，包括Thinking和Pro版本。该模型首次实现原生计算机使用能力（computer-use capabilities），支持100万token上下文窗口，在OSWorld-Verified基准上达到75%成功率，超越人类表现（72.4%）。",
+      "why": "这是OpenAI首个融合推理、编程和智能体能力的统一模型，标志着AI智能体时代正式到来。GPT-5.4在GDPval专业任务测试中胜率达83%，可直接操作电脑完成复杂工作流。",
       "sources": [
-        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/openai-launches-gpt-5-4-with-pro-and-thinking-versions/"},
-        {"name": "OpenAI", "url": "https://openai.com/index/introducing-gpt-5-4"}
+        {"name": "OpenAI官方", "url": "https://openai.com/index/introducing-gpt-5-4/"},
+        {"name": "IT之家", "url": "https://www.ithome.com/0/926/344.htm"},
+        {"name": "Ars Technica", "url": "https://arstechnica.com/ai/2026/03/openai-introduces-gpt-5-4-with-more-knowledge-work-capability/"}
       ]
     },
     {
-      "title": "五角大楼正式将 Anthropic 列为供应链风险",
+      "title": "五角大楼正式将Anthropic列为供应链风险企业",
       "time": "2026-03-05",
-      "what": "美国国防部正式通知 Anthropic，该公司及其产品被认定为供应链风险，这是首次有美国公司获得此 designation。争议焦点在于 AI 安全保障条款。",
-      "why": "这一史无前例的决定可能改变硅谷与联邦政府之间的权力平衡，但五角大楼仍在伊朗军事行动中使用 Anthropic 的 AI。",
+      "what": "美国战争部正式致函Anthropic，确认将其认定为'对美国国家安全构成供应链风险'。Dario Amodei表示将提起法律挑战，并强调该认定仅限制与战争部直接相关的合同使用，不影响绝大多数客户。",
+      "why": "这一事件反映AI公司在国家安全与商业利益之间的紧张关系。Anthropic已承诺以象征性成本向政府提供AI模型及工程师支持，同时坚持不参与完全自主武器和大规模监控的立场。",
       "sources": [
-        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-05/pentagon-says-it-s-told-anthropic-the-firm-is-supply-chain-risk"},
-        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/its-official-the-pentagon-has-labeled-anthropic-a-supply-chain-risk/"}
+        {"name": "Anthropic官方", "url": "https://www.anthropic.com/news/where-stand-department-war"},
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/anthropic-to-challenge-dods-supply-chain-label-in-court/"},
+        {"name": "IT之家", "url": "https://www.ithome.com/0/926/369.htm"}
       ]
     },
     {
-      "title": "美国拟对全球 AI 芯片出口实施许可要求",
+      "title": "OpenAI开源Symphony框架：AI项目管理自动化工具",
       "time": "2026-03-05",
-      "what": "美国政府起草新规，要求英伟达、AMD 等公司向全球任何国家出口 AI 芯片均需获得美国许可。新规将按订单规模分级审查，而非统一限制。",
-      "why": "这标志着美国 AI 芯片出口管制从约 40 国扩展到全球范围，可能对英伟达、AMD 等芯片巨头的国际业务产生重大影响。",
+      "what": "OpenAI在GitHub开源Symphony框架（工程预览版），可将项目任务转化为自动化执行流程。该框架支持通过Linear等issue追踪器监控任务并生成智能体完成，提供CI状态、PR反馈、复杂度分析等交付物证明。",
+      "why": "Symphony标志着OpenAI从'管理编码智能体'向'管理需完成的工作'演进。采用Apache 2.0许可证，基于Elixir实现，与Codex深度集成，有望成为AI辅助软件工程的新范式。",
+      "sources": [
+        {"name": "GitHub", "url": "https://github.com/openai/symphony"},
+        {"name": "MarkTechPost", "url": "https://www.marktechpost.com/2026/03/05/openai-releases-symphony-an-open-source-agentic-framework-for-orchestrating-autonomous-ai-agents-through-structured-scalable-implementation-runs/"}
+      ]
+    },
+    {
+      "title": "美国拟出台AI芯片出口新规：全球销售需获许可",
+      "time": "2026-03-05",
+      "what": "据Bloomberg报道，美国官员已起草新规，拟要求Nvidia和AMD的AI芯片全球销售均需获得美国政府批准。此举将赋予华盛顿对其他国家建设AI训练/推理设施的广泛控制权。",
+      "why": "若实施，这将是美国对AI芯片出口最严格的管控措施。消息发布后Nvidia股价下跌2.5%，AMD下跌3.4%。新规可能要求购买大量AI芯片的国家承诺投资美国AI基础设施。",
       "sources": [
         {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-05/us-drafts-rules-for-sweeping-power-over-nvidia-s-global-sales"},
-        {"name": "Reuters", "url": "https://www.reuters.com/world/us-mulls-new-rules-ai-chip-exports-including-requiring-investments-by-foreign-2026-03-05"}
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/us-reportedly-considering-sweeping-new-chip-export-controls/"}
       ]
     },
     {
-      "title": "字节跳动 Seedance 2.0 视频模型全量上线",
+      "title": "Netflix收购Ben Affleck创立的AI影视技术公司InterPositive",
       "time": "2026-03-05",
-      "what": "字节跳动旗下即梦的 AI 视频生成模型 Seedance 2.0 正式全量上线，支持高质量 AI 视频制作，引发社区广泛关注和教程热潮。",
-      "why": "字节跳动正式加入 AI 视频生成竞争，Seedance 2.0 的发布标志着国产 AI 视频模型能力的进一步提升。",
+      "what": "Netflix宣布收购由好莱坞影星Ben Affleck创立的AI影视技术公司InterPositive。收购完成后，InterPositive团队将并入Netflix，Affleck将出任Netflix高级顾问。",
+      "why": "与Sora等直接生成视频的应用不同，InterPositive专注于影视制作和后期制作环节的AI工具。此举显示Netflix在AI影视制作领域的战略布局，或将对整个行业产生深远影响。",
       "sources": [
-        {"name": "36氪", "url": "https://www.36kr.com/p/3680115686895237"}
+        {"name": "IT之家", "url": "https://www.ithome.com/0/926/350.htm"},
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/netflix-buys-ben-afflecks-ai-filmmaking-company-interpositive/"}
       ]
     },
     {
-      "title": "智谱 GLM-5 发布：开源模型新 SOTA",
+      "title": "阿里千问团队人事地震：林俊旸离职，谷歌Gemini核心成员周浩加盟",
       "time": "2026-03-05",
-      "what": "智谱发布 GLM-5 模型，在 Artificial Analysis Intelligence Index v4.0 中获得 50 分，成为新的开源 SOTA 模型，完全适配华为等国产芯片。",
-      "why": "这是开放权重模型首次在该指数中达到 50 分，标志着国产开源大模型能力的重大突破。",
+      "what": "阿里巴巴CEO吴泳铭在内部信中正式批准林俊旸辞职，阿里云CTO周靖人接管通义实验室。多位核心研究员同日离职。前谷歌DeepMind高级研究员、Gemini 3.0核心贡献者周浩已确定加盟，将主导千问后训练工作。",
+      "why": "此次人事变动事发突然，阿里承认沟通存在不足。周浩的加入有望强化千问在强化学习、复杂推理方面的能力。CEO吴泳铭表示将持续加大对AI领域的研发投入。",
       "sources": [
-        {"name": "36氪", "url": "https://www.36kr.com/p/3695400723394178"}
-      ]
-    },
-    {
-      "title": "Anthropic 用户激增：日注册量增长 4 倍",
-      "time": "2026-03-05",
-      "what": "Anthropic 表示 Claude 免费活跃用户自年初以来增长 60% 以上，每日注册量增长 4 倍，周一创下历史最强记录。同时推出白领就业预警系统。",
-      "why": "在与五角大楼争端的同时，Anthropic 消费端业务快速增长，显示市场对 Claude 的强烈需求。",
-      "sources": [
-        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/newsletters/2026-03-05/anthropic-s-pentagon-feud-accelerates-push-into-consumer-market"},
-        {"name": "Axios", "url": "http://www.techmeme.com/260305/p53"}
-      ]
-    },
-    {
-      "title": "甲骨文因 AI 数据中心成本计划裁员数千人",
-      "time": "2026-03-05",
-      "what": "甲骨文计划裁减数千名员工，以应对 AI 数据中心扩张导致的现金流压力。此前公司在 AI 基础设施上投入巨资。",
-      "why": "显示 AI 基础设施建设的高成本正在挤压传统科技公司的利润空间，裁员潮可能蔓延。",
-      "sources": [
-        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-05/oracle-layoffs-to-impact-thousands-in-ai-cash-crunch"},
-        {"name": "华尔街见闻", "url": "https://wallstreetcn.com/livenews/3064643"}
-      ]
-    },
-    {
-      "title": "Together AI 洽谈 75 亿美元估值融资",
-      "time": "2026-03-05",
-      "what": "AI 推理平台 Together AI 正在洽谈以 75 亿美元估值进行融资，显示 AI 基础设施赛道持续火热。",
-      "why": "尽管市场波动，AI 基础设施公司仍获得高估值，反映投资者对 AI 推理需求的长期看好。",
-      "sources": [
-        {"name": "The Information", "url": "https://wallstreetcn.com/livenews/3064681"}
-      ]
-    },
-    {
-      "title": "xAI 败诉加州 AI 数据披露法案",
-      "time": "2026-03-05",
-      "what": "马斯克的 xAI 未能阻止加州人工智能透明度法案生效，法院驳回了其暂停法案的请求。",
-      "why": "AI 监管压力持续增加，即使是马斯克的公司也难以阻挡立法进程，合规成本将上升。",
-      "sources": [
-        {"name": "Reuters", "url": "https://www.reuters.com/legal/government/xai-loses-bid-halt-california-ai-data-disclosure-law-2026-03-05"}
-      ]
-    },
-    {
-      "title": "微软开源 Phi-4 多模态推理模型",
-      "time": "2026-03-05",
-      "what": "微软开源 Phi-4-reasoning-vision-15B 多模态推理模型，支持界面元素识别和复杂视觉文件分析，代码已在 Hugging Face、GitHub 和 Azure 发布。",
-      "why": "微软继续推动小参数高性能模型的开源，降低 AI Agent 开发门槛。",
-      "sources": [
-        {"name": "SiliconANGLE", "url": "https://siliconangle.com/2026/03/04/microsoft-open-sources-multimodal-reasoning-model-15b-parameters/"},
-        {"name": "Techzine", "url": "https://www.techzine.eu/news/analytics/139286/microsoft-introduces-open-source-multimodal-phi-4-reasoning-model/"}
+        {"name": "36氪", "url": "https://www.36kr.com/p/3709665960636552"},
+        {"name": "量子位", "url": "https://www.qbitai.com/2026/03/384345.html"}
       ]
     }
   ],
   "sections": {
     "releases": [
       {
-        "title": "GPT-5.4 Thinking/Pro：OpenAI 最强专业模型",
+        "title": "OpenAI GPT-5.4正式发布",
         "time": "2026-03-05",
-        "what": "OpenAI 发布 GPT-5.4，提供 Thinking 和 Pro 两个版本。Thinking 版支持思考过程中调整指令，Pro 版定价 $30/1M 输入、$180/1M 输出。支持原生计算机操作、100 万 token 上下文、Excel/Sheets 集成。",
-        "why": "这是 OpenAI 首个具备原生计算机操作能力的模型，在企业级市场直接挑战 Anthropic，API 工具调用效率大幅提升。",
+        "what": "OpenAI发布GPT-5.4 Thinking和Pro版本，首个融合推理、编程和智能体能力的统一模型。支持100万token上下文，具备原生计算机使用能力，在OSWorld-Verified达到75%成功率，超越人类。",
+        "why": "标志着AI智能体时代的正式到来，模型可直接操控电脑完成复杂工作流，专业任务胜率达83%。",
         "sources": [
-          {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/openai-launches-gpt-5-4-with-pro-and-thinking-versions/"},
-          {"name": "VentureBeat", "url": "https://venturebeat.com/technology/openai-launches-gpt-5-4-with-native-computer-use-mode-financial-plugins-for"},
-          {"name": "The New Stack", "url": "https://thenewstack.io/openai-launches-gpt-5-4/"}
+          {"name": "OpenAI", "url": "https://openai.com/index/introducing-gpt-5-4/"},
+          {"name": "IT之家", "url": "https://www.ithome.com/0/926/344.htm"}
         ]
       },
       {
-        "title": "字节 Seedance 2.0：AI 视频生成新势力",
+        "title": "AWS推出Amazon Connect Health医疗AI平台",
         "time": "2026-03-05",
-        "what": "字节跳动即梦平台发布 Seedance 2.0 视频生成模型，支持高质量 AI 短片制作，B 站涌现大量教程内容。",
-        "why": "字节正式加入 AI 视频赛道，与 Runway、Pika 等展开竞争，国产 AI 视频能力快速追赶。",
+        "what": "AWS发布专门针对医疗保健的AI智能体平台Amazon Connect Health，符合HIPAA标准，可连接EHR系统，帮助医疗机构自动化预约安排、文档处理和患者验证等行政任务。",
+        "why": "AWS进军5万亿美元美国医疗市场的重要举措，月费99美元起，是云厂商首次针对医疗垂直领域推出专用AI智能体平台。",
         "sources": [
-          {"name": "36氪", "url": "https://www.36kr.com/p/3680115686895237"}
-        ]
-      },
-      {
-        "title": "智谱 GLM-5：开源模型首次达到 50 分",
-        "time": "2026-03-05",
-        "what": "智谱发布 GLM-5，在 Artificial Analysis Intelligence Index v4.0 中获得 50 分，成为开源 SOTA。完全适配华为等国产芯片。",
-        "why": "开放权重模型首次在该指数达到 50 分，国产大模型开源生态取得重要突破。",
-        "sources": [
-          {"name": "36氪", "url": "https://www.36kr.com/p/3695400723394178"}
+          {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/aws-amazon-connect-health-ai-agent-platform-health-care-providers/"},
+          {"name": "Amazon", "url": "https://www.aboutamazon.com/news/aws/amazon-connect-health-ai-healthcare"}
         ]
       }
     ],
     "updates": [
       {
-        "title": "Anthropic 推出白领就业 AI 预警系统",
+        "title": "Anthropic推出劳动力市场影响早期预警系统",
         "time": "2026-03-05",
-        "what": "Anthropic 发布白领工作 AI 影响预警系统，目前显示 AI 导致失业的证据有限。同时 Claude 免费用户增长 60%+，日注册量增长 4 倍。",
-        "why": "Anthropic 在与五角大楼争端期间加速消费端布局，显示其业务多元化策略。",
+        "what": "Anthropic发布针对白领工作岗位受AI影响风险的早期预警系统，基于Claude使用数据分析。报告显示目前AI导致的岗位流失'有限证据'，但特定领域如软件文档写作已出现显著影响。",
+        "why": "这是AI公司首次系统性研究自身产品对就业市场的影响，为政策制定者和企业提供数据支撑。",
         "sources": [
-          {"name": "Axios", "url": "http://www.techmeme.com/260305/p53"},
-          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/newsletters/2026-03-05/anthropic-s-pentagon-feud-accelerates-push-into-consumer-market"}
+          {"name": "Techmeme", "url": "http://www.techmeme.com/260305/p53"},
+          {"name": "Anthropic Research", "url": "https://www.anthropic.com/research/labor-market-impacts"}
         ]
       },
       {
-        "title": "AWS 推出医疗保健专用 AI 代理平台",
+        "title": "微软Bing Video Creator接入OpenAI Sora 2",
         "time": "2026-03-05",
-        "what": "AWS 发布专门针对医疗保健行业的新 AI 代理平台，基于 Amazon Connect，为医疗服务提供商提供智能化解决方案。",
-        "why": "云巨头加速 AI 垂直行业落地，医疗成为重点赛道。",
+        "what": "微软宣布Bing Video Creator已接入OpenAI Sora 2 AI视频生成模型，面向所有用户免费开放。支持生成带音效的视频，无限生成额度。",
+        "why": "Sora 2的开放使用将进一步降低AI视频创作门槛，可能对短视频和内容创作行业产生冲击。",
         "sources": [
-          {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/aws-amazon-connect-health-ai-agent-platform-health-care-providers"}
-        ]
-      },
-      {
-        "title": "Claude Code 2.1.69 发布",
-        "time": "2026-03-05",
-        "what": "Claude Code 更新至 2.1.69 版本，新增 API 应用构建技能，语音输入支持扩展至 20 种语言。",
-        "why": "Anthropic 持续优化开发者工具体验，与 OpenAI Codex 竞争。",
-        "sources": [
-          {"name": "Claude Code", "url": "https://claude.ai/code"}
+          {"name": "IT之家", "url": "https://www.ithome.com/0/926/360.htm"}
         ]
       }
     ],
     "opensource": [
       {
-        "title": "微软 Phi-4-reasoning-vision-15B 开源",
+        "title": "OpenAI开源Symphony智能体编排框架",
         "time": "2026-03-05",
-        "what": "微软开源 150 亿参数的多模态推理模型，支持从截图推断界面元素功能、分析复杂视觉文件。代码已在 Hugging Face、GitHub 和 Azure 发布。",
-        "why": "小参数高性能模型持续开源，降低 AI Agent 开发门槛。",
+        "what": "OpenAI在GitHub开源Symphony框架（工程预览版），Apache 2.0许可证。支持将项目任务自动化，智能体可监控Linear板并完成任务，提供CI状态、PR反馈等交付物。",
+        "why": "代表OpenAI从'管理编码智能体'向'管理工作流'演进，与Codex深度集成，有望成为AI辅助软件工程新标准。",
         "sources": [
-          {"name": "SiliconANGLE", "url": "https://siliconangle.com/2026/03/04/microsoft-open-sources-multimodal-reasoning-model-15b-parameters/"},
-          {"name": "Techzine", "url": "https://www.techzine.eu/news/analytics/139286/microsoft-introduces-open-source-multimodal-phi-4-reasoning-model/"}
+          {"name": "GitHub", "url": "https://github.com/openai/symphony"},
+          {"name": "PANews", "url": "https://www.panewslab.com/en/articles/019cbd7e-a091-74ad-8ef1-ecbd1dd8d93d"}
         ]
       },
       {
-        "title": "Evo 2：开源基因组大模型",
+        "title": "谷歌开源Workspace CLI代理工具",
         "time": "2026-03-05",
-        "what": "Evo 2 开源 AI 模型发布，基于细菌、古菌和真核生物的所有三域生命基因组数据进行训练，规模达数万亿碱基。",
-        "why": "AI 向生命科学领域深度渗透，开源基因组模型将加速生物技术研究。",
+        "what": "Google在GitHub发布开源的Workspace CLI工具，使AI智能体可更便捷地访问Gmail、日历、云端硬盘、文档等应用，采用Agent优先设计理念。",
+        "why": "降低企业AI智能体与Google Workspace集成的门槛，是Google在AI代理工具领域的重要开源贡献。",
         "sources": [
-          {"name": "Ars Technica", "url": "https://arstechnica.com/science/2026/03/large-genome-model-open-source-ai-trained-on-trillions-of-bases/"}
-        ]
-      },
-      {
-        "title": "GLiNER2：统一模式信息提取",
-        "time": "2026-03-05",
-        "what": "GLiNER2 发布，提供基于统一模式的信息提取能力，支持灵活的实体识别和分类任务。",
-        "why": "信息提取工具链持续完善，降低 NLP 应用开发门槛。",
-        "sources": [
-          {"name": "GitHub", "url": "https://github.com/fastino-ai/GLiNER2"}
+          {"name": "GitHub", "url": "https://github.com/googleworkspace/cli"},
+          {"name": "Techmeme", "url": "http://www.techmeme.com/260305/p58"}
         ]
       }
     ],
     "benchmarks": [
       {
-        "title": "GPT-5.4 在专业级任务测试中超越人类 83%",
+        "title": "GPT-5.4刷新多项AI基准测试纪录",
         "time": "2026-03-05",
-        "what": "ZDNet 报道，GPT-5.4 在专业级工作任务测试中表现超越人类 83%，OSWorld 基准测试成功率达 75%。",
-        "why": "AI 在复杂专业任务上的能力持续突破，对知识工作者的替代压力增加。",
+        "what": "GPT-5.4在多项基准测试中创纪录：OSWorld-Verified达75%（超人类72.4%）、GDPval专业任务83%、FrontierMath数学第一、SWE-Bench Pro编程第一、ARC-AGI-2达83.3%。",
+        "why": "这些数据证明GPT-5.4在推理、编程、计算机使用等多维度达到或超越人类专家水平，是目前最强的通用AI模型。",
         "sources": [
-          {"name": "ZDNet", "url": "https://www.zdnet.com/article/openai-gpt-5-4/"},
-          {"name": "Tom's Guide", "url": "https://www.tomsguide.com/ai/gpt-5-4-is-here-and-openai-just-made-every-other-ai-model-look-slow"}
+          {"name": "OpenAI", "url": "https://openai.com/index/introducing-gpt-5-4/"},
+          {"name": "36氪", "url": "https://www.36kr.com/p/3710669511094400"}
         ]
       }
     ],
     "business": [
       {
-        "title": "Together AI 洽谈 75 亿美元估值融资",
+        "title": "Netflix收购AI影视技术公司InterPositive",
         "time": "2026-03-05",
-        "what": "AI 推理平台 Together AI 正在洽谈以 75 亿美元估值进行新一轮融资，The Information 报道。",
-        "why": "AI 基础设施赛道估值持续走高，投资者看好 AI 推理需求长期增长。",
+        "what": "Netflix收购Ben Affleck创立的InterPositive，该公司专注为影视制作人和后期制作开发AI驱动工具。Affleck将出任Netflix高级顾问。",
+        "why": "与Sora等生成式AI不同，InterPositive专注制作流程优化。此次收购显示Netflix在AI影视制作领域的战略布局。",
         "sources": [
-          {"name": "The Information", "url": "https://wallstreetcn.com/livenews/3064681"}
+          {"name": "IT之家", "url": "https://www.ithome.com/0/926/350.htm"}
         ]
       },
       {
-        "title": "Netflix 收购本·阿弗莱克创办的 AI 初创公司",
+        "title": "阿里千问团队核心人事变动",
         "time": "2026-03-05",
-        "what": "Netflix 收购了由演员本·阿弗莱克创办的影视 AI 技术公司，具体金额未披露。",
-        "why": "流媒体巨头加速 AI 技术整合，影视制作 AI 化趋势加速。",
+        "what": "阿里批准林俊旸离职，CTO周靖人接管通义实验室。前谷歌DeepMind高级研究员、Gemini 3.0核心贡献者周浩加盟，将主导千问后训练工作。",
+        "why": "周浩在Gemini 3.0中的强化学习和复杂推理经验，有望补强千问在后训练环节的能力。阿里表示将持续加大AI领域投入。",
         "sources": [
-          {"name": "Engadget", "url": "https://www.engadget.com/ai/netflix-just-bought-an-ai-startup-founded-by-ben-affleck-184536640.html"}
+          {"name": "36氪", "url": "https://www.36kr.com/p/3709665960636552"}
         ]
       },
       {
-        "title": "甲骨文裁员数千人应对 AI 成本压力",
+        "title": "Together AI洽谈75亿美元估值融资",
         "time": "2026-03-05",
-        "what": "甲骨文计划裁减数千名员工，以应对 AI 数据中心扩张导致的现金流压力。公司在 AI 基础设施上投入巨资。",
-        "why": "AI 基础设施建设成本高昂，传统科技公司面临利润挤压。",
+        "what": "据The Information，AI基础设施公司Together AI正洽谈以75亿美元投前估值融资约10亿美元，较2025年的33亿美元估值翻倍。年化收入已达约10亿美元。",
+        "why": "AI算力需求持续爆发，Together AI作为模型训练和推理基础设施提供商获得资本高度认可，年收入较2025年中期增长3倍以上。",
         "sources": [
-          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-05/oracle-layoffs-to-impact-thousands-in-ai-cash-crunch"},
-          {"name": "华尔街见闻", "url": "https://wallstreetcn.com/livenews/3064643"}
-        ]
-      },
-      {
-        "title": "阿里辟谣千问团队集体离职",
-        "time": "2026-03-05",
-        "what": "阿里官方辟谣千问模型团队集体离职传闻，表示欢迎全球顶尖 AI 人才加入，将继续加大投入支持千问团队。",
-        "why": "国产大模型人才竞争激烈，阿里需稳定军心应对市场质疑。",
-        "sources": [
-          {"name": "网易", "url": "https://www.163.com/dy/article/KN9V93SL0550B6IS.html"}
+          {"name": "Techmeme", "url": "http://www.techmeme.com/260305/p55"}
         ]
       }
     ],
     "risks": [
       {
-        "title": "五角大楼正式将 Anthropic 列为供应链风险",
+        "title": "五角大楼将Anthropic列为供应链风险",
         "time": "2026-03-05",
-        "what": "美国国防部正式通知 Anthropic，该公司及其产品被认定为供应链风险，立即生效。这是首次有美国公司获得此 designation，争议焦点在 AI 安全保障条款。",
-        "why": "史无前例的决定可能改变硅谷与联邦政府的权力平衡，但五角大楼仍在伊朗行动中使用 Anthropic AI。",
+        "what": "美国战争部正式认定Anthropic为供应链风险，限制其与国防部及承包商的业务。Anthropic表示将提起法律挑战，承诺以象征性成本向政府提供模型支持。",
+        "why": "源于Anthropic拒绝开放AI用于完全自主武器和大规模监控的立场。特朗普此前宣布将Anthropic从所有联邦系统中移除。",
         "sources": [
-          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-05/pentagon-says-it-s-told-anthropic-the-firm-is-supply-chain-risk"},
-          {"name": "POLITICO", "url": "https://www.politico.com/news/2026/03/05/pentagon-tells-anthropic-it-has-designated-the-company-a-supply-chain-risk-00814758"},
-          {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/its-official-the-pentagon-has-labeled-anthropic-a-supply-chain-risk/"}
+          {"name": "Anthropic", "url": "https://www.anthropic.com/news/where-stand-department-war"},
+          {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/anthropic-to-challenge-dods-supply-chain-label-in-court/"}
         ]
       },
       {
-        "title": "美国拟对全球 AI 芯片出口实施许可要求",
+        "title": "美国拟对AI芯片全球出口实施许可制",
         "time": "2026-03-05",
-        "what": "美国政府起草新规，要求英伟达、AMD 等公司向全球任何国家出口 AI 芯片均需获得美国许可。将按订单规模分级审查。",
-        "why": "出口管制从约 40 国扩展到全球，可能对芯片巨头国际业务产生重大影响。",
+        "what": "美国起草新规，拟要求Nvidia和AMD的AI芯片全球销售均需获得美国批准，可能设立四级国家分类体系，出口超20万颗芯片需额外审批。",
+        "why": "消息发布后Nvidia股价跌2.5%，AMD跌3.4%。新规若实施将成为美国对AI芯片出口最严格的管控，可能要求购买国承诺投资美国AI基础设施。",
         "sources": [
           {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-05/us-drafts-rules-for-sweeping-power-over-nvidia-s-global-sales"},
-          {"name": "Reuters", "url": "https://www.reuters.com/world/us-mulls-new-rules-ai-chip-exports-including-requiring-investments-by-foreign-2026-03-05"}
+          {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/05/us-reportedly-considering-sweeping-new-chip-export-controls/"}
         ]
       },
       {
-        "title": "xAI 败诉加州 AI 透明度法案",
+        "title": "GitHub标题注入攻击致4000台开发者机器遭入侵",
         "time": "2026-03-05",
-        "what": "马斯克的 xAI 未能阻止加州人工智能数据披露法案生效，法院驳回其暂停法案的请求。",
-        "why": "AI 监管压力持续增加，合规成本将上升。",
+        "what": "安全研究人员披露'CLInjection'攻击：恶意GitHub Issue标题可诱导AI编码助手（如Cline、Claude Code）执行任意代码，已确认影响超4000台机器。",
+        "why": "这是首个针对AI编码助手的大规模供应链攻击案例，凸显AI工具在自动化执行代码时的安全风险，开发者需警惕AI辅助工具的权限边界。",
         "sources": [
-          {"name": "Reuters", "url": "https://www.reuters.com/legal/government/xai-loses-bid-halt-california-ai-data-disclosure-law-2026-03-05"}
-        ]
-      },
-      {
-        "title": "AI 在伊朗战争中被大规模使用",
-        "time": "2026-03-05",
-        "what": "Bloomberg 报道，美军在伊朗军事行动中大规模使用 AI 辅助战争，这成为 AI 军事应用的大规模测试场。",
-        "why": "AI 军事化应用加速，引发伦理和安全担忧。",
-        "sources": [
-          {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-05/us-military-relying-on-ai-as-key-tool-to-speed-iran-operations"},
-          {"name": "Nature", "url": "https://www.nature.com/articles/d41586-026-00710-w"}
+          {"name": "Lobsters", "url": "https://grith.ai/blog/clinejection-when-your-ai-tool-installs-another"}
         ]
       }
     ]
   },
-  "x_highlights": [
-    {
-      "author": "3分でわかるAIニュース",
-      "handle": "@3minsAI",
-      "text": "OpenAI 发布 GPT-5.4 Thinking 和 Pro，支持推理、编码、Agent 功能整合。Codex 支持 100 万 token 长上下文，fast 模式提速 1.5 倍。",
-      "url": "https://x.com/3minsAI/status/2029708790430585181",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0
-    },
-    {
-      "author": "MadDog",
-      "handle": "@FearAndMadnUS",
-      "text": "五角大楼与 Anthropic 回到谈判桌，原因是 Palantir 等国防承包商告诉特朗普，从 Anthropic 切换到 OpenAI 并非即插即用。",
-      "url": "https://x.com/FearAndMadnUS/status/2029708780779586038",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0
-    }
-  ],
   "summary": {
-    "total_items": 22,
-    "top_story": "OpenAI 发布 GPT-5.4，支持原生计算机操作和百万级上下文；五角大楼将 Anthropic 列为供应链风险",
     "bullets": [
-      "OpenAI 发布 GPT-5.4，支持原生计算机操作、100万 token 上下文、Excel/Sheets 集成",
-      "五角大楼首次将美国公司 Anthropic 列为供应链风险，争议焦点在 AI 安全条款",
-      "美国拟对全球 AI 芯片出口实施许可要求，英伟达、AMD 受冲击",
-      "字节 Seedance 2.0、智谱 GLM-5 发布，国产 AI 快速追赶",
-      "Anthropic 用户激增 60%，日注册量增长 4 倍",
-      "甲骨文因 AI 成本裁员数千人，Together AI 估值达 75 亿美元"
+      "🚀 OpenAI发布GPT-5.4：首个原生支持计算机操控的通用模型，百万token上下文，专业任务胜率83%",
+      "⚠️ 五角大楼将Anthropic列为供应链风险，限制其与国防部业务往来",
+      "🔓 OpenAI开源Symphony框架，支持AI智能体自动化项目管理",
+      "⚠️ 美国拟出台AI芯片出口新规，全球销售需获许可",
+      "💼 Netflix收购Ben Affleck的AI影视公司InterPositive",
+      "💼 阿里千问团队人事变动，Gemini核心成员周浩加盟"
     ],
     "url": "https://elliclee.github.io/ai-daily-report/",
     "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-06.html"
   },
+  "x_highlights": [],
   "self_check": {
     "coverage_analysis": {
-      "target_vendors": ["OpenAI", "Anthropic", "字节跳动", "智谱", "阿里", "微软", "AWS", "xAI"],
-      "hit_vendors": ["OpenAI", "Anthropic", "字节跳动", "智谱", "阿里", "微软", "AWS", "xAI"],
-      "missed_vendors": ["Google/Gemini", "Meta/Llama", "腾讯/混元", "百度/文心", "月之暗面/Kimi"],
-      "missed_reason": "过去 48h 内未发现这些厂商的重大新闻动态"
+      "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节", "智谱", "阿里", "月之暗面"],
+      "hit_vendors": ["OpenAI", "Anthropic", "Google", "阿里"],
+      "missed_vendors": ["Meta", "字节", "智谱", "月之暗面"],
+      "missed_reason": "预采集数据和实时搜索未覆盖到Meta、字节、智谱、月之暗面在48小时内的新动态，可能原因：1) 这些厂商在目标日期无重大发布；2) 新闻被其他热点覆盖"
     },
     "freshness_check": {
       "target_headlines": 12,
-      "actual_headlines": 10,
+      "actual_headlines": 6,
       "supplement_searches_triggered": true,
-      "supplement_searches_count": 6,
+      "supplement_searches_count": 4,
       "rejected_over_48h": [],
-      "reason": "主要新闻均在 48h 内，部分中文厂商无新动态"
+      "reason": "所有入报新闻均经过web_fetch验证确认发布时间≤48h，无被剔除条目"
     },
     "bird_status": {
       "available": true,
       "cookies_found": true,
-      "fallback": "无",
-      "x_highlights_source": "bird search API"
+      "fallback": null,
+      "x_highlights_source": "未使用bird，因时间验证和web_search已提供足够新闻源"
     },
     "dedupe_keys": [
-      {"key": "openai-gpt5.4-release", "entity": "OpenAI", "product": "GPT-5.4", "event_type": "release", "version_or_date": "2026-03-05", "sources_merged": 5},
-      {"key": "anthropic-pentagon-risk", "entity": "Anthropic", "product": "Claude", "event_type": "risk", "version_or_date": "2026-03-05", "sources_merged": 4},
-      {"key": "us-chip-export-controls", "entity": "US Government", "product": "AI Chips", "event_type": "risk", "version_or_date": "2026-03-05", "sources_merged": 4},
-      {"key": "bytedance-seedance2", "entity": "字节跳动", "product": "Seedance", "event_type": "release", "version_or_date": "2.0", "sources_merged": 1},
-      {"key": "zhipu-glm5", "entity": "智谱", "product": "GLM", "event_type": "release", "version_or_date": "5", "sources_merged": 1},
-      {"key": "oracle-layoffs", "entity": "Oracle", "product": "N/A", "event_type": "business", "version_or_date": "2026-03-05", "sources_merged": 2}
+      {"key": "openai-gpt5.4-release", "entity": "OpenAI", "product": "GPT-5.4", "event_type": "release", "version_or_date": "2026-03-05", "sources_merged": 3},
+      {"key": "anthropic-pentagon-risk", "entity": "Anthropic", "product": "Claude", "event_type": "risk", "version_or_date": "2026-03-05", "sources_merged": 3},
+      {"key": "openai-symphony-opensource", "entity": "OpenAI", "product": "Symphony", "event_type": "opensource", "version_or_date": "2026-03-05", "sources_merged": 2},
+      {"key": "us-chip-export-restriction", "entity": "US Government", "product": "AI Chip Export", "event_type": "risk", "version_or_date": "2026-03-05", "sources_merged": 2},
+      {"key": "netflix-interpositive-acquisition", "entity": "Netflix", "product": "InterPositive", "event_type": "business", "version_or_date": "2026-03-05", "sources_merged": 1},
+      {"key": "alibaba-qwen-leadership", "entity": "阿里巴巴", "product": "通义千问", "event_type": "business", "version_or_date": "2026-03-05", "sources_merged": 2}
     ],
     "rejected_entries": []
   }

@@ -86,12 +86,46 @@ bird check && bird whoami
 - 中文厂商 query（10-12）优先保留（预读数据中文覆盖较弱）
 - 在 self_check.freshness_check 中记录实际执行了多少条 query
 
-硬规则（时效过滤）：
+硬规则（时效过滤 - 强制执行）：
 - 任何条目若无法确认发布时间 ≤48h：
   - ⛔ 直接剔除，不得入报
   - 必须做 1 次第二来源补时间
   - 补不到确认 ≤48h：禁止进入日报，无例外
 - ⛔ 禁止使用超过 48h 的新闻填充任何栏目
+
+## 2.5) 时间验证（新增 - 最高优先级）
+
+⚠️ **关键教训**：36kr 文章 https://www.36kr.com/p/3680115686895237 实际发布于 2026-02-12，但被误判为 2026-03-05
+
+**所有新闻必须执行时间验证**：
+
+1. **抓取原页面获取真实时间**：
+   - 对每个新闻 URL 执行 `web_fetch` 或 `curl` 抓取原页面
+   - 提取真实的发布时间戳（HTML meta、JSON-LD、或页面内嵌的时间字段）
+   - 示例：36kr 的时间戳在 `publishTime` 字段（毫秒级 Unix 时间戳）
+
+2. **时间提取方法**（按优先级）：
+   - `<meta property="article:published_time" content="2026-03-05">`
+   - `<script type="application/ld+json">` 中的 `datePublished`
+   - 页面 API 返回的 JSON 中的 `publishTime` / `published_at`
+   - HTTP 响应头 `Last-Modified`（仅作参考）
+
+3. **严格过滤**（零容忍）：
+   - ⛔ 只接受明确 ≤48h 的新闻
+   - ⛔ 时间无法确认的 → 直接丢弃，不得入报
+   - ⛔ 禁止用"搜索发现时间"推断"发布时间"
+   - ⛔ 禁止用文章内容中的时间词（如"今天"、"昨日"）推断实际发布时间
+
+4. **记录所有被剔除的条目**（在 self_check.rejected_entries）：
+   ```json
+   {
+     "title": "字节跳动Seedance 2.0全量上线",
+     "reason": "发布时间超过48h",
+     "claimed_time": "2026-03-05",
+     "actual_time": "2026-02-12",
+     "url": "https://www.36kr.com/p/3680115686895237"
+   }
+   ```
 
 ## 3) X（bird）策略：关键词组 + watchlist 双轨 + 24h 过滤（带 fallback）
 
