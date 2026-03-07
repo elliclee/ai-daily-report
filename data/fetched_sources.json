@@ -1,99 +1,72 @@
 {
-  "fetched_at": "2026-03-06T03:27:42.069896",
+  "fetched_at": "2026-03-06T23:30:05.806564",
   "sources": {
     "hackernews-top": {
       "type": "hackernews",
-      "count": 10,
+      "count": 7,
       "items": [
         {
-          "title": "GPT-5.4",
-          "url": "https://openai.com/index/introducing-gpt-5-4/",
-          "score": 675,
-          "by": "mudkipdev",
-          "time": "2026-03-05T18:08:10",
-          "comments": "https://news.ycombinator.com/item?id=47265045",
+          "title": "Tech employment now significantly worse than the 2008 or 2020 recessions",
+          "url": "https://twitter.com/JosephPolitano/status/2029916364664611242",
+          "score": 638,
+          "by": "enraged_camel",
+          "time": "2026-03-06T17:46:45",
+          "comments": "https://news.ycombinator.com/item?id=47278426",
           "description": ""
         },
         {
-          "title": "Where things stand with the Department of War",
-          "url": "https://www.anthropic.com/news/where-stand-department-war",
-          "score": 231,
-          "by": "surprisetalk",
-          "time": "2026-03-06T00:40:41",
-          "comments": "https://news.ycombinator.com/item?id=47269263",
-          "description": "A statement from Dario Amodei"
+          "title": "Hardening Firefox with Anthropic's Red Team",
+          "url": "https://www.anthropic.com/news/mozilla-firefox-security",
+          "score": 428,
+          "by": "todsacerdoti",
+          "time": "2026-03-06T11:53:18",
+          "comments": "https://news.ycombinator.com/item?id=47273854",
+          "description": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems."
         },
         {
-          "title": "The Brand Age",
-          "url": "https://paulgraham.com/brandage.html",
-          "score": 254,
-          "by": "bigwheels",
-          "time": "2026-03-05T17:44:10",
-          "comments": "https://news.ycombinator.com/item?id=47264756",
+          "title": "Show HN: Moongate – Ultima Online server emulator in .NET 10 with Lua scripting",
+          "url": "https://github.com/moongate-community/moongatev2",
+          "score": 213,
+          "by": "squidleon",
+          "time": "2026-03-06T14:22:59",
+          "comments": "https://news.ycombinator.com/item?id=47275236",
+          "description": "Moongate is modern Ultima Online server built from scratch in C# with AOT compilation for high performance and nostalgic gameplay experience. - moongate-community/moongatev2"
+        },
+        {
+          "title": "Payphone Go",
+          "url": "https://walzr.com/payphone-go/",
+          "score": 284,
+          "by": "walz",
+          "time": "2026-03-02T16:45:43",
+          "comments": "https://news.ycombinator.com/item?id=47220411",
           "description": ""
         },
         {
-          "title": "10% of Firefox crashes are caused by bitflips",
-          "url": "https://mas.to/@gabrielesvelto/116171750653898304",
-          "score": 330,
-          "by": "marvinborner",
-          "time": "2026-03-04T19:58:24",
-          "comments": "https://news.ycombinator.com/item?id=47252971",
-          "description": "A few years ago I designed a way to detect bit-flips in Firefox crash reports and last year we deployed an actual memory tester that runs on user machines after the browser crashes. Today I was looking at the data that comes out of these tests and now I&#39;m 100% positive that the heuristic is soun"
+          "title": "LibreSprite – open-source pixel art editor",
+          "url": "https://libresprite.github.io/",
+          "score": 242,
+          "by": "nicoloren",
+          "time": "2026-03-06T09:22:00",
+          "comments": "https://news.ycombinator.com/item?id=47272799",
+          "description": "LibreSprite is a free and open source program for creating and animating your sprites."
         },
         {
-          "title": "CBP tapped into the online advertising ecosystem to track peoples’ movements",
-          "url": "https://www.404media.co/cbp-tapped-into-the-online-advertising-ecosystem-to-track-peoples-movements/",
-          "score": 386,
-          "by": "ece",
-          "time": "2026-03-04T15:57:29",
-          "comments": "https://news.ycombinator.com/item?id=47249387",
-          "description": "An internal DHS document obtained by 404 Media shows for the first time CBP used location data sourced from the online advertising industry to track phone locations. ICE has bought access to similar tools."
+          "title": "Workers who love ‘synergizing paradigms’ might be bad at their jobs",
+          "url": "https://news.cornell.edu/stories/2026/03/workers-who-love-synergizing-paradigms-might-be-bad-their-jobs",
+          "score": 477,
+          "by": "Anon84",
+          "time": "2026-03-06T13:30:54",
+          "comments": "https://news.ycombinator.com/item?id=47274676",
+          "description": "Employees who are impressed by vague corporate-speak like “synergistic leadership,” or “growth-hacking paradigms” may struggle with practical decision-making, a new Cornell study into “corporate BS” reveals."
         },
         {
-          "title": "Good software knows when to stop",
-          "url": "https://ogirardot.writizzy.com/p/good-software-knows-when-to-stop",
-          "score": 356,
-          "by": "ssaboum",
-          "time": "2026-03-05T13:52:43",
-          "comments": "https://news.ycombinator.com/item?id=47261561",
-          "description": "Good software knows what problem it solves and what needs to be tackled by another tool"
-        },
-        {
-          "title": "Wikipedia was in read-only mode following mass admin account compromise",
-          "url": "https://www.wikimediastatus.net",
-          "score": 902,
-          "by": "greyface-",
-          "time": "2026-03-05T16:04:54",
-          "comments": "https://news.ycombinator.com/item?id=47263323",
-          "description": "Welcome to Wikimedia&#39;s home for real-time and historical data on system performance."
-        },
-        {
-          "title": "A GitHub Issue Title Compromised 4k Developer Machines",
-          "url": "https://grith.ai/blog/clinejection-when-your-ai-tool-installs-another",
-          "score": 345,
-          "by": "edf13",
-          "time": "2026-03-05T16:22:01",
-          "comments": "https://news.ycombinator.com/item?id=47263595",
-          "description": "A prompt injection in a GitHub issue triggered a chain reaction that ended with 4,000 developers getting OpenClaw installed without consent. The attack composes well-understood vulnerabilities into something new: one AI tool bootstrapping another."
-        },
-        {
-          "title": "Show HN: Jido 2.0, Elixir Agent Framework",
-          "url": "https://jido.run/blog/jido-2-0-is-here",
-          "score": 251,
-          "by": "mikehostetler",
-          "time": "2026-03-05T15:48:52",
-          "comments": "https://news.ycombinator.com/item?id=47263036",
-          "description": "After 18 months of building and rethinking, Jido 2.0 ships with a simpler BEAM-first agent core, production-ready AI strategies, and a growing ecosystem."
-        },
-        {
-          "title": "Judge orders government to begin refunding more than $130B in tariffs",
-          "url": "https://www.wsj.com/politics/policy/judge-orders-government-to-begin-refunding-more-than-130-billion-in-tariffs-fdc1e62c",
-          "score": 832,
-          "by": "JumpCrisscross",
-          "time": "2026-03-05T14:05:46",
-          "comments": "https://news.ycombinator.com/item?id=47261688",
-          "description": ""
+          "title": "Global warming has accelerated significantly",
+          "url": "https://www.researchsquare.com/article/rs-6079807/v1",
+          "score": 898,
+          "by": "morsch",
+          "time": "2026-03-06T14:10:03",
+          "comments": "https://news.ycombinator.com/item?id=47275088",
+          "description": "Recent record-hot years have caused a discussion whether global\r\nwarming has accelerated, but previous analysis found that acceleration has\r\nnot yet reached a 95% confidence level given the natural temperature\r\nvariability. Here we account for the influence of three main natural variability\r\nfact..."
         }
       ]
     },
@@ -102,11 +75,11 @@
       "count": 5,
       "items": [
         {
-          "repo": "TheCraigHewitt/seomachine",
-          "name": "seomachine",
-          "url": "https://github.com/TheCraigHewitt/seomachine",
-          "description": "A specialized Claude Code workspace for creating long-form, SEO-optimized blog content for any business. This system helps you research, write, analyze, and optimize content that ranks well and serves your target audience.",
-          "stars_today": "310",
+          "repo": "QwenLM/Qwen-Agent",
+          "name": "Qwen-Agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent",
+          "description": "Agent framework and applications built upon Qwen>=3.0, featuring Function Calling, MCP, Code Interpreter, RAG, Chrome extension, etc.",
+          "stars_today": "684",
           "language": "Python"
         },
         {
@@ -114,31 +87,31 @@
           "name": "AReaL",
           "url": "https://github.com/inclusionAI/AReaL",
           "description": "Lightning-Fast RL for LLM Reasoning and Agents. Made Simple & Flexible.",
-          "stars_today": "173",
+          "stars_today": "348",
           "language": "Python"
         },
         {
-          "repo": "FujiwaraChoki/MoneyPrinterV2",
-          "name": "MoneyPrinterV2",
-          "url": "https://github.com/FujiwaraChoki/MoneyPrinterV2",
-          "description": "Automate the process of making money online.",
-          "stars_today": "511",
+          "repo": "lingfengQAQ/webnovel-writer",
+          "name": "webnovel-writer",
+          "url": "https://github.com/lingfengQAQ/webnovel-writer",
+          "description": "基于 Claude Code 的长篇网文辅助创作系统，解决 AI 写作中的「遗忘」和「幻觉」问题，支持 200 万字量级 连载创作。",
+          "stars_today": "84",
           "language": "Python"
         },
         {
-          "repo": "agentscope-ai/ReMe",
-          "name": "ReMe",
-          "url": "https://github.com/agentscope-ai/ReMe",
-          "description": "ReMe: Memory Management Kit for Agents - Remember Me, Refine Me.",
-          "stars_today": "194",
+          "repo": "openai/skills",
+          "name": "skills",
+          "url": "https://github.com/openai/skills",
+          "description": "Skills Catalog for Codex",
+          "stars_today": "582",
           "language": "Python"
         },
         {
-          "repo": "public-apis/public-apis",
-          "name": "public-apis",
-          "url": "https://github.com/public-apis/public-apis",
-          "description": "A collective list of free APIs",
-          "stars_today": "460",
+          "repo": "TheCraigHewitt/seomachine",
+          "name": "seomachine",
+          "url": "https://github.com/TheCraigHewitt/seomachine",
+          "description": "A specialized Claude Code workspace for creating long-form, SEO-optimized blog content for any business. This system helps you research, write, analyze, and optimize content that ranks well and serves your target audience.",
+          "stars_today": "675",
           "language": "Python"
         }
       ]
