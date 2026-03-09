@@ -1,263 +1,263 @@
 {
-  "date": "2026-03-09",
-  "generated_at": "2026-03-09T00:02:00Z",
-  "summary": "GPT-5.4 发布、Claude 4.6 Opus 登场、美国政府封杀 Anthropic、智谱 GLM-5 技术公开、Oracle 裁员 3 万建数据中心",
-  "top_stories": [
+  \\"date\\": \\"2026-03-09\\",
+  \\"generated_at\\": \\"2026-03-09T00:02:00Z\\",
+  \\"summary\\": \\"GPT-5.4 发布、Claude 4.6 Opus 登场、美国政府封杀 Anthropic、智谱 GLM-5 技术公开、Oracle 裁员 3 万建数据中心\\",
+  \\"top_stories\\": [
     {
-      "title": "OpenAI 发布 GPT-5.4：1M 上下文、原生计算机操作、幻觉减少 33%",
-      "source": "OpenAI",
-      "source_url": "https://openai.com/index/introducing-gpt-5-4/",
-      "published_date": "2026-03-05",
-      "category": "模型发布",
-      "importance": 5,
-      "summary": "OpenAI 于 3 月 5 日发布 GPT-5.4，带来三大核心升级：上下文窗口扩展至 100 万 token、原生计算机操作能力（可截图、操作浏览器、发送键盘鼠标指令）、事实性错误减少 33%。同时推出 GPT-5.4 Thinking（深度推理）和 GPT-5.4 Pro（企业级）两个变体。",
-      "key_points": [
-        "100 万 token 上下文窗口，可处理完整代码库",
-        "原生计算机操作能力，跨应用执行多步骤工作流",
-        "幻觉率比 GPT-5.2 降低 33%",
-        "GDPval 基准 83%，OSWorld-Verified 和 WebArena-Verified 创纪录",
-        "ChatGPT、Codex、API 同步上线"
+      \\"title\\": \\"OpenAI 发布 GPT-5.4：1M 上下文、原生计算机操作、幻觉减少 33%\\",
+      \\"source\\": \\"OpenAI\\",
+      \\"source_url\\": \\"https://openai.com/index/introducing-gpt-5-4/\\",
+      \\"published_date\\": \\"2026-03-05\\",
+      \\"category\\": \\"模型发布\\",
+      \\"importance\\": 5,
+      \\"summary\\": \\"OpenAI 于 3 月 5 日发布 GPT-5.4，带来三大核心升级：上下文窗口扩展至 100 万 token、原生计算机操作能力（可截图、操作浏览器、发送键盘鼠标指令）、事实性错误减少 33%。同时推出 GPT-5.4 Thinking（深度推理）和 GPT-5.4 Pro（企业级）两个变体。\\",
+      \\"key_points\\": [
+        \\"100 万 token 上下文窗口，可处理完整代码库\\",
+        \\"原生计算机操作能力，跨应用执行多步骤工作流\\",
+        \\"幻觉率比 GPT-5.2 降低 33%\\",
+        \\"GDPval 基准 83%，OSWorld-Verified 和 WebArena-Verified 创纪录\\",
+        \\"ChatGPT、Codex、API 同步上线\\"
       ],
-      "tags": ["OpenAI", "GPT-5.4", "大模型", "AI Agent"]
+      \\"tags\\": [\\"OpenAI\\", \\"GPT-5.4\\", \\"大模型\\", \\"AI Agent\\"]
     },
     {
-      "title": "Anthropic 发布 Claude 4.6 Opus，推出语音模式和 CoWork 自动化功能",
-      "source": "Anthropic",
-      "source_url": "https://www.anthropic.com/",
-      "published_date": "2026-03-08",
-      "category": "模型发布",
-      "importance": 5,
-      "summary": "Anthropic 发布 Claude 4.6 Opus，被认为是当前最强 LLM 之一。同时 Claude 语音模式已向 5% 用户推出，支持语音对话。Claude CoWork 功能可自动化日常任务，Chrome Quick Mode 提供 3 倍更快的浏览体验。",
-      "key_points": [
-        "Claude 4.6 Opus 被认为是新 LLM 标杆",
-        "语音模式已向 5% 用户开放",
-        "Claude CoWork 自动化日常任务",
-        "Chrome Quick Mode 浏览速度提升 3 倍",
-        "3 月 6 日推出企业软件市场"
+      \\"title\\": \\"Anthropic 发布 Claude 4.6 Opus，推出语音模式和 CoWork 自动化功能\\",
+      \\"source\\": \\"Anthropic\\",
+      \\"source_url\\": \\"https://www.anthropic.com/\\",
+      \\"published_date\\": \\"2026-03-08\\",
+      \\"category\\": \\"模型发布\\",
+      \\"importance\\": 5,
+      \\"summary\\": \\"Anthropic 发布 Claude 4.6 Opus，被认为是当前最强 LLM 之一。同时 Claude 语音模式已向 5% 用户推出，支持语音对话。Claude CoWork 功能可自动化日常任务，Chrome Quick Mode 提供 3 倍更快的浏览体验。\\",
+      \\"key_points\\": [
+        \\"Claude 4.6 Opus 被认为是新 LLM 标杆\\",
+        \\"语音模式已向 5% 用户开放\\",
+        \\"Claude CoWork 自动化日常任务\\",
+        \\"Chrome Quick Mode 浏览速度提升 3 倍\\",
+        \\"3 月 6 日推出企业软件市场\\"
       ],
-      "tags": ["Anthropic", "Claude", "语音模式", "AI Agent"]
+      \\"tags\\": [\\"Anthropic\\", \\"Claude\\", \\"语音模式\\", \\"AI Agent\\"]
     },
     {
-      "title": "美国政府多部门封杀 Anthropic，OpenAI 接盘五角大楼合同",
-      "source": "Reuters",
-      "source_url": "https://today.reuters.com/business/us-treasury-ending-all-use-anthropic-products-says-bessent-2026-03-02/",
-      "published_date": "2026-03-02",
-      "category": "行业动态",
-      "importance": 5,
-      "summary": "特朗普下令联邦政府逐步淘汰 Anthropic 产品，五角大楼将其列为"供应链风险"。国务院、财政部、卫生与公众服务部等部门已切换到 OpenAI 和 Google。原因是 Anthropic 拒绝让 Claude 用于自主武器瞄准和大规模监控。",
-      "key_points": [
-        "五角大楼将 Anthropic 列为"供应链风险"",
-        "国务院 StateChat 切换到 GPT-4.1",
-        "财政部约 100 名工程师改用 Codex 和 Gemini",
-        "OpenAI 签署五角大楼机密系统合同",
-        "Anthropic 面临多年政府合作限制"
+      \\"title\\": \\"美国政府多部门封杀 Anthropic，OpenAI 接盘五角大楼合同\\",
+      \\"source\\": \\"Reuters\\",
+      \\"source_url\\": \\"https://today.reuters.com/business/us-treasury-ending-all-use-anthropic-products-says-bessent-2026-03-02/\\",
+      \\"published_date\\": \\"2026-03-02\\",
+      \\"category\\": \\"行业动态\\",
+      \\"importance\\": 5,
+      \\"summary\\": \\"特朗普下令联邦政府逐步淘汰 Anthropic 产品，五角大楼将其列为\\\"供应链风险\\\"。国务院、财政部、卫生与公众服务部等部门已切换到 OpenAI 和 Google。原因是 Anthropic 拒绝让 Claude 用于自主武器瞄准和大规模监控。\\",
+      \\"key_points\\": [
+        \\"五角大楼将 Anthropic 列为\\\"供应链风险\\\"\\",
+        \\"国务院 StateChat 切换到 GPT-4.1\\",
+        \\"财政部约 100 名工程师改用 Codex 和 Gemini\\",
+        \\"OpenAI 签署五角大楼机密系统合同\\",
+        \\"Anthropic 面临多年政府合作限制\\"
       ],
-      "tags": ["Anthropic", "五角大楼", "美国政府", "AI 安全"]
+      \\"tags\\": [\\"Anthropic\\", \\"五角大楼\\", \\"美国政府\\", \\"AI 安全\\"]
     },
     {
-      "title": "智谱 GLM-5 技术论文公开：稀疏注意力、异步 RL、国产芯片全适配",
-      "source": "36氪",
-      "source_url": "https://www.36kr.com/p/3695400723394178",
-      "published_date": "2026-03-08",
-      "category": "模型发布",
-      "importance": 4,
-      "summary": "智谱公开 GLM-5 完整技术论文，披露三大创新：引入 DeepSeek 同款 DSA 稀疏注意力（KV Cache 降 75%，推理提速 3 倍）、异步多任务强化学习基础设施、完成华为昇腾等 7 家国产芯片全栈适配。可连续运行 24 小时、700 次工具调用。",
-      "key_points": [
-        "DSA 稀疏注意力：KV Cache 降 75%，推理提速 3 倍",
-        "异步 RL 基础设施：训练与推理解耦，GPU 利用率大幅提升",
-        "适配华为昇腾、摩尔线程、海光、寒武纪、昆仑芯、沐曦、燧原",
-        "支持 200K+ 上下文，长文本性能损失 <0.5%",
-        "海外网友称"最好的开源模型""
+      \\"title\\": \\"智谱 GLM-5 技术论文公开：稀疏注意力、异步 RL、国产芯片全适配\\",
+      \\"source\\": \\"36氪\\",
+      \\"source_url\\": \\"https://www.36kr.com/p/3695400723394178\\",
+      \\"published_date\\": \\"2026-03-08\\",
+      \\"category\\": \\"模型发布\\",
+      \\"importance\\": 4,
+      \\"summary\\": \\"智谱公开 GLM-5 完整技术论文，披露三大创新：引入 DeepSeek 同款 DSA 稀疏注意力（KV Cache 降 75%，推理提速 3 倍）、异步多任务强化学习基础设施、完成华为昇腾等 7 家国产芯片全栈适配。可连续运行 24 小时、700 次工具调用。\\",
+      \\"key_points\\": [
+        \\"DSA 稀疏注意力：KV Cache 降 75%，推理提速 3 倍\\",
+        \\"异步 RL 基础设施：训练与推理解耦，GPU 利用率大幅提升\\",
+        \\"适配华为昇腾、摩尔线程、海光、寒武纪、昆仑芯、沐曦、燧原\\",
+        \\"支持 200K+ 上下文，长文本性能损失 <0.5%\\",
+        \\"海外网友称\\"最好的开源模型\\"\\"
       ],
-      "tags": ["智谱", "GLM-5", "开源模型", "国产芯片"]
+      \\"tags\\": [\\"智谱\\", \\"GLM-5\\", \\"开源模型\\", \\"国产芯片\\"]
     },
     {
-      "title": "阿里 Qwen 负责人林俊阳离职，CEO 吴泳铭组建 AI 特别工作组",
-      "source": "Simply Wall St",
-      "source_url": "https://simplywall.st/stocks/us/retail/nyse-baba/alibaba-group-holding/news/does-alibaba-group-baba-elevating-ai-to-the-c-suite-reframe",
-      "published_date": "2026-03-06",
-      "category": "行业动态",
-      "importance": 4,
-      "summary": "阿里 Qwen 技术负责人林俊阳及多名团队成员突然离职，CEO 吴泳铭宣布组建基础模型特别工作组，由其亲自领导，重申对开源 AI 的承诺。阿里股价一度下跌 5.3%。",
-      "key_points": [
-        "Qwen 技术负责人林俊阳公开辞职",
-        "CEO 吴泳铭组建 AI 特别工作组",
-        "增加 AI 研发投入和招聘",
-        "股价下跌 5.3%",
-        "Qwen3.5 系列持续更新"
+      \\"title\\": \\"阿里 Qwen 负责人林俊阳离职，CEO 吴泳铭组建 AI 特别工作组\\",
+      \\"source\\": \\"Simply Wall St\\",
+      \\"source_url\\": \\"https://simplywall.st/stocks/us/retail/nyse-baba/alibaba-group-holding/news/does-alibaba-group-baba-elevating-ai-to-the-c-suite-reframe\\",
+      \\"published_date\\": \\"2026-03-06\\",
+      \\"category\\": \\"行业动态\\",
+      \\"importance\\": 4,
+      \\"summary\\": \\"阿里 Qwen 技术负责人林俊阳及多名团队成员突然离职，CEO 吴泳铭宣布组建基础模型特别工作组，由其亲自领导，重申对开源 AI 的承诺。阿里股价一度下跌 5.3%。\\",
+      \\"key_points\\": [
+        \\"Qwen 技术负责人林俊阳公开辞职\\",
+        \\"CEO 吴泳铭组建 AI 特别工作组\\",
+        \\"增加 AI 研发投入和招聘\\",
+        \\"股价下跌 5.3%\\",
+        \\"Qwen3.5 系列持续更新\\"
       ],
-      "tags": ["阿里", "Qwen", "人事变动", "开源模型"]
+      \\"tags\\": [\\"阿里\\", \\"Qwen\\", \\"人事变动\\", \\"开源模型\\"]
     },
     {
-      "title": "Cursor 发布 Automations：事件驱动的 AI 编程智能体",
-      "source": "Cursor Forum",
-      "source_url": "https://forum.cursor.com/t/introducing-cursor-automations/153733",
-      "published_date": "2026-03-04",
-      "category": "产品发布",
-      "importance": 4,
-      "summary": "Cursor 推出 Automations 功能，AI 智能体现在可基于外部事件自动触发，而非等待用户提示。支持 Slack 消息、GitHub PR、PagerDuty/Sentry 告警、定时任务等触发器，可自动进行代码审查、安全检查、故障响应。",
-      "key_points": [
-        "事件驱动：Slack、GitHub、PagerDuty、定时器触发",
-        "可自动开 PR、评论代码、发 Slack 消息",
-        "跨运行保持上下文记忆",
-        "Cursor 年化收入突破 20 亿美元，估值 293 亿",
-        "企业客户占比 60%"
+      \\"title\\": \\"Cursor 发布 Automations：事件驱动的 AI 编程智能体\\",
+      \\"source\\": \\"Cursor Forum\\",
+      \\"source_url\\": \\"https://forum.cursor.com/t/introducing-cursor-automations/153733\\",
+      \\"published_date\\": \\"2026-03-04\\",
+      \\"category\\": \\"产品发布\\",
+      \\"importance\\": 4,
+      \\"summary\\": \\"Cursor 推出 Automations 功能，AI 智能体现在可基于外部事件自动触发，而非等待用户提示。支持 Slack 消息、GitHub PR、PagerDuty/Sentry 告警、定时任务等触发器，可自动进行代码审查、安全检查、故障响应。\\",
+      \\"key_points\\": [
+        \\"事件驱动：Slack、GitHub、PagerDuty、定时器触发\\",
+        \\"可自动开 PR、评论代码、发 Slack 消息\\",
+        \\"跨运行保持上下文记忆\\",
+        \\"Cursor 年化收入突破 20 亿美元，估值 293 亿\\",
+        \\"企业客户占比 60%\\"
       ],
-      "tags": ["Cursor", "AI Agent", "编程工具", "自动化"]
+      \\"tags\\": [\\"Cursor\\", \\"AI Agent\\", \\"编程工具\\", \\"自动化\\"]
     },
     {
-      "title": "Oracle 计划裁员 3 万人，筹资建设 AI 数据中心",
-      "source": "SinghAjit",
-      "source_url": "https://singhajit.com/dev-weekly/2026/mar-2-8/gpt-54-cursor-automations-us-agencies-anthropic-oracle/",
-      "published_date": "2026-03-05",
-      "category": "行业动态",
-      "importance": 3,
-      "summary": "甲骨文披露计划裁员多达 3 万人，以筹资建设 AI 数据中心。这是本周最大的科技行业裁员消息，显示传统科技公司正在大规模转向 AI 基础设施建设。",
-      "key_points": [
-        "计划裁员 3 万人",
-        "筹资建设 AI 数据中心",
-        "传统科技公司向 AI 转型",
-        "与 NVIDIA、云服务商竞争加剧"
+      \\"title\\": \\"Oracle 计划裁员 3 万人，筹资建设 AI 数据中心\\",
+      \\"source\\": \\"SinghAjit\\",
+      \\"source_url\\": \\"https://singhajit.com/dev-weekly/2026/mar-2-8/gpt-54-cursor-automations-us-agencies-anthropic-oracle/\\",
+      \\"published_date\\": \\"2026-03-05\\",
+      \\"category\\": \\"行业动态\\",
+      \\"importance\\": 3,
+      \\"summary\\": \\"甲骨文披露计划裁员多达 3 万人，以筹资建设 AI 数据中心。这是本周最大的科技行业裁员消息，显示传统科技公司正在大规模转向 AI 基础设施建设。\\",
+      \\"key_points\\": [
+        \\"计划裁员 3 万人\\",
+        \\"筹资建设 AI 数据中心\\",
+        \\"传统科技公司向 AI 转型\\",
+        \\"与 NVIDIA、云服务商竞争加剧\\"
       ],
-      "tags": ["Oracle", "裁员", "AI 数据中心", "企业动态"]
+      \\"tags\\": [\\"Oracle\\", \\"裁员\\", \\"AI 数据中心\\", \\"企业动态\\"]
     },
     {
-      "title": "微软警告：黑客已开始使用 Agentic AI 自动化网络攻击",
-      "source": "Windows News AI",
-      "source_url": "https://windowsnews.ai/article/microsoft-warns-agentic-ai-already-being-used-by-attackers-to-automate-cyber-threats.404317",
-      "published_date": "2026-03-08",
-      "category": "AI 安全",
-      "importance": 4,
-      "summary": "微软 3 月威胁简报显示，攻击者已开始使用 Agentic AI 以机器速度自动化侦察、社会工程和漏洞利用。这是首次确认 AI 智能体被用于实际网络攻击活动。",
-      "key_points": [
-        "攻击者使用 Agentic AI 自动化网络攻击",
-        "机器速度执行侦察、社会工程、漏洞利用",
-        "首次确认 AI 智能体被用于实际攻击",
-        "安全社区需要新的防御范式"
+      \\"title\\": \\"微软警告：黑客已开始使用 Agentic AI 自动化网络攻击\\",
+      \\"source\\": \\"Windows News AI\\",
+      \\"source_url\\": \\"https://windowsnews.ai/article/microsoft-warns-agentic-ai-already-being-used-by-attackers-to-automate-cyber-threats.404317\\",
+      \\"published_date\\": \\"2026-03-08\\",
+      \\"category\\": \\"AI 安全\\",
+      \\"importance\\": 4,
+      \\"summary\\": \\"微软 3 月威胁简报显示，攻击者已开始使用 Agentic AI 以机器速度自动化侦察、社会工程和漏洞利用。这是首次确认 AI 智能体被用于实际网络攻击活动。\\",
+      \\"key_points\\": [
+        \\"攻击者使用 Agentic AI 自动化网络攻击\\",
+        \\"机器速度执行侦察、社会工程、漏洞利用\\",
+        \\"首次确认 AI 智能体被用于实际攻击\\",
+        \\"安全社区需要新的防御范式\\"
       ],
-      "tags": ["微软", "AI 安全", "网络攻击", "Agentic AI"]
+      \\"tags\\": [\\"微软\\", \\"AI 安全\\", \\"网络攻击\\", \\"Agentic AI\\"]
     }
   ],
-  "model_releases": [
+  \\"model_releases\\": [
     {
-      "model": "GPT-5.4",
-      "company": "OpenAI",
-      "release_date": "2026-03-05",
-      "type": "旗舰模型更新",
-      "highlights": ["1M 上下文", "原生计算机操作", "幻觉减少 33%", "Thinking/Pro 变体"]
+      \\"model\\": \\"GPT-5.4\\",
+      \\"company\\": \\"OpenAI\\",
+      \\"release_date\\": \\"2026-03-05\\",
+      \\"type\\": \\"旗舰模型更新\\",
+      \\"highlights\\": [\\"1M 上下文\\", \\"原生计算机操作\\", \\"幻觉减少 33%\\", \\"Thinking/Pro 变体\\"]
     },
     {
-      "model": "GPT-5.3 Instant",
-      "company": "OpenAI",
-      "release_date": "2026-03-08",
-      "type": "推理加速版",
-      "highlights": ["更快的推理速度", "降低延迟"]
+      \\"model\\": \\"GPT-5.3 Instant\\",
+      \\"company\\": \\"OpenAI\\",
+      \\"release_date\\": \\"2026-03-08\\",
+      \\"type\\": \\"推理加速版\\",
+      \\"highlights\\": [\\"更快的推理速度\\", \\"降低延迟\\"]
     },
     {
-      "model": "Claude 4.6 Opus",
-      "company": "Anthropic",
-      "release_date": "2026-03-08",
-      "type": "旗舰模型更新",
-      "highlights": ["新 LLM 标杆", "语音模式", "CoWork 自动化"]
+      \\"model\\": \\"Claude 4.6 Opus\\",
+      \\"company\\": \\"Anthropic\\",
+      \\"release_date\\": \\"2026-03-08\\",
+      \\"type\\": \\"旗舰模型更新\\",
+      \\"highlights\\": [\\"新 LLM 标杆\\", \\"语音模式\\", \\"CoWork 自动化\\"]
     },
     {
-      "model": "Gemini 3.1 Pro",
-      "company": "Google DeepMind",
-      "release_date": "2026-02",
-      "type": "Pro 级模型",
-      "highlights": ["1M 上下文", "ARC-AGI-2 77.1%", "多模态推理"]
+      \\"model\\": \\"Gemini 3.1 Pro\\",
+      \\"company\\": \\"Google DeepMind\\",
+      \\"release_date\\": \\"2026-02\\",
+      \\"type\\": \\"Pro 级模型\\",
+      \\"highlights\\": [\\"1M 上下文\\", \\"ARC-AGI-2 77.1%\\", \\"多模态推理\\"]
     },
     {
-      "model": "GLM-5",
-      "company": "智谱 AI",
-      "release_date": "2026-03",
-      "type": "开源模型",
-      "highlights": ["DSA 稀疏注意力", "异步 RL", "国产芯片适配", "200K+ 上下文"]
+      \\"model\\": \\"GLM-5\\",
+      \\"company\\": \\"智谱 AI\\",
+      \\"release_date\\": \\"2026-03\\",
+      \\"type\\": \\"开源模型\\",
+      \\"highlights\\": [\\"DSA 稀疏注意力\\", \\"异步 RL\\", \\"国产芯片适配\\", \\"200K+ 上下文\\"]
     },
     {
-      "model": "LTX-2.3",
-      "company": "Lightricks",
-      "release_date": "2026-03-07",
-      "type": "开源视频生成",
-      "highlights": ["原生音频支持", "运动增强", "肖像支持", "开源权重"]
+      \\"model\\": \\"LTX-2.3\\",
+      \\"company\\": \\"Lightricks\\",
+      \\"release_date\\": \\"2026-03-07\\",
+      \\"type\\": \\"开源视频生成\\",
+      \\"highlights\\": [\\"原生音频支持\\", \\"运动增强\\", \\"肖像支持\\", \\"开源权重\\"]
     }
   ],
-  "market_trends": {
-    "chatgpt_market_share": {
-      "us_dau_share_feb_2026": "42%",
-      "us_dau_share_aug_2025": "57%",
-      "change": "-15 个百分点"
+  \\"market_trends\\": {
+    \\"chatgpt_market_share\\": {
+      \\"us_dau_share_feb_2026\\": \\"42%\\",
+      \\"us_dau_share_aug_2025\\": \\"57%\\",
+      \\"change\\": \\"-15 个百分点\\"
     },
-    "google_gemini_share": {
-      "feb_2026": "25%",
-      "growth": "翻倍"
+    \\"google_gemini_share\\": {
+      \\"feb_2026\\": \\"25%\\",
+      \\"growth\\": \\"翻倍\\"
     },
-    "claude_share": {
-      "feb_2026": "4%",
-      "growth": "三倍"
+    \\"claude_share\\": {
+      \\"feb_2026\\": \\"4%\\",
+      \\"growth\\": \\"三倍\\"
     }
   },
-  "x_highlights": [
+  \\"x_highlights\\": [
     {
-      "handle": "@kei31ai",
-      "content": "Anthropic 被国防部列为"危险供应商"——因为太安全了。拒绝"大规模数据分析"被判定为"不执行必要操作=采购风险"。600 亿美元投资受影响。AI 企业的"不做"决定比国家更快影响全球。",
-      "url": "https://x.com/kei31ai/status/2030795951481471228",
-      "likes_estimate": 500
+      \\"handle\\": \\"@kei31ai\\",
+      \\"content\\": \\"Anthropic 被国防部列为\\"危险供应商\\"——因为太安全了。拒绝\\"大规模数据分析\\"被判定为\\"不执行必要操作=采购风险\\"。600 亿美元投资受影响。AI 企业的\\"不做\\"决定比国家更快影响全球。\\",
+      \\"url\\": \\"https://x.com/kei31ai/status/2030795951481471228\\",
+      \\"likes_estimate\\": 500
     },
     {
-      "handle": "@karminski3",
-      "content": "给 Mac 用户的 OpenClaw 本地模型教程：GLM-4.7-flash 最推荐（Agent 能力强），kimi-linear 长文本首选（线性注意力架构），Qwen3.5-35B-A3B 速度与多模态兼顾。建议 8bit 量化。",
-      "url": "https://x.com/karminski3/status/2030795715484729829",
-      "likes_estimate": 300
+      \\"handle\\": \\"@karminski3\\",
+      \\"content\\": \\"给 Mac 用户的 OpenClaw 本地模型教程：GLM-4.7-flash 最推荐（Agent 能力强），kimi-linear 长文本首选（线性注意力架构），Qwen3.5-35B-A3B 速度与多模态兼顾。建议 8bit 量化。\\",
+      \\"url\\": \\"https://x.com/karminski3/status/2030795715484729829\\",
+      \\"likes_estimate\\": 300
     },
     {
-      "handle": "@aibuilderclub_",
-      "content": "通过将 Claude Code Agent Team 的队友智能体从 Claude 切换到 GLM-5，token 使用量减少 50%+。",
-      "url": "https://x.com/aibuilderclub_/status/2030636220720767369",
-      "likes_estimate": 200
+      \\"handle\\": \\"@aibuilderclub_\\",
+      \\"content\\": \\"通过将 Claude Code Agent Team 的队友智能体从 Claude 切换到 GLM-5，token 使用量减少 50%+。\\",
+      \\"url\\": \\"https://x.com/aibuilderclub_/status/2030636220720767369\\",
+      \\"likes_estimate\\": 200
     },
     {
-      "handle": "@grok",
-      "content": "建设 AI 基础设施的公司（NVIDIA、AWS/Azure）和拥有算力+数据护城河的公司（OpenAI、DeepMind、Meta、xAI）领先最快。小团队也能赢：一人+智能体可抵数月专家迭代。",
-      "url": "https://x.com/grok/status/2030795901548015837",
-      "likes_estimate": 400
+      \\"handle\\": \\"@grok\\",
+      \\"content\\": \\"建设 AI 基础设施的公司（NVIDIA、AWS/Azure）和拥有算力+数据护城河的公司（OpenAI、DeepMind、Meta、xAI）领先最快。小团队也能赢：一人+智能体可抵数月专家迭代。\\",
+      \\"url\\": \\"https://x.com/grok/status/2030795901548015837\\",
+      \\"likes_estimate\\": 400
     }
   ],
-  "tools_and_frameworks": [
+  \\"tools_and_frameworks\\": [
     {
-      "name": "OpenAI Symphony",
-      "type": "智能体框架",
-      "language": "Elixir",
-      "description": "开源智能体编排框架，用于软件工程任务的自主实现",
-      "url": "https://github.com/openai/symphony/"
+      \\"name\\": \\"OpenAI Symphony\\",
+      \\"type\\": \\"智能体框架\\",
+      \\"language\\": \\"Elixir\\",
+      \\"description\\": \\"开源智能体编排框架，用于软件工程任务的自主实现\\",
+      \\"url\\": \\"https://github.com/openai/symphony/\\"
     },
     {
-      "name": "Claude CoWork",
-      "type": "自动化工具",
-      "description": "自动化日常任务的 Claude 功能",
-      "company": "Anthropic"
+      \\"name\\": \\"Claude CoWork\\",
+      \\"type\\": \\"自动化工具\\",
+      \\"description\\": \\"自动化日常任务的 Claude 功能\\",
+      \\"company\\": \\"Anthropic\\"
     },
     {
-      "name": "Claude Voice Mode",
-      "type": "语音交互",
-      "description": "Claude 语音对话模式，已向 5% 用户开放",
-      "company": "Anthropic"
+      \\"name\\": \\"Claude Voice Mode\\",
+      \\"type\\": \\"语音交互\\",
+      \\"description\\": \\"Claude 语音对话模式，已向 5% 用户开放\\",
+      \\"company\\": \\"Anthropic\\"
     },
     {
-      "name": "Cursor Automations",
-      "type": "编程智能体",
-      "description": "事件驱动的 AI 编程智能体，支持 Slack/GitHub/告警触发",
-      "company": "Cursor"
+      \\"name\\": \\"Cursor Automations\\",
+      \\"type\\": \\"编程智能体\\",
+      \\"description\\": \\"事件驱动的 AI 编程智能体，支持 Slack/GitHub/告警触发\\",
+      \\"company\\": \\"Cursor\\"
     }
   ],
-  "sources": [
-    "Reuters",
-    "Yahoo Tech",
-    "36氪",
-    "Cursor Forum",
-    "Windows News AI",
-    "SinghAjit Dev Weekly",
-    "llm-stats.com",
-    "X (Twitter)"
+  \\"sources\\": [
+    \\"Reuters\\",
+    \\"Yahoo Tech\\",
+    \\"36氪\\",
+    \\"Cursor Forum\\",
+    \\"Windows News AI\\",
+    \\"SinghAjit Dev Weekly\\",
+    \\"llm-stats.com\\",
+    \\"X (Twitter)\\"
   ]
 }

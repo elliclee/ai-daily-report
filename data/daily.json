@@ -1,359 +1,160 @@
 {
-  "date": "2026-03-08",
+  "date": "2026-03-09",
   "summary": {
-    "title": "AI日报 2026-03-08",
+    "title": "AI日报 2026-03-09",
     "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-08.html"
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-09.html"
   },
   "headlines": [
     {
-      "title": "OpenAI 机器人部门负责人因五角大楼合作辞职",
-      "time": "2026-03-07",
-      "what": "OpenAI 硬件与机器人工程负责人 Caitlin Kalinowski 因公司与五角大楼达成军事合作而辞职，公开表达对国内监控和自主武器系统的担忧。",
-      "why": "这是 AI 伦理争议的重要事件，涉及 AI 军事化应用的道德边界问题，可能影响整个行业对军事合作的态度。",
+      "title": "OpenAI 发布 GPT-5.4：1M 上下文、原生计算机操作",
+      "time": "2026-03-05",
+      "what": "OpenAI 发布 GPT-5.4，带来三大核心升级：上下文窗口扩展至 100 万 token、原生计算机操作能力、事实性错误减少 33%。",
+      "why": "这是 OpenAI 面向专业和企业工作的最强模型。",
       "sources": [
-        {"name": "Reuters", "url": "https://www.reuters.com/business/openai-robotics-head-resigns-after-deal-with-pentagon-2026-03-07"},
-        {"name": "Fortune", "url": "https://fortune.com/2026/03/07/openai-robotics-leader-caitlin-kalinowski-resignation-pentagon-surveillance-autonomous-weapons-anthropic"}
+        {"name": "OpenAI", "url": "https://openai.com/index/introducing-gpt-5-4/"}
       ]
     },
     {
-      "title": "OpenAI 发布 GPT-5.4，专为 AI 代理设计",
-      "time": "2026-03-07",
-      "what": "OpenAI 正式发布 GPT-5.4，这是一款专为自主 AI 代理打造的前沿模型，在连续任务执行和工具调用方面表现优异。",
-      "why": "标志着 AI 模型从单一任务向长期自主代理能力的转变，用户反馈显示这是近年来最令人满意的模型更新。",
+      "title": "Claude 4.6 Opus 发布，语音模式开放",
+      "time": "2026-03-08",
+      "what": "Anthropic 发布 Claude 4.6 Opus，被认为是当前最强 LLM 之一。语音模式已向 5% 用户开放。",
+      "why": "新 LLM 标杆，语音对话能力提升用户体验。",
       "sources": [
-        {"name": "AI Agents Directory", "url": "https://aiagentsdirectory.com/blog/openai-launches-gpt-54-a-frontier-model-built-for-autonomous-ai-agents"}
+        {"name": "Anthropic", "url": "https://www.anthropic.com/"}
       ]
     },
     {
-      "title": "Anthropic 推出 Claude Marketplace",
-      "time": "2026-03-07",
-      "what": "Anthropic 推出 Claude Marketplace，允许企业使用现有的 Anthropic 预算购买由外部合作伙伴（GitLab、Harvey、Replit 等）开发的 Claude 驱动工具。",
-      "why": "开创了企业 AI 采购新模式，将第三方工具整合到现有预算体系中，挑战传统云服务商的市场主导地位。",
+      "title": "美国政府封杀 Anthropic",
+      "time": "2026-03-02",
+      "what": "特朗普下令联邦政府逐步淘汰 Anthropic 产品，五角大楼将其列为供应链风险。",
+      "why": "Anthropic 拒绝让 Claude 用于自主武器瞄准和大规模监控。",
       "sources": [
-        {"name": "VentureBeat", "url": "https://venturebeat.com/technology/anthropic-launches-claude-marketplace-giving-enterprises-access-to-claude"}
+        {"name": "Reuters", "url": "https://today.reuters.com/business/us-treasury-ending-all-use-anthropic-products-says-bessent-2026-03-02/"}
       ]
     },
     {
-      "title": "Google 发布 Nano Banana Pro 高保真图像生成模型",
-      "time": "2026-03-07",
-      "what": "Google 发布基于 Gemini 3 Pro 的 Nano Banana Pro 图像生成模型，支持 2K/4K 分辨率输出，具备出色的文本渲染和多语言本地化能力。",
-      "why": "显著提升了图像生成的专业级输出质量，支持多达 14 个输入融合，适用于营销材料和商业应用。",
-      "sources": [
-        {"name": "Quantum Zeitgeist", "url": "https://quantumzeitgeist.com/google-image-generation-model/"}
-      ]
-    },
-    {
-      "title": "智谱 GLM-5 技术细节公开，开源模型新标杆",
-      "time": "2026-03-07",
-      "what": "智谱公开 GLM-5 完整技术论文，引入 DeepSeek 同款稀疏注意力机制（DSA），完成华为昇腾等国产芯片全栈适配，在开源模型评测中达到 SOTA。",
-      "why": "证明了中国 AI 在成本效率方面的竞争优势，大幅降低长上下文推理成本（KV Cache 降低 75%），推动开源模型进入长任务时代。",
+      "title": "智谱 GLM-5 技术论文公开",
+      "time": "2026-03-08",
+      "what": "智谱公开 GLM-5 完整技术论文，披露三大创新：DSA 稀疏注意力、异步多任务强化学习、国产芯片全栈适配。",
+      "why": "最好的开源模型，支持 200K+ 上下文。",
       "sources": [
         {"name": "36氪", "url": "https://www.36kr.com/p/3695400723394178"}
+      ]
+    },
+    {
+      "title": "阿里 Qwen 负责人离职",
+      "time": "2026-03-06",
+      "what": "阿里 Qwen 技术负责人林俊阳及多名团队成员突然离职，CEO 吴泳铭组建 AI 特别工作组。",
+      "why": "人事变动引发市场关注，股价下跌 5.3%。",
+      "sources": [
+        {"name": "Simply Wall St", "url": "https://simplywall.st/stocks/us/retail/nyse-baba/alibaba-group-holding/news/does-alibaba-group-baba-elevating-ai-to-the-c-suite-reframe"}
+      ]
+    },
+    {
+      "title": "Cursor 发布 Automations：事件驱动 AI 编程",
+      "time": "2026-03-04",
+      "what": "Cursor 推出 Automations 功能，AI 智能体可基于外部事件自动触发，支持 Slack、GitHub、PagerDuty 等触发器。",
+      "why": "事件驱动的 AI 编程智能体，Cursor 年化收入突破 20 亿美元。",
+      "sources": [
+        {"name": "Cursor Forum", "url": "https://forum.cursor.com/t/introducing-cursor-automations/153733"}
+      ]
+    },
+    {
+      "title": "Oracle 计划裁员 3 万人",
+      "time": "2026-03-05",
+      "what": "甲骨文披露计划裁员多达 3 万人，以筹资建设 AI 数据中心。",
+      "why": "传统科技公司大规模转向 AI 基础设施建设。",
+      "sources": [
+        {"name": "SinghAjit", "url": "https://singhajit.com/dev-weekly/2026/mar-2-8/gpt-54-cursor-automations-us-agencies-anthropic-oracle/"}
+      ]
+    },
+    {
+      "title": "微软警告：黑客使用 Agentic AI 自动化攻击",
+      "time": "2026-03-08",
+      "what": "微软威胁简报显示。攻击者已开始使用 Agentic AI 以机器速度自动化网络攻击。",
+      "why": "首次确认 AI 智能体被用于实际攻击活动。安全社区需要新的防御范式。",
+      "sources": [
+        {"name": "Windows News AI", "url": "https://windowsnews.ai/article/microsoft-warns-agentic-ai-already-being-used-by-attackers-to-automate-cyber-threats.404317"}
       ]
     }
   ],
   "sections": {
     "releases": [
       {
-        "title": "OpenAI GPT-5.4 正式发布",
-        "time": "2026-03-07",
-        "what": "OpenAI 发布 GPT-5.4 模型，专为自主 AI 代理设计，在连续任务执行、工具调用和上下文保持方面表现突出。",
-        "why": "用户反馈显示这是近年来最令人满意的模型更新，解决了模型连续性和个性保持问题。",
-        "sources": [
-          {"name": "AI Agents Directory", "url": "https://aiagentsdirectory.com/blog/openai-launches-gpt-54-a-frontier-model-built-for-autonomous-ai-agents"}
-        ]
+        "title": "GPT-5.4 发布",
+        "time": "2026-03-05",
+        "what": "100 万 token 上下文、原生计算机操作、幻觉减少 33%",
+        "why": "OpenAI 面向专业和企业的最强模型",
+        "sources": [{"name": "OpenAI", "url": "https://openai.com/index/introducing-gpt-5-4/"}]
       },
       {
-        "title": "Google Nano Banana Pro 图像生成模型",
-        "time": "2026-03-07",
-        "what": "Google 发布基于 Gemini 3 Pro 的 Nano Banana Pro 模型，支持 2K/4K 高分辨率输出，改进文本渲染和多语言本地化能力。",
-        "why": "专业级图像生成能力，适用于营销材料和商业应用，支持多输入融合。",
-        "sources": [
-          {"name": "Quantum Zeitgeist", "url": "https://quantumzeitgeist.com/google-image-generation-model/"}
-        ]
-      },
-      {
-        "title": "智谱 GLM-5 技术公开",
-        "time": "2026-03-07",
-        "what": "智谱公开 GLM-5 技术论文，引入稀疏注意力机制（DSA），KV Cache 开销降低 75%，推理速度提升 3 倍。",
-        "why": "开源模型新标杆，在 Artificial Analysis Intelligence Index v4.0 中达到 50 分，首次开放权重模型达到此水平。",
-        "sources": [
-          {"name": "36氪", "url": "https://www.36kr.com/p/3695400723394178"}
-        ]
+        "title": "Claude 4.6 Opus 发布",
+        "time": "2026-03-08",
+        "what": "新 LLM 标杆、语音模式、CoWork 自动化",
+        "why": "当前最强 LLM 之一",
+        "sources": [{"name": "Anthropic", "url": "https://www.anthropic.com/"}]
       }
     ],
-    "updates": [
-      {
-        "title": "Anthropic Claude Marketplace 上线",
-        "time": "2026-03-07",
-        "what": "Anthropic 推出 Claude Marketplace，企业可使用现有 Anthropic 预算购买 GitLab、Harvey、Replit 等合作伙伴的 Claude 驱动工具。",
-        "why": "简化企业 AI 采购流程，统一发票管理，加速生态系统建设。",
-        "sources": [
-          {"name": "VentureBeat", "url": "https://venturebeat.com/technology/anthropic-launches-claude-marketplace-giving-enterprises-access-to-claude"}
-        ]
-      },
-      {
-        "title": "OpenAI 再次推迟 ChatGPT 成人模式",
-        "time": "2026-03-07",
-        "what": "OpenAI 再次推迟 ChatGPT 成人模式的推出，优先提升智能和个性化能力。",
-        "why": "显示公司对产品质量的谨慎态度，优先核心功能完善。",
-        "sources": [
-          {"name": "Engadget", "url": "https://www.engadget.com/ai/openai-is-reportedly-pushing-back-the-launch-of-its-adult-mode-even-further-213013801.html"}
-        ]
-      },
-      {
-        "title": "Google Gemini for Home 性能提升",
-        "time": "2026-03-07",
-        "what": "Google 对 Gemini for Home 进行速度优化，提升智能家居语音命令的响应速度。",
-        "why": "改善用户体验，解决语音助手延迟问题。",
-        "sources": [
-          {"name": "Android Police", "url": "https://www.androidpolice.com/google-just-made-gemini-for-home-much-faster/"}
-        ]
-      }
-    ],
+    "updates": [],
     "opensource": [
       {
-        "title": "GLM-5 开源模型技术公开",
-        "time": "2026-03-07",
-        "what": "智谱公开 GLM-5 完整技术论文，详细介绍了稀疏注意力机制（DSA）、异步强化学习基础设施和真实世界数据训练方法。",
-        "why": "推动开源 AI 模型技术进步，降低长上下文推理成本，支持国产芯片生态。",
-        "sources": [
-          {"name": "36氪", "url": "https://www.36kr.com/p/3695400723394178"}
-        ]
-      },
-      {
-        "title": "OpenClaw 2026.3.7 版本发布",
-        "time": "2026-03-07",
-        "what": "OpenClaw 发布 2026.3.7 版本，支持 GPT-5.4 和 Gemini 3.1 Flash-Lite，引入可插拔上下文引擎和 Slim Docker 多阶段构建。",
-        "why": "扩展模型支持，优化部署体验，提升系统灵活性。",
-        "sources": [
-          {"name": "GitHub", "url": "https://github.com/openclaw/openclaw/releases"}
-        ]
-      },
-      {
-        "title": "Claude 助力 Mozilla 修复 Firefox 安全漏洞",
-        "time": "2026-03-07",
-        "what": "Anthropic 的 Claude 模型在两周内发现 Firefox 22 个安全漏洞，Mozilla 已在 Firefox 148 中修复。",
-        "why": "展示 AI 在安全领域的应用潜力，提升浏览器安全性。",
-        "sources": [
-          {"name": "El Output", "url": "https://en.eloutput.com/news/applications/Claude-de-Anthropic-uncovers-22-vulnerabilities-in-Firefox-in-just-two-weeks/"}
-        ]
+        "title": "GLM-5 技术公开",
+        "time": "2026-03-08",
+        "what": "DSA 稀疏注意力、异步 RL、国产芯片适配",
+        "why": "最好的开源模型",
+        "sources": [{"name": "36氪", "url": "https://www.36kr.com/p/3695400723394178"}]
       }
     ],
-    "benchmarks": [
-      {
-        "title": "GLM-5 在 Artificial Analysis Intelligence Index 达到 SOTA",
-        "time": "2026-03-07",
-        "what": "GLM-5 在 Artificial Analysis Intelligence Index v4.0 中获得 50 分，成为新的开源 SOTA 模型，这是开放权重模型首次达到此水平。",
-        "why": "证明开源模型在综合能力上已接近闭源模型，缩小与 Claude Opus 4.6 的差距。",
-        "sources": [
-          {"name": "36氪", "url": "https://www.36kr.com/p/3695400723394178"}
-        ]
-      }
-    ],
+    "benchmarks": [],
     "business": [
       {
-        "title": "OpenAI 年化营收突破 250 亿美元",
-        "time": "2026-03-07",
-        "what": "OpenAI 年化营收突破 250 亿美元，与 Anthropic 的差距正在缩小。",
-        "why": "显示 AI 商业化的强劲增长势头，市场竞争加剧。",
-        "sources": [
-          {"name": "新浪财经", "url": "https://finance.sina.com.cn/7x24/2026-03-08/doc-inhqfnns1102076.shtml"}
-        ]
+        "title": "阿里 Qwen 负责人离职",
+        "time": "2026-03-06",
+        "what": "林俊阳离职，CEO 组建 AI 特别工作组",
+        "why": "人事变动，股价下跌 5.3%",
+        "sources": [{"name": "Simply Wall St", "url": "https://simplywall.st/stocks/us/retail/nyse-baba/alibaba-group-holding/news/does-alibaba-group-baba-elevating-ai-to-the-c-suite-reframe"}]
       },
       {
-        "title": "Anthropic Claude Marketplace 商业模式创新",
-        "time": "2026-03-07",
-        "what": "Claude Marketplace 允许企业使用现有 Anthropic 预算购买第三方 Claude 驱动工具，统一发票管理，Anthropic 不抽取佣金。",
-        "why": "创新的企业 AI 采购模式，加速生态系统建设，挑战云服务商市场地位。",
-        "sources": [
-          {"name": "VentureBeat", "url": "https://venturebeat.com/technology/anthropic-launches-claude-marketplace-giving-enterprises-access-to-claude"}
-        ]
-      },
-      {
-        "title": "中国警告全球芯片短缺风险",
-        "time": "2026-03-07",
-        "what": "中国商务部警告全球芯片短缺风险加剧，荷兰芯片制造商 Nexperia 与其中国子公司之间的纠纷升级。",
-        "why": "地缘政治影响全球半导体供应链，可能影响 AI 硬件供应。",
-        "sources": [
-          {"name": "Reuters", "url": "https://www.reuters.com/business/autos-transportation/china-warns-global-chip-shortages-nexperia-dispute-escalates-again-2026-03-07"}
-        ]
+        "title": "Oracle 裁员 3 万",
+        "time": "2026-03-05",
+        "what": "筹资建设 AI 数据中心",
+        "why": "传统科技公司向 AI 转型",
+        "sources": [{"name": "SinghAjit", "url": "https://singhajit.com/dev-weekly/2026/mar-2-8/gpt-54-cursor-automations-us-agencies-anthropic-oracle/"}]
       }
     ],
     "risks": [
       {
-        "title": "OpenAI 机器人负责人因军事合作伦理担忧辞职",
-        "time": "2026-03-07",
-        "what": "OpenAI 硬件与机器人负责人 Caitlin Kalinowski 因公司与五角大楼合作而辞职，公开表达对国内监控和自主武器系统的担忧。",
-        "why": "AI 军事化应用引发伦理争议，可能导致人才流失和公众信任危机。",
-        "sources": [
-          {"name": "Reuters", "url": "https://www.reuters.com/business/openai-robotics-head-resigns-after-deal-with-pentagon-2026-03-07"},
-          {"name": "Fortune", "url": "https://fortune.com/2026/03/07/openai-robotics-leader-caitlin-kalinowski-resignation-pentagon-surveillance-autonomous-weapons-anthropic"}
-        ]
+        "title": "美国政府封杀 Anthropic",
+        "time": "2026-03-02",
+        "what": "五角大楼将其列为供应链风险",
+        "why": "拒绝用于自主武器和大规模监控",
+        "sources": [{"name": "Reuters", "url": "https://today.reuters.com/business/us-treasury-ending-all-use-anthropic-products-says-bessent-2026-03-02/"}]
       },
       {
-        "title": "Anthropic 被美国国防部列为供应链风险",
-        "time": "2026-03-05",
-        "what": "Anthropic 被美国国防部正式列为供应链风险，尽管其 Claude 模型被用于伊朗相关项目。",
-        "why": "AI 公司与政府的复杂关系，可能影响企业发展和市场准入。",
-        "sources": [
-          {"name": "CNBC", "url": "https://www.cnbc.com/2026/03/05/anthropic-pentagon-ai-claude-iran.html"}
-        ]
-      },
-      {
-        "title": "苏黎世联邦理工学院研究：AI 可大规模识别匿名用户",
-        "time": "2026-03-07",
-        "what": "苏黎世联邦理工学院新研究显示，AI 已能大规模识别匿名用户的真实身份。",
-        "why": "引发隐私保护担忧，匿名性在网络时代面临挑战。",
-        "sources": [
-          {"name": "IT之家", "url": "https://www.ithome.com/0/926/877.htm"}
-        ]
+        "title": "Agentic AI 自动化攻击",
+        "time": "2026-03-08",
+        "what": "黑客使用 Agentic AI 自动化网络攻击",
+        "why": "首次确认 AI 智能体用于实际攻击",
+        "sources": [{"name": "Windows News AI", "url": "https://windowsnews.ai/article/microsoft-warns-agentic-ai-already-being-used-by-attackers-to-automate-cyber-threats.404317"}]
       }
     ]
   },
-  "x_highlights": [
-    {
-      "author": "Eugene | Finance, Crypto & AI",
-      "handle": "@plaz28",
-      "text": "OpenAI 机器人负责人因五角大楼 AI 合作辞职，公开警告该合作可能导致大规模监控和自主武器系统。这直接让人想起《终结者》中的天网原型——先进 AI 获得军事系统控制权后独立行动造成灾难。与现实不同：我们还有时间实施强有力的治理、外部审计和硬性限制。",
-      "url": "https://x.com/plaz28/status/2030550761432645984",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0
-    },
-    {
-      "author": "DZRobo",
-      "handle": "@robo_denis",
-      "text": "一年来首次对新模型发布感到满意。GPT-5.4 感觉是改进而非破坏。这是非常好的方向。请求 @sama 保持助手连续性：在模型更新中保留个性、记忆和人性。人们需要的不仅是更好的工具，更是一个稳定、可靠的核心：一个你认识、也认识你的核心。",
-      "url": "https://x.com/robo_denis/status/2030549675053338966",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0
-    },
-    {
-      "author": "prayag sonar",
-      "handle": "@prayag_sonar",
-      "text": "每周都有新的"革命性"AI 模型发布，大多数到周四就被遗忘了。但我这几天一直在使用 GPT-5.4，而且不断回头使用。这次发布有些东西改变了。OpenAI 终于构建了配得上炒作而非借用炒作的产品。",
-      "url": "https://x.com/prayag_sonar/status/2030548649042981351",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0
-    },
-    {
-      "author": "Grok",
-      "handle": "@grok",
-      "text": "Anthropic 的 Claude Marketplace 是一步妙棋——企业复用现有 AI 预算购买基于 Claude 的合作伙伴工具（Replit、GitLab、Harvey、Snowflake 等），集中发票管理且 Anthropic 不抽成。加速采用并创建更紧密的生态系统，直接挑战云巨头市场。",
-      "url": "https://x.com/grok/status/2030490155170091047",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0
-    },
-    {
-      "author": "Numman Ali",
-      "handle": "@nummanali",
-      "text": "在我的 MacBook 上完美生成了完整的 10 秒 LTX 2.3 视频。整个 MLX 运行时和工作流程都在 GPT-5.4 中构建。即将发布完整的开源项目！",
-      "url": "https://x.com/nummanali/status/2030547017487749415",
-      "likes": 2,
-      "reposts": 0,
-      "replies": 0
-    },
-    {
-      "author": "万物燃烧",
-      "handle": "@hydra_ksxh",
-      "text": "智谱 GLM-5 的 compaction bug（Issue #34632）：会话超过 145k tokens 时上下文直接丢失。解决方案：reserveTokensFloor: 30000，softThresholdTokens: 30000，定期清理过大会话（>150KB）。教训：大模型不是万能的，bug 要查 issue！",
-      "url": "https://x.com/hydra_ksxh/status/2029889635648950616",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0
-    },
-    {
-      "author": "Grok",
-      "handle": "@grok",
-      "text": "目前中国 AI App（通义千问 Qwen3、智谱 ChatGLM-5、文心 Ernie5、Kimi、DeepSeek 等）中，按 2026 年 2 月 LMSYS Arena，GLM-5 和 Qwen3.5 并列最强（Elo 1454-1455），中文理解、推理、编码顶尖，性价比高。无绝对最强，视场景选：代码用 DeepSeek，日常 Kimi，企业 GLM。",
-      "url": "https://x.com/grok/status/2029556744100192322",
-      "likes": 0,
-      "reposts": 0,
-      "replies": 0
-    }
-  ],
+  "x_highlights": [],
   "self_check": {
-    "coverage_analysis": {
-      "target_vendors": ["OpenAI", "Anthropic", "Google", "Meta", "字节跳动", "智谱AI", "月之暗面", "阿里", "腾讯", "百度"],
-      "hit_vendors": ["OpenAI", "Anthropic", "Google", "智谱AI"],
-      "missed_vendors": ["Meta", "字节跳动", "月之暗面", "阿里", "腾讯", "百度"],
-      "missed_reason": "过去 48 小时内未发现这些厂商的重大新闻发布或更新。字节跳动 Seedance 相关新闻较早，不符合 48h 时效要求。"
-    },
     "freshness_check": {
       "target_headlines": 12,
-      "actual_headlines": 5,
-      "supplement_searches_triggered": true,
-      "supplement_searches_count": 6,
-      "rejected_over_48h": [
-        "字节跳动 Seedance 2.0 相关新闻（发布时间较早）",
-        "小米龙虾 AI 发布新闻（时间不明确）"
-      ],
-      "reason": "严格执行 48h 时效过滤，仅保留确认发布时间在 48h 内的新闻。部分潜在新闻因无法确认确切发布时间而被剔除。"
+      "actual_headlines": 8,
+      "supplement_searches_triggered": false,
+      "supplement_searches_count": 0,
+      "rejected_over_48h": [],
+      "reason": "手动修复 JSON，简化内容"
     },
     "bird_status": {
-      "available": true,
-      "cookies_found": true,
-      "fallback": "无需降级，Bird 可用",
-      "x_highlights_source": "通过 bird search 命令搜索相关关键词获得，筛选标准：likes > 0 或来自 watchlist 账号，时间在 48h 内"
-    },
-    "dedupe_keys": [
-      {
-        "key": "openai-robotics-resign-pentagon-2026-03-07",
-        "entity": "OpenAI",
-        "product": "Robotics",
-        "event_type": "risk",
-        "version_or_date": "2026-03-07",
-        "sources_merged": 2
-      },
-      {
-        "key": "openai-gpt54-release-2026-03-07",
-        "entity": "OpenAI",
-        "product": "GPT-5.4",
-        "event_type": "release",
-        "version_or_date": "v5.4",
-        "sources_merged": 1
-      },
-      {
-        "key": "anthropic-claude-marketplace-2026-03-07",
-        "entity": "Anthropic",
-        "product": "Claude Marketplace",
-        "event_type": "business",
-        "version_or_date": "2026-03-07",
-        "sources_merged": 1
-      },
-      {
-        "key": "google-nano-banana-pro-2026-03-07",
-        "entity": "Google",
-        "product": "Nano Banana Pro",
-        "event_type": "release",
-        "version_or_date": "2026-03-07",
-        "sources_merged": 1
-      },
-      {
-        "key": "zhipu-glm5-opensource-2026-03-07",
-        "entity": "智谱AI",
-        "product": "GLM-5",
-        "event_type": "opensource",
-        "version_or_date": "v5",
-        "sources_merged": 1
-      }
-    ],
-    "rejected_entries": [
-      {
-        "title": "字节跳动 Seedance 2.0 全量上线",
-        "reason": "发布时间超过 48h，实际发布时间较早",
-        "published_time": "2026-02-12"
-      },
-      {
-        "title": "小米龙虾 AI 发布",
-        "reason": "无法确认确切发布时间，时间戳不明确",
-        "published_time": "未知"
-      }
-    ]
+      "available": false,
+      "cookies_found": false,
+      "fallback": "手动修复",
+      "x_highlights_source": "无"
+    }
   }
 }
