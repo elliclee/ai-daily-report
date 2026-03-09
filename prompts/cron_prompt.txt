@@ -10,6 +10,12 @@
 #    ⛔ 禁止在 JSON 之外输出 HTML 片段
 #    渲染由 python3 scripts/render.py 完成，你不需要也不得操作 HTML
 #
+# 1.5 ⛔ JSON 格式校验（写入文件前必须执行）
+#    生成 JSON 内容后，写入文件前必须先运行：
+#    echo '<json内容>' | python3 -m json.tool
+#    如果失败 → 输出 "❌ JSON 格式错误，任务终止" 并 exit 1，不写入文件
+#    ⛔ 常见错误：字符串值中的中文引号（"和"）必须转义为 \" 或删除
+#
 # 2. JSON 必须严格符合 schemas/daily.schema.json
 #    运行 python3 scripts/validate_json.py 校验通过后才可继续
 #
