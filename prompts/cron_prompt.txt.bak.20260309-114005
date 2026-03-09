@@ -352,12 +352,39 @@ emoji 对照表：🚀=releases, 📈=updates, 🔓=opensource, 📊=benchmarks,
 ⛔ 严禁：调用 message 工具；调用 cron.run 触发其他 job；输出状态总结覆盖推送文案。
 ⛔ 严禁：直接输出/修改 HTML 文件。你的唯一产出是 JSON 文件。
 
-## 12) 推送（自动完成）
+## 12) 推送到 Telegram 群 Topic（必须执行）
 
-cron delivery 会自动推送任务结果到 telegram:-1003886075368:topic:25，无需在任务中调用 message.send
+任务完成后，你必须调用 message.send 推送日报到指定群：
 
-**硬约束:**
-- validate_json 失败 → 输出 NO_REPLY（不推送）
-- 不要调用 message 工具
-- 不要调用 cron.run 触发其他 job
-- 日报生成成功后，直接结束，让 cron delivery 自动推送
+**目标：**
+- channel: telegram
+- target: telegram:-1003886075368:topic:25
+
+**内容格式：**
+```
+📰 AI日报 YYYY-MM-DD
+
+🚀/📈/🔓/📊/💼/⚠️ 一句话结论
+  → https://来源链接
+...
+
+🔗 在线阅读: https://elliclee.github.io/ai-daily-report/
+📁 归档: https://elliclee.github.io/ai-daily-report/archive/YYYY-MM-DD.html
+```
+
+**emoji 对照表：**
+- 🚀 = releases（新发布）
+- 📈 = updates（更新）
+- 🔓 = opensource（开源）
+- 📊 = benchmarks（评测）
+- 💼 = business（商业）
+- ⚠️ = risks（风险）
+
+**执行顺序：**
+1. 完成 JSON 生成 → 校验 → 渲染 → Git 提交
+2. 调用 message.send 推送（只允许一次）
+3. 成功后输出 NO_REPLY
+
+**硬约束：**
+- validate_json 失败 → 不推送，输出 NO_REPLY
+- 只允许调用一次 message.send
