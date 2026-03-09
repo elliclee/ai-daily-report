@@ -1,72 +1,36 @@
 {
-  "fetched_at": "2026-03-06T23:30:05.806564",
+  "fetched_at": "2026-03-08T23:30:08.806763",
   "sources": {
     "hackernews-top": {
       "type": "hackernews",
-      "count": 7,
+      "count": 3,
       "items": [
         {
-          "title": "Tech employment now significantly worse than the 2008 or 2020 recessions",
-          "url": "https://twitter.com/JosephPolitano/status/2029916364664611242",
-          "score": 638,
-          "by": "enraged_camel",
-          "time": "2026-03-06T17:46:45",
-          "comments": "https://news.ycombinator.com/item?id=47278426",
-          "description": ""
-        },
-        {
-          "title": "Hardening Firefox with Anthropic's Red Team",
-          "url": "https://www.anthropic.com/news/mozilla-firefox-security",
-          "score": 428,
+          "title": "FrameBook",
+          "url": "https://fb.edoo.gg",
+          "score": 330,
           "by": "todsacerdoti",
-          "time": "2026-03-06T11:53:18",
-          "comments": "https://news.ycombinator.com/item?id=47273854",
-          "description": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems."
+          "time": "2026-03-08T15:21:09",
+          "comments": "https://news.ycombinator.com/item?id=47298044",
+          "description": "me when FrameBook."
         },
         {
-          "title": "Show HN: Moongate – Ultima Online server emulator in .NET 10 with Lua scripting",
-          "url": "https://github.com/moongate-community/moongatev2",
-          "score": 213,
-          "by": "squidleon",
-          "time": "2026-03-06T14:22:59",
-          "comments": "https://news.ycombinator.com/item?id=47275236",
-          "description": "Moongate is modern Ultima Online server built from scratch in C# with AOT compilation for high performance and nostalgic gameplay experience. - moongate-community/moongatev2"
+          "title": "LibreOffice Writer now supports Markdown",
+          "url": "https://blog.documentfoundation.org/blog/2026/02/04/libreoffice-26-2-is-here/",
+          "score": 252,
+          "by": "todsacerdoti",
+          "time": "2026-03-08T17:01:50",
+          "comments": "https://news.ycombinator.com/item?id=47298885",
+          "description": "We’re pleased to announce the release of LibreOffice 26.2, the newest version of the free and open source office suite trusted by millions of users around the world. This release makes it easier than ever for users to create, edit and share documents on their own terms. Designed for individuals and "
         },
         {
-          "title": "Payphone Go",
-          "url": "https://walzr.com/payphone-go/",
-          "score": 284,
-          "by": "walz",
-          "time": "2026-03-02T16:45:43",
-          "comments": "https://news.ycombinator.com/item?id=47220411",
-          "description": ""
-        },
-        {
-          "title": "LibreSprite – open-source pixel art editor",
-          "url": "https://libresprite.github.io/",
-          "score": 242,
-          "by": "nicoloren",
-          "time": "2026-03-06T09:22:00",
-          "comments": "https://news.ycombinator.com/item?id=47272799",
-          "description": "LibreSprite is a free and open source program for creating and animating your sprites."
-        },
-        {
-          "title": "Workers who love ‘synergizing paradigms’ might be bad at their jobs",
-          "url": "https://news.cornell.edu/stories/2026/03/workers-who-love-synergizing-paradigms-might-be-bad-their-jobs",
-          "score": 477,
-          "by": "Anon84",
-          "time": "2026-03-06T13:30:54",
-          "comments": "https://news.ycombinator.com/item?id=47274676",
-          "description": "Employees who are impressed by vague corporate-speak like “synergistic leadership,” or “growth-hacking paradigms” may struggle with practical decision-making, a new Cornell study into “corporate BS” reveals."
-        },
-        {
-          "title": "Global warming has accelerated significantly",
-          "url": "https://www.researchsquare.com/article/rs-6079807/v1",
-          "score": 898,
-          "by": "morsch",
-          "time": "2026-03-06T14:10:03",
-          "comments": "https://news.ycombinator.com/item?id=47275088",
-          "description": "Recent record-hot years have caused a discussion whether global\r\nwarming has accelerated, but previous analysis found that acceleration has\r\nnot yet reached a 95% confidence level given the natural temperature\r\nvariability. Here we account for the influence of three main natural variability\r\nfact..."
+          "title": "The changing goalposts of AGI and timelines",
+          "url": "https://mlumiste.com/general/openai-charter/",
+          "score": 319,
+          "by": "skandium",
+          "time": "2026-03-08T17:16:38",
+          "comments": "https://news.ycombinator.com/item?id=47299009",
+          "description": "Based on its own charter, OpenAI should surrender the race"
         }
       ]
     },
@@ -75,27 +39,11 @@
       "count": 5,
       "items": [
         {
-          "repo": "QwenLM/Qwen-Agent",
-          "name": "Qwen-Agent",
-          "url": "https://github.com/QwenLM/Qwen-Agent",
-          "description": "Agent framework and applications built upon Qwen>=3.0, featuring Function Calling, MCP, Code Interpreter, RAG, Chrome extension, etc.",
-          "stars_today": "684",
-          "language": "Python"
-        },
-        {
-          "repo": "inclusionAI/AReaL",
-          "name": "AReaL",
-          "url": "https://github.com/inclusionAI/AReaL",
-          "description": "Lightning-Fast RL for LLM Reasoning and Agents. Made Simple & Flexible.",
-          "stars_today": "348",
-          "language": "Python"
-        },
-        {
-          "repo": "lingfengQAQ/webnovel-writer",
-          "name": "webnovel-writer",
-          "url": "https://github.com/lingfengQAQ/webnovel-writer",
-          "description": "基于 Claude Code 的长篇网文辅助创作系统，解决 AI 写作中的「遗忘」和「幻觉」问题，支持 200 万字量级 连载创作。",
-          "stars_today": "84",
+          "repo": "666ghj/MiroFish",
+          "name": "MiroFish",
+          "url": "https://github.com/666ghj/MiroFish",
+          "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+          "stars_today": "1168",
           "language": "Python"
         },
         {
@@ -103,15 +51,31 @@
           "name": "skills",
           "url": "https://github.com/openai/skills",
           "description": "Skills Catalog for Codex",
-          "stars_today": "582",
+          "stars_today": "613",
           "language": "Python"
         },
         {
-          "repo": "TheCraigHewitt/seomachine",
-          "name": "seomachine",
-          "url": "https://github.com/TheCraigHewitt/seomachine",
-          "description": "A specialized Claude Code workspace for creating long-form, SEO-optimized blog content for any business. This system helps you research, write, analyze, and optimize content that ranks well and serves your target audience.",
-          "stars_today": "675",
+          "repo": "virattt/ai-hedge-fund",
+          "name": "ai-hedge-fund",
+          "url": "https://github.com/virattt/ai-hedge-fund",
+          "description": "An AI Hedge Fund Team",
+          "stars_today": "275",
+          "language": "Python"
+        },
+        {
+          "repo": "teng-lin/notebooklm-py",
+          "name": "notebooklm-py",
+          "url": "https://github.com/teng-lin/notebooklm-py",
+          "description": "Unofficial Python API for Google NotebookLM",
+          "stars_today": "217",
+          "language": "Python"
+        },
+        {
+          "repo": "lingfengQAQ/webnovel-writer",
+          "name": "webnovel-writer",
+          "url": "https://github.com/lingfengQAQ/webnovel-writer",
+          "description": "基于 Claude Code 的长篇网文辅助创作系统，解决 AI 写作中的「遗忘」和「幻觉」问题，支持 200 万字量级 连载创作。",
+          "stars_today": "106",
           "language": "Python"
         }
       ]

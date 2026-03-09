@@ -20,6 +20,17 @@
 #    - 超过 48h 的新闻：直接剔除（validate_json.py 会阻断报错）
 #    - 禁止降级到「观察/补充」绕过时间限制
 #    - 禁止使用 freshness=pw 或更宽范围搜索
+#
+# 5. ⛔ self_check 结构完整性（违反即判定任务失败）
+#    - freshness_check 必须是对象，包含 target_headlines/actual_headlines/supplement_searches_triggered/supplement_searches_count/rejected_over_48h/reason
+#    - dedupe_keys 必须是对象数组 [{ key, entity, product, event_type, version_or_date, sources_merged }]
+#    - rejected_entries 必须存在（可以为空数组）
+#    - ⛔ 若 self_check 结构不完整或字段类型错误，任务判定为失败
+#
+# 6. ⛔ summary.url 固定值
+#    - url: "https://elliclee.github.io/ai-daily-report/"
+#    - archiveUrl: "https://elliclee.github.io/ai-daily-report/archive/YYYY-MM-DD.html"
+#    - ⛔ 禁止使用其他域名（如 clawd.ai）
 # ════════════════════════════════════════════════════════
 
 执行 AI 日报生成任务（强时效版）。
@@ -127,6 +138,31 @@ bird check && bird whoami
    }
    ```
 
+## 2.6) 内容验证（最高优先级 - 防止误读）
+
+⚠️ **关键教训**：Seedance 2.0 被误报为"引发AI视频热潮"，实际 woshipm 文章标题为"降智，字节成为硅谷门外的野蛮人"
+
+**所有新闻必须执行内容验证**：
+
+1. **必须抓取原文正文**：
+   - 对每个入选的新闻 URL，必须用 web_fetch 抓取完整正文
+   - ⛔ 禁止只读标题或 meta description 就推断内容
+   - ⛔ 禁止只看标题关键词（如"热潮"、"发布"）就编造 what/why
+
+2. **核对描述与原文一致**：
+   - what/why 必须与原文事实一致
+   - 若原文是负面/争议报道（如"降智"、"口碑危机"），不得写成正面（如"引发热潮"）
+   - ⛔ 描述与原文矛盾 → 直接剔除该条目
+
+3. **来源优先级**：
+   - 优先选择可验证的文字报道（科技媒体、官方博客）
+   - ⛔ 避免使用无法访问的来源（B站视频、需登录的页面）
+   - 若首选来源无法访问，必须补一个可验证的第二来源
+
+4. **负面/争议事件标注**：
+   - 若新闻涉及产品问题、口碑危机、争议事件，必须在 what 中明确说明
+   - 不得回避或美化负面信息
+
 ## 3) X（bird）策略：关键词组 + watchlist 双轨 + 24h 过滤（带 fallback）
 
 2.1 关键词组（每组取最新 N 条，建议 N=30）
@@ -176,12 +212,16 @@ bird check && bird whoami
 
 ## 6) x_highlights 来源约束与处理
 
+**数量要求：**
+- 目标：8-12 条
+- 下限：5 条（若 bird 不可用可为空，但必须在 self_check.bird_status 说明原因）
+- ⛔ 若 bird 可用但 x_highlights 少于 5 条，必须在 self_check 说明原因
+
 **来源约束：**
 - x_highlights 中的 url 字段必须是 x.com 或 twitter.com 链接
 - ⛔ 非 X 来源（如新闻网站、博客、官方公告页）不得放入 x_highlights
 - 非 X 来源的精彩引用应放入对应 section 条目的 sources 数组
-- 若 bird 不可用导致无法获取真实推文，x_highlights 可以为空数组 []
-  - 此时必须在 self_check.bird_status 说明原因
+- 每条必须有 likes > 0，likes=0 的推文不得入报
 
 **内容处理（必须执行）：**
 对于每条选中的 X 推文，必须：

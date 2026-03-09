@@ -1,67 +1,35 @@
 {
-  "date": "2026-03-06",
-  "generated_at": "2026-03-06T00:00:00Z",
-  "themes": [
+  "date": "2026-03-08",
+  "trending_topics": [
     {
-      "name": "AI Agent 能力竞争白热化",
-      "description": "OpenAI GPT-5.4 支持原生计算机操作，AWS 推出医疗保健 AI 代理平台，微软开源 Phi-4 多模态推理模型。AI Agent 成为各大厂商的核心竞争赛道。",
-      "related_items": ["GPT-5.4 原生计算机操作", "AWS 医疗 AI 代理", "Phi-4 多模态推理"],
-      "trend": "rising"
+      "topic": "AI 军事化伦理",
+      "keywords": ["OpenAI", "五角大楼", "机器人", "辞职", "自主武器", "监控"],
+      "heat_score": 95,
+      "sources_count": 5
     },
     {
-      "name": "AI 监管与地缘政治风险加剧",
-      "description": "五角大楼将 Anthropic 列为供应链风险，美国拟对全球 AI 芯片出口实施许可要求，xAI 败诉加州 AI 透明度法案。AI 正在成为国家安全和监管的核心议题。",
-      "related_items": ["Anthropic 供应链风险", "全球芯片出口管制", "加州 AI 透明度法案"],
-      "trend": "rising"
+      "topic": "GPT-5.4 自主代理",
+      "keywords": ["GPT-5.4", "AI 代理", "连续任务", "工具调用", "OpenAI"],
+      "heat_score": 88,
+      "sources_count": 3
     },
     {
-      "name": "国产大模型快速追赶",
-      "description": "智谱 GLM-5 成为开源 SOTA，字节 Seedance 2.0 视频模型上线，阿里 Qwen 3.5 发布智能眼镜。国产 AI 在多个赛道展现竞争力。",
-      "related_items": ["GLM-5 开源 SOTA", "Seedance 2.0", "Qwen 智能眼镜"],
-      "trend": "rising"
+      "topic": "Claude 生态系统",
+      "keywords": ["Claude Marketplace", "Anthropic", "企业采购", "第三方工具"],
+      "heat_score": 82,
+      "sources_count": 4
     },
     {
-      "name": "AI 基础设施投资与成本压力并存",
-      "description": "Together AI 估值达 75 亿美元，甲骨文因 AI 成本裁员数千人。AI 基础设施赛道持续火热，但成本压力也开始显现。",
-      "related_items": ["Together AI 融资", "甲骨文裁员"],
-      "trend": "stable"
+      "topic": "GLM-5 开源突破",
+      "keywords": ["GLM-5", "智谱AI", "开源模型", "SOTA", "国产芯片"],
+      "heat_score": 78,
+      "sources_count": 3
+    },
+    {
+      "topic": "图像生成技术",
+      "keywords": ["Nano Banana Pro", "Google", "Gemini 3 Pro", "图像生成", "高分辨率"],
+      "heat_score": 72,
+      "sources_count": 2
     }
-  ],
-  "market_signals": {
-    "funding": [
-      {"company": "Together AI", "valuation": "$7.5B", "status": "negotiating"}
-    ],
-    "mna": [
-      {"acquirer": "Netflix", "target": "Ben Affleck AI startup", "status": "completed"}
-    ],
-    "layoffs": [
-      {"company": "Oracle", "count": "thousands", "reason": "AI infrastructure costs"}
-    ]
-  },
-  "tech_signals": {
-    "new_models": [
-      {"name": "GPT-5.4", "vendor": "OpenAI", "type": "foundation"},
-      {"name": "GPT-5.4 Thinking", "vendor": "OpenAI", "type": "reasoning"},
-      {"name": "GPT-5.4 Pro", "vendor": "OpenAI", "type": "foundation"},
-      {"name": "Seedance 2.0", "vendor": "ByteDance", "type": "video"},
-      {"name": "GLM-5", "vendor": "Zhipu", "type": "foundation"},
-      {"name": "Phi-4-reasoning-vision-15B", "vendor": "Microsoft", "type": "multimodal"},
-      {"name": "Evo 2", "vendor": "Arc Institute", "type": "genomics"}
-    ],
-    "new_features": [
-      {"feature": "Native computer use", "model": "GPT-5.4"},
-      {"feature": "1M token context", "model": "GPT-5.4"},
-      {"feature": "Excel/Sheets integration", "model": "GPT-5.4"}
-    ]
-  },
-  "risk_signals": {
-    "regulatory": [
-      {"type": "export_controls", "target": "Nvidia/AMD AI chips", "jurisdiction": "US"},
-      {"type": "transparency_law", "target": "xAI", "jurisdiction": "California"},
-      {"type": "supply_chain_risk", "target": "Anthropic", "jurisdiction": "US DOD"}
-    ],
-    "military": [
-      {"type": "AI-assisted warfare", "context": "Iran operations", "concern": "escalation"}
-    ]
-  }
+  ]
 }
