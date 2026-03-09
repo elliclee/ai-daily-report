@@ -1,36 +1,54 @@
 {
-  "fetched_at": "2026-03-08T23:30:08.806763",
+  "fetched_at": "2026-03-09T03:17:00.809216",
   "sources": {
     "hackernews-top": {
       "type": "hackernews",
-      "count": 3,
+      "count": 5,
       "items": [
+        {
+          "title": "Agent Safehouse – macOS-native sandboxing for local agents",
+          "url": "https://agent-safehouse.dev/",
+          "score": 372,
+          "by": "atombender",
+          "time": "2026-03-08T20:30:18",
+          "comments": "https://news.ycombinator.com/item?id=47301085",
+          "description": "Sandbox your LLM coding agents on macOS. Kernel-level enforcement via sandbox-exec — deny-first, composable, zero dependencies."
+        },
+        {
+          "title": "Microscopes can see video on a laserdisc",
+          "url": "https://www.youtube.com/watch?v=qZuR-772cks",
+          "score": 279,
+          "by": "zdw",
+          "time": "2026-03-07T22:03:37",
+          "comments": "https://news.ycombinator.com/item?id=47291876",
+          "description": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+        },
         {
           "title": "FrameBook",
           "url": "https://fb.edoo.gg",
-          "score": 330,
+          "score": 368,
           "by": "todsacerdoti",
           "time": "2026-03-08T15:21:09",
           "comments": "https://news.ycombinator.com/item?id=47298044",
           "description": "me when FrameBook."
         },
         {
+          "title": "Notes on writing Rust-based Wasm",
+          "url": "https://notes.brooklynzelenka.com/Blog/Notes-on-Writing-Wasm",
+          "score": 208,
+          "by": "vinhnx",
+          "time": "2026-03-08T09:24:54",
+          "comments": "https://news.ycombinator.com/item?id=47295837",
+          "description": "I’ve been writing an increasing amount of Rust‑based Wasm over the past few years."
+        },
+        {
           "title": "LibreOffice Writer now supports Markdown",
           "url": "https://blog.documentfoundation.org/blog/2026/02/04/libreoffice-26-2-is-here/",
-          "score": 252,
+          "score": 290,
           "by": "todsacerdoti",
           "time": "2026-03-08T17:01:50",
           "comments": "https://news.ycombinator.com/item?id=47298885",
           "description": "We’re pleased to announce the release of LibreOffice 26.2, the newest version of the free and open source office suite trusted by millions of users around the world. This release makes it easier than ever for users to create, edit and share documents on their own terms. Designed for individuals and "
-        },
-        {
-          "title": "The changing goalposts of AGI and timelines",
-          "url": "https://mlumiste.com/general/openai-charter/",
-          "score": 319,
-          "by": "skandium",
-          "time": "2026-03-08T17:16:38",
-          "comments": "https://news.ycombinator.com/item?id=47299009",
-          "description": "Based on its own charter, OpenAI should surrender the race"
         }
       ]
     },
@@ -43,7 +61,7 @@
           "name": "MiroFish",
           "url": "https://github.com/666ghj/MiroFish",
           "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
-          "stars_today": "1168",
+          "stars_today": "1104",
           "language": "Python"
         },
         {
@@ -51,7 +69,7 @@
           "name": "skills",
           "url": "https://github.com/openai/skills",
           "description": "Skills Catalog for Codex",
-          "stars_today": "613",
+          "stars_today": "612",
           "language": "Python"
         },
         {
@@ -67,7 +85,7 @@
           "name": "notebooklm-py",
           "url": "https://github.com/teng-lin/notebooklm-py",
           "description": "Unofficial Python API for Google NotebookLM",
-          "stars_today": "217",
+          "stars_today": "196",
           "language": "Python"
         },
         {
@@ -75,7 +93,7 @@
           "name": "webnovel-writer",
           "url": "https://github.com/lingfengQAQ/webnovel-writer",
           "description": "基于 Claude Code 的长篇网文辅助创作系统，解决 AI 写作中的「遗忘」和「幻觉」问题，支持 200 万字量级 连载创作。",
-          "stars_today": "106",
+          "stars_today": "94",
           "language": "Python"
         }
       ]
