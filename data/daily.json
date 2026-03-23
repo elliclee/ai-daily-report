@@ -2,58 +2,6 @@
   "date": "2026-03-23",
   "headlines": [
     {
-      "title": "Xiaomi MiMo-V2-Pro 正式发布：1万亿参数 Agent 专用模型",
-      "time": "2026-03-18",
-      "what": "小米 AI 团队发布 MiMo-V2-Pro，1万亿参数、1M context，专为 Agent 工作流设计。该模型此前以「Hunter Alpha」名义在 OpenRouter 匿名测试，全球排名第 8、中国模型第 2，在 OpenClaw 的 PinchBench 和 ClawEval 上排名第 3。",
-      "why": "这是中国科技公司在 Agent 专用模型领域的重大突破，价格比 Claude Sonnet 4.6 便宜 67%，目前 OpenRouter 限时免费。",
-      "sources": [
-        {
-          "name": "devFlokers",
-          "url": "https://www.devflokers.com/blog/new-ai-model-releases-open-source-projects-march-18-19-2026"
-        },
-        {
-          "name": "ProPakistani",
-          "url": "https://propakistani.pk/2026/03/22/xiaomi-suddenly-releases-its-own-free-ai-model-that-beats-chatgpt-and-gemini/"
-        }
-      ]
-    },
-    {
-      "title": "GPT-5.4 mini 向免费用户开放：推理模型民主化",
-      "time": "2026-03-17",
-      "what": "OpenAI 将 GPT-5.4 mini 推向 ChatGPT 免费用户，通过「Thinking」功能访问。该模型针对 coding、computer use、multimodal 和 subagents 优化，比 GPT-5 mini 快 2 倍。同时发布 GPT-5.4 nano（仅 API）。",
-      "why": "标志着 OpenAI 将推理能力作为默认功能，而非付费增值服务，推理模型正式进入大众化阶段。",
-      "sources": [
-        {
-          "name": "X @OpenAI",
-          "url": "https://x.com/OpenAI/status/2033953592424731072"
-        }
-      ]
-    },
-    {
-      "title": "智谱 GLM-5 MIT 协议开源：744B 参数，华为芯片全栈训练",
-      "time": "2026-03-14",
-      "what": "智谱 AI 以 MIT 协议开源 GLM-5，744B 参数，仅用华为昇腾芯片训练，完全不依赖 NVIDIA。SWE-bench 77.8%，Vending Bench 2 排名开源第 1，价格 $0.80/M tokens。",
-      "why": "打破对 NVIDIA 的依赖，证明国产芯片可支撑前沿模型训练，价格极具竞争力。",
-      "sources": [
-        {
-          "name": "X @zhipu_ai",
-          "url": "https://x.com/zhipu_ai/status/2032864200947556363"
-        }
-      ]
-    },
-    {
-      "title": "Anthropic 81,000 人调研：AI 用户希望与恐惧并存",
-      "time": "2026-03-18",
-      "what": "Anthropic 发布史上最大规模 AI 用户调研，81,000 人在一周内参与。调研揭示了用户对 AI 的希望（生产力提升、医疗突破）与恐惧（失业、隐私风险）的详细图景。",
-      "why": "这是首次大规模定性研究，将直接影响 Anthropic 的产品设计和安全策略。",
-      "sources": [
-        {
-          "name": "X @AnthropicAI",
-          "url": "https://x.com/AnthropicAI/status/2034302152945144166"
-        }
-      ]
-    },
-    {
       "title": "Claude Code 与 Codex 正在成为 Coding Agent 的「Chrome 标准」",
       "time": "2026-03-23",
       "what": "技术评论指出，Claude Code 和 OpenAI Codex 经过三年迭代，已成为 coding agent 领域的事实标准。其他工具（roo coder、cline、aider）与它们已产生 3-4 代差距，如同蒸汽火车 vs 大火箭。",
@@ -107,144 +55,15 @@
     }
   ],
   "sections": {
-    "releases": [
-      {
-        "title": "MiMo-V2-Omni 多模态 Agent 模型发布",
-        "time": "2026-03-18",
-        "what": "小米同步发布 MiMo-V2-Omni（此前代号 Healer Alpha），全模态 Agent 模型，支持图文音视频理解和生成。",
-        "why": "与 MiMo-V2-Pro 形成完整 Agent 模型栈。",
-        "sources": [
-          {
-            "name": "devFlokers",
-            "url": "https://www.devflokers.com/blog/new-ai-model-releases-open-source-projects-march-18-19-2026"
-          }
-        ]
-      },
-      {
-        "title": "MiMo-V2-TTS 语音合成模型发布",
-        "time": "2026-03-18",
-        "what": "小米发布 MiMo-V2-TTS，面向自然表达语音输出的 TTS 模型。",
-        "why": "补全 Agent 语音交互能力。",
-        "sources": [
-          {
-            "name": "devFlokers",
-            "url": "https://www.devflokers.com/blog/new-ai-model-releases-open-source-projects-march-18-19-2026"
-          }
-        ]
-      }
-    ],
-    "updates": [
-      {
-        "title": "Anthropic 向 Linux Foundation 捐赠，支持开源安全",
-        "time": "2026-03-17",
-        "what": "Anthropic 参与 Linux Foundation $12.5M 资助计划，与 AWS、Google、Microsoft、OpenAI 共同投资开源安全解决方案。",
-        "why": "AI 能力越强，底层开源安全越重要。",
-        "sources": [
-          {
-            "name": "X @AnthropicAI",
-            "url": "https://x.com/AnthropicAI/status/2033939283313402138"
-          }
-        ]
-      },
-      {
-        "title": "OpenAI 收购 Promptfoo，强化 Agent 安全测试",
-        "time": "2026-03-11",
-        "what": "OpenAI 收购开源安全测试工具 Promptfoo，技术将集成到 OpenAI Frontier，用于 agentic 安全测试和评估。",
-        "why": "Agent 安全成为大厂重点投入方向。",
-        "sources": [
-          {
-            "name": "X @OpenAI",
-            "url": "https://x.com/OpenAI/status/2031744906633621856"
-          }
-        ]
-      }
-    ],
-    "opensource": [
-      {
-        "title": "obra/superpowers：GitHub Trending #1，92,100 Stars",
-        "time": "2026-03-18",
-        "what": "obra/superpowers 是一个 Shell-based agentic skills 框架，被誉为「最实用的 Agent 开发方法论」。无需 Python 重型框架即可构建 Agent 行为。",
-        "why": "降低 Agent 开发门槛，深受开发者欢迎。",
-        "sources": [
-          {
-            "name": "GitHub",
-            "url": "https://github.com/obra/superpowers"
-          }
-        ]
-      },
-      {
-        "title": "NVIDIA NemoClaw：OpenClaw 企业部署工具",
-        "time": "2026-03-18",
-        "what": "NVIDIA 发布 NemoClaw，TypeScript 插件，用于 OpenClaw 的安全安装和企业级部署，4,200+ stars。",
-        "why": "NVIDIA 正式入局 OpenClaw 生态，信号意义重大。",
-        "sources": [
-          {
-            "name": "devFlokers",
-            "url": "https://www.devflokers.com/blog/new-ai-model-releases-open-source-projects-march-18-19-2026"
-          }
-        ]
-      },
-      {
-        "title": "AutoResearchClaw：从想法到论文的全自动研究 Agent",
-        "time": "2026-03-18",
-        "what": "aiming-lab/AutoResearchClaw 是一个 Python 工具，输入想法，自动生成研究论文，4,100+ stars。",
-        "why": "AI 驱动的学术研究自动化，潜力巨大。",
-        "sources": [
-          {
-            "name": "GitHub",
-            "url": "https://github.com/aiming-lab/AutoResearchClaw"
-          }
-        ]
-      }
-    ],
-    "benchmarks": [
-      {
-        "title": "GPT-5.4 (Medium) 在 DesignArena 排名第 11",
-        "time": "2026-03-22",
-        "what": "GPT-5.4 (Medium) 在设计基准 DesignArena 排名第 11，可能使用了 skills。Claude 系列在前端设计能力上仍领先。",
-        "why": "不同模型在设计和编程任务上能力分化明显。",
-        "sources": [
-          {
-            "name": "X @DataLearnerAI",
-            "url": "https://x.com/DataLearnerAI/status/2035870423414616485"
-          }
-        ]
-      }
-    ],
-    "business": [
-      {
-        "title":「Stealth Launch」策略成为 AI 模型发布新趋势",
-        "time": "2026-03-18",
-        "what": "Hunter Alpha / MiMo-V2-Pro 并非首个匿名测试案例。2 月 Zhipu AI 也以「Pony Alpha」名义在 OpenRouter 匿名测试，5 天后才确认是 GLM-5 系统。",
-        "why": "匿名发布可收集无偏基准数据，避免品牌预期干扰评估。",
-        "sources": [
-          {
-            "name": "devFlokers",
-            "url": "https://www.devflokers.com/blog/new-ai-model-releases-open-source-projects-march-18-19-2026"
-          }
-        ]
-      },
-      {
-        "title": "Anthropic 进军澳洲，悉尼办公室即将开业",
-        "time": "2026-03-10",
-        "what": "Anthropic 宣布扩张至澳大利亚和新西兰，悉尼办公室将是亚太区第四个据点（继东京、班加罗尔、首尔）。",
-        "why": "全球化布局加速，亚太市场竞争加剧。",
-        "sources": [
-          {
-            "name": "X @AnthropicAI",
-            "url": "https://x.com/AnthropicAI/status/2031506214228828186"
-          }
-        ]
-      }
-    ],
+    "releases": [],
+    "updates": [],
+    "opensource": [],
+    "benchmarks": [],
+    "business": [],
     "risks": []
   },
   "summary": {
     "bullets": [
-      "Xiaomi MiMo-V2-Pro 发布：1万亿参数 Agent 专用模型，OpenRouter 限时免费",
-      "GPT-5.4 mini 向免费用户开放，推理模型民主化",
-      "智谱 GLM-5 MIT 开源：744B 参数，华为芯片训练，$0.80/M",
-      "Anthropic 81,000 人调研揭示 AI 用户希望与恐惧",
       "Claude Code 与 Codex 正在成为 Coding Agent 的「Chrome 标准」",
       "OpenClaw 生态爆发：210K+ Stars，NVIDIA 入局",
       "字节 Seedance 2.0 海外部署停止",

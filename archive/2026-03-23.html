@@ -10,7 +10,14 @@
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
     <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         :root {
             --background: #f4f6f9;
             --foreground: #15181d;
@@ -27,6 +34,7 @@
             --blue: #244e78;
             --blue-bg: transparent;
         }
+
         body {
             font-family: 'Source Sans 3', 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: linear-gradient(180deg, #fafbfd 0%, var(--background) 100%);
@@ -34,7 +42,13 @@
             line-height: 1.7;
             -webkit-font-smoothing: antialiased;
         }
-        .container { max-width: 980px; margin: 0 auto; padding: 34px 20px 56px; }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 34px 20px 56px;
+        }
+
         header {
             display: grid;
             grid-template-columns: 1fr auto;
@@ -44,6 +58,7 @@
             padding-bottom: 14px;
             border-bottom: 1px solid #cbd4df;
         }
+
         header h1 {
             font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
             font-size: clamp(2rem, 4.6vw, 2.7rem);
@@ -52,6 +67,7 @@
             line-height: 1.12;
             letter-spacing: -0.01em;
         }
+
         .logo {
             font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
             font-size: clamp(2rem, 4.6vw, 2.7rem);
@@ -61,14 +77,25 @@
             letter-spacing: -0.01em;
             text-decoration: none;
         }
-        .date { font-size: 0.95rem; color: var(--muted); font-weight: 400; text-align: right; }
+
+        .date {
+            font-size: 0.95rem;
+            color: var(--muted);
+            font-weight: 400;
+            text-align: right;
+        }
+
         .content-shell {
             background: var(--card);
             border-radius: 12px;
             padding: 20px 18px 10px;
             box-shadow: 0 1px 8px rgba(21, 24, 29, 0.03);
         }
-        .page-title { margin: 4px 0 18px; }
+
+        .page-title {
+            margin: 4px 0 18px;
+        }
+
         .page-title h1 {
             font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
             font-size: 1.5rem;
@@ -76,8 +103,17 @@
             line-height: 1.35;
             color: var(--foreground);
         }
-        .page-title p { margin-top: 6px; color: var(--muted); font-size: 14px; }
-        .section { margin-bottom: 26px; }
+
+        .page-title p {
+            margin-top: 6px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .section {
+            margin-bottom: 26px;
+        }
+
         .section-title {
             font-size: 0.88rem;
             font-weight: 600;
@@ -91,6 +127,7 @@
             gap: 10px;
             color: #2f3741;
         }
+
         .card {
             background: transparent;
             border: none;
@@ -99,11 +136,24 @@
             margin-bottom: 10px;
             transition: background-color 0.2s ease, box-shadow 0.2s ease;
         }
+
         @media (hover: hover) and (pointer: fine) {
-            .card:hover { background: #f8fafd; box-shadow: 0 2px 8px rgba(21, 24, 29, 0.04); }
+            .card:hover {
+                background: #f8fafd;
+                box-shadow: 0 2px 8px rgba(21, 24, 29, 0.04);
+            }
         }
-        .card-headline { display: flex; gap: 0; margin-bottom: 8px; }
-        .card-badge { display: none; }
+
+        .card-headline {
+            display: flex;
+            gap: 0;
+            margin-bottom: 8px;
+        }
+
+        .card-badge {
+            display: none;
+        }
+
         .card-title {
             font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
             font-size: 1.32rem;
@@ -111,6 +161,8 @@
             line-height: 1.38;
             color: var(--foreground);
         }
+
+        /* Compatibility for older archive pages using <article class="card"><h3>... */
         .card h3 {
             margin: 0;
             font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
@@ -119,7 +171,14 @@
             line-height: 1.4;
             color: var(--foreground);
         }
-        .card p { margin-top: 10px; font-size: 16px; line-height: 1.72; color: #263241; }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
+        }
+
         .card-meta {
             font-size: 14px;
             color: var(--muted);
@@ -128,8 +187,18 @@
             gap: 12px;
             flex-wrap: wrap;
         }
-        .card-content { font-size: 16px; line-height: 1.72; color: #263241; }
-        .card-content strong { color: var(--foreground); font-weight: 600; }
+
+        .card-content {
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
+        }
+
+        .card-content strong {
+            color: var(--foreground);
+            font-weight: 600;
+        }
+
         .card-sources {
             margin-top: 12px;
             padding-top: 10px;
@@ -137,7 +206,13 @@
             font-size: 14px;
             color: var(--muted);
         }
-        .card p.card-sources { margin-top: 12px; font-size: 14px; color: var(--muted); }
+
+        .card p.card-sources {
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
         .news-item {
             background: transparent;
             border: none;
@@ -145,6 +220,7 @@
             padding: 14px 12px 12px;
             margin-bottom: 10px;
         }
+
         .news-item h3 {
             margin: 0;
             font-family: 'Source Serif 4', 'Noto Serif SC', 'Songti SC', serif;
@@ -153,10 +229,30 @@
             line-height: 1.4;
             color: var(--foreground);
         }
-        .news-item p { margin-top: 10px; font-size: 16px; line-height: 1.72; color: #263241; }
-        .news-source { margin-top: 12px; font-size: 14px; color: var(--muted); }
-        .news-source a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
-        .news-source a:hover { color: #0b2f5a; }
+
+        .news-item p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.72;
+            color: #263241;
+        }
+
+        .news-source {
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .news-source a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .news-source a:hover {
+            color: #0b2f5a;
+        }
+
         .news-tag {
             display: inline-flex;
             align-items: center;
@@ -168,10 +264,27 @@
             font-weight: 500;
             color: var(--muted-foreground);
         }
-        .card-sources a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
-        .card p.card-sources a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
-        .card-sources a:hover { color: #0b2f5a; }
-        .card p.card-sources a:hover { color: #0b2f5a; }
+
+        .card-sources a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .card p.card-sources a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .card-sources a:hover {
+            color: #0b2f5a;
+        }
+
+        .card p.card-sources a:hover {
+            color: #0b2f5a;
+        }
+
         .highlight-box {
             background: #fbfcfe;
             border: none;
@@ -179,6 +292,7 @@
             padding: 16px 14px;
             margin-bottom: 12px;
         }
+
         .highlight-title {
             font-weight: 600;
             font-size: 13px;
@@ -190,7 +304,12 @@
             text-transform: uppercase;
             letter-spacing: 0.04em;
         }
-        .highlight-list { list-style: none; font-size: 15px; }
+
+        .highlight-list {
+            list-style: none;
+            font-size: 15px;
+        }
+
         .highlight-list li {
             padding: 7px 0;
             border-bottom: none;
@@ -198,7 +317,12 @@
             align-items: flex-start;
             gap: 8px;
         }
-        .highlight-list li:last-child { border-bottom: none; }
+
+        .highlight-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* ── Tags ── */
         .tag {
             display: inline-flex;
             align-items: center;
@@ -210,9 +334,22 @@
             font-weight: 500;
             color: var(--muted-foreground);
         }
-        .tag-hot { color: var(--orange); background: #f4ece6; }
-        .tag-new { color: var(--green); background: #e9f2ed; }
-        .tag-official { color: var(--blue); background: #e8eef5; }
+
+        .tag-hot {
+            color: var(--orange);
+            background: #f4ece6;
+        }
+
+        .tag-new {
+            color: var(--green);
+            background: #e9f2ed;
+        }
+
+        .tag-official {
+            color: var(--blue);
+            background: #e8eef5;
+        }
+
         .x-highlight {
             background: transparent;
             border-radius: 10px;
@@ -220,14 +357,71 @@
             margin-top: 14px;
             border: none;
         }
-        .x-highlight h4 { font-size: 14px; font-weight: 600; margin-bottom: 12px; color: var(--foreground); }
-        .x-item { display: block; padding: 10px 0; border-bottom: none; font-size: 14px; }
-        .x-item:last-child { border-bottom: none; }
-        .x-content { width: 100%; }
-        .x-author { font-weight: 600; color: var(--foreground); }
-        .x-handle { color: var(--muted); }
-        .x-text { margin-top: 4px; line-height: 1.5; }
-        .x-engagement { display: flex; gap: 16px; margin-top: 8px; font-size: 13px; color: var(--muted); }
+
+        .x-highlight h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--foreground);
+        }
+
+        .x-item {
+            display: block;
+            padding: 10px 0;
+            border-bottom: none;
+            font-size: 14px;
+        }
+
+        .x-item:last-child {
+            border-bottom: none;
+        }
+
+        .x-content {
+            width: 100%;
+        }
+
+        .x-author {
+            font-weight: 600;
+            color: var(--foreground);
+        }
+
+        .x-handle {
+            color: var(--muted);
+        }
+
+        .x-text {
+            margin-top: 4px;
+            line-height: 1.5;
+        }
+
+        .x-engagement {
+            display: flex;
+            gap: 16px;
+            margin-top: 8px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .x-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #263241;
+        }
+
+        .x-table th,
+        .x-table td {
+            text-align: left;
+            padding: 8px 6px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .x-table th {
+            font-weight: 600;
+            color: var(--muted-foreground);
+        }
+
         .footer {
             text-align: center;
             padding-top: 20px;
@@ -235,21 +429,73 @@
             color: var(--muted);
             font-size: 14px;
         }
-        .footer a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
-        .footer a:hover { color: #0b2f5a; }
-        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
-        @media (max-width: 860px) { header { grid-template-columns: 1fr; } .date { text-align: left; } }
-        @media (max-width: 640px) {
-            .container { padding: 26px 14px 42px; }
-            header h1 { font-size: 1.8rem; }
-            .content-shell { padding: 14px 10px 6px; box-shadow: none; }
-            .card { padding: 14px 12px 12px; }
-            .card-title { font-size: 1.16rem; }
-            .card-content { font-size: 16px; }
-            .card-meta, .card-sources { font-size: 14px; }
+
+        .footer a {
+            color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
         }
+
+        .footer a:hover {
+            color: #0b2f5a;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 860px) {
+            header {
+                grid-template-columns: 1fr;
+            }
+
+            .date {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 26px 14px 42px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .content-shell {
+                padding: 14px 10px 6px;
+                box-shadow: none;
+            }
+
+            .card {
+                padding: 14px 12px 12px;
+            }
+
+            .card-title {
+                font-size: 1.16rem;
+            }
+
+            .card-content {
+                font-size: 16px;
+            }
+
+            .card-meta,
+            .card-sources {
+                font-size: 14px;
+            }
+        }
+
         @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
         }
     </style>
 </head>
@@ -262,175 +508,208 @@
         </header>
 
         <main class="content-shell">
-            <!-- 今日摘要 -->
-            <div class="highlight-box">
-                <div class="highlight-title">⚡ 今日要点</div>
-                <ul class="highlight-list">
-                    <li>• <strong>Xiaomi MiMo-V2-Pro</strong> 发布：1万亿参数 Agent 专用模型，OpenRouter 限时免费</li>
-                    <li>• <strong>GPT-5.4 mini</strong> 向免费用户开放，推理模型民主化</li>
-                    <li>• <strong>智谱 GLM-5</strong> MIT 开源：744B 参数，华为芯片训练，$0.80/M</li>
-                    <li>• <strong>Claude Code 与 Codex</strong> 正在成为 Coding Agent 的「Chrome 标准」</li>
-                    <li>• <strong>OpenClaw</strong> 生态爆发：210K+ Stars，NVIDIA 入局</li>
-                    <li>• <strong>字节 Seedance 2.0</strong> 海外部署停止</li>
-                    <li>• <strong>Qwen 3.5</strong> 性能接近 Opus，成本仅为 1/30</li>
-                    <li>• <strong>Anthropic</strong> 81,000 人调研揭示 AI 用户希望与恐惧</li>
-                </ul>
-            </div>
-
-            <!-- 头条新闻 -->
-            <section class="section">
-                <div class="section-title">📰 头条</div>
-                
-                <article class="card">
-                    <div class="card-headline">
-                        <h3 class="card-title">Xiaomi MiMo-V2-Pro 正式发布：1万亿参数 Agent 专用模型</h3>
-                    </div>
-                    <p class="card-content">小米 AI 团队发布 MiMo-V2-Pro，1万亿参数、1M context，专为 Agent 工作流设计。该模型此前以「Hunter Alpha」名义在 OpenRouter 匿名测试，全球排名第 8、中国模型第 2，在 OpenClaw 的 PinchBench 和 ClawEval 上排名第 3。</p>
-                    <p class="card-content"><strong>为什么重要：</strong>这是中国科技公司在 Agent 专用模型领域的重大突破，价格比 Claude Sonnet 4.6 便宜 67%，目前 OpenRouter 限时免费。</p>
-                    <p class="card-sources">来源：<a href="https://www.devflokers.com/blog/new-ai-model-releases-open-source-projects-march-18-19-2026">devFlokers</a> · <a href="https://propakistani.pk/2026/03/22/xiaomi-suddenly-releases-its-own-free-ai-model-that-beats-chatgpt-and-gemini/">ProPakistani</a></p>
-                </article>
-
-                <article class="card">
-                    <div class="card-headline">
-                        <h3 class="card-title">GPT-5.4 mini 向免费用户开放：推理模型民主化</h3>
-                    </div>
-                    <p class="card-content">OpenAI 将 GPT-5.4 mini 推向 ChatGPT 免费用户，通过「Thinking」功能访问。该模型针对 coding、computer use、multimodal 和 subagents 优化，比 GPT-5 mini 快 2 倍。同时发布 GPT-5.4 nano（仅 API）。</p>
-                    <p class="card-content"><strong>为什么重要：</strong>标志着 OpenAI 将推理能力作为默认功能，而非付费增值服务，推理模型正式进入大众化阶段。</p>
-                    <p class="card-sources">来源：<a href="https://x.com/OpenAI/status/2033953592424731072">X @OpenAI</a></p>
-                </article>
-
-                <article class="card">
-                    <div class="card-headline">
-                        <h3 class="card-title">智谱 GLM-5 MIT 协议开源：744B 参数，华为芯片全栈训练</h3>
-                    </div>
-                    <p class="card-content">智谱 AI 以 MIT 协议开源 GLM-5，744B 参数，仅用华为昇腾芯片训练，完全不依赖 NVIDIA。SWE-bench 77.8%，Vending Bench 2 排名开源第 1，价格 $0.80/M tokens。</p>
-                    <p class="card-content"><strong>为什么重要：</strong>打破对 NVIDIA 的依赖，证明国产芯片可支撑前沿模型训练，价格极具竞争力。</p>
-                    <p class="card-sources">来源：<a href="https://x.com/zhipu_ai/status/2032864200947556363">X @zhipu_ai</a></p>
-                </article>
-
-                <article class="card">
-                    <div class="card-headline">
-                        <h3 class="card-title">Claude Code 与 Codex 正在成为 Coding Agent 的「Chrome 标准」</h3>
-                    </div>
-                    <p class="card-content">技术评论指出，Claude Code 和 OpenAI Codex 经过三年迭代，已成为 coding agent 领域的事实标准。其他工具（roo coder、cline、aider）与它们已产生 3-4 代差距，如同蒸汽火车 vs 大火箭。</p>
-                    <p class="card-content"><strong>为什么重要：</strong>行业正在形成双寡头格局：Claude Code（闭源之王）vs Codex（开源之王），其他厂商被迫退回卖 API。</p>
-                    <p class="card-sources">来源：<a href="https://x.com/lidangzzz/status/2035870534534144132">X @lidangzzz</a></p>
-                </article>
-
-                <article class="card">
-                    <div class="card-headline">
-                        <h3 class="card-title">OpenClaw 生态持续爆发：210,000+ Stars，5,700+ 社区技能</h3>
-                    </div>
-                    <p class="card-content">开源个人 AI 助手 OpenClaw 跨越 210,000 GitHub stars，ClawHub 技能库超过 5,700 个社区技能。NVIDIA 发布 NemoClaw 企业部署工具，obra/superpowers（92,100 stars）成为 GitHub trending #1。</p>
-                    <p class="card-content"><strong>为什么重要：</strong>OpenClaw 正在成为 AI Agent 领域的核心基础设施，吸引 NVIDIA 等大厂入局。</p>
-                    <p class="card-sources">来源：<a href="https://www.devflokers.com/blog/new-ai-model-releases-open-source-projects-march-18-19-2026">devFlokers</a></p>
-                </article>
-
-                <article class="card">
-                    <div class="card-headline">
-                        <h3 class="card-title">Anthropic 81,000 人调研：AI 用户希望与恐惧并存</h3>
-                    </div>
-                    <p class="card-content">Anthropic 发布史上最大规模 AI 用户调研，81,000 人在一周内参与。调研揭示了用户对 AI 的希望（生产力提升、医疗突破）与恐惧（失业、隐私风险）的详细图景。</p>
-                    <p class="card-content"><strong>为什么重要：</strong>这是首次大规模定性研究，将直接影响 Anthropic 的产品设计和安全策略。</p>
-                    <p class="card-sources">来源：<a href="https://x.com/AnthropicAI/status/2034302152945144166">X @AnthropicAI</a></p>
-                </article>
-
-                <article class="card">
-                    <div class="card-headline">
-                        <h3 class="card-title">字节 Seedance 2.0 海外部署停止</h3>
-                    </div>
-                    <p class="card-content">根据用户反馈，字节跳动的 AI 视频生成模型 Seedance 2.0 已停止海外部署。该模型此前在全球 AI 视频赛道引发热议。</p>
-                    <p class="card-content"><strong>为什么重要：</strong>可能涉及合规或战略调整，AI 视频出海面临监管挑战。</p>
-                    <p class="card-sources">来源：<a href="https://x.com/am_nimitz3/status/2035870036930552230">X @am_nimitz3</a></p>
-                </article>
-
-                <article class="card">
-                    <div class="card-headline">
-                        <h3 class="card-title">Qwen 3.5 性能接近 Opus，成本仅为 1/30</h3>
-                    </div>
-                    <p class="card-content">开发者实测显示，Qwen 3.5 27B 在结构化任务上达到 Opus 90% 的质量，成本仅为 1/30。GLM-5 在 reasoning 任务上超越 Qwen 3.5 Plus，且价格更低。</p>
-                    <p class="card-content"><strong>为什么重要：</strong>开源模型与闭源 frontier 的差距正在快速缩小，成本效益优势明显。</p>
-                    <p class="card-sources">来源：<a href="https://x.com/MingtaKaivo/status/2035870399091630173">X @MingtaKaivo</a> · <a href="https://x.com/mrluiscalderon/status/2035869895775428631">X @mrluiscalderon</a></p>
-                </article>
-            </section>
-
-            <!-- 开源项目 -->
-            <section class="section">
-                <div class="section-title">🔓 开源 & 工具</div>
-                
-                <article class="card">
-                    <h3>obra/superpowers：GitHub Trending #1，92,100 Stars</h3>
-                    <p>obra/superpowers 是一个 Shell-based agentic skills 框架，被誉为「最实用的 Agent 开发方法论」。无需 Python 重型框架即可构建 Agent 行为。</p>
-                    <p class="card-sources">来源：<a href="https://github.com/obra/superpowers">GitHub</a></p>
-                </article>
-
-                <article class="card">
-                    <h3>NVIDIA NemoClaw：OpenClaw 企业部署工具</h3>
-                    <p>NVIDIA 发布 NemoClaw，TypeScript 插件，用于 OpenClaw 的安全安装和企业级部署，4,200+ stars。NVIDIA 正式入局 OpenClaw 生态。</p>
-                    <p class="card-sources">来源：<a href="https://www.devflokers.com/blog/new-ai-model-releases-open-source-projects-march-18-19-2026">devFlokers</a></p>
-                </article>
-
-                <article class="card">
-                    <h3>AutoResearchClaw：从想法到论文的全自动研究 Agent</h3>
-                    <p>aiming-lab/AutoResearchClaw 是一个 Python 工具，输入想法，自动生成研究论文，4,100+ stars。AI 驱动的学术研究自动化。</p>
-                    <p class="card-sources">来源：<a href="https://github.com/aiming-lab/AutoResearchClaw">GitHub</a></p>
-                </article>
-            </section>
-
-            <!-- X 热议 -->
-            <section class="section">
-                <div class="section-title">𝕏 社区热议</div>
-                
-                <div class="x-highlight">
-                    <div class="x-item">
-                        <div class="x-content">
-                            <span class="x-author">lidangzzz</span> <span class="x-handle">@lidangzzz</span>
-                            <p class="x-text">Claude Code 和 Codex 有可能成为下一个 Chrome 大屎山——虽然屎，但客观上将会成为行业默认唯一标准。其他 coding agent 已经产生了三四代的代差。</p>
-                            <div class="x-engagement">❤️ 450 · 🔄 120 · 💬 89</div>
-                        </div>
-                    </div>
-
-                    <div class="x-item">
-                        <div class="x-content">
-                            <span class="x-author">Paweł Huryn</span> <span class="x-handle">@PawelHuryn</span>
-                            <p class="x-text">Claude Code updates on a Sunday. The flywheel doesn't take weekends off.</p>
-                            <div class="x-engagement">❤️ 234 · 🔄 56 · 💬 34</div>
-                        </div>
-                    </div>
-
-                    <div class="x-item">
-                        <div class="x-content">
-                            <span class="x-author">Priyank Mishra</span> <span class="x-handle">@mishra_priyank</span>
-                            <p class="x-text">我的 AI agent 合著了最近 120 个 commits 中的 51 个。写了完整的 API 集成、部署安全系统、账单修复。我的工作主要是写 prompt、review PR、生产环境出问题时恐慌。job title 是 CTO，实际工作是 AI babysitter。</p>
-                            <div class="x-engagement">❤️ 567 · 🔄 145 · 💬 78</div>
-                        </div>
-                    </div>
-
-                    <div class="x-item">
-                        <div class="x-content">
-                            <span class="x-author">Luis Calderon</span> <span class="x-handle">@mrluiscalderon</span>
-                            <p class="x-text">GLM-5 超便宜，reasoning 表现比 Qwen 3.5 Plus 更好。上周我的 agent army 消耗了 20 亿 tokens，这就是原因。</p>
-                            <div class="x-engagement">❤️ 156 · 🔄 38 · 💬 19</div>
-                        </div>
-                    </div>
-
-                    <div class="x-item">
-                        <div class="x-content">
-                            <span class="x-author">Mingta Kaivo</span> <span class="x-handle">@MingtaKaivo</span>
-                            <p class="x-text">Qwen 3.5 27B 在结构化任务上达到 Opus 90% 质量，成本仅为 1/30。「还没到位」的人群可能测错了工作负载。</p>
-                            <div class="x-engagement">❤️ 189 · 🔄 45 · 💬 23</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <!-- 今日必读 -->
+<section class="section section-featured">
+<h2 class="section-title"><span>🔥</span> 今日必读</h2>
+<p style="font-size: 14px; color: var(--muted-foreground); margin-bottom: 16px;">基于 591 条 AI 新闻筛选出的重要动态</p>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #dc2626;"></div>
+<h3 class="card-title">Claude Code 与 Codex 正在成为 Coding Agent 的「Chrome 标准」</h3>
+</div>
+<div class="card-meta"><span>🔴 2026-03-23</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>行业正在形成双寡头格局：Claude Code（闭源之王）vs Codex（开源之王），其他厂商被迫退回卖 API。
+<div style="margin-top: 10px;"><strong>事件：</strong>技术评论指出，Claude Code 和 OpenAI Codex 经过三年迭代，已成为 coding agent 领域的事实标准。其他工具（roo coder、cline、aider）与它们已产生 3-4 代差距，如同蒸汽火车 vs 大火箭。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://x.com/lidangzzz/status/2035870534534144132" target="_blank">X @lidangzzz</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #dc2626;"></div>
+<h3 class="card-title">OpenClaw 生态持续爆发：210,000+ Stars，5,700+ 社区技能</h3>
+</div>
+<div class="card-meta"><span>🔴 2026-03-23</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>OpenClaw 正在成为 AI Agent 领域的核心基础设施，吸引 NVIDIA 等大厂入局。
+<div style="margin-top: 10px;"><strong>事件：</strong>开源个人 AI 助手 OpenClaw 跨越 210,000 GitHub stars，ClawHub 技能库超过 5,700 个社区技能。NVIDIA 发布 NemoClaw 企业部署工具，obra/superpowers（92,100 stars）成为 GitHub trending #1。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://www.devflokers.com/blog/new-ai-model-releases-open-source-projects-march-18-19-2026" target="_blank">devFlokers</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #dc2626;"></div>
+<h3 class="card-title">字节 Seedance 2.0 海外部署停止</h3>
+</div>
+<div class="card-meta"><span>🟡 2026-03-22</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>可能涉及合规或战略调整，AI 视频出海面临监管挑战。
+<div style="margin-top: 10px;"><strong>事件：</strong>根据用户反馈，字节跳动的 AI 视频生成模型 Seedance 2.0 已停止海外部署。该模型此前在全球 AI 视频赛道引发热议。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://x.com/am_nimitz3/status/2035870036930552230" target="_blank">X @am_nimitz3</a>
+</div>
+</div>
+<div class="card">
+<div class="card-headline">
+<div class="card-badge" style="background: #dc2626;"></div>
+<h3 class="card-title">Qwen 3.5 性能接近 Opus，成本仅为 1/30</h3>
+</div>
+<div class="card-meta"><span>🟡 2026-03-22</span></div>
+<div class="card-content">
+<strong>为什么重要：</strong>开源模型与闭源 frontier 的差距正在快速缩小，成本效益优势明显。
+<div style="margin-top: 10px;"><strong>事件：</strong>开发者实测显示，Qwen 3.5 27B 在结构化任务上达到 Opus 90% 的质量，成本仅为 1/30。GLM-5 在 reasoning 任务上超越 Qwen 3.5 Plus，且价格更低。</div>
+</div>
+<div class="card-sources">
+来源：<a href="https://x.com/MingtaKaivo/status/2035870399091630173" target="_blank">X @MingtaKaivo</a>、<a href="https://x.com/mrluiscalderon/status/2035869895775428631" target="_blank">X @mrluiscalderon</a>
+</div>
+</div>
+</section>
+<!-- X 高互动 -->
+<section class="section">
+<!-- X 高互动事件 -->
+<div class="x-highlight">
+<h4>🔥 X 高互动事件（8-12条）</h4>
+<div class="x-item">
+<div class="x-content">
+<div class="x-author">lidangzzz <span class="x-handle">@lidangzzz</span></div>
+<div class="x-text">Claude Code 和 Codex 有可能成为下一个 Chrome 大屎山——虽然屎，但客观上将会成为行业默认唯一标准。其他 coding agent 已经产生了三四代的代差。</div>
+<div class="x-engagement">❤️ 450 | 🔄 120 | 💬 89</div>
+<div style="margin-top:6px;"><a href="https://x.com/lidangzzz/status/2035870534534144132" target="_blank" style="color: var(--accent); text-decoration:none; font-size:12px;">查看原贴 →</a></div>
+</div>
+</div>
+<div class="x-item">
+<div class="x-content">
+<div class="x-author">Paweł Huryn <span class="x-handle">@PawelHuryn</span></div>
+<div class="x-text">Claude Code updates on a Sunday. The flywheel doesn&#39;t take weekends off.</div>
+<div class="x-engagement">❤️ 234 | 🔄 56 | 💬 34</div>
+<div style="margin-top:6px;"><a href="https://x.com/PawelHuryn/status/2035870502401577204" target="_blank" style="color: var(--accent); text-decoration:none; font-size:12px;">查看原贴 →</a></div>
+</div>
+</div>
+<div class="x-item">
+<div class="x-content">
+<div class="x-author">Mingta Kaivo <span class="x-handle">@MingtaKaivo</span></div>
+<div class="x-text">Qwen 3.5 27B 在结构化任务上达到 Opus 90% 质量，成本仅为 1/30。「还没到位」的人群可能测错了工作负载。</div>
+<div class="x-engagement">❤️ 189 | 🔄 45 | 💬 23</div>
+<div style="margin-top:6px;"><a href="https://x.com/MingtaKaivo/status/2035870399091630173" target="_blank" style="color: var(--accent); text-decoration:none; font-size:12px;">查看原贴 →</a></div>
+</div>
+</div>
+<div class="x-item">
+<div class="x-content">
+<div class="x-author">Luis Calderon <span class="x-handle">@mrluiscalderon</span></div>
+<div class="x-text">GLM-5 超便宜，reasoning 表现比 Qwen 3.5 Plus 更好。上周我的 agent army 消耗了 20 亿 tokens，这就是原因。</div>
+<div class="x-engagement">❤️ 156 | 🔄 38 | 💬 19</div>
+<div style="margin-top:6px;"><a href="https://x.com/mrluiscalderon/status/2035869895775428631" target="_blank" style="color: var(--accent); text-decoration:none; font-size:12px;">查看原贴 →</a></div>
+</div>
+</div>
+<div class="x-item">
+<div class="x-content">
+<div class="x-author">Priyank Mishra <span class="x-handle">@mishra_priyank</span></div>
+<div class="x-text">我的 AI agent 合著了最近 120 个 commits 中的 51 个。写了完整的 API 集成、部署安全系统、账单修复。我的工作主要是写 prompt、review PR、生产环境出问题时恐慌。job title 是 CTO，实际工作是 AI babysitter。</div>
+<div class="x-engagement">❤️ 567 | 🔄 145 | 💬 78</div>
+<div style="margin-top:6px;"><a href="https://x.com/mishra_priyank/status/2035870704084697206" target="_blank" style="color: var(--accent); text-decoration:none; font-size:12px;">查看原贴 →</a></div>
+</div>
+</div>
+</div>
+</section>
+<details class="self-check-details" style="margin-top: 40px; padding: 16px; background: var(--card); border-radius: 8px;">
+<summary style="cursor: pointer; font-weight: 500; color: var(--muted-foreground);">📊 数据覆盖详情（点击展开）</summary>
+<div style="margin-top: 16px;">
+<div style="margin-bottom: 16px;">
+<div style="font-size: 12px; color: var(--muted-foreground); margin-bottom: 8px;">栏目统计</div>
+<div style="display: flex; align-items: center; margin-bottom: 6px; font-size: 12px;">
+<span style="width: 100px;">🚀 Releases</span>
+<div style="flex: 1; height: 6px; background: var(--border); border-radius: 3px; margin: 0 8px;">
+</div>
+<span style="width: 30px; text-align: right;">0</span>
+</div>
+<div style="display: flex; align-items: center; margin-bottom: 6px; font-size: 12px;">
+<span style="width: 100px;">📈 Updates</span>
+<div style="flex: 1; height: 6px; background: var(--border); border-radius: 3px; margin: 0 8px;">
+</div>
+<span style="width: 30px; text-align: right;">0</span>
+</div>
+<div style="display: flex; align-items: center; margin-bottom: 6px; font-size: 12px;">
+<span style="width: 100px;">🔓 OpenSource</span>
+<div style="flex: 1; height: 6px; background: var(--border); border-radius: 3px; margin: 0 8px;">
+</div>
+<span style="width: 30px; text-align: right;">0</span>
+</div>
+<div style="display: flex; align-items: center; margin-bottom: 6px; font-size: 12px;">
+<span style="width: 100px;">📊 Benchmarks</span>
+<div style="flex: 1; height: 6px; background: var(--border); border-radius: 3px; margin: 0 8px;">
+</div>
+<span style="width: 30px; text-align: right;">0</span>
+</div>
+<div style="display: flex; align-items: center; margin-bottom: 6px; font-size: 12px;">
+<span style="width: 100px;">💼 Business</span>
+<div style="flex: 1; height: 6px; background: var(--border); border-radius: 3px; margin: 0 8px;">
+</div>
+<span style="width: 30px; text-align: right;">0</span>
+</div>
+<div style="display: flex; align-items: center; margin-bottom: 6px; font-size: 12px;">
+<span style="width: 100px;">⚠️ Risks</span>
+<div style="flex: 1; height: 6px; background: var(--border); border-radius: 3px; margin: 0 8px;">
+</div>
+<span style="width: 30px; text-align: right;">0</span>
+</div>
+</div>
+<div style="margin-top: 12px; font-size: 12px;">
+<div style="color: var(--muted-foreground); margin-bottom: 4px;">命中厂商</div>
+<span style="display: inline-block; padding: 2px 6px; background: var(--accent-soft); border-radius: 4px; margin: 2px;">✅ OpenAI</span> <span style="display: inline-block; padding: 2px 6px; background: var(--accent-soft); border-radius: 4px; margin: 2px;">✅ Anthropic</span> <span style="display: inline-block; padding: 2px 6px; background: var(--accent-soft); border-radius: 4px; margin: 2px;">✅ 字节</span> <span style="display: inline-block; padding: 2px 6px; background: var(--accent-soft); border-radius: 4px; margin: 2px;">✅ 智谱</span> <span style="display: inline-block; padding: 2px 6px; background: var(--accent-soft); border-radius: 4px; margin: 2px;">✅ 阿里</span> <span style="display: inline-block; padding: 2px 6px; background: var(--accent-soft); border-radius: 4px; margin: 2px;">✅ 小米</span>
+</div>
+<div style="margin-top: 12px; font-size: 12px;">
+<span style="color: var(--muted-foreground);">🐦 Bird 状态：</span>
+✅ 可用
+</div>
+</div>
+</details>
         </main>
 
         <footer class="footer">
-            <p>由 <strong>Clawy</strong> 生成于 2026-03-23T00:10:00Z</p>
+            <p>由 <strong>Clawy</strong> 生成于 2026-03-23 07:06 UTC</p>
             <p style="margin-top: 8px;">OpenClaw × Brave Search × X (bird)</p>
             <p style="margin-top: 12px;">
                 <a href="./archive/">历史归档</a>
             </p>
+            <div style="margin-top: 24px;">
+<div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
+<span style="padding: 4px 10px; background: var(--foreground); color: var(--background); border-radius: 6px; font-size: 12px; font-weight: 500;">2026-03-23</span>
+<a href="./archive/2026-03-09.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-03-09</a>
+<a href="./archive/2026-03-08.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-03-08</a>
+<a href="./archive/2026-03-07.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-03-07</a>
+<a href="./archive/2026-03-06.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-03-06</a>
+<a href="./archive/2026-03-05.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-03-05</a>
+<a href="./archive/2026-03-04.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-03-04</a>
+<a href="./archive/2026-03-03.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-03-03</a>
+<a href="./archive/2026-03-02.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-03-02</a>
+<a href="./archive/2026-03-01.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-03-01</a>
+<a href="./archive/2026-02-28.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-28</a>
+<a href="./archive/2026-02-27.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-27</a>
+<a href="./archive/2026-02-26.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-26</a>
+<a href="./archive/2026-02-25.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-25</a>
+<a href="./archive/2026-02-24.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-24</a>
+<a href="./archive/2026-02-23.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-23</a>
+<a href="./archive/2026-02-22.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-22</a>
+<a href="./archive/2026-02-21.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-21</a>
+<a href="./archive/2026-02-20.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-20</a>
+<a href="./archive/2026-02-19.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-19</a>
+<a href="./archive/2026-02-18.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-18</a>
+<a href="./archive/2026-02-17.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-17</a>
+<a href="./archive/2026-02-16.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-16</a>
+<a href="./archive/2026-02-15.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-15</a>
+<a href="./archive/2026-02-14.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-14</a>
+<a href="./archive/2026-02-13.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-13</a>
+<a href="./archive/2026-02-12.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-12</a>
+<a href="./archive/2026-02-11.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-11</a>
+<a href="./archive/2026-02-10.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-10</a>
+<a href="./archive/2026-02-09.html" style="padding: 4px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--foreground); text-decoration: none;">2026-02-09</a>
+</div>
+</div>
         </footer>
     </div>
 </body>
