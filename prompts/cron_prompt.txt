@@ -49,7 +49,7 @@
 export PATH="/root/.local/bin:$PATH"
 bird check && bird whoami
 ```
-- 如果成功：记录 bird_status.available = true，后续可使用 bird 搜索 X 内容
+- 如果成功：记录 bird_status.available = true，后续优先使用 bird 搜索 / 读取 X 内容
 - 如果失败：记录 bird_status.available = false，降级为仅用 web_search
 
 ### 0-B) 预读信息源（节省搜索时间）
@@ -169,7 +169,14 @@ bird check && bird whoami
    - 若新闻涉及产品问题、口碑危机、争议事件，必须在 what 中明确说明
    - 不得回避或美化负面信息
 
-## 3) X（bird）策略：关键词组 + watchlist 双轨 + 24h 过滤（带 fallback）
+## 3) X（bird）策略：Bird 优先，浏览器仅兜底；关键词组 + watchlist 双轨 + 24h 过滤（带 fallback）
+
+**总原则（新增，必须执行）：**
+- 只要 `bird check && bird whoami` 成功，X/Twitter 数据链路就视为**可用**
+- **优先级固定：Bird > 浏览器抓取 > 普通 web_search**
+- ⛔ 不得在 Bird 可用时写出“无法直接浏览 Twitter/X，所以只能依赖 web 搜索”这类表述
+- 浏览器失败只代表**浏览器链路失败**，不代表 X 整体不可读
+- 若 Bird 可用但未使用，必须在 `self_check.bird_status.fallback` 中明确写原因
 
 2.1 关键词组（每组取最新 N 条，建议 N=30）
 英文 4 组：
@@ -186,6 +193,7 @@ bird check && bird whoami
 
 2.2 watchlist（近24h）
 - @OpenAI @sama @AnthropicAI @GoogleDeepMind @GeminiApp @MetaAI（+你的增补清单）
+- 若 Bird 支持 timeline/home/following/bookmarks 能力，优先补抓这些流中的高互动条目
 
 2.3 近24h过滤 & fallback（bird 时间戳不可靠时必须用）
 - 优先：若支持 since/until 等 time-bounded query → 用它
@@ -228,6 +236,7 @@ bird check && bird whoami
 - ⛔ 非 X 来源（如新闻网站、博客、官方公告页）不得放入 x_highlights
 - 非 X 来源的精彩引用应放入对应 section 条目的 sources 数组
 - 每条必须有 likes > 0，likes=0 的推文不得入报
+- 若 Bird 可用，x_highlights 默认来源应为：`bird search` / `bird home --following` / `bird bookmarks` / `bird user-tweets` 中至少一种
 
 **内容处理（必须执行）：**
 对于每条选中的 X 推文，必须：
@@ -303,8 +312,8 @@ self_check 必须包含以下子字段（均为必填）：
   "bird_status": {
     "available": false,
     "cookies_found": false,
-    "fallback": "Web 搜索补足",
-    "x_highlights_source": "说明来源"
+    "fallback": "Web 搜索补足 / 浏览器兜底 / 未使用 Bird 的原因",
+    "x_highlights_source": "必须明确写明来源：bird search / bird following / bird bookmarks / bird user-tweets / browser / web_search"
   },
   "dedupe_keys": [
     { "key": "xxx", "entity": "xxx", "product": "xxx", "event_type": "xxx", "version_or_date": "xxx", "sources_merged": 2 }
@@ -361,3 +370,15 @@ cron delivery 会自动推送任务结果到 telegram:-1003886075368:topic:25，
 - 不要调用 message 工具
 - 不要调用 cron.run 触发其他 job
 - 日报生成成功后，直接结束，让 cron delivery 自动推送
+
+## 13) 数据质量说明文案（新增，避免误报）
+
+若浏览器链路失败但 Bird 可用，允许这样写：
+- `浏览器方式未能抓取 X 的 Feed/Bookmarks/Following，但已改用 Bird 补抓，X 数据链路可用。`
+
+⛔ 禁止这样写：
+- `无法直接浏览 Twitter/X，内容全部来自 web 搜索交叉验证。`
+
+除非以下两个条件同时满足，才允许宣称 X 不可用：
+1. `bird check` 失败
+2. 浏览器链路也失败
