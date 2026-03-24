@@ -1,55 +1,107 @@
 {
-  "date": "2026-03-23",
+  "date": "2026-03-24",
   "headlines": [
     {
-      "title": "Claude Code 与 Codex 正在成为 Coding Agent 的「Chrome 标准」",
+      "title": "OpenAI IPO在即：估值7300亿美元，将「对微软依赖」列为风险",
       "time": "2026-03-23",
-      "what": "技术评论指出，Claude Code 和 OpenAI Codex 经过三年迭代，已成为 coding agent 领域的事实标准。其他工具（roo coder、cline、aider）与它们已产生 3-4 代差距，如同蒸汽火车 vs 大火箭。",
-      "why": "行业正在形成双寡头格局：Claude Code（闭源之王）vs Codex（开源之王），其他厂商被迫退回卖 API。",
+      "what": "OpenAI发布投资者文件，坦诚与微软的紧密关系可能构成业务风险。公司上月从亚马逊、英伟达、软银等获得1100亿美元融资，估值达7300亿美元。ChatGPT周活跃用户已达9亿，2025年营收131亿美元。",
+      "why": "OpenAI正筹备最快今年公开上市，其风险披露显示正在努力实现合作伙伴多元化，减少对微软的单一依赖。",
       "sources": [
         {
-          "name": "X @lidangzzz",
-          "url": "https://x.com/lidangzzz/status/2035870534534144132"
-        }
-      ]
-    },
-    {
-      "title": "OpenClaw 生态持续爆发：210,000+ Stars，5,700+ 社区技能",
-      "time": "2026-03-23",
-      "what": "开源个人 AI 助手 OpenClaw 跨越 210,000 GitHub stars，ClawHub 技能库超过 5,700 个社区技能。NVIDIA 发布 NemoClaw 企业部署工具，obra/superpowers（92,100 stars）成为 GitHub trending #1。",
-      "why": "OpenClaw 正在成为 AI Agent 领域的核心基础设施，吸引 NVIDIA 等大厂入局。",
-      "sources": [
-        {
-          "name": "devFlokers",
-          "url": "https://www.devflokers.com/blog/new-ai-model-releases-open-source-projects-march-18-19-2026"
-        }
-      ]
-    },
-    {
-      "title": "字节 Seedance 2.0 海外部署停止",
-      "time": "2026-03-22",
-      "what": "根据用户反馈，字节跳动的 AI 视频生成模型 Seedance 2.0 已停止海外部署。该模型此前在全球 AI 视频赛道引发热议。",
-      "why": "可能涉及合规或战略调整，AI 视频出海面临监管挑战。",
-      "sources": [
-        {
-          "name": "X @am_nimitz3",
-          "url": "https://x.com/am_nimitz3/status/2035870036930552230"
-        }
-      ]
-    },
-    {
-      "title": "Qwen 3.5 性能接近 Opus，成本仅为 1/30",
-      "time": "2026-03-22",
-      "what": "开发者实测显示，Qwen 3.5 27B 在结构化任务上达到 Opus 90% 的质量，成本仅为 1/30。GLM-5 在 reasoning 任务上超越 Qwen 3.5 Plus，且价格更低。",
-      "why": "开源模型与闭源 frontier 的差距正在快速缩小，成本效益优势明显。",
-      "sources": [
-        {
-          "name": "X @MingtaKaivo",
-          "url": "https://x.com/MingtaKaivo/status/2035870399091630173"
+          "name": "IT之家",
+          "url": "https://www.ithome.com/0/931/929.htm"
         },
         {
-          "name": "X @mrluiscalderon",
-          "url": "https://x.com/mrluiscalderon/status/2035869895775428631"
+          "name": "36氪",
+          "url": "https://36kr.com/newsflashes/3736139329241095"
+        }
+      ]
+    },
+    {
+      "title": "OpenAI与Helion洽谈聚变能源合作，奥尔特曼辞去董事长避嫌",
+      "time": "2026-03-23",
+      "what": "OpenAI CEO山姆·奥尔特曼确认将辞去聚变能源初创公司Helion董事长职务，因Helion正与OpenAI探索大规模合作。谈判聚焦OpenAI在2030年获5吉瓦电力，2035年扩至50吉瓦。",
+      "why": "AI算力需求激增推动科技巨头寻求稳定清洁能源供应，核聚变成为长期解决方案的关键选项。",
+      "sources": [
+        {
+          "name": "36氪",
+          "url": "https://36kr.com/newsflashes/3736152608194819"
+        }
+      ]
+    },
+    {
+      "title": "苹果WWDC26定档6月9日：iOS 27迎「雪豹式」优化，AI版Siri将登场",
+      "time": "2026-03-23",
+      "what": "苹果官宣6月9-12日举办WWDC26。iOS 27将专注底层性能优化（类似Mac OS X Snow Leopard策略），同时推出代号为「Campos」的全新Siri聊天机器人，采用Gemini基础模型，直接与ChatGPT竞争。",
+      "why": "苹果AI战略进入实质落地阶段，全新CoreAI框架将取代CoreML，标志着苹果在生成式AI领域的全面发力。",
+      "sources": [
+        {
+          "name": "IT之家",
+          "url": "https://www.ithome.com/0/931/934.htm"
+        },
+        {
+          "name": "36氪",
+          "url": "https://36kr.com/newsflashes/3736129083162625"
+        }
+      ]
+    },
+    {
+      "title": "汇丰任命首位首席AI官，银行业AI转型加速",
+      "time": "2026-03-23",
+      "what": "汇丰控股宣布任命David Rice为首位首席人工智能官，4月1日生效。Rice此前担任企业及机构银行业务首席运营官，新职位旨在为内部AI应用提供明确领导。",
+      "why": "传统金融机构正加速AI人才布局，首席AI官成为大型银行标配，标志着金融业AI转型进入深水区。",
+      "sources": [
+        {
+          "name": "36氪",
+          "url": "https://36kr.com/newsflashes/3736145949032706"
+        }
+      ]
+    },
+    {
+      "title": "iPhone 17 Pro演示运行400B参数大模型，端侧AI再突破",
+      "time": "2026-03-23",
+      "what": "开发者演示显示iPhone 17 Pro可本地运行400B参数大语言模型，采用ANEMLL框架优化。这标志着移动设备端侧AI能力的大幅跃升。",
+      "why": "端侧大模型能力突破将改变AI应用分发模式，降低云端依赖，提升隐私保护和响应速度。",
+      "sources": [
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=47490070"
+        }
+      ]
+    },
+    {
+      "title": "字节开源Deer-Flow：支持分钟到小时级任务的SuperAgent框架",
+      "time": "2026-03-23",
+      "what": "字节跳动开源Deer-Flow，一款SuperAgent harness框架，支持研究、编码、创作等长周期任务（分钟到小时级）。集成沙盒、记忆、工具、技能、子代理和消息网关。",
+      "why": "字节在AI Agent基础设施领域持续发力，与OpenClaw生态形成互补，降低长周期任务自动化门槛。",
+      "sources": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/bytedance/deer-flow"
+        }
+      ]
+    },
+    {
+      "title": "我国首个新型储能领域AI数据分析平台投用",
+      "time": "2026-03-23",
+      "what": "我国首个新型储能领域AI数据分析平台正式投用，可远程发现隐患并自动生成运维方案，推动储能行业智能化升级。",
+      "why": "AI与新能源基础设施深度融合，助力双碳目标实现，储能智能化成为能源转型的关键支撑。",
+      "sources": [
+        {
+          "name": "IT之家",
+          "url": "https://www.ithome.com/0/931/933.htm"
+        }
+      ]
+    },
+    {
+      "title": "Nous Research开源Hermes Agent：可自主进化的个人AI助手",
+      "time": "2026-03-23",
+      "what": "Nous Research发布Hermes Agent，一款可随用户成长的个人AI助手框架。GitHub trending获919 stars今日增长，强调长期记忆和个性化适应。",
+      "why": "个人AI助手从通用工具向个性化、可进化方向演进，记忆和学习能力成为下一代Agent的核心竞争力。",
+      "sources": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/NousResearch/hermes-agent"
         }
       ]
     }
@@ -57,68 +109,101 @@
   "sections": {
     "releases": [],
     "updates": [],
-    "opensource": [],
+    "opensource": [
+      {
+        "title": "Deer-Flow：字节开源长周期任务Agent框架",
+        "time": "2026-03-23",
+        "what": "字节跳动开源Deer-Flow，支持分钟到小时级复杂任务的SuperAgent harness，集成沙盒、记忆、子代理等能力。",
+        "why": "填补长周期任务自动化基础设施空白。",
+        "sources": [
+          {
+            "name": "GitHub",
+            "url": "https://github.com/bytedance/deer-flow"
+          }
+        ]
+      },
+      {
+        "title": "Hermes Agent：可进化的个人AI助手",
+        "time": "2026-03-23",
+        "what": "Nous Research开源Hermes Agent，强调随用户成长的长期记忆和个性化适应能力。",
+        "why": "个人AI助手进入可进化时代。",
+        "sources": [
+          {
+            "name": "GitHub",
+            "url": "https://github.com/NousResearch/hermes-agent"
+          }
+        ]
+      },
+      {
+        "title": "TradingAgents：多智能体LLM金融交易框架",
+        "time": "2026-03-23",
+        "what": "TauricResearch开源TradingAgents，多智能体协作的金融交易框架，GitHub trending获2530 stars。",
+        "why": "AI Agent在金融交易场景的垂直应用。",
+        "sources": [
+          {
+            "name": "GitHub",
+            "url": "https://github.com/TauricResearch/TradingAgents"
+          }
+        ]
+      }
+    ],
     "benchmarks": [],
-    "business": [],
-    "risks": []
+    "business": [
+      {
+        "title": "OpenAI IPO估值达7300亿美元",
+        "time": "2026-03-23",
+        "what": "OpenAI向投资者披露文件显示估值7300亿美元，月内有望再获100亿美元承诺投资。",
+        "why": "可能是近年最大规模科技IPO之一。",
+        "sources": [
+          {
+            "name": "IT之家",
+            "url": "https://www.ithome.com/0/931/929.htm"
+          }
+        ]
+      },
+      {
+        "title": "汇丰任命首位首席AI官",
+        "time": "2026-03-23",
+        "what": "汇丰任命David Rice为首位首席人工智能官，4月1日生效。",
+        "why": "传统金融业AI人才竞争白热化。",
+        "sources": [
+          {
+            "name": "36氪",
+            "url": "https://36kr.com/newsflashes/3736145949032706"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      {
+        "title": "OpenAI披露对微软依赖为潜在业务风险",
+        "time": "2026-03-23",
+        "what": "OpenAI在投资者文件中将微软依赖列为主要风险，微软承担其融资与计算资源的相当大部分。",
+        "why": "AI巨头供应链集中度风险引发关注。",
+        "sources": [
+          {
+            "name": "IT之家",
+            "url": "https://www.ithome.com/0/931/929.htm"
+          }
+        ]
+      }
+    ]
   },
   "summary": {
     "bullets": [
-      "Claude Code 与 Codex 正在成为 Coding Agent 的「Chrome 标准」",
-      "OpenClaw 生态爆发：210K+ Stars，NVIDIA 入局",
-      "字节 Seedance 2.0 海外部署停止",
-      "Qwen 3.5 性能接近 Opus，成本仅为 1/30"
+      "OpenAI IPO在即：估值7300亿美元，将「对微软依赖」列为风险",
+      "OpenAI与Helion洽谈聚变能源合作，奥尔特曼辞去董事长避嫌",
+      "苹果WWDC26定档6月9日：iOS 27迎「雪豹式」优化，AI版Siri将登场",
+      "汇丰任命首位首席AI官，银行业AI转型加速",
+      "iPhone 17 Pro演示运行400B参数大模型，端侧AI再突破",
+      "字节开源Deer-Flow：支持分钟到小时级任务的SuperAgent框架",
+      "我国首个新型储能领域AI数据分析平台投用",
+      "Nous Research开源Hermes Agent：可自主进化的个人AI助手"
     ],
     "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-23.html"
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-24.html"
   },
-  "x_highlights": [
-    {
-      "author": "lidangzzz",
-      "handle": "@lidangzzz",
-      "text": "Claude Code 和 Codex 有可能成为下一个 Chrome 大屎山——虽然屎，但客观上将会成为行业默认唯一标准。其他 coding agent 已经产生了三四代的代差。",
-      "url": "https://x.com/lidangzzz/status/2035870534534144132",
-      "likes": 450,
-      "reposts": 120,
-      "replies": 89
-    },
-    {
-      "author": "Paweł Huryn",
-      "handle": "@PawelHuryn",
-      "text": "Claude Code updates on a Sunday. The flywheel doesn't take weekends off.",
-      "url": "https://x.com/PawelHuryn/status/2035870502401577204",
-      "likes": 234,
-      "reposts": 56,
-      "replies": 34
-    },
-    {
-      "author": "Mingta Kaivo",
-      "handle": "@MingtaKaivo",
-      "text": "Qwen 3.5 27B 在结构化任务上达到 Opus 90% 质量，成本仅为 1/30。「还没到位」的人群可能测错了工作负载。",
-      "url": "https://x.com/MingtaKaivo/status/2035870399091630173",
-      "likes": 189,
-      "reposts": 45,
-      "replies": 23
-    },
-    {
-      "author": "Luis Calderon",
-      "handle": "@mrluiscalderon",
-      "text": "GLM-5 超便宜，reasoning 表现比 Qwen 3.5 Plus 更好。上周我的 agent army 消耗了 20 亿 tokens，这就是原因。",
-      "url": "https://x.com/mrluiscalderon/status/2035869895775428631",
-      "likes": 156,
-      "reposts": 38,
-      "replies": 19
-    },
-    {
-      "author": "Priyank Mishra",
-      "handle": "@mishra_priyank",
-      "text": "我的 AI agent 合著了最近 120 个 commits 中的 51 个。写了完整的 API 集成、部署安全系统、账单修复。我的工作主要是写 prompt、review PR、生产环境出问题时恐慌。job title 是 CTO，实际工作是 AI babysitter。",
-      "url": "https://x.com/mishra_priyank/status/2035870704084697206",
-      "likes": 567,
-      "reposts": 145,
-      "replies": 78
-    }
-  ],
+  "x_highlights": [],
   "self_check": {
     "coverage_analysis": {
       "target_vendors": [
@@ -134,97 +219,97 @@
       ],
       "hit_vendors": [
         "OpenAI",
+        "字节"
+      ],
+      "missed_vendors": [
         "Anthropic",
-        "字节",
+        "Google",
+        "Meta",
         "智谱",
+        "月之暗面",
         "阿里",
         "小米"
       ],
-      "missed_vendors": [
-        "Google",
-        "Meta",
-        "月之暗面"
-      ],
-      "missed_reason": "近48h内 Google/Meta/月之暗面未发现重大新闻"
+      "missed_reason": "近48h内Anthropic/Google/Meta/智谱/月之暗面/阿里/小米未发现重大新闻"
     },
     "freshness_check": {
       "target_headlines": 8,
       "actual_headlines": 8,
       "supplement_searches_triggered": true,
-      "supplement_searches_count": 12,
+      "supplement_searches_count": 2,
       "rejected_over_48h": [],
-      "reason": "所有入选新闻均确认发布时间在48h内"
+      "reason": "所有入选新闻均确认发布时间在48h内（2026-03-23）"
     },
     "bird_status": {
-      "available": true,
-      "cookies_found": true,
-      "fallback": "未降级",
-      "x_highlights_source": "bird search + web 验证"
+      "available": false,
+      "cookies_found": false,
+      "fallback": "使用web_fetch和news-radar数据源",
+      "x_highlights_source": "未使用bird"
     },
     "dedupe_keys": [
       {
-        "key": "mimo-v2-pro-release",
-        "entity": "小米",
-        "product": "MiMo-V2-Pro",
-        "event_type": "release",
-        "version_or_date": "2026-03-18",
-        "sources_merged": 2
-      },
-      {
-        "key": "gpt54-mini-free",
+        "key": "openai-ipo-filing",
         "entity": "OpenAI",
-        "product": "GPT-5.4 mini",
-        "event_type": "release",
-        "version_or_date": "2026-03-17",
-        "sources_merged": 1
-      },
-      {
-        "key": "glm5-opensource",
-        "entity": "智谱",
-        "product": "GLM-5",
-        "event_type": "opensource",
-        "version_or_date": "2026-03-14",
-        "sources_merged": 1
-      },
-      {
-        "key": "anthropic-survey",
-        "entity": "Anthropic",
-        "product": "调研",
-        "event_type": "research",
-        "version_or_date": "2026-03-18",
-        "sources_merged": 1
-      },
-      {
-        "key": "claude-code-codex-standard",
-        "entity": "行业",
-        "product": "Coding Agent",
-        "event_type": "trend",
+        "product": "IPO",
+        "event_type": "business",
         "version_or_date": "2026-03-23",
-        "sources_merged": 1
-      },
-      {
-        "key": "openclaw-ecosystem",
-        "entity": "OpenClaw",
-        "product": "生态",
-        "event_type": "growth",
-        "version_or_date": "2026-03-23",
-        "sources_merged": 1
-      },
-      {
-        "key": "seedance-overseas-stop",
-        "entity": "字节",
-        "product": "Seedance 2.0",
-        "event_type": "update",
-        "version_or_date": "2026-03-22",
-        "sources_merged": 1
-      },
-      {
-        "key": "qwen35-cost-efficiency",
-        "entity": "阿里",
-        "product": "Qwen 3.5",
-        "event_type": "benchmark",
-        "version_or_date": "2026-03-22",
         "sources_merged": 2
+      },
+      {
+        "key": "openai-helion-partnership",
+        "entity": "OpenAI",
+        "product": "Helion",
+        "event_type": "partnership",
+        "version_or_date": "2026-03-23",
+        "sources_merged": 1
+      },
+      {
+        "key": "apple-wwdc26-announcement",
+        "entity": "Apple",
+        "product": "WWDC26",
+        "event_type": "event",
+        "version_or_date": "2026-03-23",
+        "sources_merged": 2
+      },
+      {
+        "key": "hsbc-chief-ai-officer",
+        "entity": "HSBC",
+        "product": "Chief AI Officer",
+        "event_type": "appointment",
+        "version_or_date": "2026-03-23",
+        "sources_merged": 1
+      },
+      {
+        "key": "iphone-17-pro-400b-llm",
+        "entity": "Apple",
+        "product": "iPhone 17 Pro",
+        "event_type": "demo",
+        "version_or_date": "2026-03-23",
+        "sources_merged": 1
+      },
+      {
+        "key": "bytedance-deer-flow",
+        "entity": "ByteDance",
+        "product": "Deer-Flow",
+        "event_type": "opensource",
+        "version_or_date": "2026-03-23",
+        "sources_merged": 1
+      },
+      {
+        "key": "china-energy-storage-ai-platform",
+        "entity": "China",
+        "product": "Energy Storage AI",
+        "event_type": "release",
+        "version_or_date": "2026-03-23",
+        "sources_merged": 1
+      },
+      {
+        "key": "nous-hermes-agent",
+        "entity": "Nous Research",
+        "product": "Hermes Agent",
+        "event_type": "opensource",
+        "version_or_date": "2026-03-23",
+        "sources_merged": 1
       }
     ],
     "rejected_entries": []

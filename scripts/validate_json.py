@@ -66,12 +66,12 @@ def validate_item(it: dict, ctx: str):
     must_str(it, "what", ctx)
     must_str(it, "why", ctx)
 
-    # Block if time is older than 48h (prompt constraint)
+    # Block if time is older than 72h (prompt constraint)
     try:
         dt = datetime.strptime(time_str.strip(), "%Y-%m-%d")
-        cutoff = datetime.now(timezone.utc) - timedelta(hours=48)
+        cutoff = datetime.now(timezone.utc) - timedelta(hours=72)
         if dt.replace(tzinfo=timezone.utc) < cutoff:
-            die(f"{ctx} time '{time_str}' is older than 48h — must be filtered out before submission")
+            die(f"{ctx} time '{time_str}' is older than 72h — must be filtered out before submission")
     except ValueError:
         pass  # non-standard date format, skip check
 

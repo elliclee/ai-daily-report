@@ -6,8 +6,8 @@
       "enabled": true,
       "config": {
         "filter": "top",
-        "min_score": 200,
-        "limit": 10
+        "min_score": 150,
+        "limit": 12
       }
     },
     {
@@ -17,14 +17,42 @@
       "config": {
         "language": "python",
         "since": "daily",
+        "limit": 8
+      }
+    },
+    {
+      "id": "github-trending-typescript",
+      "type": "github_trending",
+      "enabled": true,
+      "config": {
+        "language": "typescript",
+        "since": "daily",
+        "limit": 5
+      }
+    },
+    {
+      "id": "producthunt-ai",
+      "type": "rss",
+      "enabled": true,
+      "config": {
+        "url": "https://www.producthunt.com/topics/artificial-intelligence/rss",
+        "limit": 8
+      }
+    },
+    {
+      "id": "google-ai-blog",
+      "type": "rss",
+      "enabled": true,
+      "config": {
+        "url": "https://ai.googleblog.com/feeds/posts/default",
         "limit": 5
       }
     }
   ],
-  "_comment": "Twitter sources are managed separately via bird CLI. Reddit requires API key.",
+  "_comment": "Twitter sources via bird CLI. Reddit r/LocalLLaMA needs OAuth.",
   "_disabled": {
-    "reddit-localllama": "Reddit blocks unauthed requests",
-    "openai-blog": "RSS redirects, needs handling",
-    "anthropic-blog": "No public RSS"
+    "reddit-localllama": "Reddit blocks unauthed requests, needs OAuth setup",
+    "openai-blog": "RSS at openai.com/blog/rss.xml (redirect handling required)",
+    "anthropic-blog": "No public RSS feed available"
   }
 }
