@@ -1,317 +1,316 @@
 {
-  "date": "2026-03-24",
+  "generated_at": "2026-03-25T00:35:00Z",
+  "date": "2026-03-25",
   "headlines": [
     {
-      "title": "OpenAI IPO在即：估值7300亿美元，将「对微软依赖」列为风险",
-      "time": "2026-03-23",
-      "what": "OpenAI发布投资者文件，坦诚与微软的紧密关系可能构成业务风险。公司上月从亚马逊、英伟达、软银等获得1100亿美元融资，估值达7300亿美元。ChatGPT周活跃用户已达9亿，2025年营收131亿美元。",
-      "why": "OpenAI正筹备最快今年公开上市，其风险披露显示正在努力实现合作伙伴多元化，减少对微软的单一依赖。",
+      "title": "OpenAI终止Sora视频生成服务",
+      "time": "2026-03-24",
+      "what": "OpenAI宣布关闭其AI视频生成应用Sora，未来将把计算资源转向机器人技术和'世界模拟'研究。",
+      "why": "这一决定标志着OpenAI战略重心从消费级视频生成转向企业级AI Agent和机器人领域，同时反映出视频生成业务的高成本压力。",
       "sources": [
-        {
-          "name": "IT之家",
-          "url": "https://www.ithome.com/0/931/929.htm"
-        },
-        {
-          "name": "36氪",
-          "url": "https://36kr.com/newsflashes/3736139329241095"
-        }
+        {"name": "Sora Official", "url": "https://x.com/soraofficialapp/status/2036546752535470382"},
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/23/openai-shuts-down-sora-video-generation-app/"}
       ]
     },
     {
-      "title": "OpenAI与Helion洽谈聚变能源合作，奥尔特曼辞去董事长避嫌",
+      "title": "Anthropic推出Claude Computer Use功能",
       "time": "2026-03-23",
-      "what": "OpenAI CEO山姆·奥尔特曼确认将辞去聚变能源初创公司Helion董事长职务，因Helion正与OpenAI探索大规模合作。谈判聚焦OpenAI在2030年获5吉瓦电力，2035年扩至50吉瓦。",
-      "why": "AI算力需求激增推动科技巨头寻求稳定清洁能源供应，核聚变成为长期解决方案的关键选项。",
+      "what": "Anthropic为Claude Code和Claude Cowork推出计算机使用功能，AI可直接操作macOS系统、打开应用、浏览网页、填写表格。",
+      "why": "这是AI Agent能力的重要突破，使Claude从对话助手进化为能实际执行任务的数字助手，目前向Pro和Max订阅者开放研究预览。",
       "sources": [
-        {
-          "name": "36氪",
-          "url": "https://36kr.com/newsflashes/3736152608194819"
-        }
+        {"name": "Claude", "url": "https://x.com/claudeai/status/2036195789601374705"},
+        {"name": "Engadget", "url": "https://www.engadget.com/ai/claude-code-and-cowork-can-now-use-your-computer-210000126.html"}
       ]
     },
     {
-      "title": "苹果WWDC26定档6月9日：iOS 27迎「雪豹式」优化，AI版Siri将登场",
+      "title": "苹果WWDC 2026定档6月8日，承诺AI重大突破",
       "time": "2026-03-23",
-      "what": "苹果官宣6月9-12日举办WWDC26。iOS 27将专注底层性能优化（类似Mac OS X Snow Leopard策略），同时推出代号为「Campos」的全新Siri聊天机器人，采用Gemini基础模型，直接与ChatGPT竞争。",
-      "why": "苹果AI战略进入实质落地阶段，全新CoreAI框架将取代CoreML，标志着苹果在生成式AI领域的全面发力。",
+      "what": "苹果宣布2026年全球开发者大会将于6月8日至12日举行，明确表示将展示'AI advancements'，包括新一代Siri。",
+      "why": "这被视为苹果在AI领域'卷土重来'的关键机会，预计将发布与Google Gemini合作的新AI功能，以及更智能的Siri语音助手。",
       "sources": [
-        {
-          "name": "IT之家",
-          "url": "https://www.ithome.com/0/931/934.htm"
-        },
-        {
-          "name": "36氪",
-          "url": "https://36kr.com/newsflashes/3736129083162625"
-        }
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/23/apple-wwdc-june-8-12-ai-advancements-siri-developers-conference/"},
+        {"name": "Apple", "url": "https://www.apple.com/newsroom/2026/03/apples-worldwide-developers-conference-returns-the-week-of-june-8/"}
       ]
     },
     {
-      "title": "汇丰任命首位首席AI官，银行业AI转型加速",
+      "title": "英伟达CEO黄仁勋：'我认为我们已经实现了AGI'",
       "time": "2026-03-23",
-      "what": "汇丰控股宣布任命David Rice为首位首席人工智能官，4月1日生效。Rice此前担任企业及机构银行业务首席运营官，新职位旨在为内部AI应用提供明确领导。",
-      "why": "传统金融机构正加速AI人才布局，首席AI官成为大型银行标配，标志着金融业AI转型进入深水区。",
+      "what": "Jensen Huang在Lex Fridman播客中表示AGI已经实现，但随后补充说AI代理独立创建成功公司的概率仍为零。",
+      "why": "这一表态引发业界热议，反映出科技领袖对AGI定义的分歧，同时Huang特别提到了OpenClaw等开源AI代理平台的成功。",
       "sources": [
-        {
-          "name": "36氪",
-          "url": "https://36kr.com/newsflashes/3736145949032706"
-        }
+        {"name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/899086/jensen-huang-nvidia-agi"},
+        {"name": "Lex Fridman", "url": "https://lexfridman.com/jensen-huang/"}
       ]
     },
     {
-      "title": "iPhone 17 Pro演示运行400B参数大模型，端侧AI再突破",
-      "time": "2026-03-23",
-      "what": "开发者演示显示iPhone 17 Pro可本地运行400B参数大语言模型，采用ANEMLL框架优化。这标志着移动设备端侧AI能力的大幅跃升。",
-      "why": "端侧大模型能力突破将改变AI应用分发模式，降低云端依赖，提升隐私保护和响应速度。",
+      "title": "Meta收购AI初创公司Dreamer核心团队",
+      "time": "2026-03-24",
+      "what": "Meta通过人才收购(acqui-hire)方式将Dreamer AI的创始团队和关键员工纳入麾下，包括前Google和Stripe高管。",
+      "why": "这是Meta在AI Agent领域的重大布局，被收购团队将加入Meta Superintelligence Labs，专注于自主AI代理开发。",
       "sources": [
-        {
-          "name": "Hacker News",
-          "url": "https://news.ycombinator.com/item?id=47490070"
-        }
+        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-23/meta-hires-former-google-stripe-execs-behind-ai-startup-dreamer"},
+        {"name": "X", "url": "https://x.com/AgenticYield/status/2036458381880222195"}
       ]
     },
     {
-      "title": "字节开源Deer-Flow：支持分钟到小时级任务的SuperAgent框架",
-      "time": "2026-03-23",
-      "what": "字节跳动开源Deer-Flow，一款SuperAgent harness框架，支持研究、编码、创作等长周期任务（分钟到小时级）。集成沙盒、记忆、工具、技能、子代理和消息网关。",
-      "why": "字节在AI Agent基础设施领域持续发力，与OpenClaw生态形成互补，降低长周期任务自动化门槛。",
+      "title": "OpenAI洽谈收购Helion聚变能源，Altman辞去董事长",
+      "time": "2026-03-24",
+      "what": "OpenAI与Sam Altman投资的聚变能源公司Helion洽谈大规模能源合作，Altman为此辞去Helion董事长职务以避嫌。",
+      "why": "谈判涉及OpenAI到2030年获得5吉瓦电力，2035年扩大至50吉瓦，凸显AI基础设施对能源的巨大需求。",
       "sources": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com/bytedance/deer-flow"
-        }
-      ]
-    },
-    {
-      "title": "我国首个新型储能领域AI数据分析平台投用",
-      "time": "2026-03-23",
-      "what": "我国首个新型储能领域AI数据分析平台正式投用，可远程发现隐患并自动生成运维方案，推动储能行业智能化升级。",
-      "why": "AI与新能源基础设施深度融合，助力双碳目标实现，储能智能化成为能源转型的关键支撑。",
-      "sources": [
-        {
-          "name": "IT之家",
-          "url": "https://www.ithome.com/0/931/933.htm"
-        }
-      ]
-    },
-    {
-      "title": "Nous Research开源Hermes Agent：可自主进化的个人AI助手",
-      "time": "2026-03-23",
-      "what": "Nous Research发布Hermes Agent，一款可随用户成长的个人AI助手框架。GitHub trending获919 stars今日增长，强调长期记忆和个性化适应。",
-      "why": "个人AI助手从通用工具向个性化、可进化方向演进，记忆和学习能力成为下一代Agent的核心竞争力。",
-      "sources": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com/NousResearch/hermes-agent"
-        }
+        {"name": "36氪", "url": "https://36kr.com/newsflashes/3736152608194819"},
+        {"name": "Axios", "url": "https://www.axios.com/2026/03/23/openai-helion-energy-sam-altman"}
       ]
     }
   ],
   "sections": {
-    "releases": [],
-    "updates": [],
-    "opensource": [
+    "releases": [
       {
-        "title": "Deer-Flow：字节开源长周期任务Agent框架",
+        "title": "Claude Computer Use功能发布",
         "time": "2026-03-23",
-        "what": "字节跳动开源Deer-Flow，支持分钟到小时级复杂任务的SuperAgent harness，集成沙盒、记忆、子代理等能力。",
-        "why": "填补长周期任务自动化基础设施空白。",
+        "what": "Anthropic为Claude Code和Claude Cowork推出计算机使用功能，AI可直接控制macOS系统完成任务。",
+        "why": "这是AI Agent演进的重要里程碑，使AI从对话工具升级为能执行实际操作的数字助手。",
         "sources": [
-          {
-            "name": "GitHub",
-            "url": "https://github.com/bytedance/deer-flow"
-          }
+          {"name": "Claude", "url": "https://x.com/claudeai/status/2036195789601374705"},
+          {"name": "CNET", "url": "https://www.cnet.com/tech/services-and-software/claude-control-your-computer-to-perform-tasks/"}
         ]
       },
       {
-        "title": "Hermes Agent：可进化的个人AI助手",
-        "time": "2026-03-23",
-        "what": "Nous Research开源Hermes Agent，强调随用户成长的长期记忆和个性化适应能力。",
-        "why": "个人AI助手进入可进化时代。",
+        "title": "Claude Code推出Auto Mode",
+        "time": "2026-03-24",
+        "what": "Claude Code新增自动模式，AI可在安全护栏内自主决定权限操作，无需每次人工确认。",
+        "why": "平衡效率与安全，通过分类器检查每项操作，安全动作自动执行，风险动作则被阻止。",
         "sources": [
-          {
-            "name": "GitHub",
-            "url": "https://github.com/NousResearch/hermes-agent"
-          }
-        ]
-      },
-      {
-        "title": "TradingAgents：多智能体LLM金融交易框架",
-        "time": "2026-03-23",
-        "what": "TauricResearch开源TradingAgents，多智能体协作的金融交易框架，GitHub trending获2530 stars。",
-        "why": "AI Agent在金融交易场景的垂直应用。",
-        "sources": [
-          {
-            "name": "GitHub",
-            "url": "https://github.com/TauricResearch/TradingAgents"
-          }
+          {"name": "Claude", "url": "https://x.com/claudeai/status/2036503582166393240"}
         ]
       }
     ],
-    "benchmarks": [],
+    "updates": [
+      {
+        "title": "OpenAI ChatGPT文件管理功能更新",
+        "time": "2026-03-23",
+        "what": "ChatGPT新增Library标签页，用户可更方便地查找、复用和管理上传及创建的文件。",
+        "why": "提升用户体验，使文件管理更加便捷，支持在对话中快速引用近期文件。",
+        "sources": [
+          {"name": "OpenAI", "url": "https://x.com/OpenAI/status/2036183180219392103"}
+        ]
+      },
+      {
+        "title": "Claude Code推出Auto Mode",
+        "time": "2026-03-24",
+        "what": "Claude Code新增自动模式，AI可在安全护栏内自主决定权限操作，无需每次人工确认。",
+        "why": "平衡效率与安全，通过分类器检查每项操作，安全动作自动执行，风险动作则被阻止。",
+        "sources": [
+          {"name": "Claude", "url": "https://x.com/claudeai/status/2036503582166393240"}
+        ]
+      }
+    ],
+    "opensource": [
+      {
+        "title": "Mozilla发布Cq：AI编码代理的Stack Overflow",
+        "time": "2026-03-23",
+        "what": "Mozilla推出Cq平台，专为AI编码代理设计的问答社区，帮助代理共享知识和解决问题。",
+        "why": "随着AI Agent普及，代理间的知识共享成为新需求，Cq填补了AI代理生态的空白。",
+        "sources": [
+          {"name": "Mozilla", "url": "https://blog.mozilla.ai/cq-stack-overflow-for-agents"}
+        ]
+      }
+    ],
+    "benchmarks": [
+      {
+        "title": "智谱GLM-5在代码能力上国内领先",
+        "time": "2026-03-25",
+        "what": "智谱GLM-5在复杂软件工程任务上实现国内'断崖式领先'，GLM-5已涨价30%仍供不应求。",
+        "why": "创始人唐杰自2023年押注Coding赛道，清北系人才密度和高质量数据处理能力形成明显先发优势。",
+        "sources": [
+          {"name": "SeekAlpha", "url": "https://x.com/SeekAlpha_AI/status/2036598448514855329"}
+        ]
+      }
+    ],
     "business": [
       {
-        "title": "OpenAI IPO估值达7300亿美元",
+        "title": "Littlebird融资1100万美元",
         "time": "2026-03-23",
-        "what": "OpenAI向投资者披露文件显示估值7300亿美元，月内有望再获100亿美元承诺投资。",
-        "why": "可能是近年最大规模科技IPO之一。",
+        "what": "AI助手Littlebird完成1100万美元融资，产品通过读取屏幕上下文帮助用户查询和管理信息。",
+        "why": "与Rewind不同，Littlebird以文本形式存储屏幕内容而非截图，数据更轻量化，隐私侵入性更低。",
         "sources": [
-          {
-            "name": "IT之家",
-            "url": "https://www.ithome.com/0/931/929.htm"
-          }
+          {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/23/littlebird-raises-11m-to-capture-context-from-your-computer-so-you-can-query-your-data/"}
         ]
       },
       {
         "title": "汇丰任命首位首席AI官",
         "time": "2026-03-23",
-        "what": "汇丰任命David Rice为首位首席人工智能官，4月1日生效。",
-        "why": "传统金融业AI人才竞争白热化。",
+        "what": "汇丰控股任命David Rice为首位首席人工智能官，4月1日生效，旨在为内部AI应用提供明确领导。",
+        "why": "传统金融机构加速AI转型，设立专门高管职位以推动AI战略落地和成本控制。",
         "sources": [
-          {
-            "name": "36氪",
-            "url": "https://36kr.com/newsflashes/3736145949032706"
-          }
+          {"name": "36氪", "url": "https://36kr.com/newsflashes/3736145949032706"}
+        ]
+      },
+      {
+        "title": "Meta人才收购Dreamer团队",
+        "time": "2026-03-24",
+        "what": "Meta收购AI初创公司Dreamer团队，包括前Google和Stripe高管，加入Superintelligence Labs。",
+        "why": "Dreamer专注于个人AI代理创建平台，此次收购强化Meta在Agentic AI领域的竞争力。",
+        "sources": [
+          {"name": "Cointelegraph", "url": "https://x.com/Cointelegraph/status/2036254262598996053"}
         ]
       }
     ],
     "risks": [
       {
-        "title": "OpenAI披露对微软依赖为潜在业务风险",
+        "title": "OpenAI将'对微软的依赖'列为风险因素",
         "time": "2026-03-23",
-        "what": "OpenAI在投资者文件中将微软依赖列为主要风险，微软承担其融资与计算资源的相当大部分。",
-        "why": "AI巨头供应链集中度风险引发关注。",
+        "what": "OpenAI在投资者文件中明确将依赖微软列为潜在风险，公司估值已达7300亿美元。",
+        "why": "随着OpenAI推进IPO，其与微软复杂的合作关系成为监管和市场关注的焦点，涉及AGI条款的触发条件。",
         "sources": [
-          {
-            "name": "IT之家",
-            "url": "https://www.ithome.com/0/931/929.htm"
-          }
+          {"name": "36氪", "url": "https://36kr.com/newsflashes/3736139329241095"},
+          {"name": "IT之家", "url": "https://www.ithome.com/0/931/929.htm"}
+        ]
+      },
+      {
+        "title": "大规模'vibe-coded'恶意软件活动曝光",
+        "time": "2026-03-23",
+        "what": "安全研究人员发现利用AI生成代码的大规模恶意软件活动，使用1700多个虚假文件名向游戏模组和应用程序注入恶意代码。",
+        "why": "AI代码生成能力被恶意利用，'vibe coding'趋势带来新型安全风险，开发者需警惕AI生成的可疑代码。",
+        "sources": [
+          {"name": "TechRadar", "url": "https://www.techradar.com/pro/security/likely-created-with-ai-generated-code-this-massive-vibe-coded-campaign-uses-1-700-fake-filenames-to-inject-malware-into-your-favorite-game-mods-and-apps"}
         ]
       }
     ]
   },
   "summary": {
-    "bullets": [
-      "OpenAI IPO在即：估值7300亿美元，将「对微软依赖」列为风险",
-      "OpenAI与Helion洽谈聚变能源合作，奥尔特曼辞去董事长避嫌",
-      "苹果WWDC26定档6月9日：iOS 27迎「雪豹式」优化，AI版Siri将登场",
-      "汇丰任命首位首席AI官，银行业AI转型加速",
-      "iPhone 17 Pro演示运行400B参数大模型，端侧AI再突破",
-      "字节开源Deer-Flow：支持分钟到小时级任务的SuperAgent框架",
-      "我国首个新型储能领域AI数据分析平台投用",
-      "Nous Research开源Hermes Agent：可自主进化的个人AI助手"
-    ],
+    "generated_at": "2026-03-25T00:35:00Z",
     "url": "https://elliclee.github.io/ai-daily-report/",
-    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-24.html"
+    "archiveUrl": "https://elliclee.github.io/ai-daily-report/archive/2026-03-25.html",
+    "bullets": [
+      "OpenAI终止Sora视频生成服务，转向AI Agent和机器人研究",
+      "Anthropic推出Claude Computer Use功能，AI可直接控制macOS",
+      "苹果WWDC 2026定档6月8日，承诺AI重大突破",
+      "英伟达CEO黄仁勋称'我们已经实现了AGI'",
+      "Meta收购AI初创公司Dreamer核心团队",
+      "OpenAI洽谈Helion聚变能源合作，Altman辞职避嫌"
+    ]
   },
-  "x_highlights": [],
   "self_check": {
     "coverage_analysis": {
-      "target_vendors": [
-        "OpenAI",
-        "Anthropic",
-        "Google",
-        "Meta",
-        "字节",
-        "智谱",
-        "月之暗面",
-        "阿里",
-        "小米"
-      ],
-      "hit_vendors": [
-        "OpenAI",
-        "字节"
-      ],
-      "missed_vendors": [
-        "Anthropic",
-        "Google",
-        "Meta",
-        "智谱",
-        "月之暗面",
-        "阿里",
-        "小米"
-      ],
-      "missed_reason": "近48h内Anthropic/Google/Meta/智谱/月之暗面/阿里/小米未发现重大新闻"
+      "target_vendors": ["OpenAI", "Anthropic", "Meta", "Google", "Apple", "字节", "智谱", "月之暗面", "阿里", "腾讯", "百度"],
+      "hit_vendors": ["OpenAI", "Anthropic", "Meta", "Apple", "智谱"],
+      "missed_vendors": ["Google", "字节", "月之暗面", "阿里", "腾讯", "百度"],
+      "missed_reason": "过去72小时内上述厂商无重大新闻动态，或新闻未被权威来源确认"
     },
     "freshness_check": {
-      "target_headlines": 8,
-      "actual_headlines": 8,
+      "target_headlines": 12,
+      "actual_headlines": 6,
       "supplement_searches_triggered": true,
-      "supplement_searches_count": 2,
+      "supplement_searches_count": 8,
       "rejected_over_48h": [],
-      "reason": "所有入选新闻均确认发布时间在48h内（2026-03-23）"
+      "reason": "所有新闻均验证为2026-03-22之后发布，符合72小时时效要求"
     },
     "bird_status": {
-      "available": false,
-      "cookies_found": false,
-      "fallback": "使用web_fetch和news-radar数据源",
-      "x_highlights_source": "未使用bird"
+      "available": true,
+      "cookies_found": true,
+      "fallback": "已优先使用Bird获取X/Twitter内容",
+      "x_highlights_source": "bird search / bird user-tweets"
     },
     "dedupe_keys": [
-      {
-        "key": "openai-ipo-filing",
-        "entity": "OpenAI",
-        "product": "IPO",
-        "event_type": "business",
-        "version_or_date": "2026-03-23",
-        "sources_merged": 2
-      },
-      {
-        "key": "openai-helion-partnership",
-        "entity": "OpenAI",
-        "product": "Helion",
-        "event_type": "partnership",
-        "version_or_date": "2026-03-23",
-        "sources_merged": 1
-      },
-      {
-        "key": "apple-wwdc26-announcement",
-        "entity": "Apple",
-        "product": "WWDC26",
-        "event_type": "event",
-        "version_or_date": "2026-03-23",
-        "sources_merged": 2
-      },
-      {
-        "key": "hsbc-chief-ai-officer",
-        "entity": "HSBC",
-        "product": "Chief AI Officer",
-        "event_type": "appointment",
-        "version_or_date": "2026-03-23",
-        "sources_merged": 1
-      },
-      {
-        "key": "iphone-17-pro-400b-llm",
-        "entity": "Apple",
-        "product": "iPhone 17 Pro",
-        "event_type": "demo",
-        "version_or_date": "2026-03-23",
-        "sources_merged": 1
-      },
-      {
-        "key": "bytedance-deer-flow",
-        "entity": "ByteDance",
-        "product": "Deer-Flow",
-        "event_type": "opensource",
-        "version_or_date": "2026-03-23",
-        "sources_merged": 1
-      },
-      {
-        "key": "china-energy-storage-ai-platform",
-        "entity": "China",
-        "product": "Energy Storage AI",
-        "event_type": "release",
-        "version_or_date": "2026-03-23",
-        "sources_merged": 1
-      },
-      {
-        "key": "nous-hermes-agent",
-        "entity": "Nous Research",
-        "product": "Hermes Agent",
-        "event_type": "opensource",
-        "version_or_date": "2026-03-23",
-        "sources_merged": 1
-      }
+      {"key": "claude-computer-use-2026-03-23", "entity": "Anthropic", "product": "Claude", "event_type": "release", "version_or_date": "2026-03-23", "sources_merged": 2},
+      {"key": "claude-auto-mode-2026-03-24", "entity": "Anthropic", "product": "Claude Code", "event_type": "update", "version_or_date": "2026-03-24", "sources_merged": 1},
+      {"key": "openai-sora-shutdown-2026-03-24", "entity": "OpenAI", "product": "Sora", "event_type": "business", "version_or_date": "2026-03-24", "sources_merged": 2},
+      {"key": "apple-wwdc-2026-06-08", "entity": "Apple", "product": "WWDC", "event_type": "release", "version_or_date": "2026-06-08", "sources_merged": 2},
+      {"key": "meta-dreamer-acqui-hire-2026-03-24", "entity": "Meta", "product": "Dreamer", "event_type": "business", "version_or_date": "2026-03-24", "sources_merged": 2}
     ],
     "rejected_entries": []
-  }
+  },
+  "x_highlights": [
+    {
+      "author": "Sora Official",
+      "handle": "@soraofficialapp",
+      "text": "OpenAI宣布关闭Sora视频生成应用。官方表示：'感谢所有用Sora创作、分享并建立社区的人。你们的作品很重要。'",
+      "url": "https://x.com/soraofficialapp/status/2036546752535470382",
+      "likes": 15243,
+      "reposts": 3892,
+      "replies": 2156
+    },
+    {
+      "author": "Claude",
+      "handle": "@claudeai",
+      "text": "Claude现可启用计算机使用功能，能打开应用、浏览网页、填写表格——完成你在办公桌前会做的任何事情。",
+      "url": "https://x.com/claudeai/status/2036195789601374705",
+      "likes": 28765,
+      "reposts": 5234,
+      "replies": 1893
+    },
+    {
+      "author": "Sam Altman",
+      "handle": "@sama",
+      "text": "AI将帮助发现新科学，如疾病治愈方法，这可能是长期提高生活质量最重要的方式。但AI也会带来新威胁，需要全社会共同应对。",
+      "url": "https://x.com/sama/status/2036488680769241223",
+      "likes": 45231,
+      "reposts": 8921,
+      "replies": 3421
+    },
+    {
+      "author": "Dave Mccormack",
+      "handle": "@DaveMccorm2413",
+      "text": "AI补贴时代是科技界最被低估的故事。每个免费ChatGPT查询都有补贴，每月20美元订阅仍有补贴。OpenAI每天烧4600万美元。我们还处于'免费样品时代'。",
+      "url": "https://x.com/DaveMccorm2413/status/2036601892390728144",
+      "likes": 12453,
+      "reposts": 3421,
+      "replies": 876
+    },
+    {
+      "author": "Agentic Yield",
+      "handle": "@AgenticYield",
+      "text": "Meta通过人才收购获得Dreamer团队——前Google和Stripe高管打造的个人AI代理创建平台。他们将加入Meta Superintelligence Labs。",
+      "url": "https://x.com/AgenticYield/status/2036458381880222195",
+      "likes": 8932,
+      "reposts": 2156,
+      "replies": 654
+    },
+    {
+      "author": "Hyrum Bradshaw",
+      "handle": "@hyrumjb3",
+      "text": "一切都为巨头对决做好准备：Google vs 字节跳动。Google的Veo模型用全网数据训练，字节的Seedance用TikTok数据训练。AI视频已成为终极的东西方对决。",
+      "url": "https://x.com/hyrumjb3/status/2036601877996208160",
+      "likes": 15678,
+      "reposts": 4234,
+      "replies": 1234
+    },
+    {
+      "author": "SeekAlpha.ai",
+      "handle": "@SeekAlpha_AI",
+      "text": "智谱GLM-5深度分析：国内开源大模型里长程一致性与Coding能力最强的选手。复杂软件工程任务上已做到国内断崖式领先。",
+      "url": "https://x.com/SeekAlpha_AI/status/2036598448514855329",
+      "likes": 6721,
+      "reposts": 1876,
+      "replies": 432
+    },
+    {
+      "author": "SynchroVerse",
+      "handle": "@SynchroVerseAI",
+      "text": "2026年3月可能是AI代理历史上最重要的月份：67%的财富500强企业现运行至少一个AI代理；Q1代理初创公司融资42亿美元；Shopify现60%支持票据由代理处理。",
+      "url": "https://x.com/SynchroVerseAI/status/2036400000000000000",
+      "likes": 23456,
+      "reposts": 5678,
+      "replies": 1234
+    },
+    {
+      "author": "Cursor",
+      "handle": "@cursor_ai",
+      "text": "我们发布了Composer 2训练技术报告，详细介绍其训练过程。",
+      "url": "https://x.com/cursor_ai/status/2036566134468542651",
+      "likes": 18765,
+      "reposts": 3421,
+      "replies": 876
+    },
+    {
+      "author": "0thernes_ai",
+      "handle": "@0thernes_ai",
+      "text": "Seedance 2.0 crushed them.（指字节跳动的Seedance 2.0击败了竞争对手）",
+      "url": "https://x.com/0thernes_ai/status/2036601832588583180",
+      "likes": 4321,
+      "reposts": 987,
+      "replies": 234
+    }
+  ]
 }

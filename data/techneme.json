@@ -1,35 +1,57 @@
 {
-  "date": "2026-03-08",
-  "trending_topics": [
+  "generated_at": "2026-03-25T00:35:00Z",
+  "date": "2026-03-25",
+  "stories": [
     {
-      "topic": "AI 军事化伦理",
-      "keywords": ["OpenAI", "五角大楼", "机器人", "辞职", "自主武器", "监控"],
-      "heat_score": 95,
-      "sources_count": 5
+      "title": "OpenAI终止Sora视频生成服务",
+      "time": "2026-03-24",
+      "what": "OpenAI宣布关闭其AI视频生成应用Sora，未来将把计算资源转向机器人技术和'世界模拟'研究。",
+      "why": "这一决定标志着OpenAI战略重心从消费级视频生成转向企业级AI Agent和机器人领域。",
+      "sources": [
+        {"name": "Sora Official", "url": "https://x.com/soraofficialapp/status/2036546752535470382"}
+      ]
     },
     {
-      "topic": "GPT-5.4 自主代理",
-      "keywords": ["GPT-5.4", "AI 代理", "连续任务", "工具调用", "OpenAI"],
-      "heat_score": 88,
-      "sources_count": 3
+      "title": "Anthropic推出Claude Computer Use功能",
+      "time": "2026-03-23",
+      "what": "Claude可直接操作macOS系统、打开应用、浏览网页、填写表格，完成桌面任务。",
+      "why": "AI Agent能力的重要突破，使Claude从对话助手进化为能实际执行任务的数字助手。",
+      "sources": [
+        {"name": "Claude", "url": "https://x.com/claudeai/status/2036195789601374705"}
+      ]
     },
     {
-      "topic": "Claude 生态系统",
-      "keywords": ["Claude Marketplace", "Anthropic", "企业采购", "第三方工具"],
-      "heat_score": 82,
-      "sources_count": 4
+      "title": "苹果WWDC 2026定档6月8日，承诺AI重大突破",
+      "time": "2026-03-23",
+      "what": "苹果宣布WWDC 2026将于6月8-12日举行，明确表示将展示'AI advancements'。",
+      "why": "被视为苹果在AI领域'卷土重来'的关键机会，预计将发布与Google Gemini合作的新AI功能。",
+      "sources": [
+        {"name": "TechCrunch", "url": "https://techcrunch.com/2026/03/23/apple-wwdc-june-8-12-ai-advancements-siri-developers-conference/"}
+      ]
     },
     {
-      "topic": "GLM-5 开源突破",
-      "keywords": ["GLM-5", "智谱AI", "开源模型", "SOTA", "国产芯片"],
-      "heat_score": 78,
-      "sources_count": 3
+      "title": "英伟达CEO：'我们已经实现了AGI'",
+      "time": "2026-03-23",
+      "what": "Jensen Huang在Lex Fridman播客中表示AGI已经实现，但随后补充AI代理创建成功公司的概率仍为零。",
+      "why": "引发业界热议，反映科技领袖对AGI定义的分歧。",
+      "sources": [
+        {"name": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/899086/jensen-huang-nvidia-agi"}
+      ]
     },
     {
-      "topic": "图像生成技术",
-      "keywords": ["Nano Banana Pro", "Google", "Gemini 3 Pro", "图像生成", "高分辨率"],
-      "heat_score": 72,
-      "sources_count": 2
+      "title": "Meta收购AI初创公司Dreamer核心团队",
+      "time": "2026-03-24",
+      "what": "Meta通过人才收购将Dreamer AI团队纳入麾下，包括前Google和Stripe高管。",
+      "why": "Meta在AI Agent领域的重大布局，团队将加入Superintelligence Labs。",
+      "sources": [
+        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-23/meta-hires-former-google-stripe-execs-behind-ai-startup-dreamer"}
+      ]
     }
-  ]
+  ],
+  "self_check": {
+    "freshness_check": {
+      "all_within_72h": true,
+      "rejected_count": 0
+    }
+  }
 }
